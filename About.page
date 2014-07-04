@@ -607,17 +607,81 @@ My finances continued to improve in part due to Whiteford, additional donations 
 
 Interestingly, despite my Hacker News experiment (which resulted in dozens of my pages reaching its main page), `news.ycombinator.com` is *still* beaten out traffic-wise by Reddit, by a huge factor (almost double).
 
-<!-- "A remarkable aspect of your mental life is that you are rarely stumped. True, you occasionally face a question such as 17 × 24 = ? to which no answer comes immediately to mind, but these dumbfounded moments are rare. The normal state of your mind is that you have intuitive feelings and opinions about almost everything that comes your way. You like or dislike people long before you know much about them; you trust or distrust strangers without knowing why; you feel that an enterprise is bound to succeed without analyzing it. Whether you state them or not, you often have answers to questions that you do not completely understand, relying on evidence that you can neither explain nor defend." Daniel Kahneman, _Thinking, Fast and Slow_ -->
-<!-- https://plus.google.com/103530621949492999968/posts/3ebaLGgoUTR -->
+### January - July 2014
+
+> "A courteous handsome young man / well-versed in the Classics and Histories / people address him *sir* / everyone calls him a scholar / but he hasn't found a position yet / and he doesn't know how to farm / in winter he wears a tattered robe / this is how books fool us"^[[Han-Shan](!Wikipedia), #28 of [_The Collected Songs of Cold Mountain_](http://www.amazon.com/Collected-Mountain-Mandarin-Chinese-English/dp/1556591403)]
+
+Activity graph[^darcs-to-git] for this period (3 January 2014 - 2 July 2014):
+
+[^darcs-to-git]: Since I converted the repo to use git, `darcs-graph` was no longer available, so I wrote my own script in R using splines rather than a 7-day moving average:
+
+    ~~~{.R}
+    start <- as.Date("2014-01-02")
+    end <- as.Date("2014-07-02")
+
+    patches <- as.Date(system(paste0("git log --after=", start, " --before=", end, " --format='%ad' --date=short master"), intern=TRUE))
+    patchFrame <- aggregate( patches , by = list(patches) , length )
+
+    days <- seq(start, end, "day")
+    dayFrame <- aggregate( days , by = list(days) , length )
+
+    bar <- rbind(dayFrame, patchFrame)
+
+    all <- aggregate(bar$x, by=list(bar$Group.1), FUN=function (x) { sum(as.vector(x));})
+
+    plot(x ~ Group.1, data=all, xlab="Date (Jan - July 2014)", ylab="gwern.net daily patches"); library(splines); lines(predict(interpSpline(days, all$x)))
+    ~~~
+
+![Plot of patch creations (y-axis) versus date (x-axis): January to July 2014](/images/2014-july-git-history.png)
+
+#### Traffic
+
+[Analytics traffic](/docs/20140103-20140702-gwern.net-analytics.pdf) records 370,592 page-views by 162,032 unique visitors over 181 days, or 2047 page-views per day. (Lifetime total: 3,544,489 page-views by 1,628,173 unique visitors.) Since the previous period was 4186/day, that means traffic fell by a disastrous ~50%, defeating my hopes that traffic might recover post-Silk-Road & Hacker News experiment
+
+![Plot of page-views (y-axis) versus date (x-axis), early-mod 2014](/images/20140103-20140702-traffic-history.png)
+
+The traffic rankings show a continue in the plummet of SR, and its dethroning by Modafinil and even the index page, while hosting some early Satoshi Nakamoto drew considerable interest & my [Mistakes]() page was surprisingly linked on Tyler Cowen's [Marginal Revolution](http://marginalrevolution.com/) blog:
+
+1. Modafinil: 54,992
+2. home/main page: 43984
+3. Silk Road: 27,998
+4. Spaced repetition: 27,680
+5. DNB FAQ: 17,833
+6. Nootropics: 15,935
+7. Mistakes: 15,267
+9. Nicotine: 11,936
+9. [Wei Dai/Satoshi Nakamoto emails](/docs/2008-nakamoto): 9,827
+10. [Links](/Links): 9,391
+
+On the plus side, it's hard to see how traffic could fall much more.
+
+Finance-wise, Gittip has worked out much better than I expected. I thank all my donators.
+
+#### Promotion
+
+Hacker News turns out to no longer show up in the referrals analytics due to stripping referrals (apparently related to HTTPS use?), which is unfortunate; I suspect other sites are also "going dark", given that the numbers are more than halving:
+
+1. `reddit.com`: 24,176
+2. `marginalrevolution.com`: 5,695
+3. `bulletproofexec.com`: 5,504
+4. `disqus.com`: 4,051
+5. `lesswrong.com`: 3,954
+6. `longecity.org`: 3,051
+7. Twitter: 2,771
+8. `boldanddetermined.com`: 2,54
+9. `vice.com`: 1,812
+10. `brainworkshop.sourceforge.net`: 1,625
+
+I also began [a monthly mailing list](http://eepurl.com/Kc155); with 300 people on it, it doesn't seem to make a big difference to traffic but it's a good way to curate my links and non-`gwern.net` writings, and may be quite useful.
 
 ## Colophon
 ### Hosting
 
 `gwern.net` is served by [Amazon S3](!Wikipedia) through the [CloudFlare](!Wikipedia) [CDN](!Wikipedia "Content delivery network"). (Amazon charges less for bandwidth and disk space than NFSN, although one loses all the capabilities offered by Apache's [.htaccess](!Wikipedia), and Gzip compression is difficult so must be handled by CloudFlare; total costs may turn out to be a wash and I will consider the switch to Amazon S3 a success if it can bring my monthly bill to <\$10 or <\$120 a year.) The source repository is available for download on [Github](https://github.com/gwern/gwern.net).
 
-From October 2010 to June 2012, the site was hosted on [NearlyFreeSpeech.net](https://www.nearlyfreespeech.net), an old hosting company; its specific niche is controversial material and activist-friendly pricing. Its libertarian owners cast a jaundiced eye on [takedown request](!Wikipedia)s, and pricing is [pay-as-you-go](!Wikipedia). I like the former aspect, but the latter sold me on NFSN. Before I stumbled on NFSN (someone mentioned it in [#lesswrong](irc://freenode.net#lesswrong)), I was getting ready to pay \$10-15 a month (\$120 yearly) to [Linode](!Wikipedia). Linode's offerings are overkill since I do not run dynamic websites or something like [Haskell.org](http://www.haskell.org) (with wikis and mailing lists and [darcs](!Wikipedia) repositories), but I didn't know a good alternative. NFSN's pricing meant that I paid for usage rather than large flat fees. I put in \$32 to cover registering `gwern.net` until 2014, and then another \$10 to cover bandwidth & storage price. DNS aside, I was billed \$8.27 for October-December 2010; DNS included, January-April 2011 cost \$10.09. \$10 covered months of `gwern.net` for what I would have paid Linode in 1 month! In total, my 2010 costs were \$39.44 ([bill archive](/docs/2010-gwernnet-nfsncosts.maff)); my 2011 costs were \$118.32 (\$9.86 a month; [archive](/docs/2011-gwernnet-nfsncosts.maff)); and my 2012 costs through June were \$112.54 (\$21 a month; [archive](/docs/2012-gwernnet-nfsncosts.maff)); sum total: $270.3.
+From October 2010 to June 2012, the site was hosted on [NearlyFreeSpeech.net](https://www.nearlyfreespeech.net), an old hosting company; its specific niche is controversial material and activist-friendly pricing. Its libertarian owners cast a jaundiced eye on [takedown request](!Wikipedia)s, and pricing is [pay-as-you-go](!Wikipedia). I like the former aspect, but the latter sold me on NFSN. Before I stumbled on NFSN (someone mentioned it in [#lesswrong](irc://freenode.net#lesswrong)), I was getting ready to pay \$10-15 a month (\$120 yearly) to [Linode](!Wikipedia). Linode's offerings are overkill since I do not run dynamic websites or something like [Haskell.org](http://www.haskell.org) (with wikis and mailing lists and [darcs](!Wikipedia) repositories), but I didn't know a good alternative. NFSN's pricing meant that I paid for usage rather than large flat fees. I put in \$32 to cover registering `gwern.net` until 2014, and then another \$10 to cover bandwidth & storage price. DNS aside, I was billed \$8.27 for October-December 2010; DNS included, January-April 2011 cost \$10.09. \$10 covered months of `gwern.net` for what I would have paid Linode in 1 month! In total, my 2010 costs were \$39.44 ([bill archive](/docs/2010-gwernnet-nfsncosts.maff)); my 2011 costs were \$118.32 (\$9.86 a month; [archive](/docs/2011-gwernnet-nfsncosts.maff)); and my 2012 costs through June were \$112.54 (\$21 a month; [archive](/docs/2012-gwernnet-nfsncosts.maff)); sum total: \$270.3.
 
-The switch to Amazon S3 hosting is complicated by my simultaneous addition of CloudFlare as a CDN; my total June 2012 Amazon bill is $1.62, with $0.19 for storage. CloudFlare claims it covered 17.5GB of 24.9GB total bandwidth, so the $1.41 represents 30% of my total bandwidth; multiply 1.41 by 3 is 4.30, and my hypothetical non-CloudFlare S3 bill is ~$4.5. Even at $10, this was well below the \$21 monthly cost at NFSN. (The traffic graph indicates that June 2012 was a relatively quiet period, but I don't think this eliminates the factor of 5.) From July 2012 to June 2013, my Amazon bills totaled $60, which is reasonable except for the steady increase ($1.62/$3.27/$2.43/$2.45/$2.88/$3.43/$4.12/$5.36/$5.65/$5.49/$4.88/$8.48/$9.26), being primarily driven by out-bound bandwidth (in June 2013, the $9.26 was largely due to the 75GB transferred - and that was *after* CloudFlare dealt with 82GB); $9.26 is much higher than I would prefer since that would be >$110 annually. This was probably due to all the graphics I included in the "Google shutdowns" analysis, since it returned to a more reasonable $5.14 on 42GB of traffic in August. September, October, November and December 2013 saw high levels maintained at $7.63/$12.11/$5.49/$8.75, so it's probably a new normal.
+The switch to Amazon S3 hosting is complicated by my simultaneous addition of CloudFlare as a CDN; my total June 2012 Amazon bill is \$1.62, with \$0.19 for storage. CloudFlare claims it covered 17.5GB of 24.9GB total bandwidth, so the \$1.41 represents 30% of my total bandwidth; multiply 1.41 by 3 is 4.30, and my hypothetical non-CloudFlare S3 bill is ~\$4.5. Even at \$10, this was well below the \$21 monthly cost at NFSN. (The traffic graph indicates that June 2012 was a relatively quiet period, but I don't think this eliminates the factor of 5.) From July 2012 to June 2013, my Amazon bills totaled \$60, which is reasonable except for the steady increase (\$1.62/\$3.27/\$2.43/\$2.45/\$2.88/\$3.43/\$4.12/\$5.36/\$5.65/\$5.49/\$4.88/\$8.48/\$9.26), being primarily driven by out-bound bandwidth (in June 2013, the \$9.26 was largely due to the 75GB transferred - and that was *after* CloudFlare dealt with 82GB); \$9.26 is much higher than I would prefer since that would be >\$110 annually. This was probably due to all the graphics I included in the "Google shutdowns" analysis, since it returned to a more reasonable \$5.14 on 42GB of traffic in August. September, October, November and December 2013 saw high levels maintained at \$7.63/\$12.11/\$5.49/\$8.75, so it's probably a new normal. 2014 entailed new costs related to EC2 instances & S3 bandwidth spikes due to hosting a multi-gigabyte scientific dataset, so bills ran \$8.51/\$7.40/\$7.32/\$9.15/\$26.63/\$14.75.
 
 ### Source
 
@@ -625,7 +689,7 @@ The revision history is kept in git, and synced [to Github](https://github.com/g
 
 #### Size
 
-As of 2 January 2014, the source of `gwern.net` is composed of >182 files with >1,897,981 words or 13MB<!-- du -ch *.page */*.page */*/*.page -->; this includes my writings & documents I have transcribed into Markdown, but excludes images, PDFs, binary assets, files necessary to generate the site, and the revision history. <!-- Statistics from `find . -type f -name "*.page" -exec cat "{}" \; | wc - - words` --> With those included and everything compiled to the static^[I like the static site approach to things; it yields [better performance](http://inessential.com/2011/03/16/a_plea_for_baked_weblogs) and leads to fewer [hassles & runtime issues](http://www.aaronsw.com/weblog/000404).] HTML, the site is >785.3M<!-- s3cmd du s3://www.gwern.net/ -->. The source repository contains >7,750 patches<!-- git rev-list HEAD - - count --> (this is an under-count as the creation of the repository in 26 September 2008 included already written material).
+As of 3 July 2014, the source of `gwern.net` is composed of >198 text files with >2,006,208 words or 14MB<!-- du -ch *.page */*.page */*/*.page -->; this includes my writings & documents I have transcribed into Markdown, but excludes images, PDFs, binary assets, files necessary to generate the site, and the revision history. <!-- Statistics from `find . -type f -name "*.page" -exec cat "{}" \; | wc - - words` --> With those included and everything compiled to the static^[I like the static site approach to things; it yields [better performance](http://inessential.com/2011/03/16/a_plea_for_baked_weblogs) and leads to fewer [hassles & runtime issues](http://www.aaronsw.com/weblog/000404).] HTML, the site is >866.1M<!-- s3cmd du s3://www.gwern.net/ -->. The source repository contains >8,304 patches<!-- git rev-list HEAD - - count --> (this is an under-count as the creation of the repository in 26 September 2008 included already written material).
 
 ##### Benford's law
 

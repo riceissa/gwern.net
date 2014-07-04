@@ -2120,6 +2120,7 @@ General:
 - "Reading a flame war: and all you people must once have been little children, who smiled of a summer day."
 - Art is based on hatred: it shows the past, or future, or far-away but never the present moment. Anti-art: a TV & camera showing the viewer.
 - The "fallacy of gray" or the "fallacy of grey"? My suggestion "the fallacy of græy" was rejected without, I thought, proper consideration.
+- If pigs were smart enough to worry: "the humans neither love nor hate you, but you are made of tasty bacon they can use for something else."
 
 Meta:
 
@@ -2195,3 +2196,35 @@ To test this:
     - Perhaps photos from dating sites where women might be expected to be explicitly optimizing for physical attractiveness? (But what dating sites record both hair length and breast size?)
     - Do porn preferences map onto attractiveness preferences enough? Then we might see the inverse relationship there. (One might worry that all porn performers would have huge surgically-augmented breasts, but [an analysis of the IAFDB](http://jonmillward.com/blog/studies/deep-inside-a-study-of-10000-porn-stars/ "Deep Inside: A Study of 10,000 Porn Stars and Their Careers") says the modal breast size is 34B and natural hair colors are common albeit blonde is still 6x overrepresented.)
 - more exotically, increases or decreases in cost should cause corresponding decreases & increases on the margin
+
+# No-poo self-experiment
+
+Modern Western-style [shampoo](!Wikipedia) is a fairly recent hygiene innovation, which for some people raise the question of how useful it could really be and whether it actually works; claims that shampoo is useless or harmful to hair appearance has given rise to the [no poo](!Wikipedia) meme, which is what it sounds like.
+
+I find it an interesting assertion (it's not like I've ever run into randomized controlled trials demonstrating shampoo is superior to no-poo), and my fine curly brown hair often becomes oily and unattractive if I do not shower regularly, so it would be great if I could save time, cut out shampoo/soap, and look better more consistently.
+No poo advocates also cite some low-quality studies in support of their claims.
+
+But I didn't see how I could test the claims in a self-experiment: you quickly adapt to your own body odor or appearance, you cannot be blinded since you know if you're not using shampoo/soap and you can't use my usual placebo-pill trick for blinding, and the consequences of being wrong about whether you have offensive body odor or nasty hair can be severe (judgment based on appearance is pervasive and applicable to all sexes & ages, see [Langlois et al 2000](http://www.jonathanstray.com/papers/Langlois.pdf "Maxims or Myths of Beauty? A Meta-Analytic and Theoretical Review")).
+You could try to get around the adaptation problem by asking a third party to sniff you regularly and rank you on a dankness scale, but there's no one I'd inflict such an ordeal upon.
+So my initial interest subsided until I happened to read Julia Scott's NYT Magazine article, ["My No-Soap, No-Shampoo, Bacteria-Rich Hygiene Experiment"](http://www.nytimes.com/2014/05/25/magazine/my-no-soap-no-shampoo-bacteria-rich-hygiene-experiment.html), about a startup arguing that some commensual bacteria can substitute for soap & shampoo and how she enrolled in their trial to see how it works.
+She reports the usual sequence for no-poo anecdotes: an initial period of a week or three where her cleanliness and appearance go to hell, and then a slow recovery to baseline.
+
+Reading about how her hair "turned a full shade darker for being coated in oil that my scalp wouldn't stop producing", I suddenly realized: there *was* a simple way to test the hair half of the no-poo meme, in a way which was blind, did not involve a third party, and avoided the adaptation problem of a rating each day.
+Take photos of your hair every morning of the experiment in the same place & posture & indoors lighting (I choose 3 pictures in 'automatic' mode and 3 in 'closeup' mode), storing them on the same digital camera; cameras record metadata such as the day a photo was taken, preserving the information about what randomized (50-50) experimental condition (poo or no-poo) the photo was taken under; then at the end of the experiment, without ever looking at any of the photos by date, have a program randomly select photos, ask you for a rating, storing the date/filename/rating; then do the statistical analysis on that triplet.
+In this way, an objective dataseries (of hair photos) is created without any chance for (visual) adaptation and the rater is kept blinded (as to whether each photo is from poo or no-poo days) when extracting the rating.
+Because only the rating is being done blinded, it's a partial blinding and it's possible that the subject could neglect their hair differentially under one condition but not the other - but this partial blinding addresses the biases I highly likely expect to be skewing most no-poo anecdotes, and renders the self-experiment more than a self-deluding waste of time.
+
+The ratings will be a Likert scale of 1-5.
+The best analysis for this would be, I think, a multilevel ordinal logistic model with ratings nested in photos and photos nested in days; the main variable is poo vs no-poo, of course, but my hair is visibly affected by other factors and those should be included as covariates: whether I showered the previous day; whether I took a long walk the previous day; the local heat high the previous day; the local humidity (high humidity makes my hair curlier); and for an interaction term, whether the day is the first week of the month when - for no-poo - hair should look worst, and it might be work trying # of days since start of month to see if there's a linear improvement over each month of no-poo.
+The weather data can be sourced from Wunderground like for my [Weather]() analysis.
+
+Because no one seems to adapt in under a week, the blocks must be very long.
+I chose pairs of months as usefully long blocks which are also convenient.
+I am not sure in advance how long I should run the experiment: I have no previous experiments I can compare to for effect sizes nor any guide from research literature; probably I will cut it short if the no-poo turns out disastrous, otherwise I'll run it for perhaps half a year since it's not much work to take photos in the morning.
+(Hopefully I will have an answer before Christmas forces me to reach a conclusion.)
+
+1. June: poo; July; no-poo
+2. August: ?; September: ?
+3. October: ?; November: ?
+
+<!-- https://www.google.com/search?num=100&q=%22no-poo%22%20OR%20%22no%20poo%22%20OR%20shampoo%20site%3Alesswrong.com -->

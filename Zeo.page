@@ -1751,19 +1751,15 @@ So on 4 November 2013, I started keeping a little jar of my caffeine+piracetam p
 
 ### Pilot analysis
 
-The correlational data shows a 20 minute difference in rise-time between caffeine & non-caffeine days; graphed:
+The correlational data shows a 15-20 minute difference in rise-time between caffeine & non-caffeine days.
 
-![What time I got up in the morning, November - June 2014; colored by whether affected by a caffeine wake-up pill](/images/zeo/2014-06-28-gwern-zeodata-caffeinecorrelation.png)
-
-Using _d_=0.35 as an effect size estimate, a proper blind experiment (blocking pairs of days) will take 100 days total.
-I began 29 June 2014.
-(I made the placebo pills the usual way with Bisquick, tossed together with the caffeine pills to equalize any coating; I made 120, more than I needed, because it's always annoying to set up & make pills, and it only took 40 minutes from start to cleanup.)
+First, does morning caffeine affect total sleep or time awake?
+I wouldn't expect so, since it's aimed at reducing morning wakefulness:
 
 ~~~{.R}
 zeo <- read.csv("http://www.gwern.net/docs/zeo/2014-06-28-gwern-zeodata-caffeinecorrelation.csv")
 zeo$Morning.Caffeine <- as.logical(zeo$Morning.Caffeine)
 
-## does morning caffeine affect total sleep? wouldn't think so, since it's aimed at reducing morning wakefulness.
 wilcox.test(Total.Z ~ Morning.Caffeine, data=zeo)
 #
 #   Wilcoxon rank sum test with continuity correction
@@ -1772,7 +1768,6 @@ wilcox.test(Total.Z ~ Morning.Caffeine, data=zeo)
 # W = 2244, p-value = 0.7168
 # alternative hypothesis: true location shift is not equal to 0
 
-## time awake doesn't seem any better
 wilcox.test(Time.in.Wake ~ Morning.Caffeine, conf.int=TRUE, data=zeo)
 #
 #   Wilcoxon rank sum test with continuity correction
@@ -1785,8 +1780,11 @@ wilcox.test(Time.in.Wake ~ Morning.Caffeine, conf.int=TRUE, data=zeo)
 # sample estimates:
 # difference in location
 #                     -1
+~~~
 
-## let's examine time *that* I wake up, the rise-time. This is what's really supposed to be affected
+We should be able to see a shift in rise or wake time to an earlier time:
+
+~~~{.R}
 # convert "05/12/2014 06:45" to "06:45"
 zeo$Rise.Time <- sapply(strsplit(as.character(zeo$Rise.Time), " "), function(x) { x[[2]] })
 # convert "06:45" to 24300
@@ -1810,22 +1808,52 @@ wilcox.test(Rise.Time ~ Morning.Caffeine, conf.int=TRUE, data=zeo)
 # sample estimates:
 # difference in location
 #                     20
+~~~
 
-## A definite hit! Rising 20 minutes earlier seems plausible, too.
-## Let's take a look at the graph of rise-time over time:
+A definite hit!
+Rising 20 minutes earlier seems like a plausible estimate, too.
+Let's take a look at the graph of rise-time over time:
+
+~~~{.R}
 zeo$Sleep.Date <- as.Date(zeo$Sleep.Date, format="%m/%d/%Y")
 library(ggplot2)
 qplot(Sleep.Date, Rise.Time, color=Morning.Caffeine, data=zeo)
-#
-## two observations immediately jump out:
-## 1. the blue points (caffeine-affected) do seem to generally be below the red points
-##    (caffeine-free) and the U-test's claim is believable
-## 2. there seem to be very distinct temporal patterns, which make any correlations or
-##    analysis treacherous: before/after experiments will be worthless since they will
-##    sample from distinct periods of rising-time, so an experiment should definitely be
-##    blocked as pairs-of-days to minimize the clear drift or sinusoidal pattern.
+~~~
 
-## let's look for damage to my sleep; it's no good avoiding sleeping in if that then makes me feel like shit:
+![What time I got up in the morning, November - June 2014; colored by whether affected by a caffeine wake-up pill](/images/zeo/2014-06-28-gwern-zeodata-caffeinecorrelation.png)
+
+Two observations immediately jump out:
+
+1. the blue points (caffeine-affected) do seem to generally be below the red points (caffeine-free) and the U-test's claim is believable
+2. there seem to be very distinct temporal patterns, which make any correlations or analysis treacherous: before/after experiments will be worthless since they will sample from distinct periods of rising-time, so an experiment should definitely be blocked as pairs-of-days to minimize the clear drift or sinusoidal pattern.
+
+A more precise analysis with covariates is possible; for example, depending on how late I went to bed, that might affect when I get up in the morning.
+But you have to be careful in what you look at - if you look at something like 'total sleep length', well, that's partially *caused by* sleeping in!
+It must be impossible for the variables to be affected by sleeping in or not. So, `Total.Z`, `Time.in.REM`, etc are all out. I think we can include:
+
+1. how long it took to fall asleep;
+2. what time I went to sleep; which gives us a smaller estimate of 15 minutes:
+
+~~~{.R}
+zeo$Start.of.Night <- sapply(strsplit(as.character(zeo$Start.of.Night), " "), function(x) { x[[2]] })
+zeo$Start.of.Night <- sapply(zeo$Start.of.Night, interval)
+summary(lm(formula = Rise.Time ~ Morning.Caffeine + Start.of.Night + Time.to.Z, data = zeo))
+#
+# Residuals:
+#     Min      1Q  Median      3Q     Max
+# -137.86  -32.13    1.84   32.29  109.22
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)            63.982     45.647    1.40    0.163
+# Morning.CaffeineTRUE  -15.847      8.321   -1.90    0.059
+# Start.of.Night          0.519      0.100    5.17  7.7e-07
+# Time.to.Z               0.286      0.271    1.05    0.294
+~~~
+
+Finally, let's check for damage to my sleep; it's no good avoiding sleeping in if that then makes me feel like shit:
+
+~~~{.R}
 wilcox.test(ZQ ~ Morning.Caffeine, conf.int=TRUE, data=zeo)
 #
 #   Wilcoxon rank sum test with continuity correction
@@ -1850,14 +1878,15 @@ wilcox.test(Morning.Feel ~ Morning.Caffeine, conf.int=TRUE, data=zeo)
 # sample estimates:
 # difference in location
 #             -5.209e-05
-#
-## These are the 2o main measures of whether sleep quality have degraded, and both look good. So it seems
-## the morning caffeine correlates with earlier risings but not with worse sleep or feeling bad when I get up.
+~~~
 
-## Correlation!=causation; there's a plausible alternative: on days when I feel like sleeping in,
-## I 'forgot' to take a caffeine pill.
-## So it's worth testing. How long does the experiment need to be for 80% power and a shift of 20 minutes?
+These are the 2 main measures of whether sleep quality have degraded, and both look good.
+So it seems the morning caffeine correlates with earlier risings but not with worse sleep or feeling bad when I get up.
 
+Correlation!=causation; there's a plausible alternative: on days when I feel like sleeping in, I 'forgot' to take a caffeine pill.
+So it's worth testing. How long does the experiment need to be for 80% power and a shift of 20 minutes? (not 15m since not sure how reliable that estimate is)
+
+~~~{.R}
 ## Calculate effect size, plug into power formula:
 t.test(Rise.Time ~ Morning.Caffeine, data=zeo)
 #
@@ -1887,9 +1916,11 @@ power.t.test(d=0.3482, power=0.80, type="paired", alternative="one.sided")
 #     alternative = one.sided
 #
 # NOTE: n is number of *pairs*, sd is std.dev. of *differences* within pairs
-#
-## So: 100 days (50 placebo pills, 50 caffeine pills).
 ~~~
+
+Using _d_=0.35 as an effect size estimate, a proper blind experiment (blocking pairs of days) will take 100 days total (50 placebo pills, 50 caffeine pills).
+I began 29 June 2014.
+(I made the placebo pills the usual way with Bisquick, tossed together with the caffeine pills to equalize any coating; I made 120, more than I needed, because it's always annoying to set up & make pills, and it only took 40 minutes from start to cleanup.)
 
 <!-- R conversion routine for merging old and new Zeo Data:
 # need to delete redundant entries
@@ -2753,7 +2784,11 @@ June
 30: 1 0
 July
 01: 0 0
-02: 1 1?
+02: 1 1
+03: 0 1
+04: 0 0
+05: 0 1
+06: 1 1?
 -->
 <!-- Alcohol log: 14, 15, 23, 28, 29, 31 Jan 2014; 2, 4, 6, 9, 12, 14, 16, 18, 20, 22, 24, 26 February; 2, 4, 8, 10, 12, 14, 16, 18, 22, 23, 25, 28, 30, 31 March; 2, 4, 6, 7, 9, 10, 15, 16, 19, 26, 27 April; 2, 3, 5, 10, 11, 14, 16, 17, 20, 21, 25, 27 May; 7, 9, 10, 12, 15, 17, 22 June -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->

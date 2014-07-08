@@ -14,7 +14,7 @@ Following my writing can be a little difficult: while I provide [an RSS feed of 
 - finished & analyzed [caffeine-pill wakeup pilot trial](Zeo#morning-caffeine-pills), began blinded self-experiment
 - [BeeLine Reader A/B test finished](AB%20testing#beeline-reader-text-highlighting): no version performed statistically-significantly better
 - compiled & expanded [selection of my poems](/fiction/Poems)
-
+<
 ## May
 
 - [Treadmill/spaced repetition experiment](Treadmill#treadmill-effect-on-spaced-repetition-performance-randomized-experiment)
@@ -81,7 +81,7 @@ Site:
 
 Black-markets:
 
-- compiled an updated [table of all known black-markets with lifetimes](Silk Road#basic-data)
+- compiled an updated [table of all known black-markets with lifetimes](Black-market survival)
 - wrote up [an essay](Blackmail) on 3 attempts to blackmail/extort/scam
 
 Statistical:
@@ -141,7 +141,7 @@ My focus in October was coping with the fallout from the bust of Silk Road - dea
 - betting all and sundry that BlackMarket Reloaded & Sheep Marketplace will be [busted or shut down within a year](http://www.reddit.com/r/SilkRoad/comments/1pko9y/the_bet_bmr_and_sheep_to_die_in_a_year/) (no takers)
 - researching the ["digitalink" bust](http://www.reddit.com/r/SilkRoad/comments/1pfptu/maryland_man_charged_in_silk_road_drug/cd289fr)
 
-I decided to post my most extensive self-experiment yet, on [LSD microdosing](/LSD%20microdosing). While there was a lot of criticism, I still regard it was worthwhile and setting a new benchmark for any future research in that area.
+I decided to post my most extensive self-experiment yet, on [LSD microdosing](/LSD%20microdosing). While there was a lot of criticism, I still regard it as worthwhile and setting a new benchmark for any future research in that area.
 
 My [anti-linkrot](/Archiving%20URLs) system benefited from comments on Hacker News telling me how to use [archive.is](http://archive.is/); this may help me out quite a bit in the future.
 
@@ -220,7 +220,7 @@ It was a little boring, honestly; jury duty was a mental distraction where I cou
 
    And in my Google analysis (which I credit to last month and not May, even if it went viral in early May), I added in [random survival forests](/Google%20shutdowns#random-survival-forests), fixing that gap in evaluating prediction methods, which was a little burden of guilt off my mind.
 
-   While I was at it, I replicated that [recent paper analyzing Bitcoin exchange shutdown](Silk%20Road#bitcoin-exchange-risk) or theft risk. The dude's since given me his source code. (What can I say? Survival analysis is a great hammer, and it cost me enough tears and sweat to learn how to use the R library that I plan to use it everywhere I can.)
+   While I was at it, I reproduced that [recent paper analyzing Bitcoin exchange shutdown](Silk%20Road#bitcoin-exchange-risk) or theft risk. The dude's since given me his source code. (What can I say? Survival analysis is a great hammer, and it cost me enough tears and sweat to learn how to use the R library that I plan to use it everywhere I can.)
 - I started a little Noopept self-experiment using the Noopept someone gave me, but unfortunately they gave me too little for the results to be very meaningful (see [the power analysis](/Nootropics#experiment-2)); but maybe they will have a trend and I can try a bigger experiment later.
 
 - [TruBrain](http://trubrain.com/) sent me a month's supply of their all-in-one nootropic, but I haven't tried it yet because it would interfere with the Noopept. I also purchased magnesium l-threonate, which is a disappointment so far, and some nicotine patches, which I haven't used yet. A small sample order from a new modafinil website selling the usual Indian Modalert is in progress but hasn't arrived yet. (It ultimately did not arrive as the delivery required a signature.)

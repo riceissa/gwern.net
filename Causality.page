@@ -1,0 +1,155 @@
+---
+title: Causal Nets Cause Common Confounding
+description: Correlations are oft interpreted as evidence for causation; this is oft falsified; do causal graphs explain why this is so common?
+tags: statistics, philosophy
+date: 24 Jun 2014
+...
+
+> It is widely understood that statistical correlation between two variables ≠ causation.
+> But despite this admonition, people are routinely overconfident in claiming correlations to support particular causal interpretations and are surprised by the results of randomized experiments, suggesting that they are biased & systematically underestimating the prevalence of confounds/common-causation.
+> I speculate that in realistic causal networks or DAGs, the number of possible correlations grows faster than the number of possible causal relationships.
+> So confounds really are that common, and since people do not think in DAGs, the imbalance also explains overconfidence.
+
+# Confound it! Correlation is (usually) not causation! But why not?
+
+I've noticed I seem to be unusually willing to bite the correlation≠causation bullet, and I think it's due to an idea I had some time ago about the nature of reality.
+
+## The Problem
+
+One of the constant problems I face in my reading is that I constantly want to know about *causal* relationships but usually I only have *correlational* data, and as we all know, [correlation≠causation](https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation). If the general public naively thinks correlation=causation, then most geeks know better and that correlation≠causation, but then some go meta and point out that correlation and causation do [tend to correlate](https://xkcd.com/552/) and so correlation weakly implies causation.
+But how much evidence...?
+If I suspect that A→B, and I collect data and establish beyond doubt that A&B correlates _r_=0.7, how much evidence do I have that A→B?
+
+Now, the correlation *could* be an illusory correlation thrown up by all the standard statistical problems we all know about, such as too-small _n_, false positive from sampling error (A & B just happened to sync together due to randomness), multiple testing, _p_-hacking, data snooping, selection bias, publication bias, misconduct, inappropriate statistical tests, etc.
+I've read about [those problems at length](http://www.gwern.net/DNB%20FAQ#flaws-in-mainstream-science-and-psychology), and despite knowing about all that, there still seems to be a problem: I don't think those issues explain away all the correlations which turn out to be confounds - correlation *too often* ≠ causation.
+
+To measure this directly you need a clear set of correlations which are proposed to be causal, randomized experiments to establish what the true causal relationship is in each case, and both categories need to be sharply delineated in advance to avoid issues of cherrypicking and retroactively confirming a correlation.
+Then you'd be able to say something like '11 out of the 100 proposed A→B causal relationships panned out', and start with a prior of 11% that in your case, A→B.
+This sort of dataset is pretty rare, although the few examples I've found from medicine tend to indicate that our prior should be under 10%.
+Not great.
+Why are our best guesses at causal relationships are so bad?
+
+We'd expect that the _a priori_ odds are good: 1/3!
+After all, you can divvy up the possibilities as:
+
+1. A causes B
+2. B causes A
+3. both A and B are caused by a C (possibly in a complex way like [Berkson's paradox](https://en.wikipedia.org/wiki/Berkson%27s_paradox) or conditioning on unmentioned variables, like a phone-based survey inadvertently generating conclusions valid only for the [phone-using part of the population](https://en.wikipedia.org/wiki/The_Literary_Digest#Presidential_poll), [causing amusing pseudo-correlations](http://slatestarcodex.com/2014/03/01/searching-for-one-sided-tradeoffs/))
+
+If it's either #1 or #2, we're good and we've found a causal relationship; it's only outcome #3 which leaves us baffled & frustrated.
+Even if we were guessing at random, you'd expect us to be right at least 33% of the time, if not much more often because of all the knowledge we can draw on.
+(Because we can draw on other knowledge, like temporal order or biological plausibility.
+For example, in medicine you can generally rule out some of the relationships this way: if you find a correlation between taking superdupertetrohydracyline™ and pancreas cancer remission, it seems unlikely that #2 curing pancreas cancer causes a desire to take superdupertetrohydracyline™ so the causal relationship is probably either #1 superdupertetrohydracyline™ cures cancer or #3 a common cause like 'doctors prescribe superdupertetrohydracyline™ to patients who are getting better'.)
+
+I think a lot of people tend to put a lot of weight on any observed correlation because of this intuition that a causal relationship is normal & probable because, well, "how *else* could this correlation happen if there's no causal connection between A & B‽"
+And fair enough - there's no grand cosmic conspiracy arranging matters to fool us by always putting in place a C factor to cause scenario #3, right?
+If you question people, of course they know correlation doesn't *necessarily* mean causation - everyone knows that - since there's always a chance of a lurking confound, and it would be great if you had a randomized experiment to draw on; but you think with the data you have, not the data you wish you had, and can't let the perfect be the enemy of the better.
+So when someone finds a correlation between A and B, it's no surprise that suddenly their language & attitude change and they seem to place great confidence in their favored causal relationship even if they piously acknowledge "Yes, correlation is not causation, *but*... [obviously hanging out with fat people can be expected to make you fat] [surely giving babies antibiotics will help them] [apparently female-named hurricanes increase death tolls] etc etc".
+
+So, correlations tend to not be causation because it's almost always #3, a shared cause.
+This commonness is contrary to our expectations, based on a simple & unobjectionable observation that of the 3 possible relationships, 2 are causal; and so we often reason as though correlation were strong evidence for causation.
+This leaves us with a paradox: experimental results seem to contradict intuition.
+To resolve the paradox, I need to offer a clear account of *why* shared causes/confounds are so common, and hopefully motivate a different set of intuitions.
+
+## What a Tangled Net We Weave When First We Practice to Believe
+
+Here's where Bayes nets & [causal networks](https://en.wikipedia.org/wiki/Bayesian_network#Causal_networks) ([seen previously on LW](http://lesswrong.com/lw/ev3/causal_diagrams_and_causal_models/) & [Michael Nielsen](http://www.michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does/)) come up.
+When networks are inferred on real-world data, they often start to look pretty gnarly: tons of nodes, tons of arrows pointing all over the place.
+[Daphne Koller](https://en.wikipedia.org/wiki/Daphne_Koller) early on in her [Probabilistic Graphical Models course](https://www.coursera.org/course/pgm) shows an example from a medical setting where the network has like 600 nodes and you can't understand it at all.
+When you look at a biological causal network like this:
+
+!["A Toolkit Supporting Formal Reasoning about Causality in Metabolic Networks"](http://www.di.unipi.it/~braccia/ToolCode/pathway_03.jpg)
+
+You start to appreciate how everything might be correlated with everything, but not cause each other.
+
+This is not too surprising if you step back and think about it: life is complicated, we have limited resources, and everything has a lot of moving parts.
+(How many discrete parts does an airplane have? Or your car? Or a single cell? Or think about a chess player analyzing a position: 'if my bishop goes there, then the other pawn can go here, which opens up a move there or here, but of course, they could also do that or try an _en passant_ in which case I'll be down in material but up on initiative in the center, which causes an overall shift in tempo...')
+Fortunately, these networks are still simple compared to what they could be, since most nodes aren't directly connected to each other, which tamps down on the combinatorial explosion of possible networks.
+(How many different causal networks are possible if you have 600 nodes to play with? The exact answer is complicated but it's much larger than 2^600^ - so very large!)
+
+One interesting thing I managed to learn from PGM (before concluding it was too hard for me and I should try it later) was that in a Bayes net even if two nodes were not in a simple direct correlation relationship A→B, you could still learn a lot about A from setting B to a value, even if the two nodes were 'way across the network' from each other.
+You could trace the influence flowing up and down the pathways to some surprisingly distant places if there weren't any blockers.
+
+The bigger the network, the more possible combinations of nodes to look for a pairwise correlation between them
+(eg If there are 10 nodes/variables and you are looking at bivariate correlations, then you have `10 choose 2` = 45 possible comparisons, and with 20, 190, and 40, 780.
+40 variables is not that much for many real-world problems.)
+A lot of these combos will yield some sort of correlation.
+But does the number of causal relationships go up *as fast*?
+I don't think so (although I can't prove it).
+
+If not, then as causal networks get bigger, the number of genuine correlations will explode but the number of genuine causal relationships will increase slower, and so the fraction of correlations which are also causal will collapse.
+
+(Or more concretely: suppose you generated a randomly connected causal network with _x_ nodes and _y_ arrows perhaps using the algorithm in [Kuipers & Moffa 2012](http://arxiv.org/abs/1202.6590 "Uniform random generation of large acyclic digraphs"), where each arrow has some random noise in it; count how many pairs of nodes are in a causal relationship; now, _n_ times initialize the root nodes to random values and generate a possible state of the network & storing the values for each node; count how many pairwise correlations there are between all the nodes using the _n_ samples (using an appropriate significance test & alpha if one wants); divide # of causal relationships by # of correlations, store; return to the beginning and resume with _x_+1 nodes and _y_+1 arrows... As one graphs each value of _x_ against its respective estimated fraction, does the fraction head toward 0 as _x_ increases? My thesis is it does. Or, since there must be at least as many causal relationships in a graph as there are arrows, you could simply use that as an upper bound on the fraction.)
+
+It turns out, we weren't supposed to be reasoning 'there are 3 categories of possible relationships, so we start with 33%', but rather: 'there is only one explanation "A causes B", only one explanation "B causes A", but there are many explanations of the form "C~1~ causes A and B", "C~2~ causes A and B", "C~3~ causes A and B"...', and the more nodes in a field's true causal networks (psychology or biology vs physics, say), the bigger this last category will be.
+
+The real world is the largest of causal networks, so it is unsurprising that most correlations are not causal, even after we clamp down our data collection to narrow domains.
+Hence, our prior for "A causes B" is not 50% (it's either true or false) nor is it 33% (either A causes B, B causes A, or mutual cause C) but something much smaller: the number of causal relationships divided by the number of pairwise correlations for a graph, which ratio can be roughly estimated on a field-by-field basis by looking at existing work or directly for a particular problem (perhaps one could derive the fraction based on the properties of the smallest inferrable graph that fits large datasets in that field).
+And since the larger a correlation relative to the usual correlations for a field, the more likely the two nodes are to be close in the causal network and hence more likely to be joined causally, one could even give causality estimates based on the size of a correlation (eg. an _r_=0.9 leaves less room for confounding than an _r_ of 0.1, but how much will depend on the causal network).
+
+This is exactly what we see.
+How do you treat cancer?
+Thousands of treatments get tried before one works.
+How do you deal with poverty?
+Most programs are not even wrong.
+Or how do you fix societal woes in general?
+Most attempts fail miserably and the higher-quality your studies, the worse attempts look (leading to [Rossi's Metallic Rules](http://www.gwern.net/docs/1987-rossi)).
+This even explains why 'everything correlates with everything' and Andrew Gelman's dictum about how coefficients are never zero: the reason datasets like those mentioned by [Cohen](http://ist-socrates.berkeley.edu/~maccoun/PP279_Cohen1.pdf "'The Earth is Round (p<0.05)', Cohen 1994") or [Meehl](http://www.fisme.science.uu.nl/staff/christianb/downloads/meehl1967.pdf "'Theory-Testing in Psychology and Physics: A Methodological Paradox', Meehl 1967") find most of their variables to have non-zero correlations (often reaching statistical-significance) is because the data is being drawn from large complicated causal networks in which almost everything *really is* correlated with everything else.
+
+And thus I was enlightened.
+
+## Comment
+
+Since I know so little about causal modeling, I asked our local causal researcher [Ilya Shpitser](http://lesswrong.com/user/IlyaShpitser/overview/) to maybe leave a comment about whether the above was trivially wrong / already-proven / well-known folklore / etc; for convenience, I'll excerpt the core [of his comment](http://lesswrong.com/lw/keb/open_thread_2329_june_2014/b1cs):
+
+>> But does the number of causal relationships go up just as fast? I don't think so (although at the moment I can't prove it).
+>
+> I am not sure exactly what you mean, but I can think of a formalization where this is not hard to show. We say A "structurally causes" B in a DAG G if and only if there is a directed path from A to B in G. We say A is "structurally dependent" with B in a DAG G if and only if there is a marginal d-connecting path from A to B in G.
+>
+> A marginal d-connecting path between two nodes is a path with no consecutive edges of the form \* -> \* <- \* (that is, no colliders on the path). In other words all directed paths are marginal d-connecting but the opposite isn't true.
+>
+> The justification for this definition is that if A "structurally causes" B in a DAG G, then if we were to intervene on A, we would observe B change (but not vice versa) in "most" distributions that arise from causal structures consistent with G. Similarly, if A and B are "structurally dependent" in a DAG G, then in "most" distributions consistent with G, A and B would be marginally dependent (e.g. what you probably mean when you say 'correlations are there').
+>
+> I qualify with "most" because we cannot simultaneously represent dependences *and* independences by a graph, so we have to choose. People have chosen to represent independences. That is, *if* in a DAG G some arrow is missing, *then* in any distribution (causal structure) consistent with G, there is some sort of independence (missing effect). But if the arrow is not missing we cannot say anything. Maybe there is dependence, maybe there is independence. An arrow may be present in G, and there may *still* be independence in a distribution consistent with G. We call such distributions "unfaithful" to G. If we pick distributions consistent with G randomly, we are unlikely to hit on unfaithful ones (subset of all distributions consistent with G that is unfaithful to G has measure zero), but Nature does not pick randomly.. so unfaithful distributions are a worry. They may arise for systematic reasons (maybe equilibrium of a feedback process in bio?)
+>
+> If you accept above definition, then clearly for a DAG with n vertices, the number of pairwise structural dependence relationships is an upper bound on the number of pairwise structural causal relationships. I am not aware of anyone having worked out the exact combinatorics here, but it's clear there are many many more paths for structural dependence than paths for structural causality.
+>
+> ---
+>
+> But what you actually want is not a DAG with n vertices, but another type of graph with n vertices. The "Universe DAG" has a *lot* of vertices, but what we actually observe is a very small subset of these vertices, and we *marginalize* over the rest. The trouble is, if you start with a distribution that is consistent with a DAG, and you marginalize over some things, you may end up with a distribution that isn't well represented by a DAG. Or "DAG models aren't closed under marginalization."
+>
+> That is, if our DAG is A -> B <- H -> C <- D, and we marginalize over H because we do not observe H, what we get is a distribution where no DAG can properly represent all conditional independences. We need another kind of graph.
+>
+> In fact, people have come up with a mixed graph (containing -> arrows and <-> arrows) to represent margins of DAGs. Here -> means the same as in a causal DAG, but <-> means "there is some sort of common cause/confounder that we don't want to explicitly write down." Note: <-> is *not* a correlative arrow, it is still encoding something causal (the presence of a hidden common cause or causes). I am being loose here -- in fact it is the *absence* of arrows that means things, not the *presence*.
+>
+> I do a lot of work on these kinds of graphs, because these are graphs are the sensible representation of data we typically get -- drawn from a marginal of a joint distribution consistent with a big unknown DAG.
+>
+> But the combinatorics work out the same in these graphs -- the number of marginal d-connected paths is much bigger than the number of directed paths. This is probably the source of your intuition. Of course what often happens is you do have a (weak) causal link between A and B, but a much stronger non-causal link between A and B through an unobserved common parent. So the causal link is hard to find without "tricks."
+
+## Heuristics & Biases
+
+Now assuming the foregoing to be right (which I'm not sure about; in particular, I'm dubious that correlations in causal nets really do increase much faster than causal relations do), what's the *psychology* of this?
+I see a few major ways that people might be incorrectly reasoning when they overestimate the evidence given by a correlation:
+
+- they might be aware of the imbalance between correlations and causation, but underestimate how much more common correlation becomes compared to causation.
+
+    This could be shown by giving causal diagrams and seeing how elicited probability changes with the size of the diagrams: if the probability is constant, then the subjects would seem to be considering the relationship in isolation and ignoring the context.
+
+    It might be remediable by showing a network and jarring people out of a simplistic comparison approach.
+- they might not be reasoning in a causal-net framework at all, but starting from the naive 33% base-rate you get when you treat all 3 kinds of causal relationships equally.
+
+    This could be shown by eliciting estimates and seeing whether the estimates tend to look like base rates of 33% and modifications thereof.
+
+    Sterner measures might be needed: could we draw causal nets with not just arrows showing influence but also another kind of arrow showing correlations? For example, the arrows could be drawn in black, inverse correlations drawn in red, and regular correlations drawn in green.
+    The picture would be rather messy, but simply by comparing how few black arrows there are to how many green and red ones, it might visually make the case that correlation is much more common than causation.
+- alternately, they may really be reasoning causally and suffer from a truly deep & persistent cognitive illusion that when people say 'correlation' it's really a kind of causation and don't understand the technical meaning of 'correlation' in the first place (which is not as unlikely as it may sound, given examples like [David Hestenes's](https://en.wikipedia.org/wiki/David_Hestenes#Modeling_theory_and_instruction) demonstration of the persistence of [Aristotelian folk-physics in physics students](http://harvardmagazine.com/2012/03/twilight-of-the-lecture) as all they had learned was [guessing passwords](http://lesswrong.com/lw/iq/guessing_the_teachers_password/); on the test used, see eg [Halloun & Hestenes 1985](http://wtsd.schoolwires.net/cms/lib07/NJ01913008/Centricity/Domain/539/InitialKnowledge.pdf "The initial knowledge state of college physics students") & [Hestenes et al 1992](http://ptc.weizmann.ac.il/_Uploads/dbsAttachedFiles/1852FCI.pdf "Force concept inventory")); in which cause it's not surprising that if they think they've been told a relationship is 'causation', then they'll think the relationship is causation. Ilya remarks:
+
+    > [Pearl](https://en.wikipedia.org/wiki/Judea_Pearl) has this hypothesis that a lot of probabilistic fallacies/paradoxes/biases are due to the fact that causal and not probabilistic relationships are what our brain natively thinks about. So e.g. [Simpson's paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox) is surprising because we intuitively think of a conditional distribution (where conditioning can change anything!) as a kind of "interventional distribution" (no Simpson's type reversal under interventions: ["Understanding Simpson's Paradox"](http://ftp.cs.ucla.edu/pub/stat_ser/r414.pdf), Pearl 2014 [see also [Pearl's comments on Nielsen's blog](http://www.michaelnielsen.org/ddi/guest-post-judea-pearl-on-correlation-causation-and-the-psychology-of-simpsons-paradox/))).
+    >
+    > This hypothesis would claim that people who haven't looked into the math just interpret statements about conditional probabilities as about "interventional probabilities" (or whatever their intuitive analogue of a causal thing is).
+
+    This might be testable by trying to identify simple examples where the two approaches diverge, similar to Hestenes's quiz for diagnosing belief in folk-physics.
+
+# External links
+
+- LW discussion: [1](http://lesswrong.com/lw/keb/open_thread_2329_june_2014/b19c), [2](http://lesswrong.com/lw/khd/confound_it_correlation_is_usually_not_causation/#comments)

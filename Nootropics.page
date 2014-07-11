@@ -695,27 +695,39 @@ On the null and negative sides:
 
 <!-- TODO: ping http://www.reddit.com/r/Nootropics/comments/1p2v3s/lowdose_lithium_supplementation/ -->
 
+> I experiment with a blind random trial of 5mg lithium orotate looking for effects on mood and various measures of productivity. There is no detectable effect, good or bad.
+
 Some suggested that the lithium would turn me into a 'zombie', recalling the complaints of psychiatric patients. But at 5mg for 200 pills, I'd have to eat half the jar to get up to a single clinical dose, so I'm not worried about overdosing. To test this, I took on day 1 & 2 no less than 4 pills/20mg as an attack dose; I didn't notice any large change in emotional affect or energy levels. And it may've helped my motivation (though I am also trying out the tyrosine).
 
 The effect? 3 or 4 weeks later, I'm not sure. When I began putting all of my nootropic powders into pill-form, I put half a lithium pill in each, and nevertheless ran out of lithium fairly quickly (3kg of piracetam makes for >4000 OO-size pills); those capsules were buried at the bottom of the bucket under lithium-less pills. So I suddenly went cold-turkey on lithium. Reflecting on the past 2 weeks, I *seem* to have been less optimistic and productive, with items now lingering on my To-Do list which I didn't expect to. An effect? Possibly.
 
 A real experiment is called for.
 
+### Design
+
 Most of the reported benefits of lithium are impossible for me to test: rates of suicide and Parkinson's are right out, but so is crime and neurogenesis (the former is too rare & unusual, the latter too subtle & hard to measure), and likewise potential negatives. So we could measure:
 
 1. mood, via daily self-report; should increase
 
-    The principal metric would be 'mood', however defined. Zeo's web interface & data export includes a field for 'Day Feel', which is a rating 1-5 of general mood & quality of day. I can record a similar metric at the end of each day. 1-5 might be a little crude even with a year of data, so a more sophisticated measure might be in order. The first mood study is paywalled so I'm not sure what they used, but Shiotsuki 2008 used [State-Trait of Anxiety Inventory](!Wikipedia) (STAI) and [Profiles of Mood States](!Wikipedia) Test (POMS). The [full POMS](http://www.cyberpediatria.com/profile_moodStates.pdf) sounds too long to use daily, but the [Brief POMS](/docs/nootropics/1987-cella.pdf "A brief POMS measure of distress for cancer patients") might work. In the original 1987 paper 'A brief POMS measure of distress for cancer patients', patients answering this questionnaire had a mean total mean of 10.43 (standard deviation 8.87). Is this the best way to measure mood? I've asked Seth Roberts; he suggested using a 0-100 scale, but personally, there's no way I can assess my mood on 0-100. My mood is sufficiently stable (to me) that 0-5 is asking a bit much, even.
+    The principal metric would be 'mood', however defined. Zeo's web interface & data export includes a field for 'Day Feel', which is a rating 1-5 of general mood & quality of day. I can record a similar metric at the end of each day. 1-5 might be a little crude even with a year of data, so a more sophisticated measure might be in order. The first mood study is paywalled so I'm not sure what they used, but Shiotsuki 2008 used [State-Trait of Anxiety Inventory](!Wikipedia) (STAI) and [Profiles of Mood States](!Wikipedia) Test (POMS). The [full POMS](http://www.cyberpediatria.com/profile_moodStates.pdf) sounds too long to use daily, but the [Brief POMS](/docs/nootropics/1987-cella.pdf "A brief POMS measure of distress for cancer patients") might work. In the original 1987 paper "A brief POMS measure of distress for cancer patients", patients answering this questionnaire had a mean total mean of 10.43 (standard deviation 8.87). Is this the best way to measure mood? I've asked Seth Roberts; he suggested using a 0-100 scale, but personally, there's no way I can assess my mood on 0-100. My mood is sufficiently stable (to me) that 0-5 is asking a bit much, even.
 
-    I ultimately decided to just go with the simple 0-5 scale, although it seems to have turned out to be more of a 2-4 scale!
+    I ultimately decided to just go with the simple 0-5 scale, although it seems to have turned out to be more of a 2-4 scale! Apparently I'm not very good at introspection.
 2. long-term memory (Mnemosyne 2.0's statistics); could increase (neurogenesis), do nothing (null result), or decrease (metal poisoning)
 3. working memory (dual n-back scores via Brain Workshop^[This metric is a little troubling since working memory is trainable and that's the point of dual n-back - but my own scores have been stagnant for a long time and the blocking should reduce the impact of any very slow linear growth in scores.]); like long-term memory
 4. sleep (Zeo); should increase (via mood improvement)
-5. time procrastinating on computer ([arbtt](http://darcs.nomeata.de/arbtt/doc/users_guide/) daemon every 10 seconds records open & active windows; these statistics can be parsed into categories like work or play. Total time on latter categories could be a useful metric. A second metric would be number of commits to the `gwern.net` source repository.)
+5. time procrastinating on computer ([arbtt](http://darcs.nomeata.de/arbtt/doc/users_guide/) daemon every 10-40 seconds records open & active windows; these statistics can be parsed into categories like work or play. Total time on latter categories could be a useful metric. A second metric would be number of commits to the `gwern.net` source repository.)
 
-Lithium is somewhat persistent in the body, and its effects are not acute especially in low doses; this calls for long blocked trials. The blood half-life is [12-36 hours](http://emedicine.medscape.com/article/815523-overview#a0104 "Lithium Toxicity"); hence a day or two ought to be enough to build up and wash out. A week-long block is reasonable since that gives 5 days for effects to manifest, although month-long blocks would not be a bad idea either. With subtle effects, we need a lot of data, so we want at least half a year (6 blocks) or better yet, a year (12 blocks); this requires 180 actives and 180 placebos. This is easily covered by [$11](http://www.amazon.com/gp/product/B003B6X66U/) for 200x5mg lithium orotate and [$14](https://web.archive.org/web/20121011231948/http://www.amazon.com/Life-Extension-GELATIN-CAPSULES-BOVINE/dp/B002R3JJ8W) for 1000x1g empty capsules. For convenience I settled on 168 lithium, 168 placebos, (7 pill-machine batches, 14 batches total); I can use them in 24 paired blocks of 7 days/1 week each (48 total blocks/48 weeks). The lithium expiration date is October 2014, so this should be more than safe.
+Lithium is somewhat persistent in the body, and its effects are not acute especially in low doses; this calls for long blocked trials. The blood half-life is [12-36 hours](http://emedicine.medscape.com/article/815523-overview#a0104 "Lithium Toxicity"); hence a day or two ought to be enough to build up and wash out. A week-long block is reasonable since that gives 5 days for effects to manifest, although month-long blocks would not be a bad idea either. With subtle effects, we need a lot of data, so we want at least half a year (6 blocks) or better yet, a year (12 blocks); this requires 180 actives and 180 placebos. This is easily covered by [\$11](http://www.amazon.com/gp/product/B003B6X66U/) for 200x5mg lithium orotate and [\$14](https://web.archive.org/web/20121011231948/http://www.amazon.com/Life-Extension-GELATIN-CAPSULES-BOVINE/dp/B002R3JJ8W) for 1000x1g empty capsules. For convenience I settled on 168 lithium & 168 placebos (7 pill-machine batches, 14 batches total); I can use them in 24 paired blocks of 7 days/1 week each (48 total blocks/48 weeks). The lithium expiration date is October 2014, so this should be more than safe.
 
 The methodology would be essentially the same as the [vitamin D in the morning](Zeo#vitamin-d-at-morn-helps) experiment: put a multiple of 7 placebos in one container, the same number of actives in another identical container, hide & randomly pick one of them, use container for 7 days then the other for 7 days, look inside them for the label to determine which period was active and which was placebo, refill them, and start again.
+
+### VoI
+
+> For background on "value of information" calculations, see the [Adderall calculation](#value-of-information-voi).
+
+Low-dose lithium orotate is extremely cheap, ~\$10 a year. There is some research literature on it improving mood and impulse control in regular people, but some of it is epidemiological (which implies considerable unreliability); my current belief is that there is probably *some* effect size, but at just 5mg, it may be too tiny to matter. I have ~40% belief that there will be a large effect size, but I'm doing a long experiment and I should be able to detect a large effect size with >75% chance. So, the formula is NPV of the difference between taking and not taking, times quality of information, times expectation: $\frac{10 - 0}{\ln 1.05} \times 0.75 \times 0.40 = 61.4$, which justifies a time investment of less than 9 hours. As it happens, it took less than an hour to make the pills & placebos, and taking them is a matter of seconds per week, so the analysis will be the time-consuming part. This one may actually turn a profit.
+
+### Data
 
 1. first pair
 
@@ -795,7 +807,7 @@ The methodology would be essentially the same as the [vitamin D in the morning](
     2. 17 August - 23 August: 1
 20. twentieth:
 
-    1. 24 August - 2 September: 0
+    1. 24 August - 30 August: 0
     2. 3 September - 6 September: 1
 21. twenty-first:
 
@@ -814,11 +826,324 @@ The methodology would be essentially the same as the [vitamin D in the morning](
     1. 20 - 26 October: 0
     2. 27 October - 2 November: 1
 
-### VoI
+### Analysis
+#### Preprocessing
 
-> For background on "value of information" calculations, see the [Adderall calculation](#value-of-information-voi).
+0. lithium: hand-generated
+1. MP: hand-edited into `mp.csv`
+2. Mnemosyne daily recall scores: extracted from the database:
 
-Low-dose lithium orotate is extremely cheap, ~\$10 a year. There is some research literature on it improving mood and impulse control in regular people, but some of it is epidemiological (which implies considerable unreliability); my current belief is that there is probably *some* effect size, but at just 10mg, it may be too tiny to matter. I have ~40% belief that there will be a large effect size, but I'm doing a long experiment and I should be able to detect a large effect size with >75% chance. So, the formula is NPV of the difference between taking and not taking, times quality of information, times expectation: $\frac{10 - 0}{\ln 1.05} \times 0.75 \times 0.40 = 61.4$, which justifies a time investment of less than 9 hours. As it happens, it took less than an hour to make the pills & placebos, and taking them is a matter of seconds per week, so the analysis will be the time-consuming part. This one may actually turn a profit.
+    ~~~{.Bash}
+    sqlite3 -batch ~/.local/share/mnemosyne/default.db \
+              "SELECT timestamp,easiness,grade FROM log WHERE event_type==9;" | \
+      tr "|" "," \
+      > gwern-mnemosyne.csv
+    ~~~
+3. DNB scores: omitted because I wound up getting tired of DNB around Nov 2012 and so have no scores for most of the experiment
+4. Zeo sleep: loaded from existing export; I don't expect any changes so I will test just the ZQ
+5. `arbtt`: supports the necessary scripting:
+
+    ~~~{.Bash}
+    arbtt-stats --logfile=/home/gwern/doc/arbtt/2012-2013.log --output-format="csv" --for-each="day" --min-percentage=0 > 2012-2013-arbtt.csv
+    arbtt-stats --logfile=/home/gwern/doc/arbtt/2013-2014.log --output-format="csv" --for-each="day" --min-percentage=0 > 2013-2014-arbtt.csv
+    ~~~
+
+    `arbtt` generates cumulative time-usage for roughly a dozen overlapping tags/categories of activity of varying value.
+    For the specific analysis, I plan to run [factor analysis](!Wikipedia) to extract one or two factors which seem to correlate with useful activity/work, and regress on those, instead of trying to regress on a dozen different time variables.
+6. number of commits to the `gwern.net` source repository
+
+    ~~~{.Bash}
+    cd ~/wiki/
+    echo "Gwern.net.patches,Date" > ~/patchlog.txt
+    git log --after=2012-05-11 --before=2013-11-02 --format="%ad" --date=short master | \
+     sort | uniq --count | tr --squeeze-repeats ' ' ',' | cut -d ',' -f 2,3 >> ~/patchlog.txt
+    ~~~
+
+Read in, extract relevant date range, combine into a single dataset, run factor analysis:
+
+~~~{.R}
+lithium <- read.csv("lithium.csv")
+lithium$Date <- as.Date(lithium$Date)
+lithium$X <- NULL
+
+mp <- read.csv("mp.csv")
+mp$Date <- as.Date(mp$Date)
+
+mnemosyne <- read.csv("gwern-mnemosyne.csv", header=FALSE,
+                      col.names =c("Timestamp", "Easiness", "Grade"),
+                      colClasses=c("integer",   "numeric",  "integer"))
+mnemosyne$Date <- as.Date(as.POSIXct(mnemosyne$Timestamp, origin = "1970-01-01", tz = "EST"))
+mnemosyne <- mnemosyne[mnemosyne$Date>as.Date("2012-05-11") & mnemosyne$Date<as.Date("2013-11-02"),]
+mnemosyne <- aggregate(mnemosyne$Grade, by=list(mnemosyne$Date), FUN=function (x) { mean(as.vector(x));})
+colnames(mnemosyne) <- c("Date", "Mnemosyne.grade")
+
+zeo <- read.csv("http://www.gwern.net/docs/zeo/gwern-zeodata.csv")
+zeo$Sleep.Date <- as.Date(zeo$Sleep.Date, format="%m/%d/%Y")
+colnames(zeo)[1]  <- "Date"
+zeo <- zeo[zeo$Date>as.Date("2012-05-11") & zeo$Date<as.Date("2013-11-02"),]
+zeo <- zeo[,c(1:10, 23)]
+
+zeo$Start.of.Night <- sapply(strsplit(as.character(zeo$Start.of.Night), " "), function(x) { x[[2]] })
+## convert "06:45" to 24300
+interval <- function(x) { if (!is.na(x)) { if (grepl(" s",x)) as.integer(sub(" s","",x))
+                                           else { y <- unlist(strsplit(x, ":"));
+                                                  as.integer(y[[1]])*60 + as.integer(y[[2]]); }
+                                                  }
+                          else NA
+                          }
+zeo$Start.of.Night <- sapply(zeo$Start.of.Night, interval)
+## the night 'wraps around' at ~800, so let's take 0-400 and add +800 to reconstruct 'late at night'
+zeo[zeo$Start.of.Night<400,]$Start.of.Night <- (zeo[zeo$Start.of.Night<400,]$Start.of.Night + 800)
+
+arbtt1 <- read.csv("2012-2013-arbtt.csv")
+arbtt2 <- read.csv("2013-2014-arbtt.csv")
+arbtt <- rbind(arbtt1, arbtt2)
+arbtt <- arbtt[as.Date(arbtt$Day)>=as.Date("2012-05-11") & as.Date(arbtt$Day)<=as.Date("2013-11-02"),]
+## rename Day -> Date, delete Percentage
+arbtt <- with(arbtt, data.frame(Date=Day, Tag=Tag, Time=Time))
+## Convert time-lengths to second-counts: "0:16:40" to 1000 (seconds); "7:57:30" to 28650 (seconds) etc.
+## We prefer units of seconds since arbtt has sub-minute resolution and not all categories
+## will have a lot of time each day.
+interval <- function(x) { if (!is.na(x)) { if (grepl(" s",x)) as.integer(sub(" s","",x))
+                                           else { y <- unlist(strsplit(x, ":"));
+                                                  as.integer(y[[1]])*3600 + as.integer(y[[2]])*60 + as.integer(y[[3]]); }
+                                                  }
+                          else NA
+                          }
+arbtt$Time <- sapply(as.character(arbtt$Time), interval)
+library(reshape)
+arbtt <- reshape(arbtt, v.names="Time", timevar="Tag", idvar="Date", direction="wide")
+arbtt[is.na(arbtt)] <- 0
+arbtt$Date <- as.Date(arbtt$Date)
+
+patches <- read.csv("patchlog.txt")
+patches$Date <- as.Date(patches$Date)
+
+## merge all the previous data into a single data-frame:
+lithiumExperiment <- merge(merge(merge(merge(merge(lithium, mp), mnemosyne, all=TRUE), patches, all=TRUE), arbtt, all=TRUE), zeo, all=TRUE)
+## no patches recorded for a day == 0 patches that day
+lithiumExperiment[is.na(lithiumExperiment$Gwern.net.patches),]$Gwern.net.patches  <- 0
+## NA=I didn't do SRS that day; but that is bad and should be penalized!
+lithiumExperiment[is.na(lithiumExperiment$Mnemosyne.grade),]$Mnemosyne.grade  <- 0
+
+productivity <- lithiumExperiment[,c(3,5:22)]
+library(psych) ## for factor analysis
+nfactors(productivity)
+# VSS complexity 1 achieves a maximimum of 0.58  with  14  factors
+# VSS complexity 2 achieves a maximimum of 0.67  with  14  factors
+# The Velicer MAP achieves a minimum of 0.02  with  1  factors
+# Empirical BIC achieves a minimum of  -304.3  with  4  factors
+# Sample Size adjusted BIC achieves a minimum of  -97.84  with  7  factors
+#
+# Statistics by number of factors
+#    vss1 vss2   map dof   chisq     prob sqresid  fit RMSEA    BIC SABIC complex  eChisq    eRMS
+# 1  0.16 0.00 0.016 152 1.3e+03 2.6e-190    20.4 0.16 0.122  389.4 871.9     1.0 2.1e+03 1.1e-01
+# 2  0.27 0.31 0.022 134 7.8e+02  1.9e-91    16.7 0.31 0.095  -65.2 360.1     1.3 1.1e+03 7.9e-02
+# 3  0.30 0.40 0.021 117 4.9e+02  5.2e-47    14.3 0.41 0.078 -247.2 124.2     1.6 7.0e+02 6.2e-02
+# 4  0.39 0.47 0.024 101 2.5e+02  4.1e-14    12.1 0.50 0.052 -389.8 -69.2     1.7 3.4e+02 4.3e-02
+# 5  0.39 0.51 0.028  86 1.9e+02  2.5e-10    11.2 0.54 0.049 -347.4 -74.4     1.7 2.4e+02 3.6e-02
+# 6  0.41 0.53 0.034  72 1.4e+02  7.9e-06    10.3 0.57 0.041 -317.3 -88.8     1.6 1.7e+02 3.1e-02
+# 7  0.44 0.54 0.041  59 8.6e+01  1.2e-02     9.6 0.60 0.030 -285.1 -97.8     1.8 1.1e+02 2.5e-02
+# 8  0.40 0.52 0.050  47 1.1e+02  1.4e-07     9.9 0.59 0.053 -181.2 -32.0     2.0 2.0e+02 3.3e-02
+# 9  0.48 0.57 0.063  36 4.6e+01  1.1e-01     8.3 0.66 0.024 -180.2 -65.9     1.7 6.0e+01 1.8e-02
+# 10 0.51 0.62 0.079  26 1.9e+01  8.3e-01     7.2 0.70 0.000 -144.6 -62.1     1.6 1.9e+01 1.0e-02
+# 11 0.52 0.62 0.098  17 1.4e+01  6.8e-01     6.7 0.72 0.000  -93.2 -39.3     1.7 1.5e+01 9.0e-03
+# 12 0.52 0.61 0.124   9 1.1e+01  3.1e-01     6.7 0.72 0.020  -46.1 -17.5     1.6 1.3e+01 8.3e-03
+# 13 0.48 0.61 0.163   2 4.9e+00  8.6e-02     6.3 0.74 0.053   -7.7  -1.3     1.8 6.2e+00 5.8e-03
+# 14 0.58 0.67 0.210  -4 7.5e-03       NA     4.9 0.80    NA     NA    NA     1.8 9.0e-03 2.2e-04
+# 15 0.56 0.64 0.293  -9 4.6e-06       NA     5.3 0.78    NA     NA    NA     2.0 6.1e-06 5.7e-06
+# 16 0.53 0.62 0.465 -13 8.7e-07       NA     5.5 0.77    NA     NA    NA     2.1 8.6e-07 2.2e-06
+# 17 0.51 0.61 0.540 -16 9.3e-12       NA     5.6 0.77    NA     NA    NA     2.1 1.1e-11 7.8e-09
+# 18 0.51 0.61 1.000 -18 7.0e-10       NA     5.6 0.77    NA     NA    NA     2.1 7.8e-10 6.5e-08
+# 19 0.51 0.61    NA -19 0.0e+00       NA     5.6 0.77    NA     NA    NA     2.1 6.2e-25 1.8e-15
+#    eCRMS   eBIC
+# 1  0.112 1107.9
+# 2  0.089  303.3
+# 3  0.075  -31.6
+# 4  0.055 -300.5
+# 5  0.050 -304.3
+# 6  0.047 -280.3
+# 7  0.042 -257.4
+# 8  0.062  -97.2
+# 9  0.039 -167.1
+# 10 0.026 -144.7
+# 11 0.028  -92.1
+# 12 0.036  -44.0
+# 13 0.054   -6.4
+# 14    NA     NA
+# 15    NA     NA
+# 16    NA     NA
+# 17    NA     NA
+# 18    NA     NA
+# 19    NA     NA
+
+factorization <- fa(productivity, nfactors=4); factorization
+# Standardized loadings (pattern matrix) based upon correlation matrix
+#                     MR3   MR1   MR2   MR4     h2    u2 com
+# MP                 0.05  0.01 -0.02  0.34 0.1241 0.876 1.1
+# Gwern.net.patches -0.04  0.01  0.01  0.48 0.2241 0.776 1.0
+# Time.WWW           0.98 -0.04 -0.10  0.02 0.9778 0.022 1.0
+# Time.H             0.49  0.29  0.47 -0.03 0.5801 0.420 2.6
+# Time.IRC           0.35 -0.06 -0.14  0.16 0.1918 0.808 1.8
+# Time.Writing       0.04 -0.01  0.04  0.69 0.4752 0.525 1.0
+# Time.Stats         0.42 -0.10  0.30  0.01 0.2504 0.750 1.9
+# Time.PDF          -0.09 -0.05  0.98  0.00 0.9791 0.021 1.0
+# Time.Music         0.10 -0.10  0.02  0.03 0.0196 0.980 2.2
+# Time.Rec           0.03  0.99 -0.03 -0.02 0.9950 0.005 1.0
+# Time.SRS           0.06 -0.06  0.07  0.10 0.0209 0.979 3.4
+# Time.Sysadmin      0.22  0.13 -0.04  0.13 0.0953 0.905 2.4
+# Time.DNB          -0.04 -0.05 -0.06  0.07 0.0149 0.985 3.3
+# Time.Bitcoin       0.15 -0.07 -0.07 -0.04 0.0306 0.969 2.1
+# Time.Blackmarkets  0.18 -0.09 -0.08  0.02 0.0470 0.953 1.9
+# Time.Programming  -0.04  0.05 -0.04  0.43 0.1850 0.815 1.1
+# Time.Backups      -0.09  0.06 -0.01  0.04 0.0114 0.989 2.4
+# Time.Umineko      -0.16  0.71 -0.03  0.06 0.5000 0.500 1.1
+# Time.Typing       -0.03 -0.04  0.02 -0.01 0.0034 0.997 2.4
+#
+#                        MR3  MR1  MR2  MR4
+# SS loadings           1.67 1.64 1.33 1.08
+# Proportion Var        0.09 0.09 0.07 0.06
+# Cumulative Var        0.09 0.17 0.24 0.30
+# Proportion Explained  0.29 0.29 0.23 0.19
+# Cumulative Proportion 0.29 0.58 0.81 1.00
+#
+#  With factor correlations of
+#       MR3   MR1   MR2   MR4
+# MR3  1.00  0.12 -0.05  0.10
+# MR1  0.12  1.00  0.07 -0.08
+# MR2 -0.05  0.07  1.00 -0.08
+# MR4  0.10 -0.08 -0.08  1.00
+#
+# Mean item complexity =  1.8
+# Test of the hypothesis that 4 factors are sufficient.
+#
+# The degrees of freedom for the null model are  171  and the objective function was  3.08 with Chi Square of  1645
+# The degrees of freedom for the model are 101  and the objective function was  0.46
+#
+# The root mean square of the residuals (RMSR) is  0.04
+# The df corrected root mean square of the residuals is  0.06
+#
+# The harmonic number of observations is  538 with the empirical chi square  332.7  with prob <  1.6e-26
+# The total number of observations was  542  with MLE Chi Square =  246  with prob <  4.1e-14
+#
+# Tucker Lewis Index of factoring reliability =  0.832
+# RMSEA index =  0.052  and the 90 % confidence intervals are  0.043 0.06
+# BIC =  -389.8
+# Fit based upon off diagonal values = 0.88
+# Measures of factor score adequacy
+#                                                 MR3  MR1  MR2  MR4
+# Correlation of scores with factors             0.99 1.00 0.99 0.79
+# Multiple R square of scores with factors       0.98 0.99 0.98 0.63
+# Minimum correlation of possible factor scores  0.95 0.99 0.96 0.25
+
+## I interpret MR3=Internet+Stats usage; MR1=goofing off; MR2=reading/stats; MR4=writing
+## I don't care about MR1, so we'll look for effects on 3/2/4:
+lithiumExperiment$MR3 <- predict(factorization, data=productivity)[,1]
+lithiumExperiment$MR2 <- predict(factorization, data=productivity)[,3]
+lithiumExperiment$MR4 <- predict(factorization, data=productivity)[,4]
+write.csv(lithiumExperiment, file="2012-lithium-experiment.csv", row.names=FALSE)
+~~~
+
+#### Test
+
+~~~{.R}
+lithiumExperiment <- read.csv("http://www.gwern.net/docs/2012-lithium-experiment.csv")
+summary(lm(cbind(MP, Mnemosyne.grade, Gwern.net.patches, ZQ, MR3, MR2, MR4) ~ Lithium, data=lithiumExperiment))
+# Response MP :
+#
+# Coefficients:
+#             Estimate Std. Error t value Pr(>|t|)
+# (Intercept)   3.0613     0.0591    51.8   <2e-16
+# Lithium      -0.0425     0.0841    -0.5     0.61
+#
+# Residual standard error: 0.755 on 320 degrees of freedom
+#   (220 observations deleted due to missingness)
+# Multiple R-squared:  0.000796,    Adjusted R-squared:  -0.00233
+# F-statistic: 0.255 on 1 and 320 DF,  p-value: 0.614
+#
+#
+# Response Mnemosyne.grade :
+#
+# Coefficients:
+#             Estimate Std. Error t value Pr(>|t|)
+# (Intercept)    3.158      0.120   26.41   <2e-16
+# Lithium       -0.141      0.170   -0.83     0.41
+#
+# Residual standard error: 1.53 on 320 degrees of freedom
+#   (220 observations deleted due to missingness)
+# Multiple R-squared:  0.00214, Adjusted R-squared:  -0.000975
+# F-statistic: 0.687 on 1 and 320 DF,  p-value: 0.408
+#
+#
+# Response Gwern.net.patches :
+#
+# Coefficients:
+#             Estimate Std. Error t value Pr(>|t|)
+# (Intercept)   3.8712     0.3271   11.83   <2e-16
+# Lithium       0.0345     0.4655    0.07     0.94
+#
+# Residual standard error: 4.18 on 320 degrees of freedom
+#   (220 observations deleted due to missingness)
+# Multiple R-squared:  1.72e-05,    Adjusted R-squared:  -0.00311
+# F-statistic: 0.00549 on 1 and 320 DF,  p-value: 0.941
+#
+#
+# Response ZQ :
+#
+# Coefficients:
+#             Estimate Std. Error t value Pr(>|t|)
+# (Intercept)   91.773      1.024   89.66   <2e-16
+# Lithium        0.523      1.457    0.36     0.72
+#
+# Residual standard error: 13.1 on 320 degrees of freedom
+#   (220 observations deleted due to missingness)
+# Multiple R-squared:  0.000402,    Adjusted R-squared:  -0.00272
+# F-statistic: 0.129 on 1 and 320 DF,  p-value: 0.72
+#
+#
+# Response MR3 :
+#
+# Coefficients:
+#             Estimate Std. Error t value Pr(>|t|)
+# (Intercept)  -0.0258     0.0691   -0.37     0.71
+# Lithium       0.0657     0.0983    0.67     0.50
+#
+# Residual standard error: 0.882 on 320 degrees of freedom
+#   (220 observations deleted due to missingness)
+# Multiple R-squared:  0.00139, Adjusted R-squared:  -0.00173
+# F-statistic: 0.447 on 1 and 320 DF,  p-value: 0.504
+#
+#
+# Response MR2 :
+#
+# Coefficients:
+#             Estimate Std. Error t value Pr(>|t|)
+# (Intercept)   0.0187     0.0788    0.24     0.81
+# Lithium       0.0435     0.1121    0.39     0.70
+#
+# Residual standard error: 1.01 on 320 degrees of freedom
+#   (220 observations deleted due to missingness)
+# Multiple R-squared:  0.00047, Adjusted R-squared:  -0.00265
+# F-statistic: 0.15 on 1 and 320 DF,  p-value: 0.698
+#
+#
+# Response MR4 :
+#
+# Coefficients:
+#              Estimate Std. Error t value Pr(>|t|)
+# (Intercept)  0.000209   0.052772    0.00     1.00
+# Lithium     -0.073464   0.075099   -0.98     0.33
+#
+# Residual standard error: 0.674 on 320 degrees of freedom
+#   (220 observations deleted due to missingness)
+# Multiple R-squared:  0.00298, Adjusted R-squared:  -0.000134
+# F-statistic: 0.957 on 1 and 320 DF,  p-value: 0.329
+~~~
+
+### Conclusion
+
+There were no observable effects, either positive or beneficial, to the lithium orotate doses.
+This is consistent with my subjective experience.
 
 # LSD microdosing
 
@@ -1804,7 +2129,7 @@ It took 4 hours to cap 432 Noopept pills and another 432 flour pills. I tried to
     8 - 10 May: 1
 39. 60mg: 11 - 13 May: 0
 
-    14 - 17 May: 1 <!-- skipped 15th -->
+    14 - 17 May: 1 <!-- skipped May 15th -->
 40. 20mg: 18 - 20 May: 0
 
     21 - 23 May: 1
@@ -1814,15 +2139,33 @@ It took 4 hours to cap 432 Noopept pills and another 432 flour pills. I tried to
 42. 60mg: 30 - 1 June: 0
 
     2 - 4 June: 1
-23. 30mg: 5 - 7? June: ?
+43. 30mg: 5 - 7 June: 1
 
-    8? - 10? June: ?
+    8 - 10 June: 0
+44. 5x: 11 - 13 June: 1
+
+    14 - 16 June: 0
+45. 3x: 17 - 19 June: 0
+
+    20 - 22 June: 1
+46. 5x: 23 - 25 June: 0
+
+    26 - 28 June: 1
+47. 4x: 29 June - 1 July: 1
+
+    2 - 4 July: 0
+48. 3x: 5 - 7 July: 1
+
+    8 - 9 July: 0 <!-- not sure what happened to shorten by one day -->
+49. 5x: 10 - 12 July: ?
+
+    13? - 15? July: ?
 
 # Oxiracetam
 
 [Oxiracetam](!Wikipedia) is one of the 3 most popular -racetams; less popular than piracetam but seems to be more popular than aniracetam. Prices have come down substantially since the early 2000s, and stand at around [1.2g/$](http://www.smartpowders.com/p-5342-oxiracetam-powder.aspx) or roughly 50 cents a dose, which was low enough to experiment with; key question, does it stack with piracetam or is it redundant for me? (Oxiracetam can't compete on price with my piracetam pile stockpile: the latter is now a sunk cost and hence free.)
 
-I bought 60 grams from Smart Powders (as usual) and combined it with the DMAE; I couldn't compare oxiracetam+DMAE vs oxiracetam+choline-bitartrate because I had capped all the choline with the piracetam. One immediate advantage of oxiracetam: it is not unbelievably foul tasting like piracetam, but slightly sweet.
+I bought 60 grams from Smart Powders and combined it with the DMAE; I couldn't compare oxiracetam+DMAE vs oxiracetam+choline-bitartrate because I had capped all the choline with the piracetam. One immediate advantage of oxiracetam: it is not unbelievably foul tasting like piracetam, but slightly sweet.
 
 Regardless, while in the absence of piracetam, I did notice some stimulant effects (somewhat negative - more aggressive than usual while driving) and similar effects to piracetam, I did *not* notice any mental performance beyond piracetam when using them both. The most I can say is that on some nights, I seemed to be less easily tired when writing or editing or n-backing (and I felt less tired than [ICON 2011]() than [ICON 2010]()), but those were also often nights I was *also* trying out all the other things I had gotten in that order from Smart Powders, and I am still dis-entangling what was responsible. (Probably the [l-theanine](#theanine) or [sulbutiamine](#sulbutiamine).)
 
@@ -2423,9 +2766,15 @@ May
 30
 June
 05
+08
+12
+27
+July
+03
+08
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7 June -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8 July -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014 -->

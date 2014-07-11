@@ -31,6 +31,7 @@ li p { margin: 0em; }
 
 # Philosophy
 
+- [Why Correlation Usually ≠ Causation](Causality "Correlations are oft interpreted as evidence for causation; this is oft falsified; do causal graphs explain why this is so common?")
 - [Culture is not about Esthetics](Culture is not about Esthetics "Aesthetically & economically, there is too much new art")
 - [Terrorism is not about Terror](Terrorism is not about Terror "Terrorists act very irrationally from bang-per-buck POV")
 - [Terrorism is not Effective](Terrorism is not Effective "More effective ways to kill = terrorists are stupid, or killing not most important thing to them")

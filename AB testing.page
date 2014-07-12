@@ -2195,25 +2195,27 @@ index 4395130..8c97954 100644
 
 ### Data
 
+8 June - 12 July 2014:
+
 Variant   Old         _n_   Conversion
 --------- ---------  ----   ------
-none      New        9395   16.91%
-float     New        9167   17.54%
-none      Returning  4368   22.39%
-float     Returning  4423   22.18%
-none                 13763  18.65%
-float                13590  19.05%
-                     27353  18.85%
+none      FALSE      10342  17.00%
+float     FALSE      10039  17.42%
+none      TRUE       4767   22.24%
+float     TRUE       4876   22.40%
+none                 15109  18.65%
+float                14915  19.05%
+                     30024  18.85%
 
 ### Analysis
 
 ~~~{.R}
 rates <- read.csv(stdin(),header=TRUE)
 Footnote,Old,N,Rate
-none,FALSE,9395,0.1691
-float,FALSE,9167,0.1754
-none,TRUE,4368,0.2239
-float,TRUE,4423,0.2218
+none,FALSE,10342,0.1700
+float,FALSE,10039,0.1742
+none,TRUE,4767,0.2224
+float,TRUE,4876,0.2240
 
 
 rates$Successes <- rates$N * rates$Rate
@@ -2225,19 +2227,18 @@ rates$Footnote <- relevel(rates$Footnote, ref="none")
 g <- glm(cbind(Successes,Failures) ~ Footnote + Old, data=rates, family="binomial"); summary(g)
 # ...Coefficients:
 #               Estimate Std. Error z value Pr(>|z|)
-# (Intercept)    -1.5815     0.0248  -63.74   <2e-16
-# Footnotefloat   0.0235     0.0310    0.76     0.45
-# OldTRUE         0.3205     0.0322    9.96   <2e-16
+# (Intercept)    -1.5820     0.0237  -66.87   <2e-16
+# Footnotefloat   0.0222     0.0296    0.75     0.45
+# OldTRUE         0.3234     0.0307   10.53   <2e-16
 confint(g)
-# Waiting for profiling to be done...
-#                 2.5 %   97.5 %
-# (Intercept)   -1.6304 -1.53312
-# Footnotefloat -0.0372  0.08423
-# OldTRUE        0.2573  0.38345
+#                  2.5 %   97.5 %
+# (Intercept)   -1.62856 -1.53582
+# Footnotefloat -0.03574  0.08018
+# OldTRUE        0.26316  0.38352
 ~~~
 
 As I had hoped, floating footnotes seems to do no harm, and the point-estimate is positive.
-The 95% CI, while not excluding zero, does exclude values worse than -0.0372, which satisfies me: if floating footnotes are doing any harm, it's a small harm.
+The 95% CI, while not excluding zero, does exclude values worse than -0.035, which satisfies me: if floating footnotes are doing any harm, it's a small harm.
 
 # Appendix
 ## Covariate impact on power

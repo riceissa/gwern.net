@@ -2240,6 +2240,97 @@ confint(g)
 As I had hoped, floating footnotes seems to do no harm, and the point-estimate is positive.
 The 95% CI, while not excluding zero, does exclude values worse than -0.035, which satisfies me: if floating footnotes are doing any harm, it's a small harm.
 
+## Indented paragraphs
+
+An [anonymous feedback](About#anonymous-feedback) suggested a site design tweak:
+
+> Could you format your pages so that the texts are all aligned at the left? It looks unprofessional when the lines of text break at different areas. Could you make the site like a LaTeX article?  The formatting is the only thing preventing you from looking really professional.
+
+I wasn't sure what he meant, since the text *is* left-aligned, and I can't ask for clarification (anonymous means anonymous).
+Looking at a random page, my best guess is that he's bothered by the indentation at the start of successive paragraphs: in a sequence of paragraphs, the first paragraph is not indented (because it can't be visually confused) but the successive paragraphs are indented by 1.5em in order to make reading easier.
+The CSS is:
+
+~~~{.CSS}
+p { margin-top: -0.2em;
+    margin-bottom: 0 }
+p + p {
+  text-indent: 1.5em;
+  margin-top: 0 }
+~~~
+
+I liked this, but I suppose for lots of small paragraphs, it lends a ragged appearance to the page.
+So might as well test a few variants of `text-indent` to see what works best: 0em, 0.1, 0.5, 1.0, 1.5, and 2.0.
+
+### Implementation
+
+Since we're back to testing CSS, we can use the old ABalytics approach without having to do JS coding:
+
+~~~{.Diff}
+--- a/static/templates/default.html
++++ b/static/templates/default.html
+@@ -19,6 +19,9 @@
+   </head>
+   <body>
+
++   <!-- override CSS with A/B test -->
++   <div class="indent_class1"></div>
++
+     <div id="main">
+       <div id="sidebar">
+         <div id="logo"><img alt="Logo: a Gothic/Fraktur blackletter capital G/𝕲" height="36" src="/images/logo.png" width="32" /></div>
+@@ -136,10 +139,48 @@
+     <!-- floating footnotes; see http://ignorethecode.net/blog/2010/04/20/footnotes/ -->
+     <script type="text/javascript" src="/static/js/footnotes.js"></script>
+
++    <!-- a/b testing -->
++    <script type="text/javascript" src="/static/js/abalytics.js"></script>
++    <script type="text/javascript">
++      window.onload = function() {
++      ABalytics.applyHtml();
++      };
++    </script>
++
+     <!-- Load Google Analytics & setup A/B test -->
+     <script id="googleAnalytics" type="text/javascript">
+       var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-18912926-1']);
++
++      ABalytics.init({
++      indent: [
++      {
++      name: "none",
++      "indent_class1": "<style>p + p { text-indent: 0.0em; margin-top: 0 }</style>"
++      },
++      {
++      name: "indent0.1",
++      "indent_class1": "<style>p + p { text-indent: 0.1em; margin-top: 0 }</style>"
++      },
++      {
++      name: "indent0.5",
++      "indent_class1": "<style>p + p { text-indent: 0.5em; margin-top: 0 }</style>"
++      },
++      {
++      name: "indent1.0",
++      "indent_class1": "<style>p + p { text-indent: 1.0em; margin-top: 0 }</style>"
++      },
++      {
++      name: "indent1.5",
++      "indent_class1": "<style>p + p { text-indent: 1.5em; margin-top: 0 }</style>"
++      },
++      {
++      name: "indent2.0",
++      "indent_class1": "<style>p + p { text-indent: 2.0em; margin-top: 0 }</style>"
++      }
++      ],
++      }, _gaq);
++
+       _gaq.push(['_trackPageview']);
+       (function() { // })
+~~~
+
+### Data
+### Analysis
+
 # Appendix
 ## Covariate impact on power
 

@@ -693,8 +693,6 @@ On the null and negative sides:
 
 ## Lithium experiment
 
-<!-- TODO: ping http://www.reddit.com/r/Nootropics/comments/1p2v3s/lowdose_lithium_supplementation/ -->
-
 > I experiment with a blind random trial of 5mg lithium orotate looking for effects on mood and various measures of productivity. There is no detectable effect, good or bad.
 
 Some suggested that the lithium would turn me into a 'zombie', recalling the complaints of psychiatric patients. But at 5mg for 200 pills, I'd have to eat half the jar to get up to a single clinical dose, so I'm not worried about overdosing. To test this, I took on day 1 & 2 no less than 4 pills/20mg as an attack dose; I didn't notice any large change in emotional affect or energy levels. And it may've helped my motivation (though I am also trying out the tyrosine).
@@ -983,7 +981,7 @@ factorization <- fa(productivity, nfactors=4); factorization
 # MP                 0.05  0.01 -0.02  0.34 0.1241 0.876 1.1
 # Gwern.net.patches -0.04  0.01  0.01  0.48 0.2241 0.776 1.0
 # Time.WWW           0.98 -0.04 -0.10  0.02 0.9778 0.022 1.0
-# Time.H             0.49  0.29  0.47 -0.03 0.5801 0.420 2.6
+# Time.X             0.49  0.29  0.47 -0.03 0.5801 0.420 2.6
 # Time.IRC           0.35 -0.06 -0.14  0.16 0.1918 0.808 1.8
 # Time.Writing       0.04 -0.01  0.04  0.69 0.4752 0.525 1.0
 # Time.Stats         0.42 -0.10  0.30  0.01 0.2504 0.750 1.9
@@ -2772,9 +2770,10 @@ June
 July
 03
 08
+11
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8 July -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11 July -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014 -->

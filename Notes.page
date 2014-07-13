@@ -2228,3 +2228,36 @@ I am not sure in advance how long I should run the experiment: I have no previou
 The main concerns with this design seem to be whether a month is enough time to show any no-poo adaptation, and whether it would be possible to estimate time for each photo despite controlling the conditions as much as possible.
 
 <!-- https://www.google.com/search?num=100&q=%22no-poo%22%20OR%20%22no%20poo%22%20OR%20shampoo%20site%3Alesswrong.com -->
+
+# TV & the Matrix
+
+One of the most common geek criticisms of _The Matrix_ is that the supposed value of the humans to the machine overlords is as an *energy source*; but by any comparison to alternatives like burning coal, solar power, fusion plants etc, human flesh is a terrible way of generating electricity and feeding dead humans to other humans makes no sense. [An example](http://hpmor.com/chapter/64):
+
+> `NEO`: "I've kept quiet for as long as I could, but I feel a certain need to speak up at this point. The human body is the most inefficient source of energy you could possibly imagine. The efficiency of a power plant at converting thermal energy into electricity decreases as you run the turbines at lower temperatures. If you had any sort of food humans could eat, it would be more efficient to burn it in a furnace than feed it to humans. And now you're telling me that their food is *the bodies of the dead, fed to the living?* Haven't you ever heard of the laws of thermodynamics?"
+
+There's a quick way to rescue the Matrixverse from this objection: that was simply a dumbing-down for the general movie audience.
+To take an existing SF trope (eg from [Dan Simmons](!Wikipedia)'s [Hyperion Cantos](!Wikipedia)), the real purpose of humans is to reuse their brains as a very energy-efficient (estimates of the FLOPS of a human brain against the known ~watt energy consumption indicate orders of magnitude more efficiency than the best current hardware) highly-parallel supercomputer, which would justify the burden of running a Matrix.
+From the Matrix short story ["Goliath"](http://matrix.wikia.com/wiki/Goliath):
+
+> "...we were really just hanging there, plugged and wired, central processing units or just cheap memory chips for some computer the size of the world, being fed a consensual hallucination to keep us happy, to allow us to communicate and dream using the tiny fraction of our brains that they weren't using to crunch numbers and store information. "
+
+But this raises additional questions:
+
+1. the AIs won the war with the humans in this version too, so why exactly do they need any human computing horsepower?
+
+    Perhaps the AIs collectively are superior to humans in only a few domains, but these domains had military advantage and *that* is why they won.
+    Or more narrowly, perhaps the AIs are collectively superior in general, but there's still a few domains they have not reverse-engineered or improved on human performance and those are what the human brains are good for.
+    More intriguingly, it's well-known in machine learning & statistics that something like [Condorcet's jury theorem](!Wikipedia) holds for prediction tasks: a collection or [ensemble](!Wikipedia "Ensemble learning") of poor error-prone algorithms can be combined into a much better predictor as long as their errors are not identical, and a new different algorithm can improve the ensemble performance even if it's worse than every other algorithm already in the ensemble.
+    So the humans could, individually or collectively, be useful even if humans are always inferior to other AIs!
+2. how do you make use of intact humans brains? With existing machine learning/AI approaches to neural networks, each neural network is trained from scratch for a specific task, it's not part of a whole personality or mind on its own. What do you do with an entire brain with a personality and memories and busy with its own simulated life? If the AIs want the humans for image-recognition tasks (very handy for robots), how do they extract this image recognition data in a useful manner from people that are spending 24h in a computer simulation?
+
+    Insert the tasks into the simulated environment in a naturalistic way, of course. You have an image which might be a bat? Insert it and see if people think "aughhh, a bat!" You need to recognize street numbers? hijack someone walking down a "street", replace the real house number with the unrecognized image, and see what they think. Ditto for facial recognition.
+
+    This works because it may be easier to detect a human brain thinking "bat" than it is to recognize a bat; the human may say "bat" (very easy), subvocalize the word "bat" (fairly easy), or think "bat" (not so easy, but near or at the 2014 fMRI state of the art). You could make it even easier by feeding your human brains a test set or library of known-images, figuring out the common brain signature which corresponds to "bat", then one can easily deduce the brain signature on subsequent unknown images, thereby classifying the unknown images - very similar to existing machine vision practices.
+
+    Of course, to do that on *all* topics of interest and not just bats, you would have to feed human brains a great deal of imagery which could make no sense as part of their ordinary daily life.
+    Ideally, they would be raptly focused on a rapidly changing sequence of images, and as much as you can feed them, so the equivalent of a full-time job, perhaps 5+ hours a day or [24-33 hours a week](http://www.nydailynews.com/life-style/average-american-watches-5-hours-tv-day-article-1.1711954 "Average American watches 5 hours of TV per day, report shows: Time spent watching live TV increases steadily as we get older, according to a new report from Nielsen. African-Americans, followed by whites, watch more TV than other ethnic groups.").
+    You'd want to start programming human brains as early as possible in life, perhaps starting around 2 years of age, so as to minimize how much food & energy they use before they can start computationally-useful tasks.
+    And given how strange and alien as this all sounds to any normal healthy human lifestyle, you would need to make the test-set uploading as addictive as possible to ensure all this - it'd be no good if a lot of humans opted out & wasted your investment.
+
+In other words, *television is how the Matrix operators exploit us*.

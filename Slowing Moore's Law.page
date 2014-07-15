@@ -216,10 +216,10 @@ The floods enable us to give a quantitative measure of how much progress was set
 
 What is striking is the *long-term* effect of the Thailand floods. If one were a skeptic of the "experience curve effects" previously mentioned, one might reason that R&D was constantly ongoing and so one would hope for a "catch-up effect" where the high prices were merely temporary and a sort of "super Kryder's law" operates briefly to restore the original trend-line as the pent-up R&D improvements are implemented. But industry forecasts didn't estimate a decline [until 2014](http://www.digikey.com/supply-chain-hq/us/en/articles/emech/hard-disk-drive-prices-will-remain-high-until-2014/1355 "Although drive production is resuming in Thailand following last fall's flooding, drive prices remain at pre-flood levels"), and we can watch the deviation from Kryder's law in realtime: 6 months after March 2012 (August 2012), close to a year after the floods, a 3tb hard drive's price had fallen from \$200 to... \$150. Exactly as predicted from half a crank of Kryder's law. A year later (August 2013), the results are even more dismal: now 3tb costs... \$130. No catch-up effect had yet occurred and it seems unlikely that chip fabs are remarkably more robust. Extrapolating Kryder's law and the absence of any catch-up effect, we can make some predictions out to August 2014:
 
-1. [March 2013](http://predictionbook.com/predictions/7910), a 3tb drive will cost: ~\$113 (25% off \$150); wrong (actual: 22.34gb/\$)
-2. [August 2013](http://predictionbook.com/predictions/7911): \$75 (50% off \$150); wrong (actual: 23.25gb/\$)
-3. [March 2014](http://predictionbook.com/predictions/7921): \$56 (63% off \$150); wrong (actual: 30gb/\$)
-4. [August 2014](http://predictionbook.com/predictions/7920): \$38 (75% off \$150)
+1. [March 2013](http://predictionbook.com/predictions/7910), a 3tb drive will cost: ~\$113 (25% off \$150) or 26.55gb/\$; wrong (actual: 22.34gb/\$)
+2. [August 2013](http://predictionbook.com/predictions/7911): \$75 (50% off \$150) or 40gb/\$; wrong (actual: 23.25gb/\$)
+3. [March 2014](http://predictionbook.com/predictions/7921): \$56 (63% off \$150) or 53.57gb/\$; wrong (actual: 30gb/\$)
+4. [August 2014](http://predictionbook.com/predictions/7920): \$38 (75% off \$150) or 78.95gb/\$
 
 [^flood-effects]: ["Thailand Flooding Cripples Hard-Drive Suppliers"](http://www.nytimes.com/2011/11/07/business/global/07iht-floods07.html), _The New York Times_:
 

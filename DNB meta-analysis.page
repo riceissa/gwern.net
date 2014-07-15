@@ -7,11 +7,16 @@ status: in progress
 belief: highly likely
 ...
 
-> I meta-analyze the >19 studies which measure IQ after an [n-back](DNB FAQ) intervention, confirming that there is a net [gain](#analysis) of medium effect size. I also investigate several n-back claims, criticisms, and indicators of bias, finding:
+> I meta-analyze the >19 studies which measure IQ after an [n-back](DNB FAQ) intervention, find a net [gain](#analysis) over all studies of medium effect size.
 >
-> - [active vs passive control groups](#control-groups) criticism: found, and it accounts for most of the net effect size
-> - [dose-response relationship](#training-time) of n-back training time & IQ gains claim: not found
+> This IQ gain correlates with the methodological concern of whether a study used [active or passive control groups](#control-groups).
+> This indicates n-back training does not increase underlying intelligence, and that the gains are due to the motivational effect of passive control groups (who did not train on anything) not trying as hard as the n-back-trained experimental groups on the post-tests.
+> The remaining studies using active control groups find a small effect (this may be due to matrix-test-specific training, undetected publication bias, smaller motivational effects, etc.)
+>
+> I also investigate several other n-back claims, criticisms, and indicators of bias, finding:
+>
 > - [payment reducing performance](#paymentextrinsic-motivation) claim: possible
+> - [dose-response relationship](#training-time) of n-back training time & IQ gains claim: not found
 > - [kind of n-back](#training-type) matters: not found
 > - [publication bias](#biases) criticism: not found
 > - [speeding of IQ tests](#iq-test-time) criticism: not found

@@ -2235,7 +2235,7 @@ One of the most common geek criticisms of _The Matrix_ is that the supposed valu
 
 > `NEO`: "I've kept quiet for as long as I could, but I feel a certain need to speak up at this point. The human body is the most inefficient source of energy you could possibly imagine. The efficiency of a power plant at converting thermal energy into electricity decreases as you run the turbines at lower temperatures. If you had any sort of food humans could eat, it would be more efficient to burn it in a furnace than feed it to humans. And now you're telling me that their food is *the bodies of the dead, fed to the living?* Haven't you ever heard of the laws of thermodynamics?"
 
-There's a quick way to rescue the Matrixverse from this objection: that was simply a dumbing-down for the general movie audience.
+There's a quick way to rescue the Matrix-verse from this objection: that was simply a dumbing-down for the general movie audience.
 To take an existing SF trope (eg from [Dan Simmons](!Wikipedia)'s [Hyperion Cantos](!Wikipedia)), the real purpose of humans is to reuse their brains as a very energy-efficient (estimates of the FLOPS of a human brain against the known ~watt energy consumption indicate orders of magnitude more efficiency than the best current hardware) highly-parallel supercomputer, which would justify the burden of running a Matrix.
 From the Matrix short story ["Goliath"](http://matrix.wikia.com/wiki/Goliath):
 
@@ -2246,12 +2246,18 @@ But this raises additional questions:
 1. the AIs won the war with the humans in this version too, so why exactly do they need any human computing horsepower?
 
     Perhaps the AIs collectively are superior to humans in only a few domains, but these domains had military advantage and *that* is why they won.
+
     Or more narrowly, perhaps the AIs are collectively superior in general, but there's still a few domains they have not reverse-engineered or improved on human performance and those are what the human brains are good for.
+
     More intriguingly, it's well-known in machine learning & statistics that something like [Condorcet's jury theorem](!Wikipedia) holds for prediction tasks: a collection or [ensemble](!Wikipedia "Ensemble learning") of poor error-prone algorithms can be combined into a much better predictor as long as their errors are not identical, and a new different algorithm can improve the ensemble performance even if it's worse than every other algorithm already in the ensemble.
     So the humans could, individually or collectively, be useful even if humans are always inferior to other AIs!
 2. how do you make use of intact humans brains? With existing machine learning/AI approaches to neural networks, each neural network is trained from scratch for a specific task, it's not part of a whole personality or mind on its own. What do you do with an entire brain with a personality and memories and busy with its own simulated life? If the AIs want the humans for image-recognition tasks (very handy for robots), how do they extract this image recognition data in a useful manner from people that are spending 24h in a computer simulation?
 
-    Insert the tasks into the simulated environment in a naturalistic way, of course. You have an image which might be a bat? Insert it and see if people think "aughhh, a bat!" You need to recognize street numbers? hijack someone walking down a "street", replace the real house number with the unrecognized image, and see what they think. Ditto for facial recognition.
+    The most obvious way is to hire researchers normally: run a shadowy "hedge fund" or "defense agency" and assign real problems from outside the Matrix; many techniques are generalizable, and the circumstances guarantee that no-one will be able to figure out what the R&D is for.
+    This will show up as countries spending ridiculously large amounts of money on their financial sectors despite the minimal economic gain associated with them, and ridiculously large amounts of money on "national defense" (one can perhaps use up as much as a twentieth of GDP without risking verisimilitude: one must keep defense budgets plausible when trying to extract useful work from large industrialized countries with weak neighbors, sea borders, and no realistic threats to their national security, but if all else fails, wars can always be ginned up and subjects' fear centers stimulated en masse).
+    That approach has limits though, as world-class mathematicians etc are intrinsically rare; so how do you get anything useful out of the remaining 99% of the human populace, since you can hardly hire them to labor outside of the Matrix?
+
+    Insert the tasks into the simulated environment in a naturalistic way, of course. You have an image which might be a bat? Insert it and see if people think "a bat!" You need to recognize street numbers? hijack someone walking down a "street", replace the real house number with the unrecognized image, and see what they think. Ditto for facial recognition.
 
     This works because it may be easier to detect a human brain thinking "bat" than it is to recognize a bat; the human may say "bat" (very easy), subvocalize the word "bat" (fairly easy), or think "bat" (not so easy, but near or at the 2014 fMRI state of the art). You could make it even easier by feeding your human brains a test set or library of known-images, figuring out the common brain signature which corresponds to "bat", then one can easily deduce the brain signature on subsequent unknown images, thereby classifying the unknown images - very similar to existing machine vision practices.
 

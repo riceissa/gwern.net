@@ -15,6 +15,7 @@ belief: likely
 > 4. Vitamin D ([at night](#vitamin-d-at-night-hurts)) damages my sleep
 > 5. Vitamin D ([in morning](#vitamin-d-at-morn-helps)) does not affect my sleep
 > 6. potassium ([over the day](#potassium-day-use) but not so much [the morning](#potassium-morning-use)) damages my sleep and does not improve my mood/productivity
+> 7. small quantities of [alcohol](#alcohol) appear to make little difference to my sleep quality
 
 [Quantified Self](!Wikipedia) (QS) is a movement with many faces and as many variations as participants, but the core of everything is this: experiment with things that can improve your life.
 
@@ -1494,6 +1495,81 @@ A much higher-quality experiment with more favorable conditions for potassium sh
 
 In the middle of the five-fold experiment, I paused part of it to run [a more interesting self-experiment using LSD microdosing](LSD microdosing); I included sleep metrics to check for disturbances. It did not seem to affect latency, total sleep, or awakenings, but did improve (_d_=0.42) the "morning feel" non-statistically-significantly (due to the multiple correction). Unfortunately, given that it seemed to negatively affect more important metrics like the self-rating of mood/productivity & creativity, this is not nearly enough to begin to justify further use of LSD microdosing for me.
 
+# Alcohol
+
+In May 2013, I began to wonder if alcohol was damaging my sleep; I don't drink alcohol too often and never more than a glass or two, so I don't have any tolerance built up.
+I noticed that on nights when I drank some red wine or had some of my [mead](Mead), it seemed to take me much longer to fall asleep and I would regularly wake up in the middle of the night.
+So I began noting down days on which I drank any alcohol, to see if it correlated with sleep problems (and probably then just refrain from alcohol in the evening, since I don't care enough to run a randomized experiment).
+
+In May 2014, I ran out of all my mead and also a gallon of burgundy wine I had bought to make beef bourguignon with, so that marked a natural close to the data collection.
+I compiled the alcohol data along with the Zeo data in the relevant time period, and looked at the key metrics with a multivariate multiple regression.
+The main complexity here is that I earlier discovered that I had gradually shifted my sleep down and now `Start.of.Night` looks like a sigmoid, so to control for that, I fit a sigmoid to the `Date` using nonlinear least squares, and then plugged the estimated values in.
+The code, showing only the results for the `Alcohol` boolean:
+
+~~~{.R}
+drink <- read.csv("http://www.gwern.net/docs/zeo/2014-gwern-alcohol.csv")
+library(minpack.lm)
+summary(nlsLM(Start.of.Night ~ Alcohol + as.integer(Date) + (a / (1 + exp(-b * (as.integer(Date) - c)))),
+              start = list(a = 6.15e+05, b = -1.18e-04, c = -5.15e+04),
+              control=(nls.lm.control(ftol = sqrt(.Machine$double.eps)/4.9, maxfev=1024, maxiter=1024)),
+              data=drink))
+#
+# Parameters:
+#    Estimate Std. Error t value Pr(>|t|)
+# a  5.61e+06   6.49e+09    0.00     1.00
+# b -1.00e-03   2.44e-04   -4.10  4.8e-05
+# c -8.26e+03   1.16e+06   -0.01     0.99
+summary(lm(cbind(Start.of.Night, Time.to.Z, Time.in.Wake, Awakenings, Morning.Feel, Total.Z, Time.in.REM, Time.in.Deep) ~
+                  Alcohol +
+                  as.integer(Date) + I(5.61e+06 / (1 + exp(-(1.00e-03) * (as.integer(Date) - (-8.26e+03))))),
+                 data=drink))
+# Response Start.of.Night :
+# Coefficients:
+#                                                                Estimate Std. Error t value Pr(>|t|)
+# AlcoholTRUE                                                   -8.96e-01   4.75e+00   -0.19     0.85
+#
+# Response Time.to.Z :
+# Coefficients:
+#                                                                Estimate Std. Error t value Pr(>|t|)
+# AlcoholTRUE                                                   -2.50e+00   1.41e+00   -1.77    0.077
+#
+# Response Time.in.Wake :
+# Coefficients:
+#                                                                Estimate Std. Error t value Pr(>|t|)
+# AlcoholTRUE                                                   -2.04e+00   2.40e+00   -0.85   0.3956
+#
+# Response Awakenings :
+# Coefficients:
+#                                                                Estimate Std. Error t value Pr(>|t|)
+# AlcoholTRUE                                                   -2.03e-01   2.85e-01   -0.71     0.48
+#
+# Response Morning.Feel :
+# Coefficients:
+#                                                                Estimate Std. Error t value Pr(>|t|)
+# AlcoholTRUE                                                   -5.03e-02   9.16e-02   -0.55   0.5836
+#
+# Response Total.Z :
+# Coefficients:
+#                                                                Estimate Std. Error t value Pr(>|t|)
+# AlcoholTRUE                                                    1.04e+01   7.89e+00    1.32     0.19
+#
+# Response Time.in.REM :
+# Coefficients:
+#                                                                Estimate Std. Error t value Pr(>|t|)
+# (Intercept)                                                    7.59e+05   9.83e+05    0.77     0.44
+# AlcoholTRUE                                                    1.84e+00   3.58e+00    0.51     0.61
+#
+# Response Time.in.Deep :
+# Coefficients:
+#                                                                Estimate Std. Error t value Pr(>|t|)
+# AlcoholTRUE                                                    1.14e+00   1.41e+00    0.80     0.42
+~~~
+
+Zilch. No correlation is at all interesting.
+
+So it looks like alcohol - at least in the small quantities I consume - makes no difference.
+
+
 # In progress
 
 Someone suggested that instead of running experiments serially, with limited sample sizes (because I am impatient to try the next interesting suggestion), I could instead take a step up in statistical sophistication and use a *[factorial experiment](!Wikipedia)* design: use multiple experimental interventions simultaneously for a much larger sample size, and then run [ANOVA](!Wikipedia) analyses rather than simpler two-sample t-tests. No less than [R.A. Fisher](!Wikipedia) praises multifactorial experiments as being more efficient: squeezing more data out of a given sample. Hence, I thought a crazy thought: my lithium experiment was going to run for ~360 days, and so I kept putting it off. But what if I ran multiple experiments for 360 days? If I had 4 or 5, then by the end of the year, I would have 5 results to show, and I would have the statistical equivalent of *more* than _n_=72  ($\frac{360}{5}$) for each experiment. Win-win.
@@ -1921,6 +1997,28 @@ power.t.test(d=0.3482, power=0.80, type="paired", alternative="one.sided")
 Using _d_=0.35 as an effect size estimate, a proper blind experiment (blocking pairs of days) will take 100 days total (50 placebo pills, 50 caffeine pills).
 I began 29 June 2014.
 (I made the placebo pills the usual way with Bisquick, tossed together with the caffeine pills to equalize any coating; I made 120, more than I needed, because it's always annoying to set up & make pills, and it only took 40 minutes from start to cleanup.)
+
+<!-- caffeine experiment data:
+June
+29: 0
+30: 1
+July
+01: 0
+02: 1
+03: 1
+04: 0
+05: 1
+06: 0
+07: 0
+08: 1
+09: 0
+10: 1
+11: 0
+12: 0
+13: 1
+14: 1
+15: 0
+-->
 
 <!-- R conversion routine for merging old and new Zeo Data:
 # need to delete redundant entries
@@ -2788,9 +2886,19 @@ July
 03: 0 1
 04: 0 0
 05: 0 1
-06: 1 1?
+06: 1 1
+07: 0 0
+08: 1 0
+09: 1 1
+10: 0 0
+11: 0 1
+12: 1 1
+13: 0 0
+14: 1 1
+15: 1 0
+16: 1 1?
 -->
-<!-- Alcohol log: 14, 15, 23, 28, 29, 31 Jan 2014; 2, 4, 6, 9, 12, 14, 16, 18, 20, 22, 24, 26 February; 2, 4, 8, 10, 12, 14, 16, 18, 22, 23, 25, 28, 30, 31 March; 2, 4, 6, 7, 9, 10, 15, 16, 19, 26, 27 April; 2, 3, 5, 10, 11, 14, 16, 17, 20, 21, 25, 27 May; 7, 9, 10, 12, 15, 17, 22 June -->
+<!-- Alcohol log:  -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: ??? -->
 

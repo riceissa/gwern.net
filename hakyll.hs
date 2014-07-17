@@ -41,6 +41,7 @@ main = hakyll $ do
                                      "haskell/**.hs",
                                      "images/**",
                                      "**.hs",
+                                     "**.sh",
                                      "static/*",
                                      "static/img/**",
                                      "static/js/**"]

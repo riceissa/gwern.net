@@ -1894,7 +1894,7 @@ I asked if there were a JavaScript version I could use in an A/B test; the initi
 BLR has several themes, including "gray"; I decided to test the variants no BLR, "dark", "blues", & expanded the gray selection to include grays `#222222`/`#333333`/`#444444`/`#555555`/`#666666`/`#777777` (`gray`-`6`; they vary in how blatant the highlighting is) for a total of 9 equally-randomized variants.
 
 Since I'm particularly interested in these results, and I think many other people will find the results interesting, I will run this test extra-long: a minimum of 2 months.
-I'm only interested in the *best* variant, not estimating each variant exactly (what do I care if the ugly `dark` is 15% rather than 14%? I just want to know it's worse than the control) so conceptually I want something like a [sequential analysis](!Wikipedia) or [adaptive clinical trial](!wikipedia) or [multi-armed bandit](!Wikipedia) where bad variants get dropped over time; unfortunately, I haven't studied them yet (and MABs would be hard to implement on a static site), so I'll just ad hoc drop the worst variant every week or two.
+I'm only interested in the *best* variant, not estimating each variant exactly (what do I care if the ugly `dark` is 15% rather than 14%? I just want to know it's worse than the control) so conceptually I want something like a [sequential analysis](!Wikipedia) or [adaptive clinical trial](!Wikipedia) or [multi-armed bandit](!Wikipedia) where bad variants get dropped over time; unfortunately, I haven't studied them yet (and MABs would be hard to implement on a static site), so I'll just ad hoc drop the worst variant every week or two.
 (Maybe next experiment I'll do a formal adaptive trial.)
 
 ### Setup

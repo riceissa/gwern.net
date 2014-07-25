@@ -2,7 +2,7 @@
 title: Causal Nets Cause Common Confounding
 description: Correlations are oft interpreted as evidence for causation; this is oft falsified; do causal graphs explain why this is so common?
 tags: statistics, philosophy
-date: 24 Jun 2014
+created: 24 Jun 2014
 ...
 
 > It is widely understood that statistical correlation between two variables ≠ causation.
@@ -20,7 +20,7 @@ One of the constant problems I face in my reading is that I constantly want to k
 But how much evidence...?
 If I suspect that A→B, and I collect data and establish beyond doubt that A&B correlates _r_=0.7, how much evidence do I have that A→B?
 
-Now, the correlation *could* be an illusory correlation thrown up by all the standard statistical problems we all know about, such as too-small _n_, false positive from sampling error (A & B just happened to sync together due to randomness), multiple testing, _p_-hacking, data snooping, selection bias, publication bias, misconduct, inappropriate statistical tests, etc.
+Now, the correlation *could* be an illusory correlation thrown up by the standard statistical problems we all know about, such as too-small _n_, false positive from sampling error (A & B just happened to sync together due to randomness), multiple testing, _p_-hacking, data snooping, selection bias, publication bias, misconduct, inappropriate statistical tests, etc.
 I've read about [those problems at length](http://www.gwern.net/DNB%20FAQ#flaws-in-mainstream-science-and-psychology), and despite knowing about all that, there still seems to be a problem: I don't think those issues explain away all the correlations which turn out to be confounds - correlation *too often* ≠ causation.
 
 To measure this directly you need a clear set of correlations which are proposed to be causal, randomized experiments to establish what the true causal relationship is in each case, and both categories need to be sharply delineated in advance to avoid issues of cherrypicking and retroactively confirming a correlation.

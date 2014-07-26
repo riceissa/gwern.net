@@ -114,9 +114,18 @@ postCtx tags =
 pandocTransform :: Pandoc -> Pandoc
 pandocTransform = bottomUp (map (convertInterwikiLinks . convertHakyllLinks . addAmazonAffiliate))
 
+-- For Amazon links, there are two scenarios: there are parameters (denoted by a
+-- '?' in the URL, or there are not. In the former, we need to append the tag as
+-- another item ('&tag='), while in the latter, we need to set up our own
+-- parameter ('?tag='). The transform may be run many times since
+-- they are supposed to be pure, so we
+-- need to also check a tag hasn't already been appended.
+--
+-- For non-Amazon links, we just return them unchanged.
 addAmazonAffiliate :: Inline -> Inline
-addAmazonAffiliate (Link r (l, t)) | "?search" `isInfixOf` l                                 = Link r (l++"&tag=gwernnet-20", t)
-                                   | "amazon.com/" `isInfixOf` l && not ("?tag=" `isInfixOf` l) = Link r (l++"?tag=gwernnet-20", t)
+addAmazonAffiliate x@(Link r (l, t)) = if (("amazon.com/" `isInfixOf` l) && not ("tag=gwernnet-20" `isInfixOf` l)) then
+                                        if ("?" `isInfixOf` l) then Link r (l++"&tag=gwernnet-20", t) else Link r (l++"?tag=gwernnet-20", t)
+                                       else x
 addAmazonAffiliate x = x
 
 -- GITIT -> HAKYLL LINKS PLUGIN

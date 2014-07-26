@@ -115,8 +115,8 @@ titleOrIsbnToLink ttle i10 i13 = let url = case i of
 
 isbnDB, urlDB :: M.Map String String
 isbnDB = M.fromList [
-     ("A Study of History, Vol 1: Introduction; The Geneses of Civilizations (A Study of History, #1)", "978-0195050806"),
-     ("Economic Analysis of the Law: Selected Readings", "978-0631231585 "),
+     ("A Study of History, Vol 1: Introduction; The Geneses of Civilizations (A Study of History, #1)", "9780195050806"),
+     ("Economic Analysis of the Law: Selected Readings", "9780631231585 "),
      ("Ender In Exile", "0765344157"),
      ("Ex-Prodigy: My Childhood and Youth", "0262730081"),
      ("Freakonomics", "0061234001"),
@@ -128,7 +128,8 @@ isbnDB = M.fromList [
      ("Reason & Persuasion: Three Dialogues By Plato", "981068276X"),
      ("Red Mars (Mars Trilogy, #1)", "0553560735"),
      ("The Many-Coloured Land (Saga of Pliocene Exile, #1)", "1433224097"),
-     ("Why I Am Not a Christian: Four Conclusive Reasons to Reject the Faith ", "1456588850")
+     ("Why I Am Not a Christian: Four Conclusive Reasons to Reject the Faith ", "1456588850"),
+     ("Monstrous Regiment (Discworld, #31)", "0385603401")
      ]
 urlDB = M.fromList [
      ("A Study in Emerald", "http://www.neilgaiman.com/mediafiles/exclusive/shortstories/emerald.pdf"),
@@ -183,5 +184,7 @@ urlDB = M.fromList [
      ("Utopia", "https://en.wikipedia.org/wiki/Utopia_%28book%29"),
      ("Waiting for Godot", "https://en.wikipedia.org/wiki/Waiting_for_Godot"),
      ("Wired Love: A Romance of Dots and Dashes", "https://encrypted.google.com/books?id=BjAOAAAAYAAJ"),
-     ("The Story of Life Insurance", "http://en.wikisource.org/wiki/The_Story_of_Life_Insurance")
+     ("The Story of Life Insurance", "http://en.wikisource.org/wiki/The_Story_of_Life_Insurance"),
+     ("Pioneers of Soviet Computing", "http://www.sigcis.org/files/malinovsky2010.pdf"),
+     ("Orphan of the Helix", "http://en.wikipedia.org/wiki/Orphans_of_the_Helix")
      ]

@@ -1790,7 +1790,6 @@ which(combinedFactorSums == max(combinedFactorSums))
 ## 11:02PM
 ~~~
 
-
 Maybe using factors wasn't a good idea? We can try a multivariate regression on the variables directly:
 
 ~~~{.R}
@@ -2018,6 +2017,194 @@ which(fitted(cubic) == max(fitted(cubic))) / 60
 #  516   631   762
 # 8.60 10.52 12.70
 ~~~
+
+# Magnesium citrate
+
+> Re-analyzing data from a magnesium self-experiment, I find both positive and negative effects of the magnesium on my sleep. It's not clear what the net effect is.
+
+I became [interested in magnesium](Nootropics#magnesium) after noting a possible effect on my productivity from TruBrain (which among other things included a magnesium tablet), and then a clear correlation from some magnesium l-threonate.
+I'd also long heard of magnesium helping sleep, and was curious about that too.
+So I began a large (~207 days) RCT trying out 136mg then 800mg of elemental magnesium per day in late 2013 - early 2014.
+(This was not a large enough experiment to definitively answer questions about both productivity and sleep, but since I have all the data on hand, I thought I'd look.)
+
+[The results](Nootropics#citrate) of the main were surprising: it seemed that the magnesium caused an initial large boost to my productivity, *but* the boost began to fade and after 20 days or so, the effect became negative, and the period with the larger dose had a worse effect, suggesting a cumulative overdose.
+
+With the differing effect of the doses in mind, I looked at the effect on my sleep data.
+
+## Analysis
+
+Prep:
+
+~~~{.R}
+magnesium <- read.csv("http://www.gwern.net/docs/nootropics/2013-2014-magnesium.csv")
+magnesium$Date <- as.Date(magnesium$Date)
+
+zeo <- read.csv("http://www.gwern.net/docs/zeo/gwern-zeodata.csv")
+zeo$Sleep.Date <- as.Date(zeo$Sleep.Date, format="%m/%d/%Y")
+zeo$Date <- zeo$Sleep.Date
+zeo$Sleep.Date <- NULL
+# create a equally-weighted index of bad sleep: a z-score of the 3 bad things
+zeo$Disturbance <- scale(zeo$Time.to.Z) + scale(zeo$Awakenings) + scale(zeo$Time.in.Wake)
+
+magnesiumSleep <- merge(zeo, magnesium)
+write.csv(magnesiumSleep, file="2014-07-27-magnesium-sleep.csv", row.names=FALSE)
+~~~
+
+(I then hand-edited the CSV to delete unused columns.)
+
+Graphing Disturbance:
+
+![Sleep disturbance over time, colored by magnesium dose, with LOESS-smoothed trend-lines](/images/zeo/2014-07-27-magnesium-disturbance.png)
+
+~~~{.R}
+magnesiumSleep <- read.csv("http://www.gwern.net/docs/zeo/2014-07-27-magnesium-sleep.csv")
+magnesiumSleep$Date <- as.Date(magnesiumSleep$Date)
+## historical baseline:
+magnesiumSleep[is.na(magnesiumSleep$Magnesium.citrate),]$Magnesium.citrate <- -1
+library(ggplot2)
+ggplot(data = magnesiumSleep, aes(x=Date, y=Disturbance, col=as.factor(magnesiumSleep$Magnesium.citrate))) +
+ ylab("Disturbance z-score (lower=better)") +
+ geom_point(size=I(4)) +
+ stat_smooth() +
+ scale_colour_manual(values=c("gray49", "grey35", "red1", "red2" ),
+                     name = "Magnesium")
+~~~
+
+Analysis (first disturbances, then all variables):
+
+~~~{.R}
+magnesiumSleep <- read.csv("http://www.gwern.net/docs/zeo/2014-07-27-magnesium-sleep.csv")
+l0 <- lm(Disturbance ~ as.factor(Magnesium.citrate), data=magnesiumSleep)
+summary(l0)
+# ...Coefficients:
+#                                   Estimate Std. Error  t value  Pr(>|t|)
+# (Intercept)                     -0.5020571  0.1862795 -2.69518 0.0076218
+# as.factor(Magnesium.citrate)136 -0.0566556  0.3101388 -0.18268 0.8552318
+# as.factor(Magnesium.citrate)800 -0.5394708  0.3259212 -1.65522 0.0994178
+~~~
+
+So it seems that magnesium citrate may decrease sleep problems.
+
+~~~{.R}
+l1 <- lm(cbind(ZQ, Total.Z, Time.to.Z, Time.in.Wake, Time.in.REM, Time.in.Light,
+               Time.in.Deep, Awakenings, Morning.Feel)
+               ~ as.factor(Magnesium.citrate),
+         data=magnesiumSleep)
+summary(l1)
+# Response ZQ : ...Coefficients:
+#                                 Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)                     95.85149    1.29336 74.11065  < 2e-16
+# as.factor(Magnesium.citrate)136 -3.27254    2.15332 -1.51976  0.13012
+# as.factor(Magnesium.citrate)800  1.49545    2.26290  0.66086  0.50945
+#
+# Response Total.Z : ...Coefficients:
+#                                  Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)                     536.35644    6.59166 81.36898  < 2e-16
+# as.factor(Magnesium.citrate)136 -27.37398   10.97453 -2.49432 0.013414
+# as.factor(Magnesium.citrate)800  15.86805   11.53300  1.37588 0.170367
+#
+# Response Time.to.Z : ...Coefficients:
+#                                 Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)                     12.59406    1.24108 10.14766  < 2e-16
+# as.factor(Magnesium.citrate)136  4.26559    2.06629  2.06437 0.040247
+# as.factor(Magnesium.citrate)800 -2.43079    2.17144 -1.11944 0.264269
+#
+# Response Time.in.Wake : ...Coefficients:
+#                                 Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)                     24.09901    1.87720 12.83776  < 2e-16
+# as.factor(Magnesium.citrate)136 -3.66041    3.12537 -1.17119  0.24289
+# as.factor(Magnesium.citrate)800 -4.16023    3.28441 -1.26666  0.20672
+#
+# Response Time.in.REM : ...Coefficients:
+#                                  Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)                     171.45545    2.99387 57.26889  < 2e-16
+# as.factor(Magnesium.citrate)136  -6.45545    4.98452 -1.29510  0.19675
+# as.factor(Magnesium.citrate)800   2.27925    5.23818  0.43512  0.66393
+#
+# Response Time.in.Light : ...Coefficients:
+#                                  Estimate Std. Error  t value   Pr(>|t|)
+# (Intercept)                     304.54455    4.08746 74.50709 < 2.22e-16
+# as.factor(Magnesium.citrate)136 -23.33403    6.80525 -3.42883 0.00073338
+# as.factor(Magnesium.citrate)800  20.51667    7.15156  2.86884 0.00455323
+#
+# Response Time.in.Deep : ...Coefficients:
+#                                 Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)                     60.88119    1.20888 50.36152  < 2e-16
+# as.factor(Magnesium.citrate)136  2.48723    2.01268  1.23578  0.21796
+# as.factor(Magnesium.citrate)800 -6.81996    2.11510 -3.22441  0.00147
+#
+# Response Awakenings : ...Coefficients:
+#                                  Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)                      6.039604   0.238675 25.30475  < 2e-16
+# as.factor(Magnesium.citrate)136 -0.548376   0.397372 -1.38001  0.16910
+# as.factor(Magnesium.citrate)800 -0.427359   0.417594 -1.02338  0.30734
+#
+# Response Morning.Feel : ...Coefficients:
+#                                   Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)                      2.7227723  0.0762575 35.70497  < 2e-16
+# as.factor(Magnesium.citrate)136  0.1193330  0.1269620  0.93991  0.34837
+# as.factor(Magnesium.citrate)800 -0.1513437  0.1334229 -1.13432  0.25799
+l2 <- lm(cbind(ZQ, Total.Z, Time.to.Z, Time.in.Wake, Time.in.REM, Time.in.Light,
+               Time.in.Deep, Awakenings, Morning.Feel) ~ Magnesium.citrate,
+         data=magnesiumSleep)
+summary(manova(l1))
+#                              Df    Pillai approx F num Df den Df     Pr(>F)
+# as.factor(Magnesium.citrate)  2 0.3265357 4.271083     18    394 2.3902e-08
+# Residuals                    204
+summary(manova(l2))
+#                              Df    Pillai approx F num Df den Df     Pr(>F)
+# Magnesium.citrate            1 0.1815233  4.85456      9    197  7.1454e-06
+# Residuals         205
+which(p.adjust(c(0.3483,0.2579,0.1752,0.1301,0.5094,0.3344,0.0134,0.1703,0.0632,0.1967,
+                 0.6639,0.4895,0.0007,0.0045,0.0005,0.2179,0.0014,0.0004,0.0402,0.2642,
+                 0.1262,0.2428,0.2067,0.2673,0.1691,0.3073,0.4144),
+               method="BH")
+      < 0.05)
+# [1] 13 14 15 17 18
+~~~
+
+A table summarizing the results by dose ('all' is the net effect from the non-factor version):
+
+Variable        Dose (mg)  Coef     _p_    Effect
+--------------- --------- --------  ------ -------
+`Morning.Feel`  136        0.11933  0.3483 better
+`Morning.Feel`  800       -0.15134  0.2579 worse
+`Morning.Feel`  all       -0.00022  0.1752 worse
+`ZQ`            136       -3.27254  0.1301 worse
+`ZQ`            800        1.49545  0.5094 better
+`ZQ`            all        0.00270  0.3344 better
+`Total.Z`       136       -27.3739  0.0134 worse
+`Total.Z`       800        15.8680  0.1703 better
+`Total.Z`       all        0.02698  0.0632 better
+`Time.in.REM`   136       -6.45545  0.1967 worse
+`Time.in.REM`   800        2.27925  0.6639 better
+`Time.in.REM`   all        0.00447  0.4895 better
+`Time.in.Light` 136       -23.3340  0.0007 worse
+`Time.in.Light` 800        20.5166  0.0045 better
+`Time.in.Light` all        0.03202  0.0005 better
+`Time.in.Deep`  136        2.48723  0.2179 better
+`Time.in.Deep`  800       -6.81996  0.0014 worse
+`Time.in.Deep`  all       -0.00939  0.0004 worse
+`Time.to.Z`     136        4.26559  0.0402 worse
+`Time.to.Z`     800       -2.43079  0.2642 better
+`Time.to.Z`     all       -0.00415  0.1262 better
+`Time.in.Wake`  136       -3.66041  0.2428 better
+`Time.in.Wake`  800       -4.16023  0.2067 better
+`Time.in.Wake`  all       -0.00449  0.2673 better
+`Awakenings`    136       -0.54837  0.1691 better
+`Awakenings`    800       -0.42735  0.3073 better
+`Awakenings`    all       -0.00042  0.4144 better
+
+For the low dose, 4/9 were better; for the high dose, 7/9 were better.
+Adjusting for multiple-comparison at _p_<0.05: the surviving effects are:
+
+Variable        Dose (mg)  Coef     _p_    Effect
+--------------- --------- --------  ------ -------
+`Time.in.Light` 136       -23.3340  0.0007 worse
+`Time.in.Light` 800        20.5166  0.0045 better
+`Time.in.Light` all        0.03202  0.0005 better
+`Time.in.Deep`  800       -6.81996  0.0014 worse
+`Time.in.Deep`  all       -0.00939  0.0004 worse
 
 # In progress
 
@@ -3363,9 +3550,11 @@ July
 22: 1 1
 23: 1 1
 24: 1 0
-25: 1 1?
+25: 0 0
+26: 1 1
+27: 1 0?
 -->
-<!-- Alcohol log: 18, 22, 23, 24 July 2014 -->
+<!-- Alcohol log: 18, 22, 23, 24, 26 July 2014 -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: ??? -->
 

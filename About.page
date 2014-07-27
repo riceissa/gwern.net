@@ -165,6 +165,27 @@ Besides that, I think after a while writing/research can be a virtuous circle or
     1. an anonymous message led me to [investigate a vendor in depth and ponder the accusation leveled against them](Silk Road#a-mole); I wrote it up and gave my opinions and thus I got another short essay to add to my SR page which I would not have had otherwise (and I think there's a [<20% chance](http://predictionbook.com/predictions/16142) that in a few years this will pay off and become a very interesting essay).
     2. CMU's Nicholas Christin, who [wrote a paper](http://arxiv.org/abs/1207.7139 "Traveling the Silk Road: A measurement analysis of a large anonymous online marketplace") by scraping SR for many months and giving all sorts of overall statistics, emailed me to point out I was citing inaccurate figures from the first version of his paper. I thanked him for the correction and while I was replying, mentioned I had a hard time believing his paper's claims about the extreme rarity of scams on SR as estimated through buyer feedback. After some back and forth and suggesting specific mechanisms how the estimates could be positively biased, he was able to check his database and confirmed that there was at least one very large omission of scams in the scraped data and there was probably a general undersampling; so now I have a more accurate feedback estimate for my SR page (important for estimating risk of ordering) and he said he'll acknowledge me in the/a paper, which is nice.
 
+## Information organizing
+
+Occasionally people ask how I manage information and read things.
+
+1. For quotes or facts which are very important, I employ [spaced repetition](Spaced repetition) by adding them to my Mnemosyne
+2. I keep web clippings in an Evernote public notebook; I also excerpt from research papers & books, and miscellaneous sources. This is useful for targeted searches when I remember a fact but not where I learned it, and for storing things which I don't want to memorize but which have no logical home in my website or LW or elsewhere. I don't make any use of more complex Evernote features.
+
+    I periodically back up my Evernote using the [Linux client Nixnote's](http://nevernote.sourceforge.net/) export feature. (I made sure there was a working export method before I began using Evernote, and use it only as long as Nixnote continues to work.)
+3. Web pages are archived & backed up by [my custom archiving setup](Archiving URLs). This is intended mostly for fixing dead links (eg to recover the fulltext of the original URL of an Evernote clipping).
+4. I don't have any special book reading techniques. For really good books I excerpt from each chapter and stick the quotes into Evernote.
+5. I store insights and thoughts in various pages on `gwern.net` as parenthetical comments, footnotes, and appendices. If they don't fit anywhere, I dump them in [Note]()
+6. Larger masses of citations and quotes typically get turned into `gwern.net` pages.
+7. I make heavy use of RSS subscriptions for news. For that, I am currently using [Liferea](!Wikipedia). (Not that I'm hugely thrilled about it. Google Reader was much better.)
+8.  For projects and followups, I use lots and lots of reminders in Google Calendar.
+9. For recording personal data, I automate as much as possible (eg. Zeo and [arbtt](http://arbtt.nomeata.de/)) and I make a habit of the rest - getting up in the morning is a great time to build a habit of recording data because it's a time of habits like eating breakfast and getting dressed.
+
+Hence, to refind information, I use a combination of Google, Evernote, `grep` (on the `gwern.net` files), occasionally Mnemosyne, and an excellent visual memory.
+
+As far as writing goes, I do not use fancy note-taking software or things like [FreeMind](!Wikipedia).
+Instead, I  occasionally compile outlines of articles from comments on LW/Reddit/IRC, keep editing them with stuff as I remember them, search for relevant parts, allow little thoughts to bubble up while meditating, and pay attention to when I am irritated at people being wrong or annoyed that a particular topic hasn't been written down yet.
+
 ## Belief tags
 
 Most of the metadata in each page is self-explanatory: the date is the last time the file was modified, the tags are categorization, etc. The "status" tag describes the state of completion: whether it's a pile of links & snippets & "notes", or whether it is a "draft" which at least has some structure and conveys a coherent thesis, or it's a well-developed draft which could be described as "in progress", and finally when a page is done - in lieu of additional material turning up - it is simply "finished".

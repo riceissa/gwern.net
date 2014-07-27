@@ -16,6 +16,7 @@ belief: likely
 > 5. Vitamin D ([in morning](#vitamin-d-at-morn-helps)) does not affect my sleep
 > 6. potassium ([over the day](#potassium-day-use) but not so much [the morning](#potassium-morning-use)) damages my sleep and does not improve my mood/productivity
 > 7. small quantities of [alcohol](#alcohol) appear to make little difference to my sleep quality
+> 8. I may be better off [changing my sleep timing](#timing) by waking up somewhat earlier & going to bed somewhat earlier
 
 [Quantified Self](!Wikipedia) (QS) is a movement with many faces and as many variations as participants, but the core of everything is this: experiment with things that can improve your life.
 
@@ -1569,7 +1570,372 @@ Zilch. No correlation is at all interesting.
 
 So it looks like alcohol - at least in the small quantities I consume - makes no difference.
 
-# Rise time
+# Timing
+## Bed time for better sleep
+
+Someone asked if I could turn up a better bedtime using their Zeo data.
+I accepted, but the sleep data comes with quite a few variables and it's not clear which variable is the 'best' - for example, I don't think much of the ZQ variable, so it's not as simple as regressing `ZQ ~ Bedtime` and finding what value of Bedtime maximizes ZQ.
+I decided that I could try finding the optimal bedtime by two strategies:
+
+1. look for some underlying factor of good sleep using [factor analysis](!Wikipedia) - I'd expect maybe 2 or 3 factors, one for total sleep, one for insomnia, and maybe one for REM sleep - and maximize the good ones and minimize the bad ones, equally weighted
+2. just do a multivariate regression and weight each variable equally
+
+So, setup:
+
+~~~{.R}
+zeo <- read.csv("http://www.gwern.net/docs/zeo/gwern-zeodata.csv")
+zeo$Sleep.Date <- as.Date(zeo$Sleep.Date, format="%m/%d/%Y")
+## convert "05/12/2014 06:45" to "06:45"
+zeo$Start.of.Night <- sapply(strsplit(as.character(zeo$Start.of.Night), " "), function(x) { x[2] })
+## convert "06:45" to 24300
+interval <- function(x) { if (!is.na(x)) { if (grepl(" s",x)) as.integer(sub(" s","",x))
+                                           else { y <- unlist(strsplit(x, ":")); as.integer(y[[1]])*60 + as.integer(y[[2]]); }
+                                         }
+                          else NA
+                        }
+zeo$Start.of.Night <- sapply(zeo$Start.of.Night, interval)
+## correct for the switch to new unencrypted firmware in March 2013;
+## I don't know why the new firmware subtracts 15 hours
+zeo[(zeo$Sleep.Date >= as.Date("2013-03-11")),]$Start.of.Night
+ <- (zeo[(zeo$Sleep.Date >= as.Date("2013-03-11")),]$Start.of.Night + 900) %% (24*60)
+
+## after midnight (24*60=1440), Start.of.Night wraps around to 0, which obscures any trends,
+## so we'll map anything before 7AM to time+1440
+zeo[zeo$Start.of.Night<420 & !is.na(zeo$Start.of.Night),]$Start.of.Night
+ <- (zeo[zeo$Start.of.Night<420 & !is.na(zeo$Start.of.Night),]$Start.of.Night + (24*60))
+
+## keep only the variables we're interested in:
+zeo <- zeo[,c(2:10, 23)]
+## define naps or nights with bad data as total sleep time under ~1.5 hours (100m) & delete
+zeo <- zeo[zeo$Total.Z>100,]
+write.csv(zeo, file="bedtime-factoranalysis.csv", row.names=FALSE)
+~~~
+
+
+Let's begin with asimple factor analysis, looking for a 'good sleep' factor.
+Zeo Inc apparently was trying for this with the `ZQ` variable but I've always been suspicious of it because it doesn't seem to track `Morning.Feel` or `Awakenings` very well but simply be how long you slept (`Total.Z`):
+
+~~~{.R}
+zeo <- read.csv("http://www.gwern.net/docs/zeo/2014-07-26-bedtime-factoranalysis.csv")
+library(psych)
+nfactors(zeo)
+# VSS complexity 1 achieves a maximimum of 0.8  with  6  factors
+# VSS complexity 2 achieves a maximimum of 0.94  with  6  factors
+# The Velicer MAP achieves a minimum of 0.09  with  1  factors
+# Empirical BIC achieves a minimum of  466.5  with  5  factors
+# Sample Size adjusted BIC achieves a minimum of  39396  with  5  factors
+#
+# Statistics by number of factors
+#    vss1 vss2   map dof chisq prob sqresid  fit RMSEA   BIC SABIC complex  eChisq    eRMS eCRMS eBIC
+# 1  0.71 0.00 0.090  35 41394    0  6.4648 0.71  0.99 41145 41256     1.0 1.8e+03 0.12926  0.15 1577
+# 2  0.77 0.85 0.099  26 40264    0  3.3366 0.85  1.13 40079 40162     1.2 9.4e+02 0.09275  0.12  755
+# 3  0.78 0.89 0.139  18 40323    0  2.1333 0.91  1.36 40195 40253     1.4 9.0e+02 0.09075  0.14  772
+# 4  0.75 0.89 0.216  11 39886    0  1.3401 0.94  1.73 39808 39843     1.5 8.0e+02 0.08560  0.17  722
+# 5  0.78 0.89 0.280   5 39415    0  0.7267 0.97  2.56 39380 39396     1.4 5.0e+02 0.06779  0.20  467
+# 6  0.80 0.94 0.450   0 38640   NA  0.3194 0.99    NA    NA    NA     1.2 2.2e+02 0.04479    NA   NA
+# 7  0.80 0.92 0.807  -4 37435   NA  0.1418 0.99    NA    NA    NA     1.2 1.0e+02 0.03075    NA   NA
+# 8  0.78 0.91 4.640  -7 30474   NA  0.0002 1.00    NA    NA    NA     1.3 2.5e-02 0.00048    NA   NA
+# 9  0.78 0.91   NaN  -9 30457   NA  0.0002 1.00    NA    NA    NA     1.3 2.5e-02 0.00048    NA   NA
+# 10 0.78 0.91    NA -10 30440   NA  0.0002 1.00    NA    NA    NA     1.3 2.5e-02 0.00048    NA   NA
+
+## BIC says 5 factors, so we'll go with that:
+factorization <- fa(zeo, nfactors=5); factorization
+# Standardized loadings (pattern matrix) based upon correlation matrix
+#                  MR1   MR2   MR5   MR4   MR3   h2    u2 com
+# ZQ              0.87 -0.14 -0.01  0.25 -0.04 0.99 0.013 1.2
+# Total.Z         0.96  0.04 -0.01  0.07 -0.04 0.99 0.011 1.0
+# Time.to.Z       0.05 -0.03  0.92  0.03  0.10 0.84 0.159 1.0
+# Time.in.Wake   -0.18  0.90 -0.02  0.04 -0.15 0.83 0.168 1.1
+# Time.in.REM     0.87  0.05  0.03  0.05  0.09 0.78 0.215 1.0
+# Time.in.Light   0.94  0.02 -0.04 -0.20 -0.14 0.84 0.158 1.1
+# Time.in.Deep    0.02  0.03  0.01  0.99 -0.02 0.98 0.023 1.0
+# Awakenings      0.35  0.75  0.08 -0.03  0.26 0.79 0.209 1.7
+# Start.of.Night -0.21  0.00  0.10 -0.05  0.86 0.84 0.162 1.2
+# Morning.Feel    0.22 -0.13 -0.55  0.11  0.46 0.66 0.343 2.5
+#
+#                        MR1  MR2  MR5  MR4  MR3
+# SS loadings           3.65 1.44 1.21 1.16 1.08
+# Proportion Var        0.37 0.14 0.12 0.12 0.11
+# Cumulative Var        0.37 0.51 0.63 0.75 0.85
+# Proportion Explained  0.43 0.17 0.14 0.14 0.13
+# Cumulative Proportion 0.43 0.60 0.74 0.87 1.00
+#
+#  With factor correlations of
+#       MR1   MR2   MR5   MR4   MR3
+# MR1  1.00  0.03 -0.18  0.34 -0.03
+# MR2  0.03  1.00  0.27 -0.09  0.00
+# MR5 -0.18  0.27  1.00 -0.09  0.09
+# MR4  0.34 -0.09 -0.09  1.00  0.03
+# MR3 -0.03  0.00  0.09  0.03  1.00
+#
+# Mean item complexity =  1.3
+# Test of the hypothesis that 5 factors are sufficient.
+#
+# The degrees of freedom for the null model are  45  and the objective function was  40.02 with Chi Square of  48376
+# The degrees of freedom for the model are 5  and the objective function was  32.69
+#
+# The root mean square of the residuals (RMSR) is  0.07
+# The df corrected root mean square of the residuals is  0.2
+#
+# The harmonic number of observations is  1152 with the empirical chi square  473.1  with prob <  5.1e-100
+# The total number of observations was  1214  with MLE Chi Square =  39412  with prob <  0
+#
+# Tucker Lewis Index of factoring reliability =  -6.359
+# RMSEA index =  2.557  and the 90 % confidence intervals are  2.527 2.569
+# BIC =  39377
+# Fit based upon off diagonal values = 0.97
+~~~
+
+This looks like MR1=overall sleep; MR2=insomnia/bad-sleep; MR5=difficulty-falling-asleep?; MR4=deep-sleep-(not part of MR1!); MR3=dunno.
+MR1 and MR4 correlate 0.34, and MR2/MR5 0.27, which makes sense.
+I want to maximize overall sleep and deep sleep (deep sleep seems connected to health), so MR1 and M4.
+
+Now that we have our factors, we can extract them and plot them over time for a graphical look:
+
+~~~{.R}
+MR1 <- predict(factorization, data=zeo)[,1]
+MR4 <- predict(factorization, data=zeo)[,4]
+
+par(mfrow=c(2,1), mar=c(4,4.5,1,1))
+plot(MR1 ~ I(Start.of.Night/60), xlab="",        ylab="Total sleep (MR1)", data=zeo)
+plot(MR4 ~ I(Start.of.Night/60), xlab="Bedtime", ylab="Deep sleep (MR4)",  data=zeo)
+~~~
+
+![Total & deep sleep factors vs bedtime](/images/zeo/2014-07-26-bedtime-factors.png)
+
+looks like a overall linear decline (later=worse), but *possibly* with a peak somewhere looking like a quadratic.
+
+So we'll try fitting quadratics:
+
+~~~{.R}
+factorModel <- lm(cbind(MR1, MR4) ~ Start.of.Night + I(Start.of.Night^2), data=zeo); summary(factorModel)
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -6.63e+01   7.65e+00   -8.67   <2e-16
+# Start.of.Night       9.74e-02   1.07e-02    9.13   <2e-16
+# I(Start.of.Night^2) -3.56e-05   3.72e-06   -9.57   <2e-16
+#
+# Residual standard error: 0.829 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.152,   Adjusted R-squared:  0.15
+# F-statistic:  101 on 2 and 1127 DF,  p-value: <2e-16
+#
+#
+# Response MR4 :
+#
+# Call:
+# lm(formula = MR4 ~ Start.of.Night + I(Start.of.Night^2), data = zeo)
+#
+# Residuals:
+#    Min     1Q Median     3Q    Max
+# -3.057 -0.651 -0.017  0.600  4.329
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -5.06e+01   8.97e+00   -5.64  2.1e-08
+# Start.of.Night       7.23e-02   1.25e-02    5.79  9.3e-09
+# I(Start.of.Night^2) -2.58e-05   4.36e-06   -5.92  4.2e-09
+#
+# Residual standard error: 0.971 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.0384,  Adjusted R-squared:  0.0367
+# F-statistic: 22.5 on 2 and 1127 DF,  p-value: 2.57e-10
+
+## on the other hand, if we had ignored the quadratic term, we'd
+## get a much worse fit
+summary(lm(cbind(MR1, MR4) ~ Start.of.Night, data=zeo))
+# Coefficients:
+#                 Estimate Std. Error t value Pr(>|t|)
+# (Intercept)     6.643744   0.653047    10.2   <2e-16
+# Start.of.Night -0.004613   0.000457   -10.1   <2e-16
+#
+# Residual standard error: 0.861 on 1128 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.0829,  Adjusted R-squared:  0.0821
+# F-statistic:  102 on 1 and 1128 DF,  p-value: <2e-16
+#
+# Response MR4 :
+#
+# Coefficients:
+#                 Estimate Std. Error t value Pr(>|t|)
+# (Intercept)     2.337279   0.747401    3.13   0.0018
+# Start.of.Night -0.001627   0.000523   -3.11   0.0019
+#
+# Residual standard error: 0.986 on 1128 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.00851, Adjusted R-squared:  0.00764
+# F-statistic: 9.69 on 1 and 1128 DF,  p-value: 0.0019
+~~~
+
+So we want to use the quadratic.
+Given this quadratic model, what's the optimal bedtime?
+
+~~~{.R}
+estimatedFactorValues <- predict(factorModel, newdata=data.frame(Start.of.Night=1:max(zeo$Start.of.Night, na.rm=TRUE)))
+## when is MR1 maximized?
+which(estimatedFactorValues[,1] == max(estimatedFactorValues[,1]))
+# 1368
+1368 / 60
+# [1] 22.8
+## 10:48 PM seems reasonable
+## when is MR3 maximized?
+which(estimatedFactorValues[,2] == max(estimatedFactorValues[,2]))
+# 1401
+## 11:21 PM seems reasonable
+
+## summing the factors isn't quite the average of the two time, but it's close:
+combinedFactorSums <- rowSums(estimatedFactorValues)
+which(combinedFactorSums == max(combinedFactorSums))
+# 1382
+## 11:02PM
+~~~
+
+
+Maybe using factors wasn't a good idea? We can try a multivariate regression on the variables directly:
+
+~~~{.R}
+quadraticModel <- lm(cbind(ZQ, Total.Z, Time.to.Z, Time.in.Wake, Time.in.REM,
+                           Time.in.Light, Time.in.Deep, Awakenings, Morning.Feel)
+                       ~ Start.of.Night + I(Start.of.Night^2), data=zeo)
+summary(quadraticModel)
+# Response ZQ :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -7.84e+02   1.06e+02   -7.38  3.1e-13
+# Start.of.Night       1.29e+00   1.48e-01    8.68  < 2e-16
+# I(Start.of.Night^2) -4.70e-04   5.16e-05   -9.10  < 2e-16
+#
+# Residual standard error: 11.5 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.139,   Adjusted R-squared:  0.137
+# F-statistic: 90.9 on 2 and 1127 DF,  p-value: <2e-16
+#
+# Response Total.Z :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -4.48e+03   5.54e+02   -8.08  1.7e-15
+# Start.of.Night       7.32e+00   7.73e-01    9.47  < 2e-16
+# I(Start.of.Night^2) -2.67e-03   2.69e-04   -9.91  < 2e-16
+#
+# Residual standard error: 60 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.158,   Adjusted R-squared:  0.156
+# F-statistic:  106 on 2 and 1127 DF,  p-value: <2e-16
+#
+# Response Time.to.Z :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -6.09e+02   1.22e+02   -4.98  7.3e-07
+# Start.of.Night       8.43e-01   1.71e-01    4.94  8.8e-07
+# I(Start.of.Night^2) -2.81e-04   5.95e-05   -4.73  2.6e-06
+#
+# Residual standard error: 13.2 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.0431,  Adjusted R-squared:  0.0415
+# F-statistic: 25.4 on 2 and 1127 DF,  p-value: 1.61e-11
+#
+# Response Time.in.Wake :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -1.26e+02   1.76e+02   -0.72     0.47
+# Start.of.Night       2.15e-01   2.45e-01    0.88     0.38
+# I(Start.of.Night^2) -7.83e-05   8.55e-05   -0.92     0.36
+#
+# Residual standard error: 19.1 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.00149, Adjusted R-squared:  -0.000283
+# F-statistic: 0.84 on 2 and 1127 DF,  p-value: 0.432
+#
+# Response Time.in.REM :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -1.43e+03   2.69e+02   -5.32  1.2e-07
+# Start.of.Night       2.32e+00   3.75e-01    6.19  8.6e-10
+# I(Start.of.Night^2) -8.39e-04   1.31e-04   -6.42  2.0e-10
+#
+# Residual standard error: 29.1 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.0608,  Adjusted R-squared:  0.0592
+# F-statistic: 36.5 on 2 and 1127 DF,  p-value: 4.37e-16
+#
+# Response Time.in.Light :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -2.45e+03   3.43e+02   -7.15  1.5e-12
+# Start.of.Night       4.07e+00   4.78e-01    8.50  < 2e-16
+# I(Start.of.Night^2) -1.50e-03   1.67e-04   -9.00  < 2e-16
+#
+# Residual standard error: 37.2 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.164,   Adjusted R-squared:  0.162
+# F-statistic:  110 on 2 and 1127 DF,  p-value: <2e-16
+#
+# Response Time.in.Deep :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -5.88e+02   1.10e+02   -5.34  1.1e-07
+# Start.of.Night       9.27e-01   1.53e-01    6.04  2.1e-09
+# I(Start.of.Night^2) -3.30e-04   5.35e-05   -6.17  9.5e-10
+#
+# Residual standard error: 11.9 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.0398,  Adjusted R-squared:  0.0381
+# F-statistic: 23.4 on 2 and 1127 DF,  p-value: 1.12e-10
+#
+# Response Awakenings :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -1.18e+02   2.71e+01   -4.36  1.4e-05
+# Start.of.Night       1.68e-01   3.77e-02    4.46  9.0e-06
+# I(Start.of.Night^2) -5.67e-05   1.32e-05   -4.31  1.7e-05
+#
+# Residual standard error: 2.93 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.0274,  Adjusted R-squared:  0.0256
+# F-statistic: 15.9 on 2 and 1127 DF,  p-value: 1.62e-07
+#
+# Response Morning.Feel :
+#
+# Coefficients:
+#                      Estimate Std. Error t value Pr(>|t|)
+# (Intercept)         -2.12e+01   7.02e+00   -3.01  0.00266
+# Start.of.Night       3.32e-02   9.79e-03    3.39  0.00073
+# I(Start.of.Night^2) -1.15e-05   3.41e-06   -3.37  0.00079
+#
+# Residual standard error: 0.761 on 1127 degrees of freedom
+#   (84 observations deleted due to missingness)
+# Multiple R-squared:  0.0103,  Adjusted R-squared:  0.0085
+# F-statistic: 5.84 on 2 and 1127 DF,  p-value: 0.00301
+
+## Likewise, what's the optimal predicted time?
+estimatedValues <- predict(quadraticModel, newdata=data.frame(Start.of.Night=1:max(zeo$Start.of.Night, na.rm=TRUE)))
+# but what time is best? we have so many choices of variable to optimize.
+# Let's simply sum them all and say bigger is better
+# first, we need to negate 'Time.in.Wake', 'Time.to.Z', 'Awakenings',
+# as for those, bigger is worse
+estimatedValues[,3] <- -estimatedValues[,3] # Time.to.Z
+estimatedValues[,4] <- -estimatedValues[,4] # Time.in.Wake
+estimatedValues[,8] <- -estimatedValues[,8] # Awakenings
+combinedSums <- rowSums(estimatedValues)
+which(combinedSums == max(combinedSums))
+# 1362
+~~~
+
+Or 10:42PM, which is almost identical to the MR1 estimate.
+So just like before.
+
+Both approaches suggest that I go to bed somewhat earlier than I do now.
+This has the same correlation≠causality issue as the rise-time analysis does (perhaps I am especially sleepy on the days I go to bed a bit early and so naturally sleep more), but on the other hand, it's not suggesting I go to bed at 7PM or anything crazy, so I am more inclined to take a chance on it.
+
+## Rise time for productivity
 
 I noticed [a claim](http://lesswrong.com/lw/2p5/humans_are_not_automatically_strategic/2kux) that for one person, rising at 3-5AM (!) seemed to improve their days "because the morning hours have no distractions" and I wondered whether there might be any such correlation for myself, so I took my usual MP daily self-rating and plotted against rise-time that day:
 

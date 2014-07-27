@@ -1569,6 +1569,89 @@ Zilch. No correlation is at all interesting.
 
 So it looks like alcohol - at least in the small quantities I consume - makes no difference.
 
+# Rise time
+
+I noticed [a claim](http://lesswrong.com/lw/2p5/humans_are_not_automatically_strategic/2kux) that for one person, rising at 3-5AM (!) seemed to improve their days "because the morning hours have no distractions" and I wondered whether there might be any such correlation for myself, so I took my usual MP daily self-rating and plotted against rise-time that day:
+
+![Self-rating vs rise time, _n_=841](/images/zeo/2014-07-26-risetime-mp.png)
+
+It looks like a cubic suggesting one peak around 8:30AM and then a later peak, but that's based on so little I ignore it.
+The causal relationship is also unclear: maybe getting up earlier really does cause higher MP self-ratings, but perhaps on days I don't feel like doing anything I am more likely to sleep in, or some other common cause.
+The available samples suggest that earlier than that is worse, possibly much worse, so I am not inclined to try out something I expect to make me miserable.
+
+The source code of the graph & analysis; preprocessing:
+
+~~~{.R}
+mp <- read.csv("~/selfexperiment/mp.csv", colClasses=c("Date","integer"))
+zeo <- read.csv("http://www.gwern.net/docs/zeo/gwern-zeodata.csv")
+## we want the date of the day sleep ended, not started, so we ignore the usual 'Sleep.Date' and construct our own 'Date':
+zeo$Date <- as.Date(sapply(strsplit(as.character(zeo$Rise.Time), " "), function(x) { x[1] }), format="%m/%d/%Y")
+## convert "05/12/2014 06:45" to "06:45"
+zeo$Rise.Time <- sapply(strsplit(as.character(zeo$Rise.Time), " "), function(x) { x[2] })
+## convert "06:45" to the integer 24300
+interval <- function(x) { if (!is.na(x)) { if (grepl(" s",x)) as.integer(sub(" s","",x))
+                                           else { y <- unlist(strsplit(x, ":")); as.integer(y[[1]])*60 + as.integer(y[[2]]); }
+                                         }
+                          else NA
+                        }
+zeo$Rise.Time <- sapply(zeo$Rise.Time, interval)
+## doesn't always work, so delete missing data:
+zeo <- zeo[!is.na(zeo$Date),]
+
+## correct for the switch to new unencrypted firmware in March 2013;
+## I don't know why the new firmware changed things; adjustment of 226 minutes was estimated using:
+# library(changepoint); cpt.mean(na.omit(zeo$Rise.Time)); '$mean [1] 566.7 340.2';  566.7 - 340.2 = 226
+zeo[(zeo$Date >= as.Date("2013-03-11")),]$Rise.Time
+  <- (zeo[(zeo$Date >= as.Date("2013-03-11")),]$Rise.Time + 226) %% (24*60)
+
+allData <- merge(mp,zeo)
+morning <- data.frame(MP=allData$MP, Rise.Time=allData$Rise.Time)
+morning$Rise.Time.Hour <- morning$Rise.Time / 60
+write.csv(morning, file="morning.csv", row.names=FALSE)
+~~~
+
+Graphing and fitting:
+
+~~~{.R}
+morning <- read.csv("http://www.gwern.net/docs/zeo/2014-07-26-risetime-mp.csv")
+library(ggplot2)
+ggplot(data = morning, aes(x=Rise.Time.Hour, y=jitter(MP, factor=0.2)))
+ + xlab("Wake time (24H)")
+ + ylab("Mood/productivity self-rating (2/3/4)")
+ + geom_point(size=I(4))
+ ## cross-validation suggests 0.8397 but looks identical to auto-LOESS span choice
+ + stat_smooth(span=0.8397)
+
+## looks 100% like a cubic function
+linear <- lm(MP ~ Rise.Time,         data=morning)
+cubic  <- lm(MP ~ poly(Rise.Time,3), data=morning)
+anova(linear,cubic)
+# Model 1: MP ~ Rise.Time
+# Model 2: MP ~ poly(Rise.Time, 3)
+#   Res.Df RSS Df Sum of Sq    F Pr(>F)
+# 1    839 442
+# 2    837 437  2      5.36 5.14 0.0061
+AIC(linear,cubic)
+#        df  AIC
+# linear  3 1852
+# cubic   5 1846
+summary(cubic)
+# ...Coefficients:
+#                     Estimate Std. Error t value Pr(>|t|)
+# (Intercept)           3.0571     0.0249  122.70   <2e-16
+# poly(Rise.Time, 3)1  -0.9627     0.7225   -1.33    0.183
+# poly(Rise.Time, 3)2  -1.4818     0.7225   -2.05    0.041
+# poly(Rise.Time, 3)3   1.7795     0.7225    2.46    0.014
+#
+# Residual standard error: 0.723 on 837 degrees of freedom
+# Multiple R-squared:  0.0142,    Adjusted R-squared:  0.0107
+# F-statistic: 4.02 on 3 and 837 DF,  p-value: 0.00749
+
+# plot(morning$Rise.Time,morning$MP); points(morning$Rise.Time,fitted(cubic),pch=19)
+which(fitted(cubic) == max(fitted(cubic))) / 60
+#  516   631   762
+# 8.60 10.52 12.70
+~~~
 
 # In progress
 
@@ -1996,7 +2079,10 @@ power.t.test(d=0.3482, power=0.80, type="paired", alternative="one.sided")
 
 Using _d_=0.35 as an effect size estimate, a proper blind experiment (blocking pairs of days) will take 100 days total (50 placebo pills, 50 caffeine pills).
 I began 29 June 2014.
-(I made the placebo pills the usual way with Bisquick, tossed together with the caffeine pills to equalize any coating; I made 120, more than I needed, because it's always annoying to set up & make pills, and it only took 40 minutes from start to cleanup.)
+I made the placebo pills the usual way with Bisquick, tossed together with the caffeine pills to equalize any coating; I made 120, more than I needed, because it's always annoying to set up & make pills, and it only took 40 minutes from start to cleanup.
+Unfortunately, a few days into the experiment it became clear that my old caffeine pills had absorbed some ambient moisture and the tossing had not equalized the surface flavor, so the placebo pills could be easily distinguished from the caffeine pills by both flavor & texture, rendering this not a blinded & randomized experiment but just a randomized experiment.
+
+<!-- TODO: followup analysis per http://lesswrong.com/lw/2p5/humans_are_not_automatically_strategic/b5lo - and maybe shift the alarm to 8:30 as suggested by the correlation -->
 
 <!-- caffeine experiment data:
 June
@@ -2018,6 +2104,12 @@ July
 13: 1
 14: 1
 15: 0
+16: 1
+17: NA
+18: 0
+19: 1
+20: 0
+21: 1
 -->
 
 <!-- R conversion routine for merging old and new Zeo Data:
@@ -2896,9 +2988,18 @@ July
 13: 0 0
 14: 1 1
 15: 1 0
-16: 1 1?
+16: 0 1
+17: 0 0
+18: 1 0
+19: 1 0
+20: 0 1
+21: 0 1
+22: 1 1
+23: 1 1
+24: 1 0
+25: 1 1?
 -->
-<!-- Alcohol log:  -->
+<!-- Alcohol log: 18, 22, 23, 24 July 2014 -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: ??? -->
 

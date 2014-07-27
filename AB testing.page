@@ -2329,6 +2329,9 @@ Since we're back to testing CSS, we can use the old ABalytics approach without h
 ~~~
 
 ### Data
+
+On 27 July 2014, since the 95% CIs for the best and worst indent variants no longer overlapped, I deleted the worst variant (`0.1em`).
+
 ### Analysis
 
 # Appendix

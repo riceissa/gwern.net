@@ -1280,7 +1280,7 @@ PPV = (1 - β)R/(R - βR + α)
 
 -->
 
-### Data
+#### Data
 
 1. 27 August - 2 September: 0
 
@@ -1316,7 +1316,7 @@ PPV = (1 - β)R/(R - βR + α)
 
     1 February - 7 February: 1
 
-    For this batch, I tried out ["NOW Foods Magnesium Citrate Powder"](http://www.amazon.com/dp/B004189JCW/) ($7 for 227g); the powder was still a bit sticky but much easier to work with than the Solgar pills, and the 227g made 249 gel capsule pills. The package estimates 119 serving of 315mg elemental magnesium, so a ratio of 0.315g magnesium for 1.9g magnesium citrate, implying that each gel cap pill then contains 0.152g magnesium and since I want a total dose of 0.8g, I need 5 of the gel cap pills a day or 35 per block.
+    For this batch, I tried out ["NOW Foods Magnesium Citrate Powder"](http://www.amazon.com/dp/B004189JCW/) (\$7 for 227g); the powder was still a bit sticky but much easier to work with than the Solgar pills, and the 227g made 249 gel capsule pills. The package estimates 119 serving of 315mg elemental magnesium, so a ratio of 0.315g magnesium for 1.9g magnesium citrate, implying that each gel cap pill then contains 0.152g magnesium ($\frac{(119\times315)}{249}=150$) and since I want a total dose of 0.8g, I need 5 of the gel cap pills a day or 35 per block.
 12. 9 - 15 February: 1 (skipped 8 February)
 
     16 - 22 February: 0
@@ -1336,7 +1336,9 @@ PPV = (1 - β)R/(R - βR + α)
 
     27 April - 3 May: 1 <!-- subsequent non-randomized: 4 May -->
 
-### Analysis
+Subjectively, I have no particular comments, other than that (like the threonate), I noticed no diarrhea.
+
+#### Analysis
 
 Some prep:
 
@@ -1382,12 +1384,14 @@ qplot(Date, MP, color=as.factor(Magnesium.citrate), legend="Magnesium citrate", 
        scale_colour_manual(values=c("gray49", "red1", "red3"), name = "Magnesium"))
 ~~~
 
-![MP categorical data plotted by date, colored by size of magnesium dose](/images/nootropics/2013-2014-magnesium-rawdata.png) TODO
+![MP categorical data plotted by date, colored by size of magnesium dose](/images/nootropics/2013-2014-magnesium-rawdata.png)
 
 One thing I notice looking at the data is that the red magnesium-free days seem to dominate the upper ranks towards the end, and blues appear mostly at the bottom, although this is a little hard to ee because good days in general start to become sparse towards the end.
 Now, why would days start to be worse towards the end, and magnesium-dose days in particular?
 The grim surmise is: an accumulating overdose - no immediate acute effect, but the magnesium builds up, dragging down all days, but especially magnesium-dose days.
-A picture is worth a thousand words, particularly in this case where there seems to be temporal effects, different trends for the conditions, and general confusion; so, I drag up 2.5 years of MP data (for context), plot all the data, color by magnesium/non-magnesium, and fit different LOESS lines to each as a sort of smoothed average (since categorical data is hard to interpret as a bunch of dots), which yields:
+
+A picture is worth a thousand words, particularly in this case where there seems to be temporal effects, different trends for the conditions, and general confusion.
+So, I drag up 2.5 years of MP data (for context), plot all the data, color by magnesium/non-magnesium, and fit different LOESS lines to each as a sort of smoothed average (since categorical data is hard to interpret as a bunch of dots), which yields:
 
 ~~~{.R}
 magnesium[is.na(magnesium$Magnesium.citrate),]$Magnesium.citrate <- -1
@@ -1398,7 +1402,7 @@ ggplot(data = magnesium, aes(x=Date, y=MP, col=as.factor(magnesium$Magnesium.cit
                      name = "Magnesium")
 ~~~
 
-![Full MP dataseries, with smoothed moving averages of no magnesium, 136mg, & 800mg doses](/images/nootropics/2013-2014-magnesium-smoothed.png) TODO
+![Full MP dataseries, with smoothed moving averages of no magnesium, 136mg, & 800mg doses](/images/nootropics/2013-2014-magnesium-smoothed.png)
 
 That really says it all: there's an initial spike in MP, which reads like the promised stimulative effects possibly due to fixing a deficiency (a spike which doesn't seem to have any counterparts in the previous history of MP), followed by a drastic plunge in the magnesium days but not so much the control days (indicating an acute effect when overloaded with magnesium), a partial recovery during the non-experimental Christmas break, another plunge, and finally recovery after the experiment has ended.
 
@@ -1446,8 +1450,20 @@ with(magnesium[!is.na(magnesium$Magnesium.citrate),], sum(predict(slm, newdata=d
 
 The final question is: since I was taking an overdose, how did I mess up?
 I thought I was making sure I got at least the right RDA of elemental magnesium by aiming for 800mg of elemental magnesium and carefully converting from raw powder weight.
-So I went back to the original references, and scrutinizing them closely, they really were talking about elemental magnesium and indicating I should be getting 400mg elemental a day, but I did notice something: I got the dose wrong for the Solgar pills, it wasn't 800mg elemental, it was 800mg of *citrate*, I had misread the label.
+So I went back to the original references, and scrutinizing them closely, they really were talking about elemental magnesium and indicating I should be getting 400mg elemental a day, but I did notice something: I got the dose wrong for the Solgar pills, it wasn't 800mg elemental, it was 800mg of *citrate* - I misread the label.
 So I went from taking ~130mg of elemental magnesium in the first period to ~800mg in the second; I don't think it is an accident that the second period seems to have been much worse (between the plot and the time trend).
+
+##### Sleep
+
+I reused the magnesium data with my Zeo data and [looked at the effects](Zeo#magnesium-citrate).
+The result were ambiguous: only a few effects survive multiple correction, which were a mix of good and bad ones, and I would guess that some of the bad effects are due to too much magnesium (although there is no time trend as blatant).
+
+#### Conclusion
+
+The interpretation which seems to best resolve everything I know about magnesium with the data from my experiment is that magnesium supplementation does indeed help me a large amount, but I was taking way too much.
+
+This is not 100% clear from the data and just blindly using a plausible amount carries the risk of the negative effects, so I intend to run another large experiment.
+I will reuse the NOW powder, but this time, I will use longer blocks (to make cumulative overdosing more evident) and avoid any doses >150mg of elemental magnesium.
 
 # Melatonin
 
@@ -2896,6 +2912,6 @@ July
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21 July -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27 July -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014, 18-19 July 2014 -->

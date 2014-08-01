@@ -6,47 +6,166 @@ tags: meta
 
 This is the July edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155); the previous was [June](http://www.gwern.net/newsletter/2014/06).
 
-This is a summarized of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & including material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/).
+This combines the [Changelog](http://gwern.net/Changelog) with material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/). I thank all my donors on [Gittip](https://www.gittip.com/gwern/) for their support; it is much appreciated.
 
 # Writings
+
+QS/self-experiments:
+
+- lithium orotate experiment finished: [no effects positive or negative](http://www.gwern.net/Nootropics#lithium-experiment)
+- magnesium citrate experiment finished: [initial benefits but apparent cumulative overdose led to net negative effect](http://www.gwern.net/Nootropics#citrate) and [mixed effects on sleep](http://www.gwern.net/Zeo#magnesium-citrate)
+- sleep correlations:
+
+    - [alcohol](http://www.gwern.net/Zeo#alcohol): no harm
+    - [optimal bedtime](http://www.gwern.net/Zeo#bed-time-for-better-sleep): a little earlier than usual
+    - [optimal wakeup time](http://www.gwern.net/Zeo#rise-time-for-productivity): a little earlier than usual
+
+Statistics:
+
+- [do causal networks explain why correlation≠causation is so often true?](http://www.gwern.net/Causality)
+- a little example of estimating [scores from censored data](http://www.gwern.net/Notes#estimating-censored-test-scores)
+
+Debunking:
+
+- [Bicycle face](https://en.wikipedia.org/wiki/Talk:Bicycle_face#Serious_sourcing_issues)
+- ["Rail travel at high speed is not possible because passengers, unable to breathe, would die of asphyxia."](https://en.wikipedia.org/wiki/Talk:Dionysius_Lardner#Did_he_actually_say_that.3F)
+- [did the original fanfiction version of _Fifty Shades of Gray_ have only 4k readers?](http://lesswrong.com/lw/kl3/fifty_shades_of_selffulfilling_prophecy/#entry_t1_b5bj)
+
+Misc:
+
+- humorous [little essay on _The Matrix_](http://www.gwern.net/Notes#tv-the-matrix)
+- [long hair as a costly signal of fitness & tradeoff](http://www.gwern.net/Notes#tradeoffs-and-costly-signaling-in-appearances)
+- [how I gather & organize my information in Evernote & elsewhere](http://www.gwern.net/About#information-organizing)
+
+Site:
+
+- [June-July 2014 traffic figures](http://www.gwern.net/About#january---july-2014)
+- finished [floating footnotes test](http://www.gwern.net/AB%20testing#floating-footnotes): no apparent harm, as hoped
+- began [paragraph indentation test](http://www.gwern.net/AB%20testing#indented-paragraphs) (responding to anonymous complaint)
+
 # Media
+## Books
+
+Nonfiction:
+
+- 2014 COPSS anthology, _Past, Present, and Future of Statistical Science_ ([review](https://www.goodreads.com/review/show/959222084))
+- _Pioneers of Soviet Computing_, Malinovsky 2010 ([review](https://www.goodreads.com/review/show/985511206))
+
+Fiction:
+
+- Strugatsky's [_Roadside Picnic_](https://en.wikipedia.org/wiki/Roadside_Picnic)
+- Poul Anderson's [_Brain Wave_](https://en.wikipedia.org/wiki/Brain_Wave)
+- Zelazny's [_A Night in the Lonesome October_](https://en.wikipedia.org/wiki/A_Night_in_the_Lonesome_October)
+- Paolini's _Eragon_ ([review](https://www.goodreads.com/review/show/369973900))
+
 ## Links
 
-- ["Political Extremism Is Supported by an Illusion of Understanding"](http://www.scholar.harvard.edu/files/todd_rogers/files/psci_extremism.pdf), Fernbach et al 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/R37pvPtUb6a))
+Everything is heritable:
+
+- ["Genes Take Charge, and Diets Fall by the Wayside"](http://www.nytimes.com/2007/05/08/health/08fat.html?pagewanted=all)
+- ["Not by Twins Alone: Using the Extended Family Design to Investigate Genetic Influence on Political Beliefs"](http://www.matthewckeller.com/16.Hatemi.et.al.2010.Nuc.fam.ajps.pdf), Hatemi et al 2010 ([excerpts](https://plus.google.com/103530621949492999968/posts/TGonjh3aLb3))
+- ["Chimpanzee Intelligence Is Heritable"](https://pdf.yt/d/0MSB48zQSooDz5Zw), Hopkins et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/H5Q33CZHpGi))
+- ["Genetic Variation Associated with Differential Educational Attainment in Adults Has Anticipated Associations with School Performance in Children"](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0100248#close), Ward et al 2014 (Rietveld et al 2013's 3 SNP hits for intelligence are starting to replicate; [excerpts](https://plus.google.com/103530621949492999968/posts/TWH3tgjYyf8))
+- ["The genetics of investment biases"](https://www.dropbox.com/s/w3ndh1w1qfumbw2/2014-cronqvist.pdf), Cronqvist & Siegal 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/DXHTnNU1Ndf))
+- ["Genetic Relations Among Procrastination, Impulsivity, and Goal-Management Ability: Implications for the Evolutionary Origin of Procrastination"](https://pdf.yt/d/D_56sQA2ad-fIZeL), Gustavson et al 2014
+
+Politics/religion:
+
+- ["ORBIS: The Stanford Geospatial Network Model of the Roman World"](http://orbis.stanford.edu/) (very impressive historically-accurate in-browser simulation of the logistics of the ancient Roman Empire. My only regret is that I can't think of any situation in which I actually need an exact calculation of how much it would have cost to get from Londinium to Rome during winter while avoiding the Atlantic. But some of the graphs showing cost-distances between Rome and the provinces are pretty interesting, as are some of the disparities)
+- ["Differences in negativity bias underlie variations in political ideology"](https://pdf.yt/d/KsatVxjZ_2CROOhc), Hibbing et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/CHQbEoejQqn); [mass media](http://www.motherjones.com/politics/2014/07/biology-ideology-john-hibbing-negativity-bias "Scientists Are Beginning to Figure Out Why Conservatives Are...Conservative: Ten years ago, it was wildly controversial to talk about psychological differences between liberals and conservatives. Today, it's becoming hard not to."))
+- [_Dinosaur Comics_](http://www.qwantz.com/index.php?comic=2658) on the [lyrics of "La Marseillaise"](https://en.wikipedia.org/wiki/La_Marseillaise#Lyrics)
+- ["Political Extremism Is Supported by an Illusion of Understanding"](http://www.meteo.mcgill.ca/~huardda/articles/fernbach13.pdf), Fernbach et al 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/R37pvPtUb6a))
 - ["Toward a theory of revolution"](http://www.louischauvel.org/DAVIES2089714.pdf), Davies 1962 ([excerpts](https://plus.google.com/103530621949492999968/posts/3AZannVS793))
-- ["Harry Potter Fanfiction Data (Most popular characters, publishing rates, etc)"](http://www.reddit.com/r/HPMOR/comments/1h10vl/harry_potter_fanfiction_data_most_popular/) (I would not have guessed that fictions starring Daphne & Harry were the most popular.)
-- [Poincaré on intuition in mathematics](http://www-history.mcs.st-andrews.ac.uk/Extras/Poincare_Intuition.html)
-- ["The Game of Rat and Dragon"](http://www.gutenberg.org/files/29614/29614-h/29614-h.htm), Cordwainer Smith
-- ["Alcoholism in Antarctica"](http://www.funraniumlabs.com/2013/06/alcoholism-in-antarctica)
+- ["Paying Kidnapping Ransoms, Europe Bankrolls Qaeda Terror"](http://www.nytimes.com/2014/07/30/world/africa/ransoming-citizens-europe-becomes-al-qaedas-patron.html) (incentives matter)
+- ["How Hijackers Commandeered Over 130 American Planes - In 5 Years": the golden age of hijacking](http://www.wired.com/2013/06/love-and-terror-in-the-golden-age-of-hijacking/)
+- ["NSA-proof encryption exists. Why doesn't anyone use it?"](http://www.washingtonpost.com/blogs/wonkblog/wp/2013/06/14/nsa-proof-encryption-exists-why-doesnt-anyone-use-it/)
+- ["Inside the United States: GlobalPost goes inside the United States to uncover the regime's dramatic descent into authoritarian rule and how the opposition plans to fight back."](http://www.globalpost.com/dispatch/news/regions/americas/united-states/130607/what-if-journalists-covered-us-like-they-cover-world#14)
+- [Saint Guinefort: greyhound & patron of sick children](http://www.laphamsquarterly.org/roundtable/roundtable/a-faithful-hound.php)
+- [Dr Seuss and the Cold War](http://www.newyorker.com/archive/2002/12/23/021223crat_atlarge?currentPage=all)
+- ["The Blurb I Wish I'd Had"](http://schoolgirlmilkycrisis.com/2013/06/24/4025/)
+- ["Nakatomi Space"](http://bldgblog.blogspot.com/2010/01/nakatomi-space.html) (_Die Hard_ as conceptual art/philosophy)
+- ["Welcome to the Future Nauseous"](http://www.ribbonfarm.com/2012/05/09/welcome-to-the-future-nauseous/)
+
+Statistics/AI/meta-science:
+
 - ["Teachers and Income: What Did the Project STAR Kindergarten Study Really Find?"](http://econlog.econlib.org/archives/2011/10/teachers_and_in.html)
 - ["The Small Schools Myth"](http://marginalrevolution.com/marginalrevolution/2010/09/the-small-schools-myth.html)
-- [Suicide is highest in spring](https://en.wikipedia.org/wiki/Seasonal_effects_on_suicide_rates)
 - ["Online Controlled Experiments at Large Scale"](http://www.exp-platform.com/Pages/ControlledExperimentsAtLargeScale.aspx), Rohavi et al 2013 ("One interesting tidbit is that Bing found that every 100ms faster they deliver search result pages to searchers yields 0.6% more in revenue (which is a similar result to an old Amazon test).")
+- ["What does randomness look like?"](http://www.wired.com/2012/12/what-does-randomness-look-like/) (the classic statistics examples of Poisson distributions like V-bombs falling on London)
+- ["How Not to Be Misled by the Jobs Report"](http://www.nytimes.com/2014/05/02/upshot/how-not-to-be-misled-by-the-jobs-report.html) (Depicts the sampling error associated with each estimate by providing an animation showing repeated draws assuming the point-estimate is the ground truth. Good for showing you how easily 'patterns' show up with a few data points.)
+- ["Statistical Modeling: The Two Cultures"](http://projecteuclid.org/download/pdf_1/euclid.ss/1009213726), Breiman 2001 ([excerpts](https://plus.google.com/103530621949492999968/posts/hDTFp2tzZCr))
+- [Distributed vectors for image recognition from textual descriptions](http://lo-tho.blogspot.com/2014/07/more-distributed-vectors.html)
+- ["Future progress in artificial intelligence: a poll among experts"](http://www.sophia.de/pdf/2014_PT-AI_polls.pdf), Müller & Bostrom 2014
+- ["HeartMath Considered Incoherent"](http://slatestarcodex.com/2014/07/17/heartmath-considered-incoherent/)
+- ["Deep impact: unintended consequences of journal rank"](http://journal.frontiersin.org/Journal/10.3389/fnhum.2013.00291/full), Brembs et al 2013 (meta-science)
+
+Psychology:
+
+- ["Humans are not automatically strategic"](http://lesswrong.com/lw/2p5/humans_are_not_automatically_strategic/)
+- ["Pre-Crastination: Hastening Subgoal Completion at the Expense of Extra Physical Effort"](https://pdf.yt/d/3JKYC7ZRbAge-uP0), Rosenbaum et al 2014 ([NYT](http://www.nytimes.com/2014/07/20/business/sometimes-early-birds-are-too-early.html))
+- [Poincaré on intuition in mathematics](http://www-history.mcs.st-andrews.ac.uk/Extras/Poincare_Intuition.html)
+- ["Does incubation enhance problem-solving? A meta-analytic review"](http://www.psy.cmu.edu/~unsio/Sio_Ormerod_meta_analysis_incubation_PB.pdf), Sio & Ormerod ([excerpts](https://plus.google.com/103530621949492999968/posts/LCqWR5QzUVf))
+- ["It Takes Guts To Do Research"](https://rjlipton.wordpress.com/2013/06/25/it-takes-guts-to-do-research/) (on Oppenheimer & missed opportunities)
+- ["Just think: The challenges of the disengaged mind"](https://www.dropbox.com/s/m2h1qi3rmvj8t13/2014-wilson.pdf), Wilson et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/SQKt8Ysqtcg))
+- [OkCupid experiments demonstrating shallowness in dating](http://blog.okcupid.com/index.php/we-experiment-on-human-beings/)
+- ["On the trail of the elusive successful psychopath"](http://www.thepsychologist.org.uk/archive/archive_home.cfm?volumeID=27&editionID=289&ArticleID=2542)
+- ["Cannabis, IQ and socio-economic status in the Dunedin data - an update"](http://www.olerogeberg.com/2013/03/cannabis-iq-and-socio-economic-status.html)
+- ["Alcoholism in Antarctica"](http://www.funraniumlabs.com/2013/06/alcoholism-in-antarctica)
+- [Suicide is highest in spring](https://en.wikipedia.org/wiki/Seasonal_effects_on_suicide_rates)
+- ["Character amnesia...whereby experienced speakers of East Asian languages forget how to write Chinese characters previously well known"](https://en.wikipedia.org/wiki/Character_amnesia)
+
+Technology:
+
+- [On the _n_-body problem's useless solution](http://rjlipton.wordpress.com/2014/07/25/an-old-galactic-result/)
 - ["Inside a Startup's Plan to Turn a Swarm of DIY Satellites Into an All-Seeing Eye"](http://www.wired.com/2013/06/startup-skybox/) (see [WP](https://en.wikipedia.org/wiki/Skybox_Imaging): ultimately launched some satellites, was acquired by Google)
 - ["Harnessing human computation: Luis von Ahn helped save the internet from spammers. His larger quest is to put internet chores to productive use"](http://www.economist.com/news/technology-quarterly/21578514-luis-von-ahn-helped-save-internet-spammers-his-larger-quest-put)
 - ["Inside The Immortality Business: Thanks to a small but devoted core of true believers and an infusion of Silicon Valley research funds, the once-revered, much-reviled science of cryopreservation may itself be coming back from the dead. Welcome to Alcor, where death is merely a temporary setback."](http://www.buzzfeed.com/joshdean/are-we-warming-up-to-cryonics)
-- [How Wizards of the Coast distributed equity as a startup](http://www.peteradkison.com/blog-entry-3-wizards-of-the-coast-equity-distributions-part-2/)
-- ["The Blurb I Wish I'd Had"](http://schoolgirlmilkycrisis.com/2013/06/24/4025/)
-- ["It Takes Guts To Do Research"](https://rjlipton.wordpress.com/2013/06/25/it-takes-guts-to-do-research/) (on Oppenheimer & missed opportunities)
-- [Saint Guinefort: greyhound & patron of sick children](http://www.laphamsquarterly.org/roundtable/roundtable/a-faithful-hound.php)
-- [When should the Devil keep his deals? a game-theoretic approach](https://plus.google.com/103530621949492999968/posts/PF3MTC9U9J2)
-- [Libertarians against recycling](http://www.cato-unbound.org/2013/06/18/editors/comments)
-- ["How Hijackers Commandeered Over 130 American Planes - In 5 Years": the golden age of hijacking](http://www.wired.com/2013/06/love-and-terror-in-the-golden-age-of-hijacking/)
-- ["Labor's Declining Share of Income and Rising Inequality"](http://www.clevelandfed.org/research/commentary/2012/2012-13.cfm)
-- ["Genes Take Charge, and Diets Fall by the Wayside"](http://www.nytimes.com/2007/05/08/health/08fat.html?pagewanted=all)
-- ["Cannabis, IQ and socio-economic status in the Dunedin data - an update"](http://www.olerogeberg.com/2013/03/cannabis-iq-and-socio-economic-status.html)
-- ["Pierre Menard Author of the _Quixote_"](http://www.coldbacon.com/writing/borges-quixote.html), by Jorge Luis Borges
-- [Wanted: walrus lodger](http://www.gumtree.com/p/flats-houses/lodger-required/1021568193)
-- ["Character amnesia...whereby experienced speakers of East Asian languages forget how to write Chinese characters previously well known"](https://en.wikipedia.org/wiki/Character_amnesia)
-- ["NSA-proof encryption exists. Why doesn't anyone use it?"](http://www.washingtonpost.com/blogs/wonkblog/wp/2013/06/14/nsa-proof-encryption-exists-why-doesnt-anyone-use-it/?wprss=rss_ezra-klein)
-- ["Inside the United States: GlobalPost goes inside the United States to uncover the regime's dramatic descent into authoritarian rule and how the opposition plans to fight back."](http://www.globalpost.com/dispatch/news/regions/americas/united-states/130607/what-if-journalists-covered-us-like-they-cover-world#14)
 
-## Books
+Economics:
+
+- [How Wizards of the Coast distributed equity as a startup](http://www.peteradkison.com/blog-entry-3-wizards-of-the-coast-equity-distributions-part-2/)
+- [Libertarians against recycling](http://www.cato-unbound.org/2013/06/18/editors/comments)
+- ["Labor's Declining Share of Income and Rising Inequality"](http://www.clevelandfed.org/research/commentary/2012/2012-13.cfm)
+- [When should the Devil keep his deals? a game-theoretic approach](https://plus.google.com/103530621949492999968/posts/PF3MTC9U9J2)
+
+Fiction:
+
+- [2001 in anime reviewed](http://animeyearbyyear.wordpress.com/2014/07/24/2001-2/) (an excellent year for anime, as it gave us: _Animation Runner Kuromi_, _Cat Soup_, _Cowboy Bebop: Knockin' on Heaven's Door_, _FLCL_, _Fruits Basket_, _Haré+Guu_, _Metropolis_, _Millennium Actress_, _Princess Arete_, _Read or Die OVA_, & _Spirited Away_.)
+- ["Harry Potter Fanfiction Data (Most popular characters, publishing rates, etc)"](http://www.reddit.com/r/HPMOR/comments/1h10vl/harry_potter_fanfiction_data_most_popular/) (I would not have guessed that fictions starring Daphne & Harry were the most popular.)
+- ["Pierre Menard Author of the _Quixote_"](http://www.coldbacon.com/writing/borges-quixote.html), by Jorge Luis Borges
+- ["The Game of Rat and Dragon"](http://www.gutenberg.org/files/29614/29614-h/29614-h.htm), Cordwainer Smith
+
+Misc:
+
+- [Long hair](https://en.wikipedia.org/wiki/Long_hair)
+- [Wanted: walrus lodger](http://www.gumtree.com/p/flats-houses/lodger-required/1021568193)
+
 ## Film/TV
+
+Live-action:
+
+- [_Gravity_](https://en.wikipedia.org/wiki/Gravity_%28film%29) (great; the technical criticisms are overblown)
+- [_The Wild Geese_](https://en.wikipedia.org/wiki/The_Wild_Geese) (for a classic movie about mercenaries, pretty dumb)
+- [_Tea with Mussolini_](https://en.wikipedia.org/wiki/Tea_with_Mussolini)
+
+Anime:
+
+- [_Maoyuu Maou Yuusha_](https://en.wikipedia.org/wiki/Maoyu) (I found it relatively interesting and the harem antics not as bad as expected; _Spice and Wolf_ is still better, though)
+
 ## Music
+
+[Explosions in the Sky](https://en.wikipedia.org/wiki/Explosions_in_the_Sky):
+
+- ["Your Hand in Mine (piano cover)"](https://www.youtube.com watch?v=hxx4fdpiYu4), rmadlal
 
 Touhou:
 
+- ["はるのおと ―同声合唱とピアノのための―"](https://www.youtube.com/watch?v=8_FSoDjqLIU) (RD-Sounds feat. Meramipop; _itazura_ {R10}) [vocal]
+- ["Fingertip Chocolate"](https://www.youtube.com/watch?v=n3AskhHOWD4) (Autobahn feat. senya; _Ano Hana Sakuya_ {R10}) [vocal]
+- ["Tea Funk"](http://youtu.be/HdPsuFcpSHo?t=1s) (Thj.Quartet; _Jazz Funk Vol.2_ {R10}) [jazz]
+- ["Midnight Bird"](https://www.youtube.com/watch?v=vEA0o9Sydnw) (Sanokan; _東方ぴあのとりお_ {R10}) [jazz]
+- ["Nights Return (Stirring an Autumn Moon)"](https://www.youtube.com/watch?v=101BoAScs2M) (Komso; _Touhou DTM -Decade Toho Music-_ {R10}) [trance?]
+- ["ストライクウィッチ (Love-Colored Master Spark)"](https://www.youtube.com/watch?v=wB240PC-MDQ) (Komso; _Touhou DTM -Decade Toho Music-_ {R10}) [orchestral]
 - ["厄神様の通学路"](https://dl.dropboxusercontent.com/u/243666993/music/%E3%81%B0%E3%82%93%E3%81%97-%E5%8E%84%E7%A5%9Edays-%E5%8E%84%E7%A5%9E%E6%A7%98%E3%81%AE%E9%80%9A%E5%AD%A6%E8%B7%AF.ogg) (ばんし; _厄神days_ {R11}) [instrumental]
 - ["今日もくるくる"](https://dl.dropboxusercontent.com/u/243666993/music/%E3%81%B0%E3%82%93%E3%81%97-%E5%8E%84%E7%A5%9Edays-%E4%BB%8A%E6%97%A5%E3%82%82%E3%81%8F%E3%82%8B%E3%81%8F%E3%82%8B.ogg) (ばんし; _厄神days_ {R11}) [instrumental]
 - ["ひらり厄神様"](https://www.youtube.com/watch?v=MRbpkM9uy1k) (ばんし; _厄神days_ {R11}) [instrumental]
@@ -66,3 +185,20 @@ Touhou:
 - ["DESIRE DREAM - FELT Remix"](https://www.youtube.com/watch?v=z0Nz3wxaNy8) (NAGI☆ feat. itori; _XXX_ {C85}) [electronic]
 - ["CONFINED INNOCENT - MZC Curl of Groove Remix"](https://www.youtube.com/watch?v=tu4C92w1DOI) (Maurits Cornelis feat. A~YA; _XXX_ {C85}) [vocal]
 - ["GOLD - K's 'Dive into the Dream' Remix"](https://www.youtube.com/watch?v=hVdb5v6kEnE) (Coro feat. itori; _XXX_ {C85}) [trance]
+
+[God is an Astronaut](https://en.wikipedia.org/wiki/God_Is_an_Astronaut):
+
+- ["A Moment of Stillness"](https://www.youtube.com/watch?v=wOyNihvpi8s)
+- ["A Deafening Distance"](https://www.youtube.com/watch?v=AVH6t7nwfc4)
+- ["Fireflies and Empty Skies"](https://www.youtube.com/watch?v=N1GThSDMOZk)
+- ["Forever Lost"](https://www.youtube.com/watch?v=QEphsKl1g9M)
+- ["Fragile"](https://www.youtube.com/watch?v=fh8QtCO-wQ4)
+- ["Suicide by Star"](https://www.youtube.com/watch?v=b7GTkkA2q8o)
+- ["When Everything Dies"](https://www.youtube.com/watch?v=u-8L21tDmpo)
+- ["Beyond the Dying List"](https://www.youtube.com/watch?v=aUgMjTGavW8)
+- ["Sunrise in Aries"](https://www.youtube.com/watch?v=qes0sfpkGPM)
+- ["Sunny Banks Of Sweet Deliverance"](https://www.youtube.com/watch?v=ddXn9NGpuIA)
+- ["Loss"](https://www.youtube.com/watch?v=QoeNKZsG-CM)
+- ["No Return"](https://www.youtube.com/watch?v=9Z-WQIrDAMQ)
+- ["Post Mortem"](https://www.youtube.com/watch?v=YQ2YCtHkCrk)
+- ["Shadows"](https://www.youtube.com/watch?v=CXXwkzB5eoY)

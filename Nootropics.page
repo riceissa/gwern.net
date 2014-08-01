@@ -1183,7 +1183,15 @@ One thing I did do was piggyback on my [Noopept self-experiment](#noopept): I bl
 
 ## Citrate
 
-The l-threonate caused me no apparent problems, and correlated with better days, but would be difficult to cap (and hence blind self-experiment) and is ruinously expensive on a per-dose basis. So I looked around for alternatives; one of the most common compounds suggested was the citrate form because it is reasonably well-absorbed and causes fewer digestive problems.
+> Encouraged by Trubrain's magnesium & my magnesium l-threonate use, I design and run a blind random self-experiment to see whether magnesium citrate supplementation would improve my mood or productivity.
+> I collected ~200 days of data at two dose levels.
+> The analysis finds that the net effect was negative, but a more detailed look shows time-varying effects with a large initial benefit negated by an increasingly-negative effect.
+> Combined with my expectations, the long half-life, and the higher-than-intended dosage, I infer that I overdosed on the magnesium.
+> To verify this, I will be running a followup experiment with a much smaller dose.
+
+The original magnesium l-threonate caused me no apparent problems by the time I finished off the powder and usage correlated with better days, further supporting the hypothesis that magnesium helps it.
+But l-threonate would be difficult to cap (and hence blind self-experiment) and is ruinously expensive on a per-dose basis.
+So I looked around for alternatives for the followup; one of the most common compounds suggested was the citrate form because it is reasonably well-absorbed and causes fewer digestive problems.
 
 Finding a usable product on Amazon caused me some difficulties. I wanted a 500mg magnesium-citrate-only product at <$20 for 120 doses, but I discovered most of the selection for "magnesium citrate" had sub-500mg doses, involved *calcium* citrate or other substances like zinc (not necessarily a bad thing, but would confound an experiment), were mostly magnesium *oxide* rather than citrate, or some still other problem. Ultimately I settled on [Solgar's \$13 120x400mg magnesium citrate](http://www.amazon.com/Solgar-Magnesium-Citrate-120-tablets/dp/B00013Z0ZG/) as acceptable. (To compare with the bulkiness of the LEF vitamin D+l-threonate powder, [the Office of Dietary Supplements](http://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/) says magnesium citrate is 16% magnesium, so to get 400mg of magnesium as claimed, would take 2.5g of material, rather than 7g for 200mg; even if l-threonate is absorbed 100% and citrate 50%, the citrate is ahead. The pills turn out to be wider and longer than my 00 pills; if I want to get them into my gel capsules, I have to crush them into fine powder. The powder from one pill turns out to take up 2 00 pills.)
 
@@ -1354,7 +1362,7 @@ write.csv(magnesium, file="magnesium.csv", row.names=FALSE)
 The basic question: did the magnesium citrate increase MP?
 
 ~~~{.R}
-magnesium <- read.csv("/home/gwern/wiki/docs/nootropics/2013-2014-magnesium.csv")
+magnesium <- read.csv("http://www.gwern.net/docs/nootropics/2013-2014-magnesium.csv")
 summary(lm(MP ~ Magnesium.citrate, data=magnesium))
 # Coefficients:
 #                    Estimate Std. Error t value Pr(>|t|)
@@ -2290,9 +2298,12 @@ It took 4 hours to cap 432 Noopept pills and another 432 flour pills. I tried to
 50. 3x: 16 - 18 July: 0
 
     19 - 21 July: 1 <!-- skipped 22 July - morning was occupied shopping -->
-51. 4x: 23? - 25? July: ?
+51. 4x: 23 - 25 July: 0
 
-    26? - 28? July: ?
+    26 - 28 July: 1
+52. 5x: 29? - 31? July: ?
+
+    1? - 3? August: ?
 
 # Oxiracetam
 
@@ -2912,6 +2923,6 @@ July
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27 July -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014, 18-19 July 2014 -->

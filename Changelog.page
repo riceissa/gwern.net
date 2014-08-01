@@ -9,12 +9,47 @@ belief: log
 Following my writing can be a little difficult: while I provide [an RSS feed of the edit history](http://www.gwern.net/atom.xml), it is too fine-grained to know what is an interesting update and what is housekeeping. So periodically I write up interesting changes in a human-readable format:
 
 # 2014
+## July
+
+QS/self-experiments:
+
+- lithium orotate experiment finished: [no effects positive or negative](Nootropics#lithium-experiment)
+- magnesium citrate experiment finished: [initial benefits but apparent cumulative overdose led to net negative effect](Nootropics#citrate) and [mixed effects on sleep](Zeo#magnesium-citrate)
+- sleep correlations:
+
+    - [alcohol](Zeo#alcohol): no harm
+    - [optimal bedtime](Zeo#bed-time-for-better-sleep): a little earlier than usual
+    - [optimal wakeup time](Zeo#rise-time-for-productivity): a little earlier than usual
+
+Statistics:
+
+- [do causal networks explain why correlation≠causation is so often true?](Causality)
+- a little example of estimating [scores from censored data](Notes#estimating-censored-test-scores)
+
+Debunking:
+
+- [Bicycle face](https://en.wikipedia.org/wiki/Talk:Bicycle_face#Serious_sourcing_issues)
+- ["Rail travel at high speed is not possible because passengers, unable to breathe, would die of asphyxia."](https://en.wikipedia.org/wiki/Talk:Dionysius_Lardner#Did_he_actually_say_that.3F)
+- [did _Fifty Shades of Gray_ have only 4k readers as the original Twilight fanfiction?](http://lesswrong.com/lw/kl3/fifty_shades_of_selffulfilling_prophecy/#entry_t1_b5bj)
+
+Misc:
+
+- humorous [little essay on _The Matrix_](Notes#tv-the-matrix)
+- [long hair as a costly signal of fitness & tradeoff](Notes#tradeoffs-and-costly-signaling-in-appearances)
+- [how I gather & organize my information in Evernote & elsewhere](About#information-organizing)
+
+Site:
+
+- [June-July 2014 traffic figures](About#january---july-2014)
+- finished [floating footnotes test](AB%20testing#floating-footnotes): no apparent harm, as hoped
+- began [paragraph indentation test](AB%20testing#indented-paragraphs) (responding to anonymous complaint)
+
 ## June
 
 - finished & analyzed [caffeine-pill wakeup pilot trial](Zeo#morning-caffeine-pills), began blinded self-experiment
 - [BeeLine Reader A/B test finished](AB%20testing#beeline-reader-text-highlighting): no version performed statistically-significantly better
 - compiled & expanded [selection of my poems](/fiction/Poems)
-<
+
 ## May
 
 - [Treadmill/spaced repetition experiment](Treadmill#treadmill-effect-on-spaced-repetition-performance-randomized-experiment)

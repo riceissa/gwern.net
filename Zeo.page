@@ -1498,6 +1498,10 @@ In the middle of the five-fold experiment, I paused part of it to run [a more in
 
 # Alcohol
 
+> Suspicious that alcohol was delaying my sleep and worsening my sleep when I did finally go to bed, I recorded my alcohol consumption for a year.
+> Correlating alcohol use against when I go to bed shows no interesting correlation, nor with any of the other sleep variables Zeo records, even after correcting for a shift in my sleep patterns over that year.
+> So it would seem I was wrong.
+
 In May 2013, I began to wonder if alcohol was damaging my sleep; I don't drink alcohol too often and never more than a glass or two, so I don't have any tolerance built up.
 I noticed that on nights when I drank some red wine or had some of my [mead](Mead), it seemed to take me much longer to fall asleep and I would regularly wake up in the middle of the night.
 So I began noting down days on which I drank any alcohol, to see if it correlated with sleep problems (and probably then just refrain from alcohol in the evening, since I don't care enough to run a randomized experiment).
@@ -2663,6 +2667,11 @@ July
 19: 1
 20: 0
 21: 1
+22: 0
+23: 1
+24: 0
+25: NA
+26: 0
 -->
 
 <!-- R conversion routine for merging old and new Zeo Data:
@@ -3552,9 +3561,13 @@ July
 24: 1 0
 25: 0 0
 26: 1 1
-27: 1 0?
+27: 0 1
+28: 0 0
+29: 0 1
+30: 0 1
+31: 1 1?
 -->
-<!-- Alcohol log: 18, 22, 23, 24, 26 July 2014 -->
+<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014 -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: ??? -->
 
@@ -3830,4 +3843,3 @@ So these general points suggest 3 future overlapping approaches:
 1. deliberate use of interruptions (maybe randomized), to investigate effect on lucid dreaming
 2. more systematic usage (perhaps randomized or blinded) of melatonin, to allow correlations or causal inferences to other variables
 3. attacking the unsystematic data collection (perhaps it's too much trouble to do all those variables each day?) by getting a Zeo to handle part of the data collection for you.
-

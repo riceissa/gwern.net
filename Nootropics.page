@@ -1183,7 +1183,7 @@ One thing I did do was piggyback on my [Noopept self-experiment](#noopept): I bl
 
 ## Citrate
 
-> Encouraged by Trubrain's magnesium & my magnesium l-threonate use, I design and run a blind random self-experiment to see whether magnesium citrate supplementation would improve my mood or productivity.
+> Encouraged by TruBrain's magnesium & my magnesium l-threonate use, I design and run a blind random self-experiment to see whether magnesium citrate supplementation would improve my mood or productivity.
 > I collected ~200 days of data at two dose levels.
 > The analysis finds that the net effect was negative, but a more detailed look shows time-varying effects with a large initial benefit negated by an increasingly-negative effect.
 > Combined with my expectations, the long half-life, and the higher-than-intended dosage, I infer that I overdosed on the magnesium.
@@ -1191,7 +1191,8 @@ One thing I did do was piggyback on my [Noopept self-experiment](#noopept): I bl
 
 The original magnesium l-threonate caused me no apparent problems by the time I finished off the powder and usage correlated with better days, further supporting the hypothesis that magnesium helps it.
 But l-threonate would be difficult to cap (and hence blind self-experiment) and is ruinously expensive on a per-dose basis.
-So I looked around for alternatives for the followup; one of the most common compounds suggested was the citrate form because it is reasonably well-absorbed and causes fewer digestive problems.
+So I looked around for alternatives for the followup; one of the most common compounds suggested was the citrate form because it is reasonably well-absorbed and causes fewer digestive problems, so I could just take that.
+(Calcium shouldn't be a problem since I get 220mg of calcium from my multivitamin and I enjoy dairy products daily.)
 
 Finding a usable product on Amazon caused me some difficulties. I wanted a 500mg magnesium-citrate-only product at <$20 for 120 doses, but I discovered most of the selection for "magnesium citrate" had sub-500mg doses, involved *calcium* citrate or other substances like zinc (not necessarily a bad thing, but would confound an experiment), were mostly magnesium *oxide* rather than citrate, or some still other problem. Ultimately I settled on [Solgar's \$13 120x400mg magnesium citrate](http://www.amazon.com/Solgar-Magnesium-Citrate-120-tablets/dp/B00013Z0ZG/) as acceptable. (To compare with the bulkiness of the LEF vitamin D+l-threonate powder, [the Office of Dietary Supplements](http://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/) says magnesium citrate is 16% magnesium, so to get 400mg of magnesium as claimed, would take 2.5g of material, rather than 7g for 200mg; even if l-threonate is absorbed 100% and citrate 50%, the citrate is ahead. The pills turn out to be wider and longer than my 00 pills; if I want to get them into my gel capsules, I have to crush them into fine powder. The powder from one pill turns out to take up 2 00 pills.)
 
@@ -2920,6 +2921,69 @@ July
 14
 16
 18
+
+Some time ago, lostfalco got me interested in the topic of low-level light treatment (weak near-infrared light administered to the head) with his thread and donated money for me to try out a device.
+
+While skeptical (because come on, LLLT sounds like the stupidest thing in the world and 100% snake oil), I didn't see any harm in trying, and on 7 September 2013, I began sporadically (non-randomized) using a 48-LED set on my head. In between, I also analyzed a blind self-experiment run by Nattzor which found large benefits to his reaction-time.
+
+I recently compiled my own data, leaving me with 329 days of data. The response variable 'MP' is a little self-rating of my own devising in which for 2.5 years I've asked myself at the end of each day whether I did more, the usual, or less work done that day than average (2=below-average, 3=average, 4=above-average); it's ad hoc, but in some factor analyses I've been playing with, it seems to load on a lot of other variables I've measured, so I think it's meaningful. The results are that (correcting for the magnesium self-experiment I was running during the time period which did not turn out too great) days on which I happened to use my LED device for LLLT were much better than regular days. Below is a graph showing the entire MP dataseries with LOESS-smoothed lines showing LLLT vs non-LLLT days:
+
+https://i.imgur.com/AEXqfO1.png
+
+The correlation is fairly large (r=0.185 or d=0.46 if you prefer) and statistically-significant (p=0.0006).
+
+I have no particularly compelling story for why this might be a correlation and not causation. It could be placebo, but I assumed the LLLT was not working and was going to throw out the LED set until I ran the numbers just in case. It could be selection effect (days on which I bothered to use the annoying LED set are better days) but then I'd expect the off-days to be below-average and compared to the 2 years of trendline before, there doesn't seem like much of a fall.
+
+So, I have started a randomized experiment; should take 2 months, given the size of the correlation. If that turns out to be successful too, I'll have to look into methods of blinding - for example, some sort of electronic doohickey which turns on randomly half the time and which records whether it's on somewhere one can't see (then one hooks up the LED, turns the doohickey 'on', and applies directly to forehead, checking the next morning to see whether it was really on or off).
+
+Below is a link to the raw data, and the R code for my analysis & graph:
+
+# http://dl.dropboxusercontent.com/u/85192141/2014-08-03-lllt-correlation.csv
+lllt <- read.csv("docs/nootropics/2014-08-03-lllt-correlation.csv")
+summary(lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) + as.logical(Magnesium.citrate):as.integer(Date), data=lllt))
+# ...Coefficients:
+#                                                        Estimate   Std. Error  t value   Pr(>|t|)
+# (Intercept)                                         4.037702597  0.616058589  6.55409 5.0282e-10
+# LLLTTRUE                                            0.330923350  0.095939634  3.44929 0.00069087
+# as.logical(Magnesium.citrate)TRUE                   0.963379487  0.842463568  1.14353 0.25424378
+# as.integer(Date)                                   -0.001269089  0.000880949 -1.44059 0.15132856
+# as.logical(Magnesium.citrate)TRUE:as.integer(Date) -0.001765953  0.001213804 -1.45489 0.14733212
+
+llltImputed <- lllt
+llltImputed[is.na(llltImputed)] <- 0
+llltImputed[llltImputed$MP == 0,]$MP <- 3 # clean up an outlier
+
+summary(lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) + as.logical(Magnesium.citrate):as.integer(Date), data=llltImputed))
+# ...Coefficients:
+#                                                        Estimate   Std. Error  t value   Pr(>|t|)
+# (Intercept)                                         2.959172295  0.049016571 60.37085 < 2.22e-16
+# LLLT                                                0.336886970  0.083731179  4.02344 6.2212e-05
+# as.logical(Magnesium.citrate)TRUE                   2.155586397  0.619675529  3.47857 0.00052845
+# as.integer(Date)                                    0.000181441  0.000103582  1.75166 0.08017565
+# as.logical(Magnesium.citrate)TRUE:as.integer(Date) -0.003373682  0.000904342 -3.73054 0.00020314
+
+power.t.test(power=0.8, delta=(0.336886970 / sd(lllt$MP, na.rm=TRUE)), type="paired", alternative="one.sided")
+#
+#      Paired t test power calculation
+#
+#               n = 30.1804294
+#           delta = 0.463483435
+#              sd = 1
+#       sig.level = 0.05
+#           power = 0.8
+#     alternative = one.sided
+#
+# NOTE: n is number of *pairs*, sd is std.dev. of *differences* within pairs
+
+library(ggplot2)
+llltImputed$Date <- as.Date(llltImputed$Date)
+ggplot(data = llltImputed, aes(x=Date, y=MP, col=as.logical(llltImputed$LLLT))) +
+ geom_point(size=I(3)) +
+ stat_smooth() +
+ scale_colour_manual(values=c("gray49", "green"),
+                     name = "LLLT")
+
+
 begin randomized experiment:
 August 2014
 02: 1

@@ -43,6 +43,8 @@ What would the results mean? If I found a lunar pattern, it would be consistent 
 # Analysis
 ## Preparation
 
+<!-- TODO: add in /docs/zeo/2014-malcolm.csv to next update -->
+
 ~~~{.R}
 zeo1 <- read.csv("http://www.gwern.net/docs/zeo/gwern-zeodata.csv"); zeo1$Subject <- 1
 zeo2 <- read.csv("http://www.gwern.net/docs/zeo/2013-eva.csv"); zeo2$Subject <- 2

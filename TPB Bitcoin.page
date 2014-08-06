@@ -187,19 +187,18 @@ and finally, GNU `parallel` to download each torrent ID separately without mucki
 cd ~/tpb/tpb2csv/ && rm ids.txt missing.txt randomized.txt
 
 find ./data/9xxxxxx/ -type d | cut --delimiter='/' --fields=6 | sort --unique | tail --lines=+2 > ids.txt
-runhaskell countmissing.hs 10364783
-sort --random-sort missing.txt > randomized.txt
+LATEST_TORRENT="$(elinks -dump 'http://thepiratebay.se/recent' | fgrep 'http://thepiratebay.se/torrent/1' | cut -d '/' -f 5 | head -1)"
+runhaskell countmissing.hs $LATEST_TORRENT
 
-# cat randomized.txt | parallel --max-chars=40 --ungroup --jobs 10 -- python -OO download.py
-cat missing.txt | tac | parallel --max-chars=40 --ungroup --jobs 10 -- nice python -OO download.py
+# sort --random-sort missing.txt > randomized.txt
+# cat randomized.txt | parallel --max-chars=40 --ungroup --jobs 7 -- python -OO download.py
+
+cat missing.txt | tac | parallel --max-chars=40 --ungroup --jobs 7 -- nice python -OO download.py
 ~~~
 
-https://thepiratebay.se/torrent/10364783/Bootyfull.Babes.Riley.Winter.Just.lean.back.and.watch.XXX.cPORN.
-http://thepiratebay.se/recent
-
-16:01:04 <@gwern> there are an amazing number of 404s on tpb. I wonder why
-16:01:12 <@gwern> why would they ever delete a page?
-16:01:18 <@gwern> short of CP
+    gwern> there are an amazing number of 404s on tpb. I wonder why
+    gwern> why would they ever delete a page?
+    gwern> short of CP
 
 ## Processing
 

@@ -1144,6 +1144,126 @@ summary(lm(cbind(MP, Mnemosyne.grade, Gwern.net.patches, ZQ, MR3, MR2, MR4) ~ Li
 There were no observable effects, either positive or beneficial, to the lithium orotate doses.
 This is consistent with my subjective experience.
 
+# LLLT
+
+[Low level laser therapy](!Wikipedia) (LLLT) is a curious treatment based on the application of a few minutes of weak light in specific near-infrared wavelengths (the name is a bit of a misnomer as LEDs seem to be employed more these days, due to the laser aspect being unnecessary and LEDs much cheaper).
+Unlike most kinds of [light therapy](!Wikipedia), it doesn't seem to have anything to do with circadian rhythms or zeitgebers.
+Proponents claim efficacy in treating physical injuries, back pain, and numerous other ailments, recently extending it to case studies of mental issues like brain fog.
+(It's applied to injured parts; for the brain, it's typically applied to [points on the skull](http://www.intechopen.com/source/html/17370/media/image3.jpeg) like F~3~ or F~4~.)
+And LLLT is, naturally, completely safe without any side effects or risk of injury.
+
+To say that this all sounds dubious would be an understatement.
+(My first reaction was that LLLT and lostfalco's other proposals were probably the stupidest thing I'd seen all month.)
+
+The research literature, whilea copious, is messy and varied: methodologies and devices vary substantially, sample sizes are tiny, the study designs vary from paper to paper, metrics are sometimes comically limited (one study measured speed of finishing a RAPM IQ test but not *scores*), blinding is rare and unclear how successful, etc.
+Relevant papers include [Chung et al 2012](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3288797/ "The Nuts and Bolts of Low-level Laser (Light) Therapy"), [Rojas & Gonzalez-Lima 2013](/docs/nootropics/2013-rojas.pdf "Neurological and psychological applications of transcranial lasers and LEDs"), & [Gonzalez-Lima & Barrett 2014](http://journal.frontiersin.org/Journal/10.3389/fnsys.2014.00036/full "Augmentation of cognitive brain functions with transcranial lasers").
+Another Longecity user ran a self-experiment, with some design advice from me, where he performed a few cognitive tests over several periods of LLLT usage (the blocks turned out to be ABBA), using his father and towels to try to blind himself as to condition.
+[I analyzed his data](LLLT), and his scores did seem to improve, but his scores improved *so* much in the last part of the self-experiment I found myself dubious as to what was going on - possibly a failure of randomness given too few blocks and an exogenous factor in the last quarter which was responsible for the improvement.
+
+While the mechanism is largely unknown, one commonly mechanism possibility is that light of the relevant wavelengths is preferentially absorbed by the protein [cytochrome c oxidase](!Wikipedia), which is a key protein in mitochondrial metabolism and production of [ATP](!Wikipedia), substantially increasing output, and this extra output presumably can be useful for cellular activities like healing or higher performance.
+
+I was contacted by the Longecity user [lostfalco](http://www.longecity.org/forum/user/11887-lostfalco/), and read through some of his [writings on the topic](http://www.longecity.org/forum/topic/63228-lostfalcos-extensive-nootropic-experiments/).
+I had never heard of LLLT before, but the mitochondria mechanism didn't sound impossible (although I wondered whether it made sense at a quantity level[^blood-sugar]), and there was at least some research backing it; more importantly, lostfalco had discovered that devices for LLLT could be obtained as cheap as \$15.
+Nor could I think of any way the LLLT could be easily harmful: there were no drugs involved, physical contact was unnecessary, power output was too low to directly damage through heating, and if it had no LLLT-style effect but some sort of circadian effect through hitting photoreceptors, using it in the morning wouldn't seem to interfere with sleep.
+
+[^blood-sugar]: That is, perhaps light of the right wavelength can indeed save the brain some energy by making it easier to generate ATP. Would 15 minutes of LLLT create enough ATP to make any meaningful difference, which could possibly cause the claimed benefits? The problem here is like that of the famous blood-glucose theory of [willpower](!Wikipedia "Ego depletion") - while the brain does indeed use up more glucose while active, high activity uses up very small quantities of glucose/energy which doesn't seem like enough to justify a mental mechanism like weak willpower. Kurzban, in [a blog post](http://www.epjournal.net/blog/2011/08/glucose-is-not-willpower-fuel/) puts it well:
+
+    > In my last post, I talked about the idea that there is a resource that is necessary for self-control...I want to talk a little bit about the candidate for this resource, glucose. Could willpower fail because the brain is low on sugar? Let's look at the numbers. A well-known statistic is that the brain, while only 2% of body weight, consumes 20% of the body's energy. That sounds like the brain consumes a lot of calories, but if we assume a 2,400 calorie/day diet - only to make the division really easy - that's 100 calories per hour on average, 20 of which, then, are being used by the brain. Every three minutes, then, the brain - which includes memory systems, the visual system, working memory, then emotion systems, and so on - consumes one (1) calorie. One. Yes, the brain is a greedy organ, but it's important to keep its greediness in perspective... Suppose, for instance, that a brain in a person exerting their willpower - resisting eating brownies or what have you - used *twice* as many calories as a person not exerting willpower. That person would need an extra one third of a calorie per minute to make up the difference compared to someone not exerting willpower. Does exerting "self control" burn more calories?
+    >
+    > - Clarke and  Sokoloff (1998) remarked that although "[a] common view  equates concentrated mental effort with mental work…there appears to be no increased energy utilization by the brain during such processes" (p. 664), and "…the areas that participate in the processes of such reasoning represent too small a fraction of the brain for changes in their functional and metabolic activities to be reflected in the energy metabolism of the brain…" (p. 675).
+    > - Gibson and Green  (2002), talking about a possible link between glucose and cognition, wrote that research in the area "…is based on the assumption that, since glucose is the major source of fuel for  the brain, alterations in plasma levels of  glucose will result in alterations in brain levels of glucose, and thus neuronal function. However, the strength of this notion lies in its common-sense plausibility, not in scientific evidence…" (p. 185).
+    > - Lennie (2003) concluded that "[t]he brain's energy consumption does not change with normal variations in mental activity" and that "overall energy consumption is essentially constant" (p. 495).
+    > - Messier (2004) concluded that it is "unlikely that the blood glucose changes observed during and after a difficult cognitive task are due to increased brain glucose uptake" (p. 39).
+    > - Gibson (2007), concluded that "task-induced changes in human peripheral blood glucose are unlikely to reflect changes in relevant areas of brain glucose supply" (p. 75).
+
+    And in his followup work, ["An opportunity cost model of subjective effort and task performance"](http://commonsenseatheism.com/wp-content/uploads/2013/12/Kurzban-et-al-An-opportunity-cost-model-of-subjective-effort-and-task-performance-plus-responses.pdf) ([discussion](http://lesswrong.com/lw/jan/kurzban_et_al_on_opportunity_cost_models_of/)). Kurzban seems to have successfully refuted the blood-glucose theory, with few dissenters from commenting researchers. The more recent opinion seems to be that the sugar interventions serve more as a reward-signal indicating more effort is a good idea, not refueling the engine of the brain (which would seem to fit well with [research on procrastination](http://lesswrong.com/lw/3w3/how_to_beat_procrastination/)).
+
+Since LLLT was so cheap, seemed safe, was interesting, just trying it would involve minimal effort, and it would be a favor to lostfalco, I decided to try it.
+I [purchased off eBay](http://www.ebay.com/itm/251266500210) a \$13 "48 LED illuminator light IR Infrared Night Vision+Power Supply For CCTV. Auto Power-On Sensor, only turn-on when the surrounding is dark. IR LED wavelength: 850nm. Powered by DC 12V 500mA adaptor."
+It arrived in 4 days, on 7 September 2013.
+It fits handily in my palm.
+My cellphone camera verified it worked and emitted infrared - important because there's no visible light at all (except in complete darkness I can make out a faint red light), no noise, no apparent heat (it took about 30 minutes before the lens or body warmed up noticeably when I left it on a table).
+This was good since I worried that there would be heat or noise which made blinding impossible; all I had to do was figure out how to randomly turn the power on and I could run blinded self-experiments with it.
+
+My first time was relatively short: 10 minutes around the F~3~/F~4~ points, with another 5 minutes to the forehead. Awkward holding it up against one's head, and I see why people talk of "LED helmets", it's boring waiting.
+No initial impressions except maybe feeling a bit mentally cloudy, but that goes away within 20 minutes of finishing when I took a nap outside in the sunlight.
+Lostfalco says "Expectations: You will be tired after the first time for 2 to 24 hours. It's perfectly normal.", but I'm not sure - my dog woke me up very early and disturbed my sleep, so maybe that's why I felt suddenly tired.
+On the second day, I escalated to 30 minutes on the forehead, and tried an hour on my finger joints.
+No particular observations except less tiredness than before and perhaps less joint ache.
+Third day: skipped forehead stimulation, exclusively knee & ankle.
+Fourth day: forehead at various spots for 30 minutes; tiredness
+5/6/7/8th day (11/12/13/4): skipped.
+Ninth: forehead, 20 minutes. No noticeable effects.
+
+## Pilot
+
+At this point I began to get bored with it and the lack of apparent effects, so I began a pilot trial: I'd use the LED set for 10 minutes every few days before 2PM, record, and in a few months look for a correlation with my daily self-ratings of mood/productivity (for 2.5 years I've asked myself at the end of each day whether I did more, the usual, or less work done that day than average, so 2=below-average, 3=average, 4=above-average; it's ad hoc, but in some factor analyses I've been playing with, it seems to load on a lot of other variables I've measured, so I think it's meaningful).
+
+On 15 March 2014, I disabled light sensor: the complete absence of subjective effects since the first sessions made me wonder if the LED device was even turning on - a little bit of ambient light seems to disable it thanks to the light sensor.
+So I stuffed the sensor full of putty, verified it was now always-on with the cellphone camera, and began again; this time it seemed to warm up much faster, making me wonder if all the previous sessions' sense of warmth was simply heat from my hand holding the LEDs
+
+In late July 2013, I was cleaning up my rooms and was tired of LLLT, so I decided to chuck the LED device.
+But before I did that, I might as well analyze the data.
+
+That left me with 329 days of data. The results are that (correcting for the magnesium citrate self-experiment I was running during the time period which did not turn out too great) days on which I happened to use my LED device for LLLT were much better than regular days. Below is a graph showing the entire MP dataseries with LOESS-smoothed lines showing LLLT vs non-LLLT days:
+
+![Daily productivity self-rating (higher=better) over time, split by LLLT usage that day](/images/nootropics/2014-lllt-mp.png)
+
+The correlation of LLLT usage with higher MP self-rating is fairly large (_r_=0.185 / _d_=0.46) and statistically-significant (_p_=0.0006).
+
+I have no particularly compelling story for why this might be a correlation and not causation. It could be placebo, but I wasn't expecting that. It could be selection effect (days on which I bothered to use the annoying LED set are better days) but then I'd expect the off-days to be below-average and compared to the 2 years of trendline before, there doesn't seem like much of a fall.
+
+The R code:
+
+~~~{.R}
+lllt <- read.csv("http://www.gwern.net/docs/nootropics/2014-08-03-lllt-correlation.csv")
+summary(lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) + as.logical(Magnesium.citrate):as.integer(Date), data=lllt))
+# ...Coefficients:
+#                                                        Estimate   Std. Error  t value   Pr(>|t|)
+# (Intercept)                                         4.037702597  0.616058589  6.55409 5.0282e-10
+# LLLTTRUE                                            0.330923350  0.095939634  3.44929 0.00069087
+# as.logical(Magnesium.citrate)TRUE                   0.963379487  0.842463568  1.14353 0.25424378
+# as.integer(Date)                                   -0.001269089  0.000880949 -1.44059 0.15132856
+# as.logical(Magnesium.citrate)TRUE:as.integer(Date) -0.001765953  0.001213804 -1.45489 0.14733212
+
+llltImputed <- lllt
+llltImputed[is.na(llltImputed)] <- 0
+llltImputed[llltImputed$MP == 0,]$MP <- 3 # clean up an outlier
+
+summary(lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) + as.logical(Magnesium.citrate):as.integer(Date), data=llltImputed))
+# ...Coefficients:
+#                                                        Estimate   Std. Error  t value   Pr(>|t|)
+# (Intercept)                                         2.959172295  0.049016571 60.37085 < 2.22e-16
+# LLLT                                                0.336886970  0.083731179  4.02344 6.2212e-05
+# as.logical(Magnesium.citrate)TRUE                   2.155586397  0.619675529  3.47857 0.00052845
+# as.integer(Date)                                    0.000181441  0.000103582  1.75166 0.08017565
+# as.logical(Magnesium.citrate)TRUE:as.integer(Date) -0.003373682  0.000904342 -3.73054 0.00020314
+
+power.t.test(power=0.8, delta=(0.336886970 / sd(lllt$MP, na.rm=TRUE)), type="paired", alternative="one.sided")
+#
+#      Paired t test power calculation
+#
+#               n = 30.1804294
+#           delta = 0.463483435
+#              sd = 1
+#       sig.level = 0.05
+#           power = 0.8
+#     alternative = one.sided
+#
+# NOTE: n is number of *pairs*, sd is std.dev. of *differences* within pairs
+
+library(ggplot2)
+llltImputed$Date <- as.Date(llltImputed$Date)
+ggplot(data = llltImputed, aes(x=Date, y=MP, col=as.logical(llltImputed$LLLT))) +
+ geom_point(size=I(3)) +
+ stat_smooth() +
+ scale_colour_manual(values=c("gray49", "green"),
+                     name = "LLLT")
+~~~
+
+
+So, I have started a randomized experiment; should take 2 months, given the size of the correlation. If that turns out to be successful too, I'll have to look into methods of blinding - for example, some sort of electronic doohickey which turns on randomly half the time and which records whether it's on somewhere one can't see (then one hooks up the LED, turns the doohickey 'on', and applies directly to forehead, checking the next morning to see whether it was really on or off).
+
 # LSD microdosing
 
 > The full writeup is too long to include here; please see [LSD microdosing]().
@@ -2690,312 +2810,16 @@ On the other metric, suppose we removed the creatine? Dropping 4 grams of materi
 - [-racetam price search engine](http://www.noophound.com/)
 
 <!--
-## TULIP
-> Hey gwern, I'm a huge fan of your blog and your approach to nootropics. I would be honored if you would try TULIP. You don't have to publicly post about it but you are WAY better at blinding and quantifying than I am. I would be fascinated to privately hear your results.
->
-> My friends at Longecity and I have been able to get the cost way down and it's pretty darn affordable now. If you have any questions or want links to studies, I've got a ton. Just let me know.
->
-> Thanks again for your blog. I'm a huge fan of your entire approach to life and I always recommend that people go to your site to see how self-experiments and analysis should be done.
-
-Thanks.
-
-So anyway, I've read through http://www.longecity.org/forum/topic/63228-lostfalcos-extensive-nootropic-experiments/ and I think you can pretty much guess what I think (besides 'why didn't he split things up into a set of threads, one for each topic?'): while I'm a little surprised TULIP can even be a thing, the research bearing directly on human brains seems fairly scanty, the metrics are generally narrow (alright, so they solved RAPM problems faster, did they get higher scores? no), there's no clear or plausible mechanism I can see (doesn't help that you post mostly links to abstracts and not fulltexts), hasn't been deployed widely enough that one can make the modafinil argument that 'if it were very harmful in the long run, we'd know by now', you haven't even tried to quantify it in any way (your social anecdotes are all equally explained by the hypothesis 'TULIP/placebo turns you into an arrogant ass', much like those MDMA results that it doesn't make people friendlier so much as just cripple perception of hostility/unfriendliness) much less advance to better self-experimenting like randomization or blinding (two great flavors that go great together). And yet, you are investing massive amounts of effort into this and figuring out how to bring it to the masses! At this point, I think your efforts are much better spent establishing whether there's anything there and not finding cheaper suppliers.
-
-I don't expect to do TULIP myself anytime soon; buying a laser off eBay and learning all the technical details about intensity/wavelength/positioning doesn't really appeal to me. I promised to do a self-experiment using coluracetam like a year ago, and my current priorities are finishing my five-fold sleep experiment and playing with magnesium which seems to have given me substantial benefits in two different products (TruBrain & LEF magnesium l-threonate) and where I hope to receive some standard magnesium citrate in a week or two.
-
-------------------
-
-> No split. Very fair point. Main reason: started the thread on a whim (note embarrassing typo after embarrassing typo), didn't expect the reaction I got...zero strategizing/planning involved.
-
-I don't really spend much time on Longecity (I find the rampant subjectivity and abuse of animal experiments intellectually distasteful), but couldn't you ask a forum mod to split the thread into subthreads? One thread for laser models & purchasing discussion, one thread for laser usage, one thread for huffing oxygen, one thread for mitochodria research etc?
-
-> dammit! sorry gwern...I only have a paper copy. Will gladly go to library, download, and send you a copy tomorrow if you request
-
-No need, I have a university proxy. I will read those PDFs when I have time.
-
-> Metrics Narrow. Agreed.
-
-But easily fixed... if anyone is willing to step up and do the self-experiment.
-
-> Plausible mechanism. Chromophore light absorption, cytochrome c oxidase photoacceptor. http://pdfcast.org/download/suck-it-trebek.pdf (same as above)
-
-Yes, this is better than nothing, but I still have a hard time understanding how this could possibly make any difference. Actually, I was discussing precisely this problem on `#reddit-nootropics` the other night, so I'll just paste an edited transcript and you can see where my perplexity is coming from:
-
-    gwern> https://en.wikipedia.org/wiki/Cytochrome_C#Applications here we go
-    not_unoriginal> iirc rhodopsin is super similar to blah blah
-    not_unoriginal> there's also quite a bit of research on chronobiology that has been glossed over for whatever reasons
-    gwern> hm. I'm not sure if this is very plausible - that it's simply making metabolism more efficient by letting the cytochromes eat photons instead of ATP or something. the discussions are all of milliwatts doses, iirc, which doesn't sound like it'd be replacing a lot of sugar or anyting
-    not_unoriginal> it only takes a few mcg of lsd-25 to have an effect...
-    not_unoriginal> argumentum ad incredulum
-    gwern> lsd is pushing a few buttons at the top of a complex cascade of effects, this is considering a specific very short mechanism
-    not_unoriginal> how do you know the length of the mechanism?
-    not_unoriginal> we're discussing one putative
-    gwern> if you want to make that argument, why would some cytochromes being more efficient trigger any cascades?
-    not_unoriginal> there's some weird russian research indicating that DNA acts as a sort of photonic crystal laser dealy
-    gwern> ...I agree, that sounds weird
-    not_unoriginal> but life on earth appears to have evolved to harness a certain portion of the EM spectrum
-    not_unoriginal> just as the ocean is now within our bodies
-    gwern> certainly; we call them plants
-    not_unoriginal> it seems that the sun or whatevs may have come along
-    not_unoriginal> uh we also have vision and melanocytes
-    not_unoriginal> vitamin D
-    gwern> you think laser stimulation is causing synthesis of some novel compound?
-    gwern> the relevant wavelengths are weak infared, iirc, nothing like the uv for vit d
-    not_unoriginal> I'm pointing out isomorphism in other human biological systems
-    not_unoriginal> idk if it's a novel compound or increased enzymatic efficiency
-    gwern> and I was pointing out ways in which the analogies break: photosynthesis & vision require complex pigmented structures we don't see in neurons; vitamin D requires high-energy contributions, while this is for weak stuff
-    not_unoriginal> like a 1% increase in an enzyme's activity if it's dealing with a million blehs a second adds up for sure
-    not_unoriginal> uh some neurons do have pigment like that one thingy with the dopamine
-    gwern> it may add up, if it was a limiting step and not just something to get tamped down a little bit early because of that 1%
-    erasmus> my dopamine is neon pink
-    not_unoriginal> .g biophoton microtubule
-    jenni> not_unoriginal: http://arxiv.org/pdf/1012.3371
-    gwern> oh no, microtubules. those things are like the knights templar of fringe neuroscience :(
-    not_unoriginal> ^hail mary right there
-    not_unoriginal> >busted
-    gwern> quantum mechanical microtubules are your hail mary?
-    not_unoriginal> read teh pdf :)
-    gwern> http://scholar.google.com/scholar?cites=6405758062590491137&as_sdt=20005&sciodt=0,9&hl=en let's see, a homepage, 'Postmodernism and Thinking Quantum Holographically', 'Hypothesis about brilliant lights by bioluminescent photons in near death experiences', 'dark photons', 'Quantum holographic critical criminology.', 'Biophotonic energy in an intratubal insemination program'... quite some fellow travelers you have here, not_unoriginal
-    not_unoriginal> gwern, what if you described the double slit experiment to newton
-    gwern> not_unoriginal: he would probably be fascinated, given the tremendous controversy about whether light was a wave or 'corpuscular'
-    not_unoriginal> so if he'd be curious about that why are you having so much trouble with biophotons
-    gwern> because as you said, it's fringey and I'm having a hard time seeing how the apparent legit mechanism could produce the effects claimed for it
-    not_unoriginal> your inability to imagine a plausible mechanism says more about your imagination than the actual mechanism
-    not_unoriginal> what do you think of newton's fascination with alchemy?
-    gwern> not_unoriginal: a massive waste of his life, a major threat to his career, and a sign that no one can be completely free from the neuroses of their time
-    gwern> but fortunately, the sterility of their theological and alchemical research helps show their descendants what the dead ends are
-    gwern> 'Recall that monochromatic radiation in visible region can cause photoreduction of cytochrome c oxidase both in soluble preparations as well as in isolated mitochondria [35-41].' ah, I thought it was odd that the paper was describing cytochrome c's involvement as 'supposedly'. it's the other papers which establish that cytochrome c absorbs the infrared-visible light
-    MasterHerb> ok the lasers on that thread are not in the visible range
-
-It may be helpful to provide another example of a situation where it's not clear how the input energy could possibly explain the output, based on a naive energy-substitution idea: http://www.epjournal.net/blog/2011/08/glucose-is-not-willpower-fuel/
-
-> In my last post, I talked about the idea that there is a resource that is necessary for self-control...n this post, I want to talk a little bit about the candidate for this resource, glucose. Could willpower fail because the brain is low on sugar? Let's look at the numbers. A well-known statistic is that the brain, while only 2% of body weight, consumes 20% of the body's energy. That sounds like the brain consumes a lot of calories, but if we assume a 2,400 calorie/day diet - only to make the division really easy - that's 100 calories per hour on average, 20 of which, then, are being used by the brain. Every three minutes, then, the brain - which includes memory systems, the visual system, working memory, then emotion systems, and so on - consumes one (1) calorie. One. Yes, the brain is a greedy organ, but it's important to keep its greediness in perspective... Suppose, for instance, that a brain in a person exerting their willpower - resisting eating brownies or what have you - used *twice* as many calories as a person not exerting willpower. That person would need an extra one third of a calorie per minute to make up the difference compared to someone not exerting willpower. Does exerting "self control" burn more calories?
->
-> - Clarke and  Sokoloff (1998) remarked that although "[a] common view  equates concentrated mental effort with mental work…there appears to be no increased energy utilization by the brain during such processes" (p. 664), and "…the areas that participate in the processes of such reasoning represent too small a fraction of the brain for changes in their functional and metabolic activities to be reflected in the energy metabolism of the brain…" (p. 675).
-> - Gibson and Green  (2002), talking about a possible link between glucose and cognition, wrote that research in the area "…is based on the assumption that, since glucose is the major source of fuel for  the brain, alterations in plasma levels of  glucose will result in alterations in brain levels of glucose, and thus neuronal function. However, the strength of this notion lies in its common-sense plausibility, not in scientific evidence…" (p. 185).
-> - Lennie (2003) concluded that "[t]he brain's energy consumption does not change with normal variations in mental activity" and that "overall energy consumption is essentially constant" (p. 495).
-> - Messier (2004) concluded that it is "unlikely that the blood glucose changes observed during and after a difficult cognitive task are due to increased brain glucose uptake" (p. 39).
-> - Gibson (2007), concluded that "task-induced changes in human peripheral blood glucose are unlikely to reflect changes in relevant areas of brain glucose supply" (p. 75).
-
-But regardless, there does seem to be some sort of connection; what's going on? Well, it seem pretty clear that a simplistic engine/fuel analogy isn't the right model or causal network, so what's going on may be something much more complex like the glucose being perceived as a reward by motivational systems in the brain (would fit well with the [procrastination equation](http://lesswrong.com/lw/3w3/how_to_beat_procrastination/)).
-
-So, I don't see how "energizing cytochrome C and making ATP synthesis more efficient" as an explanation for TULIP can possibly work, but I also don't yet see any more complex explanation. Perhaps it's in the papers you linked above? If you have a candidate theory, I'd love to hear it as it's always easier to read tough research papers with a particular overarching theory or paradigm in mind.
-
-> Will gladly provide 1000+ studies per request.
-
-No need, I am willing to take your word on regular laser stimulation affecting body parts.
-
-> Nonquantification. You're right on. Hence, my request to the BEST randomizer/quantifier on the internet.
-
-Flattery will get you far with me.
-
-> Arrogant ass. Sounds like irrelevant personal attack...though you phrased it in such a way as to leave ambiguity. Will give you benefit of the doubt.
-
-I am a pretty arrogant ass myself while on modafinil, so I don't consider such personality changes to be outside the realm of possibility.
-
-> Randomization/blinding better. Yup, again.
-
-I think there should be something doable here for TULIP. tDCS has sham stimulation for easy blinding. Oxygen can be trivially blinded by having 2 canisters with different concentrations. What options are available for lasers? Can wavelengths be changed, for example, a switch to put it into the right wavelength or into a wavelength that can't penetrate one?
-
-> I'm really looking forward to hearing your results with sleep and magnesium.
-
-I'll certainly be posting them to /r/nootropics. Not sure about crossposting to Longecity, I haven't seen many replies to my posts there.
-
-----
-
-Chart of skull positions: http://www.intechopen.com/source/html/17370/media/image3.jpeg
-Lostfalco original thread http://www.longecity.org/forum/topic/63228-lostfalcos-extensive-nootropic-experiments/
-Lostfalco summary http://www.longecity.org/forum/user/11887-lostfalco/
-
-purchased: http://www.ebay.com/itm/251266500210 \$13, "48 LED illuminator light IR Infrared Night Vision+Power Supply For CCTV", "Auto Power-On Sensor, only turn-on when the surrounding is dark.", "IR LED wavelength: 850nm." "Powered by DC 12V 500mA adaptor." arrived in 4 days, on 7 September 2013.
-
-fits in palm. Cellphone camera verifies IR emission. No visible light at all (except in complete darkness I can make out a faint red light), no noise, no apparent heat - takes about 30 minutes before the lens or body warms up noticeably. Blinding entirely possible if power source can be randomized.
-
-Began with 10 minutes to around F3/F4 points, another 5 minutes around the forehead. Awkward holding it up against one's head. I see why people talk of "LED helmets", it's boring waiting. No initial impressions except maybe feeling a bit mentally cloudy, but that goes away within 20 minutes of finishing when I took a nap outside in the sunlight. Lostfalco says "Expectations: You will be tired after the first time for 2 to 24 hours. It's perfectly normal.", but I'm not really feeling it, although I wasn't very energized to begin with since my dog woke me up very early and disturbed my sleep.
-
-Second day (8): escalated to 30 minutes on the forehead, tried an hour on joints. No particular observations except less tiredness than before and perhaps less joint ache.
-Third day (9): skipped forehead stimulation, exclusively knee & ankle.
-Fourth day (10): forehead at various spots for 30 minutes; tiredness
-5/6/7/8th day (11/12/13/4): skipped
-Ninth: forehead, 20 minutes. No noticeable effects.
-10th: skipped
-11th: 20m
-Sep 21-22: skip
-Sep 23: 20m
-26
-27
-28
-Oct
-01
-08
-09
-12
-13
-15
-22
-24
-26
-28
-31
-November
-05
-08
-10
-14
-18
-21
-24
-26
-29
-December
-03
-07
-09
-11
-15
-19
-22
-29
-30
-2014
-January
-01
-04
-07
-09
-11
-14
-17
-20
-22
-25
-28
-February
-02
-05
-10
-13
-15
-17
-20
-25
-27
-March
-01
-03
-05
-08
-10
-12
-15 disabled light sensor: complete absence of subjective effects since the first session, has made me wonder if the LEDs are even turning on - a little bit of ambient light seems to disable it. So I stuffed the sensor full of putty, verified it was now always-on with the cellphone camera, and began again; this time it seemed to warm up much faster, making me wonder if all the previous sessions' sense of warmth was simply heat from my hand holding the LEDs
-17
-19
-23
-25
-27
-29
-April
-03
-05
-13
-17
-21
-23
-26
-28
-May
-01
-04
-09
-12
-15
-19
-24
-27
-30
-June
-05
-08
-12
-27
-July
-03
-08
-11
-14
-16
-18
-
-Some time ago, lostfalco got me interested in the topic of low-level light treatment (weak near-infrared light administered to the head) with his thread and donated money for me to try out a device.
-
-While skeptical (because come on, LLLT sounds like the stupidest thing in the world and 100% snake oil), I didn't see any harm in trying, and on 7 September 2013, I began sporadically (non-randomized) using a 48-LED set on my head. In between, I also analyzed a blind self-experiment run by Nattzor which found large benefits to his reaction-time.
-
-I recently compiled my own data, leaving me with 329 days of data. The response variable 'MP' is a little self-rating of my own devising in which for 2.5 years I've asked myself at the end of each day whether I did more, the usual, or less work done that day than average (2=below-average, 3=average, 4=above-average); it's ad hoc, but in some factor analyses I've been playing with, it seems to load on a lot of other variables I've measured, so I think it's meaningful. The results are that (correcting for the magnesium self-experiment I was running during the time period which did not turn out too great) days on which I happened to use my LED device for LLLT were much better than regular days. Below is a graph showing the entire MP dataseries with LOESS-smoothed lines showing LLLT vs non-LLLT days:
-
-https://i.imgur.com/AEXqfO1.png
-
-The correlation is fairly large (r=0.185 or d=0.46 if you prefer) and statistically-significant (p=0.0006).
-
-I have no particularly compelling story for why this might be a correlation and not causation. It could be placebo, but I assumed the LLLT was not working and was going to throw out the LED set until I ran the numbers just in case. It could be selection effect (days on which I bothered to use the annoying LED set are better days) but then I'd expect the off-days to be below-average and compared to the 2 years of trendline before, there doesn't seem like much of a fall.
-
-So, I have started a randomized experiment; should take 2 months, given the size of the correlation. If that turns out to be successful too, I'll have to look into methods of blinding - for example, some sort of electronic doohickey which turns on randomly half the time and which records whether it's on somewhere one can't see (then one hooks up the LED, turns the doohickey 'on', and applies directly to forehead, checking the next morning to see whether it was really on or off).
-
-Below is a link to the raw data, and the R code for my analysis & graph:
-
-# http://dl.dropboxusercontent.com/u/85192141/2014-08-03-lllt-correlation.csv
-lllt <- read.csv("docs/nootropics/2014-08-03-lllt-correlation.csv")
-summary(lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) + as.logical(Magnesium.citrate):as.integer(Date), data=lllt))
-# ...Coefficients:
-#                                                        Estimate   Std. Error  t value   Pr(>|t|)
-# (Intercept)                                         4.037702597  0.616058589  6.55409 5.0282e-10
-# LLLTTRUE                                            0.330923350  0.095939634  3.44929 0.00069087
-# as.logical(Magnesium.citrate)TRUE                   0.963379487  0.842463568  1.14353 0.25424378
-# as.integer(Date)                                   -0.001269089  0.000880949 -1.44059 0.15132856
-# as.logical(Magnesium.citrate)TRUE:as.integer(Date) -0.001765953  0.001213804 -1.45489 0.14733212
-
-llltImputed <- lllt
-llltImputed[is.na(llltImputed)] <- 0
-llltImputed[llltImputed$MP == 0,]$MP <- 3 # clean up an outlier
-
-summary(lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) + as.logical(Magnesium.citrate):as.integer(Date), data=llltImputed))
-# ...Coefficients:
-#                                                        Estimate   Std. Error  t value   Pr(>|t|)
-# (Intercept)                                         2.959172295  0.049016571 60.37085 < 2.22e-16
-# LLLT                                                0.336886970  0.083731179  4.02344 6.2212e-05
-# as.logical(Magnesium.citrate)TRUE                   2.155586397  0.619675529  3.47857 0.00052845
-# as.integer(Date)                                    0.000181441  0.000103582  1.75166 0.08017565
-# as.logical(Magnesium.citrate)TRUE:as.integer(Date) -0.003373682  0.000904342 -3.73054 0.00020314
-
-power.t.test(power=0.8, delta=(0.336886970 / sd(lllt$MP, na.rm=TRUE)), type="paired", alternative="one.sided")
-#
-#      Paired t test power calculation
-#
-#               n = 30.1804294
-#           delta = 0.463483435
-#              sd = 1
-#       sig.level = 0.05
-#           power = 0.8
-#     alternative = one.sided
-#
-# NOTE: n is number of *pairs*, sd is std.dev. of *differences* within pairs
-
-library(ggplot2)
-llltImputed$Date <- as.Date(llltImputed$Date)
-ggplot(data = llltImputed, aes(x=Date, y=MP, col=as.logical(llltImputed$LLLT))) +
- geom_point(size=I(3)) +
- stat_smooth() +
- scale_colour_manual(values=c("gray49", "green"),
-                     name = "LLLT")
-
-
-begin randomized experiment:
+LLLT
+randomized experiment:
 August 2014
 02: 1
 03: 0
 04: 1
+05: 1
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2 August -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5 August -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014, 18-19 July 2014 -->

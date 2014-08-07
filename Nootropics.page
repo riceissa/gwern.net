@@ -1047,7 +1047,8 @@ write.csv(lithiumExperiment, file="2012-lithium-experiment.csv", row.names=FALSE
 
 ~~~{.R}
 lithiumExperiment <- read.csv("http://www.gwern.net/docs/lithium/2012-lithium-experiment.csv")
-summary(lm(cbind(MP, Mnemosyne.grade, Gwern.net.patches, ZQ, MR3, MR2, MR4) ~ Lithium, data=lithiumExperiment))
+l1 <- lm(cbind(MP, Mnemosyne.grade, Gwern.net.patches, ZQ, MR3, MR2, MR4) ~ Lithium, data=lithiumExperiment)
+summary(l1)
 # Response MP :
 #
 # Coefficients:
@@ -1137,7 +1138,14 @@ summary(lm(cbind(MP, Mnemosyne.grade, Gwern.net.patches, ZQ, MR3, MR2, MR4) ~ Li
 #   (220 observations deleted due to missingness)
 # Multiple R-squared:  0.00298, Adjusted R-squared:  -0.000134
 # F-statistic: 0.957 on 1 and 320 DF,  p-value: 0.329
+
+summary(manova(l1))
+#            Df      Pillai  approx F num Df den Df  Pr(>F)
+# Lithium     1 0.009477169 0.4291862      7    314 0.88373
+# Residuals 320
 ~~~
+
+No variable reaches statistical-significance, the coefficient signs are inconsistent, and the MANOVA indicates no overall improvement by using the lithium variable.
 
 ### Conclusion
 
@@ -1164,6 +1172,7 @@ While the mechanism is largely unknown, one commonly mechanism possibility is th
 
 I was contacted by the Longecity user [lostfalco](http://www.longecity.org/forum/user/11887-lostfalco/), and read through some of his [writings on the topic](http://www.longecity.org/forum/topic/63228-lostfalcos-extensive-nootropic-experiments/).
 I had never heard of LLLT before, but the mitochondria mechanism didn't sound impossible (although I wondered whether it made sense at a quantity level[^blood-sugar]), and there was at least some research backing it; more importantly, lostfalco had discovered that devices for LLLT could be obtained as cheap as \$15.
+(Clearly no one will be getting rich off LLLT or affiliate revenue any time soon.)
 Nor could I think of any way the LLLT could be easily harmful: there were no drugs involved, physical contact was unnecessary, power output was too low to directly damage through heating, and if it had no LLLT-style effect but some sort of circadian effect through hitting photoreceptors, using it in the morning wouldn't seem to interfere with sleep.
 
 [^blood-sugar]: That is, perhaps light of the right wavelength can indeed save the brain some energy by making it easier to generate ATP. Would 15 minutes of LLLT create enough ATP to make any meaningful difference, which could possibly cause the claimed benefits? The problem here is like that of the famous blood-glucose theory of [willpower](!Wikipedia "Ego depletion") - while the brain does indeed use up more glucose while active, high activity uses up very small quantities of glucose/energy which doesn't seem like enough to justify a mental mechanism like weak willpower. Kurzban, in [a blog post](http://www.epjournal.net/blog/2011/08/glucose-is-not-willpower-fuel/) puts it well:
@@ -1209,7 +1218,7 @@ That left me with 329 days of data. The results are that (correcting for the mag
 
 ![Daily productivity self-rating (higher=better) over time, split by LLLT usage that day](/images/nootropics/2014-lllt-mp.png)
 
-The correlation of LLLT usage with higher MP self-rating is fairly large (_r_=0.185 / _d_=0.46) and statistically-significant (_p_=0.0006).
+The correlation of LLLT usage with higher MP self-rating is fairly large (_r_=0.19 / _d_=0.46) and statistically-significant (_p_=0.0006).
 
 I have no particularly compelling story for why this might be a correlation and not causation. It could be placebo, but I wasn't expecting that. It could be selection effect (days on which I bothered to use the annoying LED set are better days) but then I'd expect the off-days to be below-average and compared to the 2 years of trendline before, there doesn't seem like much of a fall.
 
@@ -1226,6 +1235,23 @@ summary(lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) + as.log
 # as.integer(Date)                                   -0.001269089  0.000880949 -1.44059 0.15132856
 # as.logical(Magnesium.citrate)TRUE:as.integer(Date) -0.001765953  0.001213804 -1.45489 0.14733212
 
+0.330923350 / sd(lllt$MP, na.rm=TRUE)
+# [1] 0.455278787
+
+cor.test(lllt$MP, as.integer(lllt$LLLT))
+#
+#   Pearson`s product-moment correlation
+#
+# data:  lllt$MP and as.integer(lllt$LLLT)
+# t = 3.4043, df = 327, p-value = 0.0007458
+# alternative hypothesis: true correlation is not equal to 0
+# 95% confidence interval:
+#  0.0784517682 0.2873891665
+# sample estimates:
+#         cor
+# 0.185010342
+
+## check whether there's odd about non-LLLT days by expanding to include baseline
 llltImputed <- lllt
 llltImputed[is.na(llltImputed)] <- 0
 llltImputed[llltImputed$MP == 0,]$MP <- 3 # clean up an outlier
@@ -2817,6 +2843,7 @@ August 2014
 03: 0
 04: 1
 05: 1
+06: 0
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->

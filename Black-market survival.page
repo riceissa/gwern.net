@@ -30,7 +30,7 @@ Variables:
 - RoI: the 30-day return-on-investment of Bitcoin as decimal; extracted from Eli Dourado's [btcvol.info](http://btcvol.info/)'s [historical CSV](http://btcvol.info/csv); it is based on the [Coindesk index](http://www.coindesk.com/price/?bpi=bpi). For exact computation, see the appendix.
 - σ/[volatility](https://en.wikipedia.org/wiki/Volatility_%28finance%29): the 30-day volatility of Bitcoin prices on the day a marketplace is considered dead (decimal),
 
-A table of all relevant markets (26 July 2014):
+A table of all relevant markets (9 August 2014):
 
 Market                   Start       End       Alive Closure   URL                      Multisig I2P   Coin  Codebase   Guns   Fraud Hacks Doxed  RoI    σ     Notes
 ----------------------   ---------- ---------  ----- --------- ------------------------ -------- ----- ----  ---------- -----  ----- ----- ----- ------ -----  -------------
@@ -124,6 +124,8 @@ I may add to the table other variables; possibly useful ones:
 <!-- Outlaw policy: "Basically everything thst is not meant to/ or harming "innocent people". Stolen bankaccount there the "small individual" would have to pay for: no. stolen accounts of politicians: yes. Fireames for self defense: yes. Nuclear, biological or chemical weapons for mass-murder: no." -->
 <!-- Onionshop a custom implementation? $ torify curl -I http://onionshopkue7sxr.onion/ / HTTP/1.1 200 OK / Date: Wed, 21 May 2014 23:15:41 GMT / Server: Apache/2.2.22 (Ubuntu) / X-Powered-By: PHP/5.3.10-1ubuntu3.11 / Set-Cookie: PHPSESSID=im4plmtfgauil19u3uotv7v1h3; path=/ / Expires: Thu, 19 Nov 1981 08:52:00 GMT / Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0 / Pragma: no-cache / Vary: Accept-Encoding / Content-Type: text/html -->
 <!-- Grand Trunk http://www.reddit.com/r/DarkNetMarkets/comments/2b0qqt/gt_call_me_crazy_call_me_maybe_but_i_just_built_a/ beta 18 July 2014 grandmpdsznzevvs.onion -->
+<!-- Silkstreet down 5, 7, 9 August 2014 -->
+<!-- Andromeda down 9 August 2014 (and earlier? http://www.reddit.com/r/DarkNetMarkets/comments/2d3mx4/andromeda_market_pulled_an_exit_scam/ ) -->
 
 # Analysis
 
@@ -154,11 +156,7 @@ library(survival)
 
 cmodel <- coxph(Surv(Age, Alive) ~ Multisig + I2P + Coin + Codebase + Guns + Fraud + Hacks + Doxed + RoI + σ, data = black); cmodel
 
-black$End <- NULL;
-black$Start <- NULL;
-black$URL <- NULL;
-black$Notes <- NULL;
-black$Market <- NULL;
+rm(black$End, black$Start, black$URL, black$Notes, black$Market)
 
 library(mice)
 blackimp <- mice(black, m=100, printFlag=FALSE)

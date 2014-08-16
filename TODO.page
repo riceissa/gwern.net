@@ -5,9 +5,6 @@ created: 07 Nov 2008
 ...
 
 # Haskell
-
-- Remove [Data.Map.map](!Hoogle); see [original](http://www.mail-archive.com/haskell-cafe@haskell.org/msg22115.html) [email thread](http://www.mail-archive.com/haskell-cafe@haskell.org/msg22055.html) and the GHC [bug report](http://hackage.haskell.org/trac/ghc/ticket/1249).
-
 ## Pandoc
 
 - Write up what LaTeX Pandoc does understand; this can be found out by looking through the tests; figure out how the new TeXmath figures in
@@ -15,7 +12,7 @@ created: 07 Nov 2008
 ## XMonad
 
 - Look through my collection of XMonad configuration files. What can be done in XMonad core and XMonadContrib to simplify them?
-- XMonad.WindowGo and WindowBring could use quite a bit of refactoring and generalizing.
+- `XMonad.WindowGo` and `WindowBring` could use quite a bit of refactoring and generalizing.
 - Hlint XMC
 - Run 'sim_text -d `find XMonadContrib/XMonad`' on XMC
 
@@ -35,7 +32,6 @@ created: 07 Nov 2008
 ## Mnemosyne plugins:
 
 - Spell-checker for adding cards
-- Metadata adder: in comment tags, add current date. TODO: is this actually necessary?
 - Per-category 'vice-versa' setting
 
 # General
@@ -45,6 +41,6 @@ created: 07 Nov 2008
 - Compile a [best of SL4](http://lesswrong.com/r/discussion/lw/5n2/sl4_meta_list_closure_2_month_followup/452r) list of emails/reading list
 - read through Akadot archives for _Eva_-related material: <http://wayback.archive.org/web/*/akadot.com/*>
 - Learn some [physics](http://ocw.mit.edu/courses/physics/8-01sc-physics-i-classical-mechanics-fall-2010/) (cf. _SCIM_)
-- Learn statistics: <http://oli.web.cmu.edu/openlearning/forstudents/freecourses/statistics>, <http://ipsur.r-forge.r-project.org/book/>
+- Learn statistics: <http://ipsur.r-forge.r-project.org/book/>
 - Machine learning resources: <http://metaoptimize.com/qa/questions/186/>
 - make dorodango: <http://www.dorodango.com/create.html>

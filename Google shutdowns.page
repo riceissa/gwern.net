@@ -928,7 +928,8 @@ randomSurvivalPredictionAccuracy <- function(gb, indices) {
                  data=g, nsplit=1)
 
     predictionMatrix <- predictSurvProb.rsf(rsfB, google, totals)
-    predictions <- NULL; for (i in 1:nrow(google)) { predictions[i] <- predictionMatrix[i,i] }
+    rm(predictions)
+    for (i in 1:nrow(google)) { predictions[i] <- predictionMatrix[i,i] }
 
     return(sum((predictions<0.50) == google$Dead) / nrow(google))
 }
@@ -950,7 +951,7 @@ randomCoxPredictionAccuracy <- function(gb, indices) {
     cmodel <- cmodel <- coxph(Surv(Days, Dead) ~ Acquisition + FLOSS + Profit + Social + Type + DeflatedHits,
                 data = g)
 
-    predictions <- NULL;
+    rm(predictions)
     for (i in 1:nrow(google)) { predictions[i] <- coxProbability(cmodel, google[i,], totals[i]) }
 
     return(sum((predictions<0.50) == google$Dead) / nrow(google))

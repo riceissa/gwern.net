@@ -2347,7 +2347,7 @@ He argued (deleting identifying details since I will be using their real traffic
 > is that all referring traffic must be bucketed and split-test against them.
 > Buckets themselves are amorphous - they can be visitors of the same
 > resolution, visitors who have bought our guide, etc. But just comparing how
-> we did (and our affiliates did) on sales of our S-G Reference (an easy to
+> we did (and our affiliates did) on sales of our guide (an easy to
 > measure metric - our RPU), traffic matters so much. X sent 5x the
 > traffic that Y did, yet still generated 25% less sales. That
 > would destroy any meaningful A/B testing without splitting up the quality.
@@ -2389,12 +2389,10 @@ xP <- yP * 0.75
 blueP <- 0.01
 
 # examine various possible sizes of N
-controlledResults <- NULL
-uncontrolledResults <- NULL
+rm(controlledResults, uncontrolledResults)
 for (n in seq(1000,10000,by=100)) {
 
- controlled <- NULL
- uncontrolled <- NULL
+ rm(controlled, uncontrolled)
 
  # generate 1000 hypothetical datasets
  for (i in 1:1000) {
@@ -2546,11 +2544,9 @@ Change the power simulation appropriately:
 ~~~{.R}
 set.seed(666)
 blueP <- 0.01
-controlledResults <- NULL
-uncontrolledResults <- NULL
+rm(controlledResults, uncontrolledResults)
 for (n in seq(1000,10000,by=1000)) {
- controlled <- NULL
- uncontrolled <- NULL
+ rm(controlled, uncontrolled)
  for (i in 1:1000) {
 
  d1 <- data.frame(Converted=rbinom(n*0.17681, 1, 0.006494   + blueP), Source="X",  Color=TRUE)
@@ -2660,13 +2656,11 @@ blueP   <- 0.0100
 sampleSizes <- seq(100,5000,by=100)
 replicates  <- 1000
 
-controlledResults <- NULL
-uncontrolledResults <- NULL
+rm(controlledResults, uncontrolledResults)
 
 for (n in sampleSizes) {
 
- controlled <- NULL
- uncontrolled <- NULL
+ rm(controlled, uncontrolled)
 
  # generate _m_ hypothetical datasets
  for (i in 1:replicates) {

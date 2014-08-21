@@ -175,7 +175,7 @@ Occasionally people ask how I manage information and read things.
     I periodically back up my Evernote using the [Linux client Nixnote's](http://nevernote.sourceforge.net/) export feature. (I made sure there was a working export method before I began using Evernote, and use it only as long as Nixnote continues to work.)
 3. Web pages are archived & backed up by [my custom archiving setup](Archiving URLs). This is intended mostly for fixing dead links (eg to recover the fulltext of the original URL of an Evernote clipping).
 4. I don't have any special book reading techniques. For really good books I excerpt from each chapter and stick the quotes into Evernote.
-5. I store insights and thoughts in various pages on `gwern.net` as parenthetical comments, footnotes, and appendices. If they don't fit anywhere, I dump them in [Note]()
+5. I store insights and thoughts in various pages on `gwern.net` as parenthetical comments, footnotes, and appendices. If they don't fit anywhere, I dump them in [Notes]()
 6. Larger masses of citations and quotes typically get turned into `gwern.net` pages.
 7. I make heavy use of RSS subscriptions for news. For that, I am currently using [Liferea](!Wikipedia). (Not that I'm hugely thrilled about it. Google Reader was much better.)
 8.  For projects and followups, I use lots and lots of reminders in Google Calendar.

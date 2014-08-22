@@ -30,6 +30,7 @@ Page view counts:
 - 10k unique visitors https://whoapi.com/blog/554/how-hacker-news-hit-us-with-10-000-unique-visitors-in-10-hours/
 - >40k unique visitors https://news.ycombinator.com/item?id=7427542 "in one 24 hour period, 35,000 visits and 32,000 uniques"
 - https://medium.com/p/81bd75a39425
+- https://baremetrics.io/blog/hacker-news-1500-recurring-revenue
 
 # Submissions
 
@@ -47,6 +48,19 @@ Sep 2013, started with: '"Equoid" (Charles Stross meets My Little Pony)' (http:/
 multi-level Poisson model? Group by Domain and cross group by Day. mixture model? seems appropriate for two different groups (those who make front page and those who don't)
 
 can't filter GA by ycombinator.com: https breaks referrers
+
+HN API:
+
+wget 'http://hn.algolia.com/api/v1/search_by_date?tags=story,author_gwern&hitsPerPage=1000'
+
+How to get all my comments? This doesn't work:
+
+wget 'http://hn.algolia.com/api/v1/search?tags=author_gwern,(comment)&hitsPerPage=999&page=2'
+    http://hn.algolia.com/api/v1/search?tags=author_gwern,(comment)&hitsPerPage=1000
+
+{"hits":[],"page":2,"nbHits":0,"nbPages":0,"hitsPerPage":999,"processingTimeMS":1,"message":"you can only fetch the 1000 hits for this query, contact us to increase the limit","query":"","params":"advancedSyntax=true\u0026analytics=false\u0026hitsPerPage=999\u0026page=2\u0026tags=author_gwern%2C%28comment%29"}
+
+algolia API is apparently heavily limited: https://github.com/fraction/node-hacker-news-api/issues/11
 
 # /newest
 

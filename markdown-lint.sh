@@ -32,6 +32,8 @@ do
         egp --only-matching '\!\[.*\]\(http://.*\)' "$PAGE";
         # indicates broken copy-paste of image location
         egp --only-matching '\!\[.*\]\(wiki/.*\)' "$PAGE";
+        # look for unescaped single dollar-signs (risk of future breakage)
+        egp '^[^$]* [^\"]\$[^$]*$' "$PAGE";
 
         markdown-length-checker.hs "$PAGE";
         markdown-footnote-length.hs "$PAGE";

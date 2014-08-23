@@ -202,7 +202,7 @@ But there are issues.
 
     (The female trend has continued through to 2010: "The 1,000 top girl names accounted for only 67% of all girl names last year, down from 91% in 1960 and compared with 79% for boys last year."^[["Say Goodnight, Grace (and Julia and Emma, too)"](http://www.nytimes.com/2011/06/26/magazine/the-state-of-babies-names-hello-jayden-goodbye-hannah.html). _New York Times Magazine_]) The theory could probably be rescued by saying that the advantage of having a unique given name (and thus a relatively unique full name) goes that far back, but then we would need to explain why the advantage would be there for women, but *not* men. On the other hand, Social Security data seems to indicate both a 2-century long decline in the popularity of the top ten names and also a convergence of top-ten name rarity; from [Andrew Gelman](http://andrewgelman.com/2013/01/where-36-of-all-boys-end-up-nowadays/):
 
-    ![Total popularity of top ten names each year, by sex; Source: Social Security Administration, courtesy of Laura Wattenberg](http://andrewgelman.com/wp-content/uploads/2013/01/topten.png)
+    ![Total popularity of top ten names each year, by sex; Source: Social Security Administration, courtesy of Laura Wattenberg](/images/2013-01-toptenusanames.png "http://andrewgelman.com/wp-content/uploads/2013/01/topten.png")
 - Pop culture is known to have a very strong influence on baby names (cf. the popularity of _Star Wars_ and the subsequent massive spike in 'Luke'). The counter-arguments to [The Long Tail](!Wikipedia) marketing theory say that pop culture is becoming ever more monolithic and hit-driven. The fewer hits, and the more mega-hits, the more we could expect a few names to spike and drive down the rate of other names. The effect on a rare name can be incredible even from relatively small hits (the song in question was only a Top 10):
 
     > Kayleigh became a particularly popular name in the United Kingdom following the release of a song by the British rock group Marillion. Government statistics in 2005 revealed that 96% of Kayleighs were born after 1985, the year in which Marillion released "Kayleigh".^[Wikipedia again]
@@ -2430,7 +2430,7 @@ So we can tell him that he may have a \>55% chance of getting in.
 
 # North Paw
 
-A direction sensor belt (a ring of vibrators around one's waist; the one closest to North buzzes gently). See the [_Wired_](http://www.wired.com/wired/archive/15.04/esp.html) article on it, and a [2009 article](http://hplusmagazine.com/articles/enhanced/my-new-sense-organ) describing Sensebridge's Northpaw product  The [feelSpace](http://feelspace.cogsci.uni-osnabrueck.de/) homepage is here. There is a thread on [Hackers News](https://news.ycombinator.com/item?id=609983) about building one's own. Here's a [version of the belt](http://www.exothermia.net/monkeys_and_robots/2009/02/04/on-the-haptic-compass/) made using [Arduino](!Wikipedia). There's a quasi-commercial version available for $119-214 from [Sensebridge](http://sensebridge.net/projects/northpaw) ([video](http://vimeo.com/groups/45234/videos/11912761)), intended for wearing on one's ankle (the original ankle-based project is ["Noisebridge"](https://www.noisebridge.net/wiki/Compass_Vibro_Anklet)). There's an [Arduino-based belt](http://www.gradman.com/hapticcompass), then there's a [_hat_](https://www.noisebridge.net/wiki/Compass_Vibro_Anklet)! I think most approaches are just a little baroque; it might make more sense to have each vibrator be independent - with a vibrator, a compass, and a battery. After all, each one should be able to know independently of the others whether it is facing North or not.
+A direction sensor belt (a ring of vibrators around one's waist; the one closest to North buzzes gently). See the [_Wired_](http://www.wired.com/wired/archive/15.04/esp.html) article on it, and a [2009 article](http://hplusmagazine.com/articles/enhanced/my-new-sense-organ) describing Sensebridge's North Paw product  The [feelSpace](http://feelspace.cogsci.uni-osnabrueck.de/) homepage is here. There is a thread on [Hackers News](https://news.ycombinator.com/item?id=609983) about building one's own. Here's a [version of the belt](http://www.exothermia.net/monkeys_and_robots/2009/02/04/on-the-haptic-compass/) made using [Arduino](!Wikipedia). There's a quasi-commercial version available for $119-214 from [Sensebridge](http://sensebridge.net/projects/northpaw) and through [Think Geek](https://www.thinkgeek.com/product/f358/) ([video](http://vimeo.com/groups/45234/videos/11912761)), intended for wearing on one's ankle (the original ankle-based project is ["Noisebridge"](https://www.noisebridge.net/wiki/Compass_Vibro_Anklet)). There's an [Arduino-based belt](http://www.gradman.com/hapticcompass), then there's a [_hat_](https://www.noisebridge.net/wiki/Compass_Vibro_Anklet)! I think most approaches are just a little baroque; it might make more sense to have each vibrator be independent - with a vibrator, a compass, and a battery. After all, each one should be able to know independently of the others whether it is facing North or not.
 
      Parts:
      - <http://www.imagesco.com/catalog/DigitalCompass/DigitalCompass.html>
@@ -2443,12 +2443,24 @@ A direction sensor belt (a ring of vibrators around one's waist; the one closest
 
 I had been meaning to buy or build one ever since I read the _Wired_ article back in 2007 or so, but had never quite gotten around it.
 The topic came up briefly on Hacker News and I suddenly remembered my intention and I worried that Sensebridge no longer sold them 7 years later; fortunately, they still did, so I took the hint and decided to get around to it.
+
 I ordered a pre-assembled North Paw on 14 August 2014.
+
 It arrived 20 August; [calibration](http://sensebridge.net/projects/northpaw/instructions/step-3/) was straightforward.
 Smaller than it looked in photos.
 My initial impression is that the vibrations are stronger than expected, but they turn off after a minute or so with no movement.
 Interesting sensation feeling the motors successively turn on/off as one spins; it's also a dramatic demonstration of the 'sensory homunculus' - I can feel the individual motors very distinctly when I hold it with my fingers, but when I put it on, the skin around the ankle reports only the vaguest "there's some buzzing over here, maybe" sensations.
 After about 6 hours of use (1 hour walking around the neighborhood with it on), I don't feel transformed.
+The battery life seems to be at least 8 hours, and one recharges it with a [USB Mini B](!Wikipedia "USB#Mini and Micro connectors") cable.
+(I was worried I didn't have one and would have to order a cable, but it turned out the hard drive enclosures for my laptop-size backup hard drives is such a cable.)
+
 Instead, what I feel is sort of a 'wall' to the north of me, in the same way that when you're in a very large open room such as a gymnasium or the Smithsonian Air & Space museum outside of Washington D.C., you don't feel uprooted & disoriented like you might in a place like Iowa or out in the ocean where it's flat and landmarkless as far as the eye can see; instead, you sort of orient yourself 'against' or 'towards' the nearest wall (however far away it might be) and you get closer or further to the wall as you move around.
 With the North Paw on, I feel vaguely like there's a wall far away to the north of me that I rotate or shift with respect to (which I suppose is more or less the case with the magnetic north pole).
 An odd feeling.
+
+On the third day, I noticed that the vibrations seemed to be weaker and harder to notice, although when I felt it with my fingers the motors seemed to be vibrating as strongly as ever, so perhaps the adaptation really is happening and my mind is gradually filtering out the vibrations.
+During my walk, the battery pack came loose: it turns out to be attached to the fabric circlet by an adhesive mount, so it can come loose.
+This is a little worrisome (what if it comes off during a violent or sudden movement? will it break the North Paw as it rips out?) but pressing it back in place firmly seemed to work, and for good measure, I used a black [binder clip](!Wikipedia) overnight.
+
+The fourth day, I happened to take a drive.
+The vibration from driving seems to mostly drown out the North Paw, but I did notice that roads seem to be aligned north/south or east/west to a degree I'd never appreciated before.

@@ -152,6 +152,7 @@ A local copy is not the best resource - what if a link goes dead in a way your t
 `archiver` has an extra feature where any third argument is treated as an arbitrary `sh` command to run after each URL is archived, to which is appended said URL. You might use this feature if you wanted to load each URL into Firefox, or append them to a log file, or simply download or archive the URL in some other way.
 
 For example, in conjunction with the big `local-archiver` runs, I have `archiver` run `wget` on each individual URL: `screen  -d -m -S "archiver" sh -c 'while true; do archiver ~/.urls.txt gwern@gwern.net "cd ~/www && wget --unlink --continue --page-requisites --timestamping -e robots=off --reject .iso,.exe,.gz,.xz,.rar,.7z,.tar,.bin,.zip,.jar,.flv,.mp4,.avi,.webm --user-agent='Firefox/3.5' 120"; done'`.
+(For private URLs which require logins, `wget` can still grab them with some help: installing the Firefox extension [Export Cookies](https://addons.mozilla.org/en-US/firefox/addon/export-cookies/), logging into the site in Firefox like usual, exporting one's `cookies.txt`, and adding the option `--load-cookies cookies.txt` to give it access to the cookies.)
 
 Alternately, you might use `curl` or a specialized archive downloader like the Internet Archive's crawler [Heritrix](http://crawler.archive.org/).
 

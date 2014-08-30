@@ -157,7 +157,14 @@ Either way, this example demonstrates that anything you are doing *expensively* 
 
 # Adrafinil
 
-The [adrafinil](!Wikipedia)/Olmifon (bought simultaneously with the [hydergine](#hydergine) from Anti-Aging Systems, now [Antiaging Central](http://antiagingcentral.com/store/catalog/index.php?cPath=32)) was a disappointment. Almost as expensive as actual modafinil, with the risk of liver problems, but did nothing whatsoever that I noticed. It is supposed to be subtler than modafinil, but that's a little ridiculous.
+The [adrafinil](!Wikipedia)/Olmifon (bought simultaneously with the [hydergine](#hydergine) from Anti-Aging Systems, now [Antiaging Central](http://antiagingcentral.com/store/catalog/index.php?cPath=32)) was a disappointment.
+Almost as expensive as actual modafinil, with the risk of liver problems, but did nothing whatsoever that I noticed.
+It is supposed to be subtler than modafinil, but that's a little ridiculous.
+
+The advantage of adrafinil is that it is legal & over-the-counter in the USA, so one removes the small legal risk of ordering & possessing modafinil without a prescription, and the retailers may be more reliable because they are not operating in a niche of dubious legality.
+Based on comments from others, the liver problem may have been overblown, and modafinil vendors post-2012 seem to have become more unstable, so I may give adrafinil (from another source than Antiaging Central) a shot when my modafinil/armodafinil run out.
+
+<!-- http://ianmarmour.com/2014/08/17/adrafinil-a-legal-modafinil-primer/ -->
 
 # Aniracetam
 
@@ -1608,6 +1615,7 @@ One thing I did do was piggyback on my [Noopept self-experiment](#noopept): I bl
 The original magnesium l-threonate caused me no apparent problems by the time I finished off the powder and usage correlated with better days, further supporting the hypothesis that magnesium helps it.
 But l-threonate would be difficult to cap (and hence blind self-experiment) and is ruinously expensive on a per-dose basis.
 So I looked around for alternatives for the followup; one of the most common compounds suggested was the citrate form because it is reasonably well-absorbed and causes fewer digestive problems, so I could just take that.
+Magnesium oxide is widely available it looks cheap, but the absorption/bioavailabilty problem makes it unattractive: at a 3:5 ratio, an estimate of *4%* absorption, a ZMA formulation of an impressive-sounding 500mg would be $500 \times \frac{3}{5} \times 0.04 = 12$mg or a small fraction of RDAs for male adults like 400mg elemental.
 (Calcium shouldn't be a problem since I get 220mg of calcium from my multivitamin and I enjoy dairy products daily.)
 
 Finding a usable product on Amazon caused me some difficulties. I wanted a 500mg magnesium-citrate-only product at <$20 for 120 doses, but I discovered most of the selection for "magnesium citrate" had sub-500mg doses, involved *calcium* citrate or other substances like zinc (not necessarily a bad thing, but would confound an experiment), were mostly magnesium *oxide* rather than citrate, or some still other problem. Ultimately I settled on [Solgar's \$13 120x400mg magnesium citrate](http://www.amazon.com/Solgar-Magnesium-Citrate-120-tablets/dp/B00013Z0ZG/) as acceptable. (To compare with the bulkiness of the LEF vitamin D+l-threonate powder, [the Office of Dietary Supplements](http://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/) says magnesium citrate is 16% magnesium, so to get 400mg of magnesium as claimed, would take 2.5g of material, rather than 7g for 200mg; even if l-threonate is absorbed 100% and citrate 50%, the citrate is ahead. The pills turn out to be wider and longer than my 00 pills; if I want to get them into my gel capsules, I have to crush them into fine powder. The powder from one pill turns out to take up 2 00 pills.)
@@ -1811,9 +1819,10 @@ qplot(Date, MP, color=as.factor(Magnesium.citrate), legend="Magnesium citrate", 
 
 ![MP categorical data plotted by date, colored by size of magnesium dose](/images/nootropics/2013-2014-magnesium-rawdata.png)
 
-One thing I notice looking at the data is that the red magnesium-free days seem to dominate the upper ranks towards the end, and blues appear mostly at the bottom, although this is a little hard to ee because good days in general start to become sparse towards the end.
+One thing I notice looking at the data is that the red magnesium-free days seem to dominate the upper ranks towards the end, and blues appear mostly at the bottom, although this is a little hard to see because good days in general start to become sparse towards the end.
 Now, why would days start to be worse towards the end, and magnesium-dose days in particular?
 The grim surmise is: an accumulating overdose - no immediate acute effect, but the magnesium builds up, dragging down all days, but especially magnesium-dose days.
+The generally recognized symptoms of [hypermagnesemia](!Wikipedia) don't include effect on mood or cognition, aside from ["muscle weakness, confusion, and decreased reflexes...poor appetite that does not improve"](http://chemocare.com/chemotherapy/side-effects/hypermagnesemia-high-magnesium.aspx), but it seems plausible that below medically-recognizable levels of distress like hypermagnesemia might still cause mental changes, and I wouldn't expect any psychological research to have been done on this topic.
 
 A picture is worth a thousand words, particularly in this case where there seems to be temporal effects, different trends for the conditions, and general confusion.
 So, I drag up 2.5 years of MP data (for context), plot all the data, color by magnesium/non-magnesium, and fit different LOESS lines to each as a sort of smoothed average (since categorical data is hard to interpret as a bunch of dots), which yields:
@@ -1881,7 +1890,24 @@ The result were ambiguous: only a few effects survive multiple correction, which
 The interpretation which seems to best resolve everything I know about magnesium with the data from my experiment is that magnesium supplementation does indeed help me a large amount, but I was taking way too much.
 
 This is not 100% clear from the data and just blindly using a plausible amount carries the risk of the negative effects, so I intend to run another large experiment.
-I will reuse the NOW powder, but this time, I will use longer blocks (to make cumulative overdosing more evident) and avoid any doses >150mg of elemental magnesium.
+I will reuse the NOW powder, but this time, I will use longer blocks (to make cumulative overdosing more evident) and try to avoid any doses >150mg of elemental magnesium.
+
+<!--
+2.5 hours to make
+10x24 mag citrate
+10x24 bisquick placebo
+
+227g total magnesium citrate
+227/(10*24) = 227/240 = 0.945g per magnesium citrate pill
+
+119 servings of 0.315g magnesium elemental = 37.485g elemental
+37.485 / 240 = 0.156g elemental magnesium per pill
+
+first day: 29 August 2014
+1 pill every other day, 14 doses, so pairs of 28-day blocks
+
+Because 0.156g/156mg per pill seemed to accumulate to be too much in the first half of the previous experiment, I'll skip every other day to spread out the dose and get an effective dose of 78mg
+-->
 
 # Melatonin
 
@@ -2720,9 +2746,12 @@ It took 4 hours to cap 432 Noopept pills and another 432 flour pills. I tried to
 54. 3x: 10 - 12 August: 0
 
     13 - 15 August: 1
-55. 3x: 16 - 18? August: ?
+55. 3x: 16 - 18 August: 0
 
-    19? - 21? August: ?
+    19 - 21 August: 1 <!-- 22 August: NA (forgot to record & set up new block) -->
+56. 2x: 23 - 25? August: 0 <!-- 2x forced: only had 6 Noopept pills left -->
+
+    26 - 28 August: 1
 
 # Oxiracetam
 
@@ -3122,9 +3151,26 @@ August 2014
 14: 0
 15: 1
 16: 1
+17: 1
+18: 0
+19: 1
+20: 1
+21: 1
+22: 0
+23: 1
+24: 0
+25: 1
+26: 0
+27: 0
+28: 1
+29: 0
+30: NA
+31:
+September
+01:
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16 August -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014, 18-19 July 2014 -->

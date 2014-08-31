@@ -6,73 +6,123 @@ status: in progress
 belief: log
 ...
 
-This is the August edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155); the previous was [July](http://www.gwern.net/newsletter/2014/07).
-
-This is a summarized of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & including material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/).
+This is the August edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155) (previously [July](http://www.gwern.net/newsletter/2014/07)); it is a summary of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & including material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/). I thank my donors on [Gittip](https://www.gittip.com/gwern/).
 
 # Writings
+
+- Nootropics: [initial results on LLLT](http://gwern.net/Nootropics#lllt), correlates with large increases; began followup randomized experiment
+- purchased a [North Paw compass belt](http://www.gwern.net/Notes#north-paw)
+- some thoughts [on _Robinson Crusoe_](http://www.gwern.net/Notes#robinson-crusoe)
+
 # Media
+## Books
+
+Fiction:
+
+- [_Worm_](http://parahumans.wordpress.com/category/stories-arcs-1-10/arc-1-gestation/1-01/) ([review](https://www.goodreads.com/review/show/825541415))
+- _Echopraxia_, Peter Watts ([review](https://www.goodreads.com/review/show/1027604581))
+- [_Chronicle of a Death Foretold_](https://en.wikipedia.org/wiki/Chronicle_of_a_Death_Foretold), Marquez ([review](https://www.goodreads.com/review/show/369891060))
+- [_The Metropolitan Man_](https://www.fanfiction.net/s/10360716/1/The-Metropolitan-Man)
+- [_Fear and Loathing in Las Vegas_](https://en.wikipedia.org/wiki/Fear_and_Loathing_in_Las_Vegas) ([review](https://www.goodreads.com/review/show/369880530))
+
 ## Links
 
-- ["In Head-Hunting, Big Data May Not Be Such a Big Deal"](http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html?pagewanted=all)
-- [TvTropes reviews _Nature of Nature's Art_ webcomic](http://tvtropes.org/pmwiki/pmwiki.php/Webcomic/NatureOfNaturesArt)
-- ["What Happens to Women Who Are Denied Abortions?"](http://www.nytimes.com/2013/06/16/magazine/study-women-denied-abortions.html?pagewanted=all)
-- ["The Great Canadian Sperm Shortage"](http://marginalrevolution.com/marginalrevolution/2013/06/the-great-canadian-sperm-shortage.html)
-- ["Bastards and Stereotype Accuracy"](http://econlog.econlib.org/archives/2013/06/bastards_and_st.html)
-- ["The Lyme Wars: The Lyme-disease infection rate is growing. So is the battle over how to treat it."](http://www.newyorker.com/reporting/2013/07/01/130701fa_fact_specter?currentPage=all), ["What Science Needs"](http://lesswrong.com/lw/fqp/what_science_needs/)
-- ["Investigating America's elite: Cognitive ability, education, and sex differences"](http://www.psychologytoday.com/files/attachments/56143/wai-americas-elite-2013.pdf), Wai 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/aL6MqM3sysU))
-- ["A Parable"](http://www.cs.utexas.edu/~EWD/transcriptions/EWD05xx/EWD594.html), Dijkstra 1973 (Orienting toilets on train cars.)
-- ["How the Robots Lost: High-Frequency Trading's Rise and Fall"](http://www.businessweek.com/printer/articles/122900-how-the-robots-lost-high-frequency-tradings-rise-and-fall)
-- ["The Bomb Didn't Beat Japan... Stalin Did: Have 70 years of nuclear policy been based on a lie?"](http://www.foreignpolicy.com/articles/2013/05/29/the_bomb_didnt_beat_japan_nuclear_world_war_ii?page=full)
-- ["The Too-Clever Fox"](http://www.tor.com/stories/2013/06/the-too-clever-fox)
+Everything is heritable:
+
+- ["A Gene That Makes You Need Less Sleep?"](http://www.newyorker.com/science/maria-konnikova/a-gene-makes-you-need-less-sleep) (see ["Heritability of Performance Deficit Accumulation During Acute Sleep Deprivation in Twins"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3413799/ "Kuna et al 2012"), ["The Transcriptional Repressor DEC2 Regulates Sleep Length in Mammals"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2884988/ "He et al 2010"), & ["A Novel BHLHE41 Variant is Associated with Short Sleep and Resistance to Sleep Deprivation in Humans"](https://pdf.yt/d/i-sxyELBIBsir7uy "Pellegrino et al 2014"))
+- [How harmful is smoking during pregnancy - *after* controlling for the sort of people who would do that?](https://plus.google.com/103530621949492999968/posts/6wRgbC7xp2b)
+- ["On the genetic architecture of intelligence and other quantitative traits"](http://arxiv.org/abs/1408.3421), Hsu 2014
+- ["Not by Twins Alone: Using the Extended Family Design to Investigate Genetic Influence on Political Beliefs"](http://www.matthewckeller.com/16.Hatemi.et.al.2010.Nuc.fam.ajps.pdf), Hatemi et al 2010 ([excerpts](https://plus.google.com/103530621949492999968/posts/TGonjh3aLb3))
+- [Smoking is heritable but not through shared environment](https://plus.google.com/103530621949492999968/posts/gjPVcLWQLAt)
+- ["The Importance of Heritability in Psychological Research: The Case of Attitudes"](http://www2.psych.ubc.ca/~schaller/528Readings/Tesser1993.pdf), Tesser 1993 ([excerpts](https://plus.google.com/103530621949492999968/posts/dWN1PMoYkgU))
+- ["Inheritance of migratory direction in a bird species: a cross-breeding experiment with SE- and SW-migrating blackcaps (_Sylvia atricapilla_)"](https://pdf.yt/d/CjCeGMuRUPCo0BZS), Helbig 1991 ("For blackcap warblers, the direction of migration is clearly innate, so crossbreeding a group of blackcaps who flew south for fall migration with a group that oriented westward resulted in offspring who flew in a southwesterly direction.")
+
+Statistics/AI/meta-science:
+
+- ["Personal reflections on lessons learned from randomized trials involving newborn infants, 1951 to 1967"](http://www.jameslindlibrary.org/essays/cautionary/silverman.html), Silverman 2003 (9 out of 10 dead babies agree: even cherished 'obvious' beliefs must be tested by RCTs)
+- ["Publication bias in the social sciences: Unlocking the file drawer"](https://pdf.yt/d/ZTzcsTMzDeUPKhiq), Franco et al 2014 ([_Nature_](http://www.nature.com/news/social-sciences-suffer-from-severe-publication-bias-1.15787); [Andrew Gelman](http://andrewgelman.com/2014/08/28/publication-bias-social-sciences-unlocking-file-drawer2/); [excerpts](https://plus.google.com/103530621949492999968/posts/UcmnSVjBRsp))
 - ["Better Estimation When Perfection Is Unlikely: A Bayesian Example"](http://jgeer.com/better-estimation-when-perfection-is-unlikely/)
-- [Judas goat](https://en.wikipedia.org/wiki/Judas_goat)
+- ["The Lyme Wars: The Lyme-disease infection rate is growing. So is the battle over how to treat it."](http://www.newyorker.com/reporting/2013/07/01/130701fa_fact_specter?currentPage=all), ["What Science Needs"](http://lesswrong.com/lw/fqp/what_science_needs/)
+- ["Mathematics in the Age of the Turing Machine"](http://arxiv.org/pdf/1302.2898v1.pdf), Hales 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/BHAsjuWx6W1))
+- ["On the science and ethics of Ebola treatments"](http://scientiasalon.wordpress.com/2014/08/14/on-the-science-and-ethics-of-ebola-treatments/), ["Controlled trials: the 1948 watershed"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1114161/ "Doll 1998") ([excerpts](https://plus.google.com/103530621949492999968/posts/E6goVEe9gBY))
+- ["Academic urban legends"](http://sss.sagepub.com/content/44/4/638.long), Rekdal 2014
+- ["In Head-Hunting, Big Data May Not Be Such a Big Deal"](http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html?pagewanted=all)
+
+Psychology:
+
+- ["Metabolic costs and evolutionary implications of human brain development"](https://pdf.yt/d/Op8q2FdapabChlPU), Kuzawa et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/Za5X9C2xane))
+- ["Lead exposure and behavior: effects on antisocial and risky behavior among children and adolescents"](http://www.nber.org/papers/w20366.pdf), Reyes 2014
+- ["Bastards and Stereotype Accuracy"](http://econlog.econlib.org/archives/2013/06/bastards_and_st.html)
+- ["How are conscientiousness and cognitive ability related to one another? A re-examination of the intelligence compensation hypothesis"](https://pdf.yt/d/Dfl1N6pbR-4vYaKk), Murray et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/aQ51UnLCLee))
+- ["Investigating America's elite: Cognitive ability, education, and sex differences"](http://www.psychologytoday.com/files/attachments/56143/wai-americas-elite-2013.pdf), Wai 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/aL6MqM3sysU))
+- ["What Happens to Women Who Are Denied Abortions?"](http://www.nytimes.com/2013/06/16/magazine/study-women-denied-abortions.html?pagewanted=all)
+- ["Standard and trace-dose lithium: A systematic review of dementia prevention and other behavioral benefits"](http://www.gwern.net/docs/lithium/2014-mauer.pdf), Mauer et al 2014
 - [Puppy pregnancy syndrome](https://en.wikipedia.org/wiki/Puppy_pregnancy_syndrome)
+
+Technology:
+
+- [Hal Finney](https://en.wikipedia.org/wiki/Hal_Finney_%28cypherpunk%29) [has died](http://lists.extropy.org/pipermail/extropy-chat/2014-August/082585.html) ([_NYT_](http://www.nytimes.com/2014/08/31/business/hal-finney-cryptographer-and-bitcoin-pioneer-dies-at-58.html))
+- ["The Rise and Fall and Rise of Virtual Reality"](http://www.theverge.com/a/virtual-reality)
+- ["Hervé This: The world’s weirdest chef; building food, molecule by molecule"](http://www.prospectmagazine.co.uk/features/herve-this-the-worlds-weirdest-chef)
+- ["Two Centuries of Productivity Growth in Computing"](http://aida.econ.yale.edu/~nordhaus/homepage/nordhaus_computers_jeh_2007.pdf), Nordhaus 2007 ([excerpts](https://plus.google.com/103530621949492999968/posts/hqWqyYSnY8A))
+
+Economics:
+
+- ["Why Isn't the Whole World Developed? Lessons from the Cotton Mills"](http://faculty.georgetown.edu/mh5/class/econ489/Clark-Why-Isn%27t-the%20-Whole-World-Developed.pdf), Clark 1987 ([excerpts](https://plus.google.com/103530621949492999968/posts/TK2DfJbnDqC))
+- ["How the Robots Lost: High-Frequency Trading's Rise and Fall"](http://www.businessweek.com/printer/articles/122900-how-the-robots-lost-high-frequency-tradings-rise-and-fall)
+- ["What Do Chinese Dumplings Have to Do With Global Warming?"](http://www.nytimes.com/2014/07/27/magazine/what-do-chinese-dumplings-have-to-do-with-global-warming.html)
 - [Rag-picker](https://en.wikipedia.org/wiki/Rag-picker)
-- [Gong farmer](https://en.wikipedia.org/wiki/Gong_farmer)
-- [Buddhist warrior monks](https://en.wikipedia.org/wiki/S%C5%8Dhei)
-- [The Codeless Code: Case 96: "Stateless"](http://thecodelesscode.com/case/96) (can you spot all 3 FP concepts used?)
-- ["The World's Heaviest People"](http://www.dimensionsmagazine.com/dimtext/kjn/people/heaviest.htm) ("...A contemporary poet has him declare that he aspired to end his days 'on my back, lying on my many rolls of fat, scarcely uttering a word, taking labored breaths, and eating my fill', for of all the ways a man might die, an excess of luxury was the only truly happy death.")
-- ["Growing Up Sexually in Europe"](http://www2.hu-berlin.de/sexology/GESUND/ARCHIV/GUS/HISTORYCHHS.HTM)
-- [A Second Look at a wooden bench](http://www.scilogs.com/six_incredible_things_before_breakfast/a-second-look/) ([Joy in the merely real](http://wiki.lesswrong.com/wiki/Joy_in_the_Merely_Real).)
-- ["Solitary in Iran Nearly Broke Me. Then I Went Inside America's Prisons. We throw thousands of men in the hole for the books they read, the company they keep, the beliefs they hold. Here's why."](http://www.motherjones.com/politics/2012/10/solitary-confinement-shane-bauer)
-- ["How (not) to communicate new scientific information: a memoir of the famous Brindley lecture"](http://onlinelibrary.wiley.com/doi/10.1111/j.1464-410X.2005.05797.x/full), Klotz 2005
-- ["At what sample size do correlations stabilize?"](http://www.psy.lmu.de/allg2/download/schoenbrodt/pub/stable_correlations.pdf), Schönbrodt & Perugini 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/J4aSsdgAR6q))
-- ["Going, Going, Gone..."](http://chronopause.com/chronopause.com/index.php/2011/05/30/going-going-gone/) (The dilemma of polio research - amelioration vs cure - as a paradigm for aging.)
-- ["School Desegregation and Black Achievement: an integrative review"](http://deepblue.lib.umich.edu/bitstream/2027.42/68589/2/10.1177_0049124185013003002.pdf), Wortman & Bryant 1985 (publication bias: "The 31 studies found to be acceptable [by our statistical criteria for our meta-analysis] contained only two published articles."!)
-- [SMBC: the falling problem](http://www.smbc-comics.com/index.php?db=comics&id=2996)
 
-<!-- Back to 31 May 2013 -->
+Politics/religion:
 
-## Books
+- ["The Bomb Didn't Beat Japan... Stalin Did: Have 70 years of nuclear policy been based on a lie?"](http://www.foreignpolicy.com/articles/2013/05/29/the_bomb_didnt_beat_japan_nuclear_world_war_ii?page=full)
+- [Gombe Chimpanzee War](https://en.wikipedia.org/wiki/Gombe_Chimpanzee_War)
+- [Bedford Level experiment](https://en.wikipedia.org/wiki/Bedford_Level_experiment)
+- ["The Great Canadian Sperm Shortage"](http://marginalrevolution.com/marginalrevolution/2013/06/the-great-canadian-sperm-shortage.html)
+
+Fiction:
+
+- [2002 in anime](http://animeyearbyyear.wordpress.com/2014/08/10/2002/) (Overall, not the best year for anime by far, but nevertheless, I would happily rewatch [_Azumanga Daioh_](https://en.wikipedia.org/wiki/Azumanga_Daioh), [_Haibane Renmei_](https://en.wikipedia.org/wiki/Haibane_Renmei), & [_RahXephon_](https://en.wikipedia.org/wiki/RahXephon) any number of times, and picked up some interesting suggestions for future watching like [_Tamala 2010: A Punk Cat in Space_](https://en.wikipedia.org/wiki/Tamala_2010:_A_Punk_Cat_in_Space).﻿)
+- ["The Too-Clever Fox"](http://www.tor.com/stories/2013/06/the-too-clever-fox)
+- [TvTropes reviews _Nature of Nature's Art_ webcomic](http://tvtropes.org/pmwiki/pmwiki.php/Webcomic/NatureOfNaturesArt)
+
+Misc:
+
+- [Evolution of _E. Coli_ over 60k generations](http://blog.longnow.org/02014/08/21/lenski-long-term-evolution-experiment/)
+- ["War in the womb: A ferocious biological struggle between mother and baby belies any sentimental ideas we might have about pregnancy"](http://aeon.co/magazine/science/pregnancy-is-a-battleground-between-mother-father-and-baby/)
+- ["A Parable"](http://www.cs.utexas.edu/~EWD/transcriptions/EWD05xx/EWD594.html), Dijkstra 1973 (Orienting toilets on train cars.)
+- [Judas goat](https://en.wikipedia.org/wiki/Judas_goat)
+- ["The Strange & Curious Tale of the Last True Hermit: For nearly thirty years, a phantom haunted the woods of Central Maine"](http://www.gq.com/news-politics/newsmakers/201409/the-last-true-hermit?printable=true)
+
 ## Film/TV
+
+Anime:
+
+- [_Fuse Teppō Musume no Torimonochō_](https://en.wikipedia.org/wiki/Fuse_Tepp%C5%8D_Musume_no_Torimonoch%C5%8D) ([review](http://myanimelist.net/reviews.php?id=157685))
+- [_Cat Shit One_](https://en.wikipedia.org/wiki/Apocalypse_Meow#Anime) ([review](http://myanimelist.net/reviews.php?id=156797))
+- [_The SoulTaker_](https://en.wikipedia.org/wiki/The_SoulTaker) ([review](http://myanimelist.net/reviews.php?id=156693))
+
+Live-action:
+
+- [_Three Coins in the Fountain_](https://en.wikipedia.org/wiki/Three_Coins_in_the_Fountain_%28film%29) (Actually not that bad. Sort of a silly romantic comedy of manners, and when you get bored with that, you can pay  attention to post-WWII Italy and note how privileged  Americans were, how women smoked back then, etc. It feels weird to see offices without computers in them - just papers. and phones. Oh, and random monks in the background: the camera just pans across them like they're not there.)
+
 ## Music
 
 Touhou:
 
 - ["廃獄ララバイ"](https://www.youtube.com/watch?v=Bplpdye6060) (Toy; _協奏符「拾遺物語」_ {R11}) [symphony]
 - ["おつかいメイドのひといき"](https://dl.dropboxusercontent.com/u/280585369/music/%E6%B0%B4%E6%A9%8B%E3%82%86%E3%81%A3%E3%81%8D-kirisamemahouyougashiten-%E3%81%8A%E3%81%A4%E3%81%8B%E3%81%84%E3%83%A1%E3%82%A4%E3%83%89%E3%81%AE%E3%81%B2%E3%81%A8%E3%81%84%E3%81%8D.ogg) (水橋ゆっきー; _Kirisame Mahou Yougashiten_ {C85}) [instrumental]
-- ["Thawing Realism"](https://www.youtube.com/watch?v=IliIARRvymQ) (Autoban feat. Senya; _Hiding You in the Evening Cherry Trees_ {C85}) [trance]
-- ["風の向こうへ"](https://www.youtube.com/watch?v=jGRshXcCNOw) (JeetSingh feat. Chia; _Serendipity_ {R10}) [vocal]
-- ["voyage"](https://www.youtube.com/watch?v=mvBYpCRq2t4) (きりん feat 茶々; _con spirito_ {C85}) [vocal]
-- ["時間差カルテ"](https://www.dropbox.com/s/rtelvwwx03ap23a/%E6%9D%B1%E6%96%B9%E7%88%86%E9%9F%B3%E3%82%B8%E3%83%A3%E3%82%BA4-%E6%99%82%E9%96%93%E5%B7%AE%E3%82%AB%E3%83%AB%E3%83%86.ogg) (Tokyo Active NEETs; _Touhou Bakuon Jazz 4_ {C84}) [jazz]
-- ["令・瞑コード零"](https://www.dropbox.com/s/m748tqn9ypwiz0z/%E6%9D%B1%E6%96%B9%E7%88%86%E9%9F%B3%E3%82%B8%E3%83%A3%E3%82%BA4-%E4%BB%A4%E7%9E%91%E3%82%B3%E3%83%89%E9%9B%B6.ogg) (Tokyo Active NEETs; _Touhou Bakuon Jazz 4_ {C84}) [jazz]
-- ["紅星ミゼラブル～廃憶編"](https://www.youtube.com/watch?v=qeW1ROcrFuQ) (Tokyo Active NEETs; _Touhou Bakuon Jazz 4_ {C84}) [jazz]  <!-- TODO: check this is still up -->
-- ["NEXTLIFE"](https://www.youtube.com/watch?v=1BljumcDx3U) (隣人 feat. 坂上なち (twinkle* twinkle); _THE LEAP NEXTRA_ {C84}) [electronic]
-- ["Cherry Ashes"](https://www.youtube.com/watch?v=r2Fm3yEXKcg) (senya; _The Whole World_ {C84}) [vocal]
-- ["感情の摩天楼 ～ Cosmic Mind"](https://www.youtube.com/watch?v=57BJbpwQz3M&index=6&list=PLvtr235lMBeN4yhN3Iy7PVvfz0G2RUPqN) (あきやまうに; _暗黒能楽集・心綺楼 東方心綺楼 ORIGINAL SOUND TRACK_ {C84}) [instrumental]
-- ["party in the streets of Tokyo"](https://www.youtube.com/watch?v=G3YGzmRdu2k) (Renko; _a-romatic_ {C84}) [house]
 - ["竹取飛翔"](https://www.youtube.com/watch?v=pYEcgbwpnN4) (k-wave labs; _幽かのたまゆら_ {C84}) [Celtic]
 - ["東方妖々夢"](https://www.youtube.com/watch?v=iuEiC3ul784) (k-wave labs; _幽かのたまゆら_ {C84}) [Celtic]
 - ["幽雅に咲かせ、墨染の桜"](https://dl.dropboxusercontent.com/u/5317066/music/kouogata-%E5%B9%BD%E3%81%8B%E3%81%AE%E3%81%9F%E3%81%BE%E3%82%86%E3%82%89-%E5%B9%BD%E9%9B%85%E3%81%AB%E5%92%B2%E3%81%8B%E3%81%9B%E5%A2%A8%E6%9F%93%E3%81%AE%E6%A1%9C.ogg) (k-waves LAB; _幽かのたまゆら_ {C84}) [Celtic]
 - ["ほおずきみたいに紅い魂"](https://www.youtube.com/watch?v=qD9ECz6FR4c) (k-wave labs; _幽かのたまゆら_ {C84}) [Celtic]
-- ["Far East Fruits"](https://dl.dropboxusercontent.com/u/85192141/music/07%20Far%20East%20Fruits%20(%E6%98%8E%E6%97%A5%E3%83%8F%E3%83%AC%E3%81%AE%E6%97%A5%E3%80%81%E3%82%B1%E3%81%AE%E6%98%A8%E6%97%A5)%20-%20K2%20SOUND.ogg) (K2 SOUND; _詩夏 Si-ka_ {C84}) [instrumental]
-- ["Poison Body"](https://www.youtube.com/watch?v=ywEVrB8bogU) (TAM; _Namida no Touhou Komoriuta_ {R10}) [classical]
-- ["Love-Colored Master Spark"](https://www.youtube.com/watch?v=-EouHLbKNLU) (TAM; _Namida no Touhou Komoriuta_ {R10}) [classical]
-- ["櫻の樹の下には (Border of Life)"](https://dl.dropboxusercontent.com/u/182368464/music/%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E4%B8%89%E5%8F%B7-%E5%BC%B7%E6%95%B5%E9%81%94-%E3%81%93%E3%82%93%E3%81%AA%E3%81%AB%E3%82%82%E6%9C%88%E3%81%8C%E7%B4%85%E3%81%84%E3%81%8B%E3%82%89.ogg) (sisimai-3go; _Tomodachi_ {R10}) [instrumental]
-- ["自制的な喜怒哀楽 (Cosmic Mind)"](https://dl.dropboxusercontent.com/u/182368464/music/%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E4%B8%89%E5%8F%B7-%E5%BC%B7%E6%95%B5%E9%81%94-%E8%87%AA%E5%88%B6%E7%9A%84%E3%81%AA%E5%96%9C%E6%80%92%E5%93%80%E6%A5%BD.ogg) (sisimai-3go; _Tomodachi_ {R10}) [instrumental]
-- ["櫻の樹の下には (Border of Life)"](https://dl.dropboxusercontent.com/u/182368464/music/%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E4%B8%89%E5%8F%B7-%E5%BC%B7%E6%95%B5%E9%81%94-%E6%AB%BB%E3%81%AE%E6%A8%B9%E3%81%AE%E4%B8%8B%E3%81%AB%E3%81%AF.ogg) (sisimai-3go; _Tomodachi_ {R10}) [instrumental]
-- ["Phantom Ensemble"](https://www.youtube.com/watch?v=xczHq6X2ngw) (CROW_S CLAW; _THE FLAMES OF THE INFERNO_ {R10}) [instrumental rock]
-- ["竹取飛翔 ～ Lunatic Princess (2nd Spell -Fullmoon-より)"](https://www.youtube.com/watch?v=iYG-M5atKcw) (xi-on; _東方志奏 Ex2 Spell -Regeneration-_ {R10}) [instrumental rock]
-- ["東方妖々夢 ～ Ancient Temple (5th Spell -Changing Times-より)"](https://www.youtube.com/watch?v=aT7k8TKiJ-Q) (xi-on; _東方志奏 Ex2 Spell -Regeneration-_ {R10}) [metal]
-- ["幻想の永遠祭 - 空の帰り道 ～ Sky Dream"](https://www.youtube.com/watch?v=HpgtQiRHtt0) (埼玉最終兵器 & Aether; _Silent Stratosphere_ {R10}) [metal]
+- ["時間差カルテ"](https://www.dropbox.com/s/rtelvwwx03ap23a/%E6%9D%B1%E6%96%B9%E7%88%86%E9%9F%B3%E3%82%B8%E3%83%A3%E3%82%BA4-%E6%99%82%E9%96%93%E5%B7%AE%E3%82%AB%E3%83%AB%E3%83%86.ogg) (Tokyo Active NEETs; _Touhou Bakuon Jazz 4_ {C84}) [jazz]
+- ["令・瞑コード零"](https://www.dropbox.com/s/m748tqn9ypwiz0z/%E6%9D%B1%E6%96%B9%E7%88%86%E9%9F%B3%E3%82%B8%E3%83%A3%E3%82%BA4-%E4%BB%A4%E7%9E%91%E3%82%B3%E3%83%89%E9%9B%B6.ogg) (Tokyo Active NEETs; _Touhou Bakuon Jazz 4_ {C84}) [jazz]
+- ["紅星ミゼラブル～廃憶編"](https://www.youtube.com/watch?v=qeW1ROcrFuQ) (Tokyo Active NEETs; _Touhou Bakuon Jazz 4_ {C84}) [jazz]
+- ["感情の摩天楼 ～ Cosmic Mind"](https://www.youtube.com/watch?v=57BJbpwQz3M&index=6&list=PLvtr235lMBeN4yhN3Iy7PVvfz0G2RUPqN) (あきやまうに; _暗黒能楽集・心綺楼 東方心綺楼 ORIGINAL SOUND TRACK_ {C84}) [instrumental]
+- ["Thawing Realism"](https://www.youtube.com/watch?v=IliIARRvymQ) (Autoban feat. Senya; _Hiding You in the Evening Cherry Trees_ {C85}) [trance]
+- ["NEXTLIFE"](https://www.youtube.com/watch?v=1BljumcDx3U) (隣人 feat. 坂上なち (twinkle* twinkle); _THE LEAP NEXTRA_ {C84}) [electronic]
+- ["party in the streets of Tokyo"](https://www.youtube.com/watch?v=G3YGzmRdu2k) (Renko; _a-romatic_ {C84}) [house]
+- ["風の向こうへ"](https://www.youtube.com/watch?v=jGRshXcCNOw) (JeetSingh feat. Chia; _Serendipity_ {R10}) [vocal]
+- ["voyage"](https://www.youtube.com/watch?v=mvBYpCRq2t4) (きりん feat 茶々; _con spirito_ {C85}) [vocal]
+- ["Cherry Ashes"](https://www.youtube.com/watch?v=r2Fm3yEXKcg) (senya; _The Whole World_ {C84}) [vocal]

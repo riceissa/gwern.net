@@ -276,7 +276,7 @@ The trade-off is unfortunate, but let's consider secure backups. The first and m
 
 Any backup ought to be as inaccessible as possible. [Security through obscurity](!Wikipedia) might work, but let's imagine *really* inaccessible backups. How about hard drives in orbit? No, that's too close: commercial services can reach orbit easily, to say nothing of governments. And orbit doesn't offer too much hiding space. How about orbit not around the Earth, but around the Solar System? Say, past the orbit of Pluto?
 
-That offers an enormous volume: the Kuiper Belt is roughly ~1.95^30^ cubic kilometers[^volume]. The lightspeed delay is at least 20 minutes, but [latency](!Wikipedia) isn't an issue; a backup protocol on Earth could fire off one request to an orbiting device and the device would then transmit back everything it stored without waiting for any replies or confirmations (somewhat like [UDP](!Wikipedia)).
+That offers an enormous volume: the Kuiper Belt is roughly ~1.95x10^30^ cubic kilometers[^volume]. The lightspeed delay is at least 20 minutes, but [latency](!Wikipedia) isn't an issue; a backup protocol on Earth could fire off one request to an orbiting device and the device would then transmit back everything it stored without waiting for any replies or confirmations (somewhat like [UDP](!Wikipedia)).
 
 10^30^ cubic kilometers is more than enough to hide small stealthy devices in. But once it sends a message back to Earth, its location has been given away - the Doppler effect will yield its velocity and the message gives its location at a particular time. This isn't enough to specify its orbit, but it cuts down where the device could be. 2 such messages and the orbit is known. A restore would require more than 2 messages.
 
@@ -1380,7 +1380,7 @@ You don't really find such probabilistic inference in English except in 'but'. T
 1. 'Steve ran by with a bloody sword, but he likes to role-play games so I don't think he's a serial killer' versus
 2. 'Steve ran by clutching a sword which is consistent with the theory that he is a serial killer and also consistent with the theory that he is role-playing a game; I have a low prior for him ever being a serial killer and a high prior for him carrying a sword, bloody or otherwise, for reasons like role-playing and when I multiply them out, the role-playing explanation has a higher probability than the serial killer explanation'
 
-I exaggerate a little here; nevertheless, I think this shows 'but' is a little more complex and sophisticated than one would initially suspect.o
+I exaggerate a little here; nevertheless, I think this shows 'but' is a little more complex and sophisticated than one would initially suspect.
 
 # Cryonics cluster
 
@@ -1536,7 +1536,7 @@ A few criteria are common in meta-ethics, that the One True Ethics should satisf
 
 Given that every person faces, at every moment, a mindboggling number of possible actions and inactions, even an ethics which permitted thousands of moral actions in a given circumstance is ruling out countless more. And since there are a lot of moments in a lifetime, that's a lot of actions too. Considering this, it would not be a surprise if people frequently chose immoral or amoral actions: no one bats a thousand and even Homer nods, as the sayings go. So there is a lot of room for improvement. If this were true of ethics, that would only mean ethics is like every other field of human endeavour in having an ideal that is beyond attainment - no doctor never makes a mistake, no chess player never overlooks an easy checkmate, no artist never messes up a drawing, and so on. There is no end to moral improvement:
 
-> Disquiet in philosophy may be said to arise from looking at philosophy wrongly, seeing it wrong, namely a if it were divided into (infinite) longitudinal strips instead of into (finite) cross strips. This inversion in our conception produces the *greatest* difficulty. So we try, as it were, to grasp the unlimited strips and complain that it cannot be done piecemeal. To be sure it cannot, if by a piece one means an infinite longitudinal strip. But it may well be done, if one means a cross-strip. --But in that case we never get to the end of our work! --Of course not, for it has no end.^[Ludwig Wittgenstein's _[Zettel](!Wikipedia)_, 447]
+> Disquiet in philosophy may be said to arise from looking at philosophy wrongly, seeing it wrong, namely as if it were divided into (infinite) longitudinal strips instead of into (finite) cross strips. This inversion in our conception produces the *greatest* difficulty. So we try, as it were, to grasp the unlimited strips and complain that it cannot be done piecemeal. To be sure it cannot, if by a piece one means an infinite longitudinal strip. But it may well be done, if one means a cross-strip. --But in that case we never get to the end of our work! --Of course not, for it has no end.^[Ludwig Wittgenstein's _[Zettel](!Wikipedia)_, 447]
 
 Once we abandon the neurotic quest for certainty and perfection, then these ideas become acceptable:
 
@@ -2250,7 +2250,7 @@ In this way, an objective dataseries (of hair photos) is created without any cha
 Because only the rating is being done blinded, it's a partial blinding and it's possible that the subject could neglect their hair differentially under one condition but not the other - but this partial blinding addresses the biases I highly likely expect to be skewing most no-poo anecdotes, and renders the self-experiment more than a self-deluding waste of time.
 
 The ratings will be a Likert scale of 1-5.
-The best analysis for this would be, I think, a multilevel ordinal logistic model with ratings nested in photos and photos nested in days; the main variable is poo vs no-poo, of course, but my hair is visibly affected by other factors and those should be included as covariates: whether I showered the previous day; whether I took a long walk the previous day; the local heat high the previous day; the local humidity (high humidity makes my hair curlier); and for an interaction term, whether the day is the first week of the month when - for no-poo - hair should look worst, and it might be work trying # of days since start of month to see if there's a linear improvement over time.
+The best analysis for this would be, I think, a multilevel ordinal logistic model with ratings nested in photos and photos nested in days; the main variable is poo vs no-poo, of course, but my hair is visibly affected by other factors and those should be included as covariates: whether I showered the previous day; whether I took a long walk the previous day; the local heat high the previous day; the local humidity (high humidity makes my hair curlier); how long I slept the night before (bedhead); and for an interaction term, whether the day is the first week of the month when - for no-poo - hair should look worst, and it might be work trying # of days since start of month to see if there's a linear improvement over time.
 The weather data can be sourced from Wunderground like for my [Weather]() analysis.
 A final tweak might be use multiple ratings of each photo to estimate how much measurement error there are for ratings and fit a [errors-in-variables model](!Wikipedia) (although these don't seem to be well-supported in regular R libraries, which might motivate a move to a Bayesian language like JAGS or Stan).
 
@@ -2260,7 +2260,7 @@ I am not sure in advance how long I should run the experiment: I have no previou
 (Hopefully I will have an answer before Christmas forces me to reach a conclusion.)
 
 1. June: poo; July; no-poo
-2. August: poo; September: ? <!-- started August 4th: forgot first day, too busy to shower next two, showered on the 3rd after photos -->
+2. August: poo; September: no-poo <!-- started August 4th: forgot first day, too busy to shower next two, showered on the 3rd after photos -->
 3. October: ?; November: ?
 
 The main concerns with this design seem to be whether a month is enough time to show any no-poo adaptation, and whether it would be possible to estimate time for each photo despite controlling the conditions as much as possible.

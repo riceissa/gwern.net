@@ -30,7 +30,7 @@ Variables:
 - RoI: the 30-day return-on-investment of Bitcoin as decimal; extracted from Eli Dourado's [btcvol.info](http://btcvol.info/)'s [historical CSV](http://btcvol.info/csv); it is based on the [Coindesk index](http://www.coindesk.com/price/?bpi=bpi). For exact computation, see the appendix.
 - σ/[volatility](https://en.wikipedia.org/wiki/Volatility_%28finance%29): the 30-day volatility of Bitcoin prices on the day a marketplace is considered dead (decimal),
 
-A table of all relevant markets (27 August 2014):
+A table of all relevant markets (7 Sep 2014):
 
 Market                   Start       End       Alive Closure   URL                      Multisig I2P   Coin  Codebase   Guns   Fraud Hacks Doxed  RoI    σ     Notes
 ----------------------   ---------- ---------  ----- --------- ------------------------ -------- ----- ----  ---------- -----  ----- ----- ----- ------ -----  -------------
@@ -53,7 +53,7 @@ Cannabis Road            2014-02-03 2014-02-07 FALSE hacked    `ji4wrifhsnawaw7t
 Utopia                   2014-02-03 2014-02-11 FALSE raided    `ggvow6fj3sehlm45.onion` FALSE    FALSE BTC   CakePHP    TRUE   TRUE  0     TRUE  -0.233 0.032   forums: `ysas7uv4drg7rlwv.onion`; forms opened in early January, site opened to ex-BMR sellers late January, general buyers only allowed in February. [Dutch seizure notice posted ~7:30AM EST](http://www.reddit.com/r/DarkNetMarkets/comments/1xltp2/utopia_seized_by_police/), followed by [5](http://www.bbc.co.uk/news/technology-26158012 "Five arrested in Utopia dark net marketplace crackdown") [arrests](http://www.deepdotweb.com/2014/02/12/the-utopia-bust-details-prosecution-announcement/ "The Utopia Bust Details - Prosecution Announcement") in Netherlands & [Germany](http://www.bka.de/nn_233148/DE/Presse/Pressemitteilungen/Presse2014/140213__ErmittlungserfolgCyberKriminelle.html "Ermittlungserfolg gegen Cyber-Kriminelle")
 Black Services Market    2013-12-02 2014-02-01 FALSE scam      `thebsm6okkbx7fik.onion` FALSE    FALSE BTC   OSclass    TRUE   TRUE  0     FALSE  0.056 0.047       Start date based on oldest listing when I checked on 26 December 2013; last admin forum post 18 Jan & PMs to him disabled, [reports](http://www.reddit.com/r/DarkNetMarkets/comments/1xbex3/bsm_black_services_market_is_a_scam/) of escrow problems in late Jan/early Feb, many complaints on forums; site went down 14 February 2014
 Red Sun Marketplace      2014-03-20 2014-03-23 FALSE hacked    `redsun4lvjrxwwuy.onion` FALSE    FALSE BTC   Bitwasp           TRUE  1     FALSE -0.014 0.046   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/20vrlv/red_sun_marketplace_reloaded/); hacked ([SQli etc](http://www.reddit.com/r/DarkNetMarkets/comments/214y14/i_made_it_all_pretty_and_stuff/cg9sh7z)); forum: `forumsyccj7ekvvv.onion`. Surviving materials don't say whether guns were permitted, but given the operator's [interest in recruiting fake ID vendors](http://www.reddit.com/r/fakeid/comments/20vusk/looking_for_id_card_vendors/) it seems more likely than not that carding sales would have been allowed.
-BuyItNow                 2013-04-30 2014-02-17 FALSE voluntary `buyitnowquyft7dx.onion` FALSE    FALSE BTC   Wordpress  TRUE   FALSE 0     FALSE -0.263 0.040   Site did not respond on 17 February 2014 or afterwards; no reports on shutdown reason or whether it was a scam. Policies not specified, but many listings for guns, and none of any kind related to carding.
+BuyItNow                 2013-04-30 2014-02-17 FALSE voluntary `buyitnowquyft7dx.onion` FALSE    FALSE BTC   WordPress  TRUE   FALSE 0     FALSE -0.263 0.040   Site did not respond on 17 February 2014 or afterwards; no reports on shutdown reason or whether it was a scam. Policies not specified, but many listings for guns, and none of any kind related to carding.
 White Rabbit             2013-12-23 2014-02-01 FALSE scam      `rabbittorvr74veg.onion` FALSE    TRUE  LTC              TRUE   TRUE  0     TRUE   0.056 0.047   Start date based on [Reddit](http://www.reddit.com/r/themarketplace/comments/1to7sk/a_new_alternative_themarketplace/) [posts](http://www.reddit.com/r/SilkRoad/comments/1to8d7/a_new_alternative_sr/). Formerly named "Rabbit's Marketplace". Unable to find reports of successful sales on The Hub or Reddit, and WR withdrawal has been broken at least since 21 February 2014; [no one has claimed withdrawals](http://www.reddit.com/r/DarkNetMarkets/comments/1ylbt7/why_is_whiterabbit_in_side_bar/) recently. Dead date is based on the February news notice "There are problems with payment gateway". Forum states only CP is banned ("Items which are not allowed: child porn (and other sick stuff).") i2p: `wrmarket.i2p`. IP was found to [be leaking](http://thehub7dnl5nmcz5.onion/index.php?topic=2261.msg17459).
 FreeBay                  2013-12-02 2014-02-28 FALSE voluntary `freebay3yxuebsog.onion` FALSE    FALSE LTC              FALSE  TRUE  0     FALSE -0.351 0.048   URL is also apparently `litebay7vp5pm77f.onion`; open date is guess based on [Reddit post](http://www.reddit.com/r/TOR/comments/1s0wgc/freebay_ebay_of_drugs/); site was not up on 28 February 2014 when I checked. Policies not specified, but many carding & no gun listings.
 drugslist                2014-01-08 2014-02-28 FALSE scam      `drugslisvdknitqd.onion` FALSE    FALSE BTC   custom     FALSE  FALSE 1     FALSE -0.351 0.048   Withdrawals began failing & [admin ceased responding](http://www.reddit.com/r/DarkNetMarkets/comments/20duht/drugslist_dogeroad_kia_admins_mia/) in February 2014; date closure to the forum admin account's last login.
@@ -124,12 +124,11 @@ I may add to the table other variables; possibly useful ones:
 <!-- Outlaw policy: "Basically everything thst is not meant to/ or harming "innocent people". Stolen bankaccount there the "small individual" would have to pay for: no. stolen accounts of politicians: yes. Fireames for self defense: yes. Nuclear, biological or chemical weapons for mass-murder: no." -->
 <!-- Onionshop a custom implementation? $ torify curl -I http://onionshopkue7sxr.onion/ / HTTP/1.1 200 OK / Date: Wed, 21 May 2014 23:15:41 GMT / Server: Apache/2.2.22 (Ubuntu) / X-Powered-By: PHP/5.3.10-1ubuntu3.11 / Set-Cookie: PHPSESSID=im4plmtfgauil19u3uotv7v1h3; path=/ / Expires: Thu, 19 Nov 1981 08:52:00 GMT / Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0 / Pragma: no-cache / Vary: Accept-Encoding / Content-Type: text/html -->
 <!-- Grand Trunk http://www.reddit.com/r/DarkNetMarkets/comments/2b0qqt/gt_call_me_crazy_call_me_maybe_but_i_just_built_a/ beta 18 July 2014 grandmpdsznzevvs.onion forums: http://iipgngvrv7nu4bkk.onion/ -->
-<!-- Andromeda down 9 August 2014 (and earlier? http://www.reddit.com/r/DarkNetMarkets/comments/2d3mx4/andromeda_market_pulled_an_exit_scam/ ); back up 18 August -->
-<!-- 1776: unloggedable-in 23-27 August -->
+<!-- Pirate Market & Pandora: scams? -->
 
 # Analysis
 
-TODO:
+TODO: <!-- ping Vespco about results -->
 
 >> "The death rate of bitwasp marketplaces will always be higher because it lowers the barrier of entry to starting and launching your own BTC marketplace so less technical people with lesser funds to start the marketplace will use it and that demographic has a higher chance of failure."
 >
@@ -139,10 +138,14 @@ TODO:
 
 ~~~{.R}
 library(XML)
-black <- readHTMLTable(colClasses = c("character", "factor", "factor", "logical", "factor", "character", "logical", "logical", "factor", "factor", "logical", "logical", "integer", "logical", "numeric", "numeric", "character"), "/tmp/burl9044tTi.html")[[1]]
+black <- readHTMLTable("/tmp/burl23449ZD.html", colClasses = c("character", "factor", "factor", "logical",
+                                                               "factor", "character", "logical", "logical",
+                                                               "factor", "factor", "logical", "logical",
+                                                               "integer", "logical", "numeric", "numeric",
+                                                               "character"))[[1]]
 black[black$Codebase=="",]$Codebase <- NA
 black$Start <- as.Date(black$Start); black$End <- as.Date(black$End)
-black[is.na(black$End),]$End <- as.Date("2014-04-25")
+black[is.na(black$End),]$End <- Sys.Date() # assuming the table is up to date
 black$Age <- black$End - black$Start
 black$Age <- as.integer(black$End - black$Start)
 
@@ -156,7 +159,7 @@ library(survival)
 
 cmodel <- coxph(Surv(Age, Alive) ~ Multisig + I2P + Coin + Codebase + Guns + Fraud + Hacks + Doxed + RoI + σ, data = black); cmodel
 
-rm(black$End, black$Start, black$URL, black$Notes, black$Market)
+black$End <- black$Start <- black$URL <- black$Notes <- black$Market <- NULL
 
 library(mice)
 blackimp <- mice(black, m=100, printFlag=FALSE)

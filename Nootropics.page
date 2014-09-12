@@ -170,33 +170,60 @@ Based on comments from others, the liver problem may have been overblown, and mo
 
 Very expensive; I noticed minimal improvements when combined with sulbutiamine & piracetam+choline. Definitely not worthwhile for me.
 
-<!--
-
 # Bacopa monnieri
 
-https://en.wikipedia.org/wiki/Bacopa_monnieri
-http://examine.com/supplements/Bacopa+monnieri/
-http://www.reddit.com/r/Nootropics/search?q=bacopa&restrict_sr=on&sort=relevance&t=all
-http://www.google.com/cse?cx=partner-pub-9915544980764832:1644670702&ie=UTF-8&q=bacopa#gsc.tab=0&gsc.q=bacopa&gsc.page=1
-sleepiness? http://lesswrong.com/lw/e6h/group_rationality_diary_82012/78ua
+_[Bacopa monnieri](!Wikipedia)_ ([Examine](http://examine.com/supplements/Bacopa+monnieri/), [nootropics survey](http://slatestarcodex.com/2014/02/16/nootropics-survey-results-and-analysis/), [Reddit discussions](http://www.reddit.com/r/Nootropics/search?q=bacopa&restrict_sr=on&sort=relevance&t=all)) is an herb prominent for its use in [Ayurvedic medicine](!Wikipedia "Ayurveda").
+Taken chronically over long time-periods, Bacopa may improve cognition and help with stress, but (like some other Ayurvedic remedies) has a potential drawback in the form of heavy metal contamination.
 
-"The Cognitive-Enhancing Effects of Bacopa monnieri: A Systematic Review of Randomized, Controlled Human Clinical Trials" 2012
-"Meta-analysis of randomized controlled trials on cognitive effects of Bacopa monnieri extract" 2014
-weak reviews http://slatestarcodex.com/2014/02/16/nootropics-survey-results-and-analysis/
+The psychology & medical literature is sporadic and studies are somewhat confounded by the issues of dosage and dose length, but overall the evidence for improvements is better than that for most nootropics.
+["The Cognitive-Enhancing Effects of _Bacopa monnieri_: A Systematic Review of Randomized, Controlled Human Clinical Trials"](http://www.researchgate.net/publication/228099046_The_Cognitive-Enhancing_Effects_of_Bacopa_monnieri_A_Systematic_Review_of_Randomized_Controlled_Human_Clinical_Trials/file/9fcfd5023aa2ced160.pdf "Pase et al 2012") found evidence of benefits to memory in several >=12-week-long RCTs.
+["Cognitive effects of two nutraceuticals Ginseng and Bacopa benchmarked against modafinil: a review and comparison of effect sizes"](/docs/nootropics/2012-neale.pdf "Neale et al 2012") reviewed mostly the same studies.
+["Meta-analysis of randomized controlled trials on cognitive effects of _Bacopa monnieri_ extract"](/docs/nootropics/2013-kongkeaw.pdf "Kongkeaw et al 2013") attempted to meta-analyze the studies
+(specifically: [Stough et al 2001](http://www.researchgate.net/publication/226264540_Without_Title/file/d912f505b9c1014e84.pdf "The chronic effects of an extract of Bacopa monnieri (Brahmi) on cognitive function in healthy human subjects"), [Roodenrys et al 2002](http://www.nature.com/npp/journal/v27/n2/pdf/1395862a.pdf "Chronic effects of Brahmi (Bacopa monnieri) on human memory"), [Raghav et al 2006](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2915594/ "Randomized controlled trial of standardized Bacopa monnieri extract in age-associated memory impairment"), [Barbhaiya et al 2008](http://docsdrive.com/pdfs/academicjournals/jpt/2008/425-434.pdf "Efficacy and Tolerability of BacoMind® on Memory Improvement in Elderly Participants-A Double Blind Placebo Controlled Study"), [Calabrese et al 2008](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3153866/ "Effects of a Standardized Bacopa monnieri Extract on Cognitive Performance, Anxiety, and Depression in the Elderly: A Randomized, Double-Blind, Placebo-Controlled Trial"), [Stough et al 2008](http://www.researchgate.net/publication/23152813_Examining_the_nootropic_effects_of_a_special_extract_of_Bacopa_monniera_on_human_cognitive_functioning_90_day_double-blind_placebo-controlled_randomized_trial/file/9fcfd5020d14f349bf.pdf "Examining the nootropic effects of a special extract of Bacopa monniera on human cognitive functioning: 90 day double‐blind placebo‐controlled randomized trial"), [Peth-Nui et al 2012](http://www.hindawi.com/journals/ecam/2012/606424/ "Effects of 12-Week Bacopa monnieri Consumption on Attention, Cognitive Processing, Working Memory, and Functions of Both Cholinergic and Monoaminergic Systems in Healthy Elderly Volunteers"), & [Sathyanarayanan et al 2013](/doc/nootropics/2013-sathyanarayanan.pdf "Brahmi for the better? New findings challenging cognition and anti-anxiety effects of Brahmi (Bacopa monnieri) in healthy adults"))
+and found that of the 21 possible metrics/tests, the trail-making and reaction-time improvements had low [heterogeneity](!Wikipedia "Study heterogeneity") between studies & also reached statistical-significance; unfortunately, heterogeneity was very high in most metrics, few studies examined the same metrics, and the low study count renders impossible any estimate of how bad the [publication bias](!Wikipedia) is (typically severe) or other checks of quality/reliability, so the results are not as impressive as they might appear.
+Overall, it seems like Bacopa likely has some useful effects.
 
-Bacognize http://www.reddit.com/r/Nootropics/comments/21zqvh/purityheavy_metals_testing_results/
-http://nootropicsdepot.com/bacopa-monnieri-45-bacosides-extract-powder/
-\$24.99
-125g x 1
-45%
-5.0g/$
+Practically, I have 2 concerns about Bacopa:
 
-http://www.amazon.com/Vitacost-Bacopa-Extract-Featuring-Bacognize/dp/B00GO6022K/
-\$13
-0.3g x 120
-45%
-2.8g/$
--->
+1. obtaining a heavy-metal-free product for long-term consumption (what good is it to benefit from Bacopa if you are simultaneously building up a near-permanent heavy metal burden?)
+
+   CoAs are the first line of defense but availability differs: [Ayur Sante](https://www.reddit.com/r/Nootropics/comments/1uajxx/bacopa_vendors_with_coas/cegw982), [Nutrigold](https://www.reddit.com/r/Nootropics/comments/1qitzo/bacopa_gold_brand_coa/), [Indigo Herbs](https://www.reddit.com/r/Nootropics/comments/2ea784/coa_of_bacopa_powder_purchased_at_indigo_herbs/), Banyan Botanical & Nutricargo [reportedly](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/ccflb7x) provide CoAs as does NootropicsDepot, while [Planetary Herbals](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/ccgkqrv) & [Himalaya](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/) have stonewalled requests.
+   Probably the best bet is to go with Bacognize: [NootropicsDepot's CoA](https://i.imgur.com/Nbl46TR.png) & an [independent lab test](http://www.reddit.com/r/Nootropics/comments/21zqvh/purityheavy_metals_testing_results/) confirms that the heavy metal levels are acceptably low in that standardized branded source. (May cost more, though.)
+2. how hard self-experimenting is.
+
+    Self-experimenting is both easy and hard: it's easy because there should be effects on memory recall which can be easily extracted from spaced repetition software like Mnemosyne, but hard because onset requires many weeks so a self-experiment must either have few blocks (limiting comparability) or be lengthy (to allow for multiple transitions between Bacopa and placebo conditions).
+    I may have to settle for a lesser analysis like a before-after comparison, and only then if the results are positive consider the expense & difficulty of a full RCT over a number of months.
+
+Bacopa can be bought from a number of retailers.
+There are [several capsule sellers on Amazon](http://www.amazon.com/s/field-keywords=bacognize), and NootropicsDepot sells both [capsules](http://nootropicsdepot.com/bacopa-monnieri-45-bacoside-capsules-x-250mg/) & [powder](http://nootropicsdepot.com/bacopa-monnieri-45-bacosides-extract-powder/).
+More specifically (as of 11 September 2014, assuming using Amazon's free shipping & NootropicsDepot's regular S&H):
+
+Seller                         Form   Content/brand    Dose (mg) Count Price (\$) S&H  mg/\$
+---------                      ----   ---------------- --------- ----- ---------- ---- ------
+[ProHealth][]                  Cap    Bacognize        300       60    25.49      0     706
+[NootropicsDepot][nd-cap]      Cap    Bacognize        250       120   11.99      7.25  1159
+[Vitacost][v-1]                Cap    Bacognize        300       60    8.99       4.49  1335
+[Vitacost][v-2]                Cap    Bacognize        300       120   20.49      4.49  1441
+[NootropicsDepot][nd-cap]      Cap    Bacognize        250       240   22.99      7.25  1984
+[Swanson][]                    Cap    Bacognize        250       90    11.25      0     2000
+[Nutrigold][]                  Cap    BacoMind+generic 500       90    16.99      0     2649
+[NootropicsDepot][nd-powder]   Powder Bacognize        125000    1     24.99      7.25  3877
+[NootropicsDepot][nd-powder]   Powder Bacognize        250000    1     45.99      7.25  4695
+[NootropicsDepot][nd-powder]   Powder Bacognize        500000    1     89.99      7.25  5142
+
+[ProHealth]: http://www.amazon.com/Brain-Focus-Optimized-Curcumin-ProHealth/dp/B00LEXWI20/ "Brain & Focus - Optimized Curcumin Longvida by ProHealth (60 veggie capsules)"
+[nd-cap]: http://nootropicsdepot.com/bacopa-monnieri-45-bacoside-capsules-x-250mg/ "Bacopa Monnieri 45% Bacoside Capsules x 250mg"
+[v-1]: http://www.amazon.com/Vitacost-Bacopa-Extract-Featuring-Bacognize/dp/B008TSP0S2/ "Vitacost Bacopa Extract Featuring Bacognize -- 300 mg - 60 Capsules"
+[v-2]: http://www.amazon.com/Vitacost-Bacopa-Extract-Featuring-Bacognize/dp/B00GO6022K/ "Vitacost Bacopa Extract Featuring Bacognize -- 300 mg - 120 Capsules"
+[Swanson]: http://www.amazon.com/Bacopa-Monnieri-Extract-Bacognize-Caps/dp/B0017OAI8C/ "Bacopa Monnieri Extract Bacognize 250 mg 90 Caps"
+[Nutrigold]: http://www.amazon.com/Nutrigold-Bacopa-Clinically-proven-BacoMind-capsules/dp/B004S5SN66/ "Nutrigold Bacopa Gold (Clinically-proven BacoMind), 500 mg, 90 veg. capsules"
+[nd-powder]: http://nootropicsdepot.com/bacopa-monnieri-45-bacosides-extract-powder/ "Bacopa Monnieri 45% Bacosides Extract Powder"
+
+The cheapest Bacognize, if one doesn't want to cap one's own pills (as one probably does since the powder reportedly tastes bad), would seem to be the Swanson.
+(The Nutrigold is substantially cheaper, but also comes with a different branded source *and* is half-generic, and if one wanted to roll the dice, there are probably much cheaper sources of Bacopa [on Amazon](http://www.amazon.com/s/?keywords=bacopa+monnieri&rh=n%3A3760901%2Ck%3Abacopa+monnieri&sort=review-rank).)
+At 90x250mg, the dose per pill is a little inconveniently low for daily usage (>=300mg would be better) but still usable, so the daily cost would be \$0.13, and it'd cover 90 days - conveniently, the same time period used in a number of studies such as Stough et al 2008.
+
+I intend to buy 2 bottles of the Swanson and do an ABA trial, checking for correlated changes in my Mnemosyne scores, sleep, and possibly other things such as my daily self-ratings or extracted factors.
 
 # Beta-phenylethylamine (PEA)
 
@@ -1596,7 +1623,7 @@ The metal magnesium ([Examine.com](http://examine.com/supplements/Magnesium/)), 
 
 ## L-threonate
 
-There are a variety of substances to get magnesium from. Considerable enthusiasm for the new compound [magnesium l-threonate](!Wikipedia) was stirred by 2 small animal rat studies finding that magnesium l-threonate was able to increase magnesium levels in the brain and improve learning/memory tasks. Animal studies mean very little, of course (see [the appendix](DNB FAQ#flaws-in-mainstream-science-and-psychology)), but I thought it'd be interesting to try using l-threonate, so I bought the \$30 ["Life Extension Neuro-Mag Magnesium L-Threonate with Calcium and Vitamin D3 (205g)"](http://www.amazon.com/gp/product/B006P57AFM/), which according to the [LEF product page](https://www.lef.org/Vitamins-Supplements/Item01602/Neuro-Mag-Magnesium-L-Threonate-with-Calcium-and-Vitamin-D3.html) works out to ~60g of "Magtein™ magnesium L-threonate" and ~4.31g elemental magnesium. (I don't need the calcium or vitamin D3, but this was the only magnesium l-threonate on Amazon.) Experiment-wise, I'll probably look at sleep metrics and Mnemosyne performance; I put off designing a blind self-experiment until after trying some.
+There are a variety of substances to get magnesium from. Considerable enthusiasm for the new compound [magnesium l-threonate](!Wikipedia) was stirred by 2 small animal rat studies finding that magnesium l-threonate was able to increase magnesium levels in the brain and improve learning/memory tasks. Animal studies mean very little, of course (see [the appendix](DNB FAQ#flaws-in-mainstream-science-and-psychology)), but I thought it'd be interesting to try using l-threonate, so I bought the \$30 ["Life Extension Neuro-Mag Magnesium L-Threonate with Calcium and Vitamin D3 (205g)"](http://www.amazon.com/gp/product/B006P57AFM/), which according to the [LEF product page](https://www.lef.org/Vitamins-Supplements/Item01602/Neuro-Mag-Magnesium-L-Threonate-with-Calcium-and-Vitamin-D3.html) works out to ~60g of "Magtein™ magnesium L-threonate" and ~4.31g elemental magnesium inasmuch as LEF claims 2000mg of threonate powder provides 144mg elemental magnesium or a 14:1 ratio. (I don't need the calcium or vitamin D3, but this was the only magnesium l-threonate on Amazon.) Experiment-wise, I'll probably look at sleep metrics and Mnemosyne performance; I put off designing a blind self-experiment until after trying some.
 
 The powder itself is quite bulky; the recommended dose to hit 200mg of absorbed magnesium leads to ~7g of powder (so capping will be difficult) and the container provides only 30 doses' worth (or each dose costs \$1!). It's described as lemon-flavored, and it is, but it's sickly-sweet unpleasant and since it's so much powder, takes half a glass of water to dissolve it entirely and wash it down. Subjectively, I notice nothing after taking it for a week. I may try a simple A-B-A analysis of sleep or Mnemosyne, but I'm not optimistic. And given the large expense of LEF's "Magtein", it's probably a non-starter even if there seems to be an effect. For sleep effects, I will have to look at more reasonably priced magnesium sources.
 
@@ -3165,12 +3192,22 @@ August 2014
 28: 1
 29: 0
 30: NA
-31:
+31: 1
 September
-01:
+01: 0
+02: 0
+03: 1
+04: 1
+05: 0
+06: NA
+07: 1
+08: 0
+09: 0
+10: 0
+11: 1
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10 September -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014, 18-19 July 2014 -->

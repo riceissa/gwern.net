@@ -1909,6 +1909,10 @@ I thought I was making sure I got at least the right RDA of elemental magnesium 
 So I went back to the original references, and scrutinizing them closely, they really were talking about elemental magnesium and indicating I should be getting 400mg elemental a day, but I did notice something: I got the dose wrong for the Solgar pills, it wasn't 800mg elemental, it was 800mg of *citrate* - I misread the label.
 So I went from taking ~130mg of elemental magnesium in the first period to ~800mg in the second; I don't think it is an accident that the second period seems to have been much worse (between the plot and the time trend).
 
+I find this very troubling.
+The magnesium supplementation was harmful enough to do a lot of cumulative damage over the months involved (I could have done a *lot* of writing September 2013 - June 2014), but so blatantly harmful enough to be noticeable without a randomized blind self-experiment or at least systematic data collection - neither of which are common.
+I would much prefer it if my magnesium overdose had come with visible harm, like waking up in the middle of the night after a nightmare soaked in sweat, since then I'd know quickly and surely, as would anyone else taking magnesium. But the harm I observed in my data? For all I know, that could be affecting every user of magnesium supplements! How would we know otherwise?
+
 ##### Sleep
 
 I reused the magnesium data with my Zeo data and [looked at the effects](Zeo#magnesium-citrate).
@@ -3210,9 +3214,11 @@ September
 12: 1
 13: 1
 14: 0
+15: 1
+16: 0
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13 September -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16 September -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014, 18-19 July 2014 -->

@@ -200,23 +200,44 @@ $ sqlite3 -batch ~/.local/share/mnemosyne/default.db \
 
 Processing:
 
+TODO
+
 ~~~{.R}
-## read into R
-mnemosyne <- read.csv("gwern-mnemosyne.csv", header=FALSE,
-                      col.names =c("Timestamp", "Easiness", "Grade"),
-                      colClasses=c("integer",   "numeric",  "integer"))
-mnemosyne$Timestamp <- as.POSIXct(mnemosyne$Timestamp, origin = "1970-01-01", tz = "EST")
+target <- "~/.local/share/mnemosyne/default.db"
+library(sqldf)
+# .schema log
+# CREATE TABLE log(
+#         _id integer primary key autoincrement,
+#         event_type integer,
+#         timestamp integer,
+#         object_id text,
+#         grade integer,
+#         easiness real,
+#         acq_reps integer,
+#         ret_reps integer,
+#         lapses integer,
+#         acq_reps_since_lapse integer,
+#         ret_reps_since_lapse integer,
+#         scheduled_interval integer,
+#         actual_interval integer,
+#         thinking_time integer,
+#         next_rep integer,
+#         scheduler_data integer
+#     );
 
+grades <- sqldf("SELECT timestamp,object_id,grade,easiness,thinking_time,actual_interval,(SELECT grade FROM log AS log2 WHERE log2.object_id = log.object_id AND log2.timestamp > log.timestamp ORDER BY log2.timestamp DESC LIMIT 1) AS grade_future FROM log WHERE event_type==9;",
+                dbname=target,
+                method = c("integer", "factor","integer","numeric","integer","integer", "integer"))
+grades$timestamp <- as.POSIXct(grades$timestamp, origin = "1970-01-01", tz = "EST")
+grades$thinking_time.log <- log1p(grades$thinking_time); grades$thinking_time <- NULL
+colnames(grades) <- c("Timestamp", "ID", "Grade", "Easiness", "Interval.length", "Grade.future", "Thinking.time.log")
 ## extract the temporal covariates from the timestamp
-mnemosyne$WeekDay <- as.factor(weekdays(mnemosyne$Timestamp))
-mnemosyne$Hour    <- as.factor(as.numeric(format(mnemosyne$Timestamp, "%H")))
-mnemosyne$Date    <- as.Date(mnemosyne$Timestamp)
-
+grades$WeekDay <- as.factor(weekdays(grades$Timestamp))
+grades$Hour    <- as.factor(as.numeric(format(grades$Timestamp, "%H")))
+grades$Date    <- as.Date(grades$Timestamp)
 ## select data from during the experiment
-mnemosyneFormatted <- with(mnemosyne, data.frame(Timestamp=Timestamp, Date=Date, WeekDay=WeekDay,
-                                                  Hour=Hour, Easiness=Easiness, Grade=Grade))
-treadmill <- mnemosyneFormatted[mnemosyneFormatted$Date > as.Date("2013-08-22") &
-                                mnemosyneFormatted$Date < as.Date("2014-06-01"),]
+treadmill <- grades[grades$Date > as.Date("2013-08-22") &
+                    grades$Date < as.Date("2014-06-01"),]
 
 ## code which days' review was done on the treadmill
 treadmill$Treadmill <- FALSE
@@ -228,7 +249,6 @@ treadmillDates <- as.Date(c("2013-08-25", "2013-08-26", "2013-08-28", "2013-09-1
                             "2014-03-26", "2014-04-03", "2014-04-22", "2014-05-01", "2014-05-05",
                             "2014-05-06", "2014-05-28", "2014-05-29", "2014-05-31"))
 for (i in 1:length(treadmillDates)) { treadmill[treadmill$Date==treadmillDates[i],]$Treadmill <- TRUE; }
-
 ## serialize clean CSV for analysis
 write.csv(treadmill, "2014-05-31-mnemosyne-treadmill.csv", row.names=FALSE)
 ~~~
@@ -239,26 +259,36 @@ write.csv(treadmill, "2014-05-31-mnemosyne-treadmill.csv", row.names=FALSE)
 ~~~{.R}
 treadmill <- read.csv("http://www.gwern.net/docs/spacedrepetition/2014-05-31-mnemosyne-treadmill.csv")
 summary(treadmill)
-#                Timestamp            Date           WeekDay          Hour         Easiness
-#  2013-11-26 19:24:44:   2   2013-09-25: 254   Friday   : 577   Min.   : 9.0   Min.   :1.30
-#  2013-11-26 22:22:12:   2   2014-02-10: 171   Monday   : 711   1st Qu.:15.0   1st Qu.:1.44
-#  2013-12-01 18:21:49:   2   2014-02-28: 163   Saturday : 856   Median :17.0   Median :1.93
-#  2013-12-01 18:22:04:   2   2013-11-09: 162   Sunday   : 869   Mean   :17.2   Mean   :1.87
-#  2013-08-23 22:56:28:   1   2013-11-14: 155   Thursday :1034   3rd Qu.:20.0   3rd Qu.:2.16
-#  2013-08-23 22:56:36:   1   2014-04-22: 145   Tuesday  :1021   Max.   :23.0   Max.   :3.00
-#  (Other)            :5843   (Other)   :4803   Wednesday: 785
-#      Grade      Treadmill
-#  Min.   :2.00   Mode :logical
-#  1st Qu.:4.00   FALSE:2695
-#  Median :4.00   TRUE :3158
-#  Mean   :3.78   NA's :0
-#  3rd Qu.:4.00
-#  Max.   :5.00
+#                Timestamp                         ID           Grade            Easiness
+#  2013-11-26 19:24:44:   2   JdjSf1pppya0onAIPxTQH2:   7   Min.   :2.00000   Min.   :1.30000
+#  2013-11-26 22:22:12:   2   2UiZC5RXFG8BnuCvMwtrHm:   6   1st Qu.:4.00000   1st Qu.:1.43625
+#  2013-12-01 18:21:49:   2   8IbavAIp51TfEZBImDfUL8:   6   Median :4.00000   Median :1.92900
+#  2013-12-01 18:22:04:   2   BuMaMeubP2hb1ZbPeKZirj:   6   Mean   :3.77776   Mean   :1.87486
+#  2013-08-23 22:56:28:   1   C3IyssfGfLfdgkIjNu3jKN:   6   3rd Qu.:4.00000   3rd Qu.:2.16275
+#  2013-08-23 22:56:36:   1   I55jUu4zlCsrT5CGnCYOJ4:   6   Max.   :5.00000   Max.   :3.00000
+#  (Other)            :5844   (Other)               :5817
+#  Interval.length      Grade.future     Thinking.time.log        WeekDay          Hour
+#  Min.   :        0   Min.   :0.00000   Min.   :0.0000000   Friday   : 577   Min.   : 9.0000
+#  1st Qu.: 26306332   1st Qu.:4.00000   1st Qu.:0.0000000   Monday   : 711   1st Qu.:15.0000
+#  Median : 44806694   Median :4.00000   Median :0.0000000   Saturday : 857   Median :17.0000
+#  Mean   : 44591080   Mean   :3.73201   Mean   :0.0391548   Sunday   : 869   Mean   :17.1727
+#  3rd Qu.: 64373024   3rd Qu.:4.00000   3rd Qu.:0.0000000   Thursday :1034   3rd Qu.:20.0000
+#  Max.   :102203789   Max.   :5.00000   Max.   :4.0253517   Tuesday  :1021   Max.   :23.0000
+#                      NA's   :5048                          Wednesday: 785
+#          Date      Treadmill
+#  2013-09-25: 254   Mode :logical
+#  2014-02-10: 171   FALSE:2695
+#  2014-02-28: 163   TRUE :3159
+#  2013-11-09: 162   NA's :0
+#  2013-11-14: 155
+#  2014-04-22: 145
+#  (Other)   :4804
 
 ## graphing all 5853 reviews is unreadable, so summarize by day & throw out outliers
 daily <- aggregate(Grade ~ Date + Treadmill, treadmill, mean)
 daily <- daily[order(daily$Date),]
 daily <- daily[daily$Grade>=3 & daily$Grade<=4,]
+library(ggplot2)
 qplot(Date, Grade, color=Treadmill, size=I(5), data=daily)
 ~~~~
 

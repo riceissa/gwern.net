@@ -2260,8 +2260,8 @@ I am not sure in advance how long I should run the experiment: I have no previou
 (Hopefully I will have an answer before Christmas forces me to reach a conclusion.)
 
 1. June: poo; July; no-poo
-2. August: poo; September: no-poo <!-- started August 4th: forgot first day, too busy to shower next two, showered on the 3rd after photos -->
-3. October: ?; November: ?
+2. August: poo; September 1-20: no-poo <!-- started August 4th: forgot first day, too busy to shower next two, showered on the 3rd after photos; absentmindedly soaped up on the 20th -->
+3. September 21 - October 21: poo; October 22 - November 22: ?
 
 The main concerns with this design seem to be whether a month is enough time to show any no-poo adaptation, and whether it would be possible to estimate time for each photo despite controlling the conditions as much as possible.
 
@@ -2444,10 +2444,35 @@ A direction sensor belt (a ring of vibrators around one's waist; the one closest
 I had been meaning to buy or build one ever since I read the _Wired_ article back in 2007 or so, but had never quite gotten around it.
 The topic came up briefly on Hacker News and I suddenly remembered my intention and I worried that Sensebridge no longer sold them 7 years later; fortunately, they still did, so I took the hint and decided to get around to it.
 
+## Purchase
+
 I ordered a pre-assembled North Paw on 14 August 2014.
 
 It arrived 20 August; [calibration](http://sensebridge.net/projects/northpaw/instructions/step-3/) was straightforward.
-Smaller than it looked in photos.
+Smaller than it looked in the few photos online, and the packaging is accordingly brief:
+
+![North Paw in packaging](/images/northpaw/packaging.jpg)
+
+Stretched out, it reminds me of a watch, with its big black box and smaller blue battery attached by wires:
+
+![A North Paw laid out flat, with control box and battery pack visible](/images/northpaw/full.jpg)
+
+Curled up, it look more reasonable to wear:
+
+![](/images/northpaw/circled.jpg)
+
+The gray cable you can see in this closeup is how the chip/compass communicates with and controls the motors hidden in the band itself:
+
+![](/images/northpaw/casecloseup.jpg)
+
+The fabric band can be unzipped to see and rearrange the little motors if their positioning is bad:
+
+![North Paw unzipped and 8 vibrators visible](/images/northpaw/internalmotors.jpg)
+
+And then putting it on to take a look:
+
+![Wearing a North Paw on one's ankle, from the side and from above](/images/northpaw/ankle.jpg)
+
 My initial impression is that the vibrations are stronger than expected, but they turn off after a minute or so with no movement.
 Interesting sensation feeling the motors successively turn on/off as one spins; it's also a dramatic demonstration of the 'sensory homunculus' - I can feel the individual motors very distinctly when I hold it with my fingers, but when I put it on, the skin around the ankle reports only the vaguest "there's some buzzing over here, maybe" sensations.
 After about 6 hours of use (1 hour walking around the neighborhood with it on), I don't feel transformed.

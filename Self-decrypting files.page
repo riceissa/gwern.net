@@ -23,10 +23,11 @@ This sort of cryptography would be useful for many things; from ["Time-Lock Puzz
 
 > Our main contribution is an offline submission protocol which enables an author being currently offline to commit to his document before the deadline by continuously solving an RSA puzzle based on that document. When regaining Internet connectivity, he submits his document along with the puzzle solution which is a proof for the timely completion of the document.
 
-When Ross Ulbricht/Dread Pirate Roberts of [Silk Road]() was arrested in October 2013 and his computer with his Bitcoin hoard seized, I thought of another use: conditional transfers of wealth. Ulbricht could create a time-locked copy of his bitcoins and give it to a friend. Because bitcoins can be transferred, he can at any time use his own unlocked copy to render the copy useless and doesn't have to worry about the friend stealing all the bitcoins from him, but if he is, say, "shot resisting arrest", his friend can still - eventually - recover the coins. This specific Bitcoin scenario may be [possible with the Bitcoin protocol](https://en.bitcoin.it/wiki/Contracts), in which case one has a nice offline digital cash system, as [betterunix](https://news.ycombinator.com/item?id=6509826) suggests:
+One could also lock away files from oneself: seal one's diary for a long time, or use it to enforce computer time-outs (change the password and require X minutes to decrypt it). When Ross Ulbricht/Dread Pirate Roberts of [Silk Road]() was arrested in October 2013 and his computer with his Bitcoin hoard seized, I thought of another use: conditional transfers of wealth. Ulbricht could create a time-locked copy of his bitcoins and give it to a friend. Because bitcoins can be transferred, he can at any time use his own unlocked copy to render the copy useless and doesn't have to worry about the friend stealing all the bitcoins from him, but if he is, say, "shot resisting arrest", his friend can still - eventually - recover the coins. This specific Bitcoin scenario may be [possible with the Bitcoin protocol](https://en.bitcoin.it/wiki/Contracts), in which case one has a nice offline digital cash system, as [betterunix](https://news.ycombinator.com/item?id=6509826) suggests:
 
 > Here is one possible use case: imagine an offline digital cash system, so i.e. the bank will not accept the same token twice. To protect against an unscrupulous seller, the buyer pays by giving the seller a time-lock puzzle with the tokens; if the goods are not delivered by some deadline, the buyer will deposit the tokens at the bank, thus preventing the seller from doing so. Otherwise the seller solves the puzzle and makes the deposit. This is basically an anonymity-preserving escrow service, though in practice there are probably simpler approaches.
 
+This use generalizes beyond black-markets to all services or entities holding Bitcoins: the service can provide users with a time-locked version of the private keys, and regularly move its funds - if the service ever goes down, the users can retrieve their funds.
 One not-so-cute use is in defeating [antivirus software](!Wikipedia). ["Anti-Emulation Through Time-Lock Puzzles"](http://tuts4you.com/download.php?view.2348), Ebringer 2008 outlines it: one starts a program with a small time-lock puzzle which must be solved before the program does anything evil, in the hopes that the antivirus scanner will give up or stop watching before the puzzle has been solved and the program decrypts the evil payload; the puzzle's math backing means no antivirus software can analyze or solve the puzzle first. The basic functionality cannot be blacklisted as it is used by legitimate cryptography software such as [OpenSSL](!Wikipedia) which would be expensive collateral damage.
 
 # No trusted third-parties
@@ -55,15 +56,64 @@ So anything which is parallel, like using short keys, is probably useless. We ne
 
 For example, one could take a [hash](!Wikipedia "Cryptographic hash function") like [bcrypt](!Wikipedia), give it a random input, and hash it for a month. Each hash depends on the previous hash, and there's no way to skip from the first hash to the trillionth hash. After a month, you use the final hash as the encryption key, and then release the encrypted file and the random input to all the world. The first person who wants to decrypt the file has no choice but to redo the trillion hashes in serial order to reach the same encryption key you used.
 
-Nor can the general public (or the NSA) exploit the parallelism they have available, because each hash depends sensitively on the hash before it - the [avalanche effect](!Wikipedia) is a key property to cryptographic hashes.
+Nor can the general public (or the NSA) exploit any parallelism they have available, because each hash depends sensitively on the hash before it - the [avalanche effect](!Wikipedia) is a key property to cryptographic hashes.
+
+This is simple to implement: take a seed, hash it, and feed the resulting hash into the algorithm repeatedly until enough time or iterations have passed; then encrypt the file with it as a passphrase.
+Here is a straightforward shell implementation using SHA-512 & number of iterations:
+
+~~~{.Bash}
+timelock () {
+ local -i I="$1"
+ local HASH_SEED="$2"
+
+ while [ $I -gt 0 ]
+ do
+     HASH_SEED=$(echo $HASH_SEED | sha512sum | cut --delimiter=' ' --fields=1)
+     I=$[$I - 1]
+ done
+
+ echo $HASH_SEED
+}
+
+timelock_encrypt () {
+    local KEY=$(timelock $1 $2)
+    local PlAINTEXT_FILE="$3"
+    echo "$KEY" | gpg --passphrase-fd 0 --symmetric --output $PlAINTEXT_FILE.gpg $PlAINTEXT_FILE
+    }
+# same as timelock_encrypt except the GPG command changes to do decryption
+timelock_decrypt () {
+    local KEY=$(timelock $1 $2)
+    local ENCRYPTED_FILE="$3"
+    echo "$KEY" | gpg --passphrase-fd 0 --decrypt $ENCRYPTED_FILE
+    }
+
+# Example usage:
+#
+# $ rm foo.*
+# $ echo "this is a test" > foo.txt
+# $ timelock_encrypt 100 random_seed foo.txt
+# Reading passphrase from file descriptor 0
+# $ rm foo.txt
+# $ timelock_decrypt 100 random_seed foo.txt.gpg
+# Reading passphrase from file descriptor 0
+# gpg: CAST5 encrypted data
+# gpg: encrypted with 1 passphrase
+# this is a test
+~~~
 
 On the other hand, there seems to be a way that the original person running this algorithm *can* run it in parallel: one generates _n_ random inputs (for _n_ CPUs, presumably), and sets them hashing as before for say a month. Then, one sets up a chain between the _n_ results - the final hash of seed 1 is used to encrypt seed 2, the final hash of which was the encryption for seed 3, and so on. Then one releases the encrypted file, first seed, and the $n-1$ *encrypted* seeds. Now the public has to hash the first seed for a month, and only then can it decrypt the second seed, and start hashing *that* for a month, and so on. Karl Gluck suggests that like repeated squaring, it's even possible to add error-detection to the procedure[^Gluck-chain]. (A somewhat similar scheme, ["A Guided Tour Puzzle for Denial of Service Prevention"](http://www.cs.pitt.edu/~mehmud/docs/abliz09tourpuzzle.pdf "Abliz & Znati 2009"), uses network latency rather than hash outputs as the chained data - clients bounce from resources to resource - but this obviously requires an online server and is unsuitable for our purposes, among [other problems](http://www.reddit.com/r/compsci/comments/1nx0n5/timelock_encryption/ccne7bk).)
 
 [^Gluck-chain]: On [Hacker News](https://news.ycombinator.com/item?id=6509688)
 
-    > To add checkpoints, one could release both the original seed of the chain A, and a number of pairs of hashes (x0,y0) (x1,y1) ... Let's say you wanted to do 1-month chains. Hash the seed A for a week, then take the current value x0 such that H(B)=x0. You know the value of B, since you've been computing the chain. Pick another random value y0, and continue the chain with H(B^y0). Write (x0,y0) in the output, and hash for another week. Do the same for (x1,y1) (x2,y2) and (x3,y3). Each chain then has a seed value and 4 pairs of 'checkpoints'. When unlocking the crypto puzzle, these checkpoints can't be used to jump ahead in the computation, but they can tell you that you're on the right track. I think that you could even use a secondary hash chain for the y_n values, so y_n+1=H(y_n). If you also derived y0 from A (e.g. y0=H(A^const) ), you would just need to publish the seed value A and each checkpoint hash x_n in order to have a fully checkpointed crypto puzzle.
+    > To add checkpoints, one could release both the original seed of the chain $A$, and a number of pairs of hashes $(x0,y0) (x1,y1)$ ... Let's say you wanted to do 1-month chains. Hash the seed $A$ for a week, then take the current value $x0$ such that $H(B)=x0$. You know the value of $B$, since you've been computing the chain. Pick another random value $y0$, and continue the chain with $H(B^{y0})$. Write $(x0,y0)$ in the output, and hash for another week. Do the same for $(x1,y1)$ $(x2,y2)$ and $(x3,y3)$. Each chain then has a seed value and 4 pairs of 'checkpoints'. When unlocking the crypto puzzle, these checkpoints can't be used to jump ahead in the computation, but they can tell you that you're on the right track. I think that you could even use a secondary hash chain for the $y_n$ values, so $y_n+1=H(y_n)$. If you also derived $y0$ from $A$ (e.g. $y0=H(A^{const})$), you would just need to publish the seed value $A$ and each checkpoint hash $x_n$ in order to have a fully checkpointed crypto puzzle.
 
-This is pretty clever. If one has a thousand CPUs handy, one can store up 3 years' of computation-resistance in just a day. This satisfies a number of needs. (Maybe; please do not try to use this for a real application before getting a proof from a cryptographer that chained hashing is secure.) But what about people who only have a normal computer? Fundamentally, this repeated hashing requires you to put in as much computation as you want your public to expend reproducing the computation, which is not enough. We want to force the public to expend more computation - potentially much more - than we put in. How can we do this?
+This is pretty clever. If one has a thousand CPUs handy, one can store up 3 years' of computation-resistance in just a day. This satisfies a number of needs. (Maybe; please do not try to use this for a real application before getting a proof from a cryptographer that chained hashing is secure.)
+Implementing chained hashing is not as easy as single-threaded hashing, but there are currently 2 implementations:
+
+1. Peter Todd & Amir Taaki: [implementation in Python](https://github.com/petertodd/timelock) ([announcement](https://www.reddit.com/r/Bitcoin/comments/27adbq/timelock_timerelease_encryption_incentivised_by/) with bounties on example time-locked files; [Reddit](https://www.reddit.com/r/Bitcoin/comments/27adbq/timelock_timerelease_encryption_incentivised_by/) & [HN](https://news.ycombinator.com/item?id=7847687) discussion), with some clever Bitcoin integration
+2. Dorian Johnson, [implementation in Go](https://github.com/dorianj/timelock)
+
+But what about people who only have a normal computer? Fundamentally, this repeated hashing requires you to put in as much computation as you want your public to expend reproducing the computation, which is not enough. We want to force the public to expend more computation - potentially much more - than we put in. How can we do this?
 
 It's hard to see. At least, I haven't thought of anything clever. [Homomorphic encryption](!Wikipedia) promises to let us encode arbitrary computations into an encrypted file, so one could imagine implementing the above hash chains *inside* the homomorphic computation, or perhaps just encoding a loop counting up to a large number. There are two problems with trying to apply homomorphic encryption:
 
@@ -171,9 +221,9 @@ That is quite a difference between the hashes, especially considered that bcrypt
 
 <!-- TODO
 https://en.bitcoin.it/wiki/User:Gmaxwell/alt_ideas
-    POW which turns the distributed computation into ticking for timelock encryption
+    POW which turns the distributed computation into ticking for time-lock encryption
         An infinite sequence of nothing-up-my-sleeve numbers are taken as an infinte sequence of ECC public keys. Searching the pow involves finding distinguished points along a Pollard's rho DLP solution trying to crack the key. When the key is cracked the problem is advanced to the next key.
-        People can then encrypt messages to these keys and sometime in the future the network will crack them, achieving a timelock.
+        People can then encrypt messages to these keys and sometime in the future the network will crack them, achieving a time-lock.
         Probably incompatible with merged mining and other POW schemes.
         Making the difficulty adaptive either makes far in the future messages impossible (because the problem size wouldn't be known long in advance), or requires increasingly big headers as the difficulty would require working on multiple problems concurrently.
 -->

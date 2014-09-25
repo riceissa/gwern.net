@@ -157,8 +157,6 @@ Having reached diminishing returns, I decided to stop typing practice.
 
 ## Background
 
-<!-- TODO: at the end of this experiment, ping Seth Roberts and the blogs listed in http://www.nytimes.com/2008/09/18/health/nutrition/18fitness.html?_r=1 -->
-
 [Starting in 2010](http://blog.sethroberts.net/category/walking-and-learning/), Seth Roberts claimed that he found his [Anki](!Wikipedia "Anki (software)") flashcard reviews (for [spaced repetition](Spaced repetition)) to be easier & better when he did them while using his treadmill, and offers some just-so evolutionary psychology theorizing that walking may cue knowledge absorption in a "thirst for knowledge".
 He doesn't offer any hard data, but he does [quote some data](http://blog.sethroberts.net/2012/09/05/new-treadmill-catalyzes-learning-results/) from a [2012 presentation by Jeremy Howard](http://vimeo.com/40265872 "Jeremy Howard - Language Acquisition Performance"), who claims a 5% review error-rate while walking and 8% while not-walking, and to be "40% faster [at learning]"; a near-halving of lower grades is certainly an effect to be reckoned with and well worthwhile.
 
@@ -185,22 +183,11 @@ This was done from August 2013 to May 2014.
 Eventually I noticed that the experiment was becoming a [trivial inconvenience](http://wiki.lesswrong.com/wiki/Trivial_inconvenience) that was damaging my hard-earned spaced repetition habit, and ended the experiment.
 I didn't do a formal power analysis, but my intuition was that this would be enough data to show an effect, especially if the effect was as large as claimed.
 
-The endpoint is the grades given flashcards each day; analysis will be multilevel ordinal logistic regression.
+The endpoint is the grades given flashcards each day (measuring retrieval of the memory), and the next grade for each flashcard (partially measuring encoding of the same memory), controlling for easiness (a parameter associated with each flashcard by the SRS estimating how hard to remember the flashcard is and when it should next be reviewed), how long since last review, how long spent on each card, day, day of week, hour of day,
 
 ## Data
 
-Extract the raw data from my Mnemosyne database:
-
-~~~{.Bash}
-$ sqlite3 -batch ~/.local/share/mnemosyne/default.db \
-          "SELECT timestamp,easiness,grade FROM log WHERE event_type==9;" | \
-  tr "|" "," \
-  > gwern-mnemosyne.csv
-~~~
-
-Processing:
-
-TODO
+Extract and process:
 
 ~~~{.R}
 target <- "~/.local/share/mnemosyne/default.db"
@@ -224,7 +211,6 @@ library(sqldf)
 #         next_rep integer,
 #         scheduler_data integer
 #     );
-
 grades <- sqldf("SELECT timestamp,object_id,grade,easiness,thinking_time,actual_interval,(SELECT grade FROM log AS log2 WHERE log2.object_id = log.object_id AND log2.timestamp > log.timestamp ORDER BY log2.timestamp DESC LIMIT 1) AS grade_future FROM log WHERE event_type==9;",
                 dbname=target,
                 method = c("integer", "factor","integer","numeric","integer","integer", "integer"))
@@ -250,7 +236,7 @@ treadmillDates <- as.Date(c("2013-08-25", "2013-08-26", "2013-08-28", "2013-09-1
                             "2014-05-06", "2014-05-28", "2014-05-29", "2014-05-31"))
 for (i in 1:length(treadmillDates)) { treadmill[treadmill$Date==treadmillDates[i],]$Treadmill <- TRUE; }
 ## serialize clean CSV for analysis
-write.csv(treadmill, "2014-05-31-mnemosyne-treadmill.csv", row.names=FALSE)
+write.csv(treadmill, "~/wiki/docs/spacedrepetition/2014-05-31-mnemosyne-treadmill.csv", row.names=FALSE)
 ~~~
 
 ## Analysis
@@ -259,32 +245,32 @@ write.csv(treadmill, "2014-05-31-mnemosyne-treadmill.csv", row.names=FALSE)
 ~~~{.R}
 treadmill <- read.csv("http://www.gwern.net/docs/spacedrepetition/2014-05-31-mnemosyne-treadmill.csv")
 summary(treadmill)
-#                Timestamp                         ID           Grade            Easiness
-#  2013-11-26 19:24:44:   2   JdjSf1pppya0onAIPxTQH2:   7   Min.   :2.00000   Min.   :1.30000
-#  2013-11-26 22:22:12:   2   2UiZC5RXFG8BnuCvMwtrHm:   6   1st Qu.:4.00000   1st Qu.:1.43625
-#  2013-12-01 18:21:49:   2   8IbavAIp51TfEZBImDfUL8:   6   Median :4.00000   Median :1.92900
-#  2013-12-01 18:22:04:   2   BuMaMeubP2hb1ZbPeKZirj:   6   Mean   :3.77776   Mean   :1.87486
-#  2013-08-23 22:56:28:   1   C3IyssfGfLfdgkIjNu3jKN:   6   3rd Qu.:4.00000   3rd Qu.:2.16275
-#  2013-08-23 22:56:36:   1   I55jUu4zlCsrT5CGnCYOJ4:   6   Max.   :5.00000   Max.   :3.00000
-#  (Other)            :5844   (Other)               :5817
-#  Interval.length      Grade.future     Thinking.time.log        WeekDay          Hour
-#  Min.   :        0   Min.   :0.00000   Min.   :0.0000000   Friday   : 577   Min.   : 9.0000
-#  1st Qu.: 26306332   1st Qu.:4.00000   1st Qu.:0.0000000   Monday   : 711   1st Qu.:15.0000
-#  Median : 44806694   Median :4.00000   Median :0.0000000   Saturday : 857   Median :17.0000
-#  Mean   : 44591080   Mean   :3.73201   Mean   :0.0391548   Sunday   : 869   Mean   :17.1727
-#  3rd Qu.: 64373024   3rd Qu.:4.00000   3rd Qu.:0.0000000   Thursday :1034   3rd Qu.:20.0000
-#  Max.   :102203789   Max.   :5.00000   Max.   :4.0253517   Tuesday  :1021   Max.   :23.0000
-#                      NA's   :5048                          Wednesday: 785
-#          Date      Treadmill
-#  2013-09-25: 254   Mode :logical
-#  2014-02-10: 171   FALSE:2695
-#  2014-02-28: 163   TRUE :3159
-#  2013-11-09: 162   NA's :0
-#  2013-11-14: 155
-#  2014-04-22: 145
-#  (Other)   :4804
+#               Timestamp                         ID           Grade            Easiness
+# 2013-11-26 19:24:44:   2   JdjSf1pppya0onAIPxTQH2:   7   Min.   :2.00000   Min.   :1.30000
+# 2013-11-26 22:22:12:   2   2UiZC5RXFG8BnuCvMwtrHm:   6   1st Qu.:4.00000   1st Qu.:1.43625
+# 2013-12-01 18:21:49:   2   8IbavAIp51TfEZBImDfUL8:   6   Median :4.00000   Median :1.92900
+# 2013-12-01 18:22:04:   2   BuMaMeubP2hb1ZbPeKZirj:   6   Mean   :3.77776   Mean   :1.87486
+# 2013-08-23 22:56:28:   1   C3IyssfGfLfdgkIjNu3jKN:   6   3rd Qu.:4.00000   3rd Qu.:2.16275
+# 2013-08-23 22:56:36:   1   I55jUu4zlCsrT5CGnCYOJ4:   6   Max.   :5.00000   Max.   :3.00000
+# (Other)            :5844   (Other)               :5817
+# Interval.length      Grade.future     Thinking.time.log        WeekDay          Hour
+# Min.   :        0   Min.   :0.00000   Min.   :0.0000000   Friday   : 577   Min.   : 9.0000
+# 1st Qu.: 26306332   1st Qu.:4.00000   1st Qu.:0.0000000   Monday   : 711   1st Qu.:15.0000
+# Median : 44806694   Median :4.00000   Median :0.0000000   Saturday : 857   Median :17.0000
+# Mean   : 44591080   Mean   :3.72783   Mean   :0.0391548   Sunday   : 869   Mean   :17.1727
+# 3rd Qu.: 64373024   3rd Qu.:4.00000   3rd Qu.:0.0000000   Thursday :1034   3rd Qu.:20.0000
+# Max.   :102203789   Max.   :5.00000   Max.   :4.0253517   Tuesday  :1021   Max.   :23.0000
+#                     NA's   :5031                          Wednesday: 785
+#         Date      Treadmill
+# 2013-09-25: 254   Mode :logical
+# 2014-02-10: 171   FALSE:2695
+# 2014-02-28: 163   TRUE :3159
+# 2013-11-09: 162   NA's :0
+# 2013-11-14: 155
+# 2014-04-22: 145
+# (Other)   :4804
 
-## graphing all 5853 reviews is unreadable, so summarize by day & throw out outliers
+## graphing all 5854 reviews is unreadable, so summarize by day & throw out outliers
 daily <- aggregate(Grade ~ Date + Treadmill, treadmill, mean)
 daily <- daily[order(daily$Date),]
 daily <- daily[daily$Grade>=3 & daily$Grade<=4,]
@@ -296,103 +282,161 @@ qplot(Date, Grade, color=Treadmill, size=I(5), data=daily)
 
 ### Tests
 
-Because there's only 4 possible responses in the dataset (2/3/4/5) & they don't look like a normal distribution (even with _n_=5853), my analysis preference is for an [ordinal logistic regression](!Wikipedia "Ordered logit") which captures that structure.
-Reviews are grouped by day, so I want a [multilevel](!Wikipedia "Multilevel model") ordinal logistic regression to reflect that inherent structure.
+Because there's only 4 possible responses in the dataset (2/3/4/5) & they don't look like a normal distribution (even with _n_=5853), my analysis preference is for an [ordinal logistic regression](!Wikipedia "Ordered logit") which captures that structure; on the other hand, a linear model is easier to work with and it is a lot of data.
 And because my earlier analysis of the ~50m response Mnemosyne dataset confirmed that there are meaningful hour-of-day and day-of-week effects, I'll want to include those as covariates.
 (I was originally going to include card ID as a random-effects variable to reflect the easiness of each card and help reduce the unpredictability of grades; but the most any card had been reviewed during the experiment was 7 times, so the possible gain was limited, and when an analysis with card IDs as a variable took >2 hours to run and still hadn't finished, I decided to simply use Mnemosyne's internal estimate of "easiness".)
-I'll also check with a U-test that any effect isn't being completely driven by the covariates.
-
-The best-fitting such model confirms that there's an effect: it's negative.
-The proportional odds effect on grades is -1.381 (-2.086 to -0.6755; _p_=0.00012) or, to use a multilevel linear model, a lower mean grade by 0.1 (-0.14732 to -0.02029).
+I'll first check with a U-test that any effect isn't being completely driven by the covariates.
 
 ~~~{.R}
 wilcox.test(Grade ~ Treadmill, conf.int=TRUE, data=treadmill)
-#
-#     Wilcoxon rank sum test with continuity correction
-#
-# data:  Grade by Treadmill
-# W = 4363353, p-value = 0.01656
-# alternative hypothesis: true location shift is not equal to 0
-# 95% confidence interval:
-#  -2.355e-05  5.387e-05
-# sample estimates:
-# difference in location
-#              4.155e-05
+    Wilcoxon rank sum test with continuity correction
 
-library(ordinal)
-c1  <- clmm(ordered(Grade) ~ Treadmill + Easiness + (1|Date) + (1|WeekDay) + (1|Hour), data=treadmill)
-c2  <- clmm(ordered(Grade) ~ Treadmill + Easiness + (1|Date) + (1|WeekDay)           , data=treadmill)
-c3  <- clmm(ordered(Grade) ~ Treadmill + Easiness +            (1|WeekDay) + (1|Hour), data=treadmill)
-c4  <- clmm(ordered(Grade) ~ Treadmill + Easiness + (1|Date)               + (1|Hour), data=treadmill)
-c5  <- clmm(ordered(Grade) ~ Treadmill + Easiness + (1|Date)                         , data=treadmill)
-c6  <- clmm(ordered(Grade) ~ Treadmill + Easiness +            (1|WeekDay)           , data=treadmill)
-c7  <- clmm(ordered(Grade) ~ Treadmill + Easiness +                          (1|Hour), data=treadmill)
-c8  <- clm(ordered(Grade)  ~ Treadmill + Easiness                                    , data=treadmill)
-c9  <- clm(ordered(Grade)  ~ Treadmill                                               , data=treadmill)
-c10 <- clm(ordered(Grade)  ~ Treadmill                                               , data=treadmill)
-c11 <- clm(ordered(Grade)  ~ 1                                                       , data=treadmill)
-anova(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11)
-# ...
-#     no.par  AIC logLik LR.stat df Pr(>Chisq)
-# c11      3 8215  -4104
-# c9       4 8211  -4101    5.77  1      0.016
-# c10      4 8211  -4101    0.00  0
-# c8       5 6959  -3475 1253.46  1     <2e-16
-# c5       6 6842  -3415  119.16  1     <2e-16
-# c6       6 6951  -3470 -108.79  0
-# c7       6 6946  -3467    5.16  0
-# c2       7 6842  -3414  106.17  1     <2e-16
-# c3       7 6939  -3462  -96.90  0
-# c4       7 6833  -3409  106.03  0
-# c1       8 6834  -3409    0.32  1      0.570
-
-summary(c4)
-# ...
-# Random effects:
-#  Groups Name        Variance Std.Dev.
-#  Date   (Intercept) 2.008    1.417
-#  Hour   (Intercept) 0.179    0.423
-# Number of groups:  Date 97,  Hour 15
-#
-# Coefficients:
-#               Estimate Std. Error z value Pr(>|z|)
-# TreadmillTRUE   -1.381      0.360   -3.84  0.00012
-# Easiness         3.365      0.121   27.73  < 2e-16
-#
-# Threshold coefficients:
-#     Estimate Std. Error z value
-# 2|3    1.751      0.338    5.19
-# 3|4    2.842      0.338    8.41
-# 4|5    9.814      0.388   25.28
-
-## easier to interpret a linear model: how much does average grade fall on treadmill?
-library(lme4)
-l4 <- lmer(Grade ~ Treadmill + Easiness + (1|Date) + (1|Hour), data=treadmill); summary(l4)
-# ...
-# Fixed effects:
-#               Estimate Std. Error t value
-# (Intercept)     2.7003     0.0422    64.0
-# TreadmillTRUE  -0.0805     0.0296    -2.7
-# Easiness        0.6085     0.0180    33.8
-
-confint(c4)
-#                2.5 %  97.5 %
-# 2|3            1.089  2.4124
-# 3|4            2.180  3.5047
-# 4|5            9.053 10.5749
-# TreadmillTRUE -2.086 -0.6755
-# Easiness       3.127  3.6032
-
-confint(l4)
-# Computing profile confidence intervals ...
-#                  2.5 %   97.5 %
-# .sig01         0.06273  0.14300
-# .sig02         0.01809  0.08734
-# .sigma         0.54550  0.56598
-# (Intercept)    2.61418  2.78532
-# TreadmillTRUE -0.14732 -0.02029
-# Easiness       0.57313  0.64363
+data:  Grade by Treadmill
+W = 4363405, p-value = 0.01796
+alternative hypothesis: true location shift is not equal to 0
+95 percent confidence interval:
+ -5.93488865e-05  4.90689572e-05
+sample estimates:
+difference in location
+        5.43849586e-05
 ~~~
+
+So there's a difference between the groups.
+What difference?
+I want to look for an effect on the grades given each day, but also an effect on the *next* grade at the next review of flashcards which are affected (or not) by treadmill use, which is tricky because the first grade for flashcard A is an excellent predictor of its next grade (if I graded a flashcard '4', then probably its next grade will be a '4' too).
+So `Grade` is both being predicted by the variables but also is a predictor for `Grade.future`.
+There's 3 ways I can think of to approach this:
+
+1. estimate `Grade` and `Grade.future` in completely separate regressions; `Grade.future` does not appear in the first regression estimating `Grade`, and in the second one, `Grade.future ~ Grade`
+2. treat it as a multivariate multiple regression problem and not try to use `Grade` to predict `Grade.future`
+3. improve on #1 and use simultaneous equations: a path model or [structural equation modeling](!Wikipedia)
+
+    The downside of this is that SEMs, while applicable here and an extremely powerful family of techniques, are notoriously difficult to understand or use.
+    I am not certain that my attempt to use it for this problem is correct.
+
+I'll present all 3 since they seem to agree.
+
+Separate regressions:
+
+~~~{.R}
+summary(lm(Grade ~ Treadmill + Easiness + Interval.length + Thinking.time.log + WeekDay + Hour, data=treadmill))
+## Coefficients:
+##                       Estimate   Std. Error  t value   Pr(>|t|)
+## (Intercept)        2.80677e+00  6.34044e-02 44.26780 < 2.22e-16
+## TreadmillTRUE     -5.10778e-02  1.49802e-02 -3.40970 0.00065475
+## Easiness           6.03135e-01  1.74181e-02 34.62681 < 2.22e-16
+## Interval.length    1.37417e-09  3.10530e-10  4.42522 9.8095e-06
+## Thinking.time.log -7.11363e-02  3.09461e-02 -2.29872 0.02155611
+## WeekDayMonday     -7.39220e-02  3.16516e-02 -2.33549 0.01955131
+## WeekDaySaturday   -1.42952e-01  3.10946e-02 -4.59732 4.3697e-06
+## WeekDaySunday     -2.29438e-02  3.07093e-02 -0.74713 0.45501697
+## WeekDayThursday   -4.96342e-02  2.93847e-02 -1.68912 0.09125006
+## WeekDayTuesday    -4.78373e-02  2.99313e-02 -1.59824 0.11004403
+## WeekDayWednesday  -1.03122e-01  3.14425e-02 -3.27971 0.00104523
+## Hour              -7.36549e-03  2.35632e-03 -3.12584 0.00178166
+##
+## Residual standard error: 0.560091 on 5842 degrees of freedom
+## Multiple R-squared:  0.178135,   Adjusted R-squared:  0.176587
+summary(lm(Grade.future ~ Grade + Treadmill + Easiness + Interval.length + Thinking.time.log + WeekDay + Hour, data=treadmill))
+## Coefficients:
+##                       Estimate   Std. Error  t value   Pr(>|t|)
+## (Intercept)        4.06756e-01  2.27547e-01  1.78757  0.0742200
+## Grade              2.40430e-01  3.31083e-02  7.26192 8.9652e-13
+## TreadmillTRUE     -3.38867e-03  3.88392e-02 -0.08725  0.9304954
+## Easiness           8.75420e-01  6.95734e-02 12.58269 < 2.22e-16
+## Interval.length    2.46084e-08  4.00242e-09  6.14837 1.2281e-09
+## Thinking.time.log  2.86484e-01  1.55767e-01  1.83918  0.0662539
+## WeekDayMonday      2.38570e-02  8.51907e-02  0.28004  0.7795162
+## WeekDaySaturday    2.90015e-02  8.25291e-02  0.35141  0.7253727
+## WeekDaySunday     -1.44319e-03  7.16955e-02 -0.02013  0.9839451
+## WeekDayThursday    4.10939e-03  7.99399e-02  0.05141  0.9590147
+## WeekDayTuesday    -1.32259e-02  8.16232e-02 -0.16204  0.8713175
+## WeekDayWednesday   6.06417e-02  8.87476e-02  0.68331  0.4946093
+## Hour               1.90015e-02  6.03937e-03  3.14627  0.0017141
+##
+## Residual standard error: 0.529701 on 810 degrees of freedom
+##   (5031 observations deleted due to missingness)
+## Multiple R-squared:  0.412783,   Adjusted R-squared:  0.404084
+~~~
+
+Multivariate:
+
+~~~{.R}
+summary(lm(cbind(Grade, Grade.future) ~ Treadmill + Easiness + Interval.length + Thinking.time.log + WeekDay + Hour, data=treadmill))
+# Grade:
+## ...Coefficients:
+##                       Estimate   Std. Error  t value   Pr(>|t|)
+## (Intercept)        2.78720e+00  2.20601e-01 12.63457 < 2.22e-16
+## TreadmillTRUE     -1.71331e-01  4.07513e-02 -4.20430 2.9103e-05
+## Easiness           8.33584e-01  6.77357e-02 12.30642 < 2.22e-16
+## Interval.length   -1.38508e-08  4.21703e-09 -3.28449 0.00106550
+## Thinking.time.log -2.64515e-01  1.64946e-01 -1.60365 0.10918153
+## WeekDayMonday     -4.32958e-01  8.90653e-02 -4.86113 1.4016e-06
+## WeekDaySaturday   -4.38449e-01  8.61660e-02 -5.08843 4.4891e-07
+## WeekDaySunday     -2.56739e-01  7.55042e-02 -3.40033 0.00070594
+## WeekDayThursday   -4.50507e-01  8.32957e-02 -5.40853 8.3666e-08
+## WeekDayTuesday    -3.09444e-01  8.58852e-02 -3.60299 0.00033374
+## WeekDayWednesday  -4.07119e-01  9.30340e-02 -4.37602 1.3665e-05
+## Hour              -1.80859e-02  6.37381e-03 -2.83754 0.00465974
+##
+## Residual standard error: 0.561802 on 811 degrees of freedom
+##   (5031 observations deleted due to missingness)
+## Multiple R-squared:  0.48334,    Adjusted R-squared:  0.476332
+# Grade.future:
+## ...Coefficients:
+##                       Estimate   Std. Error  t value   Pr(>|t|)
+## (Intercept)        1.07688e+00  2.14528e-01  5.01978 6.3617e-07
+## TreadmillTRUE     -4.45816e-02  3.96293e-02 -1.12497   0.260936
+## Easiness           1.07584e+00  6.58709e-02 16.33255 < 2.22e-16
+## Interval.length    2.12782e-08  4.10093e-09  5.18864 2.6787e-07
+## Thinking.time.log  2.22887e-01  1.60405e-01  1.38953   0.165052
+## WeekDayMonday     -8.02389e-02  8.66132e-02 -0.92640   0.354511
+## WeekDaySaturday   -7.64148e-02  8.37937e-02 -0.91194   0.362071
+## WeekDaySunday     -6.31709e-02  7.34254e-02 -0.86034   0.389855
+## WeekDayThursday   -1.04206e-01  8.10024e-02 -1.28645   0.198652
+## WeekDayTuesday    -8.76254e-02  8.35206e-02 -1.04915   0.294423
+## WeekDayWednesday  -3.72417e-02  9.04726e-02 -0.41164   0.680716
+## Hour               1.46531e-02  6.19833e-03  2.36404   0.018312
+##
+## Residual standard error: 0.546335 on 811 degrees of freedom
+##   (5031 observations deleted due to missingness)
+## Multiple R-squared:  0.374552,   Adjusted R-squared:  0.366069
+~~~
+
+SEM (using [lavaan](http://lavaan.ugent.be/)):
+
+~~~{.R}
+library(lavaan)
+Mnemo.model <- '
+                Grade ~ Treadmill + Easiness + Interval.length + Thinking.time.log + WeekDay + Hour
+                Grade.future ~ Grade + Treadmill + Easiness + Interval.length + Thinking.time.log + WeekDay + Hour
+               '
+Mnemo.fit <- sem(model = Mnemo.model, data = treadmill)
+summary(Mnemo.fit)
+## ...                Estimate  Std.err  Z-value  P(>|z|)
+## Regressions:
+##   Grade ~
+##     Treadmill        -0.169
+##     Easiness          0.832
+##     Intervl.lngth    -0.000
+##     Thinkng.tm.lg    -0.289
+##     WeekDay          -0.027
+##     Hour             -0.007
+##   Grade.future ~
+##     Grade             0.238
+##     Treadmill        -0.000
+##     Easiness          0.877
+##     Intervl.lngth     0.000
+##     Thinkng.tm.lg     0.288
+##     WeekDay           0.001
+##     Hour              0.018
+##
+## Variances:
+##     Grade             0.324
+##     Grade.future      0.277
+~~~
+
+In each of the 3 approaches, the estimated effect of treadmill usage on my Mnemosyne scores that day was negative but after incorporating the negative effect of poorer recall  that day, there did not seem to be additional damage above and beyond that.
 
 ## Conclusion
 

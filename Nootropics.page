@@ -2600,7 +2600,7 @@ Given the plausible effect size, and weakness of the experiment, I find these re
 ## Noopept followup experiment
 
 > Noopept is a Russian stimulant sometimes suggested for nootropics use as it may be more effective than piracetam or other -racetams, and its smaller doses make it more convenient & possibly safer.
-> Following up on a pilot study, I ran a well-powered blind randomized self-experiment between September 2013 and August 2014 using doses of 12-60mg Noopept & pairs of 3-day blocks to investigate the impact of Noopept on self-ratings of daily functioning.
+> Following up on a pilot study, I ran a well-powered blind randomized self-experiment between September 2013 and August 2014 using doses of 12-60mg Noopept & pairs of 3-day blocks to investigate the impact of Noopept on self-ratings of daily functioning in addition to my existing supplementation regimen involving small-to-moderate doses of piracetam.
 > A linear regression, which included other concurrent experiments as covariates & used multiple imputation for missing data, indicates a small benefit to the lower dose levels and harm from the highest 60mg dose level, but no dose nor Noopept as a whole was statistically-significant.
 > It seems Noopept's effects are too subtle to easily notice if they exist, but if one uses it, one should probably avoid 60mg+.
 
@@ -2615,6 +2615,15 @@ It took 4 hours to cap 432 Noopept pills and another 432 flour pills. I tried to
 I don't want to synchronize with the magnesium or lithium experiments, so I'll use paired blocks of 3 days randomized 50:50, which will help with the reported tolerance of Noopept setting in after a few days and one needing to 'cycle'.
 
 To make things more interesting, I think I would like to try randomizing different dosages as well: 12mg, 24mg, and 36mg (1-3 pills); on 5 May 2014, because I wanted to finish up the experiment earlier, I decided to add 2 larger doses of 48 & 60mg (4-5 pills) as options. Then I can include the previous pilot study as 10mg doses, and regress over dose amount.
+
+During this time period, I generally refrained from using any nicotine or modafinil to avoid adding noise to results.
+I did use magnesium citrate & LLLT (discussed later).
+Finally, I was taking a stack like this:
+
+1. 1mg melatonin at bedtime
+2. 5000IU vitamin D & multivitamin at morning; an iron supplement every 3 days
+3. from 25 March to 18 September 2014, ~5g of creatine monohydrate per day
+4. a few times a day, taking a custom gel pill which in total supplies ~1g piracetam & 200mg caffeine
 
 #### Power
 
@@ -3086,12 +3095,14 @@ for (n in seq(from = 100, to = 3000, by = 200)) {
 # [1] 2900.0000    0.4238
 ~~~
 
+<!-- $ -->
+
 (I am *not* running an blind random self-experiment for 8 years just to get barely 40% power.)
 
 ### Conclusion
 
 So on net, I think there may be an effect but it's small and I don't know whether the optimal dose would be low (~10mg) or much higher (~40mg).
-I don't find this a particularly reason to continue taking Noopept.
+I don't find this a particularly reason to continue taking Noopept: it seem to either not be helpful in a noticeable way or to be redundant with the piracetam.
 
 # Oxiracetam
 
@@ -3528,9 +3539,13 @@ September
 19: 0
 20: 1
 21: 0
+22: 0
+23: 0
+24: 0
+25: 1
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16, 19 September -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16, 19, 25 September -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
 <!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014, 18-19 July 2014 -->

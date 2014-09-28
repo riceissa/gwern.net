@@ -2072,7 +2072,8 @@ I have no one to blame but myself there. (Given how late I went hunting and many
 
 Overall, an interesting experience. The next cicada emergence I am near, I'll try the chocolate chip cicada cookie recipes.
 
-# Technology epigrams
+# Epigrams
+## Technology epigrams
 
 On programming:
 
@@ -2143,20 +2144,6 @@ Black-markets & Bitcoin:
 - One weird philo trick for analysis! Imagine worlds where X failed: "Sure Bitcoin died: a deflationary currency requiring ever more waste?"
 - Let us hope Karpeles will not be the Alcibiades of Bitcoin.
 
-General:
-
-- To learn to build sandcastles on the beach is to learn to live and die an atheist.
-- "Ricardo's theorem is the pons asinorum of economics": it always seems to be employed by asses with oddly high salaries.
-- "Neo, what if I told you... *everything you knew was correct*?" (That would be the biggest disappointment ever.)
-- Everything looks permanent until its secret is known. For all too many things, the beginning of fear is the beginning of knowledge.
-- At times, tolerance can be the most radical of positions to take; just watch when a weak group gains power.
-- I have always found the Mohs scale hard to remember.
-- "Reading a flame war: and all you people must once have been little children, who smiled of a summer day."
-- War seeks to mold physical conditions as one wishes; art seeks to mold minds as one wishes. Both are based on deception.
-- Art is often hatred: it shows the past, or future, or far-away but never the present moment. Anti-art: a TV & camera showing the viewer.
-- The "fallacy of gray" or the "fallacy of grey"? My suggestion "the fallacy of græy" was rejected without, I thought, proper consideration.
-- If pigs were smart enough to worry: "the humans neither love nor hate you, but you are made of tasty bacon they can use for something else."
-
 Meta:
 
 - An aphorism is an algorithm, of we know not what input, we know not what output.
@@ -2165,6 +2152,23 @@ Meta:
 - If we measure the entropy of epigrams by how many people understand them, who is the gzip of epigrams? The xz? (...the ZPAQ...?)
 - Remember! Most strings are incompressible, most reals uncomputable, most theorems unprovable, most programs undecidable.
 - Should languages support the writer's convenience or the reader's understanding? Frame it as a status debate, and all becomes clear.
+
+## Misc
+
+General:
+
+- To learn to build sandcastles on the beach is to learn to live and die an atheist.
+- "Ricardo's theorem is the pons asinorum of economics": it always seems to be employed by asses with oddly high salaries.
+- "Neo, what if I told you... *everything you knew was correct*?" (That would be the biggest disappointment ever.)
+- Everything looks permanent until its secret is known. For all too many things, the beginning of fear is the beginning of knowledge.
+- At times, tolerance can be the most radical of positions to take; just watch when a weak group gains power.
+- "Reading a flame war: and all you people must once have been little children, who smiled of a summer day."
+- War seeks to mold physical conditions as one wishes; art seeks to mold minds as one wishes. Both are based on deception.
+- Art is often hatred: it shows the past, or future, or far-away but never the present moment. Anti-art: a TV & camera showing the viewer.
+- The "fallacy of gray" or the "fallacy of grey"? My suggestion "the fallacy of græy" was rejected without, I thought, proper consideration.
+- I have always found the Mohs scale hard to remember.
+- If pigs were smart enough to worry: "the humans neither love nor hate you, but you are made of tasty bacon they can use for something else."
+- I have made progress in my meditations: yesterday I told myself one truth, and only nine lies.
 
 # _Cherchez Le Chien_
 
@@ -2419,7 +2423,7 @@ binom.test(c(5,4))
 # data:  c(5, 4)
 # number of successes = 5, number of trials = 9, p-value = 1
 # alternative hypothesis: true probability of success is not equal to 0.5
-# 95 percent confidence interval:
+# 95% confidence interval:
 #  0.212 0.863
 # sample estimates:
 # probability of success
@@ -2427,6 +2431,82 @@ binom.test(c(5,4))
 ~~~
 
 So we can tell him that he may have a \>55% chance of getting in.
+
+# The Traveling Gerontologist problem
+
+A quick probability exercise: [Wikipedia](!Wikipedia "Centenarian#Centenarian_populations_by_country") mentions Finland has 566 centenarians as of 2010.
+
+That's few enough you could imagine visiting them all to research them and their longevity, in a sort of traveling salesman problem but with gerontologists instead.
+Except, because of the [exponential increase in mortality](https://en.wikipedia.org/wiki/Gompertz%E2%80%93Makeham_law_of_mortality), centenarians have high annual mortality rates; it depends on the exact age but you could call it >30% (eg Finnish 99yos in 2012 had a death toll of 326.54/1000).
+So you might well try to visit a centenarian and discover they'd died before you got there.
+
+How bad a risk is this?
+Well, if the risk per year is 30%, then one has a 70% chance of surviving a year.
+To survive a year, you must survive all 365 days; by the multiplication rule, the risk is $x$ where $0.7 = x \cdot x \cdot x \cdot ... * x \text{[365.25 times]}$ or $0.7 = x^{365.25}$; solving, $x = 0.999024$.
+
+It takes time to visit a centenarian - it wouldn't do to be abrupt and see them for only a few minutes, you ought to listen to their stories, and you need to get to a hotel or airport, so let's assume you visit 1 centenarian per day.
+
+If you visit centenarian A on day 1, and you want to visit centenarian B on day 2, then you can count on a 99.9% chance B is still alive. So far so good.
+And if you wanted to visit 566 centenarians (let's imagine you have a regularly-updated master list of centenarians from the Finnish population registry), then you only have to beat the odds 566 times in a row, which is not _that_ hard: $0.999024^{566} = 0.5754023437943274$.
+
+But that's coldblooded of you to objectify those Finnish centenarians! "Any centenarian will do, I don't care."
+What if you picked the *current* set of 566 centenarians and wanted to visit just them, specifically - with no new centenarians introduced to the list to replace any dead ones.
+
+That's a little more complicated. When you visit the first centenarian, it's the same probability: 0.999024.
+When you visit the second centenarian the odds change since now she (and it's more often 'she' than 'he', since remember the exponential and males having shorter mean lifetimes) has to survive 2 days, so it's $0.999024 \cdot 0.999024$ or $0.999024^2$; for the third, it's $0.999024^3$, and so on to #566 who has been patiently waiting and trying to survive a risk of $0.999024^566$, and then you need to multiply to get your odds of beating every single risk of death and the centenarian not leaving for a more permanent rendezvous: $0.999024 \cdot 0.999024^2 \cdot 0.999024^3 \cdot ... \cdot 0.999024^{566}$, which would be $\prod_{n=1}^{566} 0.999024^n$, or in Haskell:
+
+~~~{.Haskell}
+product (map (\x -> 0.999024**x) [1..566])
+~> 8.952743340164081e-69
+~~~
+
+(A little surprisingly, Wolfram Alpha can [solve the TeX expression](https://www.wolframalpha.com/input/?i=\prod_{n%3D1}^{566}+0.999024^n) too.)
+
+Given the use of floating point in that function (567 floating point exponentiations followed by as many multiplications) and the horror stories about floating point, one might worry the answer is wrong & the real probability is much larger.
+We can retry with an implementation of computable reals, [`CReal`](https://hackage.haskell.org/package/numbers-2009.8.9/docs/Data-Number-CReal.html#t:CReal), which can be very slow but should give more precise answers:
+
+~~~{.Haskell}
+:module + Data.Number.CReal
+showCReal 100 (product (map (\x -> 0.999024**x) [1..566]))
+~> 0.0000000000000000000000000000000000000000000000000000000000000000000089527433401308585720915431195262
+~~~
+
+Looks good - agrees with the floating point version up to the 11th digit:
+
+    8.9527433401 64081e-69
+    8.9527433401 308585720915431195262
+
+We can also check by rewriting the product equation to avoid all the exponentiation and multiplication (which might cause issues) in favor of a single exponential:
+
+1. $p^1 * p^2 * ... p^n$ (as before)
+2. = $p^{1+2+...+n}$ (since $(x^m) * (x^n) = x^(m + n)$)
+3. = $p^{\frac{n \cdot (1 + n)}{2}}$ (by [arithmetic progression](!Wikipedia)/[Gauss's famous classroom trick](http://mathworld.wolfram.com/ArithmeticSeries.html) since $\sum_1^n = n \cdot \frac{a_1 + a_n}{2}$)
+4. = $0.999024^{\frac{566 \cdot (1 + 566)}{2}}$ (start substituting in specific values)
+5. = $0.999024^{\frac{320922}{2}}$
+6. = $0.999024^{160461}$
+
+So:
+
+~~~{.Haskell}
+0.999024^160461
+~> 8.95274334014924e-69
+~~~
+
+Or to go back to the longer version:
+
+~~~{.Haskell}
+0.999024**((566*(1 + 566)) / 2)
+~> 8.952743340164096e-69
+~~~
+
+Also close. All probabilities of success are minute.
+
+How fast would you have to be if you wanted to at least *try* to accomplish the tour with, say, a 50-50 chance?
+
+Well, that's easy: you can consider the probability of all of them surviving one day and as we saw earlier, that's $0.999024^{566} = 0.58$, and two days would be $(0.999024 ^ {566}) ^ 2 = 0.33$
+So you can only take a little over a day before you've probabilistically lost & one of them has died; if you hit all 566 centenarians in 24 hours, that's ~24 centenarians per hour or ~2 minutes to chat with each one and travel to the next. If you're trying to collect DNA samples, better hope they're all awake and able to give consent!
+
+So safe to say, you will probably not be able to manage the Traveling Gerontologist's tour.
 
 # North Paw
 

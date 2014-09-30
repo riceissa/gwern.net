@@ -102,6 +102,8 @@ timelock_decrypt () {
 # this is a test
 ~~~
 
+Another simple implementation of serial hashing (SHA-256) for time-locking has been [written in Python](https://github.com/lahwran/mac-sleeplocker/blob/master/timelock.py).
+
 ## Chained hashes
 
 On the other hand, there seems to be a way that the original person running this algorithm *can* run it in parallel: one generates _n_ random inputs (for _n_ CPUs, presumably), and sets them hashing as before for say a month. Then, one sets up a chain between the _n_ results - the final hash of seed 1 is used to encrypt seed 2, the final hash of which was the encryption for seed 3, and so on. Then one releases the encrypted file, first seed, and the $n-1$ *encrypted* seeds. Now the public has to hash the first seed for a month, and only then can it decrypt the second seed, and start hashing *that* for a month, and so on. Karl Gluck suggests that like repeated squaring, it's even possible to add error-detection to the procedure[^Gluck-chain]. (A somewhat similar scheme, ["A Guided Tour Puzzle for Denial of Service Prevention"](http://www.cs.pitt.edu/~mehmud/docs/abliz09tourpuzzle.pdf "Abliz & Znati 2009"), uses network latency rather than hash outputs as the chained data - clients bounce from resources to resource - but this obviously requires an online server and is unsuitable for our purposes, among [other problems](http://www.reddit.com/r/compsci/comments/1nx0n5/timelock_encryption/ccne7bk).)

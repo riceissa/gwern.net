@@ -1,0 +1,101 @@
+---
+title: October news
+created: 29 Sept 2014
+tags: meta
+status: in progress
+belief: log
+...
+
+This is the October edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155); previously was [September](http://www.gwern.net/newsletter/2014/09).
+
+This is a summary of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & including material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/). Thanks to my donors on [Gratipay](https://gratipay.com/gwern/).
+
+# Writings
+
+# Media
+## Links
+
+Everything is heritable:
+["Common DNA Markers Can Account for More Than Half of the Genetic Influence on Cognitive Abilities"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3652710/), Plomin et al 2013
+Politics/religion:
+["Kim Philby and the Age of Paranoia"](http://www.nytimes.com/1994/07/10/magazine/kim-philby-and-the-age-of-paranoia.html?pagewanted=all)
+["In Front of Your Nose"](http://orwell.ru/library/articles/nose/english/e_nose)
+[Newton and alchemy](http://www-history.mcs.st-and.ac.uk/Extras/Keynes_Newton.html)
+["An Examination of Stereotype Threat Effects on Girls' Mathematics Performance"](https://dl.dropboxusercontent.com/u/85192141/2013-ganley.pdf), Ganley et al 2013
+["Aum Shinrikyo and a Panic About Manga and Anime"](http://www.gwern.net/docs/2008-gardner.pdf), Gardner 2008 ([excerpts](https://plus.google.com/103530621949492999968/posts/BhoJHxGfpvL))
+["Hitler’s Declaration of War Against the US"](http://www.isegoria.net/2013/05/hitlers-declaration-of-war-against-the-us/)
+
+Statistics/AI/meta-science:
+["How Many Scientists Fabricate and Falsify Research? A Systematic Review and Meta-Analysis of Survey Data"](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0005738)
+[Classification through compression: PAQClass](https://code.google.com/p/paqclass/)
+["Khan Academy: machine learning → measurable learning"](http://derandomized.com/post/51729670543/khan-academy-machine-learning-measurable-learning)
+[Survivorship bias](http://youarenotsosmart.com/2013/05/23/survivorship-bias/)
+[Stein's paradox](https://normaldeviate.wordpress.com/2013/05/18/steins-paradox/)
+["Intelligence Explosion Microeconomics"](http://lesswrong.com/lw/hbd/new_report_intelligence_explosion_microeconomics/)
+[Writing math papers](https://gowers.wordpress.com/2013/04/14/answers-results-of-polls-and-a-brief-description-of-the-program/)
+["Against optimism about social science"](http://andrewgelman.com/2013/05/06/against-optimism-about-social-science/)
+["Kalkalash! Pinpointing the Moments _The Simpsons_ became less Cromulent"](http://diffuseprior.wordpress.com/2013/04/30/kalkalash-pinpointing-the-moments-the-simpsons-became-less-cromulent/)
+["Bayes' rule in Haskell, or why drug tests don't work"](http://www.randomhacks.net/2007/02/22/bayes-rule-and-drug-tests/)
+Psychology:
+["Deliberate practice: Is that all it takes to become an expert?"](http://www.msu.edu/~ema/HambrickEtAl13.pdf), Hambrick et al 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/fSaqJKQe4HE))
+[Fertility and intelligence](https://en.wikipedia.org/wiki/Fertility_and_intelligence)
+["What Do You Desire?"](https://nplusonemag.com/issue-16/essays/what-do-you-desire/) (on the porn company Kink.com)
+["Do We Believe Everything We're Told?"](http://lesswrong.com/lw/k4/do_we_believe_everything_were_told/#thingrow_t3_k4)
+["Suicide: An Economic Approach"](http://storage.globalcitizen.net/data/topic/knowledge/uploads/2009051911410705.pdf), Becker & Posner 2004 ([excerpts](https://plus.google.com/103530621949492999968/posts/ZNphZPToZG5))
+["The drugs do work: my life on brain enhancers"](http://www.theguardian.com/lifeandstyle/2013/may/03/brain-enhancing-drugs-mj-hyland)
+Technology:
+["The Tyranny of the Rocket Equation"](http://www.nasa.gov/mission_pages/station/expeditions/expedition30/tryanny.html) ([WP](https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation))
+["_Spacewar_: Fanatic Life and Symbolic Death Among the Computer Bums"](http://www.wheels.org/spacewar/stone/rolling_stone.html)
+[Advanced factory manufacturing in America](http://www.theatlantic.com/magazine/archive/2012/01/making-it-in-america/308844/)
+["A history of the Amiga, part 8: The demo scene"](http://arstechnica.com/gadgets/2013/04/a-history-of-the-amiga-part-9-the-demo-scene/)
+["Why Johnny Can’t Encrypt: A Usability Evaluation of PGP 5.0"](http://www.gaudior.net/alma/johnny.pdf)
+["Crypto Rebels: It's the FBIs, NSAs, and Equifaxes of the world versus a swelling movement of Cypherpunks, civil libertarians, and millionaire hackers. At stake: Whether privacy will exist in the 21st century"](http://archive.wired.com/wired/archive/1.02/crypto.rebels_pr.html)
+["Fusion Power by Magnetic Confinement Program Plan"](https://dl.dropboxusercontent.com/u/85192141/1998-dean.pdf), Dean 1998
+[Anatomy of a hack: How crackers ransack passwords like “qeadzcwrsfxv1331”; For Ars, three crackers have at 16,000+ hashed passcodes—with 90% success.](http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/)
+["The Hundred-Year Language"](http://paulgraham.com/hundred.html)
+Economics:
+- ["Dirty medicine"](http://fortune.com/2013/05/15/dirty-medicine/)
+- [Peak scientist](https://www.its.caltech.edu/~dg/crunch_art.html "'The Big Crunch', Goodstein 1994")
+- ["Slippery Business: The trade in adulterated olive oil"](http://www.newyorker.com/magazine/2007/08/13/slippery-business)
+- ["The Industrial Revolution: Past and Future"](http://www.minneapolisfed.org/publications_papers/pub_display.cfm?id=3333&TC=1) (Lucas on the Great Divergence, economic growth, the Asian miracles, and redistributionism.﻿)
+- ["Of Frightened Horses and Autonomous Vehicles: Tort Law and its Assimilation of Innovations"](http://digitalcommons.law.scu.edu/cgi/viewcontent.cgi?article=1170&context=facpubs), Graham 2012 ([excerpts](https://plus.google.com/103530621949492999968/posts/PXL23xTozdH))
+- ["Beware the Middleman: Empirical Analysis of Bitcoin-Exchange Risk"](http://lyle.smu.edu/~tylerm/fc13.pdf), Moore & Christin 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/jUNVRf8o1dj))
+- [NASHX](http://nashx.com/About)
+- ["Love, luck and destiny: the world according to a Mumbai matriarch"](http://www.abc.net.au/news/2013-03-28/mama-asia-india/4634410)
+- [Kids for cash scandal](https://en.wikipedia.org/wiki/Kids_for_cash_scandal)
+- ["Smart companies try to commoditize their products' complements."](http://www.joelonsoftware.com/articles/StrategyLetterV.html)
+- [Old Economy Steven](http://knowyourmeme.com/memes/old-economy-steven/photos)
+
+Philosophy:
+["Why Did why the lucky stiff Quit? …or, is this time well spent?"](https://kevinw.github.io/2013/04/30/why-did-why-the-lucky-stiff-quit/)
+[Wrongful life](https://en.wikipedia.org/wiki/Wrongful_life)
+["Newtonian Ethics"](http://slatestarcodex.com/2013/05/17/newtonian-ethics/)
+["Transhumanist Fables"](http://slatestarcodex.com/2013/05/27/transhumanist-fables/)
+["Even More Aphorisms and Ten-Second Essays from Vectors 3.0"](https://web.archive.org/web/20110629061349/http://www.theliteraryreview.org/WordPress/tlr-poetry/), James Richardson﻿
+Misc:
+[N-body choreographies](http://www.scholarpedia.org/article/N-body_choreographies)
+[_Sacculina_ parasite](https://en.wikipedia.org/wiki/Sacculina)
+[Obsolete occupations](https://en.wikipedia.org/wiki/Category:Obsolete_occupations): [breaker boy](https://en.wikipedia.org/wiki/Breaker_boy), [crossing sweeper](https://en.wikipedia.org/wiki/Crossing_sweeper), [dog whipper](https://en.wikipedia.org/wiki/Dog_whipper)
+[M50 Ontos](https://en.wikipedia.org/wiki/M50_Ontos)
+
+<!-- Back to 27 April 2013 -->
+
+## Books
+
+Nonfiction:
+
+Fiction:
+
+## Film/TV
+
+Anime:
+
+## Music
+
+Touhou:
+
+Kantai Collection:
+
+Doujin:
+
+Vocaloid:

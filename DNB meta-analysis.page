@@ -78,6 +78,7 @@ The candidate studies:
 - Katz et al 2013
 - Burki et al 2014
 - Pugin et al 2014
+- Schmiedek et al 2014
 
 Variables:
 
@@ -591,6 +592,7 @@ Going through them, I must note:
 - Nussbaumer et al 2013: administered RAPM & I-S-T 2000 R tests; participants were trained in 3 conditions: non-adaptive single 1-back ("low"); non-adaptive single 3-back ("medium"); adaptive dual n-back ("high"). Given the low training time, I decided to drop the medium group as being unclear whether the intervention is doing anything, and treat the high group as the experimental group vs a "low" active control group.
 - Burki et al 2014: split experimental groups across the passive & active controls; young and old groups were left unpooled because they used RAPM and RSPM respectively
 - Pugin et al 2014: used the TONI-IV IQ test from the post-test, but not the followup scores; the paper reports the age-adjusted scaled values, but Fiona Pugin provided me the raw TONI-IV scores
+- Schmiedek et al 2014: ["Younger Adults Show Long-Term Effects of Cognitive Training on Broad Cognitive Abilities Over 2 Years"](/docs/dnb/2014-schmiedek.pdf)/["Hundred Days of Cognitive Training Enhance Broad Cognitive Abilities in Adulthood: Findings from the COGITO Study"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2914582/ "Schmiedek et al 2010") had subjects practice on 12 different tasks, one of which was single (spatial) n-back, but it was not adaptive ("difficulty levels for the EM and WM tasks were individualized using different presentation times (PT) based on pre-test performance"); due to the lack of adaptiveness and the 11 other tasks participants trained, I am omitting their data.
 
 <!-- Clouter:
 1. The post-training Mean and SD for the raw CFIT scores are: Control group mean = 28.83, SD = 2.68. Training group mean = 30.84, SD = 4.11.

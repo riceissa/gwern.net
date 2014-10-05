@@ -98,7 +98,7 @@ A Zeo is a scaled-down (one-electrode) [EEG](!Wikipedia) sensor-headband, which 
 
 The data is much better than what you would get from more popular methods like cellphones with accelerometers, since an accelerometer only knows if you are moving or not, which isn't a very reliable indicator of sleep[^Fitbit]. (You could just be lying there staring at the ceiling, wide awake. Or perhaps the cat is kneading you while you are in light sleep.) As well, half the interest is how exactly sleep phases are arranged and how long the cycles are; you could use that information to devise [a custom polyphasic schedule](http://web.archive.org/web/20130528120222/http://blog.myzeo.com/sleeping-round-the-clock-a-polyphasic-experiment/) or just figure out a better nap length than the rule-of-thumb of 20 minutes. And the price isn't *too* bad - $150 for the normal Zeo as of February 2012. (The basic mobile Zeo is much cheaper, but I've seen people complain about it and apparently it doesn't collect the same data as more expensive mobile version or the original bedside unit.)
 
-[^Fitbit]: The obvious and cheaper alternative to the Zeo would be the [Fitbit](!Wikipedia), one of the accelerometers. There aren't many comparisons; [Diana Sherman](http://www.healthyobsessions.net/2010/11/fitbit-zeo-sleep-cycle-1/) compared one night, and [Joe Betts-LaCroix](http://vimeo.com/28735982) compared ~38 nights of data. In both cases, the Fitbit seemed to be pretty similar to the Zeo at estimating total sleep time (the only thing it can measure). Betts-LaCroix explicitly recommends the Zeo, but I'm not clear on whether that is due to the better data quality or because Fitbit made it hard to impossible for him to extract the detailed Fitbit data while Zeo offers easy exporting. In any case, I already have the Zeo and I've come to like the detailed information.
+[^Fitbit]: The obvious and cheaper alternative to the Zeo would be the [Fitbit](!Wikipedia), one of the accelerometers. There aren't many comparisons; [Diana Sherman](http://www.healthyobsessions.net/2010/11/fitbit-zeo-sleep-cycle-1/) compared one night, and [Joe Betts-LaCroix](http://vimeo.com/28735982) compared ~38 nights of data. In both cases, the Fitbit seemed to be pretty similar to the Zeo at estimating total sleep time (the only thing it can measure).  Betts-LaCroix explicitly recommends the Zeo, but I'm not clear on whether that is due to the better data quality or because Fitbit made it hard to impossible for him to extract the detailed Fitbit data while Zeo offers easy exporting. Similarly, in her [2013 Amsterdam talk](http://sleepingwithtechnology.com/2013/04/09/speaking-quantified-self-conference-amsterdam-may-11-12-2013/), Christel De Maeyer presents her sleep data summaries (means) from two disjoint time periods using the Zeo and the [BodyMedia](!Wikipedia) accelerometer band which were comparable for total sleep estimates. In any case, I already have the Zeo and I've come to like the detailed information.
 
 # Tests
 
@@ -2744,6 +2744,42 @@ October
 01:
 -->
 
+## Hammock
+
+Ever since I was a little kid watching _[Gilligan's Island](!Wikipedia)_ on [Nick at Nite](!Wikipedia) & then [TV Land](!Wikipedia), I had one burning question about the antics of the cast and their island idyll/prison: what *was* it like to sleep in a [hammock](!Wikipedia), anyway‽
+Skipper and Gilligan slept in hammocks all the time, but the show stubbornly refused to go into any details about the nature of hammock sleeping.
+Was it better than beds? Worse? Hotter? Colder? Did it hurt the neck?
+
+While my beds usually are good as far as beds go, I've never been completely happy with them: as a side sleeper, it's all too easy for me to wake up with a paralyzed arm or a crick in the neck.
+(It is irritating to [sound](!Wikipedia "Cracking joints") like a sheet of bubble-wrap in the morning.)
+And anytime I have to move a bed, I can't help wondering if beds really have to be as bulky and heavy as they are.
+But it seemed to me that a hammock, enfurling & enclosing one as they do, might resolve that problem.
+What does the scientific literature say about this?
+The topic seems to be almost completely unresearched.
+For example, almost every hit for the word "hammock" on Pubmed is due to the author B.D. Hammock.
+Google Scholar does a [*little bit* better](http://scholar.google.com/scholar?q=hammock+sleep+quality&btnG=&hl=en&as_sdt=0%2C21 "'hammock sleep quality'"), as the first few pages of hits, besides turning up B.D. Hammock again, points at a short experiment ["Rocking synchronizes brain waves during a short nap"](http://www.floatingbed.com/images/uploads/rocking_CB_2011.pdf "Bayer et al 2011") which compared 12 men napping on a swaying bed, and suggests some literature on the effect of spinal angle on sleep.
+This silence is a little surprising, consider that a nontrivial fraction of humanity sleeps in hammocks or hammock-like things - you'd think navies, at the very least, would be interested in the subject of whether hammocks were better than beds - but so it goes.
+
+The questions, at irregular intervals over the years, continued to prey on my mind, occasionally prompted by mention of sailors.
+Of course I periodically would run into lawn/garden hammocks, but those wretched contraptions were no answer: the cord made for an uncomfortable rest, and the enormous spreader bars lead to severe instability (although they made for great pranks).
+Finally in 2014, it dawned on me that I had access to an unused stand for a lawn hammock; I had room to set it up in my bedroom; and from idly browsing Amazon, I knew I could get a hammock for under \$50, which seemed reasonable for an experiment. Why cunctate and repine further?
+I couldn't think of any reason why not, so after some more browsing, the cheapest hammock seemed to be the [Army Green Ultra Light Hammocks with Tree Strap](http://www.amazon.com/gp/product/B00F3NLWE2/) for \$22.50, and I ordered it in September.
+
+I was a little surprised how small and lightweight the hunter-green nylon hammock turns out to be (the whole package fits in a padded envelope mailer and weighs under a pound), and quickly set it up.
+
+The frame creaked alarmingly under my 200 pounds, but it help up.
+It feels very different from a bed, more like a slide at an amusement park in how one is laying back into a tube.
+Laying in a hammock is also much more stable than a lawn hammock, at least once you get into it successfully.
+Another issue was the gradual discomfort of having my feet elevated due to the V-shape of the hammock as it sagged under my weight.
+This seemed mostly resolved by tightening the ropes and laying at more of a diagonal.
+
+I found it easy to take a brief nap or rest in it, but it felt like it was squeezing my shoulders into my chest and my first attempt to sleep overnight failed.
+The second & third nights went better, but still not as good as the bed.
+
+The problem seems to be the arms/chest squeezing, caused by nothing 'pushing apart' the two walls of the hammock at the top.
+The Wikipedia article on hammocks mentions sailors using a "spreader bar", which sounds like a solution to my problem.
+So I need to find a piece of wood and tweak it into a suitable form, while avoiding any sharp corners which might cut the nylon material of the hammock.
+
 <!-- R conversion routine for merging old and new Zeo Data:
 # need to delete redundant entries
 zeoOld <- read.csv("gwern-zeodata-old.csv")
@@ -3701,7 +3737,9 @@ September
 30: 1 0
 October
 01: 0 0
-02: 1 1?
+02: 1 1
+03: 1 0
+04: 1 1?
 -->
 <!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1 October -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->

@@ -1,0 +1,221 @@
+---
+title: 2014 Spirulina self-experiment
+description: Spirulina user's randomized trial: null result
+tags: psychology, experiments, statistics, nootropics
+created: 5 Oct 2014
+status: finished
+belief: unlikely
+...
+
+> Spirulina has been suggested to help allergy symptoms. A randomized self-experiment is run by sceaduwe April - August 2014. Analysis suggests no effect of the spirulina.
+
+[Spirulina](!Wikipedia "Spirulina (dietary supplement)") is a photosynthetic algae which can be grown for food (dried spirulina is high in protein); it is also used by some as a supplement due to various other substances in it.
+There is [a little human research](!Wikipedia "Spirulina (dietary supplement)#Human research") ([Mao et al 2005](http://www.researchgate.net/publication/7881298_Effects_of_a_Spirulina-based_dietary_supplement_on_cytokine_production_from_allergic_rhinitis_patients/file/9fcfd509835e043160.pdf "Effects of a Spirulina-based dietary supplement on cytokine production from allergic rhinitis patients"), [Cingi et al 2008](/docs/nootropics/2008-cingi.pdf "The effects of Spirulina on allergic rhinitis")) suggesting it may help allergy problems like hay fever, but nothing conclusive.
+
+# Background
+
+sceaduwe suffers from allergies and post-nasal drip each year during pollen season, so he became interested in whether spirulina might help and reduce the need for his anti-allergy medication ([cetirizine hydrochloride](!Wikipedia)/"Zyrtec").
+
+# Experiment
+
+He proposed doing a blind self-experiment during spring/summer 2014 in which he would rate post-nasal drip each day on a scale 1-5 where 1=completely-clear and 5=can't-breath.
+The spirulina tablet would be put into pills with the placebo pills being filled with [creatine monohydrate](!Wikipedia) (safe, cheap, similar weight, possibly helpful for other things), for doses roughly around 0.8g of creatine / 0.7g of spirulina; these pills could be doubled for some blocks if he chose.
+The cited experiments used long blocks, so he'd randomize multiple weeks, and the blinding/randomization would be done with my usual trick of two identical but marked containers.
+
+As part of the baseline, he took creatine for some days before beginning the spirulina experiment proper from 2014-04-04 to 2014-08-08, with a long lapse in June/July when he became distracted by other matters
+By 8 April, it had become clear the blinding had failed ("spirulina burps"), so it was just randomized.
+And at the end, sceaduwe believed the spirulina was ineffective and turned his data over to me for analysis.
+
+# Data
+
+There were several variables to code up:
+
+1. the post-nasal drip / allergy self-rating (1-5); the outcome variable
+2. whether it was pollen season (April to May, roughly)
+3. spirulina dose
+4. whether he used anti-allergy medicine on the worst days
+5. creatine dose
+6. where he was living (sceaduwe moved apartments in August 2014, and I thought this covariate was worth inclusion as different rooms/locations may aggravate allergies differently)
+
+Due to the lapse and including the baseline, that yields 95 days of data.
+
+Descriptive:
+
+~~~{.R}
+spirulina <- read.csv("http://www.gwern.net/docs/nootropics/2014-sceaduwe-spirulina.csv",
+                      colClasses=c("Date", "logical", "integer", "integer", "logical", "logical", "integer", "factor"))
+summary(spirulina)
+##      Date            Pollen.season   Allergy.rating      Spirulina        Spirulina.random
+## Min.   :2014-02-28   Mode :logical   Min.   :2.00000   Min.   :0.000000   Mode :logical
+## 1st Qu.:2014-03-25   FALSE:79        1st Qu.:3.00000   1st Qu.:0.000000   FALSE:33
+## Median :2014-05-04   TRUE :16        Median :3.00000   Median :0.000000   TRUE :62
+## Mean   :2014-05-12   NA's :0         Mean   :2.95789   Mean   :0.505263   NA's :0
+## 3rd Qu.:2014-07-13                   3rd Qu.:3.00000   3rd Qu.:1.000000
+## Max.   :2014-08-09                   Max.   :5.00000   Max.   :2.000000
+## Allergy.medicine    Creatine        Location
+## Mode :logical    Min.   :0.000000    A:90
+## FALSE:86         1st Qu.:1.000000    B: 5
+## TRUE :9          Median :1.000000
+## NA's :0          Mean   :0.957895
+##                  3rd Qu.:1.000000
+##                  Max.   :2.000000
+library(ggplot2)
+qplot(Date, Allergy.rating, color=as.ordered(Spirulina), data=spirulina) +
+ theme_bw() +
+ xlab("Date (2014)") + ylab("Allergy self-rating") +
+ theme(legend.title=element_blank()) +
+ geom_point(size=I(5)) +
+ stat_smooth()
+~~~
+
+![Allergy self-rating over time, colored by spirulina dose (0, 1, 2 pills), and smoothed](/images/nootropics/2014-sceaduwe-spirulina.png)
+
+## Analysis
+
+At a first stab, I load up the data and regress on #2-6:
+
+~~~{.R}
+l <- lm(Allergy.rating ~ Pollen.season + Creatine + Location + Allergy.medicine + Spirulina, data=spirulina[spirulina$Spirulina.random,])
+summary(l)
+##
+## ...Coefficients:
+##                        Estimate Std. Error  t value   Pr(>|t|)
+## (Intercept)           3.7497249  0.4032818  9.29803 5.9712e-13
+## Pollen.seasonTRUE     0.0995488  0.2732337  0.36434  0.7169796
+## Creatine             -0.5534339  0.2489801 -2.22280  0.0302834
+## Location B           -1.1608519  0.3648258 -3.18193  0.0023872
+## Allergy.medicineTRUE -0.5023112  0.3210568 -1.56456  0.1233211
+## Spirulina            -0.01277196  0.1390217 -0.12746  0.8990337
+##
+## Residual standard error: 0.631029 on 56 degrees of freedom
+## Multiple R-squared:  0.250248,   Adjusted R-squared:  0.183305
+## F-statistic: 3.73827 on 5 and 56 DF,  p-value: 0.00544645
+
+library(MASS)
+pl <- polr(as.ordered(Allergy.rating) ~ Pollen.season + Creatine + Location + Allergy.medicine + Spirulina, data=spirulina[spirulina$Spirulina.random,])
+summary(pl)
+## ...Coefficients:
+##                            Value Std. Error    t value
+## Pollen.seasonTRUE      0.5572250   0.865166  0.6440669
+## Creatine              -1.8439587   0.846798 -2.1775671
+## Location B           -16.4522527 634.533164 -0.0259281
+## Allergy.medicineTRUE  -1.8680170   1.078616 -1.7318653
+## Spirulina              0.0466616   0.445739  0.1046836
+##
+## Intercepts:
+##     Value      Std. Error t value
+## 2|3  -3.910809   1.418710  -2.756594
+## 3|4  -0.672510   1.281926  -0.524609
+## 4|5   1.977223   1.601942   1.234267
+##
+## Residual Deviance: 106.639735
+## AIC: 122.639735
+~~~
+
+The immediate answer to the primary causal question is clear: no, the spirulina has no apparent effect either good or bad.
+
+The other variables are interesting, though: of course the allergy medicine has an effect (presumably that was proven by the clinical trials that got it approved), but what's creatine doing with _p_<0.03 and Location at _p_<0.002?
+
+Looking at Location closer, it only changes right before the data series ends in August, and August should be well past the pollen danger season, so it may be a confound with allergies over the seasons, which we'd expect to look something like an inverted U-curve peaking in spring/summer.
+This suggests adding a quadratic term to the regression model, something like `I(as.integer(Date)^2)`, but then a `step()` (which penalizes complexity) prefers using the Location variable to the quadratic:
+
+~~~{.R}
+l2 <- lm(Allergy.rating ~ Date + I(as.integer(Date)^2) + Pollen.season + Creatine + Allergy.medicine + Spirulina + Location,
+         data=spirulina[spirulina$Spirulina.random,])
+summary(l2)
+## ...Coefficients:
+##                           Estimate   Std. Error  t value  Pr(>|t|)
+## (Intercept)            2.65011e+04  4.87941e+04  0.54312 0.5892816
+## Date                  -3.26909e+00  6.01720e+00 -0.54329 0.5891648
+## I(as.integer(Date)^2)  1.00832e-04  1.85509e-04  0.54354 0.5889936
+## Pollen.seasonTRUE      2.12637e-01  3.34582e-01  0.63553 0.5277659
+## Creatine              -8.82748e-01  5.25005e-01 -1.68141 0.0984595
+## Allergy.medicineTRUE  -4.49432e-01  3.33177e-01 -1.34893 0.1829898
+## Spirulina             -2.31188e-01  3.59458e-01 -0.64316 0.5228438
+## Location B            -1.34235e+00  4.47436e-01 -3.00010 0.0040776
+##
+## Residual standard error: 0.639404 on 54 degrees of freedom
+## Multiple R-squared:  0.257707,   Adjusted R-squared:  0.161484
+## F-statistic: 2.67822 on 7 and 54 DF,  p-value: 0.0186685
+step(l2)
+## ...Call:
+## lm(formula = Allergy.rating ~ Creatine + Allergy.medicine + Location,
+##     data = spirulina[spirulina$Spirulina.random, ])
+##
+## Residuals:
+##       Min        1Q    Median        3Q       Max
+## -1.200000 -0.200000 -0.200000  0.323413  1.800000
+##
+## Coefficients:
+##                       Estimate Std. Error  t value   Pr(>|t|)
+## (Intercept)           3.757143   0.267633 14.03840 < 2.22e-16
+## Creatine             -0.557143   0.196389 -2.83693  0.0062644
+## Allergy.medicineTRUE -0.422222   0.232107 -1.81908  0.0740620
+## Location B           -1.200000   0.327782 -3.66096  0.0005447
+##
+## Residual standard error: 0.621037 on 58 degrees of freedom
+## Multiple R-squared:  0.247869,   Adjusted R-squared:  0.208965
+## F-statistic:  6.3714 on 3 and 58 DF,  p-value: 0.00083053
+~~~
+
+My guess here is that there's not enough data, particularly in the June/July gap, to justify the curve when location A vs location B happens to overfit the latter points so well, but I still believe this Location B estimate is being driven by seasons.
+
+What about creatine, is that seasonal too?
+sceaduwe didn't do creatine initially, but he started creatine *before* the pollen season and never stopped in the data, so it shouldn't be driven by the same end-of-allergy-season effect.
+A plot:
+
+~~~{.R}
+qplot(Date, Allergy.rating, color=as.ordered(Creatine), data=spirulina) +
+ theme_bw() +
+ xlab("Date (2014)") + ylab("Allergy self-rating") +
+ theme(legend.title=element_blank()) +
+ geom_point(size=I(5)) +
+ stat_smooth()
+~~~
+
+![Allergy self-rating over time, colored by creatine dose (0, 1, 2 pills), and smoothed](/images/nootropics/2014-sceaduwe-spirulina-creatine.png)
+
+The creatine estimate seems to be driven by the period with 2 pills.
+I don't know of any prior reason to expect creatine to have any effect on allergies or post-nasal drip, so I wonder if this turned out to be a subtler form of the seasonal effect due to the extra weighting of the double-dose in the regression?
+
+If I expand the dataset to include the baseline as well, and I look at creatine as a factor, the effect also seems to disappear:
+
+~~~{.R}
+l3 <- lm(Allergy.rating ~ Date + I(as.integer(Date)^2) + Pollen.season + as.factor(Creatine) + Allergy.medicine + Spirulina + Location,
+            data=spirulina)
+summary(l3)
+## ...Coefficients:
+##                           Estimate   Std. Error  t value  Pr(>|t|)
+## (Intercept)            9.07174e+03  1.64581e+04  0.55120 0.5829234
+## Date                  -1.12123e+00  2.03062e+00 -0.55216 0.5822707
+## I(as.integer(Date)^2)  3.46557e-05  6.26343e-05  0.55330 0.5814923
+## Pollen.seasonTRUE      1.77142e-01  2.93014e-01  0.60455 0.5470693
+## as.factor(Creatine)1   3.44745e-01  3.10455e-01  1.11045 0.2699001
+## as.factor(Creatine)2  -4.80779e-01  4.20889e-01 -1.14229 0.2565024
+## Allergy.medicineTRUE  -4.44689e-01  3.22589e-01 -1.37850 0.1716244
+## Spirulina             -1.65976e-01  1.55833e-01 -1.06509 0.2898163
+## Location B            -1.15120e+00  3.89378e-01 -2.95650 0.0040155
+summary(step(l3))
+## ...Coefficients:
+##                       Estimate Std. Error  t value   Pr(>|t|)
+## (Intercept)           2.888889   0.146343 19.74048 < 2.22e-16
+## as.factor(Creatine)1  0.294785   0.171125  1.72263  0.0883899
+## as.factor(Creatine)2 -0.246032   0.221250 -1.11201  0.2690973
+## Allergy.medicineTRUE -0.405896   0.225167 -1.80265  0.0747911
+## Location B           -0.983673   0.291490 -3.37464  0.0010922
+##
+## Residual standard error: 0.620883 on 90 degrees of freedom
+## Multiple R-squared:  0.170613,   Adjusted R-squared:  0.133752
+## F-statistic: 4.62848 on 4 and 90 DF,  p-value: 0.00191632
+~~~
+
+If creatine were helping with allergies, one would expect the effect to be at least monotonic, whatever the details of the dose-response curve; but instead we see that 1 pill of creatine correlates with *increases* in allergies and 2 pills with decrease!
+So my best guess is that this is spurious too like the Location estimate.
+
+# Conclusion
+
+Spirulina did not cause a large decrease in allergy symptoms, although this result is weakened by relatively small sample size & apparent temporal/seasonal changes.
+(These issues could be improved in future experiments by more systematic data collection and longer self-experiments.)
+Two other variables are interestingly correlated with decreases, but on closer investigation, both seem like they may be proxying for seasonal effects and unlikely to be causing decreases.
+
+I would not suggest sceaduwe supplement spirulina unless he has some other reason to use it.

@@ -1,5 +1,5 @@
 ---
-title: 2014 Spirulina self-experiment
+title: 2014 Spirulina randomized self-experiment
 description: Spirulina user's randomized trial: null result
 tags: psychology, experiments, statistics, nootropics
 created: 5 Oct 2014
@@ -7,20 +7,22 @@ status: finished
 belief: unlikely
 ...
 
-> Spirulina has been suggested to help allergy symptoms. A randomized self-experiment is run by sceaduwe April - August 2014. Analysis suggests no effect of the spirulina.
+> The supplement Spirulina has been suggested to help allergy symptoms. A randomized self-experiment is run by sceaduwe April - August 2014. Analysis suggests no effect of the spirulina.
 
 [Spirulina](!Wikipedia "Spirulina (dietary supplement)") is a photosynthetic algae which can be grown for food (dried spirulina is high in protein); it is also used by some as a supplement due to various other substances in it.
 There is [a little human research](!Wikipedia "Spirulina (dietary supplement)#Human research") ([Mao et al 2005](http://www.researchgate.net/publication/7881298_Effects_of_a_Spirulina-based_dietary_supplement_on_cytokine_production_from_allergic_rhinitis_patients/file/9fcfd509835e043160.pdf "Effects of a Spirulina-based dietary supplement on cytokine production from allergic rhinitis patients"), [Cingi et al 2008](/docs/nootropics/2008-cingi.pdf "The effects of Spirulina on allergic rhinitis")) suggesting it may help allergy problems like hay fever, but nothing conclusive.
 
 # Background
 
-sceaduwe suffers from allergies and post-nasal drip each year during pollen season, so he became interested in whether spirulina might help and reduce the need for his anti-allergy medication ([cetirizine hydrochloride](!Wikipedia)/"Zyrtec").
+sceaduwe suffers from allergies and post-nasal drip each year during pollen season, so he became interested in whether spirulina might help and reduce the need for his anti-allergy medication ([cetirizine hydrochloride](!Wikipedia)/"Zyrtec"), but he didn't want to waste money on a dodgy supplement.
+I gave him advice on designing & running a self-experiment testing spirulina, and offered to analyze the data should he ever finish the experiment.
 
 # Experiment
 
-He proposed doing a blind self-experiment during spring/summer 2014 in which he would rate post-nasal drip each day on a scale 1-5 where 1=completely-clear and 5=can't-breath.
+He proposed doing a repeated-measures _n_=1 blind randomized self-experiment during spring/summer 2014, in which he would rate post-nasal drip each day on a scale 1-5 where 1=completely-clear and 5=can't-breath.
 The spirulina tablet would be put into pills with the placebo pills being filled with [creatine monohydrate](!Wikipedia) (safe, cheap, similar weight, possibly helpful for other things), for doses roughly around 0.8g of creatine / 0.7g of spirulina; these pills could be doubled for some blocks if he chose.
-The cited experiments used long blocks, so he'd randomize multiple weeks, and the blinding/randomization would be done with my usual trick of two identical but marked containers.
+The cited experiments used long blocks, so he'd randomize multiple weeks in pairs of blocks 50:50, and the blinding/randomization would be done with my usual trick of two identical but marked containers.
+Data collection was limited by the seasonality of allergies: once the worst days pass, no more data can be collected until the next year.
 
 As part of the baseline, he took creatine for some days before beginning the spirulina experiment proper from 2014-04-04 to 2014-08-08, with a long lapse in June/July when he became distracted by other matters
 By 8 April, it had become clear the blinding had failed ("spirulina burps"), so it was just randomized.
@@ -35,7 +37,9 @@ There were several variables to code up:
 3. spirulina dose
 4. whether he used anti-allergy medicine on the worst days
 5. creatine dose
-6. where he was living (sceaduwe moved apartments in August 2014, and I thought this covariate was worth inclusion as different rooms/locations may aggravate allergies differently)
+6. where he was living
+
+    sceaduwe moved apartments in August 2014, and I thought this covariate was worth inclusion as different rooms/locations may aggravate allergies differently.
 
 Due to the lapse and including the baseline, that yields 95 days of data.
 
@@ -212,6 +216,17 @@ summary(step(l3))
 If creatine were helping with allergies, one would expect the effect to be at least monotonic, whatever the details of the dose-response curve; but instead we see that 1 pill of creatine correlates with *increases* in allergies and 2 pills with decrease!
 So my best guess is that this is spurious too like the Location estimate.
 
+## Improvements
+
+If one were trying to run such an experiment, there seem like some ways to improve on this:
+
+1. fix the blinding somehow; perhaps add some strong-tasting ingredient to the capsules?
+2. more systematic data; the gap in June/July hampers any attempt to fit a curve to allergies
+3. find some way to predict how bad allergies will be on each day: there must be local weather data on pollen count, or maybe particulate count, or failing that, perhaps some small affordable device for measuring air quality.
+
+    Is it affected by other things like humidity or temperature? That would be good to include.
+4. more directly measure allergies: perhaps quantify it somehow like number of sneezes or kleenexes used? Since allergies are related to histamines, perhaps some chemical level could be measured in saliva? Or one could go indirect: bad allergies might interfere with thinking and so a battery of cognitive tests could expose hidden changes.
+
 # Conclusion
 
 Spirulina did not cause a large decrease in allergy symptoms, although this result is weakened by relatively small sample size & apparent temporal/seasonal changes.
@@ -219,3 +234,8 @@ Spirulina did not cause a large decrease in allergy symptoms, although this resu
 Two other variables are interestingly correlated with decreases, but on closer investigation, both seem like they may be proxying for seasonal effects and unlikely to be causing decreases.
 
 I would not suggest sceaduwe supplement spirulina unless he has some other reason to use it.
+
+# See also
+
+- [2013 LLLT self-experiment]()
+- [2013 Lewis meditation results]()

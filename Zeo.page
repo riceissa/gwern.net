@@ -17,6 +17,8 @@ belief: likely
 > 6. potassium ([over the day](#potassium-day-use) but not so much [the morning](#potassium-morning-use)) damages my sleep and does not improve my mood/productivity
 > 7. small quantities of [alcohol](#alcohol) appear to make little difference to my sleep quality
 > 8. I may be better off [changing my sleep timing](#timing) by waking up somewhat earlier & going to bed somewhat earlier
+> 9. [lithium orotate](#lithium) does not affect my sleep
+> 10. [Redshift](#redshiftf.lux) causes me to go to bed earlier (at a reasonable horu)
 
 [Quantified Self](!Wikipedia) (QS) is a movement with many faces and as many variations as participants, but the core of everything is this: experiment with things that can improve your life.
 
@@ -2209,21 +2211,10 @@ Variable        Dose (mg)  Coef     _p_    Effect
 `Time.in.Deep`  800       -6.81996  0.0014 worse
 `Time.in.Deep`  all       -0.00939  0.0004 worse
 
-# In progress
+# Redshift/f.lux
 
-Someone suggested that instead of running experiments serially, with limited sample sizes (because I am impatient to try the next interesting suggestion), I could instead take a step up in statistical sophistication and use a *[factorial experiment](!Wikipedia)* design: use multiple experimental interventions simultaneously for a much larger sample size, and then run [ANOVA](!Wikipedia) analyses rather than simpler two-sample t-tests. No less than [R.A. Fisher](!Wikipedia) praises multifactorial experiments as being more efficient: squeezing more data out of a given sample. Hence, I thought a crazy thought: my lithium experiment was going to run for ~360 days, and so I kept putting it off. But what if I ran multiple experiments for 360 days? If I had 4 or 5, then by the end of the year, I would have 5 results to show, and I would have the statistical equivalent of *more* than _n_=72  ($\frac{360}{5}$) for each experiment. Win-win.
-
-Classic multifactorial designs arrange to have every possible combination of the _n_ experiments happen on some day or other (such an arrangement is called a [Latin square](!Wikipedia)). However, with 5 experiments, each of which has 2 states (on and off), that means I only have 2^5^=32 possible arrangements, all of which ought to be covered over 360 days, terminating in March 2013. (It actually will take much longer, as I paused the lithium sub-experiment for several months to run the [X self-experiment](#x).)
-
-So I will be lazy and will independently randomize each experiment. What are my 5 chosen interventions?
-
-<!-- TODO: handle the TODO in each section; ping Wozniak/Supermemo for overall results -->
-
-## Lithium
-
-Rationale & procedure in the [Nootropics page](Nootropics#lithium). Randomized in 7-day paired blocks. Blinded.
-
-## Redshift/f.lux
+> I ran a randomized experiment with a free program (Redshift) which reddens screens at night to avoid tampering with melatonin secretion and sleep from 2012-2013, measuring sleep changes with my Zeo.
+> With 533 days of data, the main result is that Redshift causes me to go to sleep 3 hours earlier but otherwise does not improve sleep quality.
 
 <!-- TODO: alert redshift & f.lux devs; ping http://www.bayesianinvestor.com/blog/index.php/2012/07/22/sleep-improvements/
 http://www.reddit.com/r/psychology/comments/x53jw/too_much_light_at_night_may_lead_to_depression/c5jarmv
@@ -2239,8 +2230,7 @@ But does it actually *work*? An experiment is called for!
 
 The suggested mechanism is through melatonin secretion. So we'd look at all the usual sleep metrics plus mood plus an additional one: what time I go to bed.. One of the reasons I became interested in melatonin was as a way of getting myself to go to bed rather than stay up until 3 AM - a chemically enforced bedtime - and it seems plausible that if Redshift is reducing the interference of the computer monitor, it will make me stay up later ("but I don't feel sleepy yet").
 
-I randomized 529 days from 11 May 2012 to 4 November 2013.
-
+## Design
 ### Power calculation
 
 The earlier melatonin experiment found somewhat weak effects with >100 days of data, and one would expect that actually consuming 1.5mg of melatonin would be a stronger intervention than simply shifting my laptop screen color. (What if I don't use my laptop that night? What if I'm surrounded by white lights?) 30 days is probably too small, judging from the other experiments; 60 is more reasonable, but 90 feels more plausible.
@@ -2325,11 +2315,11 @@ pwr.t.test(d=((456.4783-407.5312)/131.4656)/2,n=365,sig.level=0.01,type="paired"
           power = 0.8881948
 ~~~
 
-Nice! Of course, we have to expect to lose a good deal of statistical power due to interference/uncertainty from the other simultaneous experiments that will be fed into the ANOVA, but I don't know how to calculate that.
+Acceptable.
 
 ### Experiment
 
-OK, power calculations aside, how exactly to run it? I don't expect any bleed-over from day to day, so we randomize on a per-day basis. Each day must either have Redshift running or not. Redshift is run from cron every 15 minutes: `*/15  * * * * redshift -o`. (This is to deal with logouts, shutdowns, freezes, etc., that might kill Redshift as a persistent daemon.) We'll change the code to at the beginning of each day run:
+How exactly to run it? I don't expect any bleed-over from day to day, so we randomize on a per-day basis. Each day must either have Redshift running or not. Redshift is run from [cron](!Wikipedia) every 15 minutes: `*/15  * * * * redshift -o`. (This is to deal with logouts, shutdowns, freezes etc, that might kill Redshift as a persistent daemon.) We'll change the code to at the beginning of each day run:
 
 ~~~{.Bash}
 @daily redshift -x; if ((RANDOM \% 2 < 1));
@@ -2351,11 +2341,164 @@ As it turned out, I received a proof that I was *not* noticing the randomization
 
 So to recap: the experiment is 100+ days with Redshift randomized on or off by a shell script, affecting the usual sleep metrics plus time of bed. The expectation is that lack of Redshift will produce a weak negative effect: increasing awakenings & time awake & light sleep, increasing overall sleep time, and also pushing back bedtime.
 
-### VoI
+## VoI
 
 > For background on "value of information" calculations, see the [first calculation](#value-of-information-voi).
 
 Like the modafinil day trial, this is another value-less experiment justified by its intrinsic interest. I expect the results will confirm what I believe: that red-tinting my laptop screen will result in less damage to my sleep by not forcing lower melatonin levels with blue light. The only outcome that might change my decisions is if the use of Redshift actually worsens my sleep, but I regard this as highly unlikely. It is cheap to run as it is piggybacking on other experiments, and all the randomizing & data recording is being handled by 2 simple shell scripts.
+
+## Data
+
+The experiment ran from 2012-05-11 to 2013-11-04, including the unfortunate January 2013 period, with 533 days.
+I stopped it at that point, having reached the 100+ goal and since I saw no point in continuing to damage my sleep patterns to gain more data.
+
+## Analysis
+
+~~~{.R}
+redshift <- read.csv("http://www.gwern.net/docs/zeo/2012-2013-gwern-zeo-redshift.csv")
+redshift$Start.of.Night <- sapply(strsplit(as.character(redshift$Start.of.Night), " "), function(x) { x[2] })
+## convert "06:45" to 24300
+interval <- function(x) { if (!is.na(x)) { if (grepl(" s",x)) as.integer(sub(" s","",x))
+                                           else { y <- unlist(strsplit(x, ":")); as.integer(y[[1]])*60 + as.integer(y[[2]]); }
+                                         }
+                          else NA
+                        }
+redshift$Start.of.Night <- sapply(redshift$Start.of.Night, interval)
+## correct for the switch to new unencrypted firmware in March 2013;
+redshift[(redshift$Sleep.Date >= as.Date("2013-03-11")),]$Start.of.Night <- (redshift[(redshift$Sleep.Date >= as.Date("2013-03-11")),]$Start.of.Night + 900) %% (24*60)
+
+## after midnight (24*60=1440), Start.of.Night wraps around to 0, which obscures any trends,
+## so we'll map anything before 7AM to time+1440
+redshift[redshift$Start.of.Night<420 & !is.na(redshift$Start.of.Night),]$Start.of.Night <- (redshift[redshift$Start.of.Night<420 & !is.na(redshift$Start.of.Night),]$Start.of.Night + (24*60))
+
+nrow(redshift)
+## [1] 533
+
+l <- lm(cbind(Start.of.Night, Time.to.Z, Time.in.Wake, Awakenings, Time.in.REM, Time.in.Light, Time.in.Deep, Total.Z, ZQ, Morning.Feel) ~ Redshift, data=redshift)
+summary(manova(l))
+##            Df     Pillai approx F num Df den Df     Pr(>F)
+## Redshift    1 0.07826531 4.262526     10    502 1.0253e-05
+## Residuals 511
+summary(l)
+Response Start.of.Night :
+## ...Coefficients:
+##                Estimate Std. Error  t value   Pr(>|t|)
+## (Intercept)   1126.8333    26.9332 41.83800 < 2.22e-16
+## Redshift TRUE -187.3028    41.7982 -4.48112 9.1711e-06
+##
+## Response Time.to.Z :
+## ...Coefficients:
+##               Estimate Std. Error  t value Pr(>|t|)
+## (Intercept)   24.72333    0.75497 32.74743  < 2e-16
+## Redshift TRUE -1.87826    1.17165 -1.60309  0.10953
+##
+## Response Time.in.Wake :
+## ...Coefficients:
+##               Estimate Std. Error  t value Pr(>|t|)
+## (Intercept)   22.13333    1.10078 20.10704   <2e-16
+## Redshift TRUE  1.02160    1.70831  0.59801   0.5501
+##
+## Response Awakenings :
+## ...Coefficients:
+##                Estimate Std. Error  t value Pr(>|t|)
+## (Intercept)    7.133333   0.167251 42.65047  < 2e-16
+## Redshift TRUE -0.260094   0.259560 -1.00206  0.31679
+##
+## Response Time.in.REM :
+## ...Coefficients:
+##                 Estimate Std. Error  t value Pr(>|t|)
+## (Intercept)   167.713333   1.732029 96.83056  < 2e-16
+## Redshift TRUE  -0.849484   2.687968 -0.31603  0.75211
+##
+## Response Time.in.Light :
+## ...Coefficients:
+##                Estimate Std. Error   t value Pr(>|t|)
+## (Intercept)   286.20667    2.43718 117.43332  < 2e-16
+## Redshift TRUE  -2.98601    3.78231  -0.78947  0.43021
+##
+## Response Time.in.Deep :
+## ...Coefficients:
+##                Estimate Std. Error t value   Pr(>|t|)
+## (Intercept)   63.863333   0.686927 92.9696 < 2.22e-16
+## Redshift TRUE -3.436103   1.066055 -3.2232  0.0013486
+##
+## Response Total.Z :
+## ...Coefficients:
+##                Estimate Std. Error   t value Pr(>|t|)
+## (Intercept)   517.29333    4.00740 129.08467  < 2e-16
+## Redshift TRUE  -7.30272    6.21915  -1.17423  0.24085
+##
+## Response ZQ :
+## ...Coefficients:
+##                Estimate Std. Error   t value Pr(>|t|)
+## (Intercept)   93.053333   0.758674 122.65253  < 2e-16
+## Redshift TRUE -1.799812   1.177401  -1.52863  0.12697
+##
+## Response Morning.Feel :
+## ...Coefficients:
+##                Estimate Std. Error  t value Pr(>|t|)
+## (Intercept)   2.6933333  0.0485974 55.42136   <2e-16
+## Redshift TRUE 0.0719249  0.0754192  0.95367   0.3407
+var.test(Start.of.Night ~ Redshift, data=redshift)
+##
+##  F test to compare two variances
+##
+## data:  Start.of.Night by Redshift
+## F = 0.9529, num df = 302, denom df = 212, p-value = 0.6978
+## alternative hypothesis: true ratio of variances is not equal to 1
+## 95 percent confidence interval:
+##  0.740867097 1.218889502
+## sample estimates:
+## ratio of variances
+##        0.952896506
+~~~
+
+To summarize:
+
+Measurement     Effect  units      Goodness _p_
+-------------- -------- ---------- -------- ------
+Start of Night -187     minutes    better   <0.001
+Time to Z      -1.88    minutes    better    0.109
+Time Awake     +1.02    minutes    worse     0.550
+Awakenings     -0.26    count      better    0.317
+Time in REM    -0.85    minutes    worse     0.317
+Time in Light  -2.98    minutes    better    0.752
+Time in Deep   -3.43    minutes    worse     0.001
+Total Sleep    -7.3     minutes    worse     0.241
+ZQ             -1.79    ?          worse     0.127
+Morning feel   +0.07    1-5 scale  better    0.341
+
+## Conclusion
+
+Redshift does influence my sleep.
+
+One belief - that Redshift helped avoid bright light retarding the sleep cycle and enabling going to bed early - was borne out in spades: on Redshift days, I went to bed an *average* of 3 hours earlier.
+I had noticed this in my earliest Redshift usage in 2008 and noticed during the experiment that I seemed to be staying up pretty late some nights, but I'm surprised and impressed by the magnitude of the effect.
+Since I value having a sleep schedule more like that of the rest of humanity and not sleeping past noon, this justifies keeping Redshift installed.
+
+But I am also surprised at the lack of effect on the other aspects of sleep; I was sure Redshift would lead to improvements in waking and how I felt in the morning, if nothing else.
+Yet, while the exact effect tends to be better for the most important variables, the effect estimates are relatively trivial (less than a tenth increase in average morning feel? falling asleep 2 minutes faster?) and several are worse - I'm a bit baffled why deep sleep decreased, but it might be due to the lower total sleep.
+
+So it seems Redshift is excellent for shifting my bedtime forward to a reasonable hour, but I can't say it does much else.
+
+# Lithium
+
+> As part of a self-experiment involving low doses of lithium orotate, I checked for effects on Zeo sleep data during the self-experiment.
+> No variables reached statistical-significance in that experiment, including the sleep ones.
+
+Rationale & procedure in the [Nootropics page](Nootropics#lithium). Randomized in 7-day paired blocks. Blinded.
+
+No effects.
+
+# In progress
+
+Someone suggested that instead of running experiments serially, with limited sample sizes (because I am impatient to try the next interesting suggestion), I could instead take a step up in statistical sophistication and use a *[factorial experiment](!Wikipedia)* design: use multiple experimental interventions simultaneously for a much larger sample size, and then run [ANOVA](!Wikipedia) analyses rather than simpler two-sample t-tests. No less than [R.A. Fisher](!Wikipedia) praises multifactorial experiments as being more efficient: squeezing more data out of a given sample. Hence, I thought a crazy thought: my lithium experiment was going to run for ~360 days, and so I kept putting it off. But what if I ran multiple experiments for 360 days? If I had 4 or 5, then by the end of the year, I would have 5 results to show, and I would have the statistical equivalent of *more* than _n_=72  ($\frac{360}{5}$) for each experiment. Win-win.
+
+Classic multifactorial designs arrange to have every possible combination of the _n_ experiments happen on some day or other (such an arrangement is called a [Latin square](!Wikipedia)). However, with 5 experiments, each of which has 2 states (on and off), that means I only have 2^5^=32 possible arrangements, all of which ought to be covered over 360 days, terminating in March 2013. (It actually will take much longer, as I paused the lithium sub-experiment for several months to run the [X self-experiment](#x).) So I will be lazy and will independently randomize each experiment.
+
+As it wound up, I had bitten off too much in trying to run interconnected experiments: while the Redshift experiment ran without too much problem, an unexpected and abrupt move in July 2012 completely disrupted my daily routine and I was unable to maintain my habit of randomizing my meditation sessions. So I will be analyzing the experiments separately.
+
+<!-- TODO: handle the TODO in each section; ping Wozniak/Supermemo for overall results -->
 
 ## Push-ups
 
@@ -3739,14 +3882,16 @@ October
 01: 0 0
 02: 1 1
 03: 1 0
-04: 1 1?
+04: 1 1
+05: 1 0
+06: 1 1?
 -->
 <!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1 October -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: last day 4 August 2014 -->
 <!-- added aluminum foil to bedroom, 9 August 2014 -->
 <!-- began humidifier use 6 September 2014; turned off 29 September (to measure Kongin) -->
-<!-- hammock nights: 17, 18, 19, 21, 22 September 2014 -->
+<!-- hammock nights: 17, 18, 19, 21, 22 September; 5 October 2014 -->
 
 # External links
 

@@ -18,7 +18,7 @@ belief: likely
 > 7. small quantities of [alcohol](#alcohol) appear to make little difference to my sleep quality
 > 8. I may be better off [changing my sleep timing](#timing) by waking up somewhat earlier & going to bed somewhat earlier
 > 9. [lithium orotate](#lithium) does not affect my sleep
-> 10. [Redshift](#redshiftf.lux) causes me to go to bed earlier (at a reasonable horu)
+> 10. [Redshift](#redshiftf.lux) causes me to go to bed earlier
 
 [Quantified Self](!Wikipedia) (QS) is a movement with many faces and as many variations as participants, but the core of everything is this: experiment with things that can improve your life.
 
@@ -128,7 +128,6 @@ I personally want the data for a few distinct purposes, but in the best Quantifi
     - quantifying meditation (eg. length of gamma frequencies)
     - rank music by distractibility?
     - measure focus over the day and during specific activities (eg. correlate frequencies against n-backing performance)
-12. testing benefit of using [Redshift](http://jonls.dk/redshift/)/f.lux to adjust monitor color temperature
 13. Measure negative effect of nicotine on sleep & determine appropriate buffer
 14. test claims of sleep benefits from magnesium
 15. [caffeine pill](http://www.aleph.se/andart/archives/2007/11/the_early_bird_gets_the_caffeine_pill.html) [wake-up trick](http://lesswrong.com/r/discussion/lw/h2m/solved_problems_repository/8ol7)
@@ -2214,19 +2213,13 @@ Variable        Dose (mg)  Coef     _p_    Effect
 # Redshift/f.lux
 
 > I ran a randomized experiment with a free program (Redshift) which reddens screens at night to avoid tampering with melatonin secretion and sleep from 2012-2013, measuring sleep changes with my Zeo.
-> With 533 days of data, the main result is that Redshift causes me to go to sleep 3 hours earlier but otherwise does not improve sleep quality.
-
-<!-- TODO: alert redshift & f.lux devs; ping http://www.bayesianinvestor.com/blog/index.php/2012/07/22/sleep-improvements/
-http://www.reddit.com/r/psychology/comments/x53jw/too_much_light_at_night_may_lead_to_depression/c5jarmv
-http://nasu-dengaku.livejournal.com/343294.html
-ggreer
-http://arvindn.livejournal.com/136946.html -->
+> With 533 days of data, the main result is that Redshift causes me to go to sleep half an hour earlier but otherwise does not improve sleep quality.
 
 My earlier [melatonin experiment](#melatonin) found it helped me sleep. Melatonin secretion is also influenced by the color of light (some references can be found in my [melatonin article](Melatonin)), specifically blue light tends to suppress melatonin secretion while redder light does not affect it. (This makes sense: blue/white light is associated with the brightest part of the day, while reddish light is the color of sunsets.) Electronics and computer monitors frequently emit white or blue light. (The recent trend of bright blue LEDs is particularly deplorable in this regard.) Besides the plausible suggestion about melatonin, reddish light impairs night vision less and is easier to see under dim conditions: you may want a blazing white screen at noon so you can see *something*, but in a night setting, that is like staring for hours straight into a fluorescent light.
 
 Hence, you would like to both dim your monitor and also shift the color temperature towards the cooler redder end of the spectrum with a utility like [Redshift](http://jonls.dk/redshift/).
 
-But does it actually *work*? An experiment is called for!
+But does it actually *work*? And does it work in addition to my usual melatonin supplementation of 1-1.5mg? An experiment is called for!
 
 The suggested mechanism is through melatonin secretion. So we'd look at all the usual sleep metrics plus mood plus an additional one: what time I go to bed.. One of the reasons I became interested in melatonin was as a way of getting myself to go to bed rather than stay up until 3 AM - a chemically enforced bedtime - and it seems plausible that if Redshift is reducing the interference of the computer monitor, it will make me stay up later ("but I don't feel sleepy yet").
 
@@ -2365,7 +2358,7 @@ interval <- function(x) { if (!is.na(x)) { if (grepl(" s",x)) as.integer(sub(" s
                         }
 redshift$Start.of.Night <- sapply(redshift$Start.of.Night, interval)
 ## correct for the switch to new unencrypted firmware in March 2013;
-redshift[(redshift$Sleep.Date >= as.Date("2013-03-11")),]$Start.of.Night <- (redshift[(redshift$Sleep.Date >= as.Date("2013-03-11")),]$Start.of.Night + 900) %% (24*60)
+redshift[(as.Date(redshift$Date) >= as.Date("2013-03-11")),]$Start.of.Night <- (redshift[(as.Date(redshift$Date) >= as.Date("2013-03-11")),]$Start.of.Night + 900) %% (24*60)
 
 ## after midnight (24*60=1440), Start.of.Night wraps around to 0, which obscures any trends,
 ## so we'll map anything before 7AM to time+1440
@@ -2377,14 +2370,14 @@ nrow(redshift)
 l <- lm(cbind(Start.of.Night, Time.to.Z, Time.in.Wake, Awakenings, Time.in.REM, Time.in.Light, Time.in.Deep, Total.Z, ZQ, Morning.Feel) ~ Redshift, data=redshift)
 summary(manova(l))
 ##            Df     Pillai approx F num Df den Df     Pr(>F)
-## Redshift    1 0.07826531 4.262526     10    502 1.0253e-05
+Redshift    1 0.07276182 3.939272     10    502 3.4702e-05
 ## Residuals 511
 summary(l)
 Response Start.of.Night :
 ## ...Coefficients:
-##                Estimate Std. Error  t value   Pr(>|t|)
-## (Intercept)   1126.8333    26.9332 41.83800 < 2.22e-16
-## Redshift TRUE -187.3028    41.7982 -4.48112 9.1711e-06
+##                 Estimate Std. Error   t value   Pr(>|t|)
+## (Intercept)   1452.03333    2.82465 514.05791 < 2.22e-16
+## Redshift TRUE  -18.98169    4.38363  -4.33014 1.7941e-05
 ##
 ## Response Time.to.Z :
 ## ...Coefficients:
@@ -2439,47 +2432,52 @@ Response Start.of.Night :
 ##                Estimate Std. Error  t value Pr(>|t|)
 ## (Intercept)   2.6933333  0.0485974 55.42136   <2e-16
 ## Redshift TRUE 0.0719249  0.0754192  0.95367   0.3407
+
 var.test(Start.of.Night ~ Redshift, data=redshift)
-##
 ##  F test to compare two variances
 ##
 ## data:  Start.of.Night by Redshift
-## F = 0.9529, num df = 302, denom df = 212, p-value = 0.6978
+## F = 0.9548, num df = 302, denom df = 212, p-value = 0.7093
 ## alternative hypothesis: true ratio of variances is not equal to 1
 ## 95 percent confidence interval:
-##  0.740867097 1.218889502
+##  0.742321521 1.221282349
 ## sample estimates:
 ## ratio of variances
-##        0.952896506
+##        0.954767173
+
+library(ggplot2)
+qplot(Date, Start.of.Night, color=Redshift, data=redshift)
 ~~~
 
 To summarize:
 
 Measurement     Effect  units      Goodness _p_
 -------------- -------- ---------- -------- ------
-Start of Night -187     minutes    better   <0.001
+Start of Night -18.98   minutes    better   <0.001
 Time to Z      -1.88    minutes    better    0.109
 Time Awake     +1.02    minutes    worse     0.550
 Awakenings     -0.26    count      better    0.317
-Time in REM    -0.85    minutes    worse     0.317
-Time in Light  -2.98    minutes    better    0.752
+Time in REM    -0.85    minutes    worse     0.752
+Time in Light  -2.98    minutes    better    0.43
 Time in Deep   -3.43    minutes    worse     0.001
 Total Sleep    -7.3     minutes    worse     0.241
 ZQ             -1.79    ?          worse     0.127
 Morning feel   +0.07    1-5 scale  better    0.341
 
+![Plotting the start of bedtime over time, colored by use of Redshift](/images/zeo/2012-2013-redshift-bedtime.png)
+
 ## Conclusion
 
 Redshift does influence my sleep.
 
-One belief - that Redshift helped avoid bright light retarding the sleep cycle and enabling going to bed early - was borne out in spades: on Redshift days, I went to bed an *average* of 3 hours earlier.
-I had noticed this in my earliest Redshift usage in 2008 and noticed during the experiment that I seemed to be staying up pretty late some nights, but I'm surprised and impressed by the magnitude of the effect.
+One belief - that Redshift helped avoid bright light retarding the sleep cycle and enabling going to bed early - was borne: on Redshift days, I went to bed an average of 19 minutes earlier.
+(I had noticed this in my earliest Redshift usage in 2008 and noticed during the experiment that I seemed to be staying up pretty late some nights.)
 Since I value having a sleep schedule more like that of the rest of humanity and not sleeping past noon, this justifies keeping Redshift installed.
 
 But I am also surprised at the lack of effect on the other aspects of sleep; I was sure Redshift would lead to improvements in waking and how I felt in the morning, if nothing else.
 Yet, while the exact effect tends to be better for the most important variables, the effect estimates are relatively trivial (less than a tenth increase in average morning feel? falling asleep 2 minutes faster?) and several are worse - I'm a bit baffled why deep sleep decreased, but it might be due to the lower total sleep.
 
-So it seems Redshift is excellent for shifting my bedtime forward to a reasonable hour, but I can't say it does much else.
+So it seems Redshift is excellent for shifting my bedtime forward, but I can't say it does much else.
 
 # Lithium
 
@@ -3884,7 +3882,8 @@ October
 03: 1 0
 04: 1 1
 05: 1 0
-06: 1 1?
+06: 1 1
+07: 1 0?
 -->
 <!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1 October -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->

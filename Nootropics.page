@@ -42,7 +42,7 @@ What I see as being the relevant trends are a combination of these trends:
 1. the rise of IP scofflaw countries which enable the *manufacture* of known drugs: India does not respect the modafinil patents, enabling the cheap generics we all use, and Chinese piracetam manufacturers don't give a damn about the FDA's chilling-effect moves in the US. If there were no Indian or Chinese manufacturers, where would we get our modafinil? Buy them from pharmacies at \$10 a pill or worse? It might be *worthwhile*, but think of the chilling effect on *new* users.
 2. along with the previous bit of globalization is an important factor: shipping is ridiculously cheap. The most expensive S&H in my modafinil price table is ~$15 (and most are international). To put this in perspective, I remember in the '90s you could easily pay \$15 for domestic S&H when you ordered online - but it's 2013, and the dollar has lost at least half its value, so in real terms, ordering from abroad may be like a quarter of what it used to cost, which makes a big difference to people dipping their toes in and contemplating a small order to try out this 'nootropics' thing they've heard about.
 3. as scientific papers become much more accessible online due to Open Access, digitization by publishers, and cheap hosting for pirates, the available knowledge about nootropics increases drastically. This reduces the perceived risk by users, and enables them to educate themselves and make much more sophisticated estimates of risk and side-effects and benefits. (Take my modafinil page: in 1997, how could an average person get their hands on any of the papers available up to that point? Or get detailed info like the FDA's prescribing guide? Even assuming they had a computer & Internet?)
-4. the larger size of the community enables economies of scale and increases the peak sophistication possible. In a small nootropics community, there is likely to be no one knowledgeable about statistics/experimentation/biochemistry/neuroscience/whatever-you-need-for-a-particular-discussion, and the available funds increase: consider /r/Nootropics's testing program, which is doable only because it's a large lucrative community to sell to so the sellers are willing to donate funds for independent COAs to be done. If there were 1000 readers rather than 23,295, how could this ever happen short of one of those 1000 readers being *very* altruistic?
+4. the larger size of the community enables economies of scale and increases the peak sophistication possible. In a small nootropics community, there is likely to be no one knowledgeable about statistics/experimentation/biochemistry/neuroscience/whatever-you-need-for-a-particular-discussion, and the available funds increase: consider [/r/Nootropics](http://reddit.com/r/nootropics/)'s testing program, which is doable only because it's a large lucrative community to sell to so the sellers are willing to donate funds for independent lab tests/Certificates of Analysis (COAs) to be done. If there were 1000 readers rather than 23,295, how could this ever happen short of one of those 1000 readers being *very* altruistic?
 5. Nootropics users tend to 'stick'. If modafinil works well for you, you're probably going to keep using it on and off. So simply as time passes, one would expect the userbase to grow. Similarly for press coverage and forum comments and blog posts: as time passes, the total mass increases and the more likely a random person is to learn of this stuff.
 
 ## Defaults
@@ -187,7 +187,8 @@ Practically, I have 2 concerns about Bacopa:
 
 1. obtaining a heavy-metal-free product for long-term consumption (what good is it to benefit from Bacopa if you are simultaneously building up a near-permanent heavy metal burden?)
 
-    CoAs are the first line of defense but availability differs: [Ayur Sante](https://www.reddit.com/r/Nootropics/comments/1uajxx/bacopa_vendors_with_coas/cegw982), [Nutrigold](https://www.reddit.com/r/Nootropics/comments/1qitzo/bacopa_gold_brand_coa/), [Indigo Herbs](https://www.reddit.com/r/Nootropics/comments/2ea784/coa_of_bacopa_powder_purchased_at_indigo_herbs/), Banyan Botanical & Nutricargo [reportedly](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/ccflb7x) provide CoAs as does NootropicsDepot, while [Planetary Herbals](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/ccgkqrv) & [Himalaya](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/) have stonewalled requests.
+    CoAs are the first line of defense but availability differs: [Ayur Sante](https://www.reddit.com/r/Nootropics/comments/1uajxx/bacopa_vendors_with_coas/cegw982), [Nutrigold](https://www.reddit.com/r/Nootropics/comments/1qitzo/bacopa_gold_brand_coa/), [Indigo Herbs](https://www.reddit.com/r/Nootropics/comments/2ea784/coa_of_bacopa_powder_purchased_at_indigo_herbs/), Banyan Botanical & Nutricargo [reportedly](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/ccflb7x) provide CoAs as does NootropicsDepot; while [Planetary Herbals](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/ccgkqrv), [Himalaya](https://www.reddit.com/r/Nootropics/comments/1n4ac3/himalaya_brand_bacopa/), & [Mind Nutrition](https://www.reddit.com/r/Nootropics/comments/2hj10y/bacopa_from_mind_nutrition/) have stonewalled requests.
+
     Probably the best bet is to go with Bacognize: [NootropicsDepot's CoA](https://i.imgur.com/Nbl46TR.png) & an [independent lab test](http://www.reddit.com/r/Nootropics/comments/21zqvh/purityheavy_metals_testing_results/) confirms that the heavy metal levels are acceptably low in that standardized branded source. (May cost more, though.)
 2. how hard self-experimenting is.
 
@@ -208,6 +209,7 @@ Seller                         Form   Content/brand    Dose (mg) Count Price (\$
 [Swanson][]                    Cap    Bacognize        250       90    11.25      0     2000
 [Nutrigold][]                  Cap    BacoMind+generic 500       90    16.99      0     2649
 [NootropicsDepot][nd-powder]   Powder Bacognize        125000    1     24.99      7.25  3877
+[Vitacost][v-3]                Cap    Bacognize        300       240   12.49      4.99  4119^[This is calculated assuming Vitacost is still offering the 2-for-1 sale which it was on 26 September 2014.]
 [NootropicsDepot][nd-powder]   Powder Bacognize        250000    1     45.99      7.25  4695
 [NootropicsDepot][nd-powder]   Powder Bacognize        500000    1     89.99      7.25  5142
 
@@ -215,6 +217,7 @@ Seller                         Form   Content/brand    Dose (mg) Count Price (\$
 [nd-cap]: http://nootropicsdepot.com/bacopa-monnieri-45-bacoside-capsules-x-250mg/ "Bacopa Monnieri 45% Bacoside Capsules x 250mg"
 [v-1]: http://www.amazon.com/Vitacost-Bacopa-Extract-Featuring-Bacognize/dp/B008TSP0S2/ "Vitacost Bacopa Extract Featuring Bacognize -- 300 mg - 60 Capsules"
 [v-2]: http://www.amazon.com/Vitacost-Bacopa-Extract-Featuring-Bacognize/dp/B00GO6022K/ "Vitacost Bacopa Extract Featuring Bacognize -- 300 mg - 120 Capsules"
+[v-3]: http://www.vitacost.com/vitacost-bacopa-extract-featuring-bacognize-300-mg-120-capsules-3 "Vitacost Bacopa Extract Featuring Bacognize® -- 300 mg - 120 Capsules"
 [Swanson]: http://www.amazon.com/Bacopa-Monnieri-Extract-Bacognize-Caps/dp/B0017OAI8C/ "Bacopa Monnieri Extract Bacognize 250 mg 90 Caps"
 [Nutrigold]: http://www.amazon.com/Nutrigold-Bacopa-Clinically-proven-BacoMind-capsules/dp/B004S5SN66/ "Nutrigold Bacopa Gold (Clinically-proven BacoMind), 500 mg, 90 veg. capsules"
 [nd-powder]: http://nootropicsdepot.com/bacopa-monnieri-45-bacosides-extract-powder/ "Bacopa Monnieri 45% Bacosides Extract Powder"
@@ -223,7 +226,7 @@ The cheapest Bacognize, if one doesn't want to cap one's own pills (as one proba
 (The Nutrigold is substantially cheaper, but also comes with a different branded source *and* is half-generic, and if one wanted to roll the dice, there are probably much cheaper sources of Bacopa [on Amazon](http://www.amazon.com/s/?keywords=bacopa+monnieri&rh=n%3A3760901%2Ck%3Abacopa+monnieri&sort=review-rank).)
 At 90x250mg, the dose per pill is a little inconveniently low for daily usage (>=300mg would be better) but still usable, so the daily cost would be \$0.13, and it'd cover 90 days - conveniently, the same time period used in a number of studies such as Stough et al 2008.
 
-I ordered 2 bottles of the Swanson on 14 September 2014.
+I ordered 2 bottles of the Swanson on 14 September, and began taking one pill in the morning with olive oil on 26 September 2014.
 I intend to do an ABA trial, checking for correlated changes in my Mnemosyne scores, sleep (changes are often reported anecdotally), and possibly other things such as my daily self-ratings or extracted factors.
 
 # Beta-phenylethylamine (PEA)
@@ -1373,6 +1376,28 @@ So, I have started a randomized experiment; should take 2 months, given the size
 If that turns out to be successful too, I'll have to look into methods of blinding - for example, some sort of electronic doohickey which turns on randomly half the time and which records whether it's on somewhere one can't see.
 (Then for the experiment, one hooks up the LED, turns the doohickey 'on', and applies directly to forehead, checking the next morning to see whether it was really on or off).
 
+#### Sleep
+
+One reader notes that for her, the first weeks of LLLT usage seemed to be accompanied by sleeping longer than usual.
+Did I experience anything similar?
+There doesn't appear to be any particular effect on total sleep or other sleep variables:
+
+~~~{.R}
+lllt <- read.csv("http://www.gwern.net/docs/nootropics/2014-08-03-lllt-correlation.csv")
+zeo <- read.csv("http://www.gwern.net/docs/zeo/gwern-zeodata.csv")
+lllt$Date <- as.Date(lllt$Date)
+zeo$Date <- as.Date(zeo$Sleep.Date, format="%m/%d/%Y")
+
+sleepLLLT <- merge(lllt, zeo, all=TRUE)
+l <- lm(cbind(Start.of.Night, Time.to.Z, Time.in.Wake, Awakenings, Time.in.REM, Time.in.Light, Time.in.Deep, Total.Z, ZQ, Morning.Feel) ~ LLLT, data=sleepLLLT)
+summary(manova(l))
+##            Df     Pillai approx F num Df den Df  Pr(>F)
+## LLLT        1 0.04853568 1.617066     10    317 0.10051
+## Residuals 326
+library(ggplot2)
+qplot( sleepLLLT$Date, sleepLLLT$Total.Z, color=sleepLLLT$LLLT)
+~~~
+
 #### LLLT pilot factor analysis
 
 > Factor-analyzing several other personal datasets into 8 factors while omitting the previous MP variable, I find LLLT correlates with personal-productivity-related factors, but less convincingly than MP, suggesting the previous result is not quite as good as it seems.
@@ -1954,6 +1979,10 @@ first day: 29 August 2014
 1 pill every other day, 14 doses, so pairs of 28-day blocks
 
 Because 0.156g/156mg per pill seemed to accumulate to be too much in the first half of the previous experiment, I'll skip every other day to spread out the dose and get an effective dose of 78mg
+
+1. 29 August - 27 September 2014: ?
+
+   28 September - ? October: ?
 -->
 
 # Melatonin
@@ -2616,7 +2645,7 @@ I don't want to synchronize with the magnesium or lithium experiments, so I'll u
 
 To make things more interesting, I think I would like to try randomizing different dosages as well: 12mg, 24mg, and 36mg (1-3 pills); on 5 May 2014, because I wanted to finish up the experiment earlier, I decided to add 2 larger doses of 48 & 60mg (4-5 pills) as options. Then I can include the previous pilot study as 10mg doses, and regress over dose amount.
 
-During this time period, I generally refrained from using any nicotine or modafinil to avoid adding noise to results.
+During this time period, I generally refrained from using any nicotine (I wound up using it only 3x in the experimental period) or modafinil (0x) to avoid adding variation to results.
 I did use magnesium citrate & LLLT (discussed later).
 Finally, I was taking a stack like this:
 
@@ -3543,9 +3572,26 @@ September
 23: 0
 24: 0
 25: 1
+26: 0
+27: 0
+28: 0
+29: 1
+30: 0
+October:
+01: 0
+02: 0
+03: 1
+04: NA
+05: 0
+06: 0
+07: 0
+08: 0
+09: 1
+10: 0
+11: NA
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
-<!-- Multivitamin: started 24 August 2013; break 23-27 Dec -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16, 19, 25 September -->
+<!-- Kirkland multivitamin: started 24 August 2013; break 23-27 Dec; last day: 01 October 2014 -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16, 19, 25, 29 September; 01, 03, 08, 11 October -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
-<!-- Masturbation: 2009-2012; skip: 23-27 December 2013, 11 January 2014, 18-19 July 2014 -->
+<!-- Bacopa (Bacognize): start 26 September 2014 -->

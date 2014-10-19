@@ -11,6 +11,7 @@ Related:
 
 - http://nathanael.hevenet.com/the-best-time-to-post-on-hacker-news-a-comprehensive-answer/
 - http://minimaxir.com/2014/02/hacking-hacker-news/
+- http://minimaxir.com/2014/10/hn-comments-about-comments/
 - http://karpathy.ca/myblog/2013/11/27/quantifying-hacker-news-with-50-days-of-data/
 - http://metamarkets.com/2011/hacking-hacker-news-headlines/
 - http://danluu.com/randomize-hn/
@@ -32,6 +33,7 @@ Page view counts:
 - https://medium.com/p/81bd75a39425
 - https://baremetrics.io/blog/hacker-news-1500-recurring-revenue
 - 100 views, +4 https://en.avion.io/blog/?_escaped_fragment_=/post/the-story-of-our-hackernews-submission#!/post/the-story-of-our-hackernews-submission
+- 5k pageviews, 3.6k, +42 uniques http://blog.remoteworknewsletter.com/2014/10/15/how-to-valdiate-an-idea-on-hacker-news/
 
 # Submissions
 
@@ -62,6 +64,16 @@ wget 'http://hn.algolia.com/api/v1/search?tags=author_gwern,(comment)&hitsPerPag
 {"hits":[],"page":2,"nbHits":0,"nbPages":0,"hitsPerPage":999,"processingTimeMS":1,"message":"you can only fetch the 1000 hits for this query, contact us to increase the limit","query":"","params":"advancedSyntax=true\u0026analytics=false\u0026hitsPerPage=999\u0026page=2\u0026tags=author_gwern%2C%28comment%29"}
 
 algolia API is apparently heavily limited: https://github.com/fraction/node-hacker-news-api/issues/11
+
+New API using Firebase https://github.com/HackerNews/API
+
+~~~{.R}
+library(RCurl)
+library(rjson)
+user <- "gwern"
+user <- fromJSON(getURL(paste0("https://hacker-news.firebaseio.com/v0/user/",user,".json")))
+userAll <- sapply(user$submitted, function(id) { Sys.sleep(1); return(fromJSON(getURL(paste0("https://hacker-news.firebaseio.com/v0/item/",id,".json")))); } )
+~~~
 
 # /newest
 

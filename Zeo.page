@@ -2370,10 +2370,10 @@ nrow(redshift)
 l <- lm(cbind(Start.of.Night, Time.to.Z, Time.in.Wake, Awakenings, Time.in.REM, Time.in.Light, Time.in.Deep, Total.Z, ZQ, Morning.Feel) ~ Redshift, data=redshift)
 summary(manova(l))
 ##            Df     Pillai approx F num Df den Df     Pr(>F)
-Redshift    1 0.07276182 3.939272     10    502 3.4702e-05
+## Redshift    1 0.07276182 3.939272     10    502 3.4702e-05
 ## Residuals 511
 summary(l)
-Response Start.of.Night :
+## Response Start.of.Night :
 ## ...Coefficients:
 ##                 Estimate Std. Error   t value   Pr(>|t|)
 ## (Intercept)   1452.03333    2.82465 514.05791 < 2.22e-16
@@ -2921,13 +2921,30 @@ The problem seems to be the arms/chest squeezing, caused by nothing 'pushing apa
 The Wikipedia article on hammocks mentions sailors using a "spreader bar", which sounds like a solution to my problem.
 So I need to find a piece of wood and tweak it into a suitable form, while avoiding any sharp corners which might cut the nylon material of the hammock.
 
+My first approach was to take a short narrow plank about the width of my shoulders and saw V-shaped notches in each end, then bevel and sand the edges of the notches so they wouldn't fray the nylon cords.
+This was easy enough, and then one simply sticks it in between the two cords on one end.
+It turns out that the plank slips out very easily, and the pressure causes it to slide up halfway to form a diamond configuration, which doesn't accomplish the goal of spreading the hammock, since the hammock is still dangling from a point where one wants a perpendicular line.
+I could force it down the strings towards the end of the hammock, spreading out the hammock, but the instant any pressure was placed on the system (such as by getting in), the plank'd either collapse or revert to a diamond and point.
+
+So if it kept slipping, I'd *force* it to stay.
+This time, I drilled two holes through opposite ends of the plan, fed the two ends of the nylon cord through the two holes, drew the cord as tight as possible, then put a knot behind/above each hole in the plank.
+Now they couldn't slip because the knots would not pass through the drilled holes, and I had left no slack, so when weight was put, a point was not formed but more of a triangle.
+(I did wind up adding extra knots as slack slowly grew.)
+
+That worked. Now I could lie back and my chest was not being compressed.
+Combined with an intermediate looseness of hang (it turns out tighter is not always better once the squeeze problem is resolved and you're sleeping slightly diagonally), the hammock was now very pleasant for napping, and pretty good for sleeping.
+
+I gave sleeping in hammock a few more nights of trying, and ran into a new problem: the same feature that makes hammocks so good for hot climates also makes them problematic in the winter, ie you're exposed to the air.
+The chill woke me up early in the morning twice, even after I added in a fuzzy blanket to sleep on top of.
+Probably I could fix this by adding a thicker blanket underneath, but I decided to pack up the hammock (which takes very little space) and retry again in spring when my room starts getting warm again.
+
 <!-- R conversion routine for merging old and new Zeo Data:
 # need to delete redundant entries
 zeoOld <- read.csv("gwern-zeodata-old.csv")
 zeoNew <- read.csv("2014-06-28-gwern-zeodata.csv")
-foo <- merge(zeoOld, zeoNew, all=TRUE)
-summary(foo)
-write.csv(foo, "bar.csv", row.names=FALSE)
+zeo <- merge(zeoOld, zeoNew, all=TRUE)
+summary(zeo)
+write.csv(zeo, "bar.csv", row.names=FALSE)
 -->
 
 <!--
@@ -3883,14 +3900,29 @@ October
 04: 1 1
 05: 1 0
 06: 1 1
-07: 1 0?
+07: 0 1
+08: 0 0
+09: 1 1
+10: 0 1
+11: 0 1
+12: 0 1
+13: 1 0
+14: 1 1
+15: 1 1
+16: 0 0
+17: 0 0
+18: 1 1
+19: 0 1
+20: 1 0
+21: 0 1
+22: 0 0
 -->
-<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1 October -->
+<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1, 8, 9, 10, 12, 20 October -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: last day 4 August 2014 -->
 <!-- added aluminum foil to bedroom, 9 August 2014 -->
 <!-- began humidifier use 6 September 2014; turned off 29 September (to measure Kongin) -->
-<!-- hammock nights: 17, 18, 19, 21, 22 September; 5 October 2014 -->
+<!-- hammock nights: 17, 18, 19, 21, 22 September; 5, 7, 8, 11, 13, 15, 18 October 2014 -->
 
 # External links
 

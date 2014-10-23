@@ -985,13 +985,13 @@ conditionalProbability <- function (d, followupUnits) {
     for (i in 1:nrow(d)) {
 
         # extract chance of particular subject surviving as long as it has:
-        beginProb <- survest.cph(cpmodel, d[i,], times=(d[i,]$Days))$surv
+        beginProb <- survest(cpmodel, d[i,], times=(d[i,]$Days))$surv
         if (length(beginProb)==0) { beginProb <- 1 } # set to a default
 
         tmpFollowup <- followupUnits # reset in each for loop
         while (TRUE) {
             # extract chance of subject surviving as long as it has + an arbitrary additional time-units
-            endProb <- survest.cph(cpmodel, d[i,], times=(d[i,]$Days + tmpFollowup))$surv
+            endProb <- survest(cpmodel, d[i,], times=(d[i,]$Days + tmpFollowup))$surv
             # survival curve may not reach that far! 'survexp returns 'numeric(0)' if it doesn't;
             # so we shrink down 1 day and try again until 'survexp' *does* return a usable answer
             if (length(endProb)==0) { tmpFollowup <- tmpFollowup - 1} else { break }

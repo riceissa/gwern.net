@@ -97,7 +97,8 @@ Middle Earth Marketplace 2014-06-22            TRUE            `mango7u3rivtwxy7
 Topix 2                  2014-03-25            TRUE            `topixslhezyytrvm.onion` FALSE    FALSE BTC           custom     FALSE  FALSE 0     FALSE                 Started January 2014; opened to public [28 September 2014](https://www.reddit.com/r/DarkNetMarkets/comments/2hphyx/topix_2_has_opened_doors_to_all_users_possibly/), previously was invite-only; start date based on first sale listed in recent-feedback page; apparently drug-only based on the listings
 Cannabis Road 3          2014-10-06            TRUE            `cannabis37oj24rd.onion` TRUE     FALSE BTC           Alpaca     FALSE  FALSE 0     FALSE                 Forum: `forumz2gljo2vhzb.onion`. After CR2 was hacked, developer "Crypto" disappeared; the remaining staff set up a new marketplace hosted by Alpaca Marketplace.
 Diabolus                 2014-10-13            TRUE            `qxvfcavhse45ckpw.onion` FALSE    FALSE BTC/DRK       custom     FALSE  FALSE 0     FALSE                 Cannabis-only
-Nucleus Marketplace      2014-10-24            TRUE            `nucleuspf3izq7o6.onion` FALSE    FALSE BTC/DRK/LTC                           0     FALSE                 <!-- Multisig planned but not available -->
+Nucleus Marketplace      2014-10-24            TRUE            `nucleuspf3izq7o6.onion` FALSE    FALSE BTC/DRK/LTC              TRUE   TRUE  0     FALSE                 <!-- Multisig planned but not available -->
+Panacea                  2014-10-27            TRUE            `panaceaz4give75l.onion` TRUE     FALSE BTC           Cloud-9    FALSE  FALSE 0     TRUE                  [Reddit ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2kevg6/panacea_flower_sanctuary_the_light_at_the_end_of/); forums: `flower777wpnxpkj.onion`; cannabi-only; admin "PyroWolf" was reportedly doxed by the cannabis seller EastCoastCollective ([likely](https://www.reddit.com/r/DarkNetMarkets/comments/2khn4h/ecc_eastcoastcollective_runs_cannabis_road_both/) the operator of CR2/CR3, and possibly CR1 as well), who he was a former customer of.
 
 See also [DeepDotWeb's list](http://www.deepdotweb.com/2013/10/28/updated-llist-of-hidden-marketplaces-tor-i2p/ "Updated: List of Hidden Marketplaces (Tor & I2P)") ([changelog](http://www.deepdotweb.com/hidden-marketplace-list-changelog/)), and the [DNM market list](http://www.reddit.com/r/DarkNetMarkets/wiki/index/sidebar).
 
@@ -129,7 +130,7 @@ I may add to the table other variables; possibly useful ones:
 <!-- Outlaw policy: "Basically everything thst is not meant to/ or harming "innocent people". Stolen bankaccount there the "small individual" would have to pay for: no. stolen accounts of politicians: yes. Fireames for self defense: yes. Nuclear, biological or chemical weapons for mass-murder: no." -->
 <!-- Onionshop a custom implementation? $ torify curl -I http://onionshopkue7sxr.onion/ / HTTP/1.1 200 OK / Date: Wed, 21 May 2014 23:15:41 GMT / Server: Apache/2.2.22 (Ubuntu) / X-Powered-By: PHP/5.3.10-1ubuntu3.11 / Set-Cookie: PHPSESSID=im4plmtfgauil19u3uotv7v1h3; path=/ / Expires: Thu, 19 Nov 1981 08:52:00 GMT / Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0 / Pragma: no-cache / Vary: Accept-Encoding / Content-Type: text/html -->
 <!-- TorBazaar forum: down Aug 19 - Oct 16 -->
-
+o
 # Analysis
 
 TODO: <!-- ping Vespco about results -->

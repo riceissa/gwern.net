@@ -1,0 +1,162 @@
+---
+title: November news
+created: 31 Oct 2014
+tags: meta
+status: in progress
+belief: log
+...
+
+This is the November edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155); previously, [October](http://www.gwern.net/newsletter/2014/10).
+
+This is a summary of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & including material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/). Thanks to my donors on [Gratipay](https://gratipay.com/gwern/).
+
+# Writings
+
+# Media
+## Links
+
+Everything is heritable:
+
+- ["Cloning Cows From Steaks (and Other Ways of Building Better Cattle)"](http://news.nationalgeographic.com/news/2014/10/141015-better-beef-genetics-science-agriculture-environment-ngfood/)
+- ["Genome-wide meta-analysis identifies six novel loci associated with habitual coffee consumption"](http://handls.nih.gov/pubs/2014-CoffeeCaffeineGeneticsConsortium-MolPsych-epub.pdf), The Coffee and Caffeine Genetics Consortium et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/bzGJ1tN6KbK))
+
+Politics/religion:
+
+- ["Transcript of secret meeting between Julian Assange and Google CEO Eric Schmidt"](http://wikileaks.org/Transcript-Meeting-Assange-Schmidt)
+- ["The Micro-sociology of Violent Confrontations"](http://press.princeton.edu/chapters/s8547.html)
+- ["Aum Shinrikyo and a Panic About Manga and Anime"](http://www.gwern.net/docs/2008-gardner.pdf), Gardner 2008 ([excerpts](https://plus.google.com/103530621949492999968/posts/BhoJHxGfpvL))
+- ["A Few Bad Men: Why America doesn't really have a terrorism problem"](http://www.foreignpolicy.com/articles/2013/04/16/a_few_bad_men?page=0,1)
+- ["Bottom of the Barrel: Today's terrorists aren't "sophisticated." They're stupider than ever."](http://www.foreignpolicy.com/articles/2013/04/24/why_todays_terrorists_are_dumb?page=0,1)
+- ["Hitler's Declaration of War Against the US"](http://www.isegoria.net/2013/05/hitlers-declaration-of-war-against-the-us/)
+- [_Sacculina_ parasite](https://en.wikipedia.org/wiki/Sacculina)
+- ["Truncated transcript from today's SCOTUS argument"](http://courtneymilan.tumblr.com/post/46374496823/truncated-transcript-from-todays-scotus-argument) (parody)
+- ["Question 94. The relations of the saints towards the damned: Whether the blessed in heaven will see the sufferings of the damned?"](http://www.newadvent.org/summa/5094.htm)
+
+Statistics/AI/meta-science:
+
+- ["What's to know about the credibility of empirical economics?"](http://www.gwern.net/docs/dnb/2013-ioannidis.pdf), Ioannidis & Doucouliagos 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/BtMY6GcASuQ))
+- ["The Ironic Effect of Significant Results on the Credibility of Multiple-Study Articles"](http://www.ubc-emotionlab.ca/wp-content/uploads/2012/09/Schimmack-2012-Effect-of-Significance-on-Article-Credibility.pdf), Schimmack 2012 ([excerpts](https://plus.google.com/103530621949492999968/posts/UwP5Gc8L3ox))
+- ["Bayesian data analysis"](http://www.indiana.edu/~kruschke/articles/Kruschke2010WIRES.pdf), Kruschke 2010 ([excerpts](https://plus.google.com/103530621949492999968/posts/Uh3QS92zWAE))
+- ["The harm done by tests of significance"](http://andrewgelman.com/wp-content/uploads/2013/03/1154-Hauer-The-harm-done-by-tests-of-significance.pdf), Hauer 2004 (how _p_-values increase traffic fatalities)
+- ["The Mind of a Con Man": Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all)
+- [Stein's paradox](https://normaldeviate.wordpress.com/2013/05/18/steins-paradox/)
+- ["Tiny Data, Approximate Bayesian Computation and the Unpaired Socks of Karl Broman"](http://www.sumsar.net/blog/2014/10/tiny-data-and-the-socks-of-karl-broman/) (demonstration of [ABC](https://en.wikipedia.org/wiki/Approximate_Bayesian_computation))
+- ["A Vast Graveyard of Undead Theories: Publication Bias and Psychological Science's Aversion to the Null"](http://andrewgelman.com/2013/04/26/a-vast-graveyard-of-undead-theories-publication-bias-and-psychological-sciences-aversion-to-the-null-2/)
+- ["Unreliable neuroscience? Why power matters: Small studies with low power undermine the reliability of science and new evidence suggests that low power is the norm in neuroscience"](http://www.theguardian.com/science/sifting-the-evidence/2013/apr/10/unreliable-neuroscience-power-matters)
+- ["On the distribution of time-to-proof of mathematical conjectures"](http://arxiv.org/abs/1202.3936), Hisano & Sornette 2012
+- ["Bayes' rule in Haskell, or why drug tests don't work"](http://www.randomhacks.net/2007/02/22/bayes-rule-and-drug-tests/)
+- ["Kalkalash! Pinpointing the Moments _The Simpsons_ became less Cromulent"](http://diffuseprior.wordpress.com/2013/04/30/kalkalash-pinpointing-the-moments-the-simpsons-became-less-cromulent/)
+
+Psychology/biology:
+
+- ["Is Psychometric g a Myth?"](http://humanvarieties.org/2013/04/03/is-psychometric-g-a-myth/)
+- ["Suppressing Intelligence Research: Hurting Those We Intend to Help"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.138.3468&rep=rep1&type=pdf), Gottfredson 2005 ([excerpts](https://plus.google.com/103530621949492999968/posts/LDqzZbVeUMw))
+- ["Who Rises to the Top? Early Indicators"](http://www.gwern.net/docs/iq/2013-kell.pdf), Kell et al 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/Mkt6CC8EGdx); does IQ cease to matter past 130? No.)
+- ["Annals of psychometry: IQs of eminent scientists"](http://infoproc.blogspot.com/2008/07/annals-of-psychometry-iqs-of-eminent.html)
+- ["Studies Highlight [Futility] of Early Education"](https://www.nytimes.com/2013/04/03/business/studies-highlight-benefits-of-early-education.html?src=rechp&_r=1&)
+- ["Travels in the New Psychedelic Bazaar: The synthetic drugs being invented, refined, and produced today-and often shipped in from China-would have blown Timothy Leary's mind. Who knows what they're doing to the brains of users."](http://nymag.com/news/features/synthetic-drugs-2013-4/#print)
+- ["Thank you for doing something ambiguously between smoking and not smoking"](http://slatestarcodex.com/2013/03/28/thank-you-for-doing-something-ambiguously-between-smoking-and-not-smoking/)
+- ["What Do You Desire?"](https://nplusonemag.com/issue-16/essays/what-do-you-desire/) (on the porn company Kink.com)
+- ["Suicide: An Economic Approach"](http://storage.globalcitizen.net/data/topic/knowledge/uploads/2009051911410705.pdf), Becker & Posner 2004 ([excerpts](https://plus.google.com/103530621949492999968/posts/ZNphZPToZG5))
+- ["The Graying of Academia: Will It Reduce Scientific Productivity?"](http://www.crema-research.ch/papers/2014-06.pdf), Stroebe 2010 ([excerpts](https://plus.google.com/103530621949492999968/posts/ctxbWkhvGES))
+- ["The drugs do work: my life on brain enhancers"](http://www.theguardian.com/lifeandstyle/2013/may/03/brain-enhancing-drugs-mj-hyland)
+- ["Spaced Repetition and Mnemonics Enable Recall of Multiple Strong Passwords"](http://arxiv.org/abs/1410.1490), Blocki et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/hYKUtsf7p2g))
+-  ["Subu Must Die: How a nation of junkies went cold turkey"](http://www.newrepublic.com/article/113051/georgias-war-drugs-how-its-subutex-addiction-ended)
+- [Golden Gate Bridge suicides](http://www.newyorker.com/magazine/2003/10/13/jumpers?currentPage=all "Jumpers: The fatal grandeur of the Golden Gate Bridge")
+- ["Refugees of the Modern World: The "electrosensitive" are moving to a cellphone-free town. But is their disease real?"](http://www.slate.com/articles/technology/future_tense/2013/04/green_bank_w_v_where_the_electrosensitive_can_escape_the_modern_world.single.html)
+- ["Secrets of the Magus: Ricky Jay does closeup magic that flouts reality"](http://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus)
+- ["How fast does the Grim Reaper walk? Receiver operating characteristics curve analysis in healthy men aged 70 and over"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3240682/)
+
+Technology:
+
+- [Anatomy of a hack: How crackers ransack passwords like "qeadzcwrsfxv1331"; For Ars, three crackers have at 16,000+ hashed passcodes-with 90% success.](http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/)
+- ["Crypto Rebels: It's the FBIs, NSAs, and Equifaxes of the world versus a swelling movement of Cypherpunks, civil libertarians, and millionaire hackers. At stake: Whether privacy will exist in the 21st century"](http://archive.wired.com/wired/archive/1.02/crypto.rebels_pr.html)
+- [N-body choreographies](http://www.scholarpedia.org/article/N-body_choreographies)
+http://www.wired.co.uk/news/archive/2013-04/16/f-1-moon-rocket/viewall
+http://arstechnica.com/gadgets/2013/04/a-history-of-the-amiga-part-9-the-demo-scene/
+- [Reimplementing "git clone" in Haskell from the bottom up](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/)
+- [Spreadsheet mistakes](http://www.eusprig.org/horror-stories.htm)
+- ["The Hundred-Year Language"](http://paulgraham.com/hundred.html)
+- [M50 Ontos](https://en.wikipedia.org/wiki/M50_Ontos)
+- [Photoacoustic spectroscopy](https://en.wikipedia.org/wiki/Photoacoustic_spectroscopy)
+- ["Turing Drawings": flowing sand](http://www.wry.me/hacking/Turing-Drawings/#3,6,2,2,3,2,4,0,0,1,0,2,1,2,1,1,0,1,2,3,2,3,0,2,1,0,2,5,3,2,5,2,2,4,1,1,5,0,2,4,3,0,4,0,0,1,1,2,1,3,2,1,0,2,2,0)
+- [The NSA copes with a volcano](http://www.nsa.gov/public_info/_files/cryptologs/cryptolog_126.pdf)
+https://en.wikipedia.org/wiki/Project_Iceworm
+- ["The Well Deserved Fortune of Satoshi Nakamoto, Bitcoin creator, Visionary and Genius"](https://bitslog.wordpress.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/)
+
+Economics:
+
+- ["Of Frightened Horses and Autonomous Vehicles: Tort Law and its Assimilation of Innovations"](http://digitalcommons.law.scu.edu/cgi/viewcontent.cgi?article=1170&context=facpubs), Graham 2012 ([excerpts](https://plus.google.com/103530621949492999968/posts/PXL23xTozdH))
+- ["The death of peak oil"](http://econbrowser.com/archives/2013/04/the_death_of_pe)
+- [Survivorship bias in equity returns](https://web.archive.org/web/20130228134513/http://www.investmenteurope.net/digital_assets/6305/2013_yearbook_final_web.pdf "Credit Suisse Global Investment Returns Yearbook 2013")
+- disability, immigration, globalization, and technological unemployment:
+
+    - ["Unfit for Work: The startling rise of disability in America"](http://apps.npr.org/unfit-for-work/)
+    - Murray's [_Coming Apart_](http://www.amazon.com/Coming-Apart-State-America-1960-2010/dp/030745343X?tag=gwernnet-20)
+    - [Autor on disability](http://www.econtalk.org/archives/2012/04/autor_on_disabi.html)
+    - ["Untangling Trade and Technology: Evidence from Local Labor Markets"](http://marginalrevolution.com/marginalrevolution/2013/04/trade-vs-technology-in-terms-of-their-labor-market-effects.html)
+    - ["The Effect of Intelligence on Job Performance is Intuitive"](http://econlog.econlib.org/archives/2013/04/the_effect_of_i.html)
+    - ["Immigration and the American Worker: A Review of the Academic Literature"](http://cis.org/immigration-and-the-american-worker-review-academic-literature), Borjas 2013
+- [College major salary premiums](http://econlog.econlib.org/archives/2013/04/major_premium.html)
+- ["What Are Foundations For?"](http://www.bostonreview.net/BR38.2/ndf_rob_reich_foundations_philanthropy_democracy.php) (principal-agent conflicts; against perpetuities)
+- ["Should Psychological Neuroscience Research Be Funded?"](http://popsych.org/should-psychological-neuroscience-research-be-funded/) ([discussion](http://lesswrong.com/r/discussion/lw/h8r/link_should_psychological_neuroscience_research/))
+- [Kids for cash scandal](https://en.wikipedia.org/wiki/Kids_for_cash_scandal)
+- ["Smart companies try to commoditize their products' complements."](http://www.joelonsoftware.com/articles/StrategyLetterV.html)
+- ["The Coase Theorem is false: contracts depend on tort law"](http://unenumerated.blogspot.com/2008/05/coase-theorem-is-false-contracts-depend.html)
+- ["One Kind of Lawlessness: Estimating the Welfare Cost of Somali Piracy"](http://www.trfetzer.com/welfare-cost-somalian-piracy/)
+
+Philosophy:
+
+- ["Privileging the Question"](http://lesswrong.com/r/lesswrong/lw/hba/privileging_the_question/)
+- ["Be Specific"](http://lesswrong.com/lw/bc3/sotw_be_specific/) (if you make an abstract claim, can you give at least 3 specific examples? if not, maybe you need to think about it more)
+- ["Taking Charity Seriously: Toby Ord talk on charity effectiveness"](http://lesswrong.com/r/discussion/lw/h6c/taking_charity_seriously_toby_ord_talk_on_charity/)
+- ["Transhumanist Fables"](http://slatestarcodex.com/2013/05/27/transhumanist-fables/)
+- ["Study: Wolf Attacks Still Leading Cause Of Death In U.S."](http://www.theonion.com/articles/study-wolf-attacks-still-leading-cause-of-death-in,32170/)
+- ["Even More Aphorisms and Ten-Second Essays from Vectors 3.0"](https://web.archive.org/web/20110629061349/http://www.theliteraryreview.org/WordPress/tlr-poetry/), James Richardson﻿
+
+Misc:
+
+- [Taikyoku shogi](https://en.wikipedia.org/wiki/Taikyoku_shogi)
+http://www.poemhunter.com/poem/try-to-praise-the-mutilated-world/
+"When Dickens met Dostoevsky" http://www.the-tls.co.uk/tls/public/article1243205.ece
+- [Hollywood Archaeology: _The Super Mario Bros. Movie_; Unearthing a major disaster to learn the lessons held within](http://grantland.com/features/the-strange-case-super-mario-bros-movie/)
+- Odd subreddits: ["dragonsfuckingcars" (NSFW/R18)](https://pay.reddit.com/r/dragonsfuckingcars)
+- ["On Pins and Needles: Stylist Turns Ancient Hairdo Debate on Its Head"](http://online.wsj.com/news/articles/SB10001424127887324900204578286272195339456)
+
+<!-- Back to 21 March 2013 -->
+
+## Books
+
+Nonfiction:
+
+Fiction:
+
+## Film/TV
+
+Anime:
+
+## Music
+
+Touhou:
+
+- ["チルノ ／おてんば恋娘"](https://www.youtube.com/watch?v=zpYOzgIwbXY) (Yoshiki Ara; _Charisma Lash Type-M_ {C86}) [orchestral]
+- ["ソリテス・パラドックス"](https://www.youtube.com/watch?v=R8GdWiPh6Xw) (Ryuuha Mikaido; _ティマイオス ～風の詩～_ {C86}) [orchestral]
+- ["オッカムの剃刀"](https://www.youtube.com/watch?v=_tfx0cOc5no) (Ryuuha Mikaido; _ティマイオス ～風の詩～_ {C86}) [orchestral]
+- ["千年幻想郷 ~ History of the Moon"](https://www.youtube.com/watch?v=9kSv46mOApg) (Liverne (ゆう), Yu- (Phoenix Project), Tokunan; _Touhou Gensou Shiten 2 "Canon"_ {C71}) [metal]
+- ["佐々木喜善はかく語りき ～ 願わくはこれを語りて平地人を戦慄せしめよ"](https://dl.dropboxusercontent.com/u/5317066/music/%E3%82%B8%E3%83%A3%E3%83%A0-daydreamtunes-%E4%BD%90%E3%80%85%E6%9C%A8%E5%96%9C%E5%96%84%E3%81%AF%E3%81%8B%E3%81%8F%E8%AA%9E%E3%82%8A%E3%81%8D%E9%A1%98%E3%82%8F%E3%81%8F%E3%81%AF%E3%81%93%E3%82%8C%E3%82%92%E8%AA%9E%E3%82%8A%E3%81%A6%E5%B9%B3%E5%9C%B0%E4%BA%BA%E3%82%92%E6%88%A6%E6%85%84%E3%81%9B%E3%81%97%E3%82%81%E3%82%88.ogg) (ジャム; _DAYDREAM TUNES_ {C86}) [classical]
+- ["天空の花の都"](https://www.dropbox.com/s/7lic0w53ct0dszt/%E5%9F%BC%E7%8E%89%E6%9C%80%E7%B5%82%E5%85%B5%E5%99%A8-cradlereboot-%E6%9D%B1%E6%96%B9%E5%B9%BB%E6%A8%82%E7%A5%80%E5%85%B8%E5%A4%A9%E7%A9%BA%E3%81%AE%E8%8A%B1%E3%81%AE%E9%83%BD.ogg) (埼玉最終兵器; _Cradle Re:BOOT -東方幻樂祀典-_ {C86}) [metal]
+- ["An Enlarging Story"](https://www.youtube.com/watch?v=SKsAtiFwyAk) (RD-Sounds; _Slaughter_ {C86}) [orchestral]
+- ["Way to go Shinmyoumaru ~Battle with Titans~"](https://www.youtube.com/watch?v=5cUFfBpLCUw) (RD-Sounds; _Slaughter_ {C86}) [orchestral]
+- ["Could She Know The Summer?"](https://dl.dropboxusercontent.com/u/5317066/music/setsugen-daydreamtunes-couldsheknowthesummer.ogg) (setsugen; _DAYDREAM TUNES_ {C86}) [classical]
+
+Doujin:
+
+- ["パラミシアの狼"](https://www.dropbox.com/s/x2cmb3fnw2w19zv/okei-sonora-%E3%83%91%E3%83%A9%E3%83%9F%E3%82%B7%E3%82%A2%E3%81%AE%E7%8B%BC.ogg) (O-kei feat. ヤマイ; _SONORA_ {2014}) [Jpop]
+- ["Summer Dayz"](https://www.dropbox.com/s/ruqrzypuvf1oblw/%E6%9D%91%E7%80%AC%E6%82%A0%E5%A4%AA-adhouse3-summerdayz.ogg?dl=0) (村瀬悠太; _AD:HOUSE 3_ {C86}) [instrumental]
+
+Kantai Collection:
+
+Vocaloid:
+
+- ["It was ten days ago."](https://www.youtube.com/watch?v=sbn1AcvXKQQ) (Miku; Toku-P; _The Universe_ {2009}) [vocal]
+- ["魁!パンツメン☆ミ"](http://www.nicovideo.jp/watch/sm22678844) (Miku; KASANE; _sync-loid:05_ {2014}) [Jpop]

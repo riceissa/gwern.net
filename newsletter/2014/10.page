@@ -2,58 +2,96 @@
 title: October news
 created: 29 Sept 2014
 tags: meta
-status: in progress
+status: finished
 belief: log
 ...
 
-This is the October edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155); previously was [September](http://www.gwern.net/newsletter/2014/09).
+This is the October edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155); previously, [September](http://www.gwern.net/newsletter/2014/09).
 
 This is a summary of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & including material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/). Thanks to my donors on [Gratipay](https://gratipay.com/gwern/).
 
 # Writings
 
+QS:
+
+- [Redshift self-experiment](http://www.gwern.net/Zeo#redshiftf.lux): screen-reddening software shifts bedtime forward by 20 minutes
+- [LLLT re-analysis](http://www.gwern.net/Nootropics#sleep): no change in sleep as hypothesized by another LLLT user
+- [analysis](http://www.gwern.net/2014%20spirulina) of sceaduwe's spirulina/allergies self-experiment (no reduction in allergies)
+
+Personal:
+
+- childhood story on [inventing laser bombs](http://www.gwern.net/Notes#laser-bombs)
+
 # Media
 ## Links
 
 Everything is heritable:
-["Common DNA Markers Can Account for More Than Half of the Genetic Influence on Cognitive Abilities"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3652710/), Plomin et al 2013
+
+- ["Common DNA Markers Can Account for More Than Half of the Genetic Influence on Cognitive Abilities"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3652710/), Plomin et al 2013
+- ["The high heritability of educational achievement reflects many genetically influenced traits, not just intelligence"](http://www.pnas.org/content/early/2014/10/02/1408777111.full.pdf), Krapohl et al 2014
+- ["Growth, efficiency, and yield of commercial broilers from 1957, 1978, and 2005"](https://pdf.yt/d/bEVFEdtFm8DFf9r6), Zuidhof et al 2014 ([media](http://www.vox.com/xpress/2014/10/2/6875031/chickens-breeding-farming-boilers-giant "Chickens have gotten ridiculously large since the 1950s"); [excerpts](https://plus.google.com/103530621949492999968/posts/7j4fZFKDS6P))
+- ["Estimating the Inbreeding Depression on Cognitive Behavior: A Population Based Study of Child Cohort"](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0109585)
+- ["Korea's Sooam Biotech Is the World's First Animal Cloning Factory"](http://www.businessweek.com/articles/2014-10-22/koreas-sooam-biotech-is-the-worlds-first-animal-cloning-factory)
+
 Politics/religion:
-["Kim Philby and the Age of Paranoia"](http://www.nytimes.com/1994/07/10/magazine/kim-philby-and-the-age-of-paranoia.html?pagewanted=all)
-["In Front of Your Nose"](http://orwell.ru/library/articles/nose/english/e_nose)
-[Newton and alchemy](http://www-history.mcs.st-and.ac.uk/Extras/Keynes_Newton.html)
-["An Examination of Stereotype Threat Effects on Girls' Mathematics Performance"](https://dl.dropboxusercontent.com/u/85192141/2013-ganley.pdf), Ganley et al 2013
-["Aum Shinrikyo and a Panic About Manga and Anime"](http://www.gwern.net/docs/2008-gardner.pdf), Gardner 2008 ([excerpts](https://plus.google.com/103530621949492999968/posts/BhoJHxGfpvL))
-["Hitler’s Declaration of War Against the US"](http://www.isegoria.net/2013/05/hitlers-declaration-of-war-against-the-us/)
+
+- ["Kim Philby and the Age of Paranoia"](http://www.nytimes.com/1994/07/10/magazine/kim-philby-and-the-age-of-paranoia.html?pagewanted=all)
+- ["The Hollow Men II: Some reflections on Westminster and Whitehall dysfunction"](http://dominiccummings.wordpress.com/2014/10/30/the-hollow-men-ii-some-reflections-on-westminster-and-whitehall-dysfunction/), Dominic Cummings
+- ["In Front of Your Nose"](http://orwell.ru/library/articles/nose/english/e_nose)
+- ["Nothing in Moderation"](http://www.nytimes.com/2014/10/29/opinion/nothing-in-moderation.html) (Worth remembering in discussions of the Middle East that even in the USA, the *masses* are deeply illiberal, pro-statist, against rights, and extremist.﻿)
+- [Newton and alchemy](http://www-history.mcs.st-and.ac.uk/Extras/Keynes_Newton.html)
+- ["I Can Tolerate Anything Except The Outgroup"](http://slatestarcodex.com/2014/09/30/i-can-tolerate-anything-except-the-outgroup/)
+- ["An Examination of Stereotype Threat Effects on Girls' Mathematics Performance"](http://andrewgelman.com/wp-content/uploads/2013/04/ganley-et-al.-stereotype-threat.pdf), Ganley et al 2013
 
 Statistics/AI/meta-science:
-["How Many Scientists Fabricate and Falsify Research? A Systematic Review and Meta-Analysis of Survey Data"](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0005738)
-[Classification through compression: PAQClass](https://code.google.com/p/paqclass/)
-["Khan Academy: machine learning → measurable learning"](http://derandomized.com/post/51729670543/khan-academy-machine-learning-measurable-learning)
-[Survivorship bias](http://youarenotsosmart.com/2013/05/23/survivorship-bias/)
-[Stein's paradox](https://normaldeviate.wordpress.com/2013/05/18/steins-paradox/)
-["Intelligence Explosion Microeconomics"](http://lesswrong.com/lw/hbd/new_report_intelligence_explosion_microeconomics/)
-[Writing math papers](https://gowers.wordpress.com/2013/04/14/answers-results-of-polls-and-a-brief-description-of-the-program/)
-["Against optimism about social science"](http://andrewgelman.com/2013/05/06/against-optimism-about-social-science/)
-["Kalkalash! Pinpointing the Moments _The Simpsons_ became less Cromulent"](http://diffuseprior.wordpress.com/2013/04/30/kalkalash-pinpointing-the-moments-the-simpsons-became-less-cromulent/)
-["Bayes' rule in Haskell, or why drug tests don't work"](http://www.randomhacks.net/2007/02/22/bayes-rule-and-drug-tests/)
-Psychology:
-["Deliberate practice: Is that all it takes to become an expert?"](http://www.msu.edu/~ema/HambrickEtAl13.pdf), Hambrick et al 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/fSaqJKQe4HE))
-[Fertility and intelligence](https://en.wikipedia.org/wiki/Fertility_and_intelligence)
-["What Do You Desire?"](https://nplusonemag.com/issue-16/essays/what-do-you-desire/) (on the porn company Kink.com)
-["Do We Believe Everything We're Told?"](http://lesswrong.com/lw/k4/do_we_believe_everything_were_told/#thingrow_t3_k4)
-["Suicide: An Economic Approach"](http://storage.globalcitizen.net/data/topic/knowledge/uploads/2009051911410705.pdf), Becker & Posner 2004 ([excerpts](https://plus.google.com/103530621949492999968/posts/ZNphZPToZG5))
-["The drugs do work: my life on brain enhancers"](http://www.theguardian.com/lifeandstyle/2013/may/03/brain-enhancing-drugs-mj-hyland)
+
+- ["How Many Scientists Fabricate and Falsify Research? A Systematic Review and Meta-Analysis of Survey Data"](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0005738)
+- ["In half of the [placebo-controlled] studies, the results provide evidence against continued use of the investigated surgical procedures."](http://www.bmj.com/content/348/bmj.g3253 "'Use of placebo controls in the evaluation of surgery: systematic review', Wartolowska et al 2014") ([media](http://www.nytimes.com/2014/10/07/upshot/the-placebo-effect-doesnt-apply-just-to-pills.html))
+- ["How to Make More Published Research True"](http://www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.1001747), Ioannidis 2014
+- ["Khan Academy: machine learning → measurable learning"](http://derandomized.com/post/51729670543/khan-academy-machine-learning-measurable-learning)
+- ["Intelligence Explosion Microeconomics"](http://lesswrong.com/lw/hbd/new_report_intelligence_explosion_microeconomics/)
+- [Survivorship bias](http://youarenotsosmart.com/2013/05/23/survivorship-bias/)
+- [Writing math papers](https://gowers.wordpress.com/2013/04/14/answers-results-of-polls-and-a-brief-description-of-the-program/)
+- ["Against optimism about social science"](http://andrewgelman.com/2013/05/06/against-optimism-about-social-science/)
+- [Classification through compression: PAQClass](https://code.google.com/p/paqclass/)
+- ["How often does it happen that the oldest person alive dies?"](https://math.stackexchange.com/questions/349155/how-often-does-it-happen-that-the-oldest-person-alive-dies/388131)
+- ["Is long-term calorie restriction in humans worth it?"](https://evolvinghealth.wordpress.com/2013/04/21/is-long-term-calorie-restriction-in-humans-worth-it/)
+- ["learnfun & playfun: A general technique for automating NES games"](https://www.cs.cmu.edu/~tom7/mario/) ([paper](https://www.cs.cmu.edu/~tom7/mario/mario.pdf))
+
+How often does correlation=causality?
+
+- ["Randomized versus historical controls for clinical trials"](https://www.dropbox.com/s/cjq0aqkxnrv1ba6/1982-sacks.pdf), Sacks et al 1982 ([excerpts](https://plus.google.com/103530621949492999968/posts/U14TpU2nKju))
+- ["The Adequacy of Comparison Group Designs for Evaluations of Employment-Related Programs"](https://pdf.yt/d/AmuYucmgh2MghBok), Fraker & Maynard 1987 ([excerpts](https://plus.google.com/103530621949492999968/posts/865Xm8yZbqv))
+- ["Choosing between randomised and non-randomised studies: a systematic review"](http://www.journalslibrary.nihr.ac.uk/__data/assets/pdf_file/0009/64827/FullReport-hta2130.pdf), Britton et al 1998 ([excerpts](https://plus.google.com/103530621949492999968/posts/6Y3oecUZPv9))
+- ["A systematic review of comparisons of effect sizes derived from randomised and non-randomised studies"](http://www.journalslibrary.nihr.ac.uk/__data/assets/pdf_file/0010/64828/FullReport-hta4340.pdf), MacLehose et al 2000 ([excerpts](https://plus.google.com/103530621949492999968/posts/ALaZGzXuDSX))
+- ["Randomisation to protect against selection bias in healthcare trials (Cochrane Methodology Review)"](http://www.thecochranelibrary.com/userfiles/ccoch/file/INternational%20Clinical%20Trials%20Day/MR000012.pdf), Kunz et al 2002 ([excerpts](https://plus.google.com/103530621949492999968/posts/hL3eRep58zs))
+- ["A weight of evidence approach to causal inference"](http://www.uc.pt/en/fmuc/phdhs/Courses/Epidemiology/A_weight_of_evidence_approach_to_causal_inference.pdf), Swaen & van Amelsvoort 2009 (circular reasoning & how *not* to do causal inference; [excerpts/discussion](https://plus.google.com/103530621949492999968/posts/UzMMmPgyyaV))
+
+Psychology/biology:
+
+- ["Deliberate practice: Is that all it takes to become an expert?"](http://www.msu.edu/~ema/HambrickEtAl13.pdf), Hambrick et al 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/fSaqJKQe4HE))
+- ["Decision Making Following a Prenatal Diagnosis of Down Syndrome: An Integrative Review"](https://dl.dropboxusercontent.com/u/5317066/2012-choi.pdf), Choi et al 2012 ([excerpts](https://plus.google.com/103530621949492999968/posts/51eqnGwysST); [connection to embryo selection](http://lesswrong.com/lw/l2n/srg_4_biological_cognition_bcis_organizations/bf4e))
+- ["Do We Believe Everything We're Told?"](http://lesswrong.com/lw/k4/do_we_believe_everything_were_told/#thingrow_t3_k4)
+- ["The Acquired Immune System: A Vantage from Beneath"](http://hedricklab.ucsd.edu/PDF/HEDRICKImmunity113.pdf), Hedrick 2004 (immune systems as parasites; [excerpts](https://plus.google.com/103530621949492999968/posts/aNs8fLFp9yh))
+- [_The Pursuit of Noninvasive Glucose Blood Tests: "Hunting the Deceitful Turkey"_](http://www.mendosa.com/noninvasive_glucose.pdf), John Smith
+- [Fertility and intelligence](https://en.wikipedia.org/wiki/Fertility_and_intelligence)
+
 Technology:
-["The Tyranny of the Rocket Equation"](http://www.nasa.gov/mission_pages/station/expeditions/expedition30/tryanny.html) ([WP](https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation))
-["_Spacewar_: Fanatic Life and Symbolic Death Among the Computer Bums"](http://www.wheels.org/spacewar/stone/rolling_stone.html)
-[Advanced factory manufacturing in America](http://www.theatlantic.com/magazine/archive/2012/01/making-it-in-america/308844/)
-["A history of the Amiga, part 8: The demo scene"](http://arstechnica.com/gadgets/2013/04/a-history-of-the-amiga-part-9-the-demo-scene/)
-["Why Johnny Can’t Encrypt: A Usability Evaluation of PGP 5.0"](http://www.gaudior.net/alma/johnny.pdf)
-["Crypto Rebels: It's the FBIs, NSAs, and Equifaxes of the world versus a swelling movement of Cypherpunks, civil libertarians, and millionaire hackers. At stake: Whether privacy will exist in the 21st century"](http://archive.wired.com/wired/archive/1.02/crypto.rebels_pr.html)
-["Fusion Power by Magnetic Confinement Program Plan"](https://dl.dropboxusercontent.com/u/85192141/1998-dean.pdf), Dean 1998
-[Anatomy of a hack: How crackers ransack passwords like “qeadzcwrsfxv1331”; For Ars, three crackers have at 16,000+ hashed passcodes—with 90% success.](http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/)
-["The Hundred-Year Language"](http://paulgraham.com/hundred.html)
+
+- ["The Tyranny of the Rocket Equation"](http://www.nasa.gov/mission_pages/station/expeditions/expedition30/tryanny.html) ([WP](https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation))
+- ["_Spacewar_: Fanatic Life and Symbolic Death Among the Computer Bums"](http://www.wheels.org/spacewar/stone/rolling_stone.html)
+- [Advanced factory manufacturing in America](http://www.theatlantic.com/magazine/archive/2012/01/making-it-in-america/308844/)
+- ["A history of the Amiga, part 8: The demo scene"](http://arstechnica.com/gadgets/2013/04/a-history-of-the-amiga-part-9-the-demo-scene/)
+- ["Why Johnny Can't Encrypt: A Usability Evaluation of PGP 5.0"](http://www.gaudior.net/alma/johnny.pdf)
+- ["Carding Forums, Ponzi Schemes and Law Enforcement: A background on Evolution Marketplace"](https://www.reddit.com/r/DarkNetMarkets/comments/2ips02/carding_forums_ponzi_schemes_and_law_enforcement/), by the\_avid
+- ["Fusion Power by Magnetic Confinement Program Plan"](https://dl.dropboxusercontent.com/u/85192141/1998-dean.pdf), Dean 1998
+- [Text of SXSW2013 closing remarks by Bruce Sterling](http://www.wired.com/beyond_the_beyond/2013/04/text-of-sxsw2013-closing-remarks-by-bruce-sterling/)
+- ["We need to get a lot better at imagining the future"](http://lemire.me/blog/archives/2013/04/01/imagining-the-future/)
+- ["2000, the Year Formerly Known as the Future"](https://medium.com/@davidbauer/2000-the-year-formerly-known-as-the-future-cbd6bdc6b283)
+- [Successful tech companies' business models reviewed](http://marginalrevolution.com/marginalrevolution/2013/04/absurd-pitches-pull-out-the-hayek-and-polanyi-lesson.html "Absurd pitches (pull out the Hayek and Polanyi lesson)")
+
 Economics:
+
 - ["Dirty medicine"](http://fortune.com/2013/05/15/dirty-medicine/)
 - [Peak scientist](https://www.its.caltech.edu/~dg/crunch_art.html "'The Big Crunch', Goodstein 1994")
 - ["Slippery Business: The trade in adulterated olive oil"](http://www.newyorker.com/magazine/2007/08/13/slippery-business)
@@ -62,21 +100,20 @@ Economics:
 - ["Beware the Middleman: Empirical Analysis of Bitcoin-Exchange Risk"](http://lyle.smu.edu/~tylerm/fc13.pdf), Moore & Christin 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/jUNVRf8o1dj))
 - [NASHX](http://nashx.com/About)
 - ["Love, luck and destiny: the world according to a Mumbai matriarch"](http://www.abc.net.au/news/2013-03-28/mama-asia-india/4634410)
-- [Kids for cash scandal](https://en.wikipedia.org/wiki/Kids_for_cash_scandal)
-- ["Smart companies try to commoditize their products' complements."](http://www.joelonsoftware.com/articles/StrategyLetterV.html)
+- ["Bacon: Why America's Favorite Food Mania Happened"](http://www.businessweek.com/articles/2014-10-06/bacon-why-americas-favorite-food-mania-happened)
+- ["Nowhere is safe in EVE Online as Goonswarm suicide-bombs galactic trade hub"](http://www.pcgamer.com/2012/04/28/nowhere-is-safe-in-eve-online-as-goonswarm-suicide-bombs-galactic-trade-hub/#null) (shades of Eurisko)
+- the Currin Trading Ponzi: [part 1](http://web.archive.org/web/20091026234156/http://geocities.com/currintrading/), [part 2](http://web.archive.org/web/20091021193732/http://geocities.com/currintrading/bank.html)
+- ["When Korea's E-Sports was at the Brink of Death"](http://askakorean.blogspot.com/2013/04/when-koreas-e-sports-was-at-brink-of.html)
+- ["Google's Lost Social Network"](http://www.buzzfeed.com/robf4/googles-lost-social-network) (exit, voice, and loyalty)
+- [Obsolete occupations](https://en.wikipedia.org/wiki/Category:Obsolete_occupations): [breaker boy](https://en.wikipedia.org/wiki/Breaker_boy), [crossing sweeper](https://en.wikipedia.org/wiki/Crossing_sweeper), [dog whipper](https://en.wikipedia.org/wiki/Dog_whipper)
 - [Old Economy Steven](http://knowyourmeme.com/memes/old-economy-steven/photos)
 
 Philosophy:
-["Why Did why the lucky stiff Quit? …or, is this time well spent?"](https://kevinw.github.io/2013/04/30/why-did-why-the-lucky-stiff-quit/)
-[Wrongful life](https://en.wikipedia.org/wiki/Wrongful_life)
-["Newtonian Ethics"](http://slatestarcodex.com/2013/05/17/newtonian-ethics/)
-["Transhumanist Fables"](http://slatestarcodex.com/2013/05/27/transhumanist-fables/)
-["Even More Aphorisms and Ten-Second Essays from Vectors 3.0"](https://web.archive.org/web/20110629061349/http://www.theliteraryreview.org/WordPress/tlr-poetry/), James Richardson﻿
-Misc:
-[N-body choreographies](http://www.scholarpedia.org/article/N-body_choreographies)
-[_Sacculina_ parasite](https://en.wikipedia.org/wiki/Sacculina)
-[Obsolete occupations](https://en.wikipedia.org/wiki/Category:Obsolete_occupations): [breaker boy](https://en.wikipedia.org/wiki/Breaker_boy), [crossing sweeper](https://en.wikipedia.org/wiki/Crossing_sweeper), [dog whipper](https://en.wikipedia.org/wiki/Dog_whipper)
-[M50 Ontos](https://en.wikipedia.org/wiki/M50_Ontos)
+
+- ["Why Did why the lucky stiff Quit? ...or, is this time well spent?"](https://kevinw.github.io/2013/04/30/why-did-why-the-lucky-stiff-quit/)
+- [Wrongful life](https://en.wikipedia.org/wiki/Wrongful_life)
+- ["The Wish Never to Have Been Born"](https://dl.dropboxusercontent.com/u/85192141/1932-cavan.pdf), Cavan 1932 ([excerpts](https://plus.google.com/103530621949492999968/posts/GR1jdGZTZUM))
+- ["Newtonian Ethics"](http://slatestarcodex.com/2013/05/17/newtonian-ethics/)
 
 <!-- Back to 27 April 2013 -->
 
@@ -84,18 +121,44 @@ Misc:
 
 Nonfiction:
 
+- [_Double Entry: How the Merchants of Venice Created Modern Finance_](http://www.amazon.com/Double-Entry-Merchants-Created-Finance/dp/0393088960?tag=gwernnet-20), Gleeson-White 2012 ([review](https://www.goodreads.com/review/show/1093201048))
+- [_Fascinating Mathematical People_](http://www.amazon.com/Fascinating-Mathematical-People-Interviews-Memoirs/dp/0691148295?tag=gwernnet-20), ed Albers 2011 ([review](https://www.goodreads.com/review/show/1082038804))
+
 Fiction:
+
+- [_Utsuro no Hako to Zero no Maria_ ("The Empty Box and The Zeroth Maria")](http://www.baka-tsuki.org/project/index.php?title=Utsuro_no_Hako:Volume1) ([review](https://www.goodreads.com/review/show/1087814156))
 
 ## Film/TV
 
 Anime:
 
+- [_Kill la Kill_](https://en.wikipedia.org/wiki/Kill_la_Kill)
+
 ## Music
 
 Touhou:
 
-Kantai Collection:
+- ["恋色マスタースパーク (Love-Colored Master Spark)"](https://www.youtube.com/watch?v=_9RQOdcMT4s) (霧雨 魔理沙; _Charisma Lash Type-M_ {C86}) [orchestral]
+- ["感情の摩天楼 ～ Cosmic Mind"](https://www.youtube.com/watch?v=wu8hEaeEwAw) (聖 白蓮; _Charisma Lash Type-M_ {C86}) [orchestral]
+- ["少女さとり ～3rd eye"](https://www.youtube.com/watch?v=pJ4-TvwCso4) (古明地 さとり; _Charisma Lash Type-M_ {C86}) [orchestral]
+- ["百鬼夏祭"](https://www.youtube.com/watch?v=SWZLZcovH2w) (狐の工作室; _夏風の音_ {C86}) [acoustic/jazz?]
+- ["天空を駆ける風の都"](https://www.youtube.com/watch?v=BrYxpndIRoc) (狐の工作室; _夏風の音_ {C86}) [acoustic]
+- ["Skydiver"](http://babbemusic.bandcamp.com/track/skydiver) (Babbe feat. kuroTenshi; _SUNSHINE EP_ {2014-08-16}) [house]
+- ["Beat of Summer"](https://www.youtube.com/watch?v=VqFM_Z6yqPA) (Babbe feat. Kasuka; _SUNSHINE EP_ {2014-08-16}) [house]
+- ["月光跡"](https://www.dropbox.com/s/v583agzx3iz4cur/%E6%9F%8A%E7%A7%80%E9%9B%AA-mt22-%E6%9C%88%E5%85%89%E8%B7%A1.ogg) (柊秀雪 feat. Atori; _MT22_ {C86}) [Rock]
+- ["An cailin ar an tine"](https://www.dropbox.com/s/vcgyss8pfckvtzf/escarmew-mt22-ancailinarantine.ogg) (Escarmew; _MT22_ {C86}) [Celtic]
+- ["Fires of Hokkai"](https://www.youtube.com/watch?v=ZLSRRI01D_g) (Jun.A; _Cradle2_ {C77}) [electronic]
 
 Doujin:
 
+- ["The Strong Peanuts"](https://www.dropbox.com/s/494zqz8bh9r8zk0/takahiroeguchi-tomohikotogashi-adhouse3-thestrongpeanuts.ogg?dl=0) (Takahiro Eguchi + Tomohiko Togashi; 'AD:HOUSE 3' {C86}) [instrumental]
+- ["Sajou"](https://www.youtube.com/watch?v=OOgG-GanqrE) (doriko feat. Hanatan; _PRIMROSE FLOWER VOICE_ {2013}) [rock]
+- ["ロリババアに恋をした"](https://www.dropbox.com/s/6wpif5wepdwy1zq/honeyworks-%E5%A5%BD%E3%81%8D%E3%81%AA%E3%81%B2%E3%81%A8%E3%80%82-%E3%83%AD%E3%83%AA%E3%83%90%E3%83%90%E3%82%A2%E3%81%AB%E6%81%8B%E3%82%92%E3%81%97%E3%81%9F.ogg) (HoneyWorks feat. Sana; _Suki na Hito._ {C86}) [Jpop]
+- ["清恋 ～ベルティネの夜の夢～"](https://www.youtube.com/watch?v=BYA_sStHAjs) (Drop feat. 葉月ゆら; _Eclipse Parade_ {C86}) [Jpop]
+
 Vocaloid:
+
+- ["NICE MATCHING!"](https://www.youtube.com/watch?v=I7cIKGJpKGs) (miki; M@SATOSHI; _銀杏色D-i-s-k_ {VM23}) [electronic]
+- ["shallow moon"](https://www.youtube.com/watch?v=K3FcWqmA358) (Rin; 曼荼羅P; _selbstmord_ {2014}) [vocal]
+- ["チョコレートサンデー"](https://www.youtube.com/watch?v=btxoyV8dLwg) (Miku; 空海月; _MIKUHOP LP_ {2014}) [Hip-hop]
+- ["Yokkora sex"](https://www.dropbox.com/s/bn9ze7bt5i2un81/96neko-memoreal-yokkorasex.ogg) (96Neko; _memoReal_ {2012}) [rock]

@@ -68,6 +68,13 @@ From ["Class Project"](http://lesswrong.com/lw/qt/class_project/):
 
 --[Tales of Statisticians](https://www.umass.edu/wsp/resources/tales/dantzig.html), E Bruce Brooks 2001
 
+> - "In the Hebrew University, it [the story about Dantzig] is told about Avinoam Mann." [–Daniel Moskovich](http://mathoverflow.net/questions/53122/mathematical-urban-legends/53168#comment131985_53168)
+> - "At Princeton, it is told about (who else) Jack Milnor. The result is the 'Fary-Milnor' theorem, on the total curvature of a knotted curve (there is an Annals paper to back up the story...)" [–Igor Rivin](http://mathoverflow.net/questions/53122/mathematical-urban-legends/53168#comment131986_53168)
+> - "The version I heard was that Milnor was late to class, and copied down several (open) problems written on the board that he thought were homework. At a later class he says, 'That homework was hard! I only got 2 of them.'" [–Jonas Meyer](http://mathoverflow.net/questions/53122/mathematical-urban-legends/53168#comment132000_53168)
+> - "Paul Cohen used to claim that the Bergman kernel was discovered this way (by Bergman)." [–Dan Ramras](http://mathoverflow.net/questions/53122/mathematical-urban-legends/53168#comment132018_53168)
+> - "The Huffman code story I heard is that in an information theory class, Huffman had a choice of writing a term paper or taking a final. His term paper was the discovery of an algorithm for finding optimal binary codes (i.e., Huffman codes)." [–Peter Shor](http://mathoverflow.net/questions/53122/mathematical-urban-legends/53168#comment132059_53168)
+
+--MathOverflow
 
 > - Ron Graham, pg105:
 >
@@ -92,11 +99,15 @@ From ["Class Project"](http://lesswrong.com/lw/qt/class_project/):
 
 --_Mathematical People: Profiles and Interviews_ 2008 (ISBN 978-1-56881-340-0), edited by Albers
 
+> One of the interesting consequences of the use of three-dimensional intuition is that the field of low-dimensional topology has advanced in a way that is significantly different from other branches of mathematics. One is expected to "see" results in this field, and once the result, or partial result, has been "seen", it requires no further discussion. I do not wish to criticize this approach. I have myself "seen" several results in this field, and believe them to be as correct as any other mathematics....Once, at a seminar, one of the world's best low-dimensional topologists was presenting a major result. At a certain point another distinguished topologist in the audience intervened to say he did not understand how the speaker did a certain thing. The speaker gave an anguished look and gazed at the ceiling for at least a minute. The member of the audience then affirmed "Oh yes, I hadn't thought of that!" Visibly relieved, the speaker went on with his talk, glad to have communicated this point to the audience. Such is truth in mathematics.
+
+--"A credo of sorts"; Vaughan Jones ([_Truth in Mathematics_](/docs/1998-dales-truthinmathematics.pdf), 1998), pg 216-218
+
 > In the problem of decoding, the most important information which we can possess is the knowledge that the message which we are reading is not gibberish. A common method of disconcerting codebreakers is to mix in with the legitimate message a message that cannot be decoded; a non-significant message, a mere assemblage of characters. In a similar way, when we consider a problem of nature such as that of atomic reactions and atomic explosives, the largest single item of information which we can make public is that they exist. *Once a scientist attacks a problem which he knows to have an answer, his entire attitude is changed. He is already some 50% of his way toward that answer*.
 >
 > In view of this, it is perfectly fair to say that *the one secret concerning the atomic bomb which might have been kept and which was given to the public and to all potential enemies without the least inhibition, was that of the possibility on its construction*. Take a problem of this importance and assure the scientific world that it has an answer; then both the intellectual ability of the scientists and the existing laboratory facilities are so widely distributed that the quasi-independent realization of the task will be a matter of merely a few years anywhere in the world.
 
-emphasis added; pg124-125, Norbert Wiener, _[The Human Use of Human Beings](!Wikipedia)_
+--emphasis added; pg124-125, Norbert Wiener, _[The Human Use of Human Beings](!Wikipedia)_
 
 Weiner was correct: given the knowledge that atomic bombs were possible, it is possible to invent one using the open literature. pg 39-40, [MacKenzie & Spinardi 1995](http://people.reed.edu/~ahm/Courses/Reed-POL-422-2012-S1_NP/Syllabus/EReadings/07.1/07.1.MacKenzieSpinardi1995Tacit.pdf "'Tacit Knowledge, Weapons Design, and the Uninvention of Nuclear Weapons'")
 

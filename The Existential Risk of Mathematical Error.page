@@ -308,6 +308,10 @@ Should such widely-believed conjectures as [P≠NP](!Wikipedia "P=NP") or the [R
     >
     > I will stop here. Most of the initial part of the book is gone. The same for much of Homer-Selman, and basically all of the "Reducibility and Completeness" CRC chapter.
 
+# See also
+
+- [One man's modus ponens is another man's modus tollens](Prediction%20markets#modus-tollens-vs-modus-ponens)
+
 # External links
 
 - [_An Essay on the Psychology of Invention in the Mathematical Field_](https://archive.org/details/eassayonthepsych006281mbp) ([Jacques Hadamard](!Wikipedia); 1945)
@@ -320,3 +324,17 @@ Should such widely-believed conjectures as [P≠NP](!Wikipedia "P=NP") or the [R
 - ["The probabilistic heuristic justification of the ABC conjecture"](https://terrytao.wordpress.com/2012/09/18/the-probabilistic-heuristic-justification-of-the-abc-conjecture/) (Terence Tao)
 - ["Could We Have Felt Evidence For SDP ≠ P?"](http://rjlipton.wordpress.com/2014/03/15/could-we-have-felt-evidence-for-sdp-p/) (see particularly "Bad Guesses")
 - ["Have any long-suspected irrational numbers turned out to be rational?"](http://mathoverflow.net/questions/32967/have-any-long-suspected-irrational-numbers-turned-out-to-be-rational)
+- ["Mathematical 'urban legends'"](http://mathoverflow.net/questions/53122/mathematical-urban-legends)
+
+# Appendix
+## Jones 1998
+
+"A credo of sorts"; Vaughan Jones ([_Truth in Mathematics_](/docs/1998-dales-truthinmathematics.pdf), 1998), pg208-209:
+
+> *Proofs are indispensable, but I would say they are necessary but not sufficient for mathematical truth, at least truth as perceived by the individual.*
+>
+> To justify this attitude let me invoke two experiences of current mathematics, which very few mathematicians today have escaped.
+>
+> The first is computer programming. To write a short program, say 100 lines of C code, is a relatively painless experience. The debugging will take longer than the writing, but it will not entail suicidal thoughts. However, should an inexperienced programmer undertake to write a slightly longer program, say 1000 lines, distressing results will follow. The debugging process becomes an emotional nightmare in which one will doubt one's own sanity. One will certainly insult the compiler in words that are inappropriate for this essay. The mathematician, having gone through this torture, cannot but ask: "Have I ever subjected the proofs of any of my theorems to such close scrutiny?" In my case at least the answer is surely "no". So while I do not doubt that my proofs are correct (at least the significant ones), my belief in the results needs bolstering. Compare this with the debugging process. At the end of debugging we are happy with our program because of the consistency of the output it gives, not because we feel we have proved it correct-after all we did that at least twenty times while debugging and we were wrong *every time*. Why not a twenty-first? In fact we are acutely aware that our poor program has only been tested with a limited set of inputs and we fully expect more bugs to manifest themselves when inputs are used which we have not yet considered. If the program is sufficiently important, it will be further debugged in the course of time until it becomes secure with respect to all inputs. (With much larger programs this will never happen.) So it is with our theorems. Although we may have proofs galore and a rich surrounding structure, if the result is at all difficult it is only the test of time that will cause acceptance of the "truth" of the result.
+>
+> The second experience concerning the need for supplements to proof is one which I used to dislike intensely, but have come to appreciate and even search for. It is the situation where one has two watertight, well-designed arguments -that lead inexorably to opposite conclusions. Remember that research in mathematics involves a foray into the unknown. We may not know which of the two conclusions is correct or even have any feeling or guess. Proof at this point is our only arbiter. And it seems to have let us down. I have known myself to be in this situation for months on end. It induces obsessive and anti-social behaviour. Perhaps we have found an inconsistency in mathematics. But no, eventually some crack is seen in one of the arguments and it begins to look more and more shaky. Eventually we kick ourselves for being so utterly stupid and life goes on. But it was no tool of logic that saved us. The search for a chink in the armour often involved many tricks including elaborate thought experiments and perhaps computer calculations. Much structural understanding is created, which is why I now so value this process. One's feeling of having obtained truth at the end is approaching the absolute. Though I should add that I have been forced to reverse the conclusion on occasions...

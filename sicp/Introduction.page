@@ -26,7 +26,7 @@ There's an embarrassment of riches for the prospective SICP student.
 4. One needs a Scheme environment. One of the best, and very well suited for SICP, is Dr. Scheme or [PLT Scheme](http://www.plt-scheme.org/) (as it's now called). It is Free, and available in a Linux distro near you.
 5. Perhaps one isn't using Scheme? Your solutions may not be obviously correct. You can double-check yourself by looking at [solutions in other languages](http://web.archive.org/web/20100704002207/http://www.codepoetics.com/wiki/index.php?title=Topics:SICP_in_other_languages); another wiki with solutions is [Ivan Veselov's SICP wiki](http://web.archive.org/web/20130725040434/http://sicp.org.ua/sicp).
 6. A blogger named Lispy is [occasionally working](http://lispy.wordpress.com/category/scheme/) through SICP.
-7. Finally, companions on the SICP are always good. I can recommend the [blogging journey of Eli Bendersky](http://eli.thegreenplace.net/category/programming/lisp/sicp/), in which he documented working through the entirety of SICP. It's an impressive achievement, and one I look to as a model.
+7. Finally, companions on the SICP are always good. I can recommend the [blogging journey of Eli Bendersky](http://eli.thegreenplace.net/tag/sicp), in which he documented working through the entirety of SICP. It's an impressive achievement, and one I look to as a model.
 
 # My plan
 

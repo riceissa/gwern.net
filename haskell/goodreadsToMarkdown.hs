@@ -129,7 +129,8 @@ isbnDB = M.fromList [
      ("Red Mars (Mars Trilogy, #1)", "0553560735"),
      ("The Many-Coloured Land (Saga of Pliocene Exile, #1)", "1433224097"),
      ("Why I Am Not a Christian: Four Conclusive Reasons to Reject the Faith ", "1456588850"),
-     ("Monstrous Regiment (Discworld, #31)", "0385603401")
+     ("Monstrous Regiment (Discworld, #31)", "0385603401"),
+     ("Sir Gawain and the Green Knight, Pearl, and Sir Orfeo", "978-0-345-27760-2")
      ]
 urlDB = M.fromList [
      ("A Study in Emerald", "http://www.neilgaiman.com/mediafiles/exclusive/shortstories/emerald.pdf"),
@@ -186,5 +187,8 @@ urlDB = M.fromList [
      ("Wired Love: A Romance of Dots and Dashes", "https://encrypted.google.com/books?id=BjAOAAAAYAAJ"),
      ("The Story of Life Insurance", "http://en.wikisource.org/wiki/The_Story_of_Life_Insurance"),
      ("Pioneers of Soviet Computing", "http://www.sigcis.org/files/malinovsky2010.pdf"),
-     ("Orphan of the Helix", "http://en.wikipedia.org/wiki/Orphans_of_the_Helix")
+     ("Orphan of the Helix", "http://en.wikipedia.org/wiki/Orphans_of_the_Helix"),
+     ("Worm", "http://parahumans.wordpress.com/category/stories-arcs-1-10/arc-1-gestation/1-01/"),
+     ("Excuse Me Sir, Would You Like to Buy a Kilo of Isopropyl Bromide?", "http://library.sciencemadness.org/library/books/gergel_isopropyl_bromide.pdf"),
+     ("The Metropolitan Man", "https://www.fanfiction.net/s/10360716/1/The-Metropolitan-Man")
      ]

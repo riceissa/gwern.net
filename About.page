@@ -173,6 +173,14 @@ Occasionally people ask how I manage information and read things.
 2. I keep web clippings in an Evernote public notebook; I also excerpt from research papers & books, and miscellaneous sources. This is useful for targeted searches when I remember a fact but not where I learned it, and for storing things which I don't want to memorize but which have no logical home in my website or LW or elsewhere. I don't make any use of more complex Evernote features.
 
     I periodically back up my Evernote using the [Linux client Nixnote's](http://nevernote.sourceforge.net/) export feature. (I made sure there was a working export method before I began using Evernote, and use it only as long as Nixnote continues to work.)
+
+    My workflow for dealing with PDFs, as of late 2014, is:
+
+    1. if necessary, jailbreak the paper using [Libgen](http://libgen.org/) or a university proxy, then upload a copy to [pdf.yt](http://pdf.yt/) & Dropbox, named `$year-$first_author.pdf`
+    2. read the paper, making excerpts as I go
+    3. store the metadata & excerpts in Evernote, possibly copying over to my Google+ account if I think it's good or otherwise interesting
+    4. if useful, integrate into `gwern.net` with its title/year/author metadata, adding a local fulltext copy if the paper had to be jailbroken, otherwise rely on my custom archiving setup to preserve the remote URL
+    5. hence, any future searches for the filename / title / key contents should result in hits either in my Evernote or `gwern.net`
 3. Web pages are archived & backed up by [my custom archiving setup](Archiving URLs). This is intended mostly for fixing dead links (eg to recover the fulltext of the original URL of an Evernote clipping).
 4. I don't have any special book reading techniques. For really good books I excerpt from each chapter and stick the quotes into Evernote.
 5. I store insights and thoughts in various pages on `gwern.net` as parenthetical comments, footnotes, and appendices. If they don't fit anywhere, I dump them in [Notes]()

@@ -2330,10 +2330,103 @@ Since we're back to testing CSS, we can use the old ABalytics approach without h
 
 ### Data
 
-On 27 July 2014, since the 95% CIs for the best and worst indent variants no longer overlapped, I deleted the worst variant (`0.1em`).
+On 27 July 2014, since the 95% CIs for the best and worst indent variants no longer overlapped, I deleted the worst variant (`0.1`).
 On 23 August 2014, the 2.0em and 0.0em variants no longer overlapped, and I deleted the latter.
 
+![Daily traffic and conversion rates for each of the indentation settings](/images/2014-11-19-abtesting-indentation.png)
+
+The conversion data, with new vs returning visitor, segmented by period, and ordered by when a variant was deleted:
+
+Variant   Old       Total: _n_ (%)      12-27 July     28 July-23 August     24 August-19 November
+-------   -----     ----------------   -------------   -------------------   ----------------------
+`0.1`     FALSE     1552   (18.11%)    1551  (18.12%)  1552  (18.11%)
+`0.1`     TRUE      707    (21.64%)    673   (21.69%)  706   (21.67%)        6      (0.00%)
+`none`    FALSE     5419   (16.70%)    1621  (17.27%)  5419  (16.70%)        3179   (16.55%)
+`none`    TRUE      2742   (23.23%)    749   (27.77%)  2684  (23.62%)        1637   (21.01%)
+`0.5`     FALSE     26357  (15.09%)    1562  (18.89%)  5560  (17.86%)        24147  (14.74%)
+`0.5`     TRUE      10965  (21.35%)    728   (23.63%)  2430  (23.13%)        9939   (21.06%)
+`1.0`     FALSE     25987  (14.86%)    1663  (19.42%)  5615  (17.68%)        23689  (14.39%)
+`1.0`     TRUE      11288  (21.14%)    817   (25.46%)  2498  (24.38%)        10159  (20.74%)
+`1.5`     FALSE     26045  (14.54%)    1619  (16.80%)  5496  (16.67%)        23830  (14.26%)
+`1.5`     TRUE      11255  (21.60%)    694   (26.95%)  2647  (24.25%)        10250  (21.00%)
+`2.0`     FALSE     26198  (14.96%)    1659  (18.75%)  5624  (18.31%)        23900  (14.59%)
+`2.0`     TRUE      11125  (21.17%)    781   (25.99%)  2596  (24.27%)        10010  (20.74%)
+                    159634 (16.93%)    14117 (20.44%)  42827 (19.49%)        140746 (16.45%)
+
 ### Analysis
+
+A simple analysis of the totals would indicate that 0.1em is the best setting - which is odd since it was the worst-performing and first variant to be deleted, so how could it be the best?
+The graph of traffic suggests that, like before, the final totals are confounded by time-varying changes in conversion rates plus dropping variants; that is, 0.1em probably only looks good because *after* it was dropped, a bunch of Hacker News traffic hit and happened to convert at lower rates, making the surviving variants look bad.
+One might hope that all of that effect would be captured by the Old covariate as HN traffic gets recorded as new visitors, but that would be too much to hope for.
+So instead, I add a dummy variable for each of the 3 separate time-periods which will absorb some of this heterogeneity and make clearer the effect of the indentation choices.
+
+~~~
+rates <- read.csv(stdin(),header=TRUE)
+Indent,Old,Month,N,Rate
+0.1,FALSE,July,1551,0.1812
+0.1,TRUE,July,673,0.2169
+0,FALSE,July,1621,0.1727
+0,TRUE,July,749,0.2777
+0.5,FALSE,July,1562,0.1889
+0.5,TRUE,July,728,0.2363
+1.0,FALSE,July,1663,0.1942
+1.0,TRUE,July,817,0.2546
+1.5,FALSE,July,1619,0.1680
+1.5,TRUE,July,694,0.2695
+2.0,FALSE,July,1659,0.1875
+2.0,TRUE,July,781,0.2599
+0.1,FALSE,August,1552,0.1811
+0.1,TRUE,August,706,0.2167
+0,FALSE,August,5419,0.1670
+0,TRUE,August,2684,0.2362
+0.5,FALSE,August,5560,0.1786
+0.5,TRUE,August,2430,0.2313
+1.0,FALSE,August,5615,0.1768
+1.0,TRUE,August,2498,0.2438
+1.5,FALSE,August,5496,0.1667
+1.5,TRUE,August,2647,0.2425
+2.0,FALSE,August,5624,0.1831
+2.0,TRUE,August,2596,0.2427
+0.1,FALSE,November,0,0.000
+0.1,TRUE,November,6,0.000
+0,FALSE,November,3179,0.1655
+0,TRUE,November,1637,0.2101
+0.5,FALSE,November,24147,0.1474
+0.5,TRUE,November,9939,0.2106
+1.0,FALSE,November,23689,0.1439
+1.0,TRUE,November,10159,0.2074
+1.5,FALSE,November,23830,0.1426
+1.5,TRUE,November,10250,0.2100
+2.0,FALSE,November,23900,0.1459
+2.0,TRUE,November,10010,0.2074
+
+
+rates$Successes <- rates$N * rates$Rate
+rates$Successes <- round(rates$Successes,0)
+rates$Failures <-rates$N - rates$Successes
+g <- glm(cbind(Successes,Failures) ~ as.factor(Indent) + Old + Month, data=rates, family="binomial"); summary(g)
+# ...Coefficients:
+#                         Estimate  Std. Error   z value   Pr(>|z|)
+# (Intercept)          -1.55640959  0.02238959 -69.51487 < 2.22e-16
+# as.factor(Indent)0.1 -0.05726851  0.04400363  -1.30145  0.1931046
+# as.factor(Indent)0.5  0.00249949  0.02503877   0.09982  0.9204833
+# as.factor(Indent)1   -0.00877850  0.02502047  -0.35085  0.7256988
+# as.factor(Indent)1.5 -0.02435198  0.02505726  -0.97185  0.3311235
+# as.factor(Indent)2    0.00271475  0.02498665   0.10865  0.9134817
+# OldTRUE               0.42448061  0.01238799  34.26549 < 2.22e-16
+# MonthJuly             0.06606325  0.02459961   2.68554  0.0072413
+# MonthNovember        -0.20156678  0.01483356 -13.58857 < 2.22e-16
+#
+# (Dispersion parameter for binomial family taken to be 1)
+#
+#     Null deviance: 1496.6865  on 34  degrees of freedom
+# Residual deviance:   41.1407  on 26  degrees of freedom
+# AIC: 331.8303
+~~~
+
+There's definitely temporal heterogeneity, given the statistical-significance of the time-period dummies, so that is good to know.
+But the estimated effects for each indentation variant is derisorily small (despite having spent _n_=159634), suggesting readers don't care at all.
+Since I have no opinion on the matter, I suppose I'll go with the highest point-estimate, 2em.
 
 # Appendix
 ## Covariate impact on power

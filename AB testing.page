@@ -2428,6 +2428,80 @@ There's definitely temporal heterogeneity, given the statistical-significance of
 But the estimated effects for each indentation variant is derisorily small (despite having spent _n_=159634), suggesting readers don't care at all.
 Since I have no opinion on the matter, I suppose I'll go with the highest point-estimate, 2em.
 
+## Sidebar elements
+
+Looking at my current pages, one of the visual aspects that bother me is the sidebar: it contains links to top-level pages, page-specific metadata, a search interface, and donation widgets (all separated by whitespace and horizontal rulers).
+It comes off as a little disorganized and messy.
+
+So, I'd like to try out removing the horizontal ruler as dividers, and hiding the search-engine and donations.
+Then in another A/B test I can try out different tweaks (maybe resort the sections or change the word-breaking.)
+
+### Implementation
+
+The 3 core changes:
+
+~~~{.CSS}
+div#sidebar hr {visibility:hidden; display:none;}
+div#cse-sitesearch {visibility:hidden; display:none;}
+div#donations {visibility:hidden; display:none;}
+~~~
+
+3x2:
+
+~~~{.Diff}
+    <!-- override CSS with A/B test -->
+-   <div class="indent_class1"></div>
++   <div class="sidebar_test_class1"></div>
+
+     <div id="main">
+       <div id="sidebar">
+@@ -59,8 +59,8 @@
+             <input id="q" style="" name="q" size="5" type="text" placeholder="search" />
+           </form>
+         </div>
+-        </div>
+         <hr/>
++        </div>
+         <div id="metadata">
+           <div id="abstract"><em>$description$</em></div>
+           <br />
+@@ -153,14 +153,30 @@
+       _gaq.push(['_setAccount', 'UA-18912926-1']);
+
++      {
++      name: "s1c1d1",
++      "sidebar_test_class1": "<style></style>"
++      },
++      {
++      name: "s1c1d0",
++      "sidebar_test_class1": "<style>div#donations {visibility:hidden; display:none;}</style>"
++      },
++      {
++      name: "s1c0d1",
++      "sidebar_test_class1": "<style>div#cse-sitesearch {visibility:hidden; display:none;}</style>"
++      },
++      {
++      name: "s0c1d1",
++      "sidebar_test_class1": "<style>div#sidebar hr {visibility:hidden; display:none;}</style>"
++      },
+       {
+-      name: "indent0.5",
+-      "indent_class1": "<style>p + p { text-indent: 0.5em; margin-top: 0 }</style>"
++      name: "s0c1d0",
++      "sidebar_test_class1": "<style>div#sidebar hr {visibility:hidden; display:none;}; div#donations {visibility:hidden; display:none;}</style>"
+       },
+       {
+-      name: "indent1.0",
+-      "indent_class1": "<style>p + p { text-indent: 1.0em; margin-top: 0 }</style>"
++      name: "s0c0d0",
++      "sidebar_test_class1": "<style>div#sidebar hr {visibility:hidden; display:none;}; div#cse-sitesearch {visibility:hidden; display:none;}; div#donations {visibility:hidden; display:none;}</style>"
+    }
+~~~
+
+
+### Data
+### Analysis
+
 # Appendix
 ## Covariate impact on power
 

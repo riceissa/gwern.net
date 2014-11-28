@@ -7,8 +7,6 @@ status: in progress
 belief: possible
 ...
 
-
-
 there's a lot of bad reasoning out there. for example, this is just an abuse of computational complexity:
 http://www.antipope.org/charlie/blog-static/2014/02/the-singularity-is-further-tha.html
 http://www.antipope.org/charlie/blog-static/2014/02/why-ais-wont-ascend-in-blink-of-an-eye.html
@@ -105,23 +103,23 @@ But these problems exhibit diminishing returns - optimal maze navigation is expo
 Transworms would immediately find their additional cognition to be of ever less marginal value as they run up against the wall of wormputational complexity.
 What would they do with, say, 1000 neurons that would justify a metabolic cost of *over 3 times more*?
 And to be truly worthy of the name transworm, they might need 10s of thousands, or even millions of neurons!
-Consider the absurdity of such an architecture: can our great manure pile even support a single such transworm?
+Consider the absurdity of such an architecture: could our manure pile support a single such transworm?
 Where would the food come from? For that matter, how would its body support so many neurons?
-And its genes could no longer specify cell placement one by on, but organization would have to somehow 'emerge', which you are rather obscure about how this might happen.
+And its genes could no longer specify cell placement one by one, but organization would have to somehow 'emerge', which you are rather obscure about how this might happen.
 Not to mention the many problems you seem to gloss over in your faith in progress: for example, diffusion would no longer work to feed each cell, requiring nonexistent mechanisms to move fluids around.
 If a transworm *could* exist, it would be exponentially difficult for it to eat bacteria and reproduce faster than regular worms, and its performance would likely converge with ours: it would solve our problems only slightly better than us, at tremendously increased cost.
-(We could even make an evolutionary argument: we have evolved to be as smart as is optimal in our niche, but no smarter.)
+(We could even make an evolutionary argument: we have evolved to be as smart as is optimal in our niche - and no more or less.)
 Certainly, any Moundularity would be so slow us worms would smell it coming long in advance and wriggle together in a big ball to crush it."
 
 Crawlviati:
 
 "Your argument seems very narrow to me.
 Yes, I agree that it would be difficult to support so many neurons packed together in one worm, but I'm sure the engineering difficulties can be overcome - there seems to be no fundamental limit to wormputation much greater than 302 neurons, so there must be a way.
-And your food objection is likewise soluble: perhaps transworms can migrate from compost pile to garden regularly as they exhaust resources there, or even figure out some way to easily knock down low-hanging fruit.
+And your food objection is likewise soluble: perhaps transworms can migrate from compost pile to garden regularly as they exhaust resources there, or even figure out some way to easily knock down low-hanging fruit & let them rot.
 They may not, bacterium for bacterium, be as efficient as us, but that doesn't matter as long as the diminishing returns don't turn into *negative* returns.
 As long as the returns are positive, they will be able to pay for their increased resource utilization and continue climbing up the exponential curves.
 And what does 'better' even mean here? The wormputational complexity of a maze may increase sharply with maze size, but that's a statement about mazes, not about comparing maze-solvers, which might be arbitrarily better or worse than each other, so there's a problem: maybe they could solve mazes 100x faster.
-Then there's figuring out what any bit of performance means: if a transworm could solve mazes twice as fast as you or I, maybe it'll get *all* the treats at the end, not merely twice as many.
+Then there's figuring out what any bit of performance means: if a transworm could solve mazes twice as fast as you or I, maybe it'll get *all* the treats when it beats us to the end, and not less than twice as much.
 Heck, we're *worms*! What do we know about the world? Maybe there are all sorts of cool things which can be done, besides stimulus, response, stimulus, response - if we could just *think* for once in our lives!"
 
 Slimeplicius:
@@ -135,9 +133,10 @@ Crawlviati:
 
 Slimeplicius:
 
-"There are better things to worry about, like pile warming. What if the decay makes our mound too hot for us? We should discuss that instead."
+"There are better things to worry about, like pile warming. What if our wastes and their decay make our mound too hot for us? We should discuss that instead."
 
-So they did. A week later, the farm was sold to a developer, and the mound was rolled flat,and then paved over with asphalt - the construction workers neither hated nor loved the worms, but they were made of atoms that would be useful for stabilizing the road to the townhouses being built there.
+So they did.
+A week later, the farm was sold to a developer, and the mound was rolled flat, and then paved over with asphalt - the construction workers neither hated nor loved the worms, but they were made of atoms useful for stabilizing the road to the townhouses being built there.
 
 # Parable of Nacirema
 

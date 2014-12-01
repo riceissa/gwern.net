@@ -12,77 +12,73 @@ This is a summary of the revision-history RSS feed, overlapping with [Changelog]
 
 # Writings
 
+- [A/B indentation test](http://www.gwern.net/AB%20testing#indented-paragraphs): no real result, defaulted to 2em
+
 # Media
+## Books
+
+Nonfiction:
+
+- [_Excuse Me Sir, Would You Like to Buy a Kilo of Isopropyl Bromide?_](http://library.sciencemadness.org/library/books/gergel_isopropyl_bromide.pdf) ([review](https://www.goodreads.com/review/show/1095756192); [excerpts](https://plus.google.com/103530621949492999968/posts/RGNtX6Ha5Ng))
+- [_The Many Worlds of Hugh Everett_](http://www.amazon.com/The-Many-Worlds-Hugh-Everett/dp/0199659249), Bryne ([review](https://www.goodreads.com/review/show/373031403))
+- [_Ketamine: Dreams and Realities_](http://www.maps.org/books/K-DreamsKJansenMAPS.pdf), Jansen ([review](https://www.goodreads.com/review/show/1117746460))
+- [_The Art of Unix Usability_](http://www.catb.org/esr/writings/taouu/html/), ESR ([review](https://www.goodreads.com/review/show/1106510619))
+
+Fiction:
+
+- [_A Clockwork Orange_](https://en.wikipedia.org/wiki/A_Clockwork_Orange), Burgess
+- [_Lud-in-the-Mist_](https://en.wikipedia.org/wiki/Lud-in-the-Mist), Mirrlees
+- _The Far Side Gallery 3_ (I think I liked them better as a kid; re-reading, I realize Larson really only had a few jokes & characters which he permuted endlessly.  It doesn't grow up with you as much as some others like _Calvin & Hobbes_ do.)
+
 ## Links
 
 Everything is heritable:
 
+- ["The contribution of de novo coding mutations to autism spectrum disorder"](https://pdf.yt/d/fOlLOcil-4C_xKDJ), Iossifov et al 2014 (media: [1](http://www.spring.org.uk/2014/11/autism-new-studies-identify-dozens-more-associated-genes.php), [2](http://www.npr.org/blogs/health/2014/10/29/359818102/scientists-implicate-more-than-100-genes-in-causing-autism); [discussion](https://www.reddit.com/r/science/comments/2l9dpi/two_new_studies_published_in_nature_provide/); [excerpts](https://plus.google.com/103530621949492999968/posts/Vv6P6NUewEF))
 - ["Cloning Cows From Steaks (and Other Ways of Building Better Cattle)"](http://news.nationalgeographic.com/news/2014/10/141015-better-beef-genetics-science-agriculture-environment-ngfood/)
-- ["Genome-wide meta-analysis identifies six novel loci associated with habitual coffee consumption"](http://handls.nih.gov/pubs/2014-CoffeeCaffeineGeneticsConsortium-MolPsych-epub.pdf), The Coffee and Caffeine Genetics Consortium et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/bzGJ1tN6KbK))
 
 Politics/religion:
 
+- ["Whither the Blank Slate? A Report on the Reception of Evolutionary Biological Ideas among Sociological Theorists"](https://pdf.yt/d/XndsCHfyUUNe7pI5), Horowitz et al 2014 ([media](http://www.washingtonpost.com/blogs/wonkblog/wp/2014/10/28/liberals-deny-science-too/); [excerpts](https://plus.google.com/103530621949492999968/posts/CdtQyiy1Bqv))
 - ["Transcript of secret meeting between Julian Assange and Google CEO Eric Schmidt"](http://wikileaks.org/Transcript-Meeting-Assange-Schmidt)
 - ["The Micro-sociology of Violent Confrontations"](http://press.princeton.edu/chapters/s8547.html)
 - ["Aum Shinrikyo and a Panic About Manga and Anime"](http://www.gwern.net/docs/2008-gardner.pdf), Gardner 2008 ([excerpts](https://plus.google.com/103530621949492999968/posts/BhoJHxGfpvL))
 - ["A Few Bad Men: Why America doesn't really have a terrorism problem"](http://www.foreignpolicy.com/articles/2013/04/16/a_few_bad_men?page=0,1)
 - ["Bottom of the Barrel: Today's terrorists aren't "sophisticated." They're stupider than ever."](http://www.foreignpolicy.com/articles/2013/04/24/why_todays_terrorists_are_dumb?page=0,1)
-- ["Hitler's Declaration of War Against the US"](http://www.isegoria.net/2013/05/hitlers-declaration-of-war-against-the-us/)
-- [_Sacculina_ parasite](https://en.wikipedia.org/wiki/Sacculina)
-- ["Truncated transcript from today's SCOTUS argument"](http://courtneymilan.tumblr.com/post/46374496823/truncated-transcript-from-todays-scotus-argument) (parody)
-- ["Question 94. The relations of the saints towards the damned: Whether the blessed in heaven will see the sufferings of the damned?"](http://www.newadvent.org/summa/5094.htm)
 
 Statistics/AI/meta-science:
 
 - ["What's to know about the credibility of empirical economics?"](http://www.gwern.net/docs/dnb/2013-ioannidis.pdf), Ioannidis & Doucouliagos 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/BtMY6GcASuQ))
 - ["The Ironic Effect of Significant Results on the Credibility of Multiple-Study Articles"](http://www.ubc-emotionlab.ca/wp-content/uploads/2012/09/Schimmack-2012-Effect-of-Significance-on-Article-Credibility.pdf), Schimmack 2012 ([excerpts](https://plus.google.com/103530621949492999968/posts/UwP5Gc8L3ox))
 - ["Bayesian data analysis"](http://www.indiana.edu/~kruschke/articles/Kruschke2010WIRES.pdf), Kruschke 2010 ([excerpts](https://plus.google.com/103530621949492999968/posts/Uh3QS92zWAE))
+- ["What Teachers Should Know about the Bootstrap: Resampling in the Undergraduate Statistics Curriculum"](http://arxiv.org/pdf/1411.5279v1.pdf), Hesterberg 2014 (nice comprehensible discussion of various kinds of bootstraps and resampling which helps put together everything I'd learned piecemeal)
 - ["The harm done by tests of significance"](http://andrewgelman.com/wp-content/uploads/2013/03/1154-Hauer-The-harm-done-by-tests-of-significance.pdf), Hauer 2004 (how _p_-values increase traffic fatalities)
 - ["The Mind of a Con Man": Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all)
 - [Stein's paradox](https://normaldeviate.wordpress.com/2013/05/18/steins-paradox/)
 - ["Tiny Data, Approximate Bayesian Computation and the Unpaired Socks of Karl Broman"](http://www.sumsar.net/blog/2014/10/tiny-data-and-the-socks-of-karl-broman/) (demonstration of [ABC](https://en.wikipedia.org/wiki/Approximate_Bayesian_computation))
 - ["A Vast Graveyard of Undead Theories: Publication Bias and Psychological Science's Aversion to the Null"](http://andrewgelman.com/2013/04/26/a-vast-graveyard-of-undead-theories-publication-bias-and-psychological-sciences-aversion-to-the-null-2/)
 - ["Unreliable neuroscience? Why power matters: Small studies with low power undermine the reliability of science and new evidence suggests that low power is the norm in neuroscience"](http://www.theguardian.com/science/sifting-the-evidence/2013/apr/10/unreliable-neuroscience-power-matters)
-- ["On the distribution of time-to-proof of mathematical conjectures"](http://arxiv.org/abs/1202.3936), Hisano & Sornette 2012
-- ["Bayes' rule in Haskell, or why drug tests don't work"](http://www.randomhacks.net/2007/02/22/bayes-rule-and-drug-tests/)
-- ["Kalkalash! Pinpointing the Moments _The Simpsons_ became less Cromulent"](http://diffuseprior.wordpress.com/2013/04/30/kalkalash-pinpointing-the-moments-the-simpsons-became-less-cromulent/)
 
 Psychology/biology:
 
 - ["Is Psychometric g a Myth?"](http://humanvarieties.org/2013/04/03/is-psychometric-g-a-myth/)
 - ["Suppressing Intelligence Research: Hurting Those We Intend to Help"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.138.3468&rep=rep1&type=pdf), Gottfredson 2005 ([excerpts](https://plus.google.com/103530621949492999968/posts/LDqzZbVeUMw))
 - ["Who Rises to the Top? Early Indicators"](http://www.gwern.net/docs/iq/2013-kell.pdf), Kell et al 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/Mkt6CC8EGdx); does IQ cease to matter past 130? No.)
+- ["Life Paths and Accomplishments of Mathematically Precocious Males and Females Four Decades Later"](http://pss.sagepub.com/content/early/2014/11/10/0956797614551371.full.pdf), Lubinski et al 2014 ([graphs](http://infoproc.blogspot.com/2014/11/gender-differences-in-preferences.html "Gender differences in preferences, choices, and outcomes: SMPY longitudinal study"))
 - ["Annals of psychometry: IQs of eminent scientists"](http://infoproc.blogspot.com/2008/07/annals-of-psychometry-iqs-of-eminent.html)
-- ["Studies Highlight [Futility] of Early Education"](https://www.nytimes.com/2013/04/03/business/studies-highlight-benefits-of-early-education.html?src=rechp&_r=1&)
+- ["Studies Highlight [Futility] of Early Education"](https://www.nytimes.com/2013/04/03/business/studies-highlight-benefits-of-early-education.html)
+- ["Don’t Know? Or Don’t Care?: Predicting Educational Attainment Using Survey Item Response Rates and Coding Speed Tests as Measures of Conscientiousness"](http://www.uaedreform.org/site-der/wp-content/uploads/2013/08/Hitt_Trivitt_EDRE_2013_05.pdf), Hitt & Trivitt 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/57ov16DkfVV))
+- ["Political Diversity Will Improve Social Psychological Science"](http://journals.cambridge.org/images/fileUpload/documents/Duarte-Haidt_BBS-D-14-00108_preprint.pdf), Duarte et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/1MvGV9Z9FUY))
 - ["Travels in the New Psychedelic Bazaar: The synthetic drugs being invented, refined, and produced today-and often shipped in from China-would have blown Timothy Leary's mind. Who knows what they're doing to the brains of users."](http://nymag.com/news/features/synthetic-drugs-2013-4/#print)
-- ["Thank you for doing something ambiguously between smoking and not smoking"](http://slatestarcodex.com/2013/03/28/thank-you-for-doing-something-ambiguously-between-smoking-and-not-smoking/)
-- ["What Do You Desire?"](https://nplusonemag.com/issue-16/essays/what-do-you-desire/) (on the porn company Kink.com)
-- ["Suicide: An Economic Approach"](http://storage.globalcitizen.net/data/topic/knowledge/uploads/2009051911410705.pdf), Becker & Posner 2004 ([excerpts](https://plus.google.com/103530621949492999968/posts/ZNphZPToZG5))
-- ["The Graying of Academia: Will It Reduce Scientific Productivity?"](http://www.crema-research.ch/papers/2014-06.pdf), Stroebe 2010 ([excerpts](https://plus.google.com/103530621949492999968/posts/ctxbWkhvGES))
-- ["The drugs do work: my life on brain enhancers"](http://www.theguardian.com/lifeandstyle/2013/may/03/brain-enhancing-drugs-mj-hyland)
-- ["Spaced Repetition and Mnemonics Enable Recall of Multiple Strong Passwords"](http://arxiv.org/abs/1410.1490), Blocki et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/hYKUtsf7p2g))
--  ["Subu Must Die: How a nation of junkies went cold turkey"](http://www.newrepublic.com/article/113051/georgias-war-drugs-how-its-subutex-addiction-ended)
-- [Golden Gate Bridge suicides](http://www.newyorker.com/magazine/2003/10/13/jumpers?currentPage=all "Jumpers: The fatal grandeur of the Golden Gate Bridge")
-- ["Refugees of the Modern World: The "electrosensitive" are moving to a cellphone-free town. But is their disease real?"](http://www.slate.com/articles/technology/future_tense/2013/04/green_bank_w_v_where_the_electrosensitive_can_escape_the_modern_world.single.html)
-- ["Secrets of the Magus: Ricky Jay does closeup magic that flouts reality"](http://www.newyorker.com/magazine/1993/04/05/secrets-of-the-magus)
-- ["How fast does the Grim Reaper walk? Receiver operating characteristics curve analysis in healthy men aged 70 and over"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3240682/)
 
 Technology:
 
 - [Anatomy of a hack: How crackers ransack passwords like "qeadzcwrsfxv1331"; For Ars, three crackers have at 16,000+ hashed passcodes-with 90% success.](http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/)
 - ["Crypto Rebels: It's the FBIs, NSAs, and Equifaxes of the world versus a swelling movement of Cypherpunks, civil libertarians, and millionaire hackers. At stake: Whether privacy will exist in the 21st century"](http://archive.wired.com/wired/archive/1.02/crypto.rebels_pr.html)
 - [N-body choreographies](http://www.scholarpedia.org/article/N-body_choreographies)
-http://www.wired.co.uk/news/archive/2013-04/16/f-1-moon-rocket/viewall
-http://arstechnica.com/gadgets/2013/04/a-history-of-the-amiga-part-9-the-demo-scene/
+- ["How NASA brought the monstrous F-1 'moon rocket' engine back to life"](http://www.wired.co.uk/news/archive/2013-04/16/f-1-moon-rocket/viewall)
+- ["A history of the Amiga, part 8: The demo scene"](http://arstechnica.com/gadgets/2013/04/a-history-of-the-amiga-part-9-the-demo-scene/)
 - [Reimplementing "git clone" in Haskell from the bottom up](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/)
-- [Spreadsheet mistakes](http://www.eusprig.org/horror-stories.htm)
-- ["The Hundred-Year Language"](http://paulgraham.com/hundred.html)
-- [M50 Ontos](https://en.wikipedia.org/wiki/M50_Ontos)
-- [Photoacoustic spectroscopy](https://en.wikipedia.org/wiki/Photoacoustic_spectroscopy)
-- ["Turing Drawings": flowing sand](http://www.wry.me/hacking/Turing-Drawings/#3,6,2,2,3,2,4,0,0,1,0,2,1,2,1,1,0,1,2,3,2,3,0,2,1,0,2,5,3,2,5,2,2,4,1,1,5,0,2,4,3,0,4,0,0,1,1,2,1,3,2,1,0,2,2,0)
-- [The NSA copes with a volcano](http://www.nsa.gov/public_info/_files/cryptologs/cryptolog_126.pdf)
-https://en.wikipedia.org/wiki/Project_Iceworm
-- ["The Well Deserved Fortune of Satoshi Nakamoto, Bitcoin creator, Visionary and Genius"](https://bitslog.wordpress.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/)
 
 Economics:
 
@@ -97,52 +93,69 @@ Economics:
     - ["Untangling Trade and Technology: Evidence from Local Labor Markets"](http://marginalrevolution.com/marginalrevolution/2013/04/trade-vs-technology-in-terms-of-their-labor-market-effects.html)
     - ["The Effect of Intelligence on Job Performance is Intuitive"](http://econlog.econlib.org/archives/2013/04/the_effect_of_i.html)
     - ["Immigration and the American Worker: A Review of the Academic Literature"](http://cis.org/immigration-and-the-american-worker-review-academic-literature), Borjas 2013
-- [College major salary premiums](http://econlog.econlib.org/archives/2013/04/major_premium.html)
-- ["What Are Foundations For?"](http://www.bostonreview.net/BR38.2/ndf_rob_reich_foundations_philanthropy_democracy.php) (principal-agent conflicts; against perpetuities)
-- ["Should Psychological Neuroscience Research Be Funded?"](http://popsych.org/should-psychological-neuroscience-research-be-funded/) ([discussion](http://lesswrong.com/r/discussion/lw/h8r/link_should_psychological_neuroscience_research/))
-- [Kids for cash scandal](https://en.wikipedia.org/wiki/Kids_for_cash_scandal)
-- ["Smart companies try to commoditize their products' complements."](http://www.joelonsoftware.com/articles/StrategyLetterV.html)
-- ["The Coase Theorem is false: contracts depend on tort law"](http://unenumerated.blogspot.com/2008/05/coase-theorem-is-false-contracts-depend.html)
-- ["One Kind of Lawlessness: Estimating the Welfare Cost of Somali Piracy"](http://www.trfetzer.com/welfare-cost-somalian-piracy/)
 
 Philosophy:
 
+- ["Bayesian Informal Logic and Fallacy"](http://www.gwern.net/docs/statistics/2003-korb.pdf), Korb 2003; ["Fallacies as weak Bayesian evidence"](http://lesswrong.com/lw/aq2/fallacies_as_weak_bayesian_evidence/)
 - ["Privileging the Question"](http://lesswrong.com/r/lesswrong/lw/hba/privileging_the_question/)
 - ["Be Specific"](http://lesswrong.com/lw/bc3/sotw_be_specific/) (if you make an abstract claim, can you give at least 3 specific examples? if not, maybe you need to think about it more)
 - ["Taking Charity Seriously: Toby Ord talk on charity effectiveness"](http://lesswrong.com/r/discussion/lw/h6c/taking_charity_seriously_toby_ord_talk_on_charity/)
-- ["Transhumanist Fables"](http://slatestarcodex.com/2013/05/27/transhumanist-fables/)
-- ["Study: Wolf Attacks Still Leading Cause Of Death In U.S."](http://www.theonion.com/articles/study-wolf-attacks-still-leading-cause-of-death-in,32170/)
-- ["Even More Aphorisms and Ten-Second Essays from Vectors 3.0"](https://web.archive.org/web/20110629061349/http://www.theliteraryreview.org/WordPress/tlr-poetry/), James Richardson﻿
 
 Misc:
 
 - [Taikyoku shogi](https://en.wikipedia.org/wiki/Taikyoku_shogi)
-http://www.poemhunter.com/poem/try-to-praise-the-mutilated-world/
-"When Dickens met Dostoevsky" http://www.the-tls.co.uk/tls/public/article1243205.ece
-- [Hollywood Archaeology: _The Super Mario Bros. Movie_; Unearthing a major disaster to learn the lessons held within](http://grantland.com/features/the-strange-case-super-mario-bros-movie/)
-- Odd subreddits: ["dragonsfuckingcars" (NSFW/R18)](https://pay.reddit.com/r/dragonsfuckingcars)
-- ["On Pins and Needles: Stylist Turns Ancient Hairdo Debate on Its Head"](http://online.wsj.com/news/articles/SB10001424127887324900204578286272195339456)
+- ["Try To Praise The Mutilated World"](http://www.poemhunter.com/poem/try-to-praise-the-mutilated-world/), Adam Zagajewski
+- ["Morning Song of Senlin"](http://www.poetry-archive.com/a/morning_song_of_senlin.html), Conrad Aiken
+- ["When Dickens met Dostoevsky"](http://www.the-tls.co.uk/tls/public/article1243205.ece)
 
 <!-- Back to 21 March 2013 -->
 
-## Books
-
-Nonfiction:
-
-Fiction:
-
 ## Film/TV
 
-Anime:
+Film:
+
+- [_The Shining_](https://en.wikipedia.org/wiki/The_Shining_%28film%29)
+- [_The Secret Life of Walter Mitty_](https://en.wikipedia.org/wiki/The_Secret_Life_of_Walter_Mitty_%282013_film%29) (2013 remake); pretty decent, albeit very little like story, and a rather shoehorned in quest/Blue Bird of Happiness which undermines original short story's protagonist by implying he was a failure before & the core dreaming was escapism
+
+TV:
+
+- [_The Wire_](https://en.wikipedia.org/wiki/The_Wire)
+
+    Lives up to its fame (as long as you watch with subtitles), more than 12 years later. Satisfyingly intricate and intelligent police drama delving into the War on Drugs from a realistic point of view not blinded by idealism or unfounded confidence in police, courts, or governments like so many other shows which are based more on what writers think the audience wants to be true. Better than any other cop show I've watched. The filming on location in Baltimore helps realism for me, since I've wandered around Baltimore more than once. The downside is that the ~60 hours demands to be marathoned, and ate my month.
+
+    The first season is perfect in its taut narrative from start to finish and illustrating the theme of _The Wire_: it's the incentives, stupid.
+
+    There's a lot of discussion of _The Wire_ and praise for how it deals with racial themes, but this misses the mark - race is almost entirely irrelevant in the series, except occasionally as something fools are blinded by and can be manipulated with (such as how Clay Davis gulls voters and jurymen with racial rhetoric).
+    What is important is how, black or white, male or female, everyone faces pressure from the system & reality to maximize pursuit of their assigned objectives, not the underlying latent goals.
+
+    Everyone is 'juking the stats' and responding to incentives to the extent that the series is practically a primer on [public choice](https://en.wikipedia.org/wiki/Public_choice): the police respond to overtime increases and pressure to fake the crime statistics; poorer people respond to demand from junkies to make easy risky money selling drugs; politicians respond to the pressure from myopic voters and their ambition for re-election or election to higher office to do what looks good rather than what is good; newspapers tolerate faked news for the potential awards; and everyone faces coordination problems posed by incentives. Stringer Bell & Avon Barksdale sell each other out, resulting in their death & incarceration respectively; two prisoners remain silent but one is tricked into thinking the other is talking and then defects; a stickup boy is tortured to death, not because anyone really wants to but to maintain deterrence; a young boy talks to police, but an error results in his defection being detected and punished; the mayor frantically argues with his advisers to maintain a successful drug legalization policy but his police chief interprets the delay as indicating the mayor is preparing to pin all the blame on him and defects to the newspapers, contributing to the mayor's electoral defeat; the next mayor asks for FBI help with a cluster of murders but that's outside the FBI's terrorism mission (FBI employees are not rewarded for making Americans safer but fighting 'the War on Terror') and he refuses the political sacrifice which would give them cover to help. Incentives pop up from the grand politics to the low interpersonal relationships: the political consultant won't sleep with the mayor when he's only a lowly councilman but the instant he's elected? Jumps on him the first moment they're alone.
+
+    And this is all systemic, so it's not clear how it could ever be fixed. Anyone who claims to be a reformer may well decide to 'sell out' and respond to the incentives, as the season 3-5 mayoral arc illustrates. Real-world events since then have illustrated this: one of the saddest things about _The Wire_ is that there's only one thing in the _Wire_ world which actually seems to be done right and morally: the eponymous wiretaps. They have to show probable cause, they get it for limited times and purposes, barely abuse it at all, and have to fight to have it at all. When they do abuse it, it's in the service of a good cause, the abuse is discovered, and the culprits are punished more than most characters. And now here we are in 2014 with smartphones and Facebook and the endless Snowden revelations, and it all doesn't mean shit any more. All it took was one terrorist attack, and that was that. The politicians responded to the incentives.
+
+    One of the things I like most is that almost none of this is spoonfed you: season 3 doesn't ever explicitly point out the parallel plots are Prisoner's Dilemmas in which both groups wind up defecting and reaching the worst outcome for most members, it expects you to infer this; similarly, when the white junkie kid ODs, it doesn't hammer his death in, just does a quick ~10 second bit of his body being found and you barely see his face; or when you see the police major at a gay bar, explaining why he has no family and is such a paranoid careerist, he's just a face in the background; or it establishes characters in bits which are almost invisible, such as in season 4 when the camera pans in on the ex-convict's boxing gym past a poster of Avon's photo up on the wall with the legend 'platinum club' - referencing the original photo in season 1 of Avon, and also requiring us to remember that Avon didn't want his sponsorship known because he was free but that he's back in jail now in this season and this is a comment on the boxer's loyalty. Timing can be established similarly, in the unremarked-upon upgrade of kids playing _Halo_ on Xbox to playing it on Xbox 360.
+
+    There are some missteps. I disagree with the pollyanna-ish approach to inner-city school problems; the kids are pretty bad at playing _Halo_ - the SMGs are useless against close-in Elites, they should've been meleeing them; Stringer Bell misuses the concept of elasticity, confusing it with competitiveness/market-power; the Brother Muzon character was a bad idea, coming off like a a shonen or comic book monster-of-the-week character ('the nerd gunfighter!'); in contrast to the others, the gang boss Marlo is too opaque and it's unclear what motivates him besides sheer lust for power and an animalistic taste for conflict; season 2 wastes time on the Ziggy character who winds up contributing nothing; and I'm unsure the mayoral arc of season 3-5 *really* needed to last that long.
+- [_Blue Blazes_](https://en.wikipedia.org/wiki/Aoi_Hon%C5%8D)
+
+    Live-action Japanese TV series, 11 half-hour episodes: quasi-autobiographical account of the manga artist [Kazuhiko Shimamoto](https://en.wikipedia.org/wiki/Kazuhiko_Shimamoto)'s university years as he flailed around, drew manga, and finally got a break in a magazine's contest. The mangaka himself isn't particularly notable - he did the [_Blazing Transfer Student_](https://en.wikipedia.org/wiki/Hon%C5%8D_no_Tenk%C5%8Dsei) manga and apparently the _Anime Tenchou_ commercials, which are "hot blooded youth" bombastic fun heavy on sketchy art to convey intensity & drama & speed, but I had to look up his WP entry to realize that he was involved in those.
+
+    The series is heavy on exaggerated emotion and facial reactions as the protagonist lurches from extremes of high and low, and draws on cringe-humor - you're laughing at the follies of his youth, not laughing with him. Tastes will vary for this kind of humor. Personally, I find some bathos is fine, but sustained over a series is a bit too much. The romantic subplots are also a misstep as they wind up being irrelevant, and inflicting a character on us whose voice is best described as a nasal whine.
+
+    The *real* interest of _Blue Blazes_ is in the otaku culture depicted; it is stuffed with cameos (Hiroyuki Yamaga is the bartender in the scene about him forgetting to breathe; Toshio Okada plays Osamu Tezuka after Daicon; several manga editors have small parts), allusions and in-jokes, many of which I didn't even get (the episode intros are based on kyodai hero poses from Ultraman & other franchises, but I've never seen enough of them to recognize them) but some of which were hysterical (to me) - the manga club character dominates every scene he is in, eg after crushing the protagonist's dreams by critiquing his draft, remarks "One does not care to recall the mistakes of youth!" and rides away on his pink bicycle, declaring, "it's three times as fast!" (Char Aznable/_Mobile Suit Gundam_). In particular, I was surprised to learn that he had gone to the same university at the same time with some of the founders of Gainax, and it is depicting Hideaki Anno, Hiroyuki Yamaga, and the run-up to the DAICON films where it shines for me as it gives another perspective on early Gainax beyond [_The Notenki Memoirs_](http://www.gwern.net/docs/2002-notenki-memoirs). He apparently competed with them but was crushed; eg ep3 has Anno doing the Gendo pose after crushing everyone in animation (as expected from the master!). The character sketches are dead-on: when a room-mate's sister visits and Anno learns she has not seen _Mobile Suit Gundam_ and shows his hospitality by marathoning 12 episodes with her, one senses this is something that really happened and which his friends have never let him live it down. Other incidents are interestingly reflective of the times: getting a new VCR to allow stepping through home-videos of animated series frame by frame, to better understand them; visiting an animation supply shop just to watch a loop of anime series intros on their TV; passing out slowly and dramatically, imitating a tokusatsu; re-enacting a sea fight in the baths. The student films shown seem to either be the originals or shot-by-shot remakes. Other aspects are... odd. If episode 8 is remotely accurate, [Toshio Okada](https://en.wikipedia.org/wiki/Toshio_Okada) was crazier than a bag of honey-roasted peanuts and his nouveau-riche family (with terrible decorating taste) made their money off blatantly counterfeiting money, which undermines my generally positive impression of him.
+
+    Overall: a must-watch for anyone interested in Gainax; probably a good watch for anyone who liked _Bakuman_ or _Genshiken_; maybe a watch for anime fans; probably better skipped by anyone else.
 
 ## Music
 
 Touhou:
 
+- ["千年幻想郷 ~ History of the Moon"](https://www.youtube.com/watch?v=9kSv46mOApg) (Liverne (ゆう), Yu- (Phoenix Project), Tokunan; _Touhou Gensou Shiten 2 "Canon"_ {C71}) [metal]
 - ["チルノ ／おてんば恋娘"](https://www.youtube.com/watch?v=zpYOzgIwbXY) (Yoshiki Ara; _Charisma Lash Type-M_ {C86}) [orchestral]
 - ["ソリテス・パラドックス"](https://www.youtube.com/watch?v=R8GdWiPh6Xw) (Ryuuha Mikaido; _ティマイオス ～風の詩～_ {C86}) [orchestral]
 - ["オッカムの剃刀"](https://www.youtube.com/watch?v=_tfx0cOc5no) (Ryuuha Mikaido; _ティマイオス ～風の詩～_ {C86}) [orchestral]
-- ["千年幻想郷 ~ History of the Moon"](https://www.youtube.com/watch?v=9kSv46mOApg) (Liverne (ゆう), Yu- (Phoenix Project), Tokunan; _Touhou Gensou Shiten 2 "Canon"_ {C71}) [metal]
+- ["Even if they say nothing in the night"](https://www.youtube.com/watch?v=WGCKucb2DlE) (Machikado-Mapoze; _Dancing Phantasmagoria_ {C86}) [waltz]
+- ["Library Rag"](https://www.dropbox.com/s/zxfturz83ro6ss2/machikadomapoze-dancingphantasmagoria-libraryrag.ogg) (Machikado-Mapoze; _Dancing Phantasmagoria_ {C86}) [ragtime]
+- ["巫女みこ茶々々"](https://www.dropbox.com/s/vlp4s1o4svbrx0i/machikadomapoze-dancingphantasmagoria-%E5%B7%AB%E5%A5%B3%E3%81%BF%E3%81%93%E8%8C%B6%E3%80%85%E3%80%85.ogg) (Machikado-Mapoze; _Dancing Phantasmagoria_ {C86}) [Cha-cha-chá]
 - ["佐々木喜善はかく語りき ～ 願わくはこれを語りて平地人を戦慄せしめよ"](https://dl.dropboxusercontent.com/u/5317066/music/%E3%82%B8%E3%83%A3%E3%83%A0-daydreamtunes-%E4%BD%90%E3%80%85%E6%9C%A8%E5%96%9C%E5%96%84%E3%81%AF%E3%81%8B%E3%81%8F%E8%AA%9E%E3%82%8A%E3%81%8D%E9%A1%98%E3%82%8F%E3%81%8F%E3%81%AF%E3%81%93%E3%82%8C%E3%82%92%E8%AA%9E%E3%82%8A%E3%81%A6%E5%B9%B3%E5%9C%B0%E4%BA%BA%E3%82%92%E6%88%A6%E6%85%84%E3%81%9B%E3%81%97%E3%82%81%E3%82%88.ogg) (ジャム; _DAYDREAM TUNES_ {C86}) [classical]
 - ["天空の花の都"](https://www.dropbox.com/s/7lic0w53ct0dszt/%E5%9F%BC%E7%8E%89%E6%9C%80%E7%B5%82%E5%85%B5%E5%99%A8-cradlereboot-%E6%9D%B1%E6%96%B9%E5%B9%BB%E6%A8%82%E7%A5%80%E5%85%B8%E5%A4%A9%E7%A9%BA%E3%81%AE%E8%8A%B1%E3%81%AE%E9%83%BD.ogg) (埼玉最終兵器; _Cradle Re:BOOT -東方幻樂祀典-_ {C86}) [metal]
 - ["An Enlarging Story"](https://www.youtube.com/watch?v=SKsAtiFwyAk) (RD-Sounds; _Slaughter_ {C86}) [orchestral]
@@ -151,12 +164,15 @@ Touhou:
 
 Doujin:
 
-- ["パラミシアの狼"](https://www.dropbox.com/s/x2cmb3fnw2w19zv/okei-sonora-%E3%83%91%E3%83%A9%E3%83%9F%E3%82%B7%E3%82%A2%E3%81%AE%E7%8B%BC.ogg) (O-kei feat. ヤマイ; _SONORA_ {2014}) [Jpop]
 - ["Summer Dayz"](https://www.dropbox.com/s/ruqrzypuvf1oblw/%E6%9D%91%E7%80%AC%E6%82%A0%E5%A4%AA-adhouse3-summerdayz.ogg?dl=0) (村瀬悠太; _AD:HOUSE 3_ {C86}) [instrumental]
-
-Kantai Collection:
+- ["またあした"](https://www.youtube.com/watch?v=5S35CzMaeCA) (bacon8 feat. nijimine kakoi; _luminous flux_ {C85}) [acoustic]
+- ["パラミシアの狼"](https://www.dropbox.com/s/x2cmb3fnw2w19zv/okei-sonora-%E3%83%91%E3%83%A9%E3%83%9F%E3%82%B7%E3%82%A2%E3%81%AE%E7%8B%BC.ogg) (O-kei feat. ヤマイ; _SONORA_ {2014}) [Jpop]
+- ["Call My Cell"](https://dl.dropboxusercontent.com/u/5317066/music/higedriver-higedance-callmycell.ogg) (Hige Driver feat. ΦKushiΦ; _Hige Dance_ {C86}) [electronic]
 
 Vocaloid:
 
+- ["Back to You"](http://youtu.be/6m5A03IkWDE?t=4m20s) (Luka; Planty; _Planet Planty_ {2014}) [trance]
+- ["In Adversae"](http://youtu.be/6m5A03IkWDE?t=3m25s) (Luka, Kaito; Planty; _Planet Planty_ {2014}) [trance]
 - ["It was ten days ago."](https://www.youtube.com/watch?v=sbn1AcvXKQQ) (Miku; Toku-P; _The Universe_ {2009}) [vocal]
 - ["魁!パンツメン☆ミ"](http://www.nicovideo.jp/watch/sm22678844) (Miku; KASANE; _sync-loid:05_ {2014}) [Jpop]
+- ["Boku mo Kuzu Dakara"](https://www.youtube.com/watch?v=oypERR3HKOU) (Miku; PinnochioP; _Yusei Masshirake_ {VM27}) [Jpop]

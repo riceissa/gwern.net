@@ -1,0 +1,136 @@
+---
+title: 23andMe SNP testing
+description: Discussion of my genetic results
+tags: psychology, statistics, biology
+created: 6 Oct 2014
+status: in progress
+belief: possible
+...
+
+ordered: 10/07/2014
+physically received from relative: 11/3
+23andMe surveys done: 11/3, ~4 hours
+sent: 11/5
+arrived at lab: 11/11
+raw data available: 11/17 (made Promethease that day)
+ancestry reports finished: 11/20
+
+Neanderthal: 2.4% (18th percentile)
+No surprises in the ancestry haplotypes - Dutch through father, and indeed, 'R1b1b2a1a1 is most commonly found on the fringes of the North Sea.' https://www.23andme.com/you/haplogroup/paternal/ ; quasi-English through my mother, so I1a1 and 'Example Populations: Celtic Britons, Georgians, Azeris, Sindhi' https://www.23andme.com/you/haplogroup/maternal/
+ 99.8% european, 36% British/Irish, 21.7% French/German, 29.5% 'broadly northern European', 1.2% Ashkenazi. so the family summary that
+                  we're British/Dutch seems to be... actually completely right. except for the Jewish bit
+12:46:59 <@gwern> and 64 is log2(64) = 6, so that's
+                  1parents/2grandparents/3great-grandparents/4great-great-grandparents/5great-great-great-grandparents/6great-great-great-great-grandparents
+12:47:08 <@gwern> I think?
+Ashkenazi 1.2% https://www.23andme.com/you/labs/ancestry_finder/?ngp=1&cln=1&ash=1 https://www.23andme.com/you/community/thread/19073/ https://www.23andme.com/you/ancestry/composition/ if it's on my father's side, that's a bit more plausible; who knows what my Dutch/German ancestors were up to? not so much on the maternal side, they've been on this side of the pond for quite a while
+DNA matches: 3 2-3rd cousins, 430 4th cousins, 531 more distant
+
+about Promethease: http://snpedia.com/index.php/Promethease http://www.technologyreview.com/featuredstory/531461/how-a-wiki-is-keeping-direct-to-consumer-genetics-alive/
+https://en.wikipedia.org/wiki/SNPedia
+
+Promethease: 11 minutes 32 seconds
+Total 998 seconds
+https://dl.dropboxusercontent.com/u/5317066/2014-11-17-promethease.zip
+
+On risks:
+http://en.wikipedia.org/wiki/Genetic_Information_Nondiscrimination_Act
+http://ideas.4brad.com/without-knowing-it-were-all-gene-databases-already
+http://venturebeat.com/2013/11/26/warning-letter-to-23andme-could-be-a-landmark-case-for-health-care/ mastectomy?
+harmful info:
+http://www.wired.com/2010/06/ff_sergeys_search/all/1
+> But, surprisingly, the concept of genetic information as toxic has persisted, possibly because it presumes that people aren’t equipped to learn about themselves. But research shows this presumption to be unfounded. In 2009, The New England Journal of Medicine published results of the Risk Evaluation and Education for Alzheimer’s Disease study, an 11-year project that sought to examine how people react to finding out that they have a genetic risk for Alzheimer’s. Like Parkinson’s, Alzheimer’s is a neurodegenerative condition centering on the brain. But unlike Parkinson’s, Alzheimer’s has no known treatment. So learning you have a genetic predisposition should be especially toxic. In the study, a team of researchers led by Robert Green, a neurologist and geneticist at Boston University, contacted adults who had a parent with Alzheimer’s and asked them to be tested for a variation in a gene known as ApoE. Depending on the variation, an ApoE mutation can increase a person’s risk for Alzheimer’s from three to 15 times the average. One hundred sixty-two adults agreed; 53 were told they had the mutation. The results were delivered to the participants with great care: A genetic counselor walked each individual through the data, and all the subjects had follow-up appointments with the counselor. Therapists were also on call. “People were predicting catastrophic reactions,” Green recalls. “Depression, suicide, quitting their jobs, abandoning their families. They were anticipating the worst.” But that isn’t what happened. People told that they were at dramatically higher risk for developing Alzheimer’s later in life seemed to process the information and integrate it into their lives, often choosing to lead more healthy lifestyles. “People are handling it,” Green says. “It doesn’t seem to be producing any clinically apparent distress.”
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3191239/ "Using Alzheimer’s disease as a model for genetic risk disclosure: Implications for personal genomics" Roberts et al 2011; as I expected from the research on the stability of happiness; if actually becoming a paraplegic doesn't turn out to bother people much, why would an abstract prediction of Alzheimer's?
+no changes? http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD007275.pub2/abstract http://www.nejm.org/doi/full/10.1056/NEJMoa1011893
+
+Experiences:
+http://too.blogspot.com/2008/09/lrrk2.html http://www.wired.com/2010/06/ff_sergeys_search/all/1 Brin
+http://philosophistry.com/archives/2011/02/dna-test-23andme-review.html https://news.ycombinator.com/item?id=2254648
+http://willworkforjustice.blogspot.com/2011/01/23andme-results.html
+http://samsnyder.com/2010/12/16/new-23andme-results/
+http://paulstamatiou.com/review-23andme-dna-testing-for-health-disease-ancestry https://news.ycombinator.com/item?id=1170074
+http://techcrunch.com/2008/03/02/my-23andme-dna-results/ https://news.ycombinator.com/item?id=127734
+http://manu.sporny.org/2011/public-domain-genome/ https://news.ycombinator.com/item?id=2211334 https://news.ycombinator.com/item?id=2211928 http://manu.sporny.org/2011/pd-genome-implications/ (2014 update: still happy https://twitter.com/manusporny/status/536569841323610112 )
+http://www.vox.com/2014/9/9/5975653/with-genetic-testing-i-gave-my-parents-the-gift-of-divorce-23andme https://news.ycombinator.com/item?id=8292476
+http://www.nytimes.com/2013/12/31/science/i-had-my-dna-picture-taken-with-varying-results.html?pagewanted=all&_r=0
+http://ideas.4brad.com/odds-knowing-your-cousins-23andme-part-1 / http://ideas.4brad.com/privacy-risks-genetic-genealogy-23andme-part-2
+http://www.jamesaltucher.com/2013/01/why-im-a-neanderthal-and-you-could-be-too/
+http://www.unfinishedman.com/23andme-genetic-testing-for-terrible-diseases-sweet-perks-and-family/
+http://jonsteinberg.tumblr.com/post/1298758017/how-23andme-saved-my-wife
+https://web.archive.org/web/20131208204809/http://blog.23andme.com/23andme-customer-stories/talking-about-breast-cancer/
+https://news.ycombinator.com/item?id=6220891
+https://www.quora.com/Has-anyone-who-has-done-genetic-mapping-by-23andMe-found-it-worth-it
+http://genomesunzipped.org/2011/06/3747.php
+http://nsaunders.wordpress.com/2010/05/14/23-and-me-yes-me-part-1/ http://nsaunders.wordpress.com/2010/05/23/23-and-me-%E2%80%93-yes-me-%E2%80%93-part-2/ http://nsaunders.wordpress.com/2010/06/22/23andme-yes-me-part-3/
+http://dna-explained.com/2013/12/30/promethease-genetic-health-information-alternative/
+
+Observed benefits:
+BRCA/breast cancer
+lactose intolerance
+Alzheimer's risk APOE
+hematochromatosis
+reuniting with lost family members (http://www.fourstateshomepage.com/story/dna-helps-reunite-family/d/story/okB1oVl_ukq5It6zsrUWxA https://www.23andme.com/stories/ )
+
+Whole-genome use:
+http://www.nytimes.com/2010/03/11/health/research/11gene.html?ref=science
+Whole-genome cost (for 30x coverage):
+https://en.wikipedia.org/wiki/Personal_genomics#Cost_of_sequencing_an_individual.27s_genome out of date
+https://www.genebygene.com/pages/dnadtc# $7.4k
+https://www.kickstarter.com/projects/784741307/personal-genome-sequencing projected $3.5k per-genome, but failed to launch
+http://clinical.illumina.com/clinical/illumina_clinical_laboratory/how-to-order.html no listed price, need physician approval (but ~$5k in early 2013 http://www.theguardian.com/science/2013/jun/08/genome-sequenced and with very large upfront purchase, may be possible to do amortized genomes at a wholesale cost of $1k each http://www.nature.com/news/is-the-1-000-genome-for-real-1.14530 - consumer prices would be higher though )
+https://www.scienceexchange.com/services/whole-genome-seq very sketchy labs offering whole-genomes at $2.5k-$3k
+Knome: ???
+
+Orgs:
+PGP http://www.personalgenomes.org/
+http://genomesunzipped.org/project
+http://www.snpedia.com/index.php/Genomes
+http://daver.info/ysub/
+
+Research:
+http://blog.23andme.com/health-traits/autism-study-reveals-no-genetic-associations/
+
+TODO:
+generate own ancestry graphs? http://www.genetics.ucla.edu/software/admixture/ http://pngu.mgh.harvard.edu/~purcell/plink/ and http://esquilax.stanford.edu/ and http://www.isogg.org/23andmetools.html
+SNPs:
+    schizophrenia
+    autism?
+    alcohol
+    Rietveld
+    modafinil
+
+    Klotho/IQ
+    https://en.wikipedia.org/wiki/Klotho_%28biology%29
+    http://www.snpedia.com/index.php/KL
+    rs9536314
+    rs9536314   13  33628138    TT
+    ["Life Extension Factor Klotho Enhances Cognition"](http://www.cell.com/cell-reports/fulltext/S2211-1247%2814%2900287-3), Dubal et al 2014 - benefits from (G;T)
+
+> These same kinds of patients might actually do worse than others on certain kinds of active drug therapies. In two independent studies, healthy people who had the placebo-responding version of the COMT gene fared better on cognitive and memory tasks after taking an inert pill than they did after taking tolcapone, a drug that is used in Parkinson’s patients to inhibit the COMT9,10 enzyme and control disease symptoms. Those with the opposite COMT genotype, however, did better on tolcapone in both studies, suggesting that tolcapone and other drugs that act via dopamine signaling may interfere with the placebo response.
+>
+> 9. Apud, J.A. et al. Tolcapone improves cognition and cortical information processing in normal human subjects. Neuropsychopharmacology 32, 1011-1020 (2007).
+> 10. Farrell S.M., Tunbridge E.M., Braeutigam S., & Harrison P.J. COMT Val158Met genotype determines the direction of cognitive effects produced by catechol-O-methyltransferase inhibition. Biological Psychiatry 71, 538–544 (2012).
+
+http://nautil.us/issue/16/nothingness/take-two-sugar-pills-and-call-me-in-the-morning
+
+> The findings showed that among the IBS patients who had been in the waitlist treatment arm there was no difference in treatment responses between met/met, val/val and met/val genotypes as determined by the IBS-Symptom Severity Scale and Adequate Relief. Among those in the group that received a placebo administered in a businesslike manner, the met/met genotypes showed a small improvement over their val/val and met/val counterparts. But, says Hall, among the individuals who had received placebo treatment from the warm supportive health care providers, there was a striking difference: the "met/mets" demonstrated a six-fold greater improvement in their IBS symptoms relative to the "val/vals."
+
+["Genetic marker for placebo response identified in IBS patients"](http://www.sciencedaily.com/releases/2012/10/121023172121.htm):
+
+- Fulltext: ["Catechol-O-Methyltransferase val158met Polymorphism Predicts Placebo Effect in Irritable Bowel Syndrome"](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0048135#close), Hall et al 2012
+- 42 reverse-citations http://scholar.google.com/scholar?cites=3903635436740495606&as_sdt=20000005&sciodt=0,21&hl=en
+
+possible replications:
+1. https://pdf.yt/d/Uj4UdgHEEh5gGPNo / https://www.dropbox.com/s/3a7iutvim9g7z7k/2013-cargnin.pdf / http://libgen.org/scimag/get.php?doi=10.1016/j.jpain.2013.04.006
+2. ["Catechol-O-Methyltransferase Val158Met Polymorphism Is Associated with Somatosensory Amplification and Nocebo Responses"](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0107665#close), Wendt et al 2014
+- variant? ["Conscientiousness is modified by genetic variation in catechol-O-methyltransferase to reduce symptom complaints in IBS patients"](http://onlinelibrary.wiley.com/doi/10.1002/brb3.294/full), Hall et al 2014
+
+http://snpedia.com/index.php/Rs4680
+rs4680  22  19951271    GG
+
+val=G, so I'm Val/Val
+
+["Genetic biomarkers of placebo response: what could it mean for future trial design?"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3774308/), Hall & Kaptchuk 2013, essay:
+
+> Furthermore, a differential effect of drugs and placebo, based on COMT Val158Met genotype, was observed in a series of studies that examined treatment outcomes relative to placebo and the COMT inhibitor Tolcapone [19,20]. These studies found that, whereas Val/Val subjects had a marginal placebo response relative to their strong drug response, Met/Met subjects had the opposite outcomes with a robust placebo response that was abrogated by the drug. Further research is warranted to examine whether the worsening of outcomes for Met/Met subjects is generalizable to other drug treatments, the mechanism of action of which interacts with the dopa-mine-mediated placebo pathway. Likewise, as other placebo genetic biomarkers become available, evaluating them for potential drug–placebo interactions will be important.
+> 19. Apud JA, Mattay V, Chen J, et al. Tolcapone improves cognition and cortical information processing in normal human subjects. Neuropsychopharmacology. 2007;32(5):1011–1020. [PubMed]
+> 20. Farrell SM, Tunbridge EM, Braeutigam S, Harrison PJ. COMT Val(158)Met genotype determines the direction of cognitive effects produced by catechol-O-methyltransferase inhibition. Biol. Psychiatry. 2012;71(6):538–544. [PMC free article] [PubMed]

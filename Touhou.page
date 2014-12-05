@@ -144,6 +144,53 @@ $ tail -1 Toho_arrange_circle_database-gwern.csv
 I am a little surprised that there are only 1316 entries. Either I've overestimated their thoroughness or this is limited to a specific convention or something like that... Need to look into this more.
 -->
 
+Crosscheck: number of circles at Comiket & Reitaisai? circles self-classify by 'genre code' and this is recorded in the official Comiket catalogues, where most (all?) of these numbers are drawn
+
+C86: "Statistics taken from the C86 catalogue." http://ascii.jp/elem/000/000/917/917701/002_976x637.jpg https://i.imgur.com/R0uXljZ.jpg ~1938 circles ; later estimate, 1910 https://webcatalog-free.circle.ms/Circle?genreCode=241&day=2 & i2.kym-cdn.com
+C85: " Grey: C85 statistics" https://i.imgur.com/R0uXljZ.jpg 2258 / 2272 (http://www.crunchyroll.com/anime-news/2013/11/01-1/top-doujinshi-events-most-popular-by-the-numbers original: http://yaraon.blog109.fc2.com/blog-entry-19664.html) / 2246 (according to i2.kym-cdn.com)
+C84: 2526 (according to i2.kym-cdn.com)
+C83: 2492 (according to i2.kym-cdn.com)
+[C82](http://2chan.us/wordpress/2012/07/12/c82-genre-stats/): Touhou=2670 / 2694 (according to i2.kym-cdn.com)
+[C81](http://www.sankakucomplex.com/2011/12/14/comiket-81-now-fujoshiket-touhou-should-be-expelled/): Touhou=2690 / 2656 (according to i2.kym-cdn.com)
+[C80](http://www.sankakucomplex.com/2011/07/25/comiket-80-touhou-vs-fujoshi/): Touhou=2808 / 2774 (according to i2.kym-cdn.com)
+http://www.sankakucomplex.com/2008/08/02/touhou-takeover/ (https://www.google.com/search?num=100&q=touhou%20comiket%20circle%20genre%20site%3Asankakucomplex.com%20-site%3Awww.sankakucomplex.com%2Ftag%2F) original: https://web.archive.org/web/20110722080729/http://addb.jp/index.php?Diary%2F2008-07-30 :
+C75-C79: (http://i2.kym-cdn.com/photos/images/original/000/866/132/075.jpg unknown source) C75: 1387+1356(https://web.archive.org/web/20110812023434/http://addb.jp/index.php?Diary%2F2008-12-17)/C76:1739(http://d.hatena.ne.jp/myrmecoleon/20101230/1293717241)/C77:2372(d.hatena.ne.jp)/C78:2416+2394(d.hatena.ne.jp)/C79:2774(d.hatena.ne.jp)
+C74: 885
+C73: 793
+C72: 558
+C71: 574
+C70: 366
+C69: 232
+C68: 229
+C67: 98
+C66: 50
+C65: 7 / 39 (en.touhouwiki.net)
+C64: 0 / 12 (en.touhouwiki.net)
+C63: 0 / 1 (according to http://en.touhouwiki.net/wiki/Release_Timeline#2002 ; asked about discrepency http://en.touhouwiki.net/index.php?title=Talk:Release_Timeline&curid=46413&diff=331144&oldid=262193 )
+Reitaisai (Hakurei Jinja Reitaisai / 博麗神社例大祭):
+2004-4-18  R1: 114
+2005-5-4  R2: 362
+2006-5-21  R3: 680
+2007-5-20  R4: 653
+2008-5-25  R5: 1086
+http://thwiki.cc/%E4%BE%8B%E5%A4%A7%E7%A5%AD#.E5.8E.86.E5.B1.8A.E4.BF.A1.E6.81.AF :
+2009-3-8 R6: 2948
+2010-3-14 R7:   4050
+2011-5-8 R8: 4940 (see Wikipedia)
+2012-5-27 R9: 5058
+2013-5-26 R10: 5013
+2014-5-11 R11: 4312
+2015-5-10 R12: ?
+
+
+http://www.comiket.co.jp/info-a/C77/C77CMKSymposiumPresentationEnglish.pdf / http://www.comiket.co.jp/info-a/WhatIsEng080225.pdf / http://www.comiket.co.jp/info-a/WhatIsEng080528.pdf
+C76: all=>35000
+C75: all=>35000
+C73: all=>35000
+C72: all=>35000
+pg5 of CMKSymposiumPresentationEnglish: circles graph, C1-C76
+pg6 of WhatIsEng080225: C1-C73
+
 ### Torrent
 
 Music source: [Touhou lossy music collection v.15.2](http://www.nyaa.eu/?page=torrentinfo&tid=387790) (derived from the [Touhou lossless music collection](http://www.tlmc.eu/) collection), 265.2GB of 44421 tracks from 4952 albums produced by <1,264 groups or "circles".
@@ -296,7 +343,7 @@ touhou$Event <- sapply(as.character(touhou$Event),
 # one final thing, since (almost) all directories had Dates while not all files had Years; overwrite any missing Years
 # based on the Date we just extracted
 touhou$Year <- as.integer(format(touhou$Date, "%Y"))
-touhou$Directory <- NULL # clean up
+rm(touhou$Directory) # clean up
 # escape with the loot:
 write.csv(touhou, file="2013-gwern-touhoumusic-torrent.csv", row.names=FALSE)
 ~~~
@@ -311,17 +358,17 @@ The VGMdb administrators kindly gave me read-only access to their MySQL database
 albums <- read.csv("http://www.gwern.net/docs/touhou/2013-vgmdb.csv")
 albums <- with(albums,
            data.frame(albumid,reldate,publisher,game,albumtitles))
-albums <- albums[grepl("ouhou", albums$game),]; albums$game <- NULL
+albums <- albums[grepl("ouhou", albums$game),]; rm(albums$game)
 
 tracks <- read.csv("2013-vgmdb-tracks.csv")
-tracks$tracklistid <- NULL; tracks$trackid <- NULL; tracks$disctitle <- NULL; tracks$disc <- NULL
+rm(tracks$tracklistid, tracks$trackid, tracks$disctitle, tracks$disc)
 tracks$length[tracks$length==0] <- NA # 0 is the default in the VGMdb schema
 tracks <- tracks[tracks$albumid %in% albums$albumid,]
 touhou <- merge(tracks, albums)
-touhou$albumid <- NULL; albums <- NULL; tracks <- NULL
+rm(touhou$albumid, albums, tracks)
 # deal with the 41 dates with the format "2005-09-00" (the 0th months or days are not real...)
 touhou$date <- as.Date(sub("-00","-01",as.character(touhou$reldate)))
-touhou$reldate <- NULL
+rm(touhou$reldate)
 touhou$year <- as.integer(format(touhou$date, "%Y"))
 # upcase, rearrange to torrent's order
 colnames(touhou) <- c("Track","Title","Length","Circle","Album","Date","Year")

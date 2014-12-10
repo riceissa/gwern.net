@@ -1906,7 +1906,7 @@ magnesium[is.na(magnesium$Magnesium.citrate),]$Magnesium.citrate <- -1
 ggplot(data = magnesium, aes(x=Date, y=MP, col=as.factor(magnesium$Magnesium.citrate))) +
  geom_point(size=I(4)) +
  stat_smooth() +
- scale_colour_manual(values=c("gray49", "grey35", "red1", "red2" ),
+ scale_colour_manual(values=c("gray49", "grey35", "red1", "red3" ),
                      name = "Magnesium")
 ~~~
 
@@ -1956,8 +1956,9 @@ So I went back to the original references, and scrutinizing them closely, they r
 So I went from taking ~130mg of elemental magnesium in the first period to ~800mg in the second; I don't think it is an accident that the second period seems to have been much worse (between the plot and the time trend).
 
 I find this very troubling.
-The magnesium supplementation was harmful enough to do a lot of cumulative damage over the months involved (I could have done a *lot* of writing September 2013 - June 2014), but so blatantly harmful enough to be noticeable without a randomized blind self-experiment or at least systematic data collection - neither of which are common.
-I would much prefer it if my magnesium overdose had come with visible harm, like waking up in the middle of the night after a nightmare soaked in sweat, since then I'd know quickly and surely, as would anyone else taking magnesium. But the harm I observed in my data? For all I know, that could be affecting every user of magnesium supplements! How would we know otherwise?
+The magnesium supplementation was harmful enough to do a lot of cumulative damage over the months involved (I could have done a *lot* of writing September 2013 - June 2014), but not so blatantly harmful enough as to be noticeable without a randomized blind self-experiment or at least systematic data collection - neither of which are common among people who would be supplementing magnesium
+I would much prefer it if my magnesium overdose had come with visible harm (such as waking up in the middle of the night after a nightmare soaked in sweat), since then I'd know quickly and surely, as would anyone else taking magnesium.
+But the harm I observed in my data? For all I know, that could be affecting every user of magnesium supplements! How would we know otherwise?
 
 ##### Sleep
 
@@ -1984,14 +1985,18 @@ The nutritional information states that it contains 119 servings of 0.315g magne
 This is the same dosage as the second half of the first magnesium citrate experiment (249 gel capsules there, 240 here), where the overdose effect seemed to also happen; so to avoid the overdosage, I will take one pill every other day to halve the dose to an average of ~0.078g/78mg elemental per day (piggybacking on the morning-caffeine experiment to make compliance easier).
 
 At 1 pill every other day, 14 doses, so pairs of 28-day blocks.
-The total time to use up all pills will then be ~960 days; this is a long time so I may stop early or possibly do a sequential analysis.
+The total time to use up all pills will then be ~960 days; this is a long time and excessively-powered, so I may stop early or possibly do a [sequential analysis](!Wikipedia).
+
+The benefit of sequential analysis here is being able to stop early, conserving pills, and letting me test another dosage: if I see another pattern of initial benefits followed by decline, I can then try cutting the dose by taking one pill every *3* days; or, if there is a benefit and no decline, then I can try tweaking the dose up a bit (maybe 3 days out of 5?).
+Since I don't have a good idea what dose I want and the optimal dose seems like it could be valuable (and the wrong dose harmful!), I can't afford to spend a lot of time on a single definitive experiment.
 
 #### Power
 
 Since I didn't take any 78mg elemental doses and the effects were time-varying, it's more difficult to estimate the expected effect-size and hence power.
 
 *If* I assume that the coefficient of +1.22 for `as.logical(Magnesium.citrate)TRUE`'s effect on `MP` in the previous analysis represents the true causal effect of 0.156g elemental magnesium without any overdose involved *and* that magnesium would have a linear increase (up until overdose), then one might argue that optimistically 0.078 would cause an increase of ~0.61.
-Then one could do a power estimate with that.
+Or one could eyeball the graph and note that the LOESS lines look like at the magnesium peak improved by <+0.5 over the long-run baseline of ~3
+Then one could do a power estimate with those 2 estimates.
 
 ~~~{.R}
 # _d_:
@@ -2013,7 +2018,19 @@ power.t.test(delta = 0.83, power = 0.9)
 #         sd = 1
 #  sig.level = 0.05
 #      power = 0.9
+0.5 / sd(magnesium$MP, na.rm=TRUE)
+# [1] 0.686849369
+power.t.test(delta = 0.68, power = 0.8)
+# Two-sample t test power calculation
+#
+#          n = 34.9352817
+power.t.test(delta = 0.5, power = 0.8)
+# Two-sample t test power calculation
+#
+#          n = 63.7657637
 ~~~
+
+Power considerations suggest I could probably terminate after 4 months
 
 #### Data
 
@@ -3567,139 +3584,137 @@ On the other metric, suppose we removed the creatine? Dropping 4 grams of materi
 <!--
 LLLT
 randomized experiment:
-August 2014
-02: 1
-03: 0
-04: 1
-05: 1
-06: 0
-07: NA
-08: 0
-09: 1
-10: 0
-11: 0
-12: 1
-13: 0
-14: 0
-15: 1
-16: 1
-17: 1
-18: 0
-19: 1
-20: 1
-21: 1
-22: 0
-23: 1
-24: 0
-25: 1
-26: 0
-27: 0
-28: 1
-29: 0
-30: NA
-31: 1
-September
-01: 0
-02: 0
-03: 1
-04: 1
-05: 0
-06: NA
-07: 1
-08: 0
-09: 0
-10: 0
-11: 1
-12: 1
-13: 1
-14: 0
-15: 1
-16: 0
-17: 0
-18: 0
-19: 0
-20: 1
-21: 0
-22: 0
-23: 0
-24: 0
-25: 1
-26: 0
-27: 0
-28: 0
-29: 1
-30: 0
-October:
-01: 0
-02: 0
-03: 1
-04: NA
-05: 0
-06: 0
-07: 0
-08: 0
-09: 1
-10: 0
-11: NA
-12: 1
-13: 0
-14: 0
-15: 1
-16: 1
-17: 0
-18: NA
-19: NA
-20: 0
-21: 1
-22: 1
-23: 0
-24: 0
-25: 0
-26: NA
-27: NA
-28: 1
-29: NA
-30: 1
-31: 1
-October:
-01: 0
-02: 0
-03: 1
-04: 0
-05: 0
-06: NA
-07: 0
-08: 0
-09: 1
-10: 0
-11: 0
-12: 0
-13: 1
-14: 0
-15: 0
-16: 0
-17: 0
-18: 0
-19: 1
-20: 1
-21: 0
-22: 0
-23: 1
-24: 0
-25: NA
-26: NA
-27: NA
-28: NA
-29: 0
-30: 0
-December
-01: 1
-02: 0
-03: 1
-04: 1
-05: 1
-06: 1
-07: 0
+Date,LLLT.random
+2014-08-02,1
+2014-08-03,0
+2014-08-04,1
+2014-08-05,1
+2014-08-06,0
+2014-08-07,NA
+2014-08-08,0
+2014-08-09,1
+2014-08-10,0
+2014-08-11,0
+2014-08-12,1
+2014-08-13,0
+2014-08-14,0
+2014-08-15,1
+2014-08-16,1
+2014-08-17,1
+2014-08-18,0
+2014-08-19,1
+2014-08-20,1
+2014-08-21,1
+2014-08-22,0
+2014-08-23,1
+2014-08-24,0
+2014-08-25,1
+2014-08-26,0
+2014-08-27,0
+2014-08-28,1
+2014-08-29,0
+2014-08-30,NA
+2014-08-31,1
+2014-09-01,0
+2014-09-02,0
+2014-09-03,1
+2014-09-04,1
+2014-09-05,0
+2014-09-06,NA
+2014-09-07,1
+2014-09-08,0
+2014-09-09,0
+2014-09-10,0
+2014-09-11,1
+2014-09-12,1
+2014-09-13,1
+2014-09-14,0
+2014-09-15,1
+2014-09-16,0
+2014-09-17,0
+2014-09-18,0
+2014-09-19,0
+2014-09-20,1
+2014-09-21,0
+2014-09-22,0
+2014-09-23,0
+2014-09-24,0
+2014-09-25,1
+2014-09-26,0
+2014-09-27,0
+2014-09-28,0
+2014-09-29,1
+2014-09-30,0
+2014-10-01,0
+2014-10-02,0
+2014-10-03,1
+2014-10-04,NA
+2014-10-05,0
+2014-10-06,0
+2014-10-07,0
+2014-10-08,0
+2014-10-09,1
+2014-10-10,0
+2014-10-11,NA
+2014-10-12,1
+2014-10-13,0
+2014-10-14,0
+2014-10-15,1
+2014-10-16,1
+2014-10-17,0
+2014-10-18,NA
+2014-10-19,NA
+2014-10-20,0
+2014-10-21,1
+2014-10-22,1
+2014-10-23,0
+2014-10-24,0
+2014-10-25,0
+2014-10-26,NA
+2014-10-27,NA
+2014-10-28,1
+2014-10-29,NA
+2014-10-30,1
+2014-10-31,1
+2014-11-01,0
+2014-11-02,0
+2014-11-03,1
+2014-11-04,0
+2014-11-05,0
+2014-11-06,NA
+2014-11-07,0
+2014-11-08,0
+2014-11-09,1
+2014-11-10,0
+2014-11-11,0
+2014-11-12,0
+2014-11-13,1
+2014-11-14,0
+2014-11-15,0
+2014-11-16,0
+2014-11-17,0
+2014-11-18,0
+2014-11-19,1
+2014-11-20,1
+2014-11-21,0
+2014-11-22,0
+2014-11-23,1
+2014-11-24,0
+2014-11-25,NA
+2014-11-26,NA
+2014-11-27,NA
+2014-11-28,NA
+2014-11-29,0
+2014-11-30,0
+2014-12-01,1
+2014-12-02,0
+2014-12-03,1
+2014-12-04,1
+2014-12-05,1
+2014-12-06,1
+2014-12-07,0
+2014-12-08,1
+2014-12-08,1
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Kirkland multivitamin: started 24 August 2013; break 23-27 Dec; last day: 01 October 2014 -->

@@ -13,7 +13,7 @@ status: notes
     SDr> gwern, specifically eg. scraping Pirate Bay's NFO files for wallet addresses & cross-referencing it with blockchain, is there volume for it,
            such that distributors are incentivized to provide clean cracks / keygens, as opposed to bundling blackmail-ware with it?
 
-TODO: compare against Paypal, Flattr, Gittip?
+TODO: compare against Paypal, Flattr, Gratipay?
 
 _Watashi kininarimasu_!
 
@@ -193,7 +193,7 @@ runhaskell countmissing.hs $LATEST_TORRENT
 # sort --random-sort missing.txt > randomized.txt
 # cat randomized.txt | parallel --max-chars=40 --ungroup --jobs 7 -- python -OO download.py
 
-cat missing.txt | tac | parallel --max-chars=40 --ungroup --jobs 7 -- nice python -OO download.py
+cat missing.txt | tac | parallel --max-chars=40 --ungroup --jobs 1 -- nice python -OO download.py
 ~~~
 
     gwern> there are an amazing number of 404s on tpb. I wonder why
@@ -242,3 +242,49 @@ $ find . -type f -name "description.txt" -exec grep --only-matching --extended-r
 1Fw4sRdZYFwULfeE7oQ91GLYKy8j5EcuFW
 34eae2b9725eb15e7a58fd6bf6e2fedb2c
 ~~~
+
+$ nice find tpb/ -type f -print0 | sort --zero-terminated --key=6,5 --field-separator="/" | tar --no-recursion --null --files-from - -c | nice xz -9e --check=sha256 --stdout > ~/tpb.tar.xz; alert
+
+
+> I still miss anything newer than ID 8599995 (06-2013). There is this torrent
+> ...9xxx, 10xxx and 11xxx are missing (the last torrents uploaded to TPB were 11xxx)
+> ...There were the github CSV repos (that I linked now on the page) by some other guy, but github took them down (at least the 4xxxxxx one)... I am not sure why, but they did, and they did it today, more exactly about 10 minutes ago while I was cloning it to my disk
+> ...Do you have them? I found your website when I googled it, it seems you did some experiments on it.
+> ...If you do, could you upload it somewhere? (Ideally some torrent) If you have newer than 8xxxxxx (as you seem you had), that would be even perfecter
+
+I'm not sure I have as much as you think I have: the TPB downloader broke 18 September 2014, and I stopped scraping.
+(I was getting tired of having to babysit it, it was using up a lot of bandwidth and disk space which make my backups
+*much* slower, and I wanted to focus on scraping the blackmarkets.)
+Also, note that I hacked the downloader to only download the metadata I wanted for my Bitcoin analysis;
+I did not intend or want to mirror all of TPB since I assumed the original archivers were doing that and
+that the TPB itself had better procedures than my scraping.
+So while I don't remember editing any of the archives I pulled off Github, the more recent files -which
+are probably what you really want - will not be complete.
+
+Here's a summary of what I have:
+
+    $ ls
+    03xxxxxx/  04xxxxxx/  05xxxxxx/  06xxxxxx/  07xxxxxx/  08xxxxxx/  09xxxxxx/  10xxxxxx/  11xxxxxx/  tpb2csv/
+    $ duh */.git/
+    481M    03xxxxxx/.git/
+    684M    04xxxxxx/.git/
+    718M    05xxxxxx/.git/
+    944M    06xxxxxx/.git/
+    806M    07xxxxxx/.git/
+    495M    08xxxxxx/.git/
+    156K    tpb2csv/.git/
+    4.1G    total
+    $ du -ch *
+    5.6G    03xxxxxx
+    7.7G    04xxxxxx
+    8.2G    05xxxxxx
+    11G 06xxxxxx
+    9.9G    07xxxxxx
+    6.4G    08xxxxxx
+    7.3G    09xxxxxx
+    3.8G    10xxxxxx
+    1.8G    11xxxxxx
+    208K    tpb2csv
+    62G total
+    $ find ~/tpb/ -type f | sort | xz -9e --check=sha256 --stdout > ~/tpb.txt.xz
+    # https://www.dropbox.com/s/te1zimevmmzi1qg/tpb.txt.xz

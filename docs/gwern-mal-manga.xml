@@ -12,11 +12,11 @@
 			<user_id>419845</user_id>
 			<user_name>gwern</user_name>
 			<user_export_type>2</user_export_type>
-			<user_total_manga>69</user_total_manga>
+			<user_total_manga>70</user_total_manga>
 			<user_total_reading>11</user_total_reading>
 			<user_total_completed>32</user_total_completed>
 			<user_total_onhold>2</user_total_onhold>
-			<user_total_dropped>16</user_total_dropped>
+			<user_total_dropped>17</user_total_dropped>
 			<user_total_plantoread>8</user_total_plantoread>
 		</myinfo>
 	
@@ -44,7 +44,7 @@
 				<manga>
 					<manga_mangadb_id>14787</manga_mangadb_id>
 					<manga_title><![CDATA[Ame Nochi Hare]]></manga_title>
-					<manga_volumes>0</manga_volumes>
+					<manga_volumes>8</manga_volumes>
 					<manga_chapters>0</manga_chapters>
 					<my_id>18376321</my_id>
 					<my_read_volumes>0</my_read_volumes>
@@ -505,7 +505,7 @@
 					<manga_mangadb_id>751</manga_mangadb_id>
 					<manga_title><![CDATA[Hellsing: The Dawn]]></manga_title>
 					<manga_volumes>0</manga_volumes>
-					<manga_chapters>0</manga_chapters>
+					<manga_chapters>6</manga_chapters>
 					<my_id>8366527</my_id>
 					<my_read_volumes>0</my_read_volumes>
 					<my_read_chapters>0</my_read_chapters>
@@ -583,7 +583,7 @@
 			
 				<manga>
 					<manga_mangadb_id>8446</manga_mangadb_id>
-					<manga_title><![CDATA[Ikigami]]></manga_title>
+					<manga_title><![CDATA[Ikigami: The Ultimate Limit]]></manga_title>
 					<manga_volumes>10</manga_volumes>
 					<manga_chapters>60</manga_chapters>
 					<my_id>7932166</my_id>
@@ -643,7 +643,7 @@
 			
 				<manga>
 					<manga_mangadb_id>651</manga_mangadb_id>
-					<manga_title><![CDATA[Kaze no Tani no Nausicaa]]></manga_title>
+					<manga_title><![CDATA[Kaze no Tani no Nausicaä]]></manga_title>
 					<manga_volumes>7</manga_volumes>
 					<manga_chapters>59</manga_chapters>
 					<my_id>6817865</my_id>
@@ -765,7 +765,7 @@
 					<manga_mangadb_id>6912</manga_mangadb_id>
 					<manga_title><![CDATA[Lives]]></manga_title>
 					<manga_volumes>2</manga_volumes>
-					<manga_chapters>10</manga_chapters>
+					<manga_chapters>11</manga_chapters>
 					<my_id>8872321</my_id>
 					<my_read_volumes>0</my_read_volumes>
 					<my_read_chapters>9</my_read_chapters>
@@ -775,26 +775,6 @@
 					<my_score>7</my_score>
 					<my_storage></my_storage>
 					<my_status>Reading</my_status>
-					<my_comments><![CDATA[]]></my_comments>
-					<my_times_read>0</my_times_read>
-					<my_reread_value></my_reread_value>
-					<update_on_import>0</update_on_import>
-				</manga>
-			
-				<manga>
-					<manga_mangadb_id>18365</manga_mangadb_id>
-					<manga_title><![CDATA[Matryoshka]]></manga_title>
-					<manga_volumes>0</manga_volumes>
-					<manga_chapters>1</manga_chapters>
-					<my_id>18814476</my_id>
-					<my_read_volumes>0</my_read_volumes>
-					<my_read_chapters>1</my_read_chapters>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_scanalation_group><![CDATA[]]></my_scanalation_group>
-					<my_score>7</my_score>
-					<my_storage></my_storage>
-					<my_status>Completed</my_status>
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_read>0</my_times_read>
 					<my_reread_value></my_reread_value>
@@ -825,7 +805,7 @@
 					<manga_mangadb_id>51493</manga_mangadb_id>
 					<manga_title><![CDATA[Murasakiiro no Qualia]]></manga_title>
 					<manga_volumes>3</manga_volumes>
-					<manga_chapters>18</manga_chapters>
+					<manga_chapters>21</manga_chapters>
 					<my_id>24653645</my_id>
 					<my_read_volumes>0</my_read_volumes>
 					<my_read_chapters>12</my_read_chapters>
@@ -863,9 +843,9 @@
 			
 				<manga>
 					<manga_mangadb_id>1153</manga_mangadb_id>
-					<manga_title><![CDATA[Narutaru]]></manga_title>
+					<manga_title><![CDATA[Narutaru: Mukuro Naru Hoshi Tama Taru Ko]]></manga_title>
 					<manga_volumes>12</manga_volumes>
-					<manga_chapters>67</manga_chapters>
+					<manga_chapters>68</manga_chapters>
 					<my_id>16207671</my_id>
 					<my_read_volumes>0</my_read_volumes>
 					<my_read_chapters>0</my_read_chapters>
@@ -884,17 +864,17 @@
 				<manga>
 					<manga_mangadb_id>11</manga_mangadb_id>
 					<manga_title><![CDATA[Naruto]]></manga_title>
-					<manga_volumes>0</manga_volumes>
-					<manga_chapters>0</manga_chapters>
+					<manga_volumes>72</manga_volumes>
+					<manga_chapters>700</manga_chapters>
 					<my_id>6812853</my_id>
 					<my_read_volumes>0</my_read_volumes>
-					<my_read_chapters>0</my_read_chapters>
-					<my_start_date>0000-00-00</my_start_date>
+					<my_read_chapters>514</my_read_chapters>
+					<my_start_date>2009-00-00</my_start_date>
 					<my_finish_date>0000-00-00</my_finish_date>
 					<my_scanalation_group><![CDATA[]]></my_scanalation_group>
 					<my_score>7</my_score>
 					<my_storage></my_storage>
-					<my_status>Reading</my_status>
+					<my_status>Dropped</my_status>
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_read>0</my_times_read>
 					<my_reread_value>Low</my_reread_value>
@@ -904,8 +884,8 @@
 				<manga>
 					<manga_mangadb_id>5550</manga_mangadb_id>
 					<manga_title><![CDATA[Nekome Kozou]]></manga_title>
-					<manga_volumes>4</manga_volumes>
-					<manga_chapters>11</manga_chapters>
+					<manga_volumes>3</manga_volumes>
+					<manga_chapters>13</manga_chapters>
 					<my_id>20429093</my_id>
 					<my_read_volumes>1</my_read_volumes>
 					<my_read_chapters>0</my_read_chapters>
@@ -925,7 +905,7 @@
 					<manga_mangadb_id>698</manga_mangadb_id>
 					<manga_title><![CDATA[Neon Genesis Evangelion]]></manga_title>
 					<manga_volumes>14</manga_volumes>
-					<manga_chapters>96</manga_chapters>
+					<manga_chapters>97</manga_chapters>
 					<my_id>6812829</my_id>
 					<my_read_volumes>14</my_read_volumes>
 					<my_read_chapters>96</my_read_chapters>
@@ -938,26 +918,6 @@
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_read>0</my_times_read>
 					<my_reread_value>High</my_reread_value>
-					<update_on_import>0</update_on_import>
-				</manga>
-			
-				<manga>
-					<manga_mangadb_id>760</manga_mangadb_id>
-					<manga_title><![CDATA[Neon Genesis Evangelion: Angelic Days]]></manga_title>
-					<manga_volumes>6</manga_volumes>
-					<manga_chapters>24</manga_chapters>
-					<my_id>6812831</my_id>
-					<my_read_volumes>6</my_read_volumes>
-					<my_read_chapters>24</my_read_chapters>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_scanalation_group><![CDATA[]]></my_scanalation_group>
-					<my_score>6</my_score>
-					<my_storage></my_storage>
-					<my_status>Completed</my_status>
-					<my_comments><![CDATA[]]></my_comments>
-					<my_times_read>0</my_times_read>
-					<my_reread_value>Medium</my_reread_value>
 					<update_on_import>0</update_on_import>
 				</manga>
 			
@@ -1222,6 +1182,46 @@
 				</manga>
 			
 				<manga>
+					<manga_mangadb_id>760</manga_mangadb_id>
+					<manga_title><![CDATA[Shinseiki Evangelion: Koutetsu no Girlfriend 2nd]]></manga_title>
+					<manga_volumes>6</manga_volumes>
+					<manga_chapters>27</manga_chapters>
+					<my_id>6812831</my_id>
+					<my_read_volumes>6</my_read_volumes>
+					<my_read_chapters>24</my_read_chapters>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_scanalation_group><![CDATA[]]></my_scanalation_group>
+					<my_score>6</my_score>
+					<my_storage></my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_read>0</my_times_read>
+					<my_reread_value>Medium</my_reread_value>
+					<update_on_import>0</update_on_import>
+				</manga>
+			
+				<manga>
+					<manga_mangadb_id>61403</manga_mangadb_id>
+					<manga_title><![CDATA[Shirogane no Nina]]></manga_title>
+					<manga_volumes>0</manga_volumes>
+					<manga_chapters>0</manga_chapters>
+					<my_id>39695693</my_id>
+					<my_read_volumes>0</my_read_volumes>
+					<my_read_chapters>49</my_read_chapters>
+					<my_start_date>2014-12-04</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_scanalation_group><![CDATA[]]></my_scanalation_group>
+					<my_score>7</my_score>
+					<my_storage></my_storage>
+					<my_status>Reading</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_read>0</my_times_read>
+					<my_reread_value>High</my_reread_value>
+					<update_on_import>0</update_on_import>
+				</manga>
+			
+				<manga>
 					<manga_mangadb_id>772</manga_mangadb_id>
 					<manga_title><![CDATA[Shoujo Kakumei Utena]]></manga_title>
 					<manga_volumes>5</manga_volumes>
@@ -1278,6 +1278,26 @@
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_read>0</my_times_read>
 					<my_reread_value>High</my_reread_value>
+					<update_on_import>0</update_on_import>
+				</manga>
+			
+				<manga>
+					<manga_mangadb_id>62497</manga_mangadb_id>
+					<manga_title><![CDATA[Toumei Ningen no Koi]]></manga_title>
+					<manga_volumes>1</manga_volumes>
+					<manga_chapters>5</manga_chapters>
+					<my_id>18814476</my_id>
+					<my_read_volumes>0</my_read_volumes>
+					<my_read_chapters>1</my_read_chapters>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_scanalation_group><![CDATA[]]></my_scanalation_group>
+					<my_score>7</my_score>
+					<my_storage></my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_read>0</my_times_read>
+					<my_reread_value></my_reread_value>
 					<update_on_import>0</update_on_import>
 				</manga>
 			

@@ -11,12 +11,12 @@
 				<user_id>419845</user_id>
 				<user_name>gwern</user_name>
 				<user_export_type>1</user_export_type>
-				<user_total_anime>448</user_total_anime>
+				<user_total_anime>457</user_total_anime>
 				<user_total_watching>0</user_total_watching>
-				<user_total_completed>342</user_total_completed>
+				<user_total_completed>353</user_total_completed>
 				<user_total_onhold>5</user_total_onhold>
-				<user_total_dropped>40</user_total_dropped>
-				<user_total_plantowatch>61</user_total_plantowatch>
+				<user_total_dropped>41</user_total_dropped>
+				<user_total_plantowatch>58</user_total_plantowatch>
 			</myinfo>
 		
 		
@@ -46,17 +46,17 @@
 				</anime>
 			
 				<anime>
-					<series_animedb_id>229</series_animedb_id>
-					<series_title><![CDATA[2x2=Shinobuden]]></series_title>
-					<series_type>TV</series_type>
-					<series_episodes>12</series_episodes>
-					<my_id>27422873</my_id>
-					<my_watched_episodes>12</my_watched_episodes>
+					<series_animedb_id>1901</series_animedb_id>
+					<series_title><![CDATA[11-nin Iru!]]></series_title>
+					<series_type>Movie</series_type>
+					<series_episodes>1</series_episodes>
+					<my_id>27422521</my_id>
+					<my_watched_episodes>1</my_watched_episodes>
 					<my_start_date>0000-00-00</my_start_date>
 					<my_finish_date>0000-00-00</my_finish_date>
 					<my_fansub_group><![CDATA[0]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>7</my_score>
+					<my_score>8</my_score>
 					<my_dvd></my_dvd>
 					<my_storage></my_storage>
 					<my_status>Completed</my_status>
@@ -210,7 +210,7 @@
 					<my_dvd></my_dvd>
 					<my_storage>Hard Drive</my_storage>
 					<my_status>Dropped</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_comments><![CDATA[Dropped after a few episodes, couldn't stand the rotoscoping, which is too bad because it looked pretty interesting.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>Low</my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
@@ -247,7 +247,7 @@
 			
 				<anime>
 					<series_animedb_id>1177</series_animedb_id>
-					<series_title><![CDATA[Alien Nine]]></series_title>
+					<series_title><![CDATA[Alien 9]]></series_title>
 					<series_type>OVA</series_type>
 					<series_episodes>4</series_episodes>
 					<my_id>27421792</my_id>
@@ -557,21 +557,48 @@ My only real complaint aside from the main character being obtuse and the female
 					<series_type>TV</series_type>
 					<series_episodes>13</series_episodes>
 					<my_id>27400582</my_id>
-					<my_watched_episodes>0</my_watched_episodes>
+					<my_watched_episodes>13</my_watched_episodes>
+					<my_start_date>2014-08-26</my_start_date>
+					<my_finish_date>2014-09-04</my_finish_date>
+					<my_fansub_group><![CDATA[ANE]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>7</my_score>
+					<my_dvd></my_dvd>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[Straight sequel to _Arakawa_: continues the slice-of-life+tsukkomi/boke humor with a bit of plot in moving forward the protagonist's relationship. This second season promises to resolve or at least significantly advance the Nino subplot with the first &amp; third episodes but then largely drops it. In between the usual gags, it introduces two new characters, and concludes without much more development.<br />
+<br />
+The OP/ED are visually clever and interesting, and a number of scenes capture the classic _Arakawa_ humor: episode 09's wabi-sabi tea ceremony was hilarious, the shonen &amp; Kinnikuman parodies in ep 10 were amusing, and ep12/13 answer the burning question of which of the characters would win in a fight while demonstrating how to use societal ills to herd sheep. On the down side, many plot threads from season 1 are almost completely dropped (Chief's machinations in the background to protect the riverbank, the protagonist's father's disapproval, the debt allergy) and others progress much less than justified by the time spent on them (going to Venus) which feels like a bit of a betrayal, and the 2 new characters are deeply unfunny wastes of time (Amazoness and Captain mean that ep2/5/8/11, a third of the season!, are a chore to sit through). On net, I wound up not enjoying it nearly as much as I had season 1 where all the gags and characters were fresh and which avoided the missteps of season 2.]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value>High</my_rewatch_value>
+					<my_downloaded_eps>13</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching></my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>1028</series_animedb_id>
+					<series_title><![CDATA[Arete Hime]]></series_title>
+					<series_type>Movie</series_type>
+					<series_episodes>1</series_episodes>
+					<my_id>27422130</my_id>
+					<my_watched_episodes>1</my_watched_episodes>
 					<my_start_date>0000-00-00</my_start_date>
 					<my_finish_date>0000-00-00</my_finish_date>
 					<my_fansub_group><![CDATA[0]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>0</my_score>
+					<my_score>8</my_score>
 					<my_dvd></my_dvd>
 					<my_storage></my_storage>
-					<my_status>Plan to Watch</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[_Princess Arete_ is, in many ways, an odd duck. While the ending is a good ending by many standards and educates me in some respects, it still leaves me unsatisfied - and I think that may be the mark of how it is a peculiarly *feminist* film as opposed to a regular film, in the sense of showing an empowered competent female protagonist of the kind you have to watch patiently for a Ghibli film to see usually.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value></my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -716,7 +743,7 @@ My only real complaint aside from the main character being obtuse and the female
 					<my_dvd></my_dvd>
 					<my_storage>Hard Drive</my_storage>
 					<my_status>Completed</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_comments><![CDATA[3-part anthology; skip the truly wretched first part, watch the second if you have time for a mildly-interesting metafictional kabuki play, and enjoy the third part which started _Mononoke_.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>Medium</my_rewatch_value>
 					<my_downloaded_eps>11</my_downloaded_eps>
@@ -1153,7 +1180,7 @@ My only real complaint aside from the main character being obtuse and the female
 			
 				<anime>
 					<series_animedb_id>369</series_animedb_id>
-					<series_title><![CDATA[Boogiepop Phantom]]></series_title>
+					<series_title><![CDATA[Boogiepop wa Warawanai: Boogiepop Phantom]]></series_title>
 					<series_type>TV</series_type>
 					<series_episodes>12</series_episodes>
 					<my_id>27487717</my_id>
@@ -1282,21 +1309,21 @@ My only real complaint aside from the main character being obtuse and the female
 					<series_type>ONA</series_type>
 					<series_episodes>1</series_episodes>
 					<my_id>27619250</my_id>
-					<my_watched_episodes>0</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_watched_episodes>1</my_watched_episodes>
+					<my_start_date>2014-08-16</my_start_date>
+					<my_finish_date>2014-08-16</my_finish_date>
+					<my_fansub_group><![CDATA[JOMA]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>0</my_score>
+					<my_score>7</my_score>
 					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Plan to Watch</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[_Cat Shit One_ begins in media res: two bunnies kitted out like US marines in an Iraq-like desert surveil some Middle Eastern terrorists (you know they're Middle Eastern terrorists because they're camels wearing turban-masks, carrying kalashnikovs, and not speaking Japanese) abuse 3 captive bunnies and kill one; they call in backup but naturally it will come too late and they must rescue the hostages single-handedly; one goes on, the other keeps overlook as sniper, they kill every camel they see and rescue the hostages, march them off to the helicopter meeting point, only for more trucks of camels to come and trap them in a desperate firefight, from which they are rescued by the helicopter shooting up the place. The End. The plot is that simple and the focus is on action, not world or character-building. We dunno anything about any character or why they're fighting. The computer animation is almost eerily reminiscent of more-realistic FPSes over the past decade to the point where I suspect one could create a pretty decent version of _Cat Shit One_ as a _Call of Duty_ machinima given a little modding - such a hostage-rescue scenario would fit well inside the game as a submission, down to the helicopter-perspective with the machine gun. (And given the existence of such FPSes, I sort of have to wonder why anyone felt it necessary to essentially animate a playthrough of a CoD mission.) The animal character design, while initial amusing, doesn't go anywhere: OK, they're 'usagis' or 'USA GIs' har har har, and the terrorists are camels, how appropriate. What else? After some tail-twitching in the opening, there's no visual or plot allusions or use of the animalization of the story, so it feels gimmicky and pointless. Overall, it's fairly interesting over its short length but nothing beyond that.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_rewatch_value>Very Low</my_rewatch_value>
+					<my_downloaded_eps>1</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -1457,6 +1484,31 @@ So we see that _Chihayafuru_ is struggling with an inherent disadvantage. With t
 					<my_dvd></my_dvd>
 					<my_storage></my_storage>
 					<my_status>On-Hold</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value></my_rewatch_value>
+					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>2199</series_animedb_id>
+					<series_title><![CDATA[Chirin no Suzu]]></series_title>
+					<series_type>Movie</series_type>
+					<series_episodes>1</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>0</my_watched_episodes>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>0</my_score>
+					<my_dvd></my_dvd>
+					<my_storage></my_storage>
+					<my_status>Plan to Watch</my_status>
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value></my_rewatch_value>
@@ -2665,7 +2717,7 @@ But many characters were drab, the plot was dominated by a slow trip to Japan, t
 					<my_dvd></my_dvd>
 					<my_storage></my_storage>
 					<my_status>Completed</my_status>
-					<my_comments><![CDATA[_Fate/Zero_ is as arbitrary as the other Fate stuff I've watched, but gets the absurd exposition out of the way earlier and actually has characters worth a damn (Shiro is not a character in the F/SN anime, he is a shonen buffoon). I have a few quibbles with the rest of _Fate/Zero_, but overall - fantastic. And now I know why Kuritsugu is an admired character. The Banquet of Kings, the partnership with Alexander, the betrayal of Tokiomi, the last stands at the Grail, Kuritsugu's backstory... So many great moments.]]></my_comments>
+					<my_comments><![CDATA[_Fate/Zero_ is as arbitrary as the other Fate stuff I've watched, but gets the absurd exposition out of the way earlier and actually has characters worth a damn (Shiro is not a character in the F/SN anime, he is a shonen buffoon). I have a few quibbles with the rest of _Fate/Zero_, but overall - fantastic. And now I know why Kuritsugu is an admired character. The Banquet of Kings, the partnership with Alexander, the betrayal of Tokiomi, the last stands at the Grail, Kuritsugu's backstory... So many great moments. I'm a big fan of shows that grind down and destroy characters.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>High</my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
@@ -2896,6 +2948,39 @@ But many characters were drab, the plot was dominated by a slow trip to Japan, t
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>13335</series_animedb_id>
+					<series_title><![CDATA[Fuse: Teppou Musume no Torimonochou]]></series_title>
+					<series_type>Movie</series_type>
+					<series_episodes>1</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>1</my_watched_episodes>
+					<my_start_date>2014-08-23</my_start_date>
+					<my_finish_date>2014-08-23</my_finish_date>
+					<my_fansub_group><![CDATA[DeadFish]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>8</my_score>
+					<my_dvd></my_dvd>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[_Fuse_ is an odd duck. Overall, I endorse Theron Martin's ANN review of it ( http://www.animenewsnetwork.com/review/fuse/memoirs-of-a-huntress-premium-edition/sub.blu-ray/.75342 ).<br />
+<br />
+The main appeal of the movie is its gorgeous depiction of Tokugawa Edo: the vast city with its teeming throngs and characters, lovingly depicted from the spear carriers of daimyos to the firefighting bridges and their tactics of pulling down buildings to halt fires to the popularity of woodblock prints to grandstanding actors playing to their crowds even to less pleasant aspects like teeth-blackening (which is often omitted because let's face it who wants to see pretty actresses with black teeth?). There are many little touches I enjoyed a great deal, like the cat looking in astonishment at Hamaji walking on a fence like a cat or the conversation between Hamaji and her friend while a craftsman makes colorful banners. This is a movie you'd enjoy watching and rewatching with a commentary &amp; Wikipedia at hand.<br />
+<br />
+The character designs are effective and Ghibli-esque; Hamaji could hang out with Nausicaa and Princess Kushana without skipping a beat, and the director clearly worked with Studio Ghibli in the past. This means the characters are not conventionally attractive, but they are memorable and fulfill their roles, and by verging on caricature, one can't deny - the old boat man certainly does look like a shriveled old man, the shogunate does look like a feeble young man, etc. (One dishonorable exception is the Fuse courtesan who is simply bizarre and looks for all the world like a parody of American greasers from the 1950s or something with what literally looks like a blonde mohawk.)<br />
+<br />
+The plot... is a bit of a mess. The Fuse hunt initially seems to be the main plot, but is it trying to justify fuses or humanize them? Except it does a bad job of that (they are pretty heavily implied to have not limited their hunting to self-defense, and is it really self-defense when they're after you for previous murders? and almost all of the Fuse are dead before the story even starts) and it wanders in focus from the hunt to other topics like Hamaji's ne'er-do-well brother (who one wonders how much he actually likes her given he only calls her to Edo to use her in hunting Fuse) or the shogun (whose own subplot makes no sense even by the end, as we never find out how he's an imitation, what his connection to the Fuse is, or how he apparently channels the grandfather of the Fuse) or Bakin's writing of the Hakkenden (another issue, there's clearly supposed to be some sort of meanignful connection between the Hakkenden and the 'real' story of the Fuse but we never understand what Bakin was trying to do as the story of the Hakkenden could hardly justify or spin the Fuse's murders). The courtesan Fuse's character hinges on her son, who is never seen and his death is mentioned almost as an afterthought. As well, Hamaji seems to be often dumb as a box of rocks: she never seems to think 'oh, that strange white-haired guy who murdered a bunch of people in front of me and transformed and jumped around is one of those Fuse my brother is trying to kill' and has to ask Shino's name though I'm pretty sure he was named twice before in her presence, and the final pairing of Hamaji &amp; Shino hardly makes sense either. And what does any of this have to do with dogs, anyway? By the end, I was left nonplussed.<br />
+<br />
+Enjoyable and worth watching, but the story is too peculiar for _Fuse_ to become more than the sum of its parts and be classed along with the best anime movies.]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value>High</my_rewatch_value>
+					<my_downloaded_eps>1</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -3405,6 +3490,31 @@ For those who like the new cast, this is fine. Out with the old, in with the new
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value></my_rewatch_value>
+					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>1441</series_animedb_id>
+					<series_title><![CDATA[Ginga Tetsudou no Yoru]]></series_title>
+					<series_type>Movie</series_type>
+					<series_episodes>1</series_episodes>
+					<my_id>27399818</my_id>
+					<my_watched_episodes>1</my_watched_episodes>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>9</my_score>
+					<my_dvd></my_dvd>
+					<my_storage></my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value>Low</my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching>0</my_rewatching>
@@ -4197,7 +4307,7 @@ The plot is bizarre. So a bunch of vampires led by a mechanical-clockwork man fl
 					<my_dvd></my_dvd>
 					<my_storage>Hard Drive</my_storage>
 					<my_status>Completed</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_comments><![CDATA[Cute one-shot with predictable twist ending, no real reason for anyone to watch it.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>Medium</my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
@@ -4446,7 +4556,7 @@ I don't see myself ever revisiting this series, and if I did, it would basically
 			
 				<anime>
 					<series_animedb_id>570</series_animedb_id>
-					<series_title><![CDATA[Jin-Roh: The Wolf Brigade]]></series_title>
+					<series_title><![CDATA[Jin-Rou]]></series_title>
 					<series_type>Movie</series_type>
 					<series_episodes>1</series_episodes>
 					<my_id>27400756</my_id>
@@ -4641,6 +4751,31 @@ But overall... this was, for me, a lot like _Nichijou_: a few good parts trapped
 					<my_storage></my_storage>
 					<my_status>Completed</my_status>
 					<my_comments><![CDATA[]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value></my_rewatch_value>
+					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching></my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>1025</series_animedb_id>
+					<series_title><![CDATA[Kachou Ouji]]></series_title>
+					<series_type>TV</series_type>
+					<series_episodes>13</series_episodes>
+					<my_id>27421825</my_id>
+					<my_watched_episodes>13</my_watched_episodes>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>7</my_score>
+					<my_dvd></my_dvd>
+					<my_storage></my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[I originally ran into _Black Heaven_ due to its inclusion in an _AMV Hell_, and then finished _Black Heaven_ while scanning an old anime encyclopedia (so all quite nostalgic). I wanted to like it because it seemed like a funny take on _Macross_, but the constantly repeated music, the slow and repetitive plot/pacing (in 13 episodes?!), and the occasionally very ugly animation all doomed it to pure mediocrity.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value></my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
@@ -5139,7 +5274,7 @@ In the end, _Katanagatari_ is pure style, style which almost becomes real substa
 			
 				<anime>
 					<series_animedb_id>572</series_animedb_id>
-					<series_title><![CDATA[Kaze no Tani no Nausicaa]]></series_title>
+					<series_title><![CDATA[Kaze no Tani no Nausicaä]]></series_title>
 					<series_type>Movie</series_type>
 					<series_episodes>1</series_episodes>
 					<my_id>0</my_id>
@@ -5283,6 +5418,31 @@ In the end, _Katanagatari_ is pure style, style which almost becomes real substa
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>18679</series_animedb_id>
+					<series_title><![CDATA[Kill la Kill]]></series_title>
+					<series_type>TV</series_type>
+					<series_episodes>24</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>24</my_watched_episodes>
+					<my_start_date>2014-10-05</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[Underwater]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>8</my_score>
+					<my_dvd></my_dvd>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value>High</my_rewatch_value>
+					<my_downloaded_eps>24</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -6411,21 +6571,21 @@ As usual with Shinkai, most of the praise is for the animation and visual design
 					<series_type>TV</series_type>
 					<series_episodes>12</series_episodes>
 					<my_id>0</my_id>
-					<my_watched_episodes>0</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_watched_episodes>12</my_watched_episodes>
+					<my_start_date>2014-06-26</my_start_date>
+					<my_finish_date>2014-07-09</my_finish_date>
+					<my_fansub_group><![CDATA[AnimeNOW]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>0</my_score>
+					<my_score>8</my_score>
 					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Plan to Watch</my_status>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_rewatch_value>High</my_rewatch_value>
+					<my_downloaded_eps>12</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -7101,6 +7261,56 @@ Overall, a very good series which has aged surprisingly well, and so I can well 
 				</anime>
 			
 				<anime>
+					<series_animedb_id>10389</series_animedb_id>
+					<series_title><![CDATA[Momo e no Tegami]]></series_title>
+					<series_type>Movie</series_type>
+					<series_episodes>1</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>0</my_watched_episodes>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>0</my_score>
+					<my_dvd></my_dvd>
+					<my_storage></my_storage>
+					<my_status>Plan to Watch</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value></my_rewatch_value>
+					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>17074</series_animedb_id>
+					<series_title><![CDATA[Monogatari Series: Second Season]]></series_title>
+					<series_type>TV</series_type>
+					<series_episodes>26</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>0</my_watched_episodes>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>0</my_score>
+					<my_dvd></my_dvd>
+					<my_storage></my_storage>
+					<my_status>Plan to Watch</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value></my_rewatch_value>
+					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
 					<series_animedb_id>2246</series_animedb_id>
 					<series_title><![CDATA[Mononoke]]></series_title>
 					<series_type>TV</series_type>
@@ -7408,7 +7618,9 @@ I did appreciate how they brought in good examples for Drucker's stuff (I was af
 					<my_dvd></my_dvd>
 					<my_storage>Hard Drive</my_storage>
 					<my_status>Completed</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_comments><![CDATA[Ghibli-esque movie about a professional cycling race in Spain; better than it sounds.<br />
+<br />
+(It also convinces me that professional cycling must be one of the most miserable sports ever, even without the doping part.)]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>Medium</my_rewatch_value>
 					<my_downloaded_eps>1</my_downloaded_eps>
@@ -7464,6 +7676,31 @@ I did appreciate how they brought in good examples for Drucker's stuff (I was af
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>15689</series_animedb_id>
+					<series_title><![CDATA[Nekomonogatari: Kuro]]></series_title>
+					<series_type>TV</series_type>
+					<series_episodes>4</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>0</my_watched_episodes>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>0</my_score>
+					<my_dvd></my_dvd>
+					<my_storage></my_storage>
+					<my_status>Plan to Watch</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value></my_rewatch_value>
+					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -7620,23 +7857,23 @@ By the time I finished all 26 episodes, my reaction was: what were they thinking
 				</anime>
 			
 				<anime>
-					<series_animedb_id>1441</series_animedb_id>
-					<series_title><![CDATA[Night on the Galactic Railroad]]></series_title>
-					<series_type>Movie</series_type>
-					<series_episodes>1</series_episodes>
-					<my_id>27399818</my_id>
-					<my_watched_episodes>1</my_watched_episodes>
+					<series_animedb_id>621</series_animedb_id>
+					<series_title><![CDATA[Night Walker: Mayonaka no Tantei]]></series_title>
+					<series_type>TV</series_type>
+					<series_episodes>12</series_episodes>
+					<my_id>27487642</my_id>
+					<my_watched_episodes>12</my_watched_episodes>
 					<my_start_date>0000-00-00</my_start_date>
 					<my_finish_date>0000-00-00</my_finish_date>
 					<my_fansub_group><![CDATA[0]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>9</my_score>
+					<my_score>7</my_score>
 					<my_dvd></my_dvd>
 					<my_storage></my_storage>
 					<my_status>Completed</my_status>
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value>Low</my_rewatch_value>
+					<my_rewatch_value></my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching>0</my_rewatching>
@@ -7645,11 +7882,11 @@ By the time I finished all 26 episodes, my reaction was: what were they thinking
 				</anime>
 			
 				<anime>
-					<series_animedb_id>621</series_animedb_id>
-					<series_title><![CDATA[Night Walker: Mayonaka no Tantei]]></series_title>
+					<series_animedb_id>229</series_animedb_id>
+					<series_title><![CDATA[Ninin ga Shinobuden]]></series_title>
 					<series_type>TV</series_type>
 					<series_episodes>12</series_episodes>
-					<my_id>27487642</my_id>
+					<my_id>27422873</my_id>
 					<my_watched_episodes>12</my_watched_episodes>
 					<my_start_date>0000-00-00</my_start_date>
 					<my_finish_date>0000-00-00</my_finish_date>
@@ -7684,7 +7921,7 @@ By the time I finished all 26 episodes, my reaction was: what were they thinking
 					<my_dvd></my_dvd>
 					<my_storage>Hard Drive</my_storage>
 					<my_status>Completed</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_comments><![CDATA[Wow. That toothbrush scene is really something else, isn't it? Pity that the second arc is wooden, and the first arc didn't make much sense, so overall inferior to _Bakemongatari_.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>High</my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
@@ -7845,31 +8082,6 @@ By the time I finished all 26 episodes, my reaction was: what were they thinking
 				</anime>
 			
 				<anime>
-					<series_animedb_id>195</series_animedb_id>
-					<series_title><![CDATA[Onegai Teacher]]></series_title>
-					<series_type>TV</series_type>
-					<series_episodes>12</series_episodes>
-					<my_id>27399943</my_id>
-					<my_watched_episodes>12</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
-					<my_rated></my_rated>
-					<my_score>5</my_score>
-					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Completed</my_status>
-					<my_comments><![CDATA[]]></my_comments>
-					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value>Low</my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
-					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
-					<my_rewatching_ep>0</my_rewatching_ep>
-					<update_on_import>0</update_on_import>
-				</anime>
-			
-				<anime>
 					<series_animedb_id>196</series_animedb_id>
 					<series_title><![CDATA[Onegai Twins]]></series_title>
 					<series_type>TV</series_type>
@@ -7887,6 +8099,31 @@ By the time I finished all 26 episodes, my reaction was: what were they thinking
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>Very Low</my_rewatch_value>
+					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>195</series_animedb_id>
+					<series_title><![CDATA[Onegai☆Teacher]]></series_title>
+					<series_type>TV</series_type>
+					<series_episodes>12</series_episodes>
+					<my_id>27399943</my_id>
+					<my_watched_episodes>12</my_watched_episodes>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>5</my_score>
+					<my_dvd></my_dvd>
+					<my_storage></my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value>Low</my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching>0</my_rewatching>
@@ -8299,31 +8536,6 @@ Overall, fun and cute, but not as incisive an analysis of otakudom as, say, _Gen
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_watched>1</my_times_watched>
 					<my_rewatch_value>Medium</my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
-					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching></my_rewatching>
-					<my_rewatching_ep>0</my_rewatching_ep>
-					<update_on_import>0</update_on_import>
-				</anime>
-			
-				<anime>
-					<series_animedb_id>1028</series_animedb_id>
-					<series_title><![CDATA[Princess Arete]]></series_title>
-					<series_type>Movie</series_type>
-					<series_episodes>1</series_episodes>
-					<my_id>27422130</my_id>
-					<my_watched_episodes>1</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
-					<my_rated></my_rated>
-					<my_score>8</my_score>
-					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Completed</my_status>
-					<my_comments><![CDATA[_Princess Arete_ is, in many ways, an odd duck. While the ending is a good ending by many standards and educates me in some respects, it still leaves me unsatisfied - and I think that may be the mark of how it is a peculiarly *feminist* film as opposed to a regular film, in the sense of showing an empowered competent female protagonist of the kind you have to watch patiently for a Ghibli film to see usually.]]></my_comments>
-					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching></my_rewatching>
@@ -9087,21 +9299,58 @@ Overall, fun and cute, but not as incisive an analysis of otakudom as, say, _Gen
 					<series_type>TV</series_type>
 					<series_episodes>26</series_episodes>
 					<my_id>27422144</my_id>
-					<my_watched_episodes>0</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
+					<my_watched_episodes>26</my_watched_episodes>
+					<my_start_date>2014-06-04</my_start_date>
 					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_fansub_group><![CDATA[Doki]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>0</my_score>
+					<my_score>7</my_score>
 					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Plan to Watch</my_status>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[Overall: mediocre school rom-com whose decent cast and occasional bursts of comedy/parody don't save it from overall drudgery.<br />
+<br />
+_Seto no Hanayome_ stars the generic harem comedy male lead whose main characteristics are mysteriously attracting female attention, remarkable physical endurance, and the devil's own luck. This scenario features him being saved by a mermaid who then has to marry him to prevent him from being executed for knowing about mermaids; subsequently, he 'enjoys' the attention of her unhappy relatives &amp; yakuza loyalists, admirers, and rivals, who all accurately enough observe that she's too good for him, but of course it turns out to be true love anyway. (A time-honored formula going back at least to _Urusei Yatsura_.)<br />
+<br />
+The plot is heavy on cliche. Each character has their shtick and boy do they ever stick to it (don't expect characters like Gozaburo Seto to change through the many episodes; Shark-san will continue to try to eat the lead, the mother will swoon over Masa, etc etc).<br />
+<br />
+What rescues SnH from the delete-immediately category is its willingness to take the 'secret mermaid society' conceit and run with it (the mermaids' inborn fear of cats; San's fear of her policewoman classmate Mawari; the Seto Special Squad brothers; the Seto TV shopping channel with tail-enhancing prosthetics; Nakajima constantly being an octopus without it being remarked, and octopus kebabs showing up suspiciously often), and to engage in over the top parodies (the two-episode war between San &amp; Luna loyalists, chockful of _Fist of the North Star_ references &amp; shonen parody; the similar OVA 1; episode 24 where Kai is dying; the Masa mini-episodes slyly mimicking the 'bar scenes' in yakuza/crime dramas, where the game is to guess which character he's talking to before the punchline; Lunar's Papa's _Terminator_ episode and then later allusions; Saru's ero-hermit; episode 19's jidaigeki setting &amp; equation of man-mermaid pairings as a threat to the existing order akin to pro-Imperial revolutionaries in Tokugawa Japan; ep22's depiction of San's ideal delinquent boyfriend). The more 'serious' romantic arc like ep02 and ep25-26 are also good enough to not leave a bad taste.<br />
+<br />
+What stops SnH from being better than the watch category is its many wasted opportunities.<br />
+For example, the tail-changing-in-water mechanic might be considered to be the prelude to constant hijinks; as we saw with _Ranma 1/2_, a water-change mechanism can be exploited in countless ways. SnH uses it a few times and forgets it. Or, the first time San does her 'chivalry is spelled the same way as mermaid' shtick, you might infer that this will be ripe for comedy as irrelevant coincidences of kanji lead a headstrong San into considerable silliness. Nope. The yakuza/Mawari angle is weirdly downplayed.<br />
+And SnH has entire misfiring episodes: episodes 12 &amp; 13 would've been better combined; episode 14 seems a bit thin as a standalone episode (an entire episode on mermaid fear of cats?) and like it would have worked much better as a subplot in another episode; episode 15 is a complete waste, as is episode 21 (both focused on the president character, who should've been mercilessly cut); episode 20 is just uncomfortable and not nearly as funny as the creators apparently think; episode 23 tries to resolve the Masa character but just leaves him in a weird limbo state vis-a-vis his sister which makes one wonder why ep23 even existed when Masa was fine on his own as a 'cool gangster'/mentor character. 26 episodes is a lot of time to work with, but if you want a good comedy, you can't leave so much slack &amp; worthless material. (A similar problem sabotaged _Nichijou_: too much space to fill, not enough top material.)<br />
+<br />
+So you couldn't really compare it to better comedies like _FMP: Fumoffu_ or _Azumanga Daioh_ or better dramas like _Toradora_.]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value>Medium</my_rewatch_value>
+					<my_downloaded_eps>26</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching></my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>4163</series_animedb_id>
+					<series_title><![CDATA[Seto no Hanayome OVA]]></series_title>
+					<series_type>OVA</series_type>
+					<series_episodes>2</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>2</my_watched_episodes>
+					<my_start_date>0000-00-00</my_start_date>
+					<my_finish_date>2014-06-18</my_finish_date>
+					<my_fansub_group><![CDATA[]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>7</my_score>
+					<my_dvd></my_dvd>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_rewatch_value>Medium</my_rewatch_value>
+					<my_downloaded_eps>2</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -9412,21 +9661,21 @@ Overall, fun and cute, but not as incisive an analysis of otakudom as, say, _Gen
 					<series_type>TV</series_type>
 					<series_episodes>22</series_episodes>
 					<my_id>27421846</my_id>
-					<my_watched_episodes>0</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_watched_episodes>22</my_watched_episodes>
+					<my_start_date>2014-05-13</my_start_date>
+					<my_finish_date>2014-05-14</my_finish_date>
+					<my_fansub_group><![CDATA[Coalgirls]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>0</my_score>
+					<my_score>7</my_score>
 					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Plan to Watch</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[Attempt at psychological/supernatural horror that ultimately falls short of building up to anything interesting.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_rewatch_value>Low</my_rewatch_value>
+					<my_downloaded_eps>22</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -9700,6 +9949,31 @@ Thinking harder about _Soredemo_ afterwards: in retrospect, the biggest flaw was
 				</anime>
 			
 				<anime>
+					<series_animedb_id>1048</series_animedb_id>
+					<series_title><![CDATA[SoulTaker]]></series_title>
+					<series_type>TV</series_type>
+					<series_episodes>13</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>5</my_watched_episodes>
+					<my_start_date>2014-08-04</my_start_date>
+					<my_finish_date>2014-08-15</my_finish_date>
+					<my_fansub_group><![CDATA[Temuchin]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>6</my_score>
+					<my_dvd></my_dvd>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Dropped</my_status>
+					<my_comments><![CDATA[Prompted by a pretty positive review in http://animeyearbyyear.wordpress.com/2014/07/24/2001-2/ , I decided to check out a very early Akiyuki Shinbo work I hadn't heard of before. One could tell from the first few seconds that it was definitely a Shinbo work, as his visual tricks and cuts are unmistakable, and the characters even are eerily like _Bakemonogatari_ (main character = main character, Shiro=Meme Oshino, Maya=Senjougahara, Hospital defector Komugi Nakahara = Mayoi Hachikuji), possibly due to character designer Akio Watanabe. Indeed, it made me wonder how much Shinbo could've grown as a director since 2001 if it was so instantly recognizable. But anyway, I wound up being disappointed. The visual effects are jerky, action disjointed and impossible to follow, layouts of settings nonexistent, and clearly half the stylistic stuff is there to cover up the cheap budget, with every scene set at night, in fog, or other murkiness to save on animation &amp; background labor; a number seem loosely borrowed from _Neon Genesis Evangelion_ (not the only borrowings: there's also the shallow Christian allusions/iconography; the techno-buildings; the underground city in ep5; soul lyrics in ep4; a character named 'Yui' who looks like Ritsuko Akagi; the protagonist's father transforms into Unit-01 etc). The characters are deeply unmemorable and flat, to the point where calling these characters cardboard would be an insult to everyone who's ever painted a sign on cardboard. The plot hardly makes a lick of sense or even tries (if one were feeling very charitable, one might call it 'surreal' or 'dreamlike'), and the powers, far from being imaginative or curious, are dull: oh hey, a bunch of people shoot lasers, and another shoots sound waves, how pedestrian and formulaic... (I feel this dullness particularly acutely since I just finished the novel/series _Worm_, whose overwhelming virtue is that almost every superpower is interesting and used in diverse ways.) In short, there's nothing here but for the Shinbo scholar, or completionist who has already watched the -gataris, _Le Portrait de Petit Cossette_, _Tsukuyomi: Moon Phase_, _Nanoha_, _Sayonara Zetsubou Sensei_, _Arakawa Under the Bridge_, etc.]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value>High</my_rewatch_value>
+					<my_downloaded_eps>13</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching></my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
 					<series_animedb_id>198</series_animedb_id>
 					<series_title><![CDATA[Speed Grapher]]></series_title>
 					<series_type>TV</series_type>
@@ -9761,21 +10035,21 @@ All in all, unsatisfactory. One of those incomplete series like _Chaos;head_, wh
 					<series_type>Movie</series_type>
 					<series_episodes>1</series_episodes>
 					<my_id>27422567</my_id>
-					<my_watched_episodes>0</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
+					<my_watched_episodes>1</my_watched_episodes>
+					<my_start_date>2014-09-06</my_start_date>
+					<my_finish_date>2014-09-10</my_finish_date>
+					<my_fansub_group><![CDATA[Afro]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>0</my_score>
+					<my_score>8</my_score>
 					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Plan to Watch</my_status>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
 					<my_comments><![CDATA[]]></my_comments>
 					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_rewatch_value>Medium</my_rewatch_value>
+					<my_downloaded_eps>1</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -9957,6 +10231,43 @@ Then we finish with a roller-coaster of an ending. Really awesome epiphany/parti
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching>0</my_rewatching>
+					<my_rewatching_ep>0</my_rewatching_ep>
+					<update_on_import>0</update_on_import>
+				</anime>
+			
+				<anime>
+					<series_animedb_id>2033</series_animedb_id>
+					<series_title><![CDATA[Tamala 2010: A Punk Cat in Space]]></series_title>
+					<series_type>Movie</series_type>
+					<series_episodes>1</series_episodes>
+					<my_id>0</my_id>
+					<my_watched_episodes>1</my_watched_episodes>
+					<my_start_date>2014-09-10</my_start_date>
+					<my_finish_date>0000-00-00</my_finish_date>
+					<my_fansub_group><![CDATA[MW]]></my_fansub_group>
+					<my_rated></my_rated>
+					<my_score>7</my_score>
+					<my_dvd></my_dvd>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[I learned of _Tamala_ from Anime Year by Year's 2002 entry (archived at http://archive.today/bm4So), which describes the work thus:<br />
+<br />
+&quot;Unbeknownst to her, she is genetically engineered to remain eternally young by the conglomerate Catty &amp; Co., formerly the clandestine cult of Minerva, so that she can be used for advertising purposes. Even after she is killed mid-film by a pedophilic dog police officer, she remains 'immortal' with her face plastered over all of Meguro Ward, Tokyo in ads for cigarettes, matchboxes, and other consumables. One of her flings, a cat named Michelangelo (calling himself Professor Nominos later in the film), views the logographic Tamala in the same way Oedipa Maas does the muted post horn in Lot 49 and starts giving lectures on her hidden significance. To anyone who enjoys Pynchon's novels, this winding and nonsensical plotline won't be a deterrent. Tamala does a great job at capturing the essential elements of his art: conspiracy theories that go nowhere, riffing on the emptiness of semiotics (Tamala represents anything and everything to her observers a la the post horn in Lot 49), postmodern obsession with holocaust and atrocity (Tamala's only wish is to return to her home planet of Orion, origin of the massacre). Moreover, the cyclical structure common in the postmodern novel is contained in Minerva's belief that Tamala is their god Tatla: &quot;Why can't Tamala die?&quot; The reason is now visible. Tamala must live forever, the everlasting cycle of Destruction and Rebirth with Tamala as the centerless center - the icon of Death and Resurrection - must be retained so that Catty &amp; Co. may continue to expand its network of conspiracy and worldwide capitalism...I also appreciated the unconventional B&amp;W coloration and 1960's OST, and the use of Flash, far from being distracting, fits with irreverent attitude of the film's protagonist; naturally, a true punk anime shouldn't use the normal means of production. Many adaptations lazily copy the text of the original work. Tamala distinguishes itself by reproducing the spirit of Pynchon's work while grounding it in a fundamentally different context. Though the film alienated many of its viewers (the lengthy monologue towards the end is usually cited as a sticking point), I found Tamala to be a complete success thematically and an ideal example of avant garde animation.&quot;<br />
+<br />
+Intrigued, I checked it out. My impression was less favorable.<br />
+<br />
+I started off favorably inclined, as the artwork beckoned back towards the forgotten era of hyper-kinetic deformed black-white animation, before Disney's hegemony, and any revival gets kudos from me. The Pynchon paranoid mood also was OK with a number of creepy elements buried in the urban background (the giant robotic advertisements being a good example). Slowly, the artwork begins to wear as the sheer repetitiveness and minimalism and slow pans and static camera and unimaginative gray-scale coloring shows it's not some East Asian/Kubrickian esthetic, it's just low-budget cheapness. (I may like Flash animation well enough for short, but *92 minutes* of it?)<br />
+<br />
+The paranoid mood in fiction is exhausting, and to a great extent, depends on the payoff because you're setting up a mystery: what is really going on, or is the protagonist just crazy? _Tamala_ suffers from dwelling on a topic of little interest to us: the slow decay into riots of the random city (heavily reminiscent of _Taxi Driver_'s NYC - lots of casual violence, prostitutes, etc) she wanders into. Other choices alienated me (what was the point of the mouse sex-slave?) or irritated me as much as the art (Tamala only speaks in an immature monotone, no matter what she is describing or saying). We ultimately do get the whole framework laid out, in a single gigantic infodump at the end, as AYY alludes to. Infodumps usually indicate a failure of writing, and _Tamala_'s infodump is no exception: it comes too late for me to care, and when laid out baldly like that, my reaction is more &quot;huh?&quot; The plot... I don't even... well, I can't say I've seen *that* in worldbuilding before, so it definitely has novelty.<br />
+<br />
+The work ends abruptly after the monologue and from Wikipedia, it seems they had intended to complete the return of Tamala to Orion and come up with a real ending, but that has not happened and so (given it's an obscure work from 12 years ago now) the viewer will be perpetually in suspense as to the rest of Tamala's story. I'm willing to put up with weak entries in a series if the rest delivers, but unfortunately _Tamala_ has to be judged on its own.<br />
+<br />
+So, definitely unusual, definitely avant garde and experimental, but not much of a success. I don't regret watching it but it's probably best for those who want novelty and have run through most of the usual suspects in anime.]]></my_comments>
+					<my_times_watched>0</my_times_watched>
+					<my_rewatch_value>High</my_rewatch_value>
+					<my_downloaded_eps>1</my_downloaded_eps>
+					<my_tags><![CDATA[]]></my_tags>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -10189,7 +10500,7 @@ Then we finish with a roller-coaster of an ending. Really awesome epiphany/parti
 				<anime>
 					<series_animedb_id>885</series_animedb_id>
 					<series_title><![CDATA[Tenshi no Tamago]]></series_title>
-					<series_type>Movie</series_type>
+					<series_type>OVA</series_type>
 					<series_episodes>1</series_episodes>
 					<my_id>27399794</my_id>
 					<my_watched_episodes>1</my_watched_episodes>
@@ -10287,31 +10598,6 @@ Then we finish with a roller-coaster of an ending. Really awesome epiphany/parti
 				</anime>
 			
 				<anime>
-					<series_animedb_id>1025</series_animedb_id>
-					<series_title><![CDATA[The Legend of Black Heaven]]></series_title>
-					<series_type>TV</series_type>
-					<series_episodes>13</series_episodes>
-					<my_id>27421825</my_id>
-					<my_watched_episodes>13</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
-					<my_rated></my_rated>
-					<my_score>7</my_score>
-					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Completed</my_status>
-					<my_comments><![CDATA[I originally ran into _Black Heaven_ due to its inclusion in an _AMV Hell_, and then finished _Black Heaven_ while scanning an old anime encyclopedia (so all quite nostalgic). I wanted to like it because it seemed like a funny take on _Macross_, but the constantly repeated music, the slow and repetitive plot/pacing (in 13 episodes?!), and the occasionally very ugly animation all doomed it to pure mediocrity.]]></my_comments>
-					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
-					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching></my_rewatching>
-					<my_rewatching_ep>0</my_rewatching_ep>
-					<update_on_import>0</update_on_import>
-				</anime>
-			
-				<anime>
 					<series_animedb_id>3089</series_animedb_id>
 					<series_title><![CDATA[The Sky Crawlers]]></series_title>
 					<series_type>Movie</series_type>
@@ -10351,37 +10637,12 @@ Then we finish with a roller-coaster of an ending. Really awesome epiphany/parti
 					<my_dvd></my_dvd>
 					<my_storage></my_storage>
 					<my_status>Completed</my_status>
-					<my_comments><![CDATA[_Thermae Romae_ is very much a one-note gimmick anime, from its basic plot style to its animation-style and Lucius's reactions to everything (I'd call the series a bit like _Sayonara Zetsubou-sensei_ or _Yakitate! Japan_), but it suits me at the moment, and the historical accuracy is sufficient to not bother me. Really, where else are you going to get any thing like this sort of historical fantasy but anime? The diversity and weird gems like TR is one of the reasons I love anime.]]></my_comments>
+					<my_comments><![CDATA[_Thermae Romae_ is very much a one-note gimmick anime, from its basic plot style to its animation-style and Lucius's reactions to everything (I'd call the series a bit like _Sayonara Zetsubou-sensei_ or _Yakitate! Japan_), but it suits me at the moment, and the historical accuracy is sufficient to not bother me. Really, where else are you going to get any thing like this sort of historical fantasy but anime? The diversity and weird gems like TR is one of the reasons I love anime. The 3 episodes means that it doesn't outwear its welcome before the gimmick gets old.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>Medium</my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
 					<my_rewatching></my_rewatching>
-					<my_rewatching_ep>0</my_rewatching_ep>
-					<update_on_import>0</update_on_import>
-				</anime>
-			
-				<anime>
-					<series_animedb_id>1901</series_animedb_id>
-					<series_title><![CDATA[They Were 11]]></series_title>
-					<series_type>Movie</series_type>
-					<series_episodes>1</series_episodes>
-					<my_id>27422521</my_id>
-					<my_watched_episodes>1</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
-					<my_fansub_group><![CDATA[0]]></my_fansub_group>
-					<my_rated></my_rated>
-					<my_score>8</my_score>
-					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Completed</my_status>
-					<my_comments><![CDATA[]]></my_comments>
-					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
-					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -10513,7 +10774,7 @@ Then we finish with a roller-coaster of an ending. Really awesome epiphany/parti
 			
 				<anime>
 					<series_animedb_id>949</series_animedb_id>
-					<series_title><![CDATA[Top wo Nerae! Gunbuster!]]></series_title>
+					<series_title><![CDATA[Top wo Nerae! Gunbuster]]></series_title>
 					<series_type>OVA</series_type>
 					<series_episodes>6</series_episodes>
 					<my_id>27399579</my_id>
@@ -10921,21 +11182,21 @@ So, leaving it at 7. Somewhat funny, somewhat dramatic, but nothing particularly
 					<series_type>TV</series_type>
 					<series_episodes>11</series_episodes>
 					<my_id>0</my_id>
-					<my_watched_episodes>0</my_watched_episodes>
-					<my_start_date>0000-00-00</my_start_date>
-					<my_finish_date>0000-00-00</my_finish_date>
+					<my_watched_episodes>11</my_watched_episodes>
+					<my_start_date>2014-05-19</my_start_date>
+					<my_finish_date>2014-05-24</my_finish_date>
 					<my_fansub_group><![CDATA[0]]></my_fansub_group>
 					<my_rated></my_rated>
-					<my_score>0</my_score>
+					<my_score>7</my_score>
 					<my_dvd></my_dvd>
-					<my_storage></my_storage>
-					<my_status>Plan to Watch</my_status>
-					<my_comments><![CDATA[]]></my_comments>
+					<my_storage>Hard Drive</my_storage>
+					<my_status>Completed</my_status>
+					<my_comments><![CDATA[Incredibly lame mysteries in the worst vein of Sherlock Holmes, offputting fan-service, not one but two major deus ex machinas; stick to something like _Umineko_.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
-					<my_rewatch_value></my_rewatch_value>
-					<my_downloaded_eps>0</my_downloaded_eps>
+					<my_rewatch_value>Very Low</my_rewatch_value>
+					<my_downloaded_eps>11</my_downloaded_eps>
 					<my_tags><![CDATA[]]></my_tags>
-					<my_rewatching>0</my_rewatching>
+					<my_rewatching></my_rewatching>
 					<my_rewatching_ep>0</my_rewatching_ep>
 					<update_on_import>0</update_on_import>
 				</anime>
@@ -10955,7 +11216,7 @@ So, leaving it at 7. Somewhat funny, somewhat dramatic, but nothing particularly
 					<my_dvd></my_dvd>
 					<my_storage></my_storage>
 					<my_status>Completed</my_status>
-					<my_comments><![CDATA[The first episode of _Upotte!!_ skeeved me out with its weird mix of fetishism, guns, lolicon, and a universe that makes *no* sense (why do guns go to school? if the school they go to is set by the caliber, how do they ever graduate? how do they switch from person to gun, and why do they practice shooting guns if they *are* guns? and the thong thing...). The second episode, however, was much better and has persuaded me to continue. I'm always a sucker for snipers. But _Upotte!!_ continued to the end its bizarre mix of over the top fan service (who can forget the jungle scene with the masturbating girl? I could barely believe what I was watching) and occasionally decent characterization with interesting enough action; the abrupt moralizing in the last minute or three of episode 10 was a little stupid, though. Overall: what a strange strange series that was.]]></my_comments>
+					<my_comments><![CDATA[The first episode of _Upotte!!_ skeeved me out with its weird mix of fetishism, guns, lolicon, and a universe that makes *no* sense (why do guns go to school? if the school they go to is set by the caliber, how do they ever graduate? how do they switch from person to gun, and why do they practice shooting guns if they *are* guns? and the thong thing...). The second episode, however, was much better and has persuaded me to continue. I'm always a sucker for snipers. But _Upotte!!_ continued to the end its bizarre mix of over the top fan service (who can forget the jungle scene with the masturbating girl? I could barely believe what I was watching) and occasionally decent characterization with interesting enough action; the abrupt moralizing in the last minute or three of episode 10 was a little stupid, though. Overall: what a strange strange series that was. So while I enjoyed the battles and found the gun nut parts mildly interesting, the sexualizing and fanservice with a weak finishing episode mean I can't recommend it.]]></my_comments>
 					<my_times_watched>0</my_times_watched>
 					<my_rewatch_value>Medium</my_rewatch_value>
 					<my_downloaded_eps>0</my_downloaded_eps>

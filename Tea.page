@@ -8,16 +8,16 @@ belief: log
 
 I order a lot[^orders] from [Upton Tea Imports](!Wikipedia) because they specialize in loose tea & I'm a sucker for their catalogue. Their prices seem pretty reasonable too, so I don't bother shopping around^[Which is pretty unusual for me. On the other hand, in ages past, back when I was on the `rec.food.drink.tea` Usenet group, a fair number of other people also ordered from Upton.], even buying my tea kettle from them.^[How does an electric tea kettle differ from ordinary [electric kettles](!Wikipedia)? Principally they have temperature settings - a little knob to choose between temperatures for black, oolong, green, and [white tea](!Wikipedia). The less oxidized the tea, the cooler the water should be - white tea water should be dozens of degrees cooler than black tea water.] Upton allows reviews if you've bought at least a certain quantity, but otherwise your notes are private. This strikes me as a little unfair (a sampler of 10g is more than enough to judge a tea!) and my reviews are a valuable guide to me in ordering, so I keep local copies of my reviews & notes.
 
-[^orders]: Looking through my history, I order tea on a roughly annual or semi-annual basis:
+[^orders]: Looking through my history 2006-2012, I order tea on a roughly annual or semi-annual basis:
 
-    1. 10/16/2006 ($19.30)
-    2. 12/17/2007 ($19.70)
-    3. 1/8/2008 ($43.80)
-    4. 2/15/2010 ($34.92)
-    5. 7/5/2010 ($32.30)
-    6. 5/14/2011 ($51.20)
-    7. 12/4/2011 ($39.20)
-    8. 7/15/2012 ($75.10)
+    1. 10/16/2006 (\$19.30)
+    2. 12/17/2007 (\$19.70)
+    3. 1/8/2008 (\$43.80)
+    4. 2/15/2010 (\$34.92)
+    5. 7/5/2010 (\$32.30)
+    6. 5/14/2011 (\$51.20)
+    7. 12/4/2011 (\$39.20)
+    8. 7/15/2012 (\$75.10)
 
     Thinking back, the 2 year gap between orders #3 and #4 was probably due to a Christmas where I received more than *2* pounds of tea, which took me a very long time to drink.
 
@@ -178,6 +178,12 @@ In roughly chronological order:
 - Art of Tea, ["Iron Goddess of Mercy Oolong Tea"](http://www.amazon.com/gp/product/B004FCXSO4/ "$13, 2.5oz") (★★★★☆)
 
     Reasonable Tie Guan Yin, very green, nice floral aftertaste; sensitive to temperature, though, and easily prepared too hot. Probably can do better quality vs price-wise. Container is a bit flimsy and if it falls to the ground, will spill contents all over (as I found out the hard way).
+- Tao of Tea's ["Royal Phoenix Oolong Tea"](http://www.amazon.com/dp/B00E5F9WV4/ "$8.5, 2.5oz") (★★★☆☆)
+
+    > Toasty texture, fragrant aroma and sweet, high-bounce taste similar to nectarines and peaches. Origin is Guangdong Province, China
+
+    No reviews, but I thought the description sounded promising and Tao of Tea has earned a little bit of trust, so I took a gamble with it.
+    The leaves are long stringy black leaves. It resteeps well. The flavor is indeed somewhat sweet and, grandiose name notwithstanding, it tastes like a middle of the road oolong with no particular additional flavors or aftertaste - just sort of oolongy. OK, not particularly good.
 
 ## Green
 
@@ -239,6 +245,10 @@ Korean greens:
     Very similar to the Dae-Jak, but less sweet (when tasting them side by side); the sweetness passed Dae-Jak at 10 minutes, and at 15 minutes, I wasn't noticing the unpleasant edge. Better than the Dae-Jak, but I still doubt I'll be ordering it again.
 
 ## White
+
+My general take on white tea is that they seem to be rather fragile and I generally prefer stronger flavors from green/oolongs.
+(Subtle flavors can be good, but for white teas, it seems that their subtlety usually comes across as weak or tasteless.)
+It's possible I've either not had really good white tea or I've ruined the ones I had.
 
 - [Special Grade Shou Mei](http://www.uptontea.com/shopcart/item.asp?itemID=ZW60) (★★☆☆☆)
 
@@ -374,7 +384,8 @@ The second order arrived working, and aside from the garish green-black coloring
 
     - [Zhang Ping Shui Hsian Oolong](http://www.uptontea.com/shopcart/Item.asp?home=Item&itemID=ZO79)
     - ["Wu Yi" Water Fairy Oolong](http://www.uptontea.com/shopcart/Item.asp?home=Item&itemID=ZO15)
-    - ["Huang Jin Gui Oolong"](http://www.uptontea.com/shopcart/Item.asp?UTid=1011-12-21541443&afterCart=/shopcart/index.asp&home=Item&itemID=ZO22)
+    - ["Huang Jin Gui Oolong"](http://www.uptontea.com/shopcart/Item.asp?home=Item&itemID=ZO22)
+    - ["China Tie-Guan-Yin Organic"](http://www.uptontea.com/shopcart/Item.asp?home=Item&itemID=ZO90)
 
 <!-- Order gyokuro & genmai from http://www.hibiki-an.com/ ? -->
 <!-- http://www.teabox.com/samples -->
@@ -383,7 +394,7 @@ The second order arrived working, and aside from the garish green-black coloring
 
 <!--
 I'm not sure how much statistical/machine-learning recommendation
-techniques would really add over the obvious white/green/oolong/black
+techniques would really add over the white/green/oolong/black
 type clustering and basic user ratings ('if someone buys mostly
 oolong, recommend all the 5-star oolongs to them'). All datasets are
 incomplete and limited and put limits on how much can be inferred from

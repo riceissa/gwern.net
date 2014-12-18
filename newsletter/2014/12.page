@@ -8,9 +8,12 @@ belief: log
 
 This is the December edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155); previous, [November](http://www.gwern.net/newsletter/2014/11).
 
-This is a summary of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & including material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/). Thanks to my donors on [Gratipay](https://gratipay.com/gwern/).
+This is a summary of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & including material from [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/).
+
+Thanks to my donors on [Gratipay](https://gratipay.com/gwern/)!
 
 # Writings
+
 
 # Media
 ## Links
@@ -19,6 +22,8 @@ Everything is heritable:
 
 - ["Genome-wide meta-analysis identifies six novel loci associated with habitual coffee consumption"](http://handls.nih.gov/pubs/2014-CoffeeCaffeineGeneticsConsortium-MolPsych-epub.pdf), The Coffee and Caffeine Genetics Consortium et al 2014 ([excerpts](https://plus.google.com/103530621949492999968/posts/bzGJ1tN6KbK))
 - ["Results of a 'GWAS Plus': General Cognitive Ability Is Substantially Heritable and Massively Polygenic"](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0112390#close), Kirkpatrick et al 2014
+- ["Understanding the Genetics of Intelligence: Can Height Help? Can Corn Oil?"](http://apsychoserver.psych.arizona.edu/JJBAReprints/PSYC621/Johnson%20Current%20Directions%20Psych%20Science%202010%20%28G%20and%20E%20in%20IQ%29.pdf), Johnson 2010 ([excerpts](https://plus.google.com/103530621949492999968/posts/Sv6yXd2hwmh))
+- ["The impact of neighbourhood deprivation on adolescent violent criminality and substance misuse: A longitudinal, quasi-experimental study of the total Swedish population "](http://ije.oxfordjournals.org/content/42/4/1057.full.pdf+html), Sariaslan et al 2013 ([excerpts](https://plus.google.com/103530621949492999968/posts/hHpBe7uL614))
 
 Politics/religion:
 
@@ -31,6 +36,11 @@ Politics/religion:
 Statistics/AI/meta-science:
 
 - ["Contradicted and Initially Stronger Effects in Highly Cited Clinical Research"](http://sydney.edu.au/medicine/21st-century/presentations/2013/ioannidis-JAMA2005.pdf), Ioannidis 2005 ([excerpts](https://plus.google.com/103530621949492999968/posts/Jr3kRVdqNAm))
+- ["A 'Sham Procedure' Leads to Disappointing Multiple Scelerosis News"](http://6thfloor.blogs.nytimes.com/2013/03/20/a-sham-procedure-leads-to-disappointing-m-s-news/)
+- [The power of placebos: when water feels like LSD.](http://www.gwern.net/docs/1955-abramson.pdf)
+- ["What Went Wrong? Reflections on Science by Observation and The Bell Curve"](http://www.hss.cmu.edu/philosophy/glymour/glymour1998.pdf), Glymour 1998 (correlation & causation)
+- ["What effect size would you expect?"](http://blog.dansimons.com/2013/03/what-effect-size-would-you-expect.html)
+- ["Full publication of results initially presented in abstracts (Review)"](http://www.gwern.net/docs/dnb/2008-scherer.pdf), Scherer et al 2008 (publication bias & incorrect papers; [excerpts](https://plus.google.com/103530621949492999968/posts/3bxZ57PqKjW))
 - ["Prisons Are Built With Bricks Of Law And Brothels With Bricks Of Religion, But That Doesn't Prove A Causal Relationship"](http://slatestarcodex.com/2014/11/21/prisons-are-built-with-bricks-of-law-and-brothels-with-bricks-of-religion-but-that-doesnt-prove-a-causal-relationship/)
 - ["Effects of remote, retroactive intercessory prayer on outcomes in patients with bloodstream infection: randomised controlled trial"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC61047/), Leibovici 2001 ([Norvig comments](http://norvig.com/prayer.html "Evaluating Extraordinary Claims: Mind Over Matter? Or Mind Over Mind?"))
 - ["On the distribution of time-to-proof of mathematical conjectures"](http://arxiv.org/abs/1202.3936), Hisano & Sornette 2012
@@ -41,6 +51,8 @@ Statistics/AI/meta-science:
 Psychology/biology:
 
 - ["Thank you for doing something ambiguously between smoking and not smoking"](http://slatestarcodex.com/2013/03/28/thank-you-for-doing-something-ambiguously-between-smoking-and-not-smoking/)
+- ["The future of teratology research is in vitro"](http://www.aknight.info/publications/anim_expts_tox/teratol/JB%20et%20al%20Teratol%20Biog%20Amines%202005%2019%282%29%2097-146.pdf), Bailey et al 2005
+- ["Morningness-eveningness and educational outcomes: The lark has an advantage over the owl at high school"](http://www.gwern.net/docs/melatonin/2013-preckel.pdf), Preckel et al 2013
 - ["What Do You Desire?"](https://nplusonemag.com/issue-16/essays/what-do-you-desire/) (on the porn company Kink.com)
 - ["Suicide: An Economic Approach"](http://storage.globalcitizen.net/data/topic/knowledge/uploads/2009051911410705.pdf), Becker & Posner 2004 ([excerpts](https://plus.google.com/103530621949492999968/posts/ZNphZPToZG5))
 - ["Direct Effect of Sunshine on Suicide"](https://www.dropbox.com/s/p3zr2dv0zj6ggro/2014-vyssoki.pdf), Vyssoki et al 2014
@@ -56,6 +68,7 @@ Psychology/biology:
 
 Technology:
 
+- ["Human Performance"](http://fas.org/irp/agency/dod/jason/human.pdf), 2008 JASON ([excerpts](https://plus.google.com/103530621949492999968/posts/jnArmm8L26z))
 - [Spreadsheet mistakes](http://www.eusprig.org/horror-stories.htm)
 - ["The Hundred-Year Language"](http://paulgraham.com/hundred.html)
 - [M50 Ontos](https://en.wikipedia.org/wiki/M50_Ontos)
@@ -69,6 +82,7 @@ Economics:
 
 - [College major salary premiums](http://econlog.econlib.org/archives/2013/04/major_premium.html)
 - ["What Are Foundations For?"](http://www.bostonreview.net/BR38.2/ndf_rob_reich_foundations_philanthropy_democracy.php) (principal-agent conflicts; against perpetuities)
+- ["A lucky little fish turns out to be the solution to iron deficiency among women in Cambodia, a problem solved by a University of Guelph researcher."](http://www.thestar.com/news/gta/2011/11/12/canadians_lucky_iron_fish_saves_lives_in_cambodia.html)
 - ["Should Psychological Neuroscience Research Be Funded?"](http://popsych.org/should-psychological-neuroscience-research-be-funded/) ([discussion](http://lesswrong.com/r/discussion/lw/h8r/link_should_psychological_neuroscience_research/))
 - [Kids for cash scandal](https://en.wikipedia.org/wiki/Kids_for_cash_scandal)
 - ["Smart companies try to commoditize their products' complements."](http://www.joelonsoftware.com/articles/StrategyLetterV.html)
@@ -77,70 +91,34 @@ Economics:
 
 Philosophy:
 
+- ["Bayesian Adjustment Does Not Defeat Existential Risk Charity"](http://lesswrong.com/lw/gzq/bayesian_adjustment_does_not_defeat_existential/)
 - ["Transhumanist Fables"](http://slatestarcodex.com/2013/05/27/transhumanist-fables/)
 - ["Study: Wolf Attacks Still Leading Cause Of Death In U.S."](http://www.theonion.com/articles/study-wolf-attacks-still-leading-cause-of-death-in,32170/)
 - ["Even More Aphorisms and Ten-Second Essays from Vectors 3.0"](https://web.archive.org/web/20110629061349/http://www.theliteraryreview.org/WordPress/tlr-poetry/), James Richardson﻿
 
 Misc:
 
+- ["Limits"](http://thefloatinglibrary.com/2008/12/09/limits-j-l-borges/), Jorge Luis Borges
+- [Great mistakes in history: the scuttling of the German navy](https://en.wikipedia.org/wiki/Scapa_Flow#The_scuttling_of_the_German_fleet)
 - [Hollywood Archaeology: _The Super Mario Bros. Movie_; Unearthing a major disaster to learn the lessons held within](http://grantland.com/features/the-strange-case-super-mario-bros-movie/)
 - Odd subreddits: ["dragonsfuckingcars" (NSFW/R18)](https://pay.reddit.com/r/dragonsfuckingcars)
 - ["On Pins and Needles: Stylist Turns Ancient Hairdo Debate on Its Head"](http://online.wsj.com/news/articles/SB10001424127887324900204578286272195339456)
 
 <!-- Back to 1 March 2013 -->
 
-- ["The future of teratology research is in vitro"](http://www.aknight.info/publications/anim_expts_tox/teratol/JB%20et%20al%20Teratol%20Biog%20Amines%202005%2019%282%29%2097-146.pdf), Bailey et al 2005
-- ["Morningness-eveningness and educational outcomes: The lark has an advantage over the owl at high school"](http://www.gwern.net/docs/melatonin/2013-preckel.pdf), Preckel et al 2013
-- ["Limits"](http://thefloatinglibrary.com/2008/12/09/limits-j-l-borges/), Jorge Luis Borges
-
-- [Great mistakes: the scuttling of the German navy](https://en.wikipedia.org/wiki/Scapa_Flow#The_scuttling_of_the_German_fleet)
-- ["Understanding the Genetics of Intelligence : Can Height Help? Can Corn Oil?"](http://apsychoserver.psych.arizona.edu/JJBAReprints/PSYC621/Johnson%20Current%20Directions%20Psych%20Science%202010%20%28G%20and%20E%20in%20IQ%29.pdf), Johnson 2010 ([excerpts](https://plus.google.com/103530621949492999968/posts/Sv6yXd2hwmh))
-- ["Human Performance"](http://fas.org/irp/agency/dod/jason/human.pdf), 2008 JASON ([excerpts](https://plus.google.com/103530621949492999968/posts/jnArmm8L26z))
-- ["Bayesian Adjustment Does Not Defeat Existential Risk Charity"](http://lesswrong.com/lw/gzq/bayesian_adjustment_does_not_defeat_existential/)
-- ["A lucky little fish turns out to be the solution to iron deficiency among women in Cambodia, a problem solved by a University of Guelph researcher."](http://www.thestar.com/news/gta/2011/11/12/canadians_lucky_iron_fish_saves_lives_in_cambodia.html)
-
-- ["There is Only Awe"](https://nplusonemag.com/online-only/online-only/there-is-only-awe/) (on Jaynes's Bicameral Mind Theory)
-- [Alexander Shulgin obituary](http://www.nytimes.com/2005/01/30/magazine/30ECSTASY.html)
-- ["Wireheading: Towards a Consumer Market?"](http://jessic.at/writing/wireheading.pdf) ([excerpts](https://plus.google.com/103530621949492999968/posts/QCPsYB6KYvT))
-
-
-- ["A 'Sham Procedure' Leads to Disappointing Multiple Scelerosis News"](http://6thfloor.blogs.nytimes.com/2013/03/20/a-sham-procedure-leads-to-disappointing-m-s-news/)
-- [The power of placebos: when water feels like LSD.](http://www.gwern.net/docs/1955-abramson.pdf)
-- ["What Went Wrong? Reflections on Science by Observation and The Bell Curve"](http://www.hss.cmu.edu/philosophy/glymour/glymour1998.pdf), Glymour 1998 (correlation & causation)
-- ["What effect size would you expect?"](http://blog.dansimons.com/2013/03/what-effect-size-would-you-expect.html)
-- ["Full publication of results initially presented in abstracts (Review)"](http://www.gwern.net/docs/dnb/2008-scherer.pdf), Scherer et al 2008 (publication bias & incorrect papers; [excerpts](https://plus.google.com/103530621949492999968/posts/3bxZ57PqKjW))
-
-
-- ["Reactionary Philosophy In An Enormous, Planet-Sized Nutshell"](http://slatestarcodex.com/2013/03/03/reactionary-philosophy-in-an-enormous-planet-sized-nutshell/)
-- [Wittgenstein's "Remarks on Frazer's _Golden Bough_"](http://www.roangelo.net/logwitt/logwit35.html)
-- ["Jihadi Radicalization of Muslim Clerics"](http://people.fas.harvard.edu/~rnielsen/jihad.pdf), Nielsen 2012 ([excerpts](https://plus.google.com/103530621949492999968/posts/TLQwSfpvuix))
-- ["The Deflationist: How Paul Krugman found politics"](http://www.newyorker.com/magazine/2010/03/01/the-deflationist?printable=true)/["Paul Krugman Is Brilliant, but Is He Meta-Rational?"](http://theumlaut.com/2013/03/13/paul-krugman-is-brilliant-but-is-he-meta-rational/)
-- ["What Politicians Believe About Their Constituents: Asymmetric Misperceptions and Prospects for Constituency Control"](http://www.ocf.berkeley.edu/~broockma/broockman_skovron_asymmetric_misperceptions.pdf) ([excerpts](https://plus.google.com/103530621949492999968/posts/6cT8DwqGqm8))
-
-- ["Bitcoin and Me"](https://bitcointalk.org/index.php?topic=155054.msg1643833#msg1643833), Hal Finney
-- ["Freedom Zero"](http://web.archive.org/web/20110726001925/http://diveintomark.org/archives/2004/05/14/freedom-0) ("In the long run, the utility of all non-Free software approaches zero. All non-Free software is a dead end.")
-- ["Statistical Basis for Predicting Technological Progress"](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0052669#close), Nagy et al 2013
-- ["As Math Grows More Complex, Will Computers Reign?"](http://www.wired.com/2013/03/computers-and-math/all/)
-- ["Found on the Web, With DNA: a Boy's Father"](http://www.washingtonpost.com/wp-dyn/content/article/2005/11/12/AR2005111200958_pf.html)
-- [Reed Richards Is Useless](http://tvtropes.org/pmwiki/pmwiki.php/Main/ReedRichardsIsUseless)
-- ["Tokyo Polytechnic University Publishes Results of VOCALOID Study"](http://www.vocaloidism.com/tokyo-polytechnic-university-publishes-results-of-vocaloid-study/)
-
-- ["Study of Men’s Falling Income Cites Single Parents"](http://www.nytimes.com/2013/03/21/business/economy/as-men-lose-economic-ground-clues-in-the-family.html) (2013)
-- ["Automation and Employment"](http://www.becker-posner-blog.com/2013/03/automation-and-employment-posner.html), Richard Posner
-- ["Does Affirmative Action Do What It Should?"](http://www.nytimes.com/2013/03/17/opinion/sunday/does-affirmative-action-do-what-it-should.html?hp&_r=0&pagewanted=all)
-- ["Redistributing from Capitalists to Workers: The Chamley-Judd Impossibility Theorem"](http://econlog.econlib.org/archives/2013/03/redistributing.html)
-- ["Net benefits: How to quantify the gains that the internet has brought to consumers"](http://www.economist.com/news/finance-and-economics/21573091-how-quantify-gains-internet-has-brought-consumers-net-benefits)
-- ["Beware of the survivorship bias: Investors may have developed too rosy a view of equity returns"](http://www.economist.com/news/finance-and-economics/21571443-investors-may-have-developed-too-rosy-view-equity-returns-beware-bias)
-- ["How the recession turned middle-class jobs into low-wage jobs"](http://www.washingtonpost.com/blogs/wonkblog/wp/2013/02/28/how-the-recession-turned-middle-class-jobs-into-low-wage-jobs/)
-- ["Brickyard Blues: Numbed by cold, pelted by rain, enduring smashed fingers and toes, poorly paid brick salvagers keep coming back for more"](http://www.chicagoreader.com/chicago/brickyard-blues/Content?oid=898211)
-
-
-
 ## Books
 
 Nonfiction:
 
+- [_Savage Continent: Europe in the Aftermath of World War II_](http://www.amazon.com/Savage-Continent-Europe-Aftermath-World/dp/125003356X), Lowe ([review](https://www.goodreads.com/review/show/372158731))
+- [_Clear and Simple as the Truth: Writing Classic Prose_](http://www.amazon.com/Clear-Simple-As-Truth-Writing/dp/0691029172), Thomas & Turner ([review](https://www.goodreads.com/review/show/370138187); [online guide](http://classicprose.com/csguide.html))
+
 Fiction:
+
+- [_Ra_](http://qntm.org/ra), Sam Hughes (hard SF web serial; [Goodreads](https://www.goodreads.com/book/show/22635765-ra))
+- [_Reject Hero_](http://rejecthero.wordpress.com/table-of-contents/), Farmerbob1 ([About](http://rejecthero.wordpress.com/about/); superhero web serial, set in a _Worm_-like universe; somewhat unusual conservative middle-aged perspective as he negotiates his way into the deeper magical universe, culminating in a fun twist _Jurassic Park_ ending with a sting; good fic but not great, and probably goes on too long)
+- [_Perseverance island: or, The Robinson Crusoe of the nineteenth century_](http://www.gutenberg.org/files/46128/46128-h/46128-h.htm), by Douglas Frazer ([review](https://www.goodreads.com/review/show/1127697713))
+- _CVN73 USS George Washington_ (manga; [review](http://myanimelist.net/reviews.php?id=172259))
 
 ## Film/TV
 
@@ -150,8 +128,30 @@ Anime:
 
 Touhou:
 
+- ["Sixth Movement Dawn of East End"](https://www.youtube.com/watch?v=dnircymksQ4) (MORRIGAN feat. 三澤秋; _Symphonic Tarantella "Lily" -Illusionary Waltz: Belladonna Lily-_ {M3-27}) [orchestral]
+- ["Fifth Movement 9th moon / Pale Indigo Dream"](https://www.youtube.com/watch?v=gDvHFUzcXGs) (MORRIGAN feat. 三澤秋; _Symphonic Tarantella "Lily" -Illusionary Waltz: Belladonna Lily-_ {M3-27}) [orchestral]
+- ["The Black Eyes"](https://www.youtube.com/watch?v=fN1tw960890) (Swing Holic Band; _SWING HOLIC VOL.9_ {R9}) [jazz]
+- ["NEMESIS"](http://otokei-douj.in/tlmc/%5BSWING%20HOLIC%5D/2012.05.27%20%5BSWHC-0009%5D%20SWING%20HOLIC%20VOL.09%20%5B%E4%BE%8B%E5%A4%A7%E7%A5%AD9%5D/05%20%5bSanokan%5d%20NEMESIS.mp3) (Sanokan; _SWING HOLIC VOL.9_ {R9}) [brass]
+- ["Fantasia Nightbug"](https://www.dropbox.com/s/n884s878ur7ikd2/%E6%BF%80%E6%88%A6%E3%81%AE%E4%BA%BA-summerfestival-fantasianightbug.ogg) (激戦の人 feat. 迷犬; _Summer Festival_ {C86}) [Rock]
+- ["Eternal Steam Engine"](https://www.youtube.com/watch?v=6lmv1Fkroew) (Suzumu feat.Sae Tsukiyama; _Summer Festival_ {C86}) [vocal]
+- ["To the Limit"](https://www.youtube.com/watch?v=W0MzyRq4tcU) (あとぐる feat. Mai Kotoge; _悠啼 YU-NARI_ {C78}) [rock]
+
 Doujin:
+
+- ["Prelude (Instrumental)"](https://www.dropbox.com/s/5spvvj9a65nunm6/treow-kollectionoi-prelude.ogg) (Treow; _KOLLECTION+OI_ {2012}) [electronica]
+- ["A Longing"](https://www.dropbox.com/s/d71xl0hfg50gjjy/yuxukiwaga-evergreen-alonging.ogg) (yuxuki waga; _Evergreen_ {VM23}) [ambient]
 
 Kantai Collection:
 
+- ["ThroBBing (母港BGM)"](https://www.youtube.com/watch?v=I9Rr5Ixd5Wg) (W*M; _Splash!_ {C85}) [instrumental]
+
 Vocaloid:
+
+- ["Sunrise"](https://www.youtube.com/watch?v=Ipx4FkEqqXo) (Miku; akayaka; _KARENT presents Skylight Theater_ {Trans city}) [ambient]
+- ["トウキョウトガリ"](https://www.dropbox.com/s/9sw1jwdzz2lnb0b/kobayashionyx-log-%E3%83%88%E3%82%A6%E3%82%AD%E3%83%A7%E3%82%A6%E3%83%88%E3%82%AC%E3%83%AA.ogg?dl=0) (Miku; Kobayashi Onyx; _LOG_ {2010}) [electronic]
+- ["サイハテ(ver,LOG)"](https://www.youtube.com/watch?v=6UwLxZGI5Dw) (Miku; Kobayashi Onyx; _LOG_ {2010}) [electronic]
+- ["Moon Walker"](https://www.youtube.com/watch?v=FLb8sIVf1pY) (Gumi & Piko; KTG; _FREEZE_ {2011}) [electronic]
+- ["Welcome to the Future"](https://www.youtube.com/watch?v=PmzqjM4b54E) (Miku; 青屋夏生; _Welcome to the Future_ {2014}) [Jpop/trance]
+- ["Light Falls"](https://www.youtube.com/watch?v=diGRRQfHmok) (Miku; yuxuki waga {2011}) [Jpop]
+- ["ヒトリの誕生日"](http://youtu.be/ZalZT4iR1tQ?t=50s) (Miku; ため; _7 Kilometer_ {VM28}) [Jpop]
+- ["ルッキング・フォー・ザ・ヘヴン"](https://soundcloud.com/kamiura_kari/ver1-1) (Yukari; カミウラ, カミウラレコーズ; _Lavender and White Rose_ {2013}) [vocal]

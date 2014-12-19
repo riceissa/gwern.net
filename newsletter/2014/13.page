@@ -1,0 +1,176 @@
+---
+title: 2014 Year in Review
+created: 18 Dec 2014
+tags: meta
+status: in progress
+belief: log
+...
+
+# Writing
+
+Technically, rewriting the site to use Hakyll-4 as a static site generator and converting the repository from Darcs to Git were major pieces of technical debt I needed to pay off. Very painful, but it had to be done. I was also pleased to finish my annotated ebook of _Radiance_: I think it's an unjustly obscure piece of literary scientific fiction which shines even more when the historical context is laid out.
+My [public release of the Mnemosyne spaced repetition dataset](https://groups.google.com/d/msg/mnemosyne-proj-users/tPHlkTFVX_4/oF61BF44iQkJ) is something I'm proud of - the last release was inaccessible despite being a throve of data on flashcards in the real world.
+The sort-key trick ([Spatial locality for better file compression](Archiving URLs#sort---key-compression-trick)) was originally just a random command-line trick, but in working with the black-market scrapes, I've come to appreciate how it yields major space savings. (I haven't finished any writings on the black-markets lately, but I have been amusing myself inordinately by trying to write some [epigrams on them & technology in general](Notes#technology-epigrams).)
+My [McCaleb email interview on MtGox](/docs/2014-mccaleb) helped set the record straight on Wikipedia about the history of MtGox. And not a moment too soon, given how toxic the topic is now for anyone previously associated with it.
+- [do causal networks explain why correlation≠causation is so often true?](Causality)
+- lithium orotate experiment finished: [no effects positive or negative](Nootropics#lithium-experiment)
+[Treadmill spaced repetition experiment](http://www.gwern.net/Treadmill#treadmill-effect-on-spaced-repetition-performance-randomized-experiment)
+- [Redshift self-experiment](Zeo#redshiftf.lux): screen-reddening software shifts bedtime forward by 20 minutes
+- [Bicycle face](https://en.wikipedia.org/wiki/Talk:Bicycle_face#Serious_sourcing_issues)
+- ["Rail travel at high speed is not possible because passengers, unable to breathe, would die of asphyxia."](https://en.wikipedia.org/wiki/Talk:Dionysius_Lardner#Did_he_actually_say_that.3F)
+- [did _Fifty Shades of Gray_ have only 4k readers as the original Twilight fanfiction?](http://lesswrong.com/lw/kl3/fifty_shades_of_selffulfilling_prophecy/#entry_t1_b5bj)
+
+## Newsletter
+
+Somewhat to my surprise, each month I was able to compile & send out a newsletter stuffed full of links and other things:
+
+- [January](http://www.gwern.net/newsletter/2014/01)
+- [February](http://www.gwern.net/newsletter/2014/02)
+- [March](http://www.gwern.net/newsletter/2014/03)
+- [April](http://www.gwern.net/newsletter/2014/04)
+- [May](http://www.gwern.net/newsletter/2014/05)
+- [June](http://www.gwern.net/newsletter/2014/06)
+- [July](http://www.gwern.net/newsletter/2014/07)
+- [August](http://www.gwern.net/newsletter/2014/08)
+- [September](http://www.gwern.net/newsletter/2014/09)
+- [October](http://www.gwern.net/newsletter/2014/10)
+- [November](http://www.gwern.net/newsletter/2014/11)
+- [December](http://www.gwern.net/newsletter/2014/12)
+
+Putting them together was a lot of work, but thus far it seems to be worth it: I am up to ~450 subscribers, most of whom click on at least one or two links, and I suspect most would not follow the RSS feed or my Google+ profile.
+
+# Personal
+
+2014 was an eventful year.
+Bitcoin continued evolving towards respectability despite the MtGox disaster (which I think surprised even the more cynical observers), and the technical possibilities continue to be explored (I particularly like sidechains and Truthcoin).
+The black-market scene saw dizzying turnover as markets continued to rise and fall in the post-SR1 vacuum (although in many cases, the fall was no less than merited) with 42 new markets and 46 closures.
+Monitoring them all, much less scraping them, has proven to be quite a challenge, but I now have fairly complete archives which I have distributed to a number of academics; with luck, I can do a public release in 2015.
+This all drew some media attention as well; I did interviews in person or over email with Mike Power, the NHK, and Erica Fink.
+
+My dog died on 6 February. He was old and nearly blind but it was still sad. I got a new cat in June from the pound after considerable travails with local animal rescue groups. I named him Oolong - like the tea, his fur color shifts between brown and black.
+I spent time weatherproofing / sealing my apartment's doors and windows (blacking out the bedroom windows and putting springs on the doors while I was at it), and upgrading the antique DSL Internet to a cable modem; while still pathetic by any First World country's standards, it helps a lot.
+I also have been learning to bake sourdough bread - when I visited my sister in San Francisco, I really enjoyed the Bowdoin sourdough bread, and there seemed no reason I couldn't learn to bake some myself.
+Some home improvements worked, others didn't (the hammock seems to be a summer-only thing; and my data logger shows the humidifier was completely unnecessary - rather, excess humidity is causing mold), and the jury is still out on others (installing much brighter CFL light bulbs to counteract winter dimness).
+
+# Media
+
+Entries are sorted in descending order of how much I liked them, taking the top half.
+
+## Books
+
+[Top books](https://www.goodreads.com/review/list/11004626-gwern?utf8=%E2%9C%93&utf8=%E2%9C%93&read_at=2014&view=table&sort=rating&order=d):
+
+Fiction:
+
+1. [_The Remains of the Day_](http://www.amazon.com/The-Remains-Day-Kazuo-Ishiguro/dp/0679731725?tag=gwernnet-20), Kazuo Ishiguro ([review](https://www.goodreads.com/review/show/369947032))
+2. [_Worm_](http://parahumans.wordpress.com/category/stories-arcs-1-10/arc-1-gestation/1-01/), wildbow ([review](https://www.goodreads.com/review/show/825541415))
+3. [_Radiance: A Novel_](http://www.gwern.net/docs/2002-radiance), Carter Scholz ([review](https://www.goodreads.com/review/show/370154318))
+4. [_Diaspora_](http://www.amazon.com/Diaspora-Greg-Egan-ebook/dp/B00E83YOEI/?tag=gwernnet-20), Greg Egan
+5. [_The Quantum Thief_](http://www.amazon.com/The-Quantum-Thief-Jean-Flambeur/dp/0765367661?tag=gwernnet-20), Hannu
+6. _[Catch-22](https://en.wikipedia.org/wiki/Catch-22)_, Heller
+7. [_Chronicle of a Death Foretold_](http://www.amazon.com/Chronicle-Foretold-Gabriel-Garc%C3%ADa-M%C3%A1rquez/dp/140003471X?tag=gwernnet-20), Márquez ([review](https://www.goodreads.com/review/show/369891060))
+8. [_Hyperbole and a Half: Unfortunate Situations, Flawed Coping Mechanisms, Mayhem, and Other Things That Happened_](http://www.amazon.com/Hyperbole-Half-Unfortunate-Situations-Mechanisms/dp/1451666179?tag=gwernnet-20) ([review](https://www.goodreads.com/review/show/859555507))
+9. _[A Clockwork Orange](https://en.wikipedia.org/wiki/A_Clockwork_Orange)_, Burgess
+10. [_Ra_](http://qntm.org/ra), Sam Hughes
+11. [_Echopraxia_](http://www.amazon.com/Echopraxia-Peter-Watts/dp/076532802X?tag=gwernnet-20), Peter Watts
+12. [_The Iron Dragon's Daughter_](http://www.amazon.com/Iron-Dragons-Daughter-Michael-Swanwick/dp/0380730464?tag=gwernnet-20), Swanwick ([review](https://www.goodreads.com/review/show/373051526))
+13. [_Rogue Male_](https://en.wikipedia.org/wiki/Rogue_Male_%28novel%29)
+
+Nonfiction:
+
+1. [_The Wages of Destruction: The Making and Breaking of the Nazi Economy_](http://www.amazon.com/The-Wages-Destruction-Breaking-Economy/dp/0143113208?tag=gwernnet-20), Tooze ([review](https://www.goodreads.com/review/show/373143104))
+2. [_Genius: The Life and Science of Richard Feynman_](http://www.amazon.com/Genius-Life-Science-Richard-Feynman/dp/0679747044?tag=gwernnet-20) ([review](https://www.goodreads.com/review/show/369950186))
+3. [_Past, Present, and Future of Statistical Science_](http://nisla05.niss.org/copss/past-present-future-copss.pdf) ([review](https://www.goodreads.com/review/show/959222084))
+4. [_Savage Continent: Europe in the Aftermath of World War II_](http://www.amazon.com/Savage-Continent-Europe-Aftermath-World/dp/125003356X?tag=gwernnet-20) ([review](https://www.goodreads.com/review/show/372158731))
+5. [_Clear and Simple as the Truth: Writing Classic Prose_](http://www.amazon.com/Clear-Simple-As-Truth-Writing/dp/0691029172?tag=gwernnet-20), Thomas & Turner ([review](https://www.goodreads.com/review/show/370138187))
+6. [_Fragments of an Anarchist Anthropology_](http://abahlali.org/files/Graeber.pdf), Graeber 2004 ([excerpts](https://plus.google.com/103530621949492999968/posts/Ez6Xh8Ha9KP))
+7. [_The Many Worlds of Hugh Everett III: Multiple Universes, Mutual Assured Destruction, and the Meltdown of a Nuclear Family_](http://www.amazon.com/The-Many-Worlds-Hugh-Everett/dp/0199659249?tag=gwernnet-20), Bryne ([review](https://www.goodreads.com/review/show/373031403))
+8. [_The Psychology of Invention in the Mathematical Field_](https://archive.org/details/eassayonthepsych006281mbp), Hadamard ([review](https://www.goodreads.com/review/show/829841188))
+9. [_Excuse Me Sir, Would You Like to Buy a Kilo of Isopropyl Bromide?_](http://library.sciencemadness.org/library/books/gergel_isopropyl_bromide.pdf) ([review](https://www.goodreads.com/review/show/1095756192))
+
+## Live-action
+
+Film/TV:
+
+- [_The Wire_](http://www.amazon.com/Wire-Complete-Various/dp/B005NFJAWG/?tag=gwernnet-20)
+- [_Gravity_](http://www.amazon.com/Gravity-Blu-ray-Sandra-Bullock/dp/B00H83EUL2/?tag=gwernnet-20)
+- [_All Is Lost_](http://www.amazon.com/All-Lost-Robert-Redford/dp/B00GST8U4U/?tag=gwernnet-20)
+- [_The Thing_](http://www.amazon.com/Thing-Blu-ray-Kurt-Russell/dp/B001CW7ZWG/?tag=gwernnet-20)
+- [_Dr. Strangelove_](http://www.amazon.com/Dr-Strangelove-Learned-Worrying-Special/dp/B000055Y0X/?tag=gwernnet-20)
+- [_Blue Blazes_](https://en.wikipedia.org/wiki/Aoi_Hon%C5%8D)
+- [_Her_](http://www.amazon.com/Her-Joaquin-Phoenix/dp/B00H9HZITU/?tag=gwernnet-20)
+- [_The Shining_](http://www.amazon.com/Shining-Barry-Nelson/dp/B002VWNIDG/?tag=gwernnet-20)
+
+## Anime/manga
+
+Manga:
+
+- [_Oyasumi Punpun_](https://en.wikipedia.org/wiki/Oyasumi_Punpun)
+
+Anime:
+
+- [_Toradora_](http://www.amazon.com/Toradora-Complete-Bilingual-Premium-Combo/dp/B00LACZY08/?tag=gwernnet-20)
+- _Shin Sekai Yori_ ([vol 1](http://www.amazon.com/New-World-Collection-Blu-ray/dp/B00HQI72S2/?tag=gwernnet-20), [vol 2](http://www.amazon.com/New-World-Collection-Blu-ray/dp/B00JXBLK3I/?tag=gwernnet-20); [review](http://myanimelist.net/reviews.php?id=137109))
+- [_Watamote_](http://www.amazon.com/Watamote-Complete-Collection-Blu-ray/dp/B00JXBLM72/?tag=gwernnet-20) ([review](http://myanimelist.net/reviews.php?id=128809))
+- [_Madoka: Rebellion_](http://www.amazon.com/Puella-Magi-Madoka-Magica-Movie/dp/B00HRRXUUQ/?tag=gwernnet-20)
+- [_Kill la Kill_](https://en.wikipedia.org/wiki/Kill_la_Kill)
+- [_Silver Spoon_](https://en.wikipedia.org/wiki/Silver_Spoon_\(manga\))
+- _Attack on Titan_ ([vol 1](http://www.amazon.com/Attack-Titan-Part-Blu-ray-Combo/dp/B00FXB8RRO/?tag=gwernnet-20), [vol 2](http://www.amazon.com/Attack-Titan-Standard-Blu-ray-Combo/dp/B00KU3Y2VK/?tag=gwernnet-20))
+- [_Uchouten Kazoku_](https://en.wikipedia.org/wiki/The_Eccentric_Family)
+- [_Ayakashi_](http://www.amazon.com/Ayakashi-Samurai-Horror-Tales-Goblin/dp/B000OCZ2PC/?tag=gwernnet-20) (only last third of the series recommended)
+- [_Garden of Words_](http://www.amazon.com/Garden-Words-Makoto-Shinkai/dp/B00CJ7Y0US/?tag=gwernnet-20) ([review](http://myanimelist.net/reviews.php?id=128801))
+- [_Kyousougiga_](https://en.wikipedia.org/wiki/Kyousougiga)
+- [_Maoyuu Maou Yuusha_](http://www.amazon.com/Maoyu-Complete-Blu-ray/dp/B00IOFDKAK/?tag=gwernnet-20)
+- [_Fuse Teppō Musume no Torimonochō_](https://en.wikipedia.org/wiki/Fuse_Tepp%C5%8D_Musume_no_Torimonoch%C5%8D) ([review](http://myanimelist.net/reviews.php?id=157685))
+- [_Steamboy_](http://www.amazon.com/Steamboy-Directors-Cut-Anna-Paquin/dp/B0009P42S2/?tag=gwernnet-20)
+- [_Summer in Andalusia_](http://www.amazon.com/Nasu-Summer-Andalusia-DVD-movie/dp/B009MAYVKY/?tag=gwernnet-20)
+
+## Music
+
+[God is an Astronaut](https://en.wikipedia.org/wiki/God_Is_an_Astronaut):
+
+- ["A Moment of Stillness"](https://www.youtube.com/watch?v=wOyNihvpi8s)
+- ["A Deafening Distance"](https://www.youtube.com/watch?v=AVH6t7nwfc4)
+- ["Fireflies and Empty Skies"](https://www.youtube.com/watch?v=N1GThSDMOZk)
+- ["Forever Lost"](https://www.youtube.com/watch?v=QEphsKl1g9M)
+- ["Fragile"](https://www.youtube.com/watch?v=fh8QtCO-wQ4)
+- ["Suicide by Star"](https://www.youtube.com/watch?v=b7GTkkA2q8o)
+
+Misc:
+
+- ["Your Hand in Mine (piano cover)"](https://www.youtube.com/watch?v=hxx4fdpiYu4), rmadlal; Explosions in the Sky
+- ["Pulstar"](https://www.youtube.com/watch?v=8UwGl0Yk_jU) (Vangelis; _Albedo 0.39_) [electronic]
+
+[Kantai Collection](https://en.wikipedia.org/wiki/Kantai_Collection#Cultural_trends_and_industry_reception):
+
+- ["Welcome to my harbor"](http://www.youtube.com/watch?v=FdM9dkd5JZo) (mag; _Kantai Collection Arrange Compilation 2_ {2013}) [instrumental]
+- ["Old navy never die."](https://dl.dropboxusercontent.com/u/280585369/music/morrigan-oldnavyneverdie-oldnavyneverdie.ogg) (Morrigan feat. リリィ; _Old navy never die._ {C85; Kancolle}) [choral]
+
+
+Doujin:
+
+- ["The Moonstone"](https://dl.dropboxusercontent.com/u/182368464/music/pluginpsyche-waitformultiplememories-themoonstone.ogg) (pluginpsyche; _wait for multiple memories_ {C84}) [instrumental]
+- ["Before My Life Ends"](https://dl.dropboxusercontent.com/u/182368464/music/pluginpsyche-waitformultiplememories-beforemylifeends.ogg) (pluginpsyche; [_wait for multiple memories_](http://waitformultiplememories.tumblr.com/) {C84}) [instrumental]
+- ["Landscape"](https://dl.dropboxusercontent.com/u/280585369/music/ryuryu-homeland-landscape.ogg) (ryuryu; _Homeland_ {VM14}) [instrumental]
+- ["Every cat dances to the premium music"](http://www.youtube.com/watch?v=MtUoXrVbknE) (OSTER project; _ねこのかんづめ☆プレミアム_ 2009) [jazz]
+
+
+- ["パラミシアの狼"](https://www.dropbox.com/s/x2cmb3fnw2w19zv/okei-sonora-%E3%83%91%E3%83%A9%E3%83%9F%E3%82%B7%E3%82%A2%E3%81%AE%E7%8B%BC.ogg) (O-kei feat. ヤマイ; _SONORA_ {2014}) [Jpop]
+- ["Call My Cell"](https://dl.dropboxusercontent.com/u/5317066/music/higedriver-higedance-callmycell.ogg) (Hige Driver feat. ΦKushiΦ; _Hige Dance_ {C86}) [electronic]
+
+- ["Look up in the Sky"](http://www.youtube.com/watch?v=D1fv4aVvGrs) feat. mow\*2 (P\*Light; _HARDCORE UNITED TOKYO_ {C84}) [hardcore]
+- ["TOKONATSU"](http://www.youtube.com/watch?v=bGH5It_JLcQ) (P\*light; _SUPER SONIC !!_ {C84}) [hardcore]
+- ["Bring the Sun"](http://www.youtube.com/watch?v=ECS6OSsUnb8) (fang; _Driven' De:st-ructure3_ {C84}) [hardcore]
+- ["Walking"](http://www.youtube.com/watch?v=U8lUbfGdTwA) (fang; _Driven' De:st-ructure3_ {C84}) [hardcore]
+- ["Rhythm Of Love"](http://www.youtube.com/watch?v=DeKMU_ce40s&t=7m55s) feat. Yuki (M-Project; _Blood, Sweat & Makina_ {C84}) [techno]
+- ["Are You Ready (DJ SHIMAMURA Remix)"](http://www.youtube.com/watch?v=T8Xr8xGjxQ0) feat. Yukacco (kors k; _HARDCORE UNITED TOKYO_ {C84}) [hardcore]
+- ["ウサギトエゴ"](https://www.youtube.com/watch?v=UnLYLVnSkxU) (kous, ef; _中庭△_ {2013}) [electronic?]
+
+- ["A Longing"](https://www.dropbox.com/s/d71xl0hfg50gjjy/yuxukiwaga-evergreen-alonging.ogg) (yuxuki waga; _Evergreen_ {VM23}) [ambient]
+
+- ["Sajou"](https://www.youtube.com/watch?v=OOgG-GanqrE) (doriko feat. Hanatan; _PRIMROSE FLOWER VOICE_ {2013}) [rock]
+
+- ["誰かの幸せ"](https://dl.dropboxusercontent.com/u/85192141/%E6%AB%BB%E4%BA%95%E3%82%A2%E3%83%B3%E3%83%8A-%E4%B8%8D%E6%80%9D%E8%AD%B0%E3%81%AE%E5%9B%BD%E3%81%AE%E9%9F%B3%E5%93%B2%E6%A8%82%E3%80%80%E5%A4%A2%E8%AA%9E%E3%82%8A%E7%AF%87-%E8%AA%B0%E3%81%8B%E3%81%AE%E5%B9%B8%E3%81%9B.ogg) (櫻井アンナ; [_不思議の国の音哲樂 夢語り篇_](http://www.rokugen.net/sp/201408.html) {C86}) [vocal]
+- ["聖餐唱曲およびレチタティーヴォ (Eucharist Cantata and Recitative)"](https://dl.dropboxusercontent.com/u/182368464/music/綾野えいり-蓋然性進化論Ⅱ-eucharistcantataandrecitative.ogg) (綾野えいり; _蓋然性進化論Ⅱ_ 2013) [classical vocal]
+- ["或る吟遊詩人の憧憬"](https://dl.dropboxusercontent.com/u/182368464/music/霜月はるか-canoueii～最果ての塔～-或る吟遊詩人の憧憬.ogg) (霜月はるか; _canoueII～最果ての塔～_ 2013) [classical vocal]
+- ["Morning Glory"](https://dl.dropboxusercontent.com/u/280585369/music/sprout-seasons-morningglory.ogg) (Spr+out; _Seasons_ {2013}) [pianostep]

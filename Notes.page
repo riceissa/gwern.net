@@ -2679,3 +2679,31 @@ It's a little comforting, even.
 <!-- North Skirt:
 http://steampunkworkshop.com/north-skirt
 http://makezine.com/video/north-finding-led-skirt-craft-video/ -->
+
+# Lighting
+
+I am well aware of the effects of lighting on my mind from reading up on the effects of light (and blue light in particular) on circadian rhythms & [melatonin](Melatonin) secretion, and have done a [sleep self-experiment on red-tinting my laptop screen](Zeo#redshift-flux).
+(There seems to be a voluminous literature on bright lights being beneficial for alertness in the workplace, but I haven't read much of it.)
+Despite this, my room is lit primarily by a lamp with 4 [CFL](!Wikipedia "Compact fluorescent lamp") light bulbs which I inherited, and not designed in any sense - I've focused on modifying myself more than my environment.
+
+The 4 bulbs are puny CFLs: 13 watts (52 total), with a light temperature of 2700k (yellowish).
+Particularly during winter, when darkness falls around 4PM sharp, I find the illumination inadequate.
+A [LW discussion](http://lesswrong.com/lw/gdl/my_simple_hack_for_increased_alertness_and/) reminded me that I didn't *have* to put up with perpetual gloom - I could buy much larger CFLs and replace the smaller ones.
+
+So after some Amazon browsing, and getting frustrated at how CFL listings equivocate on how many watts they draw vs how many watts-equivalent-incandescent-bulbs they are, I settled on ["LimoStudio 2 x Photo Studio Photography 105 Watt 6500K Day Light Fluorescent Full Spectrum Bulb"](http://www.amazon.com/dp/B005FRCUHY/) for \$22.15 & ordered 6 December 2014.
+They arrived on 9 December 2014 & I immediately installed them.
+Their temperature is much bluer and 2 105 watt bulbs would roughly quadruple light output (assuming equal efficiency) and since brightness is perceived logarithmically, make the room something like half again as bright.
+(They're almost comically larger than the small 13 watt bulbs.)
+
+I had to move the lamp since the naked bulbs in corner of my eye were giving me a headache, but the lighting works well in that corner.
+It's nice to have things brighter and it does indeed feel like it reduces sleep pressure in the evening; downsides: shows the walls dirtier, shadows much sharper, feels like it may be much harder to fall asleep even with melatonin if I leave the lights on past 11 PM.
+A small benefit is that I still have some incandescent light bulbs installed; with 2 CFLs bumped out of the lamp, I can take them and replace 2 incandescents, which should save some electricity.
+
+During the darkest winter days, just 2 of them now feels inadequate, so I ordered another pair on 18 Amazon 2014.
+
+One handy way to quantify the effect is via my laptop webcam.
+Since 2012 or so, I have run a script which periodically takes a snapshot through the laptop webcam and saves the photo.
+I haven't gotten much use out of them, but changes in ambient lighting over time would seem to be a perfect use-case.
+I've written a script using Imagemagick which analyzes each webcam photo and calculates the average brightness (as a grayscale intensity) and the average [LAB](!Wikipedia "Lab color space") color triplet.
+(I originally used RGB but the 3 colors turned out to correlate so highly that the data was redundant and I was told LAB better matches human perception; in any case, the LAB values turn out to be less inter-correlated and so should be more useful.)
+The light intensity might affect sleep patterns (particularly sleep timing) and daily productivity.

@@ -2937,6 +2937,31 @@ November
 21: 1
 22: 1
 23: 0
+24: 0
+25: 1
+26: NA
+27: NA
+28: NA
+29: na
+30: 1
+December
+01: 0
+02: 1
+03: 0
+04: 1
+05: 0
+06: 1
+07: 0
+08: 1
+09: 0
+10: 1
+11: 0
+12: 1
+13: 0
+14: 1
+15: 0
+16: 1
+17: 0
 -->
 
 ## Hammock
@@ -4003,24 +4028,56 @@ October
 21: 0 0
 22: 0 0
 23: 0 0
-24: 1 1?
+24: 1 1
+25: 0 1
+26: 0 1
+27: 0 1
+28: 0 1
+29: 1 1
+30: 1 0
+December
+01: 0 0
+02: 0 1
+03: 0 0
+04: 0 1
+05: 0 0
+06: 1 0
+07: 1 1
+08: 0 1
+09: 0 0
+10: 0 1
+11: 0 1
+12: 0 0
+13: 0 0
+14: 0 1
+15: 0 0
+16: 0 1
+17: 1 0
+18: 0 1
+19: 1 1?
 -->
-<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1, 8, 9, 10, 12, 20, 22, 24, 29 October; 3, 4, 6, 8, 10, 13, 14, 15, 16, 20, 21, 22 November 2014 -->
+<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1, 8, 9, 10, 12, 20, 22, 24, 29 October; 3, 4, 6, 8, 10, 13, 14, 15, 16, 20, 21, 22, 24, 25, 26, 27 November 2014; 1 December 2014 -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: last day 4 August 2014 -->
 <!-- added aluminum foil to bedroom, 9 August 2014 -->
 <!-- began humidifier use 6 September 2014; turned off 29 September (to measure Kongin) -->
 <!-- hammock nights: 17, 18, 19, 21, 22 September; 5, 7, 8, 11, 13, 15, 18 October 2014 -->
+<!-- bright new CFL lights: began 9 December 2014 -->
 
 # External links
 
-- Vitamin D discussion:
+- Discussion:
 
-    - [Hacker News](https://news.ycombinator.com/item?id=3592017)
-    - Reddit: [1](http://www.reddit.com/r/Nootropics/comments/po3zk/psa_dont_take_vitamin_d_at_bedtime/), [2](http://www.reddit.com/r/fitnesscirclejerk/comments/po47w/so_i_heard_you_guys_like_vitamin_d_hopefully_not/)
-    - [Imminst](http://www.longecity.org/forum/topic/54364-vitamin-d-sleep-experiment/)
-    - [_Business Insider_ blog](http://www.businessinsider.com/this-is-what-happens-when-you-track-your-sleep-obsessively-2012-2)
-- Reddit: [potassium discussion](http://www.reddit.com/r/Nootropics/comments/1578ly/does_potassium_hurt_anyone_elses_sleep/)
+    - [Redshift](https://www.reddit.com/r/Nootropics/comments/2iicde/selfexperiment_redshift_for_earlier_bedtimes/)
+    - [Magnesium](https://www.reddit.com/r/Nootropics/comments/2cdiok/magnesium_selfexperiment_mixed_effects_on_sleep/)
+    - [Alcohol](https://www.reddit.com/r/QuantifiedSelf/comments/2cdj30/alcohol_does_not_seem_to_affect_my_sleep/)
+    - Vitamin D:
+
+        - [Hacker News](https://news.ycombinator.com/item?id=3592017)
+        - Reddit: [1](http://www.reddit.com/r/Nootropics/comments/po3zk/psa_dont_take_vitamin_d_at_bedtime/), [2](http://www.reddit.com/r/fitnesscirclejerk/comments/po47w/so_i_heard_you_guys_like_vitamin_d_hopefully_not/), [3](https://www.reddit.com/r/Nootropics/comments/t3a2n/vitamin_d_followup_improves_morning_mood/)
+        - [Imminst](http://www.longecity.org/forum/topic/54364-vitamin-d-sleep-experiment/)
+        - [_Business Insider_ blog](http://www.businessinsider.com/this-is-what-happens-when-you-track-your-sleep-obsessively-2012-2)
+    - potassium: [1](http://www.reddit.com/r/Nootropics/comments/1578ly/does_potassium_hurt_anyone_elses_sleep/), [2](https://www.reddit.com/r/Nootropics/comments/193ol8/potassium_followup_experiment/)
 - coping with Zeo Inc's shutdown:
 
     - ["Zeo Firmware and Raw Data API on OpenYou Github"](http://www.openyou.org/2013/06/11/zeo-firmware-and-raw-data-api-on-openyou-github/)

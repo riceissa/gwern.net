@@ -75,7 +75,7 @@ I am a freelance writer & researcher. I have worked for or published in [MIRI](!
 
     - [LessWrong.com](http://lesswrong.com/): my [submitted posts](http://lesswrong.com/user/gwern/submitted/)[^LW-submissions][^LW-disagreements] & [comments](http://lesswrong.com/user/gwern/comments/) ([by score](http://www.ibiblio.org/weidai/lesswrong_user.php?u=gwern))
     - [Reddit](!Wikipedia): my [submissions](http://www.reddit.com/user/gwern/submitted/) & [comments](http://www.reddit.com/user/gwern/comments/) ([by score](http://www.reddit.com/user/gwern/?sort=top))
-    - [Google](https://www.google.com/profiles/gwern0): [Google+](https://plus.google.com/103530621949492999968/posts) ([OPML of RSS feeds](/docs/gwern-google-reader-subscriptions.xml))
+    - [Google](https://www.google.com/profiles/gwern0): [Google+](https://plus.google.com/103530621949492999968/posts) ([OPML of RSS feeds](/docs/gwern-rss-subscriptions.opml))
     - [Hacker News](!Wikipedia): [submissions](https://news.ycombinator.com/submitted?id=gwern) & [comments](https://news.ycombinator.com/threads?id=gwern)
 - Books: [Goodreads](http://www.goodreads.com/gwern) ([ratings & reviews](Book reviews))
 - [PredictionBook](http://predictionbook.com/users/gwern)
@@ -303,50 +303,55 @@ I don't think so. I value my contributions, and the Haskell community is better 
 
 I mostly contribute to projects in Haskell, my favorite language; I have contributed to non-Haskell projects such as [StumpWM](!Wikipedia), [Mnemosyne](!Wikipedia "Mnemosyne (software)"), [GNU Emacs](!Wikipedia)[^emacs] etc. but not in major ways, so I do not list them here:
 
+## arbtt
+
+- wrote tutorial on configuring the time-tracker & defining rules: ["Effective Use of arbtt"](http://arbtt.nomeata.de/doc/users_guide/effective-use.html)
+- documented dependencies, similar software, configuration syntax mode, CLI flag corrections
+
 ## Darcs
 
-#. Switched from FastPackedStrings to ByteStrings
-#. Low-level C optimization
-#. Initiated Cabalization (my work initially appeared as [darcs-cabalized](!Hackage) and then was merged into HEAD and `darcs-cabalized` deprecated)
-#. Refactoring of shell tests
-#. Initiated switch from [MoinMoin](!Wikipedia) wiki to Gitit
-#. Identified performance issue & instigated addition of `--max-count` option for Filestore
+1. Switched from FastPackedStrings to ByteStrings
+2. Low-level C optimization
+3. Initiated Cabalization (my work initially appeared as [darcs-cabalized](!Hackage) and then was merged into HEAD and `darcs-cabalized` deprecated)
+4. Refactoring of shell tests
+5. Initiated switch from [MoinMoin](!Wikipedia) wiki to Gitit
+6. Identified performance issue & instigated addition of `--max-count` option for Filestore
 
 ## XMonad
 
-#. regular XMonadContrib patch reviews
-#. [Config archive downloader](http://www.haskell.org/haskellwiki/Xmonad/Config_archive#Downloading_all_configs)
-#. Contributed modules:
+1. regular XMonadContrib patch reviews
+2. [Config archive downloader](http://www.haskell.org/haskellwiki/Xmonad/Config_archive#Downloading_all_configs)
+3. Contributed modules:
     i. XMonad.Util.Paste
     ii. XMonad.Actions.Search
     iii. XMonad.Actions.WindowGo
     iv. XMonad.Util.XSelection
-#. Maintain previous[^commit]
+4. Maintain previous[^commit]
 
 ## Yi
 
-#. Contributed modules:
+1. Contributed modules:
     i. Yi.IReader
     ii. Yi.Mode.IReader
     iii. Yi.Hoogle
-#. Improved Emacs keybindings
-#. Initiated 'Unicodify' or 'Pretty Lambdas' feature for Haskell syntax highlighting
-#. Added movement-related functions for improved incremental search
-#. Cleanup[^clean]
-#. Comment support to cabal-mode
+2. Improved Emacs keybindings
+3. Initiated 'Unicodify' or 'Pretty Lambdas' feature for Haskell syntax highlighting
+4. Added movement-related functions for improved incremental search
+5. Cleanup[^clean]
+6. Comment support to cabal-mode
 
 ## Lambdabot
 
-#. (Re)Cabalized[^cabalized]
-#. Adapted to use Mueval
-#. Refactored out code in multiple packages:
+1. (Re)Cabalized[^cabalized]
+1. Adapted to use Mueval
+1. Refactored out code in multiple packages:
     i. [show](!Hackage)
     ii. [lambdabot-utils](!Hackage)
     iii. [brainfuck](!Hackage)
     iv. [unlambda](!Hackage)
-#. Implemented run-in-any-directory functionality (previously Lambdabot could only run in the repository directory)
-#. Cleanup
-#. Maintain it (with Cale Gibbard)
+1. Implemented run-in-any-directory functionality (previously Lambdabot could only run in the repository directory)
+1. Cleanup
+1. Maintain it (with Cale Gibbard)
 
 ## Gitit
 

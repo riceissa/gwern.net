@@ -31,7 +31,7 @@ Variables:
 - RoI: the 30-day return-on-investment of Bitcoin as decimal; extracted from Eli Dourado's [btcvol.info](http://btcvol.info/)'s [historical CSV](http://btcvol.info/csv); it is based on the [Coindesk index](http://www.coindesk.com/price/?bpi=bpi). For exact computation, see the appendix.
 - σ/[volatility](https://en.wikipedia.org/wiki/Volatility_%28finance%29): the 30-day volatility of Bitcoin prices on the day a marketplace is considered dead (decimal),
 
-A table of relevant markets (19 Dec 2014):
+A table of relevant markets (22 Dec 2014):
 
 Market                   Start       End       Alive Closure   Arrested URL                      Multisig I2P   Coin          Codebase   Guns   Fraud Hacks Doxed Notes
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ----          ---------- -----  ----- ----- ----- -------------
@@ -101,6 +101,7 @@ Diabolus                 2014-10-13            TRUE            FALSE    `qxvfcav
 Nucleus Marketplace      2014-10-24            TRUE            FALSE    `nucleuspf3izq7o6.onion` FALSE    FALSE BTC/DRK/LTC              TRUE   TRUE  0     FALSE   <!-- Multisig planned but not available -->
 Panacea                  2014-10-27            TRUE            FALSE    `panaceaz4give75l.onion` TRUE     FALSE BTC           Cloud-9    FALSE  FALSE 0     TRUE    [Reddit ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2kevg6/panacea_flower_sanctuary_the_light_at_the_end_of/); forums: `flower777wpnxpkj.onion`; cannabis-only; admin "PyroWolf" was reportedly doxed by the cannabis seller EastCoastCollective ([likely](https://www.reddit.com/r/DarkNetMarkets/comments/2khn4h/ecc_eastcoastcollective_runs_cannabis_road_both/) the operator of CR2/CR3, and possibly CR1 as well), who he was a former customer of.
 Abraxas                  2014-12-13            TRUE            FALSE    `abraxasdegupusel.onion` FALSE    FALSE BTC           Laravel    FALSE  TRUE  0     FALSE   forums: `abraxasgacelesox.onion`
+AlphaBay                 2014-12-22            TRUE            FALSE    `pwoah7foa6au2pul.onion` FALSE    FALSE BTC           PHP        TRUE   TRUE  0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2q2foj/new_darknet_market_alphabay_market/)
 
 <!-- dBay 2014-12-07 TRUE FALSE `qivl4yxf7fcandoi.onion` MyBB drugs, carding https://www.reddit.com/r/DarkNetMarkets/comments/2ok3vv/new_market_appearing_what_would_you_like_to_see/ -->
 
@@ -117,6 +118,20 @@ Location: http://abraxasdegupusel.onion/login
 Pragma: no-cache
 Expires: Fri, 01 Jan 1990 00:00:00 GMT
 Set-Cookie: laravel_session=eyJpdiI6IkZIT1FMOEd0UE9lYzZ5MW9GVVRwV3c9PSIsInZhbHVlIjoidkRqYTJGcDF2anNtdkVDUDRVZUpWeUdSXC9DZHhJaXFTNXU3YTdSV2VpV1dFVVVMbHRvSVJZYkExMG5uM1wvaGtPZm5pWTY5N0JFeWplOEE3Y29iK2tIZz09IiwibWFjIjoiZjM3ODk1Y2RkMDNiZmUyMjEzZTk4ZTgzM2YyMzdjMTA5NTZmZGMyMTNmZjg4NDA1ZTI2MjBiN2VjYTc3ODk1MSJ9; expires=Tue, 16-Dec-2014 23:18:45 GMT; path=/; httponly
+-->
+<!-- torify curl -I 'http://pwoah7foa6au2pul.onion'
+HTTP/1.1 302 Moved Temporarily
+Date: Tue, 23 Dec 2014 00:32:03 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+X-Powered-By: PHP/5.6.4
+Server: AlphaBay Server
+Content-Language: en
+Set-Cookie: PHPSESSID=qs16aoiqafn57clhkku0a8mmk0; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: login.php
 -->
 
 See also [DeepDotWeb's list](http://www.deepdotweb.com/2013/10/28/updated-llist-of-hidden-marketplaces-tor-i2p/ "Updated: List of Hidden Marketplaces (Tor & I2P)") ([changelog](http://www.deepdotweb.com/hidden-marketplace-list-changelog/)), and the [DNM market list](http://www.reddit.com/r/DarkNetMarkets/wiki/index/sidebar).
@@ -177,7 +192,7 @@ Southern District of New York   14-Mag-2427 11/06/2014
 
 2 servers in France, 0 arrests? http://www.lemonde.fr/pixels/article/2014/11/11/les-coulisses-de-l-operation-onymous-contre-des-dizaines-de-sites-caches-illegaux_4521827_4408996.html
 -->
-<!-- TOM down 19 Dec 2014 -->
+<!-- TOM down 19, 20, 22 Dec 2014 -->
 
 # Analysis
 

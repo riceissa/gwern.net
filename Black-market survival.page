@@ -31,7 +31,7 @@ Variables:
 - RoI: the 30-day return-on-investment of Bitcoin as decimal; extracted from Eli Dourado's [btcvol.info](http://btcvol.info/)'s [historical CSV](http://btcvol.info/csv); it is based on the [Coindesk index](http://www.coindesk.com/price/?bpi=bpi). For exact computation, see the appendix.
 - σ/[volatility](https://en.wikipedia.org/wiki/Volatility_%28finance%29): the 30-day volatility of Bitcoin prices on the day a marketplace is considered dead (decimal),
 
-A table of relevant markets (22 Dec 2014):
+A table of relevant markets (31 Dec 2014):
 
 Market                   Start       End       Alive Closure   Arrested URL                      Multisig I2P   Coin          Codebase   Guns   Fraud Hacks Doxed Notes
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ----          ---------- -----  ----- ----- ----- -------------

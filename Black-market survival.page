@@ -205,7 +205,7 @@ TODO: <!-- ping Vespco about results -->
 
 ~~~{.R}
 library(XML)
-black <- readHTMLTable("/tmp/burl8484QpG.html", colClasses = c("character", "factor", "factor", "logical",
+black <- readHTMLTable("http://www.gwern.net/Black-market%20survival", colClasses = c("character", "factor", "factor", "logical",
                                                                "factor", "logical", "character", "logical", "logical",
                                                                "factor", "factor", "logical", "logical",
                                                                "integer", "logical",
@@ -220,7 +220,8 @@ black$Age <- as.integer(black$End - black$Start)
 levels(black$Closure) <- c("alive", "hacked", "raided", "scam", "voluntary") # sets "" to "alive"
 
 library(survival)
-# plot(survfit(Surv(Age, Alive, type="right") ~ 1, data=black))
+# plot(survfit(Surv(Age, Alive, type="right") ~ 1, data=black), xlab="Days active", ylab="Fraction of markets still active")
+
 
 cmodel <- coxph(Surv(Age, Alive) ~ Multisig + I2P + Coin + Codebase + Guns + Fraud + Hacks + Doxed + RoI + σ, data = black); cmodel
 
@@ -477,6 +478,59 @@ with(black, crr(Age, Closure, cov1= black[,c("Multisig", "Hacks", "Doxed", "Frau
 ~~~
 
 # Predictions
+
+~~~{.R}
+# Generate predictions of shutdown in next 6 / 12 months for the still-running marketplaces:
+
+# You are not expected to understand this ugly hack. I don't either. But it *seems* to work...
+# for background, see http://gwern.net/Google%20shutdowns & http://www.gwern.net/Silk%20Road#the-bet-bmr-or-sheep-to-die-in-a-year-by-oct-2014
+library(rms)
+conditionalProbability <- function (d, followupUnits, cmodel) {
+    chances <- rep(NA, nrow(d)) # stash results
+
+    for (i in 1:nrow(d)) {
+
+        # extract chance of particular subject surviving as long as it has:
+        beginProb <- survest(cmodel, d[i,], times=(d[i,]$Age))$surv
+        if (length(beginProb)==0) { beginProb <- 1 } # set to a default
+
+        tmpFollowup <- followupUnits # reset in each for loop
+        while (TRUE) {
+            # extract chance of subject surviving as long as it has + an arbitrary additional time-units
+            endProb <- survest(cmodel, d[i,], times=(d[i,]$Age + tmpFollowup))$surv
+            # survival curve may not reach that far! 'survexp returns 'numeric(0)' if it doesn't;
+            # so we shrink down 1 day and try again until 'survexp' *does* return a usable answer
+            if (length(endProb)==0) { tmpFollowup <- tmpFollowup - 1} else { break }
+        }
+
+        # if 50% of all subjects survive to time t, and 20% of all survive to time t+100, say, what chance
+        # does a survivor - at exactly time t - have of making it to time t+100? 40%: 0.20 / 0.50 = 0.40
+        chances[i] <- endProb / beginProb
+    }
+    return(chances)
+}
+# we can't regress on '~ 1' because `survest` crashes inside `conditionalProbability` (‽),
+# so let's just toss in all the covariates to make it work despite none of them being well-justified...
+cpmodel <- cph(Surv(Age, Alive) ~ Multisig + I2P + Coin + Guns + Fraud, data = black, x=TRUE, y=TRUE, surv=TRUE)
+# report in %s rather than raw probabilities for easier reading
+black$SixMonth <- round(digits=1, conditionalProbability(black, round(365/2), cpmodel) * 100)
+black$OneYear  <- round(digits=1, conditionalProbability(black,          365, cpmodel) * 100)
+
+subset(black, Alive, select=c("Market", "SixMonth", "OneYear"))
+#                      Market SixMonth OneYear
+# 56             Dream Market    100.0   100.0
+# 57                    Agora     65.6    65.6
+# 58            Outlaw Market     72.3    72.3
+# 59                evolution     17.5    17.5
+# 60         BlackBank Market     13.1    13.1
+# 61                   Area51     57.7    28.1
+# 62 Middle Earth Marketplace     56.8    28.8
+# 63                 Diabolus     34.7     0.0
+# 64      Nucleus Marketplace     15.7     0.0
+# 65                  Panacea     89.7    34.4
+# 66                  Abraxas     85.9    51.2
+# 67                 AlphaBay     92.5    48.4
+~~~
 
 # See also
 

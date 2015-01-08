@@ -741,6 +741,7 @@ On the null and negative sides:
 - Tsaltas et al 2008 says many studies can't be generalized to healthy populations; for every study finding damage to performance or memory, there seems to be a study finding the null result. But whichever is true, it is not encouraging[^lithium-bad].
 - Of 22 Alzheimer's patients taking 100mg of lithium carbonate, 3 stopped due to side-effects ([Macdonald et al 2008](/docs/lithium/2008-macdonald.pdf "A feasibility and tolerability study of lithium in Alzheimer's disease")); but 100mg carbonate is substantially more than 5mg orotate, and one might guess that old ill people would report more side-effects in general
 - [Broberg et al 2011](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3114818/ "Lithium in Drinking Water and Thyroid Function") documents extreme daily consumption of 2-30mg from water & food in Andean villages, correlating with changes in some thyroid-related biomarkers, suggestive of potential thyroid issues
+- [Aprahamian et al 2014](/docs/lithium/2014-aprahamian.pdf "Long-Term, Low-Dose Lithium Treatment Does Not Impair Renal Function in the Elderly: A 2-Year Randomized, Placebo-Controlled Trial Followed by Single-Blind Extension") was an RCT of 61 patients with "mild cognitive impairment" given ~150mg of lithium carbonate (targeting blood level of 0.25-0.5 mmol/L); it found minimal damage to liver function, but a few worrisome secondary outcomes such as somewhat higher complaints of side-effects (4.07 vs 4.98 symptoms)
 
 [^lithium-bad]: Tsaltas et al 2008, pg 15:
 
@@ -3714,10 +3715,41 @@ Date,LLLT.random
 2014-12-06,1
 2014-12-07,0
 2014-12-08,1
-2014-12-08,1
+2014-12-09,1
+2014-12-10,1
+2014-12-11,1
+2014-12-12,NA
+2014-12-13,1
+2014-12-14,1
+2014-12-15,0
+2014-12-16,1
+2014-12-17,NA
+2014-12-18,0
+2014-12-19,1
+2014-12-20,1
+2014-12-21,NA
+2014-12-22,NA
+2014-12-23,NA
+2014-12-24,NA
+2014-12-25,NA
+2014-12-26,NA
+2014-12-27,0
+2014-12-28,1
+2014-12-29,0
+2014-12-30,1
+2014-12-31,NA
+2015-01-01,0
+2015-01-02,NA
+2015-01-03,1
+2015-01-04,NA
+2015-01-05,1
+2015-01-06,1
+2015-01-07,1
+2015-01-08,1
 -->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Kirkland multivitamin: started 24 August 2013; break 23-27 Dec; last day: 01 October 2014 -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16, 19, 25, 29 September; 01, 03, 08, 11, 14, 17, 20, 22, 27, 31 October; 04, 05, 09, 14, 17, 19, 24, 29 November; 4, 7 December -->
-<!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum -->
-<!-- Bacopa (Bacognize): start 26 September 2014 -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16, 19, 25, 29 September; 01, 03, 08, 11, 14, 17, 20, 22, 27, 31 October; 04, 05, 09, 14, 17, 19, 24, 29 November; 4, 7, 11, 20, 27, 30, 31 December; 2015 January 05 -->
+<!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum; 21 December: 4mg gum; 30 December: 2mg gum -->
+<!-- Bacopa (Bacognize): start first block 26 September 2014, last day 19 December 2014; +90 days to 19 March 2015 -->
+<!-- MealSquares; Vaniver gave me 5 on 29 December 2014; ate last on 6 January 2015, so 30/01/02/05/06? -->

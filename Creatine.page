@@ -9,9 +9,12 @@ belief: possible
 
 > I attempt to meta-analyze conflicting studies about the cognitive benefits of creatine supplementation. The wide variety of psychological measures hampers any aggregation. 3 studies measured IQ and turn in a positive result, but suggestive of vegetarianism causing half the benefit.
 
-[Creatine](!Wikipedia) is a chemical found throughout the body in a number of roles; it is most famous for its presence in muscles and enabling greater exertion, but it also plays a role in the nervous system. Some small psychology experiments in healthy adults have found cognitive benefits to supplementation but others disagree ([Wikipedia](!Wikipedia "Creatine#Improved cognitive ability"), [Examine.com](http://examine.com/supplements/Creatine/#summary6-12)), and these differences may be due to covariates like being vegetarian & hence creatine-deficient.
+[Creatine](!Wikipedia) is a chemical found throughout the body in a number of roles; it is most famous for its presence in muscles and enabling greater exertion, but it also plays a role in the nervous system.
+Some small psychology experiments in healthy adults have found cognitive benefits to supplementation but others disagree ([Wikipedia](!Wikipedia "Creatine#Improved cognitive ability"), [Examine.com](http://examine.com/supplements/Creatine/#summary6-12)), and these differences may be due to covariates like being vegetarian & hence creatine-deficient.
 
-When small studies conflict, one way to get answers is to try to meta-analyze them into a single more robust summary. In particular, I am interested in whether creatine supplementation increases IQ. One problem here is that the studies may not use enough of the same measures to include in the same meta-analysis; besides that, the studies are likely severely underpowered to detect plausible effects: IQ increases have been often claimed, but have rarely panned out (see, for example, [dual n-back](DNB meta-analysis)) and "extraordinary claims require extraordinary proof".
+When small studies conflict, one way to get answers is to try to meta-analyze them into a single more robust summary.
+In particular, I am interested in whether creatine supplementation increases IQ.
+One problem here is that the studies may not use enough of the same measures to include in the same meta-analysis; besides that, the studies are likely severely underpowered to detect plausible effects: IQ increases have been often claimed, but have rarely panned out (see, for example, [dual n-back](DNB meta-analysis)) and "extraordinary claims require extraordinary proof".
 
 # Background
 
@@ -73,7 +76,8 @@ Hammett et al 2010         Raven's Advanced Progressive Matrices; Backward Digit
 Benton & Donohoe 2011      Word recall; reaction-time; vigilance rapid information processing task; Controlled Oral Word Association Test
 Alves et al 2013           Forward Digit Span; Backward Digit Span; Mini-Mental State Examination; Stroop Test; Trail Making Test; Delay Recall Test
 
-In total, these studies use <=31 distinct measures of cognitive functioning; this heterogeneity renders any summary very difficult as most measures were used in one and only one experiment. The Hemmings mood state inventory, random number generation task, forward verbal recall, & Uchida-Kraepelin serial calculation test are used in 2 experiments each, but the backward digit span is used in 4 experiments, and the RAPM is used in 4 experiments - so it would be best to analyze those two
+In total, these studies use <=31 distinct measures of cognitive functioning; this heterogeneity renders any summary very difficult as most measures were used in one and only one experiment.
+The Hemmings mood state inventory, random number generation task, forward verbal recall, & Uchida-Kraepelin serial calculation test are used in 2 experiments each, but the backward digit span is used in 4 experiments, and the RAPM is used in 4 experiments - so it would be best to analyze those two.
 
 # RAPM
 ## Data
@@ -132,9 +136,15 @@ intrcpt    0.5661  0.2726  2.0767  0.0378   0.0318  1.1003
 diet       0.4299  0.4052  1.0609  0.2887  -0.3643  1.2242
 ~~~
 
-Unfortunately, with 3 studies I can't investigate dose meaningfully, nor try to check for publication bias. This leaves me quite skeptical: with more than a decade, have so few studies really been done, or are the proverbial filedrawers bulging with others I couldn't find?
+Unfortunately, with 3 studies I can't investigate dose meaningfully
 
 <!-- library(pwr); pwr.t.test(n = sum(creatine$n.e), d = 0.57) -->
+
+### Publication bias
+
+The common publication bias checks like the funnel plot are useless with 3 studies.
+As it happens, there is no need to do any hypothesis-testing here: Ling (personal communication 2013) mentions that 2 student theses were done involving creatine supplementation & cognition with apparently uninteresting results, but did not have any copies and the university library had not retained any; this is prima facie publication bias.
+Hence, we know that the meta-analytic results *are* biased upwards by publication bias.
 
 # Backward Digit Span
 ## Data
@@ -216,12 +226,43 @@ Section 2, "Effectiveness":
 It measured:
 
 1. Backward Digit Span
+
+    > The number of correctly repeated numbers before supplementation and the number of correctly repeated numbers after six weeks of supplementation are shown in the table. To better compare the results, the difference between the numerical values is further illustrated.
+    >
+    >                                       0 weeks  6 weeks    Difference
+    > ---------------------                 -------- -------    ----------
+    > Placebo (maltodextrin)                6.4      6.8        0.4
+    > Creatine monohydrate                  6.2      7.9        1.7
+    > Ginkgo biloba                         6.7      7.5        0.8
+    > Creatine monohydrate + Ginkgo biloba  6.5      9.2        2.7
+    >
+    > Test Method: Wechsler, D .: Adult Intelligence Scale manual. (1955) New York: Psychological Corporation.
 2. Raven's Advanced Progressive Matrices
+
+    >                                         0 weeks  6 weeks     Difference
+    > -------------------------------------   -------- -------     ----------
+    > Placebo (maltodextrin)                  8.7      10.2        1.5
+    > Creatine monohydrate                    8.1      12.7        4.6
+    > Ginkgo biloba                           9.8      12.9        3.1
+    > Creatine monohydrate + Ginkgo biloba    9.3      17.2        7.9
+    >
+    > Test Method: Rauen, JC et al .: Manual for Raven's progressive matrices and vocabulary scales. (1988) London: HK Lewis.
 3. Uchida-Kraepelin test
 
-But reported only pre and post-test scores, and not standard deviations; nor was any kind of statistical test reported, making it difficult to infer anything about the results.
+    > The test subjects a computational test was performed, which measures the mental fatigue. They were given simple computing tasks with an interval of 5 minutes twice 15 minutes. In the second 15 minutes, the number of solved problems per minute were determined. The test was performed before taking supplementation and after 6 weeks. By linear regression analysis can be inferred from the measured data on mental fatigue. In Table 3, the regression coefficient a is given ($y = ax + b$). An enlargement of the regression coefficient is a direct measure of a reduced mental fatigue.
+    >
+    >                                         0 weeks     6 weeks     Difference
+    > --------------------------------------  -------     -------     ----------
+    > Placebo (maltodextrin)                  -0.0076     -0.0089     -0.0013
+    > Creatine monohydrate                    -0.0088     -0.0046      0.0042
+    > Ginkgo biloba                           -0.0105     -0.0081      0.0024
+    > Creatine monohydrate + Ginkgo biloba    -0.0097     -0.0021      0.0075
+    >
+    > Test Method: Watanabe, A. et al .: Neuroscience Research (Oxford, United Kingdom) (2002), 42 (4), 279-285
 
-It is unclear where this experiment was done, by whom, or whether it was ever published. (The "in press" citation to Mielcarz et al 2007 turns out to refer to McMorris et al 2007.) Nothing in the English translation indicates that it was published anywhere else; searches failed to find anything related to this but the patent itself; the Uchida-Kraepelin test is very unusual and I tried searching for anything relating to it and creatine in Google/Google-Scholar in English & German but turned up nothing besides discussions of Watanabe 2002.
+But Gastner et al reported only pre and post-test scores, and not standard deviations; nor was any kind of statistical test reported, making it difficult to infer anything about the results.
+
+It is unclear where this experiment was done, by whom, or whether it was ever published. (The "in press" citation to Mielcarz et al 2007 turns out to refer to McMorris et al 2007.) Nothing in the English translation indicates that it was published anywhere else; searches failed to find anything related to this but the patent itself; the Uchida-Kraepelin test is unusual and I tried searching for anything relating to it and creatine in Google/Google-Scholar in English & German but turned up nothing besides discussions of Watanabe 2002.
 
 On 23 September 2013, I attempted to reach Gastner via the [Alzchem contact form](http://www.alzchem.com/en/contacts).
 (Gastner knows English, as demonstrated by co-authoring "Creatine - its chemical synthesis, chemistry, and legal status" in _Creatine and Creatine Kinase in Health and Disease_.)

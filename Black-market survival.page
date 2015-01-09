@@ -31,7 +31,7 @@ Variables:
 - RoI: the 30-day return-on-investment of Bitcoin as decimal; extracted from Eli Dourado's [btcvol.info](http://btcvol.info/)'s [historical CSV](http://btcvol.info/csv); it is based on the [Coindesk index](http://www.coindesk.com/price/?bpi=bpi). For exact computation, see the appendix.
 - σ/[volatility](https://en.wikipedia.org/wiki/Volatility_%28finance%29): the 30-day volatility of Bitcoin prices on the day a marketplace is considered dead (decimal),
 
-A table of relevant markets (31 Dec 2014):
+A table of relevant markets (08 Jan 2015):
 
 Market                   Start       End       Alive Closure   Arrested URL                      Multisig I2P   Coin          Codebase   Guns   Fraud Hacks Doxed Notes
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ----          ---------- -----  ----- ----- ----- -------------
@@ -134,7 +134,7 @@ Pragma: no-cache
 Location: login.php
 -->
 
-See also [DeepDotWeb's list](http://www.deepdotweb.com/2013/10/28/updated-llist-of-hidden-marketplaces-tor-i2p/ "Updated: List of Hidden Marketplaces (Tor & I2P)") ([changelog](http://www.deepdotweb.com/hidden-marketplace-list-changelog/)), and the [DNM market list](http://www.reddit.com/r/DarkNetMarkets/wiki/index/sidebar).
+See also [DeepDotWeb's list](http://www.deepdotweb.com/2013/10/28/updated-llist-of-hidden-marketplaces-tor-i2p/ "Updated: List of Hidden Marketplaces (Tor & I2P)") ([changelog](http://www.deepdotweb.com/hidden-marketplace-list-changelog/)), the [DNM market list](http://www.reddit.com/r/DarkNetMarkets/wiki/index/sidebar), and the [Hidden Wiki](/docs/sr/2014-08-30-hiddenwiki-comparisiondarknetmarkets.mht) (last updated 30 August 2014).
 
 I may add to the table other variables; possibly useful ones:
 

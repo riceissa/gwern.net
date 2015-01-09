@@ -111,38 +111,41 @@ alternative sources
 - [VGMdb Touhou entries](http://vgmdb.net/product/9) but it is substantially smaller with metadata on <1389 albums
 - The open source alternative is [MusicBrainz](!Wikipedia); looks like [it has 190 albums](http://musicbrainz.org/tag/touhou/release), but like 90%+ link to VGMdb, so I'm not sure I want to include them (waste of effort, and if someone just copied over all of VGMdb a few years ago, it'll be badly misleading to any capture-recapture analysis of population size).
 - [Touhouwiki.net](http://en.touhouwiki.net/wiki/Doujin_circles) another source, with <1182 albums
-- "東方音団録 ～ Arrange Circle Database ver.3.0"; [homepage](http://www16.atwiki.jp/toho) & [release info](http://www16.atwiki.jp/toho/pages/727.html) ([debate](http://www16.atwiki.jp/toho/pages/13.html), [chat](http://www16.atwiki.jp/toho/pages/948.html)), [product page](http://www.toranoana.jp/bl/article/04/0030/04/86/040030048682.html) with j-subculture.com quoting a partial total of $15, Paypal and shipping outside Japan boosting to ~$30! (Alternative proxies included [Yokatta](http://yokattaweb.jp/index.html).)
 
-   Strategy: first I'll ask for an Arrange CD download in the wiki's chatroom; then I'll look for an email by someone running it and email them directly; then I'll see if there's anyone in Japan who either owes me a favor or is willing to do me a favor; then I'll ask around for a cheaper reshipper; and if all that fails, then I'll pay j-subculture's extortionate $25 probable total cost.
+### Arrange Circle Database
 
-   Email in 1 March 2013 failed to elicit any reply by 27 May; then [requested a purchase](http://www.reddit.com/r/TOUHOUMUSIC/comments/1f61p6/request_anyone_ordering_from_tora_no_ana_soon/ "[request] Anyone ordering from Tora no Ana soon? (self.TOUHOUMUSIC)") on `/r/TOUHOUMUSIC.
+ "東方音団録 ～ Arrange Circle Database ver.3.0"; [homepage](http://www16.atwiki.jp/toho) & [release info](http://www16.atwiki.jp/toho/pages/727.html) ([debate](http://www16.atwiki.jp/toho/pages/13.html), [chat](http://www16.atwiki.jp/toho/pages/948.html)), [product page](http://www.toranoana.jp/bl/article/04/0030/04/86/040030048682.html) with j-subculture.com quoting a partial total of \$15, Paypal and shipping outside Japan boosting to ~\$30! (Alternative proxies included [Yokatta](http://yokattaweb.jp/index.html).)
 
-Need more databases for capture-recapture analysis!
+Email in 1 March 2013 failed to elicit any reply by 27 May; then [requested a purchase](http://www.reddit.com/r/TOUHOUMUSIC/comments/1f61p6/request_anyone_ordering_from_tora_no_ana_soon/ "[request] Anyone ordering from Tora no Ana soon? (self.TOUHOUMUSIC)") on `/r/TOUHOUMUSIC.
 
-<!--
-The ISO file seems to be broken: `file` just calls it 'data', and when I mount it as a loopback iso9660 file, `mount` throws an error. I redownloaded it and compared it, but the copies were identical.
+My request was filled on 8 June 2013 as an ISO and ZIP file.
+The ISO file seemed to be broken: `file` just calls it 'data', and when I mount it as a loopback iso9660 file, `mount` throws an error. I redownloaded it and compared it, bu the copies were identical.
+The good news is that the zip file seems to work fine. The data is in a `.accdb` file in a subfolder, which turns out to be the latest Microsoft Access database format. Unfortunately, this turns out to be almost entirely unsupported by anything on Linux (except for a Java library), but fortunately, an acquaintance had an Office 365 subscription and re-exported the `.accdb` file as the older Access format `.mdb` file ([Microsoft Access database](/docs/touhou/2013-06-08-acircle-tohoarrange.mdb)) which was successfully read and converted to CSV by `mdb-tools`'s `mdb-export` ([UTF-8 CSV format](/docs/touhou/2013-06-08-acircle-tohoarrange.csv)).
 
-The good news is that the zip file seems to work fine. The data is in a .accdb file in a subfolder, which turns out to be the latest Microsoft Access database format. Unfortunately, this turns out to be almost entirely unsupported by anything on Linux (except for a Java library), but fortunately, an acquaintance had an Office 365 subscription and re-exported the .accdb file as a .mdb file (the older Access format) which was successfully read and converted to CSV by `mdb-tools`. The entries look like this:
 
-$ mdb-tables Toho_arrange_circle_database-gwern.mdb
-アレンジサークルリスト
-$ mdb-export Toho_arrange_circle_database-gwern.mdb `mdb-tables Toho_arrange_circle_database-gwern.mdb` > Toho_arrange_circle_database-gwern.csv
-$ head Toho_arrange_circle_database-gwern.csv
-    ID,pin,サークル名,ふりがな,URL,ジャンル,Vocal,主な頒布CD,原曲アレンジの程度,一言,memo
-    1,,"っ´Д｀)っゼロ式の処刑場（っ´Д｀)っゼロ式の家・DESTRUCTIVE ANGEL）","ぜろしきのしょけいじょう","http://shinzanzeroshiki.fc2web.com/","メタル","男","Crazy Trancy Ecstasy","原曲維持","重厚感あふれる荘厳なメタル。（Black）",
-    2,,"α music","あるふぁみゅーじっく","http://www19.atpages.jp/tatu4/","オーケストラ、ピアノ",,"東方風水華月","原曲維持",,
-    3,,"凸凹えんたーていめんとすたじお","でこぼこえんたーていめんとすたじお","http://3rd.geocities.jp/deko_boko_es/index/","リコーダー、ゲームミュージック",,"Electronic Magus","原曲維持","8ビットあり、リコーダー生演奏ありと多彩。（Black）",
-    4,,"[4989]","しくはっく","http://4989mm.littlestar.jp/","ロック","男女","musick for me","原曲維持","スローなロック風アレンジにハイトーン男声ボーカル、エレクトロも混ざったインストも。ドラマCDあり。（Black）",
-    5,,"[ kapparecords])","かっぱれこーず","http://www5f.biglobe.ne.jp/~kapparecords/","ハードロック","男","SCARLET FANTASIA","原曲維持","生演奏ギタードラムベースと男声ボーカルがんばれ。（Black）",
-    6,,"＜echo＞PROJECT","えこぷろじぇくと","http://echoproject.3rin.net/","ダンス、ポップス、ロック","女","eclat:","原曲重視～維持","女性ボーカルを軸にしてジャンルは何でもアレンジ。（Black）",
-    7,,"#039","しゃーぷさんきゅー","http://sharp039.web.fc2.com/",,,"EMERGENCE",,,
-    8,,"#ゆうかりんちゃんねる","ゆうかりんちゃんねる","http://yuukach.web.fc2.com/","オーケストラ、クラシック、ピアノ、エレクトロ、ロック",,"ゴリラ人間のための華麗なる大幻想曲集","原曲維持","クラシカルな構成と管弦を散りばめたオーケストラ、クラシック風インスト。バイオリンの倍音の響きが印象的。（Black）",
-    9,,"10-GALLON(Digit Smith)","てんがろん","http://10-gallon.net/","ロック、エレクトロ、ハードロック","女","悪魔城レミリア","原曲維持","原曲メロをミドルテンポなロックとエレクトロに乗せて。（Black）",
-$ tail -1 Toho_arrange_circle_database-gwern.csv
-    1316,,"侘助","わびすけ","http://ameblo.jp/wa-bi-su-ke/","エレクトロ、ロック","女","東方乙女椿","原曲維持","速めのエレクトロ、ロックアレンジが多め。女声ボーカル。（Black）",
+The CSV seems to contain ~1316 entries; corresponding to ~1316 albums with the respective circle name, URL, genre, possibly vocalist, and 2 more fields I cannot figure out due to lack of Japanese proficiency (but none seem to be release dates). The entries look like this:
+
+    $ mdb-tables Toho_arrange_circle_database-gwern.mdb
+    アレンジサークルリスト
+    $ mdb-export Toho_arrange_circle_database-gwern.mdb `mdb-tables Toho_arrange_circle_database-gwern.mdb` > Toho_arrange_circle_database-gwern.csv
+    $ head Toho_arrange_circle_database-gwern.csv
+        ID,pin,サークル名,ふりがな,URL,ジャンル,Vocal,主な頒布CD,原曲アレンジの程度,一言,memo
+        1,,"っ´Д｀)っゼロ式の処刑場（っ´Д｀)っゼロ式の家・DESTRUCTIVE ANGEL）","ぜろしきのしょけいじょう","http://shinzanzeroshiki.fc2web.com/","メタル","男","Crazy Trancy Ecstasy","原曲維持","重厚感あふれる荘厳なメタル。（Black）",
+        2,,"α music","あるふぁみゅーじっく","http://www19.atpages.jp/tatu4/","オーケストラ、ピアノ",,"東方風水華月","原曲維持",,
+        3,,"凸凹えんたーていめんとすたじお","でこぼこえんたーていめんとすたじお","http://3rd.geocities.jp/deko_boko_es/index/","リコーダー、ゲームミュージック",,"Electronic Magus","原曲維持","8ビットあり、リコーダー生演奏ありと多彩。（Black）",
+        4,,"[4989]","しくはっく","http://4989mm.littlestar.jp/","ロック","男女","musick for me","原曲維持","スローなロック風アレンジにハイトーン男声ボーカル、エレクトロも混ざったインストも。ドラマCDあり。（Black）",
+        5,,"[ kapparecords])","かっぱれこーず","http://www5f.biglobe.ne.jp/~kapparecords/","ハードロック","男","SCARLET FANTASIA","原曲維持","生演奏ギタードラムベースと男声ボーカルがんばれ。（Black）",
+        6,,"＜echo＞PROJECT","えこぷろじぇくと","http://echoproject.3rin.net/","ダンス、ポップス、ロック","女","eclat:","原曲重視～維持","女性ボーカルを軸にしてジャンルは何でもアレンジ。（Black）",
+        7,,"#039","しゃーぷさんきゅー","http://sharp039.web.fc2.com/",,,"EMERGENCE",,,
+        8,,"#ゆうかりんちゃんねる","ゆうかりんちゃんねる","http://yuukach.web.fc2.com/","オーケストラ、クラシック、ピアノ、エレクトロ、ロック",,"ゴリラ人間のための華麗なる大幻想曲集","原曲維持","クラシカルな構成と管弦を散りばめたオーケストラ、クラシック風インスト。バイオリンの倍音の響きが印象的。（Black）",
+        9,,"10-GALLON(Digit Smith)","てんがろん","http://10-gallon.net/","ロック、エレクトロ、ハードロック","女","悪魔城レミリア","原曲維持","原曲メロをミドルテンポなロックとエレクトロに乗せて。（Black）",
+    $ tail -1 Toho_arrange_circle_database-gwern.csv
+        1316,,"侘助","わびすけ","http://ameblo.jp/wa-bi-su-ke/","エレクトロ、ロック","女","東方乙女椿","原曲維持","速めのエレクトロ、ロックアレンジが多め。女声ボーカル。（Black）",
 
 I am a little surprised that there are only 1316 entries. Either I've overestimated their thoroughness or this is limited to a specific convention or something like that... Need to look into this more.
--->
+This doesn't include the track-level data I was hoping for, but a list of albums can still be useful for estimating completeness of capture.
+
+### Circle count
 
 Crosscheck: number of circles at Comiket & Reitaisai? circles self-classify by 'genre code' and this is recorded in the official Comiket catalogues, where most (all?) of these numbers are drawn
 

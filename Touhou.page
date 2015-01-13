@@ -118,7 +118,7 @@ alternative sources
 
 Email in 1 March 2013 failed to elicit any reply by 27 May; then [requested a purchase](http://www.reddit.com/r/TOUHOUMUSIC/comments/1f61p6/request_anyone_ordering_from_tora_no_ana_soon/ "[request] Anyone ordering from Tora no Ana soon? (self.TOUHOUMUSIC)") on `/r/TOUHOUMUSIC.
 
-My request was filled on 8 June 2013 as an ISO and ZIP file.
+My request was filled on 8 June 2013 as an ISO and [ZIP file](/docs/touhou/2013-06-08-acircle-tohoarrange.zip).
 The ISO file seemed to be broken: `file` just calls it 'data', and when I mount it as a loopback iso9660 file, `mount` throws an error. I redownloaded it and compared it, bu the copies were identical.
 The good news is that the zip file seems to work fine. The data is in a `.accdb` file in a subfolder, which turns out to be the latest Microsoft Access database format. Unfortunately, this turns out to be almost entirely unsupported by anything on Linux (except for a Java library), but fortunately, an acquaintance had an Office 365 subscription and re-exported the `.accdb` file as the older Access format `.mdb` file ([Microsoft Access database](/docs/touhou/2013-06-08-acircle-tohoarrange.mdb)) which was successfully read and converted to CSV by `mdb-tools`'s `mdb-export` ([UTF-8 CSV format](/docs/touhou/2013-06-08-acircle-tohoarrange.csv)).
 

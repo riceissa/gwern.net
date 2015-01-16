@@ -44,7 +44,7 @@ Variables:
 
 ## Table
 
-A table of relevant markets (08 Jan 2015):
+A table of relevant markets (15 Jan 2015):
 
 Market                   Start       End       Alive Closure   Arrested URL                      Multisig I2P   Bitcoin Litecoin Dogecoin Darkcoin          Codebase   Guns   Fraud Hacks Doxed Notes
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ------- -------- -------- --------          ---------- -----  ----- ----- ----- -------------
@@ -115,8 +115,7 @@ Nucleus Marketplace      2014-10-24            TRUE            FALSE    `nucleus
 Panacea                  2014-10-27            TRUE            FALSE    `panaceaz4give75l.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Cloud-9    FALSE  FALSE 0     TRUE    [Reddit ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2kevg6/panacea_flower_sanctuary_the_light_at_the_end_of/); forums: `flower777wpnxpkj.onion`; cannabis-only; admin "PyroWolf" was reportedly doxed by the cannabis seller EastCoastCollective ([likely](https://www.reddit.com/r/DarkNetMarkets/comments/2khn4h/ecc_eastcoastcollective_runs_cannabis_road_both/) the operator of CR2/CR3, and possibly CR1 as well), who he was a former customer of.
 Abraxas                  2014-12-13            TRUE            FALSE    `abraxasdegupusel.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Laravel    FALSE  TRUE  0     FALSE   forums: `abraxasgacelesox.onion`
 AlphaBay                 2014-12-22            TRUE            FALSE    `pwoah7foa6au2pul.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2q2foj/new_darknet_market_alphabay_market/)
-
-<!-- dBay 2014-12-07 TRUE FALSE `qivl4yxf7fcandoi.onion` MyBB drugs, carding https://www.reddit.com/r/DarkNetMarkets/comments/2ok3vv/new_market_appearing_what_would_you_like_to_see/ -->
+Free Market              2015-01-14            TRUE            FALSE    `tfmarket6iaddx45.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  FALSE 0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2sfayc/announcement_the_free_market_is_now_accepting/)
 
 <!--
 $ torify curl -I 'http://abraxasdegupusel.onion/info'

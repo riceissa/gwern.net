@@ -1,0 +1,416 @@
+From: <Saved by Mozilla 5.0 (X11)>
+Subject: =?utf-8?Q?Performance=C2=A0of=C2=A0a=C2=A0Wireless=C2=A0Dry=C2=A0?=
+ =?utf-8?Q?Sensor=C2=A0System=C2=A0in=C2=A0Automatically_Monitoring=C2=A0S?=
+ =?utf-8?Q?leep=C2=A0and=C2=A0Wakefulness?=
+Date: Sun, 18 Jan 2015 13:47:57 -0500
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://scholar.googleusercontent.com/scholar?q=cache:NKG-zH7VJJUJ:scholar.google.com/
+X-MAF-Information: Produced By MAF V3.0.3
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8"><m=
+eta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><bas=
+e href=3D""></head><body bgcolor=3D"#ffffff" link=3D"blue" vlink=3D"blue"><=
+div style=3D"background:#fff;border:1px solid #999;margin:-1px -1px 0;paddi=
+ng:0;"><div style=3D"background:#ddd;border:1px solid #999;color:#000;font:=
+13px arial,sans-serif;font-weight:normal;margin:12px;padding:8px;text-align=
+:left">This is the html version of the file <a href=3D"http://www.myzeo.com=
+/sleep/sites/default/files/Fabregas,%20Johnstone,%20Shambroom_Validation_20=
+09_APSS_poster.pdf"><font color=3D"blue">http://www.myzeo.com/sleep/sites/d=
+efault/files/Fabregas,%20Johnstone,%20Shambroom_Validation_2009_APSS_poster=
+.pdf</font></a>.<br><b>Google</b> automatically generates html versions of=
+ documents as we crawl the web.</div></div><div style=3D"position:relative">
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<meta name=3D"Author" content=3D"jshambroom">
+<meta name=3D"CreationDate" content=3D"D:20090606122536-04'00'">
+<meta name=3D"Creator" content=3D"PScript5.dll Version 5.2.2">
+<meta name=3D"ModDate" content=3D"D:20090606122536-04'00'">
+<meta name=3D"Producer" content=3D"Acrobat Distiller 9.0.0 (Windows)">
+<title>Performance=C2=A0of=C2=A0a=C2=A0Wireless=C2=A0Dry=C2=A0Sensor=C2=A0S=
+ystem=C2=A0in=C2=A0Automatically Monitoring=C2=A0Sleep=C2=A0and=C2=A0Wakefu=
+lness</title>
+
+<table border=3D"0" width=3D"100%"><tbody><tr><td align=3D"right" bgcolor=
+=3D"eeeeee"><font face=3D"arial,sans-serif"><a name=3D"1"><b>Page 1</b></a>=
+</font></td></tr></tbody></table><font face=3D"Times" size=3D"5"><span styl=
+e=3D"font-size:31px;font-family:Times">
+<div style=3D"position:absolute;top:196;left:168"><nobr><b>Performance=C2=
+=A0of=C2=A0a=C2=A0Wireless=C2=A0Dry=C2=A0Sensor=C2=A0System=C2=A0in=C2=A0Au=
+tomatically</b></nobr></div>
+<div style=3D"position:absolute;top:235;left:356"><nobr><b>Monitoring=C2=A0=
+Sleep=C2=A0and=C2=A0Wakefulness</b></nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"4"><span style=3D"font-size:22px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:269;left:300"><nobr>Stephan E F=C3=A1br=
+egas<font style=3D"font-size:14px">1</font>, Jack Johnstone<font style=3D"f=
+ont-size:14px">2</font>, John R Shambroom<font style=3D"font-size:14px">1</=
+font></nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:298;left:281"><nobr>1</nobr></div>
+<div style=3D"position:absolute;top:298;left:552"><nobr>2</nobr></div>
+<div style=3D"position:absolute;top:298;left:281"><nobr>1<font style=3D"fon=
+t-size:20px">Zeo, Inc, Newton, MA, USA   </font>2<font style=3D"font-size:2=
+0px">Valley Sleep Center, Burbank, CA, USA</font></nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"4"><span style=3D"font-size:25px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:339;left:17"><nobr><b>Introduction:</b>=
+</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:370;left:17"><nobr>The ability to wirel=
+essly monitor and track sleep and wakefulness</nobr></div>
+<div style=3D"position:absolute;top:388;left:17"><nobr>in a way that is non=
+-invasive and inexpensive could be of utility in</nobr></div>
+<div style=3D"position:absolute;top:406;left:17"><nobr>many areas including=
+ research medicine and education One</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"4"><span style=3D"font-size:25px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:339;left:444"><nobr><b>Results:</b></no=
+br></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:370;left:444"><nobr>Mean sleep/wake mea=
+surements between the three systems appeared to be similar. The WS is desig=
+ned to</nobr></div>
+<div style=3D"position:absolute;top:388;left:444"><nobr>accurately detect=
+ wake periods that last for at least 2 minutes. Therefore, number of awaken=
+ings is reported as</nobr></div>
+<div style=3D"position:absolute;top:406;left:444"><nobr>awakenings lasting=
+ at least 4 continuous epochs</nobr></div>
+<div style=3D"position:absolute;top:406;left:17"><nobr>many areas, includin=
+g research, medicine, and education. One</nobr></div>
+<div style=3D"position:absolute;top:424;left:17"><nobr>system with the pote=
+ntial to effectively accomplish this has been</nobr></div>
+<div style=3D"position:absolute;top:443;left:17"><nobr>developed, which is=
+ composed of a single channel no-prep dry</nobr></div>
+<div style=3D"position:absolute;top:461;left:17"><nobr>fabric sensor that=
+ rests on the forehead through the use of a</nobr></div>
+<div style=3D"position:absolute;top:479;left:17"><nobr>headband. Data are=
+ then wirelessly transmitted to an</nobr></div>
+<div style=3D"position:absolute;top:497;left:17"><nobr>accompanying base st=
+ation and processed through a neural</nobr></div>
+<div style=3D"position:absolute;top:515;left:17"><nobr>network to determine=
+ periods of sleep and wakefulness</nobr></div>
+<div style=3D"position:absolute;top:406;left:444"><nobr>awakenings lasting=
+ at least 4 continuous epochs.</nobr></div>
+</span></font>
+<font color=3D"#ffffff" face=3D"Times" size=3D"3"><span style=3D"font-size:=
+13px;font-family:Times;color:#ffffff">
+<div style=3D"position:absolute;top:436;left:444"><nobr><b>Sleep=C2=A0and=
+=C2=A0Wake Summary=C2=A0Measures</b></nobr></div>
+<div style=3D"position:absolute;top:436;left:851"><nobr><b>WS</b></nobr></d=
+iv>
+<div style=3D"position:absolute;top:436;left:940"><nobr><b>T1</b></nobr></d=
+iv>
+<div style=3D"position:absolute;top:436;left:1025"><nobr><b>T2</b></nobr></=
+div>
+<div style=3D"position:absolute;top:436;left:1107"><nobr><b>ACT</b></nobr><=
+/div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:457;left:444"><nobr><b>Latency=C2=A0to=
+=C2=A0Persistent=C2=A0Sleep</b></nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:11px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:474;left:444"><nobr>10 continuous minut=
+es</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:465;left:709"><nobr><b>LPS=C2=A0(min=C2=
+=B1SEM)</b></nobr></div>
+<div style=3D"position:absolute;top:465;left:830"><nobr><b>31.8=C2=B116.1</=
+b></nobr></div>
+<div style=3D"position:absolute;top:465;left:917"><nobr><b>33.0=C2=B116.5</=
+b></nobr></div>
+<div style=3D"position:absolute;top:465;left:1002"><nobr><b>36.4=C2=B116.3<=
+/b></nobr></div>
+<div style=3D"position:absolute;top:465;left:1088"><nobr><b>34.7=C2=B115.8<=
+/b></nobr></div>
+<div style=3D"position:absolute;top:494;left:444"><nobr><b>Number=C2=A0of=
+=C2=A0Awakenings</b></nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:11px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:512;left:444"><nobr>Occurring after ons=
+et of persistent sleep</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:510;left:718"><nobr><b>NA=C2=A0(#=C2=B1=
+SEM)</b></nobr></div>
+<div style=3D"position:absolute;top:510;left:838"><nobr><b>2.6=C2=B10.7</b>=
+</nobr></div>
+<div style=3D"position:absolute;top:510;left:924"><nobr><b>2.2=C2=B10.4</b>=
+</nobr></div>
+<div style=3D"position:absolute;top:510;left:1009"><nobr><b>2.2=C2=B10.4</b=
+></nobr></div>
+<div style=3D"position:absolute;top:510;left:1096"><nobr><b>3.3=C2=B10.6</b=
+></nobr></div>
+<div style=3D"position:absolute;top:515;left:17"><nobr>network to determine=
+ periods of sleep and wakefulness.</nobr></div>
+<div style=3D"position:absolute;top:533;left:17"><nobr>This study was condu=
+cted to assess the accuracy of derived</nobr></div>
+<div style=3D"position:absolute;top:551;left:17"><nobr>measures of this wir=
+eless system (WS) and Actigraphy (ACT) in</nobr></div>
+<div style=3D"position:absolute;top:570;left:17"><nobr>comparison to polyso=
+mnography (PSG).</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"4"><span style=3D"font-size:25px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:595;left:19"><nobr><b>Methods:</b></nob=
+r></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:626;left:19"><nobr><b>Participants:</b>=
+</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:11px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:512;left:492"><nobr>g</nobr></div>
+<div style=3D"position:absolute;top:512;left:580"><nobr>p</nobr></div>
+<div style=3D"position:absolute;top:512;left:661"><nobr>p</nobr></div>
+<div style=3D"position:absolute;top:528;left:444"><nobr>and lasting at leas=
+t  2 continuous minutes</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:510;left:741"><nobr><b>(</b></nobr></di=
+v>
+<div style=3D"position:absolute;top:510;left:788"><nobr><b>)</b></nobr></di=
+v>
+<div style=3D"position:absolute;top:547;left:444"><nobr><b>Total=C2=A0Sleep=
+=C2=A0Time</b></nobr></div>
+<div style=3D"position:absolute;top:547;left:708"><nobr><b>TST=C2=A0(min=C2=
+=B1SEM)</b></nobr></div>
+<div style=3D"position:absolute;top:547;left:827"><nobr><b>312.8=C2=B117.8=
+ 303.3=C2=B117.7 296.8=C2=B116.7 313.2=C2=B113.9</b></nobr></div>
+<div style=3D"position:absolute;top:568;left:444"><nobr><b>Wake=C2=A0After=
+=C2=A0Sleep=C2=A0Onset</b></nobr></div>
+<div style=3D"position:absolute;top:568;left:700"><nobr><b>WASO=C2=A0(min=
+=C2=B1SEM) 41.7=C2=B113.4</b></nobr></div>
+<div style=3D"position:absolute;top:568;left:920"><nobr><b>27.8=C2=B13.7</b=
+></nobr></div>
+<div style=3D"position:absolute;top:568;left:1005"><nobr><b>47.1=C2=B18.5</=
+b></nobr></div>
+<div style=3D"position:absolute;top:568;left:1092"><nobr><b>48.5=C2=B19.7</=
+b></nobr></div>
+<div style=3D"position:absolute;top:589;left:444"><nobr><b>Sleep=C2=A0Effic=
+iency</b></nobr></div>
+<div style=3D"position:absolute;top:589;left:719"><nobr><b>SE=C2=A0(%=C2=B1=
+SEM)</b></nobr></div>
+<div style=3D"position:absolute;top:589;left:834"><nobr><b>86.7=C2=B13.4</b=
+></nobr></div>
+<div style=3D"position:absolute;top:589;left:920"><nobr><b>84.5=C2=B14.0</b=
+></nobr></div>
+<div style=3D"position:absolute;top:589;left:1005"><nobr><b>82.6=C2=B13.6</=
+b></nobr></div>
+<div style=3D"position:absolute;top:589;left:1092"><nobr><b>86.4=C2=B12.4</=
+b></nobr></div>
+<div style=3D"position:absolute;top:629;left:442"><nobr>Sensitivity and spe=
+cificity to sleep were</nobr></div>
+<div style=3D"position:absolute;top:626;left:19"><nobr><b>Participants:</b>=
+</nobr></div>
+<div style=3D"position:absolute;top:644;left:19"><nobr>=E2=80=A210 adults=
+ (4 female)</nobr></div>
+<div style=3D"position:absolute;top:663;left:19"><nobr>=E2=80=A233.7 years=
+ old (=C2=B110.7,SD)</nobr></div>
+<div style=3D"position:absolute;top:681;left:19"><nobr>=E2=80=A2No sleep co=
+mplaints</nobr></div>
+<div style=3D"position:absolute;top:698;left:19"><nobr><b>Study Protocol:</=
+b></nobr></div>
+<div style=3D"position:absolute;top:717;left:19"><nobr>=E2=80=A2Sleep in th=
+e laboratory at the participant=E2=80=99s habitual bedtime</nobr></div>
+<div style=3D"position:absolute;top:735;left:19"><nobr>=E2=80=A2Concurrent=
+ measurement of PSG, WS, and ACT</nobr></div>
+<div style=3D"position:absolute;top:629;left:442"><nobr>Sensitivity and spe=
+cificity to sleep were</nobr></div>
+<div style=3D"position:absolute;top:647;left:442"><nobr>higher in the WS th=
+an in ACT when</nobr></div>
+<div style=3D"position:absolute;top:665;left:442"><nobr>compared to PSG. In=
+ter-rater agreement</nobr></div>
+<div style=3D"position:absolute;top:683;left:442"><nobr>of sleep/wake betwe=
+en the WS and PSG</nobr></div>
+<div style=3D"position:absolute;top:702;left:442"><nobr>was moderate-to-hig=
+h, while agreement</nobr></div>
+<div style=3D"position:absolute;top:720;left:442"><nobr>between ACT and PSG=
+ was moderate-to-</nobr></div>
+<div style=3D"position:absolute;top:738;left:442"><nobr>low</nobr></div>
+<div style=3D"position:absolute;top:638;left:784"><nobr><b>Sleep=C2=A0Sensi=
+tivity Sleep=C2=A0Specificity Accuracy Cohen's=C2=A0kappa</b></nobr></div>
+<div style=3D"position:absolute;top:657;left:724"><nobr><b>WS=C2=A0v=C2=A0T=
+1</b></nobr></div>
+<div style=3D"position:absolute;top:657;left:816"><nobr>96.2%</nobr></div>
+<div style=3D"position:absolute;top:657;left:928"><nobr>72.9%</nobr></div>
+<div style=3D"position:absolute;top:657;left:1017"><nobr>90.7%</nobr></div>
+<div style=3D"position:absolute;top:657;left:1106"><nobr>0.63</nobr></div>
+<div style=3D"position:absolute;top:677;left:724"><nobr><b>WS=C2=A0v=C2=A0T=
+2</b></nobr></div>
+<div style=3D"position:absolute;top:677;left:816"><nobr>95.9%</nobr></div>
+<div style=3D"position:absolute;top:677;left:928"><nobr>69.1%</nobr></div>
+<div style=3D"position:absolute;top:677;left:1017"><nobr>88.4%</nobr></div>
+<div style=3D"position:absolute;top:677;left:1106"><nobr>0.57</nobr></div>
+<div style=3D"position:absolute;top:696;left:723"><nobr><b>ACT=C2=A0v=C2=A0=
+T1</b></nobr></div>
+<div style=3D"position:absolute;top:696;left:816"><nobr>92.8%</nobr></div>
+<div style=3D"position:absolute;top:696;left:928"><nobr>65.1%</nobr></div>
+<div style=3D"position:absolute;top:696;left:1017"><nobr>84.8%</nobr></div>
+<div style=3D"position:absolute;top:696;left:1106"><nobr>0.41</nobr></div>
+<div style=3D"position:absolute;top:716;left:723"><nobr><b>ACT=C2=A0v=C2=A0=
+T2</b></nobr></div>
+<div style=3D"position:absolute;top:716;left:816"><nobr>93.5%</nobr></div>
+<div style=3D"position:absolute;top:716;left:928"><nobr>65.0%</nobr></div>
+<div style=3D"position:absolute;top:716;left:1017"><nobr>84.6%</nobr></div>
+<div style=3D"position:absolute;top:716;left:1106"><nobr>0.43</nobr></div>
+<div style=3D"position:absolute;top:770;left:442"><nobr>As an example of a=
+ typical night from this data set, below is a representation of one subject=
+=E2=80=99s</nobr></div>
+<div style=3D"position:absolute;top:788;left:442"><nobr>(35F) night of slee=
+p.</nobr></div>
+<div style=3D"position:absolute;top:735;left:24"><nobr>Concurrent measureme=
+nt of PSG, WS, and ACT</nobr></div>
+<div style=3D"position:absolute;top:753;left:19"><nobr>=E2=80=A2PSG data co=
+llected with Cadwell Easy II PSG, sampled at 200</nobr></div>
+<div style=3D"position:absolute;top:771;left:24"><nobr>samples per second</=
+nobr></div>
+<div style=3D"position:absolute;top:790;left:19"><nobr>=E2=80=A2WS data wer=
+e sampled at 128 samples per second</nobr></div>
+<div style=3D"position:absolute;top:808;left:19"><nobr>=E2=80=A2ACT data we=
+re collected on a Mini-Mitter Actiwatch 64, epoch</nobr></div>
+<div style=3D"position:absolute;top:825;left:24"><nobr>length set at 30 sec=
+onds</nobr></div>
+<div style=3D"position:absolute;top:844;left:19"><nobr>=E2=80=A2Sleep recor=
+ds were scored by 2 trained technicians (T1 and T2)</nobr></div>
+<div style=3D"position:absolute;top:738;left:442"><nobr>low.</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"2"><span style=3D"font-size:8px;font-family:Ti=
+mes">
+<div style=3D"position:absolute;top:789;left:1042"><nobr><b>LPS</b></nobr><=
+/div>
+<div style=3D"position:absolute;top:802;left:1038"><nobr><b>(min)</b></nobr=
+></div>
+<div style=3D"position:absolute;top:789;left:1068"><nobr><b>NA</b></nobr></=
+div>
+<div style=3D"position:absolute;top:802;left:1069"><nobr><b>(#)</b></nobr><=
+/div>
+<div style=3D"position:absolute;top:789;left:1093"><nobr><b>TST</b></nobr><=
+/div>
+<div style=3D"position:absolute;top:802;left:1088"><nobr><b>(min)</b></nobr=
+></div>
+<div style=3D"position:absolute;top:789;left:1120"><nobr><b>WASO</b></nobr>=
+</div>
+<div style=3D"position:absolute;top:802;left:1123"><nobr><b>(min)</b></nobr=
+></div>
+<div style=3D"position:absolute;top:789;left:1159"><nobr><b>SE</b></nobr></=
+div>
+<div style=3D"position:absolute;top:802;left:1157"><nobr><b>(%)</b></nobr><=
+/div>
+<div style=3D"position:absolute;top:829;left:1012"><nobr><b>WS</b></nobr></=
+div>
+<div style=3D"position:absolute;top:829;left:1044"><nobr>42</nobr></div>
+<div style=3D"position:absolute;top:829;left:1073"><nobr>4</nobr></div>
+<div style=3D"position:absolute;top:829;left:1092"><nobr>249</nobr></div>
+<div style=3D"position:absolute;top:829;left:1129"><nobr>44</nobr></div>
+<div style=3D"position:absolute;top:829;left:1159"><nobr>75</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:10px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:797;left:825"><nobr>Stages 3 and 4</nob=
+r></div>
+<div style=3D"position:absolute;top:797;left:671"><nobr>Wake</nobr></div>
+<div style=3D"position:absolute;top:797;left:726"><nobr>Stages 1 and 2</nob=
+r></div>
+<div style=3D"position:absolute;top:797;left:922"><nobr>REM</nobr></div>
+<div style=3D"position:absolute;top:797;left:972"><nobr>Sleep</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:844;left:50"><nobr>p</nobr></div>
+<div style=3D"position:absolute;top:844;left:203"><nobr>y</nobr></div>
+<div style=3D"position:absolute;top:844;left:350"><nobr>(</nobr></div>
+<div style=3D"position:absolute;top:844;left:418"><nobr>)</nobr></div>
+<div style=3D"position:absolute;top:862;left:24"><nobr>according to Rechtsc=
+haffen &amp; Kales</nobr></div>
+<div style=3D"position:absolute;top:880;left:19"><nobr>=E2=80=A2Sleep recor=
+ds were scored automatically by the WS via its neural</nobr></div>
+<div style=3D"position:absolute;top:898;left:24"><nobr>network</nobr></div>
+<div style=3D"position:absolute;top:917;left:19"><nobr>=E2=80=A2ACT records=
+ were scored automatically by Actiware 5.0 software</nobr></div>
+<div style=3D"position:absolute;top:934;left:24"><nobr>at medium wake thres=
+hold sensitivity (wake threshold value of</nobr></div>
+<div style=3D"position:absolute;top:952;left:24"><nobr>40 activity counts)<=
+/nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"2"><span style=3D"font-size:8px;font-family:Ti=
+mes">
+<div style=3D"position:absolute;top:866;left:1014"><nobr><b>T1</b></nobr></=
+div>
+<div style=3D"position:absolute;top:866;left:1044"><nobr>40</nobr></div>
+<div style=3D"position:absolute;top:866;left:1073"><nobr>3</nobr></div>
+<div style=3D"position:absolute;top:866;left:1092"><nobr>263</nobr></div>
+<div style=3D"position:absolute;top:866;left:1129"><nobr>31</nobr></div>
+<div style=3D"position:absolute;top:866;left:1159"><nobr>79</nobr></div>
+<div style=3D"position:absolute;top:901;left:1014"><nobr><b>T2</b></nobr></=
+div>
+<div style=3D"position:absolute;top:901;left:1044"><nobr>41</nobr></div>
+<div style=3D"position:absolute;top:901;left:1073"><nobr>2</nobr></div>
+<div style=3D"position:absolute;top:901;left:1092"><nobr>265</nobr></div>
+<div style=3D"position:absolute;top:901;left:1129"><nobr>28</nobr></div>
+<div style=3D"position:absolute;top:901;left:1159"><nobr>80</nobr></div>
+<div style=3D"position:absolute;top:934;left:1011"><nobr><b>ACT</b></nobr><=
+/div>
+<div style=3D"position:absolute;top:934;left:1044"><nobr>37</nobr></div>
+<div style=3D"position:absolute;top:934;left:1073"><nobr>5</nobr></div>
+<div style=3D"position:absolute;top:934;left:1092"><nobr>290</nobr></div>
+<div style=3D"position:absolute;top:934;left:1129"><nobr>38</nobr></div>
+<div style=3D"position:absolute;top:934;left:1159"><nobr>87</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:971;left:19"><nobr>=E2=80=A26 subjects=
+ contributed two nights of recordings and 4 subjects</nobr></div>
+<div style=3D"position:absolute;top:989;left:24"><nobr>one night, resulting=
+ in 16 total records</nobr></div>
+<div style=3D"position:absolute;top:1007;left:19"><nobr>=E2=80=A2Inter-rate=
+r agreement was performed on summary statistics of</nobr></div>
+<div style=3D"position:absolute;top:1025;left:24"><nobr>sleep parameters on=
+ a 30-second epoch-by-epoch basis for</nobr></div>
+<div style=3D"position:absolute;top:1043;left:24"><nobr>agreement/disagreem=
+ent of sleep/wake decisions.</nobr></div>
+<div style=3D"position:absolute;top:1059;left:442"><nobr><b>Support: </b>Th=
+is research was funded by Zeo, Inc, Newton, MA, USA.</nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"4"><span style=3D"font-size:25px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:968;left:442"><nobr><b>Conclusion:</b><=
+/nobr></div>
+</span></font>
+<font face=3D"Times" size=3D"3"><span style=3D"font-size:13px;font-family:T=
+imes">
+<div style=3D"position:absolute;top:999;left:442"><nobr>The wireless system=
+ shows promise as an effective way to distinguish wake and sleep during the=
+ night and has</nobr></div>
+<div style=3D"position:absolute;top:1017;left:442"><nobr>potential as a cos=
+t-effective ambulatory system that can distinguish sleep and wake, while al=
+so providing sleep stage</nobr></div>
+<div style=3D"position:absolute;top:1035;left:442"><nobr>information over=
+ the course of nighttime recordings.</nobr></div>
+</span></font>
+<!-- t3520r108a13c3520e3398n14u67l0m0k0 -->
+
+
+</div></body></html>

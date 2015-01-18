@@ -96,11 +96,28 @@ And with Wolfram and Wortham, we see that 2 legs of the poor beast have been amp
 
 On Christmas 2010, I received one of [Zeo Inc](!Wikipedia "Zeo, Inc.")'s (founded 2003, [shutting down 2013](http://mobihealthnews.com/20772/exclusive-sleep-coach-company-zeo-is-shutting-down/ "Exclusive: Sleep coach company Zeo is shutting down")) Zeo bedside unit after long coveting it and dreaming of using it for all sorts of sleep-related questions. (As of February 2013, the bedside unit seems to've been discontinued; the most comparable Zeo Inc. product seems to be the [Zeo Sleep Manager Pro](http://www.amazon.com/Zeo-ZEO301-Sleep-Manager-Pro/dp/B008I20LJ2/), ~$90.) With it, I begin to apply my thoughts about Quantified Self.
 
-A Zeo is a scaled-down (one-electrode) [EEG](!Wikipedia) sensor-headband, which happens to have an alarm clock attached. The EEG data is processed to estimate whether one is asleep and what [stage](!Wikipedia "Sleep#Physiology") of sleep one is in. Zeo breaks sleep down into waking, [REM](!Wikipedia "Rapid eye movement sleep"), [light](!Wikipedia "Non-rapid eye movement sleep"), and [deep](!Wikipedia "Slow-wave sleep"). (The phases aren't necessarily that physiologically distinct.) It's been compared with regular [polysomnography](!Wikipedia) by [Zeo Inc and others](http://web.archive.org/web/20130515062508/http://www.myzeo.com/sleep/validation) (see also [Griessenberger et al 2013](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3655221/pdf/11325_2012_Article_757.pdf "Assessment of a wireless headband for automatic sleep scoring")) and seems to be reasonably accurate. (Since regular sleep tests cost thousands of dollars per session and are of questionable external validity since they are a very different setting than your own bedroom, I am fine with a Zeo being just "reasonably" accurate.)
+A Zeo is a scaled-down (one-electrode) [EEG](!Wikipedia) sensor-headband, which happens to have an alarm clock attached. The EEG data is processed to estimate whether one is asleep and what [stage](!Wikipedia "Sleep#Physiology") of sleep one is in. Zeo breaks sleep down into waking, [REM](!Wikipedia "Rapid eye movement sleep"), [light](!Wikipedia "Non-rapid eye movement sleep"), and [deep](!Wikipedia "Slow-wave sleep"). (The phases aren't necessarily that physiologically distinct.) It's been compared with regular [polysomnography](!Wikipedia) by [Zeo Inc and others](http://web.archive.org/web/20130515062508/http://www.myzeo.com/sleep/validation)[^Zeo-validation] and seems to be reasonably accurate. (Since regular sleep tests cost hundreds to thousands of dollars per session and are of questionable external validity since they are a different uncomfortable setting than your own bedroom, I am fine with a Zeo being just "reasonably" accurate in predicting PSG ratings.)
+
+[^Zeo-validation]: Relevant papers:
+
+    - These seem to be based on the same experiment:
+
+        - ["Evaluation of a Portable, Dry Sensor-Based Automatic Sleep Monitoring System"](http://web.archive.org/web/20130723033135/http://www.myzeo.com/sleep/sites/default/files/Wright%20et%20al._Validation_2008_APSS_poster.pdf), Wright & Johnstone & Fabregas & Shambroom 2008 (poster)
+        - ["Assessment of Dry Headband Technology for Automatic Sleep Monitoring"](/docs/zeo/2008-wright-1.pdf "https://web.archive.org/web/20120501000000*/http://www.myzeo.com/sleep/sites/default/files/Wright%20et%20al._Validation_2008_ESRS_poster.pdf"), Wright & Johnstone & Fabregas & Shambroom 2008 (poster)
+        - ["Performance of a Wireless Dry Sensor System in Automatically Monitoring Sleep and Wakefulness"](/docs/zeo/2009-fabregas.mht), Fabregas & Johnstone & Shambroom 2009 (poster)
+        - ["Evaluation of Portable Monitor for Sleep Staging"](/docs/zeo/2009-blake.pdf),  Shambroom & Johnstone & Fabregas 2009 (abstract)
+    - ["Assessment of a wireless dry sensor to detect sleep in healthy volunteers and subjects with sleep disorders"](/docs/zeo/2009-blake.pdf), Blake et al 2009 (abstract)
+    - ["Zeo Home Use Test Mid-Term Response: A Zeo White Paper"](/docs/zeo/2009-shambroom-whitepaper.pdf), Shambroom 2009 (Zeo user survey)
+    - ["Validation of an automated wireless system to monitor sleep in healthy adults"](/docs/zeo/2012-shambroom.pdf), Shambroom et al 2012
+    - ["Recent Developments in Home Sleep-Monitoring Devices"](http://www.hindawi.com/journals/isrn/2012/768794/), Kelly et al 2012 (review of research on Zeo & other devices)
+    - ["Polysomnographic validation of a wireless dry headband technology for sleep monitoring in healthy young adults"](http://www.researchgate.net/publication/236943617_Polysomnographic_validation_of_a_wireless_dry_headband_technology_for_sleep_monitoring_in_healthy_young_adults/file/5046352052ab5bbcc7.pdf), Tonetti et al 2013
+    - ["Assessment of a wireless headband for automatic sleep scoring"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3655221/pdf/11325_2012_Article_757.pdf), Griessenberger et al 2013
+    - ["Validation of an Automated Wireless System for Sleep Monitoring During Daytime Naps"](/docs/zeo/2014-cellini.pdf), Cellini et al 2014
+    - ["Alternatives to polysomnography (PSG): A validation of wrist actigraphy and a partial-PSG system"](/docs/zeo/2014-kosmadopoulos.pdf), Kosmadopoulos et al 2014
 
 The data is much better than what you would get from more popular methods like cellphones with accelerometers, since an accelerometer only knows if you are moving or not, which isn't a very reliable indicator of sleep[^Fitbit]. (You could just be lying there staring at the ceiling, wide awake. Or perhaps the cat is kneading you while you are in light sleep.) As well, half the interest is how exactly sleep phases are arranged and how long the cycles are; you could use that information to devise [a custom polyphasic schedule](http://web.archive.org/web/20130528120222/http://blog.myzeo.com/sleeping-round-the-clock-a-polyphasic-experiment/) or just figure out a better nap length than the rule-of-thumb of 20 minutes. And the price isn't *too* bad - $150 for the normal Zeo as of February 2012. (The basic mobile Zeo is much cheaper, but I've seen people complain about it and apparently it doesn't collect the same data as more expensive mobile version or the original bedside unit.)
 
-[^Fitbit]: The obvious and cheaper alternative to the Zeo would be the [Fitbit](!Wikipedia), one of the accelerometers. There aren't many comparisons; [Diana Sherman](http://www.healthyobsessions.net/2010/11/fitbit-zeo-sleep-cycle-1/) compared one night, and [Joe Betts-LaCroix](http://vimeo.com/28735982) compared ~38 nights of data. In both cases, the Fitbit seemed to be pretty similar to the Zeo at estimating total sleep time (the only thing it can measure).  Betts-LaCroix explicitly recommends the Zeo, but I'm not clear on whether that is due to the better data quality or because Fitbit made it hard to impossible for him to extract the detailed Fitbit data while Zeo offers easy exporting. Similarly, in her [2013 Amsterdam talk](http://sleepingwithtechnology.com/2013/04/09/speaking-quantified-self-conference-amsterdam-may-11-12-2013/), Christel De Maeyer presents her sleep data summaries (means) from two disjoint time periods using the Zeo and the [BodyMedia](!Wikipedia) accelerometer band which were comparable for total sleep estimates. In any case, I already have the Zeo and I've come to like the detailed information.
+[^Fitbit]: The obvious and cheaper alternative to the Zeo would be the [Fitbit](!Wikipedia), one of the accelerometers. There aren't many comparisons; [Diana Sherman](http://www.healthyobsessions.net/2010/11/fitbit-zeo-sleep-cycle-1/) compared one night, [Joe Betts-LaCroix](http://vimeo.com/28735982) compared ~38 nights of data, and [Christopher Winter](http://www.huffingtonpost.com/dr-christopher-winter/sleep-tips_b_4792760.html "Personal Sleep Monitors: Do They Work?") compared one night of polysomnography, Philips Actiwatch Spectrum (actigraphy), Basis Chrome (movement, heart-rate, others), and the Jawbone Up & FitBit Flex & iPhone+"24/7" (actigraphy). In the previous cases, the Fitbit seemed to be pretty similar to the Zeo at estimating total sleep time (the only thing it can measure). Betts-LaCroix explicitly recommends the Zeo, but I'm not clear on whether that is due to the better data quality or because Fitbit made it hard to impossible for him to extract the detailed Fitbit data while Zeo offers easy exporting. Similarly, in her [2013 Amsterdam talk](http://sleepingwithtechnology.com/2013/04/09/speaking-quantified-self-conference-amsterdam-may-11-12-2013/), Christel De Maeyer presents her sleep data summaries (means) from two disjoint time periods using the Zeo and the [BodyMedia](!Wikipedia) accelerometer band which were comparable for total sleep estimates. In any case, I already have the Zeo and I've come to like the detailed information.
 
 # Tests
 
@@ -2967,6 +2984,18 @@ December
 20: 1
 21: NA
 22: NA
+23: NA
+24: NA
+25: NA
+26: NA
+27: NA
+28: 1
+29: 0
+30: 0
+31: NA
+2015
+January
+01: 1
 -->
 
 ## Hammock
@@ -4074,9 +4103,26 @@ December
 31: 0 0
 2015
 January
-01:
+01: 0 0
+02: 1 0
+03: 1 1
+04: 0 0
+05: 0 0
+06: 0 1
+07: 0 0
+08: 1 0
+09: 1 1
+10: 1 0
+11: 0 1
+12: 0 0
+13: 0 0
+14: 1 0
+15: 1 1
+16: 0 0
+17: 1 0
+18: 1 1?
 -->
-<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1, 8, 9, 10, 12, 20, 22, 24, 29 October; 3, 4, 6, 8, 10, 13, 14, 15, 16, 20, 21, 22, 24, 25, 26, 27 November 2014; 1, 22 December 2014 -->
+<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1, 8, 9, 10, 12, 20, 22, 24, 29 October; 3, 4, 6, 8, 10, 13, 14, 15, 16, 20, 21, 22, 24, 25, 26, 27 November 2014; 1, 22 December 2014; 2015: 05, 07, 09, 12, 14, 16 January -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: last day 4 August 2014 -->
 <!-- added aluminum foil to bedroom, 9 August 2014 -->

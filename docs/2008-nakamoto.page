@@ -65,7 +65,17 @@ Satoshi Nakamoto:
 
     Satoshi
 
-The "pre-release draft" link is now broken & unavailable in the Internet Archive or elsewhere; I have been unable to find a copy. (Dai, Adam Back, and Gregory Maxwell did not have copies; I've also asked Hal Finney but do not expect a reply [given his condition](http://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/).)
+The "pre-release draft" link is now broken. I have tried to refind it:
+
+- the original fly-by-night filehosting site disappeared years ago, and does not appear to have been renamed or moved
+- the filehosting download page & PDF are unavailable in the Internet Archive
+- the earliest version of the whitepaper on Bitcoin.org in the Internet Archive is a later draft, using the name "Bitcoin" (unsurprisingly); looking at the full list of mirrored files for that domain, there don't appear to be any other PDFs in the snapshots which might be an earlier draft
+- Google searches for queries like "ecash-pdf" and variants (sometimes adding in "Satoshi Nakamoto" since he was using that nick at the time even if he had not settled on "Bitcoin" as a name) have turned up no mirrors or people discussing that version of the whitepaper who might have copies
+- a more targeted search on Bitcointalk did not turn up any copies
+- the whitepaper was never checked into the original Subversion repository set up after the alpha code was released, so no revision history there either
+- I asked them and learned that early correspondents Wei Dai, Adam Back, and Gregory Maxwell do not have copies. (I also asked Hal Finney but did not expect a reply [given his condition](http://www.forbes.com/sites/andygreenberg/2014/03/25/satoshi-nakamotos-neighbor-the-bitcoin-ghostwriter-who-wasnt/) & did not receive one before he passed away 28 August 2014.)
+
+If anyone has a copy of it or a tip as to where it might be or who might have it stashed away, please contact me. It would likely shed some further insight on the development of Bitcoin and how Satoshi had his key insight of proof-of-work.
 
 ## 2
 

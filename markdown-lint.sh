@@ -42,7 +42,7 @@ do
         echo "$HTML" | fgp -e "<""del"">";
         echo "$HTML" | elinks -dump --force-html \
                      | fgp -e '\frac' -e '\times' -e '(http' -e ')http' -e '[http' -e ']http'  \
-                           -e ' _ ' -e '[^' -e '^]' -e '<!--' -e '-->' -e '<-- ' -e '<—' -e '—>' \
+                           -e ' _ ' -e '[^' -e '^]' -e '/* ' -e ' */' -e '<!--' -e '-->' -e '<-- ' -e '<—' -e '—>' \
                            -e '$title$' -e '<del>' \
                            -e '$description$' -e '$author$' -e '$tags$' -e '$category$' \
             -e '(!Wikipedia' -e '(!Hoogle'; # ))

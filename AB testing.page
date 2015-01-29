@@ -2500,6 +2500,302 @@ div#donations {visibility:hidden; display:none;}
 
 
 ### Data
+
+I killed the test in late January.
+(I had gotten an idea I wanted to test, see next section: if the sidebar is too cluttered with site navigation, donation *and* metadata, why not move the metadata into the body?)
+
+Results from 19 November 2014 - 28 January 2015:
+
+Ruler CSE Donation   Old     N      Conversion
+----- --- ---------  ------ ------- -----------
+1     0   1           TRUE   3910   0.2504
+0     0   0           TRUE   3589   0.2444
+0     1   0           TRUE   3806   0.2401
+1     1   0           TRUE   3858   0.2302
+1     1   1           TRUE   3706   0.2315
+0     1   1           TRUE   3885   0.2221
+0     1   1           FALSE  8037   0.1744
+1     1   0           FALSE  8044   0.1743
+1     0   1           FALSE  7997   0.1719
+0     0   0           FALSE  8135   0.1684
+1     1   1           FALSE  8003   0.1667
+0     1   0           FALSE  7965   0.1660
+
+### Analysis
+
+~~~{.R}
+rates <- read.csv(stdin(),header=TRUE)
+Sidebar.ruler,CSE,Donation,Old,N,Rate
+TRUE,FALSE,TRUE,    TRUE,   3910, 0.2504
+FALSE,FALSE,FALSE,  TRUE,   3589, 0.2444
+FALSE,TRUE,FALSE,   TRUE,   3806, 0.2401
+TRUE,TRUE,FALSE,    TRUE,   3858, 0.2302
+TRUE,TRUE,TRUE, TRUE,   3706, 0.2315
+FALSE,TRUE,TRUE,    TRUE,   3885, 0.2221
+FALSE,TRUE,TRUE,    FALSE,  8037, 0.1744
+TRUE,TRUE,FALSE,    FALSE,  8044, 0.1743
+TRUE,FALSE,TRUE,    FALSE,  7997, 0.1719
+FALSE,FALSE,FALSE,  FALSE,  8135, 0.1684
+TRUE,TRUE,TRUE, FALSE,  8003, 0.1667
+FALSE,TRUE,FALSE,   FALSE,  7965, 0.1660
+
+
+rates$Successes <- rates$N * rates$Rate
+rates$Successes <- round(rates$Successes,0)
+rates$Failures <-rates$N - rates$Successes
+g <- glm(cbind(Successes,Failures) ~ Sidebar.ruler + CSE + Donation + Old, data=rates, family="binomial"); summary(g)
+# ...                   Estimate   Std. Error   z value Pr(>|z|)
+# (Intercept)       -1.565164203  0.021575072 -72.54503  < 2e-16
+# Sidebar.rulerTRUE  0.011955669  0.020296009   0.58907  0.55582
+# CSETRUE           -0.033285850  0.020245663  -1.64410  0.10016
+# DonationTRUE      -0.004586828  0.020296230  -0.22599  0.82121
+# OldTRUE            0.411166031  0.019758744  20.80932  < 2e-16
+~~~
+
+Junk. The extra sidebar elements may be a tiny bit harmful and the ruler helpful, but it would take much more data than 71k datapoints to show that.
+
+## Moving sidebar's metadata into page
+
+Looking at the sidebar some more, it occurred to me that the sidebar was serving 3 different purposes all mixed together:
+
+1. site-wide: navigation to the main index/homepage, as well as meta-site pages like about me, the site, recent updates, and ways of getting RSS/email updates
+3. site-wide: donation requests
+2. page-specific: a page's metadata about when that page's content was first created, last modified, content tags, etc
+
+The page metadata is the odd man out, and I've noticed that a lot of people seem to not notice the page metadata hiding in the sidebar (eg there will be comments wondering when a page was created, when that's listed clearly right there in the page's sidebar).
+What if I moved the page metadata to underneath the big title?
+I'd have to change the formatting, since I can't afford to spend 10+ vertical lines of space the way it must be formatted in the sidebar, but the metadata could fit in 2-5 lines if I combine the logical pairs (so instead of 4 lines for "created: / 7 May 2013 / modified: / 09 Jan 2015", just one line "created: 7 May 2013; modified: 09 Jan 2015").
+
+There are several different ways and levels of density, so I created 6 variants with increasing amounts of density.
+
+### Implementation
+
+As an HTML rather than CSS change, the implementation as an A/B test is more complex.
+
+I define inline in the HTML template each of the 6 variants, as `div`s ID 'metadata1..metadata6'.
+In the `default.css`, I set them to `display: none` so the user does not 6 different metadatas taking up 2 screens of space.
+Then, each A/B variant passed to ABalytics toggles back on one version using `display: block`.
+I also include a 7th variant, where none of the 6 should be visible, which is effectively the control condition which roughly matches the status quo of showing the metadata in the sidebar.
+("Roughly", since in the `none` condition, there won't be metadata anywhere in the displayed page; but since the previous experiment indicated that removing elements from the sidebar didn't make any noticeable difference, I decided to simplify the HTML source code by removing the original metadata `div` entirely to avoid any collisions or issues with the CSS/HTML I've defined.)
+
+So the flow should be:
+
+1. page HTML loads, all 6 versions may get rendered
+2. site-wide default CSS loads, and when interpreted, hides all 6 versions
+
+    (This also means that people browsing without Javascript enabled should still continue to see a readable version of the site.)
+3. page JS runs, picks 1 of 6 variables to execute, and a CSS command is interpreted to expose 1 version
+4. JS continues to run, and fires (converts) if user remains on page long enough
+
+The HTML changes:
+
+~~~{.Diff}
+--- a/static/templates/default.html
++++ b/static/templates/default.html
+@@ -20,7 +20,7 @@
+   <body>
+
+    <!-- override CSS with A/B test -->
+-   <div class="sidebar_test_class1"></div>
++   <div class="metadata_test_class1"></div>
+
+@@ -61,29 +59,6 @@
+         </div>
+         <hr/>
+         </div>
+-        <div id="metadata">
+-          <div id="abstract"><em>$description$</em></div>
+-          <br />
+-          <div id="tags"><i>$tags$</i></div>
+-          <br />
+-          <div id="page-created">created:
+-            <br />
+-            <i>$created$</i></div>
+-          <div id="last-modified">modified:
+-            <br />
+-            <i>$modified$</i></div>
+-          <br />
+-          <div id="version">status:
+-            <br />
+-            <i>$status$</i></div>
+-          <br />
+-          <div id="epistemological-status"><a href="/About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
+-            <br />
+-            <i>$belief$</i>
+-          </div>
+-          <hr/>
+-        </div>
+-
+         <div id="donations">
+           <div id="bitcoin-donation-address">
+             <a href="http://en.wikipedia.org/wiki/Bitcoin">฿</a>: 1GWERNkwxeMsBheWgVWEc6NUXD8HkHTUXg
+@@ -115,6 +90,102 @@
+       </div>
+
+       <div id="content">
++
++<!-- Line by line version -->
++<div id="metadata1">
++  <span id="abstract"><em></em></span>
++  <br>
++  <span id="tags"><i>$tags$</i></span>
++  <br>
++  <span id="page-created">created:
++    <br>
++    <i>$created$</i></span>
++  <br>
++  <span id="last-modified">modified:
++    <br>
++    <i>$modified$</i></span>
++  <br>
++  <span id="version">status:
++    <br>
++    <i>$status$</i></span>
++  <br>
++  <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
++    <br>
++    <i>$belief$</i>
++  </span>
++  <hr>
++</div>
++
++<!-- Condensed created/modified -->
++<div id="metadata2">
++  <span id="abstract"><em>$description$</em></span>
++  <br>
++  <span id="tags"><i>$tags$</i></span>
++  <br>
++  <span id="page-created">created: <i>$created$</i></span>
++  <br>
++  <span id="last-modified">modified: <i>$modified$</i></span>
++  <br>
++  <span id="version">status:
++    <br>
++    <i>$status$</i></span>
++  <br>
++  <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
++    <br>
++    <i>$belief$</i>
++  </span>
++  <hr>
++</div>
++
++<!-- Combined created/modified -->
++<div id="metadata3">
++  <span id="abstract"><em>$description$</em></span>
++  <br>
++  <span id="tags"><i>$tags$</i></span>
++  <br>
++  <span id="page-created">created: <i>$created$</i></span>;  <span id="last-modified">modified: <i>$modified$</i></span>
++  <br>
++  <span id="version">status:
++    <br>
++    <i>$status$</i></span>
++  <br>
++  <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
++    <br>
++    <i>$belief$</i>
++  </span>
++  <hr>
++</div>
++
++<!-- Combined status, belief -->
++<div id="metadata4">
++  <span id="abstract"><em>$description$</em></span>
++  <br>
++  <span id="tags"><i>$tags$</i></span>
++  <br>
++  <span id="page-created">created: <i>$created$</i></span>;  <span id="last-modified">modified: <i>$modified$</i></span>
++  <br>
++  <span id="version">status: <i>$status$</i></span>; <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
++  <hr>
++</div>
++
++<!-- Combined abstract/tags -->
++<div id="metadata5">
++  <span id="abstract"><em>$description$</em></span> (<span id="tags"><i>$tags$</i></span>)
++  <br>
++  <span id="page-created">created: <i>$created$</i></span>;  <span id="last-modified">modified: <i>$modified$</i></span>
++  <br>
++  <span id="version">status: <i>$status$</i></span>; <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
++  <hr>
++</div>
++
++<!-- Combined timing with status -->
++<div id="metadata6">
++  <span id="abstract"><em>$description$</em></span> (<span id="tags"><i>$tags$</i></span>)
++  <br>
++  <span id="page-created">created: <i>$created$</i></span>;  <span id="last-modified">modified: <i>$modified$</i></span>; <span id="version">status: <i>$status$</i></span>; <
+span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
++  <hr>
++</div>
++
+         $body$
+       </div>
+     </div>
+@@ -155,28 +226,32 @@
+       ABalytics.init({
++       metadata_test: [
+       {
+-      name: "s1c1d1",
+-      "sidebar_test_class1": "<style></style>"
++      name: "none",
++      "metadata_test_class1": "<style></style>"
++      },
++      {
++      name: "meta1",
++      "metadata_test_class1": "<style>div#metadata1 { display: block; }</style>"
+       },
+       {
+-      name: "s1c1d0",
+-      "sidebar_test_class1": "<style>div#donations {visibility:hidden; display:none;}</style>"
++      name: "meta2",
++      "metadata_test_class1": "<style>div#metadata2 { display: block; }</style>"
+       },
+       {
+-      name: "s1c0d1",
+-      "sidebar_test_class1": "<style>div#cse-sitesearch {visibility:hidden; display:none;}</style>"
++      name: "meta3",
++      "metadata_test_class1": "<style>div#metadata3 { display: block; }</style>"
+       },
+       {
+-      name: "s0c1d1",
+-      "sidebar_test_class1": "<style>div#sidebar hr {visibility:hidden; display:none;}</style>"
++      name: "meta4",
++      "metadata_test_class1": "<style>div#metadata4 { display: block; }</style>"
+       },
+       {
+-      name: "s0c1d0",
+-      "sidebar_test_class1": "<style>div#sidebar hr {visibility:hidden; display:none;}; div#donations {visibility:hidden; display:none;}</style>"
++      name: "meta5",
++      "metadata_test_class1": "<style>div#metadata5 { display: block; }</style>"
+       },
+       {
+-      name: "s0c0d0",
+-      "sidebar_test_class1": "<style>div#sidebar hr {visibility:hidden; display:none;}; div#cse-sitesearch {visibility:hidden; display:none;}; div#donations {visibility:hidden; display:none;}</style>"
++      name: "meta6",
++      "metadata_test_class1": "<style>div#metadata6 { display: block; }</style>"
+       }
+       ], /* }) */
+~~~
+
+The CSS changes:
+
+~~~{.Diff}
+--- a/static/css/default.css
++++ b/static/css/default.css
+@@ -90,8 +90,12 @@ div#sidebar-news a {
+    text-transform: uppercase;
+ }
+
++/* metadata customization: */
+ div#description { font-size: 95%; }
+ div#tags, div#page-created, div#last-modified, div#license { font-size: 80%; }
++/* support A/B test by hiding by default all the HTML variants: */
++div#metadata1, div#metadata2, div#metadata3, div#metadata4, div#metadata5, div#metadata6 { display: none; }
+~~~
+
+### Data
 ### Analysis
 
 # Appendix

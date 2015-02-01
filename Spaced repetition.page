@@ -6,8 +6,6 @@ status: finished
 belief: highly likely
 ...
 
-> Most people find the concept of programming obvious, but the doing impossible.^[Alan J. Perlis, ["Epigrams in Programming"](http://www.cs.yale.edu/homes/perlis-alan/quotes.html) (1982)]
-
 One of the most fruitful areas of computing is making up for human frailties. They do arithmetic perfectly because we can't^["One does not learn computing by using a hand calculator, but one can forget arithmetic." Perlis 1982]. They remember terabytes because we'd forget. They make the best calendars, because they always check what there is to do today.
 
 We use any number of such [neuroprosthetic](!Wikipedia)s[^my-neuroprosthetics], but there are always more to be discovered. They're worth looking for because they are so valuable: a shovel is much more effective than your hand, but a [power shovel](!Wikipedia) is orders of magnitude better than both - even if it requires training and expertise to use.
@@ -96,6 +94,8 @@ A graphic might help; imagine here one can afford to review a given piece of inf
 It's more dramatic if we look at a video visualizing decay of a corpus of memory with [random review vs most-recent review vs spaced review](http://www.youtube.com/watch?v=ai2K3qHpC7c#t=2m40s).
 
 ## If you're so good, why aren't you rich
+
+> Most people find the concept of programming obvious, but the doing impossible.^[Alan J. Perlis, ["Epigrams in Programming"](http://www.cs.yale.edu/homes/perlis-alan/quotes.html) (1982)]
 
 Of course, the latter strategy (cramming) is precisely what students do. They cram the night before the test, and a month later can't remember anything. So why do people do it? (I'm not innocent myself.) Why is spaced repetition so dreadfully unpopular, even among the people who try it once?[^sites]
 
@@ -483,7 +483,7 @@ Another potential objection is to argue^[Gentner, D., Loewenstein, J., & Thompso
 8. McDanie et al 2013, ["Effects of Spaced versus Massed Training in Function Learning"](http://laplab.ucsd.edu/articles/McDaniel.Fadler.Pashler2013.pdf)
 9. Verkoeijen & Bouwmeester 2014, ["Is spacing really the 'friend of induction'?"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3978334/)
 10. Rohrer et al 2014: [1](/docs/spacedrepetition/2014-rohrer-1.pdf "The benefit of interleaved mathematics practice is not limited to superficially similar kinds of problems"), [2](/docs/spacedrepetition/2014-rohrer-2.pdf "Interleaved Practice Improves Mathematics Learning")
-11. Vlach et al 2014, ["Equal spacing and expanding schedules in children’s categorization and generalization"](/docs/spacedrepetition/2014-vlach.pdf)
+11. Vlach et al 2014, ["Equal spacing and expanding schedules in children's categorization and generalization"](/docs/spacedrepetition/2014-vlach.pdf)
 
 ### Review summary
 
@@ -605,7 +605,7 @@ One could learn an awful lot of things this way. Programming languages could be 
 
 With some NLP software, one could write dynamic flashcards which test all sorts of things: if one confuses verbs, the program could take a template like "$PRONOUN $VERB $PARTICLE $OBJECT % {right: caresse, wrong: caresses}" which yields flashcards like "Je caresses le chat" or "Tu caresse le chat" and one would have to decide whether it was the correct conjugation. (The dynamicism here would help prevent memorizing specific sentences rather than the underlying conjugation.) In full generality, this would probably be very difficult, but simpler approaches like templates may work well enough. Jack Kinsella:
 
-> I wish there were dynamic SRS decks for language learning (or other disciplines). Such decks would count the number of times you have reviewed an instance of an underlying grammatical rule or an instance of a particular piece of vocabulary, for example its singular/plural/third person conjugation/dative form. These sophisticated decks would present users with fresh example sentences on every review, thereby preventing users from remembering specific answers and compelling them to learn the process of applying the grammatical rule afresh. Moreover, these decks would keep users entertained through novelty and would present users with tacit learning opportunities through rotating vocabulary used in non-essential parts of the example sentence. Such a system, with multiple-level review rotation, would not only prevent against overfit learning, but also increase the total amount of knowledge learned per minute, an efficiency I’d gladly invest in.
+> I wish there were dynamic SRS decks for language learning (or other disciplines). Such decks would count the number of times you have reviewed an instance of an underlying grammatical rule or an instance of a particular piece of vocabulary, for example its singular/plural/third person conjugation/dative form. These sophisticated decks would present users with fresh example sentences on every review, thereby preventing users from remembering specific answers and compelling them to learn the process of applying the grammatical rule afresh. Moreover, these decks would keep users entertained through novelty and would present users with tacit learning opportunities through rotating vocabulary used in non-essential parts of the example sentence. Such a system, with multiple-level review rotation, would not only prevent against overfit learning, but also increase the total amount of knowledge learned per minute, an efficiency I'd gladly invest in.
 
 Even though these things seem like 'skills' and not 'data'!
 
@@ -692,14 +692,16 @@ In the course of using Mnemosyne, I've written a number of scripts to generate r
 
     You note there's repetition if you do this for each president - one asks the ordinal position of the item both ways (item -> position, position -> item), what precedes it, and what succeeds it. mnemo4.hs automates this, given a list. In order to be general, the wording is a bit odd, but it's better than writing it all out by hand! (Example output is in the [comments](!Wikipedia "Comment (computer programming)") to the source code).
 
-The reader might well be curious by this point what *my* Mnemosyne database looks like. I use Mnemosyne quite a bit, and as of 11 February 2014, I have 19,253 cards in my deck. Said curious reader may find my cards & media at [gwern.cards.xz](https://dl.dropboxusercontent.com/u/182368464/gwern.cards.xz) (36M; Mnemosyne 2.x format, [xz](!Wikipedia) compression).
+The reader might well be curious by this point what *my* Mnemosyne database looks like.
+I use Mnemosyne quite a bit, and as of 1 February 2015, I have 19,619 cards in my deck.
+Said curious reader may find my cards & media at [gwern.cards](https://www.dropbox.com/s/1ai82i7j0pc84ki/gwern.cards) (51M; Mnemosyne 2.x format).
 
 <!-- the metadata:
-Gwern's flashcards (~2008-2014)
+Gwern's flashcards (~2008-2015)
 gwern
 gwern@gwern.net
-English, Japanese, Korean, Haskell, R, China, quotes, philosophy (ancient & modern), statistics etc.
-revision: 3 (increment each time)
+English, Japanese, Korean, Haskell, R, statistics, China, quotes, philosophy (ancient & modern), etc.
+revision: 4 (increment each time)
 -->
 
 The Mnemosyne project has been collecting user-submitted spaced repetition statistical data for years. The full dataset as of 27 January 2014 [is available for download](https://archive.org/details/20140127MnemosynelogsAll.db "Mnemosyne data set available") by anyone who wishes to analyze it.
@@ -740,11 +742,12 @@ The Mnemosyne project has been collecting user-submitted spaced repetition stati
 - ["Anki, 10000 Cards Later: How my Anki usage has evolved"](http://rs.io/2014/04/05/anki-10000-cards-later.html)
 - [Duolingo](https://www.duolingo.com/)
 - ["Everything You Thought You Knew About Learning Is Wrong"](http://archive.wired.com/geekdad/2012/01/everything-about-learning/)
-- [SeRiouS](http://www.spacedrepetition.com/): ["Spaced Repetition Technology for Legal Education"](http://conference.cali.org/2014/sessions/spaced-repetition-technology-legal-education), ["SeRiouS: an LPTI-supported Project to Improve Students’ Learning and Bar Performance"](http://lawpracticetechnology.blogs.law.suffolk.edu/2014/03/11/serious-an-lpti-supported-project-to-improve-students-learning-and-bar-performance/), Gabe Teninbaum ([video presentation](https://www.youtube.com/watch?v=dtClgl07lg8))
+- [SeRiouS](http://www.spacedrepetition.com/): ["Spaced Repetition Technology for Legal Education"](http://conference.cali.org/2014/sessions/spaced-repetition-technology-legal-education), ["SeRiouS: an LPTI-supported Project to Improve Students' Learning and Bar Performance"](http://lawpracticetechnology.blogs.law.suffolk.edu/2014/03/11/serious-an-lpti-supported-project-to-improve-students-learning-and-bar-performance/), Gabe Teninbaum ([video presentation](https://www.youtube.com/watch?v=dtClgl07lg8))
 - ["The role of digital flashcards in legal education: theory and potential"](http://ejlt.org/article/view/320/424), Colbran et al 2014
 - ["How I Rewired My Brain to Become Fluent in Math"](http://nautil.us/issue/17/big-bangs/how-i-rewired-my-brain-to-become-fluent-in-math-rd) ([HN](https://news.ycombinator.com/item?id=8402859))
 - ["Why We Should Memorize [Poetry]"](http://www.newyorker.com/books/page-turner/why-we-should-memorize)
 - ["Studying for the Test by Taking It"](http://www.nytimes.com/2014/11/23/sunday-review/studying-for-the-test-by-taking-it.html)
+- ["Making Summer Count: How Summer Programs Can Boost Children's Learning"](http://www.rand.org/content/dam/rand/pubs/monographs/2011/RAND_MG1120.pdf), McCombs et al 2011 (RAND MG1120)
 
 ## Flashcard sources
 

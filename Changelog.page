@@ -8,6 +8,12 @@ belief: log
 
 Following my writing can be a little difficult: while I provide [an RSS feed of the edit history](http://www.gwern.net/atom.xml), it is too fine-grained to know what is an interesting update and what is housekeeping. So periodically I write up interesting changes in a human-readable format:
 
+# 2015
+## January
+
+- ["Silk Goxed: How DPR used Mtgox for hedging & lost big"](https://www.reddit.com/r/DarkNetMarkets/comments/2tgymg/silk_goxed_how_dpr_used_mtgox_for_hedging_lost_big/)
+- A/B tests: no positive results from sidebar test; set up [in-page metadata format](AB testing#moving-sidebars-metadata-into-page)
+
 # 2014
 ## December
 

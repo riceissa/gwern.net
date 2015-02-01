@@ -2,7 +2,7 @@
 title: January news
 created: 18 Dec 2014
 tags: meta
-status: in progress
+status: finished
 belief: log
 ...
 
@@ -14,6 +14,7 @@ This broadcast has been brought to you by Def-Con Owl Traps (kills owls dead!) a
 # Writings
 
 - ["Silk Goxed: How DPR used Mtgox for hedging & lost big"](https://www.reddit.com/r/DarkNetMarkets/comments/2tgymg/silk_goxed_how_dpr_used_mtgox_for_hedging_lost_big/)
+- A/B tests: no positive results from sidebar test; set up [in-page metadata format](http://www.gwern.net/AB%20testing#moving-sidebars-metadata-into-page)
 
 # Media
 ## Links
@@ -71,8 +72,6 @@ Economics:
 Philosophy:
 
 - ["A Philosopher Walks Into A Coffee Shop"](http://slatestarcodex.com/2015/01/25/a-philosopher-walks-into-a-coffee-shop/) (humor)
-
-Misc:
 
 <!-- Back to 1 March 2013 -->
 

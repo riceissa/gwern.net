@@ -7,7 +7,21 @@ status: finished
 belief: likely
 ...
 
-Google has occasionally shutdown services I use, and not always with serious warning (many tech companies are like that - here one day and gone the next - though Google is one of the least-worst); this is frustrating and tedious. Naturally, we are preached at by apologists that Google owes us nothing and if it's a problem then it's all our fault and we should have prophesied the future better (and too bad about the ordinary people who may be screwed over or the unique history^[One sobering example I mention in my [link rot page](Archiving URLs): [11% of Arab Spring-related tweets](http://arxiv.org/pdf/1209.3026v1.pdf "'Losing My Revolution: How Many Resources Shared on Social Media Have Been Lost?', SalahEldeen & Nelson 2012") were gone within a year. I do not know what the full dimension of the Reader RSS archive loss will be.] or data casually destroyed). But how can we have any sort of rational expectation if we lack any data or ideas about how long Google will run anything or why or how it chooses to do what it does? So in the following essay, I collect data on [350 Google products](#sources) and look for [predictive variables](#variables). I find some while [modeling shutdown patterns](#modeling), and [make some predictions](#predictions) about future shutdowns. Hopefully the results are interesting, useful, or both.
+> Prompted by the shutdown of Google Reader, I ponder the evanescence of online services and wonder what is the risk of them disappearing.
+> I collect data on [350 Google products](#sources) launched before March 2013, looking for [variables predictive of mortality](#variables) (web hits, service vs software, commercial vs free, FLOSS, social networking, and internal vs acquired).
+> Shutdowns are unevenly distributed over the calendar year or Google's history.
+> I use logistic regression & survival analysis (which can deal with right-censorship) to [model the risk of shutdown over time](#modeling) and examine correlates.
+> The logistic regression indicates socialness, acquisitions, and lack of web hits predict being shut down, but the results may not be right.
+> The survival analysis finds a median lifespan of 2824 days with a roughly Type III survival curve (high early-life mortality); a Cox regression finds similar results as the logistic - socialness, free, acquisition, and long life predict lower mortality.
+> Using the best model, I [make predictions](#predictions) about probability of shutdown of the most risky and least risky services in the next 5 years (up to March 2018).
+> (All data & R source code is provided.)
+
+Google has occasionally shutdown services I use, and not always with serious warning (many tech companies are like that - here one day and gone the next - though Google is one of the least-worst); this is frustrating and tedious.
+
+Naturally, we are preached at by apologists that Google owes us nothing and if it's a problem then it's all our fault and we should have prophesied the future better (and too bad about the ordinary people who may be screwed over or the unique history^[One sobering example I mention in my [link rot page](Archiving URLs): [11% of Arab Spring-related tweets](http://arxiv.org/pdf/1209.3026v1.pdf "'Losing My Revolution: How Many Resources Shared on Social Media Have Been Lost?', SalahEldeen & Nelson 2012") were gone within a year. I do not know what the full dimension of the Reader RSS archive loss will be.] or data casually destroyed).
+
+But how can we have any sort of rational expectation if we lack any data or ideas about how long Google will run anything or why or how it chooses to do what it does?
+So in the following essay, I try to get an idea of the risk, and hopefully the results are interesting, useful, or both.
 
 # A glance back
 
@@ -53,12 +67,19 @@ The shutdown of the popular service [Google Reader](!Wikipedia), announced on [1
 
     The most popular feed on Google Reader in March 2013 had [24.3m subscribers](http://googlesystem.blogspot.com/2013/03/google-reader-data-points.html) (some [pixel-counting](http://googlesystem.blogspot.com/2013/03/google-reader-data-points.html?google_comment_id=z12wjrqpao3qhjgl223zzv1h4s2hx5na504) of [an official user-count graph](http://googlereader.blogspot.com/2010/09/welcome-and-look-back.html) & inference from a [leaked video](http://blogoscoped.com/forum/108194.html) suggests Reader in total may've had >36m users in Jan 2011). Jason Scott in 2009 reminded us that this lack of transparency is completely predictable: "Since the dawn of time, companies have hired people whose entire job is to tell you everything is all right and you can completely trust them and the company is as stable as a rock, and to do so until they, themselves, are fired because the company is out of business."
 
-In the case of Reader, while Reader destroyed the original RSS reader market, there still exist some usable alternatives; the main damage is a shrinkage in the RSS audience as inevitably many users choose not to invest in a new reader or give up, and an irreversible loss of Reader's uniquely comprehensive RSS archives covering back to 2005. Although to be fair, I should mention two major points in favor of Google:
+[Andy Baio](https://twitter.com/waxpancake) (["Never Trust a Corporation to do a Library's Job"](https://medium.com/message/never-trust-a-corporation-to-do-a-librarys-job-f58db4673351)) summarizes Google's track record:
+
+>> "Google's mission is to organize the world's information and make it universally accessible and useful."
+>
+> For years, Google's mission included the *preservation of the past*. In 2001, Google made their first acquisition, the Deja archives. The largest collection of Usenet archives, Google relaunched it as *Google Groups*, supplemented with archived messages going back to 1981. In 2004, *Google Books* signaled the company's intention to scan every known book, partnering with libraries and developing its own book scanner capable of digitizing 1,000 pages per hour. In 2006, *Google News Archive* launched, with historical news articles dating back 200 years. In 2008, they expanded it to include their own digitization efforts, scanning newspapers that were never online. In the last five years, starting around 2010, the shifting priorities of Google's management left these archival projects in limbo, or abandoned entirely. After a series of redesigns, Google Groups is effectively dead for research purposes. The archives, while still online, have no means of searching by date. Google News Archives are dead, killed off in 2011, now [directing searchers](https://support.google.com/news/answer/1638638) to just use Google. Google Books is still online, but [curtailed their scanning efforts](http://chronicle.com/article/Google-Begins-to-Scale-Back/131109/) in recent years, likely discouraged by a decade of legal wrangling [still in appeal](https://gigaom.com/2014/12/03/in-google-books-appeal-judges-focus-on-profit-and-security/). The [official blog](http://booksearch.blogspot.com/) stopped updating in 2012 and the [Twitter account's](https://twitter.com/googlebooks) been dormant since February 2013. Even Google Search, their flagship product, stopped focusing on the history of the web. In 2011, Google [removed](http://readwrite.com/2011/11/11/google_kills_its_own_timeline_feature) the Timeline view letting users filter search results by date, while a series of [major changes](http://readwrite.com/2011/11/03/armed_with_social_signals_google_moves_back_toward) to their search ranking algorithm increasingly favored freshness over older pages from established sources. (To the [detriment of some](https://medium.com/technology-musings/on-the-future-of-metafilter-941d15ec96f0).)...As it turns out, organizing the world's information isn't always profitable. Projects that preserve the past for the public good aren't really a big profit center. Old Google knew that, but didn't seem to care.
+
+In the case of Reader, while Reader destroyed the original RSS reader market, there still exist some usable alternatives; the consequence is a shrinkage in the RSS audience as inevitably many users choose not to invest in a new reader or give up or interpret it as a deathblow to RSS, and an irreversible loss of Reader's uniquely comprehensive RSS archives back to 2005.
+Although to be fair, I should mention 2 major points in favor of Google:
 
 1. a reason I did and still do use Google services is that, with a few lapses like [Website Optimizer](AB testing#max-width) aside, they are almost unique in enabling users to back up their data via the work of the [Google Data Liberation Front](!Wikipedia) and have been far more proactive than many companies in encouraging users to back up data from dead services - for example, in automatically copying Buzz users' data to their Google Drive.
 2. Google's practices of undercutting all market incumbents with free services *also* has very large benefits[^benefits], so we shouldn't focus just on [the seen](http://bastiat.org/en/twisatwins.html "'That Which is Seen, and That Which is Not Seen', Frederic Bastiat (1850)").
 
-But nevertheless, every shutdown still hurts its users to some degree, even if we - currently[^survival] - can rule out the most devastating possible shutdowns, like Gmail.  It would be interesting to see if shutdowns are to some degree predictable, whether there are any obvious patterns, whether common claims about relevant factors can be confirmed, and what the results might suggest for the future.
+But nevertheless, every shutdown still hurts its users to some degree, even if we - currently[^survival] - can rule out the most devastating possible shutdowns, like Gmail.  It would be interesting to see if shutdowns are to some degree predictable, whether there are any patterns, whether common claims about relevant factors can be confirmed, and what the results might suggest for the future.
 
 [^benefits]: Specifically, this can be seen as a sort of issue of reducing [deadweight loss](!Wikipedia): in some of the more successful acquisitions, Google's modus operandi was to take a very expensive or highly premium service and make it completely free while also improving the quality. Analytics, Maps, Earth, Feedburner all come to mind as services whose predecessors (multiple, in the cases of Maps and Earth) charged money for their services (sometimes a great deal). This leads to deadweight loss as people do not use them, who would benefit to some degree but not to the full amount of the price (plus other factors like riskiness of investing time and money into trying it out). Google cites figures like billions of users over the years for several of these formerly-premium services, suggesting the gains from reduced deadweight loss are large.
 [^survival]: If there is one truth of the tech industry, it's that no giant (except IBM) survives forever. Death rates for all corporations and nonprofits are [very high](Girl Scouts and good governance#fn1), but particularly so for tech. [One blogger](http://shkspr.mobi/blog/2013/03/preparing-for-the-collapse-of-digital-civilization/ "Preparing for the Collapse of Digital Civilization") asks a good question:
@@ -89,7 +110,7 @@ In a few cases, the start dates are well-informed guesses (eg. [Google Translate
 
 A major criticism of Arthur's post was that it was fundamentally using the wrong data: if you have a dataset of all Google products which have been shutdown, you can make statements like "the average dead Google product lived 1459 days", but you can't infer very much about a live product's life expectancy - because you don't know if it will join the dead products. If, for example, only 1% of products ever died, then 1459 days would lead to a massive underestimates of the average lifespan of all currently living products. With his data, you can only make inferences conditional on a product eventually dying, you cannot make an unconditional inference. Unfortunately, the unconditional question "will it die?" is the real question any Google user wants answered!
 
-So drawing on the same sources, I have compiled a second list of *living* products; the ratio of living to dead gives a base rate for how likely a randomly selected Google product is to be canceled within the 1997-2013 window, and with the date of the founding of each living product, we can also do a simple right-censored [survival analysis](!Wikipedia) which will let us make better still predictions by extracting concrete results like mean time to shutdown. Some items are obviously dead in a meaningful sense since they have been closed to new users (Sync), lost major functionality (FeedBurner, Meebo), degraded severely due to neglect (eg. [Google Alerts]()), or just been completely neglected for a decade or more (Google Group's Usenet archive) - but haven't actually died or closed yet, so I list them as alive.
+So drawing on the same sources, I have compiled a second list of *living* products; the ratio of living to dead gives a base rate for how likely a randomly selected Google product is to be canceled within the 1997-2013 window, and with the date of the founding of each living product, we can also do a simple right-censored [survival analysis](!Wikipedia) which will let us make better still predictions by extracting concrete results like mean time to shutdown. Some items are dead in the most meaningful sense since they have been closed to new users (Sync), lost major functionality (FeedBurner, Meebo), degraded severely due to neglect (eg. [Google Alerts]()), or just been completely neglected for a decade or more (Google Group's Usenet archive) - but haven't actually died or closed yet, so I list them as alive.
 
 ## Variables
 
@@ -169,7 +190,7 @@ If a product has not ended, the end-date is defined as 01 April 2013 (which is w
 
 ## Descriptive
 
-Loading up our hard-won data and looking at an R summary (for full source code reproducing all graphs and analyses below, see the [appendix](#source-code); I welcome statistical corrections or elaborations if accompanied by equally reproducible R source code), we can see we have a lot of data to look out
+Loading up our hard-won data and looking at an R summary (for full source code reproducing all graphs and analyses below, see the [appendix](#source-code); I welcome statistical corrections or elaborations if accompanied by equally reproducible R source code), we can see we have a lot of data to look at:
 
 ~~~{.R}
     Dead            Started               Ended                 Hits               Type
@@ -238,11 +259,16 @@ That clumpiness around 2009 is suspicious.  To emphasize this bulge of shutdowns
 
 The kernel density brings out an aspect of shutdowns we might have missed before: there seems to be an absence of recent shut downs. There are 4 shut downs scheduled for 2013 but the last one is scheduled for November, suggesting that we have seen the last of the 2013 casualties and that any future shut downs may be for 2014.
 
-What explains such graphs over time? The obvious candidate is the 4 April 2011 accession of Larry Page to CEO, replacing Eric Schmidt who had been hired to provide "adult supervision" for pre-IPO Google. He respected Steve Jobs greatly (he and Brin suggested, before meeting Schmidt, that their CEO be Jobs). Isaacon's _Steve Jobs_ records that before his death, Jobs had strongly advised Page to "focus", and asked "What are the five products you want to focus on?", saying "Get rid of the rest, because they're dragging you down." And indeed, on [14 July 2011](https://plus.google.com/+LarryPage/posts/dRtqKJCbpZ7) Page posted:
+What explains such graphs over time?
+One candidate is the 4 April 2011 accession of Larry Page to CEO, replacing Eric Schmidt who had been hired to provide "adult supervision" for pre-IPO Google.
+He respected Steve Jobs greatly (he and Brin suggested, before meeting Schmidt, that their CEO be Jobs).
+[Isaacon's _Steve Jobs_](http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1442369051) records that before his death, Jobs had strongly advised Page to "focus", and asked "What are the five products you want to focus on?", saying "Get rid of the rest, because they're dragging you down."
+And on [14 July 2011](https://plus.google.com/+LarryPage/posts/dRtqKJCbpZ7) Page posted:
 
 > ...Greater focus has also been another big feature for me this quarter -- more wood behind fewer arrows. Last month, for example, we announced that we will be closing Google Health and Google PowerMeter. We've also done substantial internal work simplifying and streamlining our product lines. While much of that work has not yet become visible externally, I am very happy with our progress here. Focus and prioritization are crucial given our amazing opportunities.
 
-While some have [tried to disagree](http://thenextweb.com/google/2013/01/12/larry-page-did-well-to-ignore-steve-jobs/ "Larry Page ignored Steve Jobs's deathbed advice, and Google is doing great"), it's hard not to conclude that indeed, a wall of shutdowns followed in late 2011 and 2012. But this sound very much like a one-time purge: if one has a new focus on focus (if you'll pardon the expression), then you may not be starting up as many services as before.
+While some have [tried to disagree](http://thenextweb.com/google/2013/01/12/larry-page-did-well-to-ignore-steve-jobs/ "Larry Page ignored Steve Jobs's deathbed advice, and Google is doing great"), it's hard not to conclude that indeed, a wall of shutdowns followed in late 2011 and 2012.
+But this sound very much like a one-time purge: if one has a new focus on focus, then one may not be starting up as many services as before and the services which one does start up should be more likely to survive.
 
 ## Modeling
 ### Logistic regression
@@ -270,16 +296,16 @@ In [log odds](!Wikipedia), >0 increases the chance of an event (shutdown) and <0
     This is interesting for confirming the general belief that Google has handled badly its social properties in the past, but I'm not sure how useful this is for predicting the future: since Larry Page became obsessed with social in 2009, a we might expect anything to do with "social" will now either be merged into Google+ or otherwise be kept on life support far longer than it would before
 - Google is deprecating software products in favor of web services
 
-    This should have been obvious to anyone watching - a lot of Google's efforts with Firefox and then Chromium was for improving web browsers as a platform for delivering applications. As efforts like HTML5 mature, there is less incentive for Google to release and support standalone software.
+    A lot of Google's efforts with Firefox and then Chromium was for improving web browsers as a platform for delivering applications. As efforts like HTML5 mature, there is less incentive for Google to release and support standalone software.
 - But apparently not its FLOSS software
 
     This seems due to a number of its software releases being picked up by third-parties (Wave, Etherpad, Refine), designed to be integrated into existing communities (Summer of Code projects), or apparently serving a *strategic* role (Android, Chromium, Dart, Go, Closure Tools, VP Codecs) in which we could summarize as 'building up a browser replacement for operating systems'. (Why? ["Commoditize your complements."](http://www.joelonsoftware.com/articles/StrategyLetterV.html))
 - things which charge or show advertising are more likely to survive
 
-    Also obvious, but it's good to have confirmation (if nothing else, it partially validates the data).
+    We expect this, but it's good to have confirmation (if nothing else, it partially validates the data).
 - Popularity as measured by Google hits seems to matter
 
-    Likewise obvious... or is it?
+    ...Or does it? This variable seems particularly treacherous and susceptible to reverse-causation issues (does lack of hits diagnose failure, or does failing cause lack of hits when I later searched?)
 
 #### Use of hits data
 
@@ -339,11 +365,11 @@ AIC: 396.9
 
 Most of the predictors were removed as not helping a lot, 3 of the 4 hit variables survived (but not the both averaged & deflated hits, suggesting it wasn't adding much in combination), and we see two of the better predictors from earlier survived: whether something was an acquisition and whether it was social.
 
-The original hits variable has the wrong sign, as expected of data leakage; now the average and deflated hits have the predicted sign (the higher the hit count, the lower the risk of death), but this doesn't put to rest my concerns: the average hits has the right sign, yes, but now the effect size seems way too high - we reject the hits with a log-odds of +2.1 as obviously contaminated and a correlation almost 4 times larger than one of the known-good correlations (being an acquisition), but the average hits is -2 & almost as big a log odds! The only variable which seems trustworthy is the deflated hits: it has the right sign and is a more plausible 5x smaller. I'll use just the deflated hits variable (although I will keep in mind that I'm still not sure it is free from data leakage).
+The original hits variable has the wrong sign, as expected of data leakage; now the average and deflated hits have the predicted sign (the higher the hit count, the lower the risk of death), but this doesn't put to rest my concerns: the average hits has the right sign, yes, but now the effect size seems way too high - we reject the hits with a log-odds of +2.1 as contaminated and a correlation almost 4 times larger than one of the known-good correlations (being an acquisition), but the average hits is -2 & almost as big a log odds! The only variable which seems trustworthy is the deflated hits: it has the right sign and is a more plausible 5x smaller. I'll use just the deflated hits variable (although I will keep in mind that I'm still not sure it is free from data leakage).
 
 ### Survival curve
 
-The logistic regression helped winnow down the variables but is limited to the binary outcome of shutdown or not; it can't use the potentially very important variable of how many days a product has survived for the obvious reason that *of course* mortality will increase with time! ("But this long run is a misleading guide to current affairs. In the long run we are all dead.")
+The logistic regression helped winnow down the variables but is limited to the binary outcome of shutdown or not; it can't use the potentially very important variable of how many days a product has survived for the simple reason that *of course* mortality will increase with time! ("But this long run is a misleading guide to current affairs. In the long run we are all dead.")
 
 For looking at survival over time, [survival analysis](!Wikipedia) might be a useful elaboration. Not being previously familiar with the area, I drew on Wikipedia, [Fox & Weisberg's appendix](http://socserv.mcmaster.ca/jfox/Books/Companion/appendix/Appendix-Cox-Regression.pdf), [Bewick et al 2004](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1065034/ "Statistics review 12: Survival analysis"), [Zhou's tutorial](https://web.archive.org/web/20130402204254/http://www.ms.uky.edu/~mai/Rsurv.pdf "Use Software R to do Survival Analysis and Simulation. A tutorial"), and Hosmer & Lemeshow's [_Applied Survival Analysis_](http://www.amazon.com/Applied-Survival-Analysis-Regression-Probability/dp/0471754994/) for the following results using the `survival` library (see also [CRAN Task View: Survival Analysis](http://cran.r-project.org/web/views/Survival.html)). Any errors are mine.
 
@@ -479,11 +505,11 @@ TRUE    100   23     0.81301
 
 To compare the random forest accuracy with the logistic model's accuracy, I interpreted the logistic estimate of shutdown odds >1 as predicting shutdown and <1 as predicting not shutdown; I then compared the full sets of predictions with the actual shutdown status. (This is not a [proper scoring rule](!Wikipedia) like those I employed in grading forecasts of the [2012 American elections](2012 election predictions), but this should be an intuitively understandable way of grading models' predictions.)
 
-The base-rate predictor got 65% right by definition, the logistic managed to score 68% correct ([bootstrap](!Wikipedia "Bootstrapping (statistics)")^[Specifically: building a logistic model on a bootstrap sample and then testing accuracy against full Google dataset.] 95% CI: 66-72%), and the random forest similarly got 68% (67-78%). These rates are not quite as bad as they may seem: I excluded the lifetime length (`Days`) from the logistic and random forests because unless one is handling it specially with survival analysis, [it leaks information](#leakage); so there's predictive power being left on the table. Regardless, there's no real reason to switch to the more complex random forests.
+The base-rate predictor got 65% right by definition, the logistic managed to score 68% correct ([bootstrap](!Wikipedia "Bootstrapping (statistics)")^[Specifically: building a logistic model on a bootstrap sample and then testing accuracy against full Google dataset.] 95% CI: 66-72%), and the random forest similarly got 68% (67-78%). These rates are not quite as bad as they may seem: I excluded the lifetime length (`Days`) from the logistic and random forests because unless one is handling it specially with survival analysis, [it leaks information](#leakage); so there's predictive power being left on the table. A fairer comparison would use lifetimes.
 
 #### Random survival forests
 
-The obvious next step is to take into accounts lifetime length & estimated survival curves. We can do that using ["Random survival forests"](http://arxiv.org/pdf/0811.1645 "Ishwaran et al 2008") (see also ["Mogensen et al 2012"](http://www.jstatsoft.org/v50/i11/paper "Evaluating Random Forests for Survival Analysis: Using Prediction Error Curves")), implemented in [`randomForestSRC`](http://cran.r-project.org/web/packages/randomForestSRC/index.html) (successor to Ishwaran's original library [`randomSurvivalForest`](http://cran.r-project.org/web/packages/randomSurvivalForest/index.html)). This initially seems very promising:
+The next step is to take into account lifetime length & estimated survival curves. We can do that using ["Random survival forests"](http://arxiv.org/pdf/0811.1645 "Ishwaran et al 2008") (see also ["Mogensen et al 2012"](http://www.jstatsoft.org/v50/i11/paper "Evaluating Random Forests for Survival Analysis: Using Prediction Error Curves")), implemented in [`randomForestSRC`](http://cran.r-project.org/web/packages/randomForestSRC/index.html) (successor to Ishwaran's original library [`randomSurvivalForest`](http://cran.r-project.org/web/packages/randomSurvivalForest/index.html)). This initially seems very promising:
 
 ~~~{.R}
                          Sample size: 350
@@ -506,7 +532,7 @@ and even gives us a cute plot of how accuracy varies with how big the forest is 
 
 Estimating the error rate for this random survival forest like we did previously, we're happy to see a 78% error rate. Building a predictor based on the Cox model, we get a lesser (but still better than the non-survival models) 72% error rate.
 
-How do these models perform when we check their robustness via the bootstrap? Not so great. The random survival forest collapses to 57-64% (95% on 200 replicates), but the Cox model just to 68-73%. This suggests to me that something is going wrong with the random survival forest model (overfitting? programming error?), so here too we'll stick with the ordinary Cox model.
+How do these models perform when we check their robustness via the bootstrap? Not so great. The random survival forest collapses to 57-64% (95% on 200 replicates), but the Cox model just to 68-73%. This suggests to me that something is going wrong with the random survival forest model (overfitting? programming error?) and there's no real reason to switch to the more complex random forests, so here too we'll stick with the ordinary Cox model.
 
 ## Predictions
 
@@ -581,7 +607,7 @@ Translate      92%               [95%][T]       0.78
 
 One immediately spots that some of the model's estimates seem questionable in the light of our greater knowledge of Google.
 
-I am more pessimistic about the [much-neglected Alerts](Google Alerts). And I think it's absurd to give any serious credence Analytics or Calendar or Docs being at risk (Analytics is a key part of the advertising infrastructure, and Calendar a sine qua non of any business software suite much less the core of said suite itself). The Glass estimate is also interesting: I don't know if I agree with the model, given how famous Glass is and how much Google is pushing it - could its future really be so chancy? On the other hand, many tech fads have come and go without a trace, hardware is always tricky, the more intimate a gadget the more design matters (Glass seems like the sort of thing Apple could make a blockbuster, but can Google?), Glass has already received a [hefty helping of criticism](http://www.businessinsider.com/nobody-really-likes-google-glass-2013-5), particularly the man most experienced with such HUDs ([Steve Mann](!Wikipedia)) [has criticized Glass](http://spectrum.ieee.org/geek-life/profiles/steve-mann-my-augmediated-life "Steve Mann: My 'Augmediated' Life: What I've learned from 35 years of wearing computerized eyewear") as being "much less ambitious" than the state of the art and worries that "Google and certain other companies are neglecting some important lessons. Their design decisions could make it hard for many folks to use these systems. Worse, poorly configured products might even damage some people's eyesight and set the movement back years. My concern comes from direct experience."
+I am more pessimistic about the [much-neglected Alerts](Google Alerts). And I think it's absurd to give any serious credence Analytics or Calendar or Docs being at risk (Analytics is a key part of the advertising infrastructure, and Calendar a sine qua non of any business software suite - much less the core of said suite, Docs!). The Glass estimate is also interesting: I don't know if I agree with the model, given how famous Glass is and how much Google is pushing it - could its future really be so chancy? On the other hand, many tech fads have come and go without a trace, hardware is always tricky, the more intimate a gadget the more design matters (Glass seems like the sort of thing Apple could make a blockbuster, but can Google?), Glass has already received a [hefty helping of criticism](http://www.businessinsider.com/nobody-really-likes-google-glass-2013-5), particularly the man most experienced with such HUDs ([Steve Mann](!Wikipedia)) [has criticized Glass](http://spectrum.ieee.org/geek-life/profiles/steve-mann-my-augmediated-life "Steve Mann: My 'Augmediated' Life: What I've learned from 35 years of wearing computerized eyewear") as being "much less ambitious" than the state of the art and worries that "Google and certain other companies are neglecting some important lessons. Their design decisions could make it hard for many folks to use these systems. Worse, poorly configured products might even damage some people's eyesight and set the movement back years. My concern comes from direct experience."
 
 But some estimates are more forgivable - Google *does* have a bad track record with social media so some level of skepticism about Google+ seems warranted - and on FeedBurner or Voice, I agree with the model that their future is cloudy. The extreme optimism about Blogger is interesting since before I began this project, I thought it was slowly dying and would inevitably shut down in a few years; but as I researched the timelines for various Google products, I noticed that Blogger seems to be favored in some ways: such as getting exclusive access to a few otherwise shutdown things (eg. Scribe & Friend Connect); it was the ground zero for Google's Dynamic Views skin redesign which was applied globally; and Google is still heavily using Blogger for all its official announcements even into the Google+ era.
 
@@ -680,7 +706,7 @@ google Chrome Frame https://en.wikipedia.org/wiki/Google_Chrome_Frame "chrome fr
 AdWhirl bought with AdMob, died 30 September 2013 http://vator.tv/news/2013-06-14-google-shutting-down-adwhirl-at-the-end-of-september for profit open-source https://code.google.com/p/adwhirl/ "google adwhirl" 101,000 results
 "Google Mine", Pinterest competitor http://googlesystem.blogspot.com/2013/06/google-mine.html unreleased as of June 21, 2013
 "Google Latitude" dead 9 August 2013; search 'Google Latitude' pulls up 1,150,000 hits on 10 July ANN: https://support.google.com/gmm/answer/3001634 https://plus.google.com/+jlapenna/posts/deBP7kj7rMi
-Google Shopping for Suppliers 'Google "Shopping for Suppliers"' 67,300  11 July 2013; profit www.google.com/shopping/suppliers/‎ started 28 Jan 2013
+Google Shopping for Suppliers 'Google "Shopping for Suppliers"' 67,300  11 July 2013; profit www.google.com/shopping/suppliers/  started 28 Jan 2013
 Alfred,  dead 19 July 2013, for-profit acquisition (14 December 2011) http://techcrunch.com/2013/07/11/google-will-shut-down-alfred-the-local-recommendations-app-july-19/ http://www.ubergizmo.com/2013/07/google-to-shut-down-alfred-on-july-19th/ http://www.engadget.com/2011/12/14/google-buys-alfred-maker-clever-sense-brings-us-closer-to-perso/ "google alfred"  46,100   17 July 2013
 Chromecast product for-profit non-social? non-FLOSS  341,000,000 hits 'google chromecast' 29 July 2013  http://www.n3rdabl3.co.uk/2013/07/google-announce-chromecast-a-new-way-to-share-on-your-tv/
 Google Shopper: dead. 30 August 2013 http://www.fiercemobilecontent.com/story/google-shopper-price-comparison-app-shutting-down-aug-30/2013-07-29 "google shopper", 297000 hits as of 2 August 2013
@@ -712,7 +738,7 @@ Google Talk Windows client? http://www.tbreak.ae/news/google-killing-google-talk
 Timely 2014-01-04 closed-source application Bitspin acquisition non-profit (since Google made the paid Android Timely app free) http://www.bitspin.ch/google http://www.pcworld.com/article/2084140/google-makes-timely-buy-of-swiss-app-maker.html "For new and existing users, Timely will continue to work as it always has." '"google timely"' 2014-01-08: 25,400 results
 Nest: "Nest Learning Thermostat", "Protect"  13 January 2013 https://investor.google.com/releases/2014/0113.html http://techcrunch.com/2014/01/13/google-just-bought-connected-device-company-nest-for-3-2b-in-cash/ https://nest.com/blog/2014/01/13/nest-google-and-you/ acquisition thing for-profit "google nest"  'About 87,300,000 results (0.42 seconds) '
 Google Currents: dead 19 February 2014 http://www.androidpolice.com/2014/02/19/google-currents-is-officially-dead-with-latest-update-transitions-users-to-play-newsstand-and-disappears-for-good/
-Wildfire 31 July 2012 http://wildfireapp.blogspot.com/2012/07/wildfire-is-joining-google.html acquisition social for-profit Maintenance stops 1 September 2014 "A source tells us that Wildfire has begun contacting its clients — which have included Cisco, Amazon, DQ, Gap, Jamba Juice, and McCann — to tell them that their business would no longer be serviced after the end of 2015."; shutdown: http://wildfireapp.blogspot.com/2014/03/accelerating-our-wildfire-integration.html
+Wildfire 31 July 2012 http://wildfireapp.blogspot.com/2012/07/wildfire-is-joining-google.html acquisition social for-profit Maintenance stops 1 September 2014 "A source tells us that Wildfire has begun contacting its clients - which have included Cisco, Amazon, DQ, Gap, Jamba Juice, and McCann - to tell them that their business would no longer be serviced after the end of 2015."; shutdown: http://wildfireapp.blogspot.com/2014/03/accelerating-our-wildfire-integration.html
 Know Your Candidate http://www.google.co.in/elections/ed/in/districts http://www.businessinsider.in/Indian-Election-Fever-Has-Hit-Google-As-They-Launch-KnowYour-Candidate-Tool/articleshow/33444019.cms 8 April 2014 website nonprofit non-FLOSS 'google "know your candidate"' 25 April 2014: 2,190,000 results
 TODO: Hangout, Photo
 6 May 2014 http://www.digitaljournal.com/pr/1903697 for-profit acquisition service https://www.google.com/search?num=100&q=google%20ezanga 14 May 2014 '34,400 results'
@@ -722,6 +748,8 @@ QuickOffice dead http://www.slashgear.com/quickoffice-closing-down-replaced-by-g
 Google Sync, dead August 1 2014 / 2014-08-01 free service https://support.google.com/a/answer/2716936 (already in original compilation)
 followup window closed 4 June 2014: no more new entries unless they came into existence before then! too much work
 Freebase https://groups.google.com/forum/#!msg/freebase-discuss/s_BPoL92edc/Y585r7_2E1YJ dead: June 30, 2015
+Glass http://www.bbc.com/news/technology-30831128 https://news.ycombinator.com/item?id=8894168 'January 19 [2015] will be the last day to get the Glass Explorer Edition.' https://plus.google.com/+GoogleGlass/posts/9uiwXY42tvc
+Google Maps Coordinate dead 21 January 2016 http://www.engadget.com/2015/01/22/google-maps-coordinate-closing/
 -->
 
 # Appendix
@@ -909,7 +937,7 @@ png(file="~/wiki/images/google/rsf-importance.png", width = 1.5*480, height = 1*
 plot(rsf)
 invisible(dev.off())
 
-# calculate cumulative hazard function; adapted from Mogensen et al 2012
+# calculate cumulative hazard function; adapted from Mogensen et al 2012 (I don't understand this)
 predictSurvProb.rsf <- function (object, newdata, times, ...) {
     N <- NROW(newdata)
     # class(object) <- c("rsf", "grow")
@@ -980,6 +1008,7 @@ predictees <- subset(google, Product %in% c("Alerts","Blogger","FeedBurner","Sch
                                             "Book Search","Voice","Gmail","Analytics",
                                             "AdSense","Calendar","Alerts","Google+","Docs",
                                             "Search", "Project Glass", "Chrome", "Translate"))
+# seriously ugly hack
 conditionalProbability <- function (d, followupUnits) {
     chances <- rep(NA, nrow(d)) # stash results
 

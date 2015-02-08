@@ -87,7 +87,7 @@ Even better, it's known that [active recall](!Wikipedia) is a far superior metho
 
 A graphic might help; imagine here one can afford to review a given piece of information a few times (one is a busy person). By looking at the odds we can remember the item, we can see that cramming wins in the short term, but unexercised memories decay so fast that after not too long spacing is much superior[^image]:
 
-![Massed vs spaced](/images/spaced-repetition-forgetting-curves.png) ![_Wired_ (original, Wozniak?); massed vs spaced](/images/spaced-repetition-forgetting-curve-wired-wozniak.jpg "http://www.wired.com/images/article/magazine/1605/ff_wozniak_graph_f.jpg")
+![Massed vs spaced](/images/spacedrepetition/forgetting-curves.png) ![_Wired_ (original, Wozniak?); massed vs spaced](/images/spacedrepetition/forgetting-curve-wired-wozniak.jpg "http://www.wired.com/images/article/magazine/1605/ff_wozniak_graph_f.jpg")
 
 [^image]: This image is only evocative! I whipped this up in [Inkscape](!Wikipedia) one night; it certainly is not a representation of a real experimental dataset or anything like that. Here are [two](http://web.archive.org/web/20130128115142/http://www.anewspring.com/storage/memotrainerrr.png) [more](http://www.ellaz.com/AIV/Memo%20Images/Forgetting%20Curve.jpg).
 
@@ -110,7 +110,7 @@ Of course, the latter strategy (cramming) is precisely what students do. They cr
     > -    Finished >1 session: ~20 [0.5%]
 
 <div style="float:right;margin:0 10px 10px 0">
-<img alt="Scumbag brain meme: knows everything when cramming the night before the test / and forgets everything a month later" height="340" src="/images/spaced-repetition-scumbag-brain.png" title="Humorous description of the downside to cramming; original: http://www.ml.sun.ac.za/wordpress/wp-content/uploads/2012/01/Screen-Shot-2012-01-30-at-4.24.53-PM.png" width="485">
+<img alt="Scumbag brain meme: knows everything when cramming the night before the test / and forgets everything a month later" height="340" src="/images/spacedrepetition/scumbag-brain.png" title="Humorous description of the downside to cramming; original: http://www.ml.sun.ac.za/wordpress/wp-content/uploads/2012/01/Screen-Shot-2012-01-30-at-4.24.53-PM.png" width="485">
 </div>
 
 Because it does work. Sort of. Cramming is a trade-off: you trade a strong memory now for weak memory later. (Very weak[^Stahl1].) And tests are usually of all the new material, with occasional old questions, so this strategy pays off! That's the damnable thing about it - its memory longevity & quality are, in sum, less than that of spaced repetition, but cramming delivers its goods *now*[^vacha]. So cramming is a rational, if short-sighted, response, and even SRS software recognize its utility & support it to some degree[^cramming]. (But as one might expect, if the testing is continuous and incremental, then the learning tends to also be long-lived[^conway]; I do not know if this is because that kind of testing is a disguised accidental spaced repetition system, or the students/subjects simply studying/acting differently in response to small-stakes exams.) In addition to this short-term advantage, there's [an ignorance](/docs/spacedrepetition/2011-mccabe.pdf "'Metacognitive awareness of learning strategies in undergraduates', McCabe 2011") of the advantages of spacing and a subjective *illusion* that the gains persist[^Stahl2][^Kornell2010] (cf. [Son & Simon 2012](/docs/spacedrepetition/2012-son.pdf "Distributed Learning: Data, Metacognition, and Educational Implications")[^Son-Simon-meta], [Mulligan & Peterson 2014](/docs/spacedrepetition/2014-mulligan.pdf "The Spacing Effect and Metacognitive Control")); from [Kornell 2009](http://sites.williams.edu/nk2/files/2011/08/Kornell.2009b.pdf "Optimising Learning Using Flashcards: Spacing Is More Effective Than Cramming")'s study of GRE vocab (emphasis added):
@@ -544,7 +544,7 @@ On average, when I'm studying a new topic, I'll add 3-20 questions a day. Combin
 
 If I haven't been studying something recently, the exponential decaying of reviews slowly drops the daily review. For example, in March 2011, I wasn't studying very many things, so for 24-26 March 2011, my scheduled daily reviews are 73, 83, and 74; after that, it'll probably drop down into the 60s, and then after another week or two, into the 50s and so on until it hits the minimum plateau which will very slowly shrink over years. (I haven't gone long enough without dumping cards in to know what that might be.) By February 2012, the daily reviews are in the 40s or sometimes 50s for similar reasons, but the gradual shrinkage will continue. We can see this vividly, and we can even see a sort of analogue of the original forgetting curve, if we ask Mnemosyne 2.0 to graph the number of cards to review per day for the next year up to February 2013 (assuming no additions or missed reviews etc.):
 
-![A wildly varying but clearly decreasing graph of predicted cards per day](/images/spaced-repetition-scheduled-cards.png)
+![A wildly varying but clearly decreasing graph of predicted cards per day](/images/spacedrepetition/scheduled-cards.png)
 
 If Mnemosyne weren't using spaced repetition, it would be very hard to keep up with 18,300+ flashcards. But because it is using spaced repetition, keeping up is very easy.
 

@@ -30,16 +30,33 @@ June 2012
 08: 2.6 w=201
 -->
 <!-- treadmill:
-8 August 2013: 1.94miles; 9 August: 4.54mi ; 10: 1.5mi; 11: 2.67mi; 12: 4.39mi; 15: 3.33mi; 16: 1.5mi; 20: 1.66mi; 25: 1.31mi; 26: 2.27mi; 28: 2.25; 29: 1.66
+08 August 2013: 1.94miles; 9 August: 4.54mi ; 10: 1.5mi; 11: 2.67mi; 12: 4.39mi; 15: 3.33mi; 16: 1.5mi; 20: 1.66mi; 25: 1.31mi; 26: 2.27mi; 28: 2.25; 29: 1.66
 14 September: 0.64mi; 15: 1.66; 24: 1.64mi 26: 2.42mi 28: 0.91mi
 14 October: 0.7mi
-8 November: 1.1mi; 10 Nov: 0.32mi; 11: 0.3; 13: 0.3; 14: 0.16; 29: 0.5
-5 Dec: 0.49mi; 7: 0.38mi
+08 November: 1.1mi; 10 Nov: 0.32mi; 11: 0.3; 13: 0.3; 14: 0.16; 29: 0.5
+05 Dec: 0.49mi; 7: 0.38mi
 28 January 2014: 1.26mi
 10 February: 1.51mi; 15 February: 0.5mi; 25 February: 1.44mi; 27: 0.84mi; 28 February: 1.22mi
-4 March: 0.68; 5 March: 0.85mi; 7 March: 1.03mi; 9 March: 0.14mi; 18 March: 1.07mi; 19 March: 0.63mi; 24 March: 0.52mi; 25 March: 0.4mi; 26 March: 0.5mi
-3 April: 0.43mi; 22 April: 0.52mi; 30 April: 1.14mi
-4 May: 0.9mi; 5 May: 0.94mi; 6 May: 0.98mi; 28 May: 1.27mi; 29 May: 0.9mi; 31 May: 1.13mi -->
+04 March: 0.68; 5 March: 0.85mi; 7 March: 1.03mi; 9 March: 0.14mi; 18 March: 1.07mi; 19 March: 0.63mi; 24 March: 0.52mi; 25 March: 0.4mi; 26 March: 0.5mi
+03 April: 0.43mi; 22 April: 0.52mi; 30 April: 1.14mi
+04 May: 0.9mi; 5 May: 0.94mi; 6 May: 0.98mi; 28 May: 1.27mi; 29 May: 0.9mi; 31 May: 1.13mi
+08 November: 1.1mi
+09 Nov: 1.56mi
+10 Nov: 0.83mi
+11 Nov: 1.66mi
+14 Nov: 1.23mi
+18 Nov: 1.65mi
+21 Nov: 1.08mi
+05 Dec: 1.66mi
+07 Dec: 1.66mi
+10 Dec: 1.66mi
+14 Dec: 1.66mi
+16 Dec: 1.66mi
+2015
+1 Jan: 1.66mi
+15 Jan: 1.66mi
+27 Jan: 1.66mi
+-->
 
 # Sleep
 
@@ -278,7 +295,7 @@ library(ggplot2)
 qplot(Date, Grade, color=Treadmill, size=I(5), data=daily)
 ~~~~
 
-![Mnemosyne spaced-repetition flashcard reviews, averaged by day, colored by whether reviewed while using a walking treadmill or not](/images/spaced-repetition-2014-05-31-mnemosyne-treadmill-dailyaverage.png)
+![Mnemosyne spaced-repetition flashcard reviews, averaged by day, colored by whether reviewed while using a walking treadmill or not](/images/spacedrepetition/2014-05-31-mnemosyne-treadmill-dailyaverage.png)
 
 ### Tests
 

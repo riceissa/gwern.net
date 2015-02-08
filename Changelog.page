@@ -324,7 +324,7 @@ Actually, I guess it was overall a pretty productive month. Probably helped that
 <p><blockquote>&ldquo;But where shall wisdom be found? / And where is the place of understanding? / Man knoweth not the price thereof; neither is it found in the land of the living&hellip;for the price of wisdom is above rubies.&rdquo;</blockquote></p>
 <p>Here is material I&rsquo;ve worked on in the 477 days since my last update. In roughly chronological &amp; topical order, here are the major additions to <code>gwern.net</code>:</p>
 <ul>
-<li>I interviewed translator <a href="http://www.gwern.net/docs/2011-house">Michael House</a> about his work in Japan as a translator</li>
+<li>I interviewed translator <a href="http://www.gwern.net/docs/eva/2011-house">Michael House</a> about his work in Japan as a translator</li>
 <li>finished data collection for my <a href="http://www.gwern.net/hafu">hafu anime statistics page</a> and begun analysis. (I&rsquo;ve achieved good coverage of characters, found an astonishingly consistent absence of Korean characters, and confirmed the blond-haired/blue-eyed stereotype; but my original thesis doesn&rsquo;t seem to work and the data is too unevenly distributed to identify time trends.)</li>
 <li>judged the <a href="http://www.gwern.net/Haskell%20Summer%20of%20Code#section-5">2011</a> &amp; <a href="http://www.gwern.net/Haskell%20Summer%20of%20Code#section-6">2012</a> results for the Haskell Summer of Codes and the accuracy of my predictions</li>
 <li>did <a href="http://www.gwern.net/DNB%20FAQ#meta-analysis">a meta-analysis</a> on whether dual n-back increases IQ, and examining possible biases and various claims about what makes the training work or not work</li>
@@ -372,9 +372,9 @@ Actually, I guess it was overall a pretty productive month. Probably helped that
 <li><a href="http://www.gwern.net/docs/statistics/1994-falk">&ldquo;The Ups and Downs of the Hope Function In a Fruitless Search&rdquo;</a>, Falk et al 1994</li>
 <li><a href="http://www.gwern.net/docs/2007-wolfe">Gene Wolfe on writing</a></li>
 <li><a href="http://www.gwern.net/docs/2002-gibson">&ldquo;Shiny balls of Mud: William Gibson Looks at Japanese Pursuits of Perfection&rdquo;</a> (2002)</li>
-<li><a href="http://www.gwern.net/docs/2004-okada">&ldquo;Otaku Talk&rdquo;, Okada et al 2004</a></li>
-<li><a href="http://www.gwern.net/docs/2005-murakami">&ldquo;Earth in My Window&rdquo;, Murakami 2005</a></li>
-<li><a href="http://www.gwern.net/docs/2005-sawaragi">&ldquo;On The Battlefield of &lsquo;Superflat&rsquo;&rdquo;</a></li>
+<li><a href="http://www.gwern.net/docs/eva/2004-okada">&ldquo;Otaku Talk&rdquo;, Okada et al 2004</a></li>
+<li><a href="http://www.gwern.net/docs/eva/2005-murakami">&ldquo;Earth in My Window&rdquo;, Murakami 2005</a></li>
+<li><a href="http://www.gwern.net/docs/eva/2005-sawaragi">&ldquo;On The Battlefield of &lsquo;Superflat&rsquo;&rdquo;</a></li>
 <li><a href="http://www.gwern.net/docs/2010-sarrazin">&ldquo;Ero-Anime: Manga Comes Alive&rdquo;, Sarrazin 2010</a></li>
 <li><a href="http://www.gwern.net/docs/eva/1996-newtype-anno-interview">1996 <em>NewType</em> interview with Hideaki Anno</a> (translated by me, with the help of an EGFer)</li>
 <li><a href="http://www.gwern.net/docs/eva/1997-animeland-may-hideakianno-interview-english">1997 <em>Animeland</em> interview with Hideaki Anno</a> (bought, transcribed, and translated by me with the help of other LWers)</li>

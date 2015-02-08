@@ -133,7 +133,7 @@ spineplot(c(1:(length(weather$MP))), as.factor(weather$MP), breaks=weeks, xlab="
 rm(weather$EDT)
 ~~~
 
-![MP from February 2012 to March 2013](/images/2013-weather-seasonal.png)
+![MP from February 2012 to March 2013](/images/weather/2013-seasonal.png)
 
 A formal check for [autocorrelation](!Wikipedia) in MP ratings (most methods assume independence) turns up [little enough](#autocorrelation) that I feel free to ignore them. So the data looks clean and tame; now we can begin real interpretation. The first and most obvious thing to do is to see what the overall correlation matrix with MP looks like:
 
@@ -474,7 +474,7 @@ maxvis <- attr(profile(slmodel), "summary")$coefficients[1]
 coefplot(maxvis, varnames=rownames(x), vertical=FALSE, var.las=1, main="95% CIs for the log odds of predictors")
 ~~~
 
-![Variables with confidence intervals show log odds size and whether the CI excludes zero](/images/2013-weather-coefficients-ci.png)
+![Variables with confidence intervals show log odds size and whether the CI excludes zero](/images/weather/2013-coefficients-ci.png)
 
 It doesn't *look* particularly impressive and doesn't exclude 0; but we want to know whether this surviving variable is potentially useful in practice, what its "cash value" might be. We again exponentiate the log odds to get more understandable odds:
 
@@ -607,7 +607,7 @@ sum(bs$t > (1 - (sum(weather$MP==3) / length(weather$MP)))) / length(bs$t)
 [1] 0.1832
 ~~~
 
-![Distribution of logistic regression classification rates](/images/2013-weather-bootstrap.png)
+![Distribution of logistic regression classification rates](/images/weather/2013-bootstrap.png)
 
 There's substantial uncertainty in the classification rate, as evidenced by the potentially wide confidence intervals, but in ~18% of the new logistic regressions, the classification rate was worse than the constant predictor. This is not too bad but the logistic regression is not outperforming random by very much, so the reality of the result is open to question.
 
@@ -625,7 +625,7 @@ A test using `acf` shows no autocorrelation worth mentioning:
 acf(weather$MP, main="Do days predict subsequent days at various distances?")
 ~~~
 
-![MP series shows almost no autocorrelation at any timelag](/images/2013-weather-autocorrelation-mp.png)
+![MP series shows almost no autocorrelation at any timelag](/images/weather/2013-autocorrelation-mp.png)
 
 For comparison, here is `acf` for a data series where one would expect a great deal of autocorrelation - my daily weight 2012-2013 - and one does indeed observe it:
 
@@ -653,6 +653,6 @@ weight <- c(205,214,216,213,213,218,218,214,215,216,218,216,210,219,217,219,217,
 acf(weight, na.action = na.pass)
 ~~~
 
-![Weight series showing autocorrelation at every timelag](/images/2013-weather-autocorrelation-weight.png)
+![Weight series showing autocorrelation at every timelag](/images/weather/2013-autocorrelation-weight.png)
 
 <!-- TODO: rope in Zeo data: https://forum.quantifiedself.com/thread-weather-effects-on-sleep -->

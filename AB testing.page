@@ -946,7 +946,7 @@ library(ggplot2)
 qplot(Size,Rate,color=Ul,data=rates)
 ~~~
 
-![Reading rate, split by font size, then by list icon type](/images/2013-10-27-abtesting-ulfontsize.png)
+![Reading rate, split by font size, then by list icon type](/images/ab/2013-10-27-ulfontsize.png)
 
 Immediately the negative effect of increasing the font size jumps out, but it's easier to understand the list icon estimates: square performs the best in the 100% (the original default) font size condition but it performs poorly in the other font sizes, which is why it seems to do only medium-well compared to the others. Given how much better 100% performs than the others, I'm inclined to ignore their results and keep the squares.
 
@@ -1118,7 +1118,7 @@ yes                     no                      10,669  18.51%
 
 I discovered during this experiment that I could graph the conversion rate of each condition separately:
 
-![Google Analytics view on blockquote factorial test conversions, by day](/images/2013-11-25-abtesting-blockquotehighlighting.png)
+![Google Analytics view on blockquote factorial test conversions, by day](/images/ab/2013-11-25-blockquotehighlighting.png)
 
 What I like about this graph is how it demonstrates some basic statistical points:
 
@@ -2001,7 +2001,7 @@ Variant   Old     Total: _n_ (%)        10-31 March     1-6 April     7-9 April 
 
 Graphed:
 
-![Weekly conversion rates for each of the BeeLine Reader settings](/images/2014-06-08-abtesting-blr-byweek.png)
+![Weekly conversion rates for each of the BeeLine Reader settings](/images/ab/2014-06-08-blr-byweek.png)
 
 I also received a number of complaints while running the BLR test (principally due to the `dark` and `blues` variants, but also apparently triggered by some of the less popular gray variants; the number of complaints dropped off considerably by halfway through):
 
@@ -2333,7 +2333,7 @@ Since we're back to testing CSS, we can use the old ABalytics approach without h
 On 27 July 2014, since the 95% CIs for the best and worst indent variants no longer overlapped, I deleted the worst variant (`0.1`).
 On 23 August 2014, the 2.0em and 0.0em variants no longer overlapped, and I deleted the latter.
 
-![Daily traffic and conversion rates for each of the indentation settings](/images/2014-11-19-abtesting-indentation.png)
+![Daily traffic and conversion rates for each of the indentation settings](/images/ab/2014-11-19-indentation.png)
 
 The conversion data, with new vs returning visitor, segmented by period, and ordered by when a variant was deleted:
 

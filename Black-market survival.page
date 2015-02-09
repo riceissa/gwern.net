@@ -44,7 +44,7 @@ Variables:
 
 ## Table
 
-A table of relevant markets (6 Feb 2015):
+A table of relevant markets (8 Feb 2015):
 
 Market                   Start       End       Alive Closure   Arrested URL                      Multisig I2P   Bitcoin Litecoin Dogecoin Darkcoin          Codebase   Guns   Fraud Hacks Doxed Notes
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ------- -------- -------- --------          ---------- -----  ----- ----- ----- -------------
@@ -221,7 +221,7 @@ TODO: <!-- ping Vespco about results -->
 
 ~~~{.R}
 library(XML)
-black <- readHTMLTable("/tmp/burl3086EPa.html",
+black <- readHTMLTable("http://www.gwern.net/Black-market%20survival#data",
     colClasses = c("character", as.Date, as.Date, "logical", "factor", "logical", "character",
     "logical", "logical", "logical", "logical", "logical", "logical",
     "factor", "logical", "logical", "integer", "logical", "character"))[[1]]
@@ -463,36 +463,52 @@ Blackmarkets:
 ~~~{.R}
 library(cmprsk)
 blackc <- with(black, cuminc(Age, Closure, cencode="alive")); blackc
-# Etimates and Variances:
+# Estimates and Variances:
 # $est
-#                      200         400         600         800
-# 1 hacked    0.1411910775 0.141191077 0.141191077 0.141191077
-# 1 raided    0.0153846154 0.130758854 0.130758854 0.130758854
-# 1 scam      0.2140519842 0.290724738 0.290724738 0.290724738
-# 1 voluntary 0.2732699794 0.338746077 0.338746077 0.338746077
+#                       200          400          600          800
+# 1 hacked    0.13347050954 0.1334705095 0.1334705095 0.1334705095
+# 1 raided    0.01428571429 0.1009901635 0.1009901635 0.1009901635
+# 1 scam      0.21346697676 0.3158520179 0.3158520179 0.3158520179
+# 1 voluntary 0.24030528809 0.2919590025 0.2919590025 0.2919590025
 #
 # $var
-#                        200           400           600           800
-# 1 hacked    0.001950521678 0.00195052168 0.00195052168 0.00195052168
-# 1 raided    0.000236994722 0.00291724885 0.00291724885 0.00291724885
-# 1 scam      0.002867577721 0.00371373911 0.00371373911 0.00371373911
-# 1 voluntary 0.003300028023 0.00418601541 0.00418601541 0.00418601541
-plot(blackc, lty=1, color=c(1:4), xlab="Days")
+#                         200            400            600            800
+# 1 hacked    0.0017654537301 0.001765453730 0.001765453730 0.001765453730
+# 1 raided    0.0002043092406 0.001619162626 0.001619162626 0.001619162626
+# 1 scam      0.0026443988668 0.003563479776 0.003563479776 0.003563479776
+# 1 voluntary 0.0028356015117 0.003338302428 0.003338302428 0.003338302428
+
+plot(blackc, lty=1, color=c(1:5), xlab="Days")
+
+# confidence intervals:
+
+plot(blackc, col=c(1:5), lty=1, xlab="Days", curvlab=c('hacked','raided','scam','voluntary'))
+for (i in 1:4){
+    cltype <- names(blackc)[i]
+    ctm <- blackc[[cltype]]$time
+    cest <- blackc[[cltype]]$est
+    cvar <- blackc[[cltype]]$var
+    clo <- cest ^ exp(-1.96*sqrt(cvar)/(cest*log(cest)))
+    chi <- cest ^ exp(1.96*sqrt(cvar)/(cest*log(cest)))
+    lines(ctm[2:length(ctm)], chi[2:length(ctm)], col=i, lty=2, lwd=0.7)
+    lines(ctm[2:length(ctm)],clo[2:length(ctm)] , col=i, lty=2, lwd=0.7)
+}
+
 with(black, crr(Age, Closure, cencode="alive",
                 cov1= black[,c("Multisig", "Hacks", "Doxed", "Fraud", "Guns", "I2P", "Bitcoin", "Litecoin", "Dogecoin", "Darkcoin")],
                 failcode="scam"))
-
-# 8 cases omitted due to missing values
-# convergence:  TRUE
+# 6 cases omitted due to missing values
+# convergence:  FALSE
 # coefficients:
-# Multisig    Hacks    Doxed    Fraud     Guns      I2P
-#  -0.5948   0.3403  -0.8476   0.0899  -0.7179   0.4307
+# Multisig    Hacks    Doxed    Fraud     Guns      I2P  Bitcoin Litecoin Dogecoin Darkcoin
+#  -0.3471   0.2393  -0.8714   0.1323  -0.8730  -0.2611  -9.3560  -8.7320  -7.5850  -6.9930
 # standard errors:
-# [1] 0.9650 0.2301 0.7220 0.5423 0.5971 1.8150
+#  [1] 0.8601 0.2357 0.7136 0.5542 0.5866 1.3910 1.0590 1.3020 1.4360 0.9715
 # two-sided p-values:
-# Multisig    Hacks    Doxed    Fraud     Guns      I2P
-#     0.54     0.14     0.24     0.87     0.23     0.81
-# TODO: hard to do regressions due to NAs, and possibly the categorical variables - unfold the latter?
+# Multisig    Hacks    Doxed    Fraud     Guns      I2P  Bitcoin Litecoin Dogecoin Darkcoin
+#  6.9e-01  3.1e-01  2.2e-01  8.1e-01  1.4e-01  8.5e-01  0.0e+00  2.0e-11  1.3e-07  6.1e-13
+
+# TODO: hard to do regressions due to NAs
 ~~~
 
 # Predictions

@@ -2,6 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Codec.Binary.UTF8.String (encode)
+import Control.Exception (onException)
 import Data.ByteString.Lazy.Char8 (unpack)
 import Data.Char (isAlphaNum, isAscii)
 import Data.List (isInfixOf, nub, sort)
@@ -23,6 +24,7 @@ import Hakyll ((.&&.), applyTemplateList, buildTags, compile, complement, compre
                loadAll, loadAndApplyTemplate, loadBody, makeItem, match, modificationTimeField,
                pandocCompilerWithTransform, preprocess, relativizeUrls, route, setExtension,
                tagsField, tagsRules, templateCompiler, Compiler, Context, Item, Pattern, Tags)
+import System.Exit (ExitCode(ExitFailure))
 import Text.HTML.TagSoup (renderTagsOptions,parseTags,renderOptions, optMinimize, Tag(TagOpen))
 import Text.Pandoc (bottomUp, Extension(Ext_markdown_in_html_blocks), HTMLMathMethod(MathML), Inline(..),
                     ObfuscationMethod(NoObfuscation), Pandoc(..), ReaderOptions(..), WriterOptions(..))
@@ -115,7 +117,7 @@ pandocTransform :: Pandoc -> Pandoc
 pandocTransform = bottomUp (map (convertInterwikiLinks . convertHakyllLinks . addAmazonAffiliate))
 
 -- For Amazon links, there are two scenarios: there are parameters (denoted by a
--- '?' in the URL, or there are not. In the former, we need to append the tag as
+-- '?' in the URL), or there are not. In the former, we need to append the tag as
 -- another item ('&tag='), while in the latter, we need to set up our own
 -- parameter ('?tag='). The transform may be run many times since
 -- they are supposed to be pure, so we
@@ -153,15 +155,17 @@ staticImg x@(TagOpen "img" xs) = do let optimized = lookup "height" xs
                                                     case path of
                                                           Nothing -> return x
                                                           Just p -> do let p' = if head p == '/' then tail p else p
-                                                                       (height,width) <- imageMagick p'
+                                                                       (height,width) <- imageMagick p' `onException` (putStrLn p)
                                                                        return (TagOpen "img" (uniq ([("height",height), ("width",width)]++xs)))
             where uniq = nub . sort
 staticImg x = return x
 -- | Use FileStore util to run imageMagick's 'identify', & extract the dimensions
 imageMagick :: FilePath -> IO (String,String)
-imageMagick f = do (_,_,bs) <- runShellCommand "./" Nothing "identify" ["-format", "%h %w", f]
-                   let [height,width] = words (unpack bs)
-                   return (height,width)
+imageMagick f = do (status,_,bs) <- runShellCommand "./" Nothing "identify" ["-format", "%h %w", f]
+                   case status of
+                     ExitFailure _ -> error f
+                     _ -> do let [height,width] = words (unpack bs)
+                             return (height,width)
 
 
 -- INTERWIKI PLUGIN

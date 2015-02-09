@@ -50,68 +50,68 @@ Market                   Start       End       Alive Closure   Arrested URL     
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ------- -------- -------- --------          ---------- -----  ----- ----- ----- -------------
 Silk Road                2011-01-31 2013-10-02 FALSE raided    TRUE     `silkroadvb5piz3r.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  FALSE 2     TRUE  SR1 temporarily sold guns as part of "the Armory" but only for a brief time as sales were poor.
 BlackMarket Reloaded     2011-06-30 2013-12-02 FALSE hacked    FALSE    `r6rcmz6lga4i5vb4.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  1     FALSE backopy stopped buying on 2 Dec aggravated in part by a big theft, fully shutdown by 23 December. May reopen. BMR permitted gun sales, and also seems to have permitted credit card information sales, judging by angry feedback.
-Atlantis                 2013-03-26 2013-09-20 FALSE scam      FALSE    `atlantisrky4es5q.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        FALSE  FALSE 0     FALSE Atlantis's shutdown seems, judging by comments [on](http://www.reddit.com/r/atlantis/comments/1n5a2q/the_fall_of_atlantis_a_moderator_tells/) [Reddit](http://www.reddit.com/r/atlantis/comments/1ms7f9/alert_atlantis_marketplace_closing_down/) [pages](http://www.reddit.com/r/atlantis/comments/1n3qc7/atlantis_is_it_site_down_for_good/) & [All Things Vice](http://allthingsvice.com/2013/09/26/the-fall-of-atlantis-a-moderator-tells/) to have initially allowed withdrawals, but disabled it after a few days and then stole the remaining deposits+escrow+vendor-bonds.
+Atlantis                 2013-03-26 2013-09-20 FALSE scam      FALSE    `atlantisrky4es5q.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  FALSE 0     FALSE Atlantis's shutdown seems, judging by comments [on](http://www.reddit.com/r/atlantis/comments/1n5a2q/the_fall_of_atlantis_a_moderator_tells/) [Reddit](http://www.reddit.com/r/atlantis/comments/1ms7f9/alert_atlantis_marketplace_closing_down/) [pages](http://www.reddit.com/r/atlantis/comments/1n3qc7/atlantis_is_it_site_down_for_good/) & [All Things Vice](http://allthingsvice.com/2013/09/26/the-fall-of-atlantis-a-moderator-tells/) to have initially allowed withdrawals, but disabled it after a few days and then stole the remaining deposits+escrow+vendor-bonds.
 Sheep Marketplace        2013-02-28 2013-11-29 FALSE scam      FALSE    `sheep5u64fi457aw.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Nette      FALSE  TRUE  1     TRUE  withdrawals were halted before 29 Nov, but deposits & sales were ongoing. I choose 29 Nov as the day where the Sheep scam became irrefutable.
-Deepbay                  2013-06-30 2013-11-04 FALSE scam      FALSE    `deepbay4xr3sw2va.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                                     0     FALSE http://www.reddit.com/r/Bitcoin/comments/1qaewa/deepbay_marketplace_owner_steals_sites_bitcoins/
+Deepbay                  2013-06-30 2013-11-04 FALSE scam      FALSE    `deepbay4xr3sw2va.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  FALSE 0     FALSE [Disappeared with funds](http://www.reddit.com/r/Bitcoin/comments/1qaewa/deepbay_marketplace_owner_steals_sites_bitcoins/); based on a [screenshot of categories](http://img.wonderhowto.com/img/91/55/63516483119507/0/with-silk-road-bust-online-black-market-already-has-new-home.w654.jpg), seems to have been almost exclusively drugs.
 Budster                  2013-10-10 2013-10-20 FALSE scam      FALSE    `budsterga5hcdxjn.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             WordPress  FALSE  FALSE 1     TRUE  http://www.reddit.com/r/Budster/comments/1ove9w/has_anyone_made_a_purchase_yet/ccw8srh http://www.reddit.com/r/DarkNetMarkets/comments/1xyixa/psa_cyruserv_is_down_for_good_budster_taf_hosting/ Budster did not seem to use genuine multisig and this enabled the scam: http://www.reddit.com/r/SilkRoad/comments/1opmha/budster_the_worlds_first_p2p_marketplace/
 Project Black Flag       2013-10-14 2013-10-28 FALSE scam      FALSE    `ajd4yqq7ngzmqo3p.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  TRUE  1     FALSE http://www.reddit.com/r/DarkNetMarkets/comments/1peguv/pbf_rip/ ; forums: `blackiiw5nozs6i5.onion`; policies stated on forums ("Prohibited: Weapons, counterfeit money, stolen goods, child pornography, posting other users information, attempt to cause harm, spamming.")
-TorMarket                2013-11-07 2013-12-22 FALSE scam      FALSE    `tormarkozaegyvco.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        FALSE  TRUE  1     FALSE  Part of the TorMarket user list was leaked [by DPR2 on SR2F](/docs/sr/2013-12-13-sr1f-tormarketdump.mht); TM also [admitted other security issues](/docs/sr/2013-12-13-tormarketforums-ddoshack.mht), but further rumors that TorMarket's shut down was precipitated by a hack by "Profesorhouse" have not been substantiated. TM may have used Bitwasp, but it didn't seem to [have Bitwasp error pages](http://bit-wasp.org/index.php/topic,130.0.html) and doesn't really look like the usual Bitwasp black-market.
+TorMarket                2013-11-07 2013-12-22 FALSE scam      FALSE    `tormarkozaegyvco.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  TRUE  1     FALSE  Part of the TorMarket user list was leaked [by DPR2 on SR2F](/docs/sr/2013-12-13-sr1f-tormarketdump.mht); TM also [admitted other security issues](/docs/sr/2013-12-13-tormarketforums-ddoshack.mht), but further rumors that TorMarket's shut down was precipitated by a hack by "Profesorhouse" have not been substantiated. TM may have used Bitwasp, but it didn't seem to [have Bitwasp error pages](http://bit-wasp.org/index.php/topic,130.0.html) and doesn't really look like the usual Bitwasp black-market.
 FloMarket                2013-12-01 2014-01-01 FALSE hacked    FALSE    `fmkt3wixc772jxyj.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp                 2     FALSE  Apparently [hacked 20 December 2013](http://silkroad5v7dywlc.onion/index.php?topic=10489.msg191044#msg191044) (previously [noted to be hackable](http://www.reddit.com/r/DarkNetMarkets/comments/1tm4rf/be_careful_with_flomarket_and_bluesky/)); withdrawals began failing [on 1 January 2014](http://www.deepdotweb.com/2014/01/02/warning-reports-of-flomarket-possible-scam-hack/) & FloMarket announced a [*second*](http://www.reddit.com/r/DarkNetMarkets/comments/1ujjsw/flo_is_down_for_good_another_scam_in_the_books/) hack on 6 January 2014; for the operator's explanation, see [his interview](http://www.deepdotweb.com/2014/01/09/flomarket-admin-im-not-a-scammer-an-exculsive-interview/) <!-- ~5btc hack -->
-Tortuga                  2013-12-16 2014-01-05 FALSE voluntary FALSE    `tortugauwngwecwd.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Seagull                 0     FALSE  Advertised in the [SRF2](http://silkroad5v7dywlc.onion/index.php?topic=9940.msg179819#msg179819) on 19 Dec; advertised on the [BMR forums](/docs/sr/2013-12-16-bmr-tortugannouncement.mht) on 16 Dec. Up on 1 January 2014, down on 9 January 2014 & afterwards. [No news](http://www.reddit.com/r/DarkNetMarkets/comments/1vhygj/tortuga_gone/) about reasons for its closure.
-BlackBox Market          2013-11-12 2014-02-01 FALSE voluntary FALSE    `77yqlxe7pnxhnxvi.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   TRUE  0     FALSE  Interesting site, but not sure it should be listed here. Start date based on [Reddit](http://www.reddit.com/r/onions/comments/1qhj76/the_blackbox_market_legal_private_encrypted/). Site stopped responding 1 February 2014. On-site escrow did not use multisig ("We do not make use of the Escrow services provided by Bitcoin itself as this associates buyers and sellers.") Policies based on the fact that BBM could not know what was being sold on it and so _de facto_ permitted both categories.
-GreyRoad                 2014-01-04 2014-02-01 FALSE voluntary FALSE    `greyroaderw4qymd.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   TRUE  0     FALSE  Went public [4 January 2013](http://www.reddit.com/r/DarkNetMarkets/comments/1ue777/ask_lord_voldemort_anything/) ([2](http://www.reddit.com/r/Bitcoin/comments/1ue499/ask_lord_voldemort_anything/)), operator claims to have been selling for a while but refuses to provide any specifics & very few sellers on market so opening date is used; forums: `grforums5qwzbhkl.onion`. URL stopped working 1 February 2014
+Tortuga                  2013-12-16 2014-01-05 FALSE voluntary FALSE    `tortugauwngwecwd.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Seagull                 0     FALSE  Advertised in the [SR2F](http://silkroad5v7dywlc.onion/index.php?topic=9940.msg179819#msg179819) on 19 Dec 2013; advertised on the [BMR forums](/docs/sr/2013-12-16-bmr-tortugannouncement.mht) on 16 Dec. Up on 1 January 2014, down on 9 January 2014 & afterwards. [No news](http://www.reddit.com/r/DarkNetMarkets/comments/1vhygj/tortuga_gone/) about reasons for its closure. No official rules on listings were posted before it disappeared, probably because it was unpopular enough that content was not an issue.
+BlackBox Market          2013-11-12 2014-02-01 FALSE voluntary FALSE    `77yqlxe7pnxhnxvi.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   TRUE  0     FALSE  Interesting site, but not sure it should be listed here. Start date based on [Reddit](http://www.reddit.com/r/onions/comments/1qhj76/the_blackbox_market_legal_private_encrypted/). Site stopped responding 1 February 2014. On-site escrow did not use multisig ("We do not make use of the Escrow services provided by Bitcoin itself as this associates buyers and sellers.") Policies based on the fact that BBM could not know what was being sold on it and so _de facto_ permitted both categories.
+GreyRoad                 2014-01-04 2014-02-01 FALSE voluntary FALSE    `greyroaderw4qymd.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   TRUE  0     FALSE  Went public [4 January 2013](http://www.reddit.com/r/DarkNetMarkets/comments/1ue777/ask_lord_voldemort_anything/) ([2](http://www.reddit.com/r/Bitcoin/comments/1ue499/ask_lord_voldemort_anything/)), operator claims to have been selling for a while but refuses to provide any specifics & very few sellers on market so opening date is used; forums: `grforums5qwzbhkl.onion`. URL stopped working 1 February 2014
 Cantina                  2014-01-20 2014-02-07 FALSE hacked    FALSE    `vsudl2g3em6qhcw4.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Nette      TRUE   TRUE  3     TRUE   Cantina [spammed vendors on SRF2](http://silkroad5v7dywlc.onion/index.php?topic=18574.0) on 20 Jan 2014; earliest known mention of the market. It was [repeatedly hacked & doxed](http://www.reddit.com/r/DarkNetMarkets/comments/1whket/cantina_market_mega_thread_up_vote_for_visibility/). Cantina had no stated policies, but it did have a category for guns and given the 'Data' categories & general lack of ethics & greed, highly likely would have permitted carding had it not died so ignominiously.
 Breaking Bad             2014-02-01 2014-02-06 FALSE voluntary FALSE    `breakingnartglxd.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE  [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1wqhcm/breaking_bad/); site went down 6 February, [owner explained](http://www.reddit.com/r/DarkNetMarkets/comments/1wqhcm/breaking_bad/cfbmzy7) shutdown due to "Lack of interest from vendors, constant hate mail, downvotes and claims on security vulnerabilities"
 Black Goblin Market      2014-02-03 2014-02-04 FALSE hacked    FALSE    `ua4aptglh45m5p6b.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Drupal     TRUE   TRUE  0     TRUE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1wwjg3/black_goblin_market_is_now_open/); I [de-anonymized the site](http://www.reddit.com/r/DarkNetMarkets/comments/1xeeni/black_goblin_obituary/), so it shut down. The "Black Goblin Rules" page does not mention any ban of guns or carding.
 Cannabis Road            2014-02-03 2014-02-07 FALSE hacked    FALSE    `ji4wrifhsnawaw7t.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  FALSE 1     TRUE   Announced on The Hub; [thoroughly hacked & de-anonymized](http://www.reddit.com/r/DarkNetMarkets/comments/1xe943/cannabisroad_obituary/)
 Utopia                   2014-02-03 2014-02-11 FALSE raided    TRUE     `ggvow6fj3sehlm45.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             CakePHP    TRUE   TRUE  0     TRUE   forums: `ysas7uv4drg7rlwv.onion`; forms opened in early January, site opened to ex-BMR sellers late January, general buyers only allowed in February. [Dutch seizure notice posted ~7:30AM EST](http://www.reddit.com/r/DarkNetMarkets/comments/1xltp2/utopia_seized_by_police/), followed by [5](http://www.bbc.co.uk/news/technology-26158012 "Five arrested in Utopia dark net marketplace crackdown") [arrests](http://www.deepdotweb.com/2014/02/12/the-utopia-bust-details-prosecution-announcement/ "The Utopia Bust Details - Prosecution Announcement") in Netherlands & [Germany](http://www.bka.de/nn_233148/DE/Presse/Pressemitteilungen/Presse2014/140213__ErmittlungserfolgCyberKriminelle.html "Ermittlungserfolg gegen Cyber-Kriminelle")
 Black Services Market    2013-12-02 2014-02-01 FALSE scam      FALSE    `thebsm6okkbx7fik.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             OSclass    TRUE   TRUE  0     FALSE      Start date based on oldest listing when I checked on 26 December 2013; last admin forum post 18 Jan & PMs to him disabled, [reports](http://www.reddit.com/r/DarkNetMarkets/comments/1xbex3/bsm_black_services_market_is_a_scam/) of escrow problems in late Jan/early Feb, many complaints on forums; site went down 14 February 2014
-Red Sun Marketplace      2014-03-20 2014-03-23 FALSE hacked    FALSE    `redsun4lvjrxwwuy.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp           TRUE  1     FALSE  [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/20vrlv/red_sun_marketplace_reloaded/); hacked ([SQli etc](http://www.reddit.com/r/DarkNetMarkets/comments/214y14/i_made_it_all_pretty_and_stuff/cg9sh7z)); forum: `forumsyccj7ekvvv.onion`. Surviving materials don't say whether guns were permitted, but given the operator's [interest in recruiting fake ID vendors](http://www.reddit.com/r/fakeid/comments/20vusk/looking_for_id_card_vendors/) it seems more likely than not that carding sales would have been allowed.
+Red Sun Marketplace      2014-03-20 2014-03-23 FALSE hacked    FALSE    `redsun4lvjrxwwuy.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    FALSE  TRUE  1     FALSE  [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/20vrlv/red_sun_marketplace_reloaded/); hacked ([SQli etc](http://www.reddit.com/r/DarkNetMarkets/comments/214y14/i_made_it_all_pretty_and_stuff/cg9sh7z)); forum: `forumsyccj7ekvvv.onion`. Surviving materials don't say whether guns were permitted, but given the operator's [interest in recruiting fake ID vendors](http://www.reddit.com/r/fakeid/comments/20vusk/looking_for_id_card_vendors/) it seems more likely than not that carding sales would have been allowed.
 BuyItNow                 2013-04-30 2014-02-17 FALSE voluntary FALSE    `buyitnowquyft7dx.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             WordPress  TRUE   FALSE 0     FALSE  Site did not respond on 17 February 2014 or afterwards; no reports on shutdown reason or whether it was a scam. Policies not specified, but many listings for guns, and none of any kind related to carding.
-White Rabbit             2013-12-23 2014-02-01 FALSE scam      FALSE    `rabbittorvr74veg.onion` FALSE    TRUE  FALSE   TRUE     FALSE    FALSE                        TRUE   TRUE  0     TRUE   Start date based on [Reddit](http://www.reddit.com/r/themarketplace/comments/1to7sk/a_new_alternative_themarketplace/) [posts](http://www.reddit.com/r/SilkRoad/comments/1to8d7/a_new_alternative_sr/). Formerly named "Rabbit's Marketplace". Unable to find reports of successful sales on The Hub or Reddit, and WR withdrawal has been broken at least since 21 February 2014; [no one has claimed withdrawals](http://www.reddit.com/r/DarkNetMarkets/comments/1ylbt7/why_is_whiterabbit_in_side_bar/) recently. Dead date is based on the February news notice "There are problems with payment gateway". Forum states only CP is banned ("Items which are not allowed: child porn (and other sick stuff).") i2p: `wrmarket.i2p`. IP was found to [be leaking](http://thehub7dnl5nmcz5.onion/index.php?topic=2261.msg17459).
-FreeBay                  2013-12-02 2014-02-28 FALSE voluntary FALSE    `freebay3yxuebsog.onion` FALSE    FALSE TRUE    TRUE     FALSE    FALSE                        FALSE  TRUE  0     FALSE  URL is also apparently `litebay7vp5pm77f.onion` (FreeBay took Bitcoin, LiteBay took Litecoin); open date is guess based on [Reddit post](http://www.reddit.com/r/TOR/comments/1s0wgc/freebay_ebay_of_drugs/); site was not up on 28 February 2014 when I checked. Policies not specified, but many carding & no gun listings.
+White Rabbit             2013-12-23 2014-02-01 FALSE scam      FALSE    `rabbittorvr74veg.onion` FALSE    TRUE  FALSE   TRUE     FALSE    FALSE             unknown    TRUE   TRUE  0     TRUE   Start date based on [Reddit](http://www.reddit.com/r/themarketplace/comments/1to7sk/a_new_alternative_themarketplace/) [posts](http://www.reddit.com/r/SilkRoad/comments/1to8d7/a_new_alternative_sr/). Formerly named "Rabbit's Marketplace". Unable to find reports of successful sales on The Hub or Reddit, and WR withdrawal has been broken at least since 21 February 2014; [no one has claimed withdrawals](http://www.reddit.com/r/DarkNetMarkets/comments/1ylbt7/why_is_whiterabbit_in_side_bar/) recently. Dead date is based on the February news notice "There are problems with payment gateway". Forum states only CP is banned ("Items which are not allowed: child porn (and other sick stuff).") i2p: `wrmarket.i2p`. IP was found to [be leaking](http://thehub7dnl5nmcz5.onion/index.php?topic=2261.msg17459).
+FreeBay                  2013-12-02 2014-02-28 FALSE voluntary FALSE    `freebay3yxuebsog.onion` FALSE    FALSE TRUE    TRUE     FALSE    FALSE             unknown    FALSE  TRUE  0     FALSE  URL is also apparently `litebay7vp5pm77f.onion` (FreeBay took Bitcoin, LiteBay took Litecoin); open date is guess based on [Reddit post](http://www.reddit.com/r/TOR/comments/1s0wgc/freebay_ebay_of_drugs/); site was not up on 28 February 2014 when I checked. Policies not specified, but many carding & no gun listings.
 drugslist                2014-01-08 2014-02-28 FALSE scam      FALSE    `drugslisvdknitqd.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  FALSE 1     FALSE  Withdrawals began failing & [admin ceased responding](http://www.reddit.com/r/DarkNetMarkets/comments/20duht/drugslist_dogeroad_kia_admins_mia/) in February 2014; date closure to the forum admin account's last login.
 Doge Road                2014-01-18 2014-03-13 FALSE scam      FALSE    `dogeroadiqt6olb6.onion` FALSE    FALSE FALSE   FALSE    TRUE     FALSE             Bitwasp    FALSE  TRUE  0     FALSE  [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1vjxap/xpost_rdogecoin_announcement_the_doge_road_is_now/); forums: `dogeroadqmu2yzcg.onion`. Went down [sometime in March 2014](http://www.reddit.com/r/DarkNetMarkets/comments/20duht/drugslist_dogeroad_kia_admins_mia/), may have gone bad in late February.
-TorEscrow                2014-02-02 2014-04-19 FALSE scam      FALSE    `torescrow7upglhe.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        FALSE  TRUE  0     FALSE  Initially just an escrow, but [TE expanded](http://www.reddit.com/r/DarkNetMarkets/comments/1wt3bj/te_expands_and_becomes_a_market/) into a market. Forums: `4rtvonaubslk7vvk.onion`. TE seems to have permitted carding: "We do not allow the sale of weapons, pornography, ebooks, pirated software or hits."
+TorEscrow                2014-02-02 2014-04-19 FALSE scam      FALSE    `torescrow7upglhe.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  TRUE  0     FALSE  Initially just an escrow, but [TE expanded](http://www.reddit.com/r/DarkNetMarkets/comments/1wt3bj/te_expands_and_becomes_a_market/) into a market. Forums: `4rtvonaubslk7vvk.onion`. TE seems to have permitted carding: "We do not allow the sale of weapons, pornography, ebooks, pirated software or hits."
 Armory Vendor Market     2014-02-06 2014-04-07 FALSE scam      FALSE    `armoryx7kvdq3jds.onion` FALSE    FALSE FALSE   FALSE    FALSE    TRUE              Quick.Cart TRUE   FALSE 1     FALSE  [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1x855s/the_armory_vendor_market_is_now_open/); their Cryuserv hosting, according to the hacker, dated back to 23 May 2013 but it's unclear when they had their first sale. It announced use of [Darkcoin in March 2014](http://www.reddit.com/r/DarkNetMarkets/comments/1zz4h0/the_armory_new_currency_accepted_darkcoin/).
 Darknet Nation           2014-02-19 2014-03-01 FALSE hacked    FALSE    `26a2ueoc3xxrrgs4.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Joomla     TRUE   TRUE  0     TRUE   [Announced on Reddit](https://pay.reddit.com/r/onions/comments/1yev3e/introducing_darknet_nation/); [Q&A](http://www.deepdotweb.com/2014/02/21/darknet-nation-darknetmarket-social-network/). The site leaked its IP address. Down 3 April 2014; best guess, shut down sometime in March (the admin's last post on The Hub was [1 March 2014](http://thehub7dnl5nmcz5.onion/index.php?action=profile;area=showposts;u=1663).)
-Sanitarium Market        2014-02-20 2014-03-28 FALSE voluntary FALSE    `sanitarium-market.i2p`  FALSE    TRUE  TRUE    FALSE    FALSE    FALSE             Bitwasp                 0     FALSE  [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1yfvkl/sanitariummarket_i2p/); long address: `dhd5okd2imkskbhsrlbs5c4nx3cdtmwpplvcei6o3l2sc35kt4ma.b32.i2p`; Tor mirror: `nyu7nlbj33ym2va3.onion`. Unreachable by DeepDotWeb 28 March 2014, and [last subreddit activity](http://www.reddit.com/r/sanitariummarket/new/) was 19 March 2014. The operator claimed on [24 February 2014](http://www.reddit.com/r/sanitariummarket/comments/1yt3zm/multisig_transactions/) to have integrated multisig but I can't find any reports of use of it.
+Sanitarium Market        2014-02-20 2014-03-28 FALSE voluntary FALSE    `sanitarium-market.i2p`  FALSE    TRUE  TRUE    FALSE    FALSE    FALSE             Bitwasp                 0     FALSE  [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1yfvkl/sanitariummarket_i2p/); long address: `dhd5okd2imkskbhsrlbs5c4nx3cdtmwpplvcei6o3l2sc35kt4ma.b32.i2p`; Tor mirror: `nyu7nlbj33ym2va3.onion`. Unreachable by DeepDotWeb 28 March 2014, and [last subreddit activity](http://www.reddit.com/r/sanitariummarket/new/) was 19 March 2014. The operator claimed on [24 February 2014](http://www.reddit.com/r/sanitariummarket/comments/1yt3zm/multisig_transactions/) to have integrated multisig but I can't find any reports of use of it. No surviving info indicates whether weapons or carding were allowed.
 Hansa                    2014-03-09 2014-03-20 FALSE voluntary FALSE    `hansann7wim5ier2.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    TRUE   TRUE  0     TRUE    [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1zzwrd/hansa_new_tor_marketplace_platform_pgp_2factor/) & [de-anonymized](http://www.reddit.com/r/DarkNetMarkets/comments/207mk9/hansamarkets_ip_address/); closure date based on last transaction [by their IP](http://blockchain.info/ip-address/46.4.128.75). They planned to implement multisig but seem to have shut down before it went live. Bitwasp classification based on [two](http://www.reddit.com/r/DarkNetMarkets/comments/207mk9/hansamarkets_ip_address/cg18l3j) [comments](http://www.reddit.com/r/DarkNetMarkets/comments/201z39/trade_with_0_fee_on_hansa_till_the_end_of_the_week/cfz78jw) & [screenshot of login page](http://www.deepdotweb.com/2014/03/12/another-market-doxxed-hansamarket/).
-EXXTACY                  2014-03-23 2014-03-24 FALSE hacked    FALSE    `j3gwwsnswrg7dtf4.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp                 0     TRUE   [Announced & de-anonymized on Reddit](http://reddit.com/r/DarkNetMarkets/comments/215161/new_market_exxtacy/). No information about policies is available, although since it seems to've been run by Sanitarium, it likely had whatever they did.
+EXXTACY                  2014-03-23 2014-03-24 FALSE hacked    FALSE    `j3gwwsnswrg7dtf4.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Drupal                  0     TRUE   [Announced & de-anonymized on Reddit](http://reddit.com/r/DarkNetMarkets/comments/215161/new_market_exxtacy/). No information about policies is available, although since it seems to've been run by Sanitarium, it likely had whatever they did. Died before any rules announced or mirrors made.
 Mr Nice Guy              2014-03-29 2014-04-20 FALSE voluntary FALSE    `niceguymn4plorwb.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    FALSE  FALSE 0     TRUE    [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/21op6t/we_are_pleased_to_announce_our_new_market/); forum: `ngforumjj4dkis7w.onion`. [IP was leaking](http://www.reddit.com/r/DarkNetMarkets/comments/21op6t/we_are_pleased_to_announce_our_new_market/cgfc58w).
 TorBay                   2013-12-18 2014-04-20 FALSE voluntary FALSE    `tyedahhf56xli7xp.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             hyops      FALSE  TRUE  0     TRUE    Start date based on [Reddit announcement](http://www.reddit.com/r/DarkNetMarkets/comments/1t680v/presenting_new_market_torbay/); ceased responding in April 2014, after listings had fallen to near-zero.
-DarkBay                  2014-01-30 2014-05-01 FALSE voluntary FALSE    `darkbay4rwgvdkqn.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE                        FALSE  TRUE  0     TRUE    [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1wj4r1/ultravioletcity_market_no_site_wallets_free/); forums: `7y26aczl3wdyujkc.onion`; formerly, UltraVioletCity/`ultracityi2gdwhq.onion`. "There is very little restriction here, we only ask that you do not sell firearms (rifles, pistols, automatic weapons etc) or child pornography (photographs, videos etc)." [Merged with Andromeda?](http://www.reddit.com/r/DarkNetMarkets/comments/24fsrs/darkbay_closing_sent_everyone_to_andromeda/ch6yk61)
-Pigeon Market            2014-04-14 2014-05-07 FALSE voluntary FALSE    `pigeonkcmw5h44lq.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   TRUE  0     FALSE   Unknown what happened to funds.
+DarkBay                  2014-01-30 2014-05-01 FALSE voluntary FALSE    `darkbay4rwgvdkqn.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  TRUE  0     TRUE    [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1wj4r1/ultravioletcity_market_no_site_wallets_free/); forums: `7y26aczl3wdyujkc.onion`; formerly, UltraVioletCity/`ultracityi2gdwhq.onion`. "There is very little restriction here, we only ask that you do not sell firearms (rifles, pistols, automatic weapons etc) or child pornography (photographs, videos etc)." [Merged with Andromeda?](http://www.reddit.com/r/DarkNetMarkets/comments/24fsrs/darkbay_closing_sent_everyone_to_andromeda/ch6yk61)
+Pigeon Market            2014-04-14 2014-05-07 FALSE voluntary FALSE    `pigeonkcmw5h44lq.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   TRUE  0     FALSE   Unknown what happened to funds.
 Tortuga 2                2014-04-23 2014-06-17 FALSE voluntary FALSE    `l6hkncqo46wgzx7y.onion` TRUE     TRUE  FALSE   TRUE     FALSE    FALSE             Drupal     FALSE  FALSE 0     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/23sxwa/new_market_tortuga/); i2p: `wtat6dgz57j5xllu2j7htb7aydq5rgls6edg7e6lf2tumqn5ej3a.b32.i2p`/`tortuga-marketplace.i2p`; [multisig](http://www.reddit.com/r/DarkNetMarkets/comments/24wi18/still_new_market_tortuga_now_offers_multisig/); ; unknown what happened to funds.
-Deepzon                  2014-05-14 2014-07-13 FALSE voluntary FALSE    `deepzondhyl3yaro.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   TRUE  0     FALSE   Support's response: "Guns/Weapons are allowed, we thought that would be clear, as we are having the category 'Weapons' listed. CC-Dumps are also allowed."' ; unknown what happened to funds.
+Deepzon                  2014-05-14 2014-07-13 FALSE voluntary FALSE    `deepzondhyl3yaro.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   TRUE  0     FALSE   Support's response: "Guns/Weapons are allowed, we thought that would be clear, as we are having the category 'Weapons' listed. CC-Dumps are also allowed."' ; unknown what happened to funds.
 Silk Street              2014-04-08 2014-08-04 FALSE scam      FALSE    `silkr2xyqsu73qhh.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    FALSE  FALSE 0     FALSE   [Announced on The Hub](http://thehub7dnl5nmcz5.onion/index.php?topic=2678.0); no reports of withdrawals, so marked false. No explicit policies, but UI shows many empty categories but no empty categories for fraud or gun items, so I presume those were not permitted.
 Underground Market       2014-04-09 2014-08-26 FALSE voluntary FALSE    `unground6baopdio.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    TRUE   TRUE  0     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/22lyzs/new_marketplace_announce_underground_marketplace/); forums: `vxcwhb4lzqltfauq.onion`. Shut down citing ["not enough customers"](http://www.reddit.com/r/DarkNetMarkets/comments/2er837/underground_market_shuts_down/).
 Cannabis Road 2          2014-03-28 2014-08-25 FALSE hacked    FALSE    `cannabiskofvl7pa.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  FALSE 1     FALSE   Forum: `forumzxmoorof4ja.onion`; forum opened 26 February 2014, but site was not operational. The soft-launch/[raffle announced 28 March 2014](http://www.reddit.com/r/DarkNetMarkets/comments/21ko17/introducing_cannabis_road_marketplace_420_raffle/) seems a good start date. [Was hacked & lost >฿200](http://www.reddit.com/r/DarkNetMarkets/comments/2eisa0/cannabis_road_shuts_downclaims_to_have_been_robbed/) from escrow (while multisig was available, very few buyers used it). <!-- Doxed? http://www.reddit.com/message/messages/286p7u operator seems to laugh it off and fairly tenuous -->
 Pandora                  2013-10-21 2014-08-19 FALSE scam      FALSE    `pandorajodqp5zrr.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  TRUE  2     FALSE   See ["Forbidden Items on PANDORA"](http://bl3j73taluhwidx5.onion/index.php?topic=9.msg19#msg19). Pandora has had 2 hacks: the first was a [rogue moderator](http://www.deepdotweb.com/2014/01/27/pandora-market-warning-vendor-accounts-hacked-possible-site-hack/) using an admin account, and the second was a [loss of half the centralized escrow](http://www.deepdotweb.com/2014/03/20/pandora-hacked-losing-50-btc/) (repaid by levying extraordinary transaction fees). The operator eventually locked out all seller accounts around 19/20 August 2014 (definitely by 1 September) and disabled withdrawals & the site forums, but continued accepting deposits from buyers; he may also have captured login credentials and robbed accounts on other marketplaces according to several sellers. Targeted in Operation Onymous but had already turned scammer.
-Pirate Market            2013-11-29 2014-08-15 FALSE scam      FALSE    `yjhzeedl5osagmmr.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   TRUE  0     FALSE   Start date based on Reddit. Originally RoadSilk; [multisig](http://darkwebnews.com/news/interview-tone24-moderator-pirate-market/). Site reportedly [began blocking withdrawals](http://thehub7dnl5nmcz5.onion/index.php?topic=4768) ~15 August 2014 while still accepting deposits, with the Pirate Market forum being shut down several days later.
+Pirate Market            2013-11-29 2014-08-15 FALSE scam      FALSE    `yjhzeedl5osagmmr.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   TRUE  0     FALSE   Start date based on Reddit. Originally RoadSilk; [multisig](http://darkwebnews.com/news/interview-tone24-moderator-pirate-market/). Site reportedly [began blocking withdrawals](http://thehub7dnl5nmcz5.onion/index.php?topic=4768) ~15 August 2014 while still accepting deposits, with the Pirate Market forum being shut down several days later.
 Freedom Market           2014-09-16 2014-09-25 FALSE voluntary FALSE    `freedom3qg7hmtxn.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    FALSE  FALSE 0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2gipvp/freedom_freedom_market_new/); went down without notice sometime before 25 September 2014. Site rules: "If the item doesn't hurt others, you can sell it."; the categories included "Forgeries" but nothing else, so carding probably counted as 'hurting others'.
 1776                     2014-04-19 2014-10-02 FALSE voluntary FALSE    `n6tzonxy7sod7eqt.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             ASP.NET    FALSE  FALSE 0     FALSE   [Announced by DeepDotWeb](http://www.deepdotweb.com/2014/04/19/1776-market-automated-multi-signature-escrow/) & [on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/23gb2s/1776_market_automated_multisignature_escrow/). Not Bitwasp, given [the traceback on error pages](http://thehub7dnl5nmcz5.onion/index.php?topic=2889.msg22662#msg22662). No policy documentation. Disappeared starting 03 October 2014. <!-- Defaced 5 June 2014 http://www.reddit.com/r/DarkNetMarkets/comments/27cd7p/1776_marketplace_is_now_called_obamahomosexual/ ??? may've been deliberate -->
-Silk Road 2              2013-11-06 2014-11-05 FALSE raided    TRUE     `silkroad6ownowfk.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE              custom     FALSE  FALSE 2     TRUE     Forum moderator Cirrus advises considering SR2 compromised (22 December 2013, ironic inasmuch as Cirrus was the LE undercover agent who undid SR2 and helped with SR1); new operators Defcon/Hux/etc deny it. Defcon announced the cold wallet had been lost to DPR2, but then that it had been restored. SR2 experienced repeated account balance problems, failed to ever implement autofinalize or dispute resolution (forcing accumulation of orders' balances), and [announced 13 February 2014](http://silkroad5v7dywlc.onion/index.php?topic=25091.0;all) that all deposits & escrow had been stolen, followed by another hack in September 2014. Use of SR was not advised. Was raided by Operation Onymous & Defcon arrested.
+Silk Road 2              2013-11-06 2014-11-05 FALSE raided    TRUE     `silkroad6ownowfk.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  FALSE 2     TRUE     Forum moderator Cirrus advises considering SR2 compromised (22 December 2013, ironic inasmuch as Cirrus was the LE undercover agent who undid SR2 and helped with SR1); new operators Defcon/Hux/etc deny it. Defcon announced the cold wallet had been lost to DPR2, but then that it had been restored. SR2 experienced repeated account balance problems, failed to ever implement autofinalize or dispute resolution (forcing accumulation of orders' balances), and [announced 13 February 2014](http://silkroad5v7dywlc.onion/index.php?topic=25091.0;all) that all deposits & escrow had been stolen, followed by another hack in September 2014. Use of SR was not advised. Was raided by Operation Onymous & Defcon arrested.
 Hydra                    2014-03-27 2014-11-05 FALSE raided    TRUE     `hydrampvvnunildl.onion` TRUE     FALSE FALSE   TRUE     FALSE    FALSE             Bitwasp    TRUE   TRUE  0     FALSE   [Announced on The Hub](http://thehub7dnl5nmcz5.onion/index.php?topic=2421.0); forum: `hydrafmchvpq5yc6.onion`. [Operator arrested](http://www.deepdotweb.com/2014/11/11/watch-alleged-hydra-market-admin-getting-busted-in-budapest/) in Hungary as part of Operation Onymous.
-Cloud-Nine               2014-02-11 2014-11-05 FALSE raided    FALSE    `xvqrvtnn4pbcnxwt.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  TRUE  0     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1xkx7b/ann_cloudnine_marketplace_on_tor/); [on banned items](http://www.reddit.com/r/DarkNetMarkets/comments/1xkx7b/ann_cloudnine_marketplace_on_tor/ch2zcwc). Raided in Operation Onymous.
-Blue Sky                 2013-12-03 2014-11-05 FALSE raided    FALSE    `blueskyplzv4fsti.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        FALSE  FALSE 0     FALSE   Or is the opening [12 December 2013](http://www.reddit.com/r/DarkNetMarkets/comments/1ss07e/bought_from_a_vendor_on_bluesky_appears_to_be_the/)? Raided in Operation Onymous.
+Cloud-Nine               2014-02-11 2014-11-05 FALSE raided    FALSE    `xvqrvtnn4pbcnxwt.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Cloud-9    FALSE  TRUE  0     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1xkx7b/ann_cloudnine_marketplace_on_tor/); [on banned items](http://www.reddit.com/r/DarkNetMarkets/comments/1xkx7b/ann_cloudnine_marketplace_on_tor/ch2zcwc). Raided in Operation Onymous.
+Blue Sky                 2013-12-03 2014-11-05 FALSE raided    FALSE    `blueskyplzv4fsti.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  FALSE 0     FALSE   Or is the opening [12 December 2013](http://www.reddit.com/r/DarkNetMarkets/comments/1ss07e/bought_from_a_vendor_on_bluesky_appears_to_be_the/)? Raided in Operation Onymous.
 TorBazaar                2014-01-26 2014-11-05 FALSE raided    FALSE    `bazaarlv2a7i3uyn.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    TRUE   TRUE  0     FALSE   [Announced on The Hub](http://thehub7dnl5nmcz5.onion/index.php?topic=237.0); original centralized escrow site: `3p42y56a76g6okuv.onion`; forums: `22iwhc2luicynjqy.onion`
 Topix 2                  2014-03-25 2014-11-05 FALSE voluntary FALSE    `topixslhezyytrvm.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  FALSE 0     FALSE   Started January 2014; opened to public [28 September 2014](https://www.reddit.com/r/DarkNetMarkets/comments/2hphyx/topix_2_has_opened_doors_to_all_users_possibly/), previously was invite-only; start date based on first sale listed in recent-feedback page; apparently drug-only based on the listings. Shut down without notice after [Operation Onymous](!Wikipedia).
-Alpaca Marketplace       2014-04-20 2014-11-05 FALSE scam      FALSE    `alpaca727o3c75xx.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   FALSE 1     FALSE   [Announced on The Hub](http://thehub7dnl5nmcz5.onion/index.php?topic=1428.0;all); policies based on [Secret Laboratory writeup](http://secretlaboratory.org/?p=10064 "*NEW* Alpaca Marketplace: Another new Dark Net Market ... but at least it has multi-signature escrow.") Hacked [mid-May 2014](http://www.reddit.com/r/DarkNetMarkets/comments/25v64h/alpaca_we_are_reopened/). [Alpaca allows](http://alpaca727o3c75xx.onion/pages/ethics/) weapons (but not poisons/WMDs/hitmen) and appears to ban carding: "We do not allow items that are advertised as stolen." Shut down after Operation Onymous ([seizure notice](http://www.leaksource.files.wordpress.com/2014/11/operation-onymous-dark-markets-seizure-forfeiture-complaint.pdf)) without returning any funds.
+Alpaca Marketplace       2014-04-20 2014-11-05 FALSE scam      FALSE    `alpaca727o3c75xx.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   FALSE 1     FALSE   [Announced on The Hub](http://thehub7dnl5nmcz5.onion/index.php?topic=1428.0;all); policies based on [Secret Laboratory writeup](http://secretlaboratory.org/?p=10064 "*NEW* Alpaca Marketplace: Another new Dark Net Market ... but at least it has multi-signature escrow.") Hacked [mid-May 2014](http://www.reddit.com/r/DarkNetMarkets/comments/25v64h/alpaca_we_are_reopened/). [Alpaca allows](http://alpaca727o3c75xx.onion/pages/ethics/) weapons (but not poisons/WMDs/hitmen) and appears to ban carding: "We do not allow items that are advertised as stolen." Shut down after Operation Onymous ([seizure notice](http://www.leaksource.files.wordpress.com/2014/11/operation-onymous-dark-markets-seizure-forfeiture-complaint.pdf)) without returning any funds.
 Cannabis Road 3          2014-10-06 2014-11-05 FALSE scam      FALSE    `cannabis37oj24rd.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Alpaca     FALSE  FALSE 0     FALSE   Forum: `forumz2gljo2vhzb.onion`. After CR2 was hacked, developer "Crypto" disappeared; the remaining staff set up a new marketplace hosted by Alpaca Marketplace. Went down with Alpaca after Operation Onymous
-Andromeda                2014-04-05 2014-11-18 FALSE scam      FALSE    `andromedam363aux.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   TRUE  0     FALSE   Formerly Silk Road 3/`silkroad3wqdnifp.onion`; site has no connection to SR1 or SR2. Forums: `dvzuhtlteonn6mwd.onion`. Andromeda attempted to mask its exit scam as an Operation Onymous but it wasn't announced as seized and the [broken withdrawals & failed mimicry](https://www.reddit.com/r/DarkNetMarkets/comments/2modbl/andromeda_seized_today/) show it's bogus.
+Andromeda                2014-04-05 2014-11-18 FALSE scam      FALSE    `andromedam363aux.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   TRUE  0     FALSE   Formerly Silk Road 3/`silkroad3wqdnifp.onion`; site has no connection to SR1 or SR2. Forums: `dvzuhtlteonn6mwd.onion`. Andromeda attempted to mask its exit scam as an Operation Onymous but it wasn't announced as seized and the [broken withdrawals & failed mimicry](https://www.reddit.com/r/DarkNetMarkets/comments/2modbl/andromeda_seized_today/) show it's bogus.
 The Marketplace          2013-11-28 2014-11-09 FALSE voluntary FALSE    `themarketplace.i2p`     TRUE     TRUE  TRUE    FALSE    FALSE    FALSE             custom     FALSE  TRUE  0     FALSE   Start date from personal communication; Tor Proxy: `43y5mwjvhxd6zf7v.onion`. The ToS ban CP, guns, and Bitcoin/dollar sales. [Site went down 9 November](https://www.reddit.com/r/themarketplace/comments/2lsbws/both_i2p_and_tor_gateways_are_down/), without any further notice. (The use of multisig means buyers & sellers can still complete the final transactions.)
 Onionshop                2014-05-18 2014-09-17 FALSE hacked    FALSE    `onionshopkue7sxr.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   TRUE  1     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/25qr5q/grand_opening_onionshop_marketplace_sunday_2000/); hacked 17 September 2014 ([announcement](http://thehub7dnl5nmcz5.onion/index.php?topic=5252.msg41679#msg41679), [hacker](https://www.reddit.com/r/DarkNetMarkets/comments/2gyefs/onionshop_hacked_all_bitcoins_stolen_and_im_still/)) <!-- "What is forbidden to be sold on Onionshop? Assassinations or any other services which constitute doing harm to another - Weapons of mass destruction: chemical, biological, explosives, etc. - Poisons - Child Pornography - Live action snuff/hurt/murder audio/video/images" -->
 TOM                      2014-05-10 2014-12-18 FALSE scam      FALSE    `tom3j5jkjl7327oc.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    FALSE  FALSE 0     FALSE   Forums: `tomf2fo56wthggwk.onion`. TOM disappeared without any announcements; [Reddit](https://www.reddit.com/r/TomMarketplace/comments/2pyibn/what_happened_to_toms/) comments report deposits were not returned, so I mark TOM a scam.
 Area51                   2014-06-20 2015-01-24 FALSE scam      FALSE    `fiftyonecrklhzhe.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE   [Spammed on The Hub](http://thehub7dnl5nmcz5.onion/index.php?topic=4034.msg32690#msg32690); implementation is PHP on Debian, admin states "area51 is complete selfcoded and we have nothing to do with bitwasp". Centralized escrow & no reports of deposits being returned.
-Dream Market             2013-11-15            TRUE            FALSE    `ltxocqh4nvwkofil.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        FALSE  TRUE  0     FALSE   Site claims to've opened 15 November 2013; first mention of it I found was on 7 January 2014.
+Dream Market             2013-11-15            TRUE            FALSE    `ltxocqh4nvwkofil.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  TRUE  0     FALSE   Site claims to've opened 15 November 2013; first mention of it I found was on 7 January 2014.
 Agora                    2013-12-03            TRUE            FALSE    `agorahooawayyfoe.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE   Forums: `lacbzxobeprssrfx.onion`
 Outlaw Market            2013-12-29            TRUE            FALSE    `drugs26ucskmvcef.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   FALSE 2     FALSE   Open date based on the date of the ["Welcome" post on the OM forum](http://hmxutiksabsj4ozi.onion/index.php?topic=2.msg0); apparently formerly "Drugs'n'Bets". Site was hacked & user PMs released in 2013; site [shut down 31 July 2014](http://www.deepdotweb.com/2014/08/01/outlaw-market-down-possibily-compromised/) after an attack blame on former admins when "A SESSION-hack was performed and a couple of datasets manipulated but not much damage created". They claim in [an interview](http://www.deepdotweb.com/2014/01/23/interview-with-outlaw-market-admin/) it's custom software; this is confirmed by a [leak of PHP source which does not call any frameworks/CRMs](/docs/sr/2015-01-15-outlawmarket-index.php). Policies based on no apparent hits among mirrors.
 evolution                2014-01-14            TRUE            FALSE    `k5zq47j6wd3wdvjq.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Laravel    TRUE   TRUE  0     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1vmufh/latest_news_from_tcf/) 20 Jan, but forums [claim first sale on 14 January](http://i25c62nvu4cgeqyz.onion/viewtopic.php?pid=121#p121); forums: `i25c62nvu4cgeqyz.onion`; new url: `nifgk5szbodg7qbo.onion`; [multisig](http://www.reddit.com/r/DarkNetMarkets/comments/24vio2/market_announcement_multisignature_escrow_has/). [PHP framework](https://www.reddit.com/r/DarkNetMarkets/comments/2ox10x/humorevo_exposed/)
-BlackBank Market         2014-02-05            TRUE            FALSE    `wztyb7vlfcw6l4xd.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE                        TRUE   TRUE  0     FALSE   Active before its [Reddit announcement](http://www.reddit.com/r/BlackBank/comments/1x2pjp/blackbank_market_a_new_emerging_featurerich_and/) but no apparent sales. Forums: `kth2mwuwlkezwziy.onion`. Forbidden items are listed on the [wiki](http://kth2mwuwlkezwziy.onion/wiki/index.php/Forbidden_Goods)
-Middle Earth Marketplace 2014-06-22            TRUE            FALSE    `mango7u3rivtwxy7.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE                        FALSE  TRUE  0     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/28srwh/middle_earth_marketplace_new/)
+BlackBank Market         2014-02-05            TRUE            FALSE    `wztyb7vlfcw6l4xd.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   TRUE  0     FALSE   Active before its [Reddit announcement](http://www.reddit.com/r/BlackBank/comments/1x2pjp/blackbank_market_a_new_emerging_featurerich_and/) but no apparent sales. Forums: `kth2mwuwlkezwziy.onion`. Forbidden items are listed on the [wiki](http://kth2mwuwlkezwziy.onion/wiki/index.php/Forbidden_Goods)
+Middle Earth Marketplace 2014-06-22            TRUE            FALSE    `mango7u3rivtwxy7.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  TRUE  0     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/28srwh/middle_earth_marketplace_new/)
 Diabolus                 2014-10-13            TRUE            FALSE    `qxvfcavhse45ckpw.onion` FALSE    FALSE TRUE    FALSE    FALSE    TRUE              custom     FALSE  FALSE 0     FALSE   Cannabis-only
-Nucleus Marketplace      2014-10-24            TRUE            FALSE    `nucleuspf3izq7o6.onion` FALSE    FALSE TRUE    TRUE     FALSE    TRUE                         TRUE   TRUE  0     FALSE   <!-- Multisig planned but not available -->
+Nucleus Marketplace      2014-10-24            TRUE            FALSE    `nucleuspf3izq7o6.onion` FALSE    FALSE TRUE    TRUE     FALSE    TRUE              unknown    TRUE   TRUE  0     FALSE   <!-- Multisig planned but not available -->
 Panacea                  2014-10-27            TRUE            FALSE    `panaceaz4give75l.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Cloud-9    FALSE  FALSE 0     TRUE    [Reddit ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2kevg6/panacea_flower_sanctuary_the_light_at_the_end_of/); forums: `flower777wpnxpkj.onion`; cannabis-only; admin "PyroWolf" was reportedly doxed by the cannabis seller EastCoastCollective ([likely](https://www.reddit.com/r/DarkNetMarkets/comments/2khn4h/ecc_eastcoastcollective_runs_cannabis_road_both/) the operator of CR2/CR3, and possibly CR1 as well), who he was a former customer of.
 Abraxas                  2014-12-13            TRUE            FALSE    `abraxasdegupusel.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             Laravel    FALSE  TRUE  0     FALSE   forums: `abraxasgacelesox.onion`
 AlphaBay                 2014-12-22            TRUE            FALSE    `pwoah7foa6au2pul.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2q2foj/new_darknet_market_alphabay_market/)
@@ -221,15 +221,21 @@ TODO: <!-- ping Vespco about results -->
 
 ~~~{.R}
 library(XML)
-black <- readHTMLTable("http://www.gwern.net/Black-market%20survival#data",
+black <- readHTMLTable("/tmp/burl16379Sxn.html",
     colClasses = c("character", as.Date, as.Date, "logical", "factor", "logical", "character",
     "logical", "logical", "logical", "logical", "logical", "logical",
     "factor", "logical", "logical", "integer", "logical", "character"))[[1]]
-black[black$Codebase=="",]$Codebase <- NA
+black[black$Codebase=="",]$Codebase <- "unknown"
 black$Start <- as.Date(black$Start); black$End <- as.Date(black$End)
 black[is.na(black$End),]$End <- Sys.Date() # assuming the table is up to date
 black$Age <- black$End - black$Start
 black$Age <- as.integer(black$End - black$Start)
+
+# for some markets, these values are impossible to find: they were never decided on, or the market is gone
+# there's only a few, so I'm not sure the complexity of multiple-imputation is worthwhile (MICE objects work with almost no libraries...)
+# so for the 2 relevant columns so far, I do a simple impute of the median/mode value
+black[is.na(black$Fraud),]$Fraud <- median(black$Fraud, na.rm=T)
+black[is.na(black$Guns),]$Guns   <- median(black$Fraud, na.rm=T)
 
 # for competing-risks modeling
 levels(black$Closure) <- c("alive", "hacked", "raided", "scam", "voluntary") # sets "" to "alive"
@@ -238,176 +244,12 @@ library(survival)
 # plot(survfit(Surv(Age, Alive, type="right") ~ 1, data=black), xlab="Days active", ylab="Fraction of markets still active")
 
 
-cmodel <- coxph(Surv(Age, Alive) ~ Multisig + I2P + Bitcoin+Litecoin+Dogecoin+Darkcoin + Codebase + Guns + Fraud + Hacks + Doxed + RoI + σ, data = black); cmodel
+cmodel <- coxph(Surv(Age, Alive) ~ Multisig + I2P + Bitcoin+Litecoin+Dogecoin+Darkcoin + Codebase + Guns + Fraud + Hacks + Doxed, data = black); cmodel
 
 black$End <- black$Start <- black$URL <- black$Notes <- black$Market <- NULL
 
-library(mice)
-blackimp <- mice(black, m=100, printFlag=FALSE)
-fit <- with(blackimp, coxph(Surv(Age, Alive) ~ Multisig + I2P + Bitcoin+Litecoin+Dogecoin+Darkcoin + Codebase + Guns + Fraud + Hacks + Doxed + RoI + σ, data = black))
-print(pool(fit))
 
-fit <- with(blackimp, step(glm(Alive ~ Multisig + I2P + Bitcoin+Litecoin+Dogecoin+Darkcoin + Guns + Fraud + Hacks + Doxed + RoI + σ, family=binomial), trace=0))
-formulas <- lapply(fit$an, formula)
-terms <- lapply(formulas, terms)
-vars <- unlist(lapply(terms, labels))
-(table(vars) / length(fit$analyses)) > 0.5
-vars
-   Doxed    Fraud     Guns    Hacks Multisig      RoI        σ
-    TRUE     TRUE    FALSE     TRUE     TRUE     TRUE     TRUE
-
-R> sfit <- with(blackimp, glm(Alive ~ Multisig + Fraud + Hacks + Doxed + RoI + σ, family=binomial)); summary(pool(sfit))
-                est        se         t    df Pr(>|t|)     lo 95     hi 95 nmis     fmi    lambda
-(Intercept)  -3.148    1.6996 -1.852497 44.69  0.07057    -6.572    0.2753   NA 0.05102 9.479e-03
-MultisigTRUE 18.597 2188.4131  0.008498 45.12  0.99326 -4388.782 4425.9760   NA 0.04157 9.753e-10
-Fraud        -1.230    1.0490 -1.172123 39.28  0.24821    -3.351    0.8918    6 0.16552 1.241e-01
-Hacks        -1.810    0.9734 -1.859646 44.41  0.06957    -3.772    0.1511    0 0.05715 1.562e-02
-DoxedTRUE    -1.831    1.2577 -1.455498 44.87  0.15249    -4.364    0.7027   NA 0.04711 5.561e-03
-RoI          -4.413    3.9271 -1.123841 44.93  0.26705   -12.323    3.4965    0 0.04581 4.257e-03
-σ            54.286   22.9068  2.369880 44.08  0.02224     8.123  100.4497    0 0.06432 2.281e-02
-
-Time-varying confounds: Multisig, RoI, and σ.
-
-
-coxph.mids(Surv(Age, Alive) ~ Multisig + I2P + Bitcoin+Litecoin+Dogecoin+Darkcoin + Codebase + Guns + Fraud + Hacks + Doxed + RoI + σ, blackimp)
-
-R> fit <- coxph.mids(Surv(Age, Alive) ~ Multisig + I2P + Bitcoin+Litecoin+Dogecoin+Darkcoin + Guns + Fraud + Hacks + Doxed + RoI + σ, blackimp)
-There were 50 or more warnings (use warnings() to see the first 50)
-R> summary.impute(pool.impute(fit))
-Call: coxph.mids(formula = Surv(Age, Alive) ~ Multisig + I2P + Bitcoin+Litecoin+Dogecoin+Darkcoin +
-    Guns + Fraud + Hacks + Doxed + RoI + σ, data = blackimp)
-
-Coefficients:
-             Estimate Std. Error t value Pr(>|t|)
-MultisigTRUE    1.056      0.617    1.71    0.115
-I2PTRUE        -0.501      1.016   -0.49    0.632
-Coin2         -14.539   9514.767    0.00    0.999
-Coin3         -13.956   9514.767    0.00    0.999
-Coin4           1.079      0.880    1.23    0.246
-Guns            0.661      0.644    1.03    0.329
-Fraud          -1.045      0.702   -1.49    0.168
-Hacks          -1.856      0.885   -2.10    0.060
-DoxedTRUE      -0.213      0.858   -0.25    0.808
-RoI            -1.753      2.393   -0.73    0.479
-σ              75.649     24.656    3.07    0.011
-
-Fraction of information about the coefficients
-                                      missing due to nonresponse:
-MultisigTRUE      I2PTRUE        Coin2        Coin3        Coin4         Guns        Fraud
-   6.387e-03    1.728e-02    1.678e-09    9.425e-10    5.840e-03    9.398e-02    1.036e-01
-       Hacks    DoxedTRUE          RoI            σ
-   1.683e-02    9.764e-03    1.415e-02    5.607e-02
-
-????? being hacked increases lifespan ????
-
-# written by Adaikalavan Ramasamy (https://stat.ethz.ch/pipermail/r-help/2007-May/132123.html)
-# modified by Robert Long (http://r.789695.n4.nabble.com/Plotting-survival-curves-after-multiple-imputation-td4658552.html)
-
-coxph.mids <- function (formula, data, ...) {
-
-     call <- match.call()
-     if (!is.mids(data)) stop("The data must have class mids")
-
-     analyses <- as.list(1:data$m)
-
-     for (i in 1:data$m) {
-       data.i        <- complete(data, i)
-       analyses[[i]] <- coxph(formula, data = data.i, ...)
-     }
-
-     object <- list(call = call, call1 = data$call,
-                    nmis = data$nmis, analyses = analyses)
-
-     return(object)
-}
-
-pool.impute <- function (object, method = "smallsample") {
-
-     if ((m <- length(object$analyses)) < 2)
-       stop("At least two imputations are needed for pooling.\n")
-
-     analyses <- object$analyses
-
-     k     <- length(coef(analyses[[1]]))
-     names <- names(coef(analyses[[1]]))
-     qhat  <- matrix(NA, nrow = m, ncol = k, dimnames = list(1:m,names))
-     u     <- array(NA, dim = c(m, k, k),
-                    dimnames = list(1:m, names, names))
-
-     for (i in 1:m) {
-       fit       <- analyses[[i]]
-       qhat[i, ] <- coef(fit)
-       u[i, , ]  <- vcov(fit)
-     }
-
-     qbar <- apply(qhat, 2, mean)
-     ubar <- apply(u, c(2, 3), mean)
-     e <- qhat - matrix(qbar, nrow = m, ncol = k, byrow = TRUE)
-     b <- (t(e) %*% e)/(m - 1)
-     t <- ubar + (1 + 1/m) * b
-     r <- (1 + 1/m) * diag(b/ubar)
-     f <- (1 + 1/m) * diag(b/t)
-     df <- (m - 1) * (1 + 1/r)^2
-
-     if (method == "smallsample") {
-
-       if( any( class(fit) == "coxph" ) ){
-
-         ### this loop is the hack for survival analysis ###
-
-         status   <- fit$y[ , 2]
-         n.events <- sum(status == max(status))
-         p        <- length( coefficients( fit )  )
-         dfc      <- n.events - p
-
-       } else {
-
-         dfc <- fit$df.residual
-       }
-
-       df <- dfc/((1 - (f/(m + 1)))/(1 - f) + dfc/df)
-     }
-
-     names(r) <- names(df) <- names(f) <- names
-     fit <- list(call = call, call1 = object$call, call2 = object$call1,
-                 nmis = object$nmis, m = m, qhat = qhat, u = u,
-                 qbar = qbar, ubar = ubar, b = b, t = t, r = r, df = df,
-                 f = f)
-
-     return(fit)
-}
-
-summary.impute <- function(object){
-
-      if (!is.null(object$call1)){
-        cat("Call: ")
-        dput(object$call1)
-      }
-
-      est  <- object$qbar
-      se   <- sqrt(diag(object$t))
-      tval <- est/se
-      df   <- object$df
-      pval <- 2 * pt(abs(tval), df, lower.tail = FALSE)
-
-      coefmat <- cbind(est, se, tval, pval)
-      colnames(coefmat) <- c("Estimate", "Std. Error",
-                                           "t value", "Pr(>|t|)")
-
-      cat("\nCoefficients:\n")
-      printCoefmat( coefmat, P.values=T, has.Pvalue=T, signif.legend=T )
-
-      cat("\nFraction of information about the coefficients
-                                      missing due to nonresponse:","\n")
-      print(object$f)
-
-      ans <- list( coefficients=coefmat, df=df,
-                   call=object$call1, fracinfo.miss=object$f )
-      invisible( ans )
-  }
 ~~~
-
-Multi-state models? http://cran.r-project.org/web/packages/msm/vignettes/msm-manual.pdf
 
 Example competing-risks model using startup data:
 
@@ -494,22 +336,52 @@ for (i in 1:4){
     lines(ctm[2:length(ctm)],clo[2:length(ctm)] , col=i, lty=2, lwd=0.7)
 }
 
-with(black, crr(Age, Closure, cencode="alive",
-                cov1= black[,c("Multisig", "Hacks", "Doxed", "Fraud", "Guns", "I2P", "Bitcoin", "Litecoin", "Dogecoin", "Darkcoin")],
-                failcode="scam"))
-# 6 cases omitted due to missing values
-# convergence:  FALSE
+for (FAIL in c("raided", "hacked", "scam", "voluntary")) {
+    cat(FAIL,":\n")
+    print(with(black, crr(Age, Closure, cencode="alive", maxiter=100,
+                    cov1= black[,c("Multisig", "Hacks", "Doxed", "Fraud", "Guns", "I2P", "Bitcoin", "Litecoin", "Dogecoin", "Darkcoin")],
+                    failcode=FAIL)))
+}
+# raided :
 # coefficients:
 # Multisig    Hacks    Doxed    Fraud     Guns      I2P  Bitcoin Litecoin Dogecoin Darkcoin
-#  -0.3471   0.2393  -0.8714   0.1323  -0.8730  -0.2611  -9.3560  -8.7320  -7.5850  -6.9930
+#   1.2210   0.1791   1.1500  -0.2348  -0.2858 -17.4100 -15.3500 -11.4600 -28.0700 -28.1300
 # standard errors:
-#  [1] 0.8601 0.2357 0.7136 0.5542 0.5866 1.3910 1.0590 1.3020 1.4360 0.9715
+#  [1] 0.9010 0.4409 0.8766 0.8393 1.0970 1.3770 2.0350 1.4360 2.9210 2.2710
 # two-sided p-values:
 # Multisig    Hacks    Doxed    Fraud     Guns      I2P  Bitcoin Litecoin Dogecoin Darkcoin
-#  6.9e-01  3.1e-01  2.2e-01  8.1e-01  1.4e-01  8.5e-01  0.0e+00  2.0e-11  1.3e-07  6.1e-13
-
-# TODO: hard to do regressions due to NAs
+#  1.8e-01  6.8e-01  1.9e-01  7.8e-01  7.9e-01  0.0e+00  4.5e-14  1.3e-15  0.0e+00  0.0e+00
+# hacked :
+# coefficients:
+# Multisig    Hacks    Doxed    Fraud     Guns      I2P  Bitcoin Litecoin Dogecoin Darkcoin
+#  -0.1963   0.6194   1.1790   0.7346   1.0110 -11.3200   2.6120 -10.0100  -8.3450  -9.8400
+# standard errors:
+#  [1] 1.0510 0.3447 0.7713 0.8244 0.8251 0.8970 1.4230 1.2640 2.2470 1.2310
+# two-sided p-values:
+# Multisig    Hacks    Doxed    Fraud     Guns      I2P  Bitcoin Litecoin Dogecoin Darkcoin
+#  8.5e-01  7.2e-02  1.3e-01  3.7e-01  2.2e-01  0.0e+00  6.6e-02  2.4e-15  2.0e-04  1.3e-15
+# scam :
+# coefficients:
+#  Multisig     Hacks     Doxed     Fraud      Guns       I2P   Bitcoin  Litecoin  Dogecoin  Darkcoin
+#  -0.27900   0.11940  -0.81200  -0.09959  -0.94200  -0.59880 -13.51000 -12.78000 -11.59000 -11.04000
+# standard errors:
+#  [1] 0.8045 0.2454 0.7089 0.5448 0.5703 1.1540 1.0570 1.3520 1.4330 0.9607
+# two-sided p-values:
+# Multisig    Hacks    Doxed    Fraud     Guns      I2P  Bitcoin Litecoin Dogecoin Darkcoin
+#  7.3e-01  6.3e-01  2.5e-01  8.5e-01  9.9e-02  6.0e-01  0.0e+00  0.0e+00  6.7e-16  0.0e+00
+# voluntary :
+# coefficients:
+#  Multisig     Hacks     Doxed     Fraud      Guns       I2P   Bitcoin  Litecoin  Dogecoin  Darkcoin
+#  -0.97980 -14.79000   0.09984  -0.50390   0.32180   1.81100   3.04700   1.54000 -10.82000 -15.15000
+# standard errors:
+#  [1] 0.5498 0.4581 0.7900 0.5306 0.4547 0.4054 1.5350 0.4923 2.0170 0.8785
+# two-sided p-values:
+# Multisig    Hacks    Doxed    Fraud     Guns      I2P  Bitcoin Litecoin Dogecoin Darkcoin
+#  7.5e-02  0.0e+00  9.0e-01  3.4e-01  4.8e-01  7.9e-06  4.7e-02  1.8e-03  8.1e-08  0.0e+00
 ~~~
+
+Time-varying confounds: Multisig, RoI, σ, hacked, doxed, sales...
+Solve with multi-state models? http://cran.r-project.org/web/packages/msm/vignettes/msm-manual.pdf / http://web.inter.nl.net/users/rgeskus/CompRisk.pdf
 
 # Predictions
 

@@ -16,11 +16,13 @@ Related:
 - http://metamarkets.com/2011/hacking-hacker-news-headlines/
 - http://danluu.com/randomize-hn/
 - http://www.bayesianwitch.com/blog/2013/why_hn_shouldnt_use_randomized_algorithms.html
+- http://camdp.com/blogs/multi-armed-bandits
 - http://gkosev.blogspot.com/2012/08/fixing-hacker-news-mathematical-approach.html
 - http://blog.rjmetrics.com/2012/10/17/surprising-hacker-news-data-analysis/
 - http://blog.rjmetrics.com/2012/10/24/how-to-get-on-the-front-page-of-hacker-news/
 
 Page view counts:
+
 - 11.8k https://web.archive.org/web/20130719064119/http://aberrant.me/front-page-of-hacker-news/
 - 15k http://www.mikedellanoce.com/2012/09/my-first-hacker-news-effect-experience.html
 - 30k, 12k http://shkspr.mobi/blog/2012/11/whats-the-front-page-of-hackernews-worth/
@@ -34,6 +36,7 @@ Page view counts:
 - https://baremetrics.io/blog/hacker-news-1500-recurring-revenue
 - 100 views, +4 https://en.avion.io/blog/?_escaped_fragment_=/post/the-story-of-our-hackernews-submission#!/post/the-story-of-our-hackernews-submission
 - 5k pageviews, 3.6k, +42 uniques http://blog.remoteworknewsletter.com/2014/10/15/how-to-valdiate-an-idea-on-hacker-news/
+- 41.3k http://ptotrading.blogspot.com/2014/11/a-message-to-all-non-daytraders-and.html
 
 # Submissions
 
@@ -1254,3 +1257,5 @@ http://www.reddit.com/r/programming/comments/24w393/getting_proper_tail_calls_ou
 http://www.reddit.com/r/programming/comments/24w2wa/increasing_engineering_throughput/
 
 No logistic regression; I'm not sure what the equivalent of 'front page' is for Reddit.
+
+http://www.randalolson.com/2015/01/11/over-half-of-all-reddit-posts-go-completely-ignored/

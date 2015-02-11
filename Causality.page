@@ -33,6 +33,12 @@ This point can be made by listing examples of correlations where we intuitively 
 <!-- TODO: Mexican lemon imports & highway fatalities, R^2^=0.97 http://pubs.acs.org/doi/abs/10.1021/ci700332k "The Trouble with QSAR (or How I Learned To Stop Worrying and Embrace Fallacy)" Johnson 2008 -->
 <!-- Howard, G. S., & Maxwell, S. E. (1980). "The correlation between grades and student satisfaction: A case of mistaken causation?" Journal of Educational Psychology, 72, 810-820. -->
 <!-- IQ and dentistry -->
+<!-- "There was a man who sat each day looking out through a narrow vertical opening where a single board had been removed from a tall wooden fence.
+Each day a wild ass of the desert passed outside the fence & across the narrow opening &mdash; first the nose, then the head, the forelegs, the long brown back, the hindlegs, & lastly the tail.
+One day, the man leaped to his feet with the light of discovery in his eyes & he shouted for all who could hear him:
+'It is obvious! The nose causes the tail!'"
+Frank Herbert, <i>Heretics of Dune</i>
+-->
 
 Now, the correlation *could* be bogus in the sense that it would disappear if we gathered more data, and was an [illusory correlation](!Wikipedia) due to biases; or it could be an artifact of our mathematical procedures as in "[spurious correlation](!Wikipedia)s"; or it is a Type I error, a correlation thrown up by the standard statistical problems we all know about, such as too-small _n_, false positives from sampling error (A & B just happened to sync together due to randomness), data-mining/multiple testing, _p_-hacking, data snooping, selection bias, publication bias, misconduct, inappropriate statistical tests, etc
 Those last can be generated ad nauseam: Shaun Gallagher's [Correlated](http://www.correlated.org/) (also [a book](http://www.amazon.com/Correlated-Surprising-Connections-Seemingly-Unrelated/dp/039916247X "'Correlated: Surprising Connections Between Seemingly Unrelated Things', Gallagher 2014")) surveys users & compares against all previous surveys with 1k+ correlations.

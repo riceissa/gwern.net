@@ -498,7 +498,7 @@ A short list of sites which make it easy to find newly-created predictions or (f
 
 In 2011, the [Intelligence Advanced Research Projects Activity](!Wikipedia) agency (IARPA) began the [Aggregative Contingent Estimation (ACE) Program](http://www.iarpa.gov/index.php/research-programs/ace), pitting 5 research teams against each other to investigate and improve prediction of geopolitical events. One team, [the Good Judgment Project](http://goodjudgmentproject.blogspot.com/) (see the [_Wired_ interview](http://www.wired.com/wiredscience/2011/08/do-political-experts-know-what-theyre-talking-about/) with [Philip Tetlock](!Wikipedia)), solicited college graduates for the 4 year time period of ACE to register predictions on selected events, for a $150 honorarium. A last-minute notice was posted [on LessWrong](http://lesswrong.com/lw/6ya/link_get_paid_to_train_your_rationality/), and I immediately signed up and was accepted as [I predicted](http://predictionbook.com/predictions/2973).
 
-The initial survey upon my acceptance was long and detailed (calibration on geopolitics, finance, and religion; personality surveys with a lot of fox/hedgehog questions; basic probability; a critical thinking test, the CRT; educational test scores; and then what looked like a full matrix IQ test - we were allowed to see some of [our own results](/docs/2011-gwern-gjp-psychsurveys.html), like the season 2 calibration test[^GJP-2-calibration]). The final results will no doubt turn up many interesting correlations or lack of correlation. I look forward [to completing the study](http://predictionbook.com/predictions/2978). At the very least, they will supply a few hundred predictions I can put on PredictionBook.com - formulating a quality prediction (falsifiable, objective, and interesting) can be the hardest part of predicting.
+The initial survey upon my acceptance was long and detailed (calibration on geopolitics, finance, and religion; personality surveys with a lot of fox/hedgehog questions; basic probability; a critical thinking test, the CRT; educational test scores; and then what looked like a full matrix IQ test - we were allowed to see some of [our own results](/docs/personal/2011-gwern-gjp-psychsurveys.html), like the season 2 calibration test[^GJP-2-calibration]). The final results will no doubt turn up many interesting correlations or lack of correlation. I look forward [to completing the study](http://predictionbook.com/predictions/2978). At the very least, they will supply a few hundred predictions I can put on PredictionBook.com - formulating a quality prediction (falsifiable, objective, and interesting) can be the hardest part of predicting.
 
 [^GJP-2-calibration]: Unfortunately they don't give any population statistics so it's hard for me to interpret my results:
 
@@ -510,7 +510,7 @@ The initial survey upon my acceptance was long and detailed (calibration on geop
 
 My initial batch of short-term predictions did well; even though I make a major mistake when I fumble-fingered a prediction about Mugabe (I bet that he would fall from office in a month, when I believed the opposite), I was still up by \$700 in its play-money. I have, naturally, been copying my predictions [onto PredictionBook.com](http://www.google.com/search?q=%22GJP%3A%20%22%20site%3Apredictionbook%2Ecom) the entire time.
 
-Despite a very questionable prediction closure by IARPA which cost me $200[^China], I finished 2011 well in the green. My [results](/docs/2011-gwern-gjp-forecastresults.html):
+Despite a very questionable prediction closure by IARPA which cost me $200[^China], I finished 2011 well in the green. My [results](/docs/personal/2011-gwern-gjp-forecastresults.html):
 
 > - Your total earnings for 84 out of 85 closed forecasts is 15,744.
 > - You were ranked 28 among the 204 forecasters in Group 3c.
@@ -523,7 +523,7 @@ Not *too* shabby; I was actually under the impression I was doing a lot worse th
 
 #### Season 2 results
 
-Naturally I signed up for Season 2. But it took the GJP months to actually send us the honorarium, and for Season 2, they switched to a much harder to use prediction-market interface which I did not like at all. I used up my initial allotment of money, but I'm not sure how actively I will participate: there's still some novelty but the UI was bad enough that all the fun is gone. The later addition of 'trading agents' where one could just specify one's probability and it would make appropriate trades automatically lured me back in for some trading, but as one would expect from my disengagement, [my final results](/docs/2013-gwern-gjp-forecastresults.pdf) were far worse than for season 1: I ranked 184 out of 245.
+Naturally I signed up for Season 2. But it took the GJP months to actually send us the honorarium, and for Season 2, they switched to a much harder to use prediction-market interface which I did not like at all. I used up my initial allotment of money, but I'm not sure how actively I will participate: there's still some novelty but the UI was bad enough that all the fun is gone. The later addition of 'trading agents' where one could just specify one's probability and it would make appropriate trades automatically lured me back in for some trading, but as one would expect from my disengagement, [my final results](/docs/personal/2013-gwern-gjp-forecastresults.pdf) were far worse than for season 1: I ranked 184 out of 245.
 
 I might as well stick around for season 3. Maybe I will try harder this time.
 
@@ -537,11 +537,11 @@ Thus, one can simply compile a trivia list and test people on their calibration;
 
 [^Your-Morals]: For example, in the [YourMorals.org](http://yourmorals.org/) tests dealing with calibration/bias, I usually do well above average, even for LessWrongers; see:
 
-    - ["an experimental investigation of how people evaluate research evidence that either supports or opposes their pre-existing beliefs"](/docs/2011-gwern-yourmorals.org/evalinfo_process.html)
-    - ["Over-claiming Technique"](/docs/2011-gwern-yourmorals.org/cog_ab_process.html)
-    - ["Balanced Inventory of Desirable Responding"](/docs/2011-gwern-yourmorals.org/bidr_process.html)
-    - ["Marlowe-Crowne Social Desirability Scale"](/docs/2011-gwern-yourmorals.org/crowne_process.html)
-    - ["This scale is designed to measure the better-than-average effect, which is also known as the illusory superiority bias."](/docs/2011-gwern-yourmorals.org/selfeval_process.html)
+    - ["an experimental investigation of how people evaluate research evidence that either supports or opposes their pre-existing beliefs"](/docs/personal/2011-gwern-yourmorals.org/evalinfo_process.html)
+    - ["Over-claiming Technique"](/docs/personal/2011-gwern-yourmorals.org/cog_ab_process.html)
+    - ["Balanced Inventory of Desirable Responding"](/docs/personal/2011-gwern-yourmorals.org/bidr_process.html)
+    - ["Marlowe-Crowne Social Desirability Scale"](/docs/personal/2011-gwern-yourmorals.org/crowne_process.html)
+    - ["This scale is designed to measure the better-than-average effect, which is also known as the illusory superiority bias."](/docs/personal/2011-gwern-yourmorals.org/selfeval_process.html)
 
 Some professional groups do much better on forecasting than others. Two of the key factors found by Armstrong and other forecasting researchers is that the better groups have fast and clear feedback[^WSJ], and conversely, Tetlock's "hedgehogs" were characterized by constant attempts to rationalize unexpected outcomes and refrain from falsifying their cherished world-view. Trivia questions, and to a lesser extent the predictions on PredictionBook.com, offer both factors.
 
@@ -653,7 +653,7 @@ One of the things I hoped would make my site [unusual](About#long-content) was r
 - [Prediction markets](): political predictions, Intrade failure predictions, GJP acceptance
 - [Silk Road](): prediction of censorship on main Bitcoin forums (see above), and of no legal repercussions
 - [Slowing Moore's Law](Slowing Moore's Law): asserts semiconductor manufacturing is fragile and hence Kryder's law has been *permanently* set back by 2011 Thai floods
-- [_The Notenki Memoirs_](/docs/2002-notenki-memoirs#fn222): [Hiroyuki Yamaga](!Wikipedia)'s perpetually in-planning movie _Aoki Uru_ will not be released.
+- [_The Notenki Memoirs_](/docs/eva/2002-notenki-memoirs#fn222): [Hiroyuki Yamaga](!Wikipedia)'s perpetually in-planning movie _Aoki Uru_ will not be released.
 - [Modafinil](): correctly predicted tolerance for a particularly frequent user
 - [Death Note script](): I registered predictions on what replies I expected from Parlapanides, asking about whether he wrote the leaked script being analyzed, to forestall accusations of hindsight bias
 - ["The Crypto-Currency: Bitcoin and its mysterious inventor"](/docs/2011-davis), _The New Yorker_ 2011; mentioned my own failed prediction of a government crackdown

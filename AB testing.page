@@ -2652,7 +2652,7 @@ The HTML changes:
 +    <br>
 +    <i>$status$</i></span>
 +  <br>
-+  <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
++  <span id="epistemological-status"><a href="/About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
 +    <br>
 +    <i>$belief$</i>
 +  </span>
@@ -2673,7 +2673,7 @@ The HTML changes:
 +    <br>
 +    <i>$status$</i></span>
 +  <br>
-+  <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
++  <span id="epistemological-status"><a href="/About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
 +    <br>
 +    <i>$belief$</i>
 +  </span>
@@ -2692,7 +2692,7 @@ The HTML changes:
 +    <br>
 +    <i>$status$</i></span>
 +  <br>
-+  <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
++  <span id="epistemological-status"><a href="/About#belief-tags" title="Explanation of 'belief' metadata">belief:</a>
 +    <br>
 +    <i>$belief$</i>
 +  </span>
@@ -2707,7 +2707,7 @@ The HTML changes:
 +  <br>
 +  <span id="page-created">created: <i>$created$</i></span>;  <span id="last-modified">modified: <i>$modified$</i></span>
 +  <br>
-+  <span id="version">status: <i>$status$</i></span>; <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
++  <span id="version">status: <i>$status$</i></span>; <span id="epistemological-status"><a href="/About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
 +  <hr>
 +</div>
 +
@@ -2717,7 +2717,7 @@ The HTML changes:
 +  <br>
 +  <span id="page-created">created: <i>$created$</i></span>;  <span id="last-modified">modified: <i>$modified$</i></span>
 +  <br>
-+  <span id="version">status: <i>$status$</i></span>; <span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
++  <span id="version">status: <i>$status$</i></span>; <span id="epistemological-status"><a href="/About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
 +  <hr>
 +</div>
 +
@@ -2726,7 +2726,7 @@ The HTML changes:
 +  <span id="abstract"><em>$description$</em></span> (<span id="tags"><i>$tags$</i></span>)
 +  <br>
 +  <span id="page-created">created: <i>$created$</i></span>;  <span id="last-modified">modified: <i>$modified$</i></span>; <span id="version">status: <i>$status$</i></span>; <
-span id="epistemological-status"><a href="./About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
+span id="epistemological-status"><a href="/About#belief-tags" title="Explanation of 'belief' metadata">belief:</a> <i>$belief$</i></span>
 +  <hr>
 +</div>
 +

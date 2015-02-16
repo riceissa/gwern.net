@@ -145,7 +145,7 @@ Sean Berkley in a 2011 _Cracked_ article, ["6 Terrifying Things Nobody Tells You
     >
     > ...There are some notable trends in the export business. Generally, fair-haired donors are preferred, even in South America, Africa and Asia.
 
-    Canada [banned paying for sperm](http://www.nationalpost.com/news/means+fewer+sperm+donations+study/4362506/story.html), and as a consequence, has only [~35 sperm donors in Toronto](http://www.thegridto.com/city/local-news/down-for-the-count/ "Down for the count: There are only 35 sperm donors left in all of Canada. Holy mama, we've got a problem.") (Canada's population is 35 million), and so 80-95% of sperm must be (possibly illegally) imported from America or Denmark; the situation will get worse if it bans anonymity as well.
+    Canada [banned paying for sperm](http://www.nationalpost.com/news/means+fewer+sperm+donations+study/4362506/story.html), and as a consequence, has only [~35 sperm donors in Toronto](http://www.thegridto.com/index.html%3Fp=3661.html "Down for the count: There are only 35 sperm donors left in all of Canada. Holy mama, we've got a problem") (Canada's population is 35 million), and so 80-95% of sperm must be (possibly illegally) imported from America or Denmark; the situation will get worse if it bans anonymity as well.
 
 The various figures suggest that a random male interested in this will have a very small chance of success, perhaps sub-10%; 10 kids on average doesn't seem an implausible guess, for an expected value of 1 kid. This is discouraging.
 
@@ -251,4 +251,26 @@ Depends on what the risk is, and also how bad 'neurotoxicity' is. I hope we all 
 It's fashionable to argue that IQ doesn't matter, but it affects a lot of things, as we can see in natural experiments like the iodization of America and Switzerland, and we can extract direct financial estimates of its value. To reuse the \$12k figure from above, across the American population, that gives an upper bound of \$3 trillion a year lost. America spends ~$100 billion annually on dentistry or ~$333 per capita. Let's be conservative and imagine that fluoridation fully halves dentistry bills and that fluoridated toothpaste isn't an option, so not fluoridating would mean spending \$666 per capita. Then the two choices, compared to the status quo, are \$12000 - (666 - 333) = \$11667 (we reap the gain of higher IQ but we have to pay on the margin for more dentistry), and \$333 (no gain from higher IQ, but also cheaper dentistry); if there's a >3% chance fluoridation does such damage, then the expected-value is higher with the no-fluoridate option. So that's an example of how you might calculate whether the upside of cheaper dentistry is worth the risk of neurotoxicity.
 
 Definitely the sort of problem which urgently justifies more studies, and specifically, *randomized* experiments. We can argue about correlational results from China until the cows come home without reaching much more confident conclusions ('garbage in, garbage out'), but it's only randomized experiments which will give us causal inferences. The good news is that if the loss is half a standard deviation for high levels vs normal levels, then the loss for normal vs low/zero levels should be fairly easy to measure (halve the effect to d=0.225, demand extreme power of 99%, and you only need ~1500 people). And it's not like experiments have to be hard to run: you could settle for cluster randomization of local drinking suppliers - and how much does it cost to *not* fluoridate water and then monitor the next decade of local school grades & ACT/SAT scores (an already-being-collected proxy for intelligence)?
+-->
+
+<!--
+I've been collecting them for years: http://lesswrong.com/lw/7e1/rationality_quotes_september_2011/4r01
+
+Meta-analysis is still useful to get a more precise measurement. More importantly, the issue is that they're often estimating different things, some of which are more important than others.
+
+For example, if you do a simple regression of income vs IQ scores, you're getting a correlation, which is the sum of a lot of things, which we could break down one way:
+
+- A: the confounds (small effects of race, SES, etc)
+- B: the total causal effect of IQ increasing income, which itself is a combination of
+
+    - C: positive-sum effects (smart employees genuinely are better and create more value and thus capture more)
+    - D: zero-sum effects (Harvard has a fixed number of admissions slots, although college is mostly about signaling and credentials and networking so it doesn't really matter who gets in)
+- but not:
+
+    - E: positive externalities in one's country due to uncaptured benefits of research, innovation, lower crime rates, lower discount rates, more willingness to engage in trade
+
+No-one actually cares about #A, since that's not causal. A parent considering embryo selection who is entirely selfish on behalf of their child cares only about #B, while a charity contemplating iodization might care only about how big #C+#E is.
+
+You can try to estimate #B with the usual methods of getting a big dataset to throw a lot of covariates in to minimize the influence of #A (although you have to be *very* careful to not accidentally 'control for' something stupid like education), or you could try to estimate it using natural experiments like the iodization of America. Estimating C is quite difficult. And E could be tried by looking at crossnational comparisons: if one country is much smarter on average than another and it is also much richer, that's a way to try to quantify what the total benefits of all the smart people is.
+And you want precise estimates to be useful. For example, right now with the Rietveld SNPs and others, you could probably do embryo selection on the order of +1 IQ points. But IVF is an expensive procedure, and the various figures I've found say that it'll cost at least $10k. (The gene testing part is a rounding error.) Is +1 IQ point worth paying $10k+ for increasing your child's income beginning 21 years from now? Well, that probably depends on whether the lifetime wealth increase of that 1 point is more like $1k or $100k doesn't it?
 -->

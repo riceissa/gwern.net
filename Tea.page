@@ -408,7 +408,7 @@ Much too late, I checked the Amazon page for the Oster BVST-EK5967 and saw that 
 Having learned my lessons about ignoring user reviews, this third time I'm going with one of the top-reviewed electric tea kettles with temperature control on Amazon: the ["T-fal BF6138US Balanced Living 1-Liter 1750-Watt Electric Mini Kettle"](http://www.amazon.com/T-fal-BF6138US-Balanced-1750-Watt-Electric/dp/B0086UJQN8/) (\$23.62).
 Unfortunately for me, my first order arrived broken.
 Reasoning that since it's one of the top-reviewed models, it's more likely that I got a bad item than it's a rubbish model like the Oster, I decided to return it for a replacement (which Amazon makes reasonably easy: you print out an address and a bar code, slap it on the shipping box, and mail it at your local post office).
-The second order arrived working, and aside from the garish green-black coloring, seems to do its job well (although I miss the built-in thermometer of the Oster, which made it easier to findi optimal temperatures for particular teas).
+The second order arrived working, and aside from the garish green-black coloring, seems to do its job well (although I miss the built-in thermometer of the Oster, which made it easier to find optimal temperatures for particular teas).
 
 # TODO
 
@@ -464,3 +464,356 @@ possible tea rating sources:
 
 existing company? http://dealbook.nytimes.com/2014/06/26/as-indias-teas-gain-fans-seeking-a-faster-way-to-get-it-to-them/
 -->
+
+# Appendix
+## Electric vs stove kettle: fight!
+
+stove-top vs electric test
+electric: ["T-fal BF6138US Balanced Living 1-Liter 1750-Watt Electric Mini Kettle"](http://www.amazon.com/T-fal-BF6138US-Balanced-1750-Watt-Electric/dp/B0086UJQN8/)
+stove-top: generic old metal kettle (copper-clad bottom; may have been intended to be a coffee percolator, but works equally well as a kettle) on small burner (bottom doesn't cover surface area of large burner) - old stove, resistance-heating coils, plugged into wall
+gaffers-sattler 4-burner stove/oven - no model name or number I could find in an accessible spot, but must be easily 30 years old
+room: 77.1 fahrenheit, 49% relative humidity, sea level
+thermometer: Taylor 9847N electric therometer
+
+one tea mug = 2 cups of water (>=0.5l marking on electric kettle)
+
+2 cups into each, turned on simultaneously
+
+1. first test, max heat on kettle/stove:
+144, 210 vs 120
+344
+
+rinsed both with cold water (tap water = 43 degrees)
+
+2. again with 3 cups:
+199 211 vs 108
+665
+
+3. third, with 3 cups:
+210 211 vs 120
+701
+
+
+4. fourth, with 2 cups:
+141 211 vs 107
+524
+
+5. next test: medium heat (for nearly black oolongs) with 2 cups
+142 209 vs 130
+399
+
+
+6. since that didn't turn out to differ much temperature-wise, switch to medium-low (where I set my oolong default) with 2 cups:
+145 207 vs 131
+408
+
+
+7. also, didn't differ much... (dammit t-fal!), try setting all the way down to minimum, 2-cups:
+110 190 vs 101
+423
+
+8. 3-cups
+146 180 vs 108
+435
+
+9. 4-cups
+178 172 vs 99
+567
+
+10. 2-cups:
+105 186 vs 106
+362
+
+11. 2-cups
+109 187 vs 108
+331
+
+12. 2-cups
+113 187 vs 114
+341
+
+
+wide format:
+
+~~~{.R}
+boilingW <- read.csv(stdin(),header=TRUE)
+Test,Setting,Volume.cups,Time.electric,Time.stove,Time.ratio,Temp.final,Temp.intermediate.stove
+1,max,2,144,344,0.4186046512,210,120
+2,max,3,199,665,0.2992481203,211,108
+3,max,3,210,701,0.2995720399,211,120
+4,max,2,141,524,0.2690839695,211,107
+5,medium,2,142,399,0.3558897243,209,130
+6,medium-low,2,145,408,0.3553921569,207,131
+7,min,2,110,423,0.2600472813,190,101
+8,min,3,146,435,0.3356321839,180,108
+9,min,4,178,567,0.3139329806,172,99
+10,min,2,105,362,0.2900552486,186,106
+11,min,2,109,331,0.329305136,187,108
+12,min,2,113,341,0.3313782991,187,114
+
+with(boiling, wilcox.test(Time.electric, Time.stove))
+
+    Wilcoxon rank sum test
+
+data:  Time.electric and Time.stove
+W = 0, p-value = 7.396e-07
+alternative hypothesis: true location shift is not equal to 0
+
+R> with(boiling, t.test(Time.electric, Time.stove))
+
+    Welch Two Sample t-test
+
+data:  Time.electric and Time.stove
+t = -8.2263, df = 12.648, p-value = 1.983e-06
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -395.6429254 -230.6904079
+sample estimates:
+  mean of x   mean of y
+145.1666667 458.3333333
+
+R> with(boiling, t.test(Time.electric, Time.stove, paired=TRUE))
+
+    Paired t-test
+
+data:  Time.electric and Time.stove
+t = -11.1897, df = 11, p-value = 2.378e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -374.7655610 -251.5677723
+sample estimates:
+mean of the differences
+           -313.1666667
+
+R> library(betareg)
+~~~
+
+long format:
+
+~~~{.R}
+boiling <- read.csv(stdin(),header=TRUE)
+Test,Setting,Type,Volume.cups,Time,Temp.final,Temp.intermediate.stove
+1,max,electric,2,144,210,120
+1,max,stove,2,344,210,120
+2,max,electric,3,199,211,108
+2,max,stove,3,665,211,108
+3,max,electric,3,210,211,120
+3,max,stove,3,701,211,120
+4,max,electric,2,141,211,107
+4,max,stove,2,524,211,107
+5,medium,electric,2,142,209,130
+5,medium,stove,2,399,209,130
+6,medium-low,electric,2,145,207,131
+6,medium-low,stove,2,408,207,131
+7,min,electric,2,110,190,101
+7,min,stove,2,423,190,101
+8,min,electric,3,146,180,108
+8,min,stove,3,435,180,108
+9,min,electric,4,178,172,99
+9,min,stove,4,567,172,99
+10,min,electric,2,105,186,106
+10,min,stove,2,362,186,106
+11,min,electric,2,109,187,108
+11,min,stove,2,331,187,108
+12,min,electric,2,113,187,114
+12,min,stove,2,341,187,114
+
+R> wilcox.test(Time ~ Type, data=boiling)
+
+    Wilcoxon rank sum test
+
+data:  Time by Type
+W = 0, p-value = 7.396e-07
+alternative hypothesis: true location shift is not equal to 0
+
+
+R> t.test(Time ~ Type, data=boiling)
+
+    Welch Two Sample t-test
+
+data:  Time by Type
+t = -8.2263, df = 12.648, p-value = 1.983e-06
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -395.6429254 -230.6904079
+sample estimates:
+mean in group electric    mean in group stove
+           145.1666667            458.3333333
+
+R> ?t.test
+R> t.test(Time ~ Type, paired=TRUE, data=boiling)
+
+    Paired t-test
+
+data:  Time by Type
+t = -11.1897, df = 11, p-value = 2.378e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -374.7655610 -251.5677723
+sample estimates:
+mean of the differences
+           -313.1666667
+
+R> summary(lm(Time ~ Test + Temp.final + as.ordered(Setting) + Type + Volume.cups, data=boiling))
+
+Call:
+lm(formula = Time ~ Test + Temp.final + as.ordered(Setting) +
+    Type + Volume.cups, data = boiling)
+
+Residuals:
+      Min        1Q    Median        3Q       Max
+-89.37786 -28.86586  12.18942  29.12054  93.64656
+
+Coefficients:
+                          Estimate   Std. Error  t value   Pr(>|t|)
+(Intercept)           -2619.607015  1179.160067 -2.22159 0.04108708
+Test                      5.808909     9.295290  0.62493 0.54082745
+Temp.final               11.696298     5.422822  2.15687 0.04657229
+as.ordered(Setting).L   124.978494   109.450857  1.14187 0.27031014
+as.ordered(Setting).Q    88.043187    54.791923  1.60686 0.12763657
+as.ordered(Setting).C    24.081255    48.488960  0.49663 0.62620135
+Typestove               313.166667    24.560050 12.75106 8.4966e-10
+Volume.cups             157.883148    38.444409  4.10679 0.00082473
+
+Residual standard error: 60.15959 on 16 degrees of freedom
+Multiple R-squared:  0.9257358, Adjusted R-squared:  0.8932452
+F-statistic: 28.49242 on 7 and 16 DF,  p-value: 6.927389e-08
+
+
+R> summary(step(lm(Time ~ Test + Temp.final + as.ordered(Setting) + Type + Volume.cups, data=boiling)))
+
+
+Step:  AIC=199.34
+Time ~ Temp.final + Type + Volume.cups
+
+              Df Sum of Sq       RSS       AIC
+<none>                      69599.12 199.33888
+- Temp.final   1  51896.58 121495.70 210.70993
+- Volume.cups  1 107599.27 177198.40 219.76731
+- Type         1 588440.17 658039.29 251.25519
+
+Call:
+lm(formula = Time ~ Temp.final + Type + Volume.cups, data = boiling)
+
+Residuals:
+        Min          1Q      Median          3Q         Max
+-115.480920  -41.874831   -3.183459   38.182981  125.963323
+
+Coefficients:
+               Estimate  Std. Error  t value   Pr(>|t|)
+(Intercept) -835.055578  206.880137 -4.03642 0.00064609
+Temp.final     3.607011    0.934039  3.86174 0.00097187
+Typestove    313.166667   24.083037 13.00362  3.247e-11
+Volume.cups  111.948746   20.132673  5.56055  1.922e-05
+
+Residual standard error: 58.99115 on 20 degrees of freedom
+Multiple R-squared:  0.9107407, Adjusted R-squared:  0.8973518
+F-statistic: 68.02206 on 3 and 20 DF,  p-value: 1.138609e-10
+
+R> boilingW <- read.csv(stdin(),header=TRUE)
+0: Test,Setting,Volume.cups,Time.electric,Time.stove,Time.ratio,Temp.final,Temp.intermediate.stove
+1: 1,max,2,144,344,0.4186046512,210,120
+2: 2,max,3,199,665,0.2992481203,211,108
+3: 3,max,3,210,701,0.2995720399,211,120
+4: 4,max,2,141,524,0.2690839695,211,107
+5: 5,medium,2,142,399,0.3558897243,209,130
+6: 6,medium-low,2,145,408,0.3553921569,207,131
+7: 7,min,2,110,423,0.2600472813,190,101
+8: 8,min,3,146,435,0.3356321839,180,108
+9: 9,min,4,178,567,0.3139329806,172,99
+10: 10,min,2,105,362,0.2900552486,186,106
+11: 11,min,2,109,331,0.329305136,187,108
+12: 12,min,2,113,341,0.3313782991,187,114
+13:
+R> summary(betareg(Time.ratio ~ Temp.final + as.ordered(Setting) + Volume.cups, data=boilingW))
+
+Call:
+betareg(formula = Time.ratio ~ Temp.final + as.ordered(Setting) + Volume.cups, data = boilingW)
+
+Standardized weighted residuals 2:
+       Min         1Q     Median         3Q        Max
+-3.0750244 -0.9096389  0.1394863  0.7292433  2.8146091
+
+Coefficients (mean model with logit link):
+                         Estimate  Std. Error  z value Pr(>|z|)
+(Intercept)            7.49624231  4.15031174  1.80619 0.070889
+Temp.final            -0.03782627  0.01921650 -1.96843 0.049019
+as.ordered(Setting).L -0.73487186  0.36540077 -2.01114 0.044311
+as.ordered(Setting).Q -0.47817927  0.19405990 -2.46408 0.013737
+as.ordered(Setting).C -0.18696030  0.16717555 -1.11835 0.263419
+Volume.cups           -0.22934320  0.13345514 -1.71850 0.085705
+
+Phi coefficients (precision model with identity link):
+       Estimate Std. Error z value Pr(>|z|)
+(phi) 201.71768   82.16848 2.45493 0.014091
+
+Type of estimator: ML (maximum likelihood)
+Log-likelihood: 24.01264 on 7 Df
+Pseudo R-squared: 0.3653261
+Number of iterations: 751 (BFGS) + 3 (Fisher scoring)
+
+# C="medium", L="medium-low", Q="min"?
+
+
+library(lavaan)
+Kettle.model <- '
+                Temp.final.true =~ Temp.final
+                Time.true =~ Time
+                Time.true ~ Test + Temp.final.true + as.ordered(Setting) + Type + Volume.cups
+               '
+Kettle.fit <- sem(model = Kettle.model, data = boiling)
+summary(Kettle.fit)
+
+
+Kettle.model2 <- '
+                Temp.final.true =~ Temp.final
+                Time.true =~ Time
+                Time.true ~ Test + Temp.final.true + Type + Volume.cups
+               '
+Kettle.fit2 <- sem(model = Kettle.model2, data = boiling)
+summary(Kettle.fit2)
+
+
+~~~
+
+u-test, t-test, linear model, beta regression (library(betareg)), Bayesian measurement error model in JAGS...
+
+~~~{.R}
+library(R2jags)
+model1<-"
+model {
+    for (i in 1:n) {
+        Time[i] ~ dnorm(Time.hat[i], tau)
+        Time.hat[i] <- a + b1 * Temp.final[i] + b2 * Volume.cups[i] + b3 * Type[i] + b4 * Setting[i] + b5 * Test[1]
+    }
+    a  ~ dnorm(0, .0001)
+    b1 ~ dnorm(0, .0001)
+    b2 ~ dnorm(0, .0001)
+    b3 ~ dnorm(0, .0001)
+    b4 ~ dnorm(0, .0001)
+    b5 ~ dnorm(0, .0001)
+    tau <- pow(sigma, -2)
+    sigma ~ dunif(0, 100)
+}
+"
+j1 <- jags(data=list(n=nrow(boiling),Time=boiling$Time, Temp.final=boiling$Temp.final, Volume.cups=boiling$Volume.cups, Type=boiling$Type, Setting=boiling$Setting, Test=boiling$Test), parameters.to.save=c("b1", "b2", "b3", "b4", "b5"), model.file=textConnection(model1), n.chains=4, n.iter=100000)
+j1
+# Inference for Bugs model at "10", fit using jags,
+#  4 chains, each with 1e+05 iterations (first 50000 discarded), n.thin = 50
+#  n.sims = 4000 iterations saved
+#          mu.vect sd.vect     2.5%     25%     50%     75%   97.5%  Rhat n.eff
+# b1        -0.832   0.650   -2.114  -1.261  -0.828  -0.393   0.467 1.001  4000
+# b2        73.916  20.681   32.563  60.191  74.340  87.725 114.507 1.001  4000
+# b3       288.179  28.073  228.385 270.663 289.665 306.951 340.702 1.002  2100
+# b4       -39.128  10.940  -60.630 -46.429 -39.083 -31.875 -17.559 1.001  4000
+# b5       -17.601  99.275 -211.967 -83.804 -17.636  50.075 176.493 1.001  4000
+# deviance 269.496   3.949  263.750 266.614 268.840 271.717 278.729 1.001  4000
+#
+# For each parameter, n.eff is a crude measure of effective sample size,
+# and Rhat is the potential scale reduction factor (at convergence, Rhat=1).
+#
+# DIC info (using the rule, pD = var(deviance)/2)
+# pD = 7.8 and DIC = 277.3
+# DIC is an estimate of expected predictive error (lower deviance is better).
+plot(j1)
+~~~

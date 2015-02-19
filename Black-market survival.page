@@ -44,7 +44,7 @@ Variables:
 
 ## Table
 
-A table of relevant markets (8 Feb 2015):
+A table of relevant markets (19 Feb 2015):
 
 Market                   Start       End       Alive Closure   Arrested URL                      Multisig I2P   Bitcoin Litecoin Dogecoin Darkcoin          Codebase   Guns   Fraud Hacks Doxed Notes
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ------- -------- -------- --------          ---------- -----  ----- ----- ----- -------------
@@ -116,37 +116,11 @@ Panacea                  2014-10-27            TRUE            FALSE    `panacea
 Abraxas                  2014-12-13            TRUE            FALSE    `abraxasdegupusel.onion` FALSE    FALSE TRUE    FALSE    FALSE    TRUE              Laravel    FALSE  TRUE  0     FALSE   forums: `abraxasgacelesox.onion`
 AlphaBay                 2014-12-22            TRUE            FALSE    `pwoah7foa6au2pul.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2q2foj/new_darknet_market_alphabay_market/)
 Free Market              2015-01-14            TRUE            FALSE    `tfmarket6iaddx45.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     FALSE  FALSE 0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2sfayc/announcement_the_free_market_is_now_accepting/)
-Silk Road Reloaded       2014-01-13            TRUE            FALSE    `silkroadreloaded.i2p`   FALSE    TRUE  TRUE    TRUE     TRUE     TRUE              custom     FALSE  TRUE  0     FALSE   Full I2P address: `hyn3mwmyeovcn2paujxur2eury2ufqpoahvbbqshfoggljn25tra.b32.i2p`
-Tochka       FALSE       2014-01-30            TRUE            FALSE    `tochka3evlj3sxdv.onion` FALSE    FALSE TRUE    TRUE     TRUE     TRUE              custom     FALSE  FALSE 0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2u8dm2/tochka_new_mobilefirst_anonymous_marketplace/); site rules ban "Counterfeit documents" which I interpret as banning carding in general.
-
-<!--
-$ torify curl -I 'http://abraxasdegupusel.onion/info'
-HTTP/1.1 302 Found
-Server: nginx/1.2.1
-Content-Type: text/html; charset=UTF-8
-Connection: keep-alive
-X-Powered-By: PHP/5.4.4-14+deb7u14
-Cache-Control: max-age=0, must-revalidate, no-store, nocache, private
-Date: Tue, 16 Dec 2014 21:18:45 GMT
-Location: http://abraxasdegupusel.onion/login
-Pragma: no-cache
-Expires: Fri, 01 Jan 1990 00:00:00 GMT
-Set-Cookie: laravel_session=eyJpdiI6IkZIT1FMOEd0UE9lYzZ5MW9GVVRwV3c9PSIsInZhbHVlIjoidkRqYTJGcDF2anNtdkVDUDRVZUpWeUdSXC9DZHhJaXFTNXU3YTdSV2VpV1dFVVVMbHRvSVJZYkExMG5uM1wvaGtPZm5pWTY5N0JFeWplOEE3Y29iK2tIZz09IiwibWFjIjoiZjM3ODk1Y2RkMDNiZmUyMjEzZTk4ZTgzM2YyMzdjMTA5NTZmZGMyMTNmZjg4NDA1ZTI2MjBiN2VjYTc3ODk1MSJ9; expires=Tue, 16-Dec-2014 23:18:45 GMT; path=/; httponly
--->
-<!-- torify curl -I 'http://pwoah7foa6au2pul.onion'
-HTTP/1.1 302 Moved Temporarily
-Date: Tue, 23 Dec 2014 00:32:03 GMT
-Content-Type: text/html; charset=utf-8
-Connection: keep-alive
-X-Powered-By: PHP/5.6.4
-Server: AlphaBay Server
-Content-Language: en
-Set-Cookie: PHPSESSID=qs16aoiqafn57clhkku0a8mmk0; path=/
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Pragma: no-cache
-Location: login.php
--->
+Silk Road Reloaded       2015-01-13            TRUE            FALSE    `silkroadreloaded.i2p`   FALSE    TRUE  TRUE    TRUE     TRUE     TRUE              custom     FALSE  TRUE  0     FALSE   Full I2P address: `hyn3mwmyeovcn2paujxur2eury2ufqpoahvbbqshfoggljn25tra.b32.i2p`
+Tochka       FALSE       2015-01-30            TRUE            FALSE    `tochka3evlj3sxdv.onion` FALSE    FALSE TRUE    TRUE     TRUE     TRUE              custom     FALSE  FALSE 0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2u8dm2/tochka_new_mobilefirst_anonymous_marketplace/); site rules ban "Counterfeit documents" which I interpret as banning carding in general.
+Crypto                   2015-02-14            TRUE            FALSE    `cryptomktgxdn2zd.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE            custom     TRUE   TRUE  0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2vvhtc/crypto_market/)
+"less restrictive"
+Bloomsfield              2014-02-03            TRUE            FALSE    `spr3udtjiegxevzt.onion` TRUE     FALSE TRUE     FALSE    FALSE    FALSE            Bitwasp                 0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2umdcy/bloomsfield/) <!-- claims to have started much earlier than Reddit post: "Cool, currently we are have uptime from 25. December 2014" -->
 
 See also [DeepDotWeb's list](http://www.deepdotweb.com/2013/10/28/updated-llist-of-hidden-marketplaces-tor-i2p/ "Updated: List of Hidden Marketplaces (Tor & I2P)") ([changelog](http://www.deepdotweb.com/hidden-marketplace-list-changelog/)), the [DNM market list](http://www.reddit.com/r/DarkNetMarkets/wiki/index/sidebar), and the [Hidden Wiki](/docs/sr/2014-08-30-hiddenwiki-comparisiondarknetmarkets.mht) (last updated 30 August 2014).
 
@@ -163,8 +137,7 @@ I may add to the table other variables; possibly useful ones:
 - number of employees (can official claims be trusted?)
 - fully-separate buyer/seller accounts
 
-<!-- I can't spider with wget: blue sky -->
-
+<!-- I can't spider with wget: blue sky, most of Middle Earth... -->
 <!-- (Three Hares / Bad Wolf Hosting are excluded for apparently not being active yet.) Three Hares? http://www.reddit.com/r/DarkNetMarkets/comments/1qsbdp/three_hares_marketplace_is_now_live/ http://3haresyyuxpqqqdz.onion/ not selling as of 16 November 2013; projected live: 20 Dec 2013; inaccessible on 26 December 2013, apparently down on the 15th  What on earth is Bad Wolf Hosting? http://www.reddit.com/r/badwolfhosting AWOL: http://www.reddit.com/r/DarkNetMarkets/comments/1vk190/missing_site_missing_orders/ -->
 <!-- http://www.reddit.com/r/DarkNetMarkets/comments/1vu0aa/new_inviteonly_darknet_site_what_do_you_think/ http://www.topixslhezyytrvm.onion/ registered email 22 Jan 2014; 'Login or register if you have an invite.' 9 Feb 2014 -->
 <!-- "country club" a$ap was setting up with jack n hoff: a new marketplace, invite only, with monthly dues http://silkroad5v7dywlc.onion/index.php?topic=16620.0;all "The forum is going live. A$AP is out of the picture. The Country Club is offering a 'trial month' for new users.  Buyers pay nothing so long as they are invited and vendors pay $20 the first month and $60 a month afterwards assuming everything goes alright.  There are no fee-based transactions. Just the recurring monthly rate." -->
@@ -206,6 +179,58 @@ Southern District of New York   14-Mag-2427 11/06/2014
 
 2 servers in France, 0 arrests? http://www.lemonde.fr/pixels/article/2014/11/11/les-coulisses-de-l-operation-onymous-contre-des-dizaines-de-sites-caches-illegaux_4521827_4408996.html
 -->
+<!--
+$ torify curl -I 'http://abraxasdegupusel.onion/info'
+HTTP/1.1 302 Found
+Server: nginx/1.2.1
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+X-Powered-By: PHP/5.4.4-14+deb7u14
+Cache-Control: max-age=0, must-revalidate, no-store, nocache, private
+Date: Tue, 16 Dec 2014 21:18:45 GMT
+Location: http://abraxasdegupusel.onion/login
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Set-Cookie: laravel_session=eyJpdiI6IkZIT1FMOEd0UE9lYzZ5MW9GVVRwV3c9PSIsInZhbHVlIjoidkRqYTJGcDF2anNtdkVDUDRVZUpWeUdSXC9DZHhJaXFTNXU3YTdSV2VpV1dFVVVMbHRvSVJZYkExMG5uM1wvaGtPZm5pWTY5N0JFeWplOEE3Y29iK2tIZz09IiwibWFjIjoiZjM3ODk1Y2RkMDNiZmUyMjEzZTk4ZTgzM2YyMzdjMTA5NTZmZGMyMTNmZjg4NDA1ZTI2MjBiN2VjYTc3ODk1MSJ9; expires=Tue, 16-Dec-2014 23:18:45 GMT; path=/; httponly
+-->
+<!-- torify curl -I 'http://pwoah7foa6au2pul.onion'
+HTTP/1.1 302 Moved Temporarily
+Date: Tue, 23 Dec 2014 00:32:03 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+X-Powered-By: PHP/5.6.4
+Server: AlphaBay Server
+Content-Language: en
+Set-Cookie: PHPSESSID=qs16aoiqafn57clhkku0a8mmk0; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: login.php
+-->
+<!-- $ torify curl -I 'http://cryptomktgxdn2zd.onion/new_listing.php' # Crypto Market
+HTTP/1.1 302 Moved Temporarily
+Server:
+Date: Thu, 19 Feb 2015 18:55:59 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+X-Powered-By: PHP/5.6.5
+Set-Cookie: PHPSESSID=juhkbgchcsc69spb6offs31ie2; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: index.php -->
+<!-- $ torify curl -I 'http://spr3udtjiegxevzt.onion/index.php/login' # Bloomsfield
+HTTP/1.1 200 OK
+Date: Thu, 19 Feb 2015 19:14:41 GMT
+Server: Apache
+X-Powered-By: PHP/5.5.9-1ubuntu4.5
+Set-Cookie: csrf_c=bfcdeec846a25bcc27bc9248ceb3c019; expires=Thu, 19-Feb-2015 21:14:41 GMT; Max-Age=7200; path=/; httponly
+Set-Cookie: csrf_c=bfcdeec846a25bcc27bc9248ceb3c019; expires=Thu, 19-Feb-2015 21:14:41 GMT; Max-Age=7200; path=/; httponly
+Set-Cookie: cisession=cf7f68fd3749ec68e646bd26123bdf3f3a9b33f47c08bc8d2b5e8c2104fc9a3c28e1eddb6ecb949eb6992c7b8b19f3a408a54ba23e4d303a93b1e4052f10828aoqgwc8oaYIO%2FAaZcDF49moaMDRa%2Bz05mI5iC2fl27MGh4qwPycF6O0%2BZlYuCd3v0PJ7IrkznyEOg67p0PzYbzwU9KvrRqXAuuiXdIODTsVpzoexvwv4fNvQKUYwHdiZ5Em7ccHmE%2FPwSfrFx7k2YtT415cxv%2F%2BLiiP8oDlva1AEOniDS3bdc9LnT7I%2BjdtgENLT1x5bY2Z4hmRv0QtDK%2FB9V0PG6f7ex98UzVb%2FWt8r70C8a%2FI0fCHBkxAV0rqcV; expires=Thu, 19-Feb-2015 21:14:41 GMT; Max-Age=7200; path=/; httponly
+Set-Cookie: cisession=8059ae26dba4d197e7ffc030ba4911900ef3a16822240027d4d0d2107a334c79dc13d14aa62a5fc66e8a6ec6cfb711ea199b8d7ba74f66e77f66212a43429c56tktGz9ekedHDJXD%2BQq8l4rs0KA4l6WWgCiwD0GZkskEglQ%2FHhDwHLFS5yKxhy6bPMIW06k%2BJunLmCOKiIZr4nfOt6MbBRgymgZkwL8Se5L%2B9V2we4VU%2B%2Br5%2BgcInPlIjd8UMw5FqigfSkXzQWUJ%2F23uAI8gd0%2Bpho2oz9NoVFn7u6kPw1bhrd6O3zRamIspYfvnkR1bgCIdDGPmQZueoaxnaqYIUJ8SATPCbEvVK3HywQpEJ%2FGg4y3nUx4XZHrA%2Bfw1iecJB7ROu6F2dkaaNNFL2pwVeP4F7SMzLZt6uWDY%3D; expires=Thu, 19-Feb-2015 21:14:41 GMT; Max-Age=7200; path=/; httponly
+Content-Type: text/html -->
+<!-- Kiss Marketplace https://www.reddit.com/r/DarkNetMarkets/comments/2vo5qi/kiss_marketplace/ forum: 6bssxspijk7n2ioh.onion; carding: yes (counterfeit currency); guns: no (not open as of 19 February 2015) -->
+<!-- Panacea: down, hacked? went down during 12 February 2015, still down as of 19 February 2015 -->
 
 # Analysis
 

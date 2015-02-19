@@ -414,7 +414,6 @@ The second order arrived working, and aside from the garish green-black coloring
 
 - Green (_[gyokuro](!Wikipedia)_ sounds interesting):
 
-    1. [Upton's standard gyokuro](http://www.uptontea.com/shopcart/item.asp?itemID=TJ80) (back in stock in November 2012)
     2. [Organic gyokuro](http://www.uptontea.com/shopcart/item.asp?itemID=ZG81)
     3. [Bai Hao Imperial](http://www.uptontea.com/shopcart/Item.asp?itemID=ZO93)
 - the [ku-ki chas](http://www.uptontea.com/shopcart/searchResults.asp?sType=new&searchOptionMatchAll=1&searchOptionCategory=1&searchOptionItemName=1&searchOptionItemDescription=1&searchOptionDocuments=0) <!-- Minus the Organic China Ku-ki Cha  -->
@@ -543,8 +542,10 @@ Test,Setting,Type,Volume.cups,Time,Temp.final,Temp.intermediate.stove
 There many ways to analyze this data: are we interested in the mean difference in seconds over all combinations of volume/final-temperature, as a two-sample or paired-sample?
 In modeling the time it takes?
 In the *ratio* or relative speed of electric and stove-top?
-In [correcting](!Wikipedia "Errors-in-variables models") for the measurement error (±2° for each temperature measurement, and let's say ~2s for measuring all times)?
+In [correcting](!Wikipedia "Errors-in-variables models") for the measurement error (±2° for each temperature measurement, and perhaps also how much water was in each)?
 We could look at all of them.
+
+#### Hypothesis testing
 
 Means, ratios, and tests of difference:
 
@@ -578,7 +579,7 @@ t.test(Time ~ Type, data=boiling)
 # data:  Time by Type
 # t = -8.2263, df = 12.648, p-value = 1.983e-06
 # alternative hypothesis: true difference in means is not equal to 0
-# 95 percent confidence interval:
+# 95% confidence interval:
 #  -395.6429254 -230.6904079
 # sample estimates:
 # mean in group electric    mean in group stove
@@ -590,7 +591,7 @@ t.test(Time ~ Type, paired=TRUE, data=boiling)
 # data:  Time by Type
 # t = -11.1897, df = 11, p-value = 2.378e-07
 # alternative hypothesis: true difference in means is not equal to 0
-# 95 percent confidence interval:
+# 95% confidence interval:
 #  -374.7655610 -251.5677723
 # sample estimates:
 # mean of the differences
@@ -600,11 +601,13 @@ t.test(Time ~ Type, paired=TRUE, data=boiling)
 So the electric kettle is, as expected, faster - by 5 minutes on average, ranging from 4x faster to 2x faster, and the advantage is statistically-significant.
 (Nothing surprising so far.)
 
+#### Linear regression
+
 How much variance do the listed variables capture?
 
 ~~~{.R}
 summary(lm(Time ~ Test + Temp.final + as.ordered(Setting) + Type + Volume.cups, data=boiling))
-#
+# ...
 # Residuals:
 #       Min        1Q    Median        3Q       Max
 # -89.37786 -28.86586  12.18942  29.12054  93.64656
@@ -645,7 +648,7 @@ The signs are also appropriate and coefficients sensible: each additional degree
 
 We can plot the electric and stove-top data separately as 3D plots with residuals to see if any big issues jump out:
 
-![2 3D plots: time to boil vs water volume vs final temperature; split by electric vs stove-top kettle, with residua/deviation from linear plane/fit](/wiki/images/tea-electricvskettle.png)
+![2 3D plots: time to boil vs water volume vs final temperature; split by electric vs stove-top kettle, with residua/deviation from linear plane/fit](/wiki/images/tea-kettle-electricvstove.png)
 
 ~~~{.R}
 library(scatterplot3d)
@@ -660,7 +663,7 @@ plot3D <- function(k) {
         })
         }
 
-png(file="~/wiki/images/tea-electricvskettle.png", width = 680, height = 800)
+png(file="~/wiki/images/tea-kettle-electricvstove.png", width = 680, height = 800)
     par(mfrow = c(2, 1))
     plot3D("electric")
     plot3D("stove")
@@ -668,6 +671,9 @@ invisible(dev.off())
 ~~~
 
 It looks *pretty* good but towards the edges the points seem systematically high or low, suggesting there might be a bit of nonlinearity.
+
+#### Beta regression
+
 Regressing on the relative times / ratios, using the unusual [beta regression](http://cran.r-project.org/web/packages/betareg/vignettes/betareg.pdf), might be interesting; if electric was always 1:3, say, then one would expect the ratio to be constant and independent of the covariates, whereas if the ratio increases or decreases based on the covariates then that suggests some bending or flexing of the plane:
 
 ~~~{.R}
@@ -712,6 +718,8 @@ summary(betareg(Time.ratio ~ Temp.final + as.ordered(Setting) + Volume.cups, dat
 ~~~
 
 Excluding the Setting variable, it looks like the temperature and volume may affect the timing, but not much.
+
+#### SEM
 
 Moving on to measurement error, one favored way of handling measurement error is through latent variables and a [structural equation model](!Wikipedia), which in this case we might model in [lavaan](http://lavaan.ugent.be/) this way:
 
@@ -759,50 +767,182 @@ summary(Kettle.fit)
 
 But the latent variable step turns out to be a waste of time (eg `Temp.final.true =~ Temp.final 1.000`), presumably because I don't have multiple measurements of the same data which might allow an estimate of an underlying factor/latent variable, and so it's the same as the linear model, more or less.
 
-What I need is some way of expressing my prior information, like my guess that the temperature numbers are ±2° or the times ±3s... in a Bayesian measurement error model.
-[JAGS](!Wikipedia "Just another Gibbs sampler")/[rjags](http://cran.r-project.org/web/packages/rjags/index.html) comes to mind. ([Stan](!Wikipedia "Stan (software)") is currently too new and hard to install.)
+#### Bayesian models
 
+What I need is some way of expressing my prior information, like my guess that the temperature numbers are ±2° or the times ±3s... in a Bayesian measurement error model.
+[JAGS](!Wikipedia "Just another Gibbs sampler") comes to mind. ([Stan](!Wikipedia "Stan (software)") is currently too new and hard to install.)
 
 ~~~{.R}
-library(R2jags)
+library(rjags)
 model1<-"
 model {
     for (i in 1:n) {
         Time[i] ~ dnorm(Time.hat[i], tau)
-        Time.hat[i] <- a + b1 * Temp.final[i] + b2 * Volume.cups[i] + b3 * Type[i] + b4 * Setting[i] + b5 * Test[1]
+        Time.hat[i] <- a + b1*Test[i] + b2*Temp.final[i] + b3*Setting[i] + b4*Type[i] + b5*Volume.cups[i]
     }
+
     a  ~ dnorm(0, .00001)
+
     b1 ~ dnorm(0, .00001)
     b2 ~ dnorm(0, .00001)
     b3 ~ dnorm(0, .00001)
     b4 ~ dnorm(0, .00001)
     b5 ~ dnorm(0, .00001)
+
     tau <- pow(sigma, -2)
     sigma ~ dunif(0, 100)
 }
 "
-j1 <- with(boiling, jags(data=list(n=nrow(boiling),Time=Time, Temp.final=Temp.final, Volume.cups=Volume.cups, Type=Type, Setting=Setting, Test=Test),
-                         parameters.to.save=c("b1", "b2", "b3", "b4", "b5"), model.file=textConnection(model1), n.chains=4, n.iter=100000))
-
+j1 <- with(boiling, jags(data=list(n=nrow(boiling), Time=Time, Temp.final=Temp.final,
+                                   Volume.cups=Volume.cups, Type=Type, Setting=Setting, Test=Test),
+                         parameters.to.save=c("b1", "b2", "b3", "b4", "b5"),
+                         model.file=textConnection(model1),
+                         n.chains=4, n.iter=100000))
 j1
-# Inference for Bugs model at "9", fit using jags,
+# Inference for Bugs model at "5", fit using jags,
 #  4 chains, each with 1e+05 iterations (first 50000 discarded), n.thin = 50
 #  n.sims = 4000 iterations saved
-#           mu.vect sd.vect     2.5%      25%      50%     75%   97.5%  Rhat n.eff
-# b1          0.197   1.693   -3.161   -0.928    0.201   1.316   3.552 1.002  1600
-# b2         85.490  23.470   38.076   70.648   85.726 101.028 131.249 1.001  4000
-# b3        308.728  26.738  254.557  291.727  309.372 326.107 360.321 1.001  4000
-# b4        -30.618  18.057  -67.704  -42.551  -30.413 -18.230   3.594 1.002  1900
-# b5       -162.606 306.262 -757.409 -366.553 -164.661  45.749 424.832 1.002  1700
-# deviance  267.616   3.906  261.714  264.780  267.049 269.852 276.716 1.002  1500
+#          mu.vect sd.vect    2.5%     25%     50%     75%   97.5%  Rhat n.eff
+# b1         2.156  10.191 -18.143  -4.569   2.085   9.022  22.003 1.001  4000
+# b2        -0.406   1.266  -2.906  -1.265  -0.373   0.419   2.061 1.001  4000
+# b3       -40.428  26.908 -96.024 -58.060 -40.351 -22.395  11.220 1.001  2700
+# b4       308.501  28.348 253.075 289.747 308.563 327.221 363.598 1.001  4000
+# b5        80.985  23.082  33.622  66.062  81.784  96.441 125.030 1.001  4000
+# deviance 269.384   4.058 263.056 266.473 268.887 271.673 279.300 1.001  4000
 #
 # For each parameter, n.eff is a crude measure of effective sample size,
 # and Rhat is the potential scale reduction factor (at convergence, Rhat=1).
 #
 # DIC info (using the rule, pD = var(deviance)/2)
-# pD = 7.6 and DIC = 275.2
+# pD = 8.2 and DIC = 277.6
 # DIC is an estimate of expected predictive error (lower deviance is better).
-plot(j1)
+
+## Stepwise-reduced variables:
+model2<-"
+model {
+    for (i in 1:n) {
+        Time[i] ~ dnorm(Time.hat[i], tau)
+        Time.hat[i] <- a + b2 * Temp.final[i] + b4 * Type[i] + b5 * Volume.cups[i]
+    }
+
+    a  ~ dnorm(0, .00001)
+
+    b2 ~ dnorm(0, .00001)
+    b4 ~ dnorm(0, .00001)
+    b5 ~ dnorm(0, .00001)
+
+    tau <- pow(sigma, -2)
+    sigma ~ dunif(0, 100)
+}
+"
+j2 <- with(boiling, jags(data=list(n=nrow(boiling),Time=Time, Temp.final=Temp.final,
+                                   Type=Type, Volume.cups=Volume.cups),
+                         parameters.to.save=c("b2", "b4", "b5"), model.file=textConnection(model2),
+                         n.chains=4, n.iter=100000))
+j2
+#          mu.vect sd.vect    2.5%     25%     50%     75%   97.5%  Rhat n.eff
+# b2         1.830   0.941  -0.140   1.235   1.875   2.474   3.594 1.001  4000
+# b4       302.778  27.696 246.532 285.082 303.193 321.338 355.959 1.001  4000
+# b5        90.526  22.306  46.052  75.869  90.848 105.883 133.368 1.001  4000
+# deviance 268.859   4.767 261.564 265.238 268.276 271.854 279.749 1.001  4000
+# ...
+# DIC info (using the rule, pD = var(deviance)/2)
+# pD = 11.4 and DIC = 280.2
+# DIC is an estimate of expected predictive error (lower deviance is better).
 ~~~
 
-http://thesweethome.com/reviews/the-best-home-kettle/
+The point-estimates are similar but pulled towards zero, as expected of noninformative priors.
+With a Bayesian analysis, we can ask directly, "what is the probability that the difference stove-top vs electric (`b4`) is >0?"
+A plot of the posterior samples shows that no sample is ≤0, so the probability that electric and stove-top differs is ~100%, which is comforting to know.
+
+Measurement-error for Temp.final; we need to define a latent variable (`true.Temp.final`) which has our usual noninformative prior, but then we define how precise our measurement is (`tau.Temp.final`) by taking our two-degree estimate, converting it into units of standard deviations of the Temp.final data (`2/14.093631`), and then converting to the 'precision' unit (exponentiation followed by division):
+
+~~~{.R}
+model3<-"
+model {
+    for (i in 1:n) {
+        true.Temp.final[i] ~ dnorm(0, .00001)
+        Temp.final[i] ~ dnorm(true.Temp.final[i], tau.Temp.final)
+
+        Time[i] ~ dnorm(Time.hat[i], tau)
+        Time.hat[i] <- a + b2 * Temp.final[i] + b4 * Type[i] + b5 * Volume.cups[i]
+    }
+    a  ~ dnorm(0, .00001)
+
+    b2 ~ dnorm(0, .00001)
+    b4 ~ dnorm(0, .00001)
+    b5 ~ dnorm(0, .00001)
+
+    sigma ~ dunif(0, 100)
+    tau <- pow(sigma, -2)
+
+    tau.Temp.final <- 1 / pow((2/14.093631), 2)
+}
+"
+j3 <- with(boiling, jags(data=list(n=nrow(boiling), Time=Time, Temp.final=Temp.final,
+                                   Type=Type, Volume.cups=Volume.cups),
+                         parameters.to.save=c("b2", "b4", "b5"), model.file=textConnection(model3),
+                         n.chains=4, n.iter=100000))
+j3
+#          mu.vect sd.vect    2.5%     25%     50%     75%   97.5%  Rhat n.eff
+# b2         1.843   0.936  -0.106   1.238   1.889   2.497   3.570 1.001  4000
+# b4       303.132  27.966 248.699 285.056 302.651 321.256 359.027 1.001  2900
+# b5        89.503  21.985  43.631  75.713  90.076 104.306 130.206 1.001  4000
+# deviance 242.944   8.204 228.833 237.013 242.222 248.095 260.670 1.001  2500
+# ...
+# DIC info (using the rule, pD = var(deviance)/2)
+# pD = 33.6 and DIC = 276.6
+# DIC is an estimate of expected predictive error (lower deviance is better).
+~~~
+
+In this case, ±2° degrees is precise enough, and the Temp.final variable just one of 3 variables used, that it seems to not make a big difference.
+
+Another variable is how much water was in kettle. While I tried to measure as evenly as possible and shake out each kettle, I couldn't say it was hugely exact. There could easily have been a 5% difference between the kettles (and the standard deviation of the cups is not that small, it's 0.653). So we'll add that as a measurement error too
+
+~~~{.R}
+model4<-"
+model {
+    for (i in 1:n) {
+        true.Temp.final[i] ~ dnorm(0, .00001)
+        Temp.final[i] ~ dnorm(true.Temp.final[i], tau.Temp.final)
+
+        true.Volume.cups[i] ~ dnorm(0, .00001)
+        Volume.cups[i] ~ dnorm(true.Volume.cups[i], tau.Volume.cups)
+
+        Time[i] ~ dnorm(Time.hat[i], tau)
+        Time.hat[i] <- a + b2 * Temp.final[i] + b4 * Type[i] + b5 * Volume.cups[i]
+    }
+
+    a  ~ dnorm(0, .00001)
+
+    b2 ~ dnorm(0, .00001)
+    b4 ~ dnorm(0, .00001)
+    b5 ~ dnorm(0, .00001)
+
+    sigma ~ dunif(0, 100)
+    tau <- pow(sigma, -2)
+
+    tau.Temp.final  <- 1 / pow((2/14.093631),       2)
+
+    tau.Volume.cups <- 1 / pow((0.05/0.6538625482), 2)
+}
+"
+j4 <- with(boiling, jags(data=list(n=nrow(boiling), Time=Time, Temp.final=Temp.final,
+                                   Type=Type, Volume.cups=Volume.cups),
+                         parameters.to.save=c("b2", "b4", "b5"), model.file=textConnection(model4),
+                         n.chains=4, n.iter=600000))
+j4
+#          mu.vect sd.vect    2.5%     25%     50%     75%   97.5%  Rhat n.eff
+# b2         1.832   0.962  -0.213   1.210   1.885   2.488   3.603 1.001  4000
+# b4       302.310  27.773 245.668 284.605 302.509 320.646 355.748 1.001  4000
+# b5        89.655  21.768  44.154  75.561  90.428 104.743 129.892 1.002  2100
+# deviance 188.133  10.943 169.013 180.519 187.413 195.102 211.908 1.001  4000
+# ...
+# DIC info (using the rule, pD = var(deviance)/2)
+# pD = 59.9 and DIC = 248.0
+~~~
+
+While the DIC seems to have improved, the estimates look mostly the same.
+In this case, it seems that the variables are precise enough (measurement-errors small enough) that adjusting for them doesn't change the results too much
+
+<!-- http://thesweethome.com/reviews/the-best-home-kettle/ -->

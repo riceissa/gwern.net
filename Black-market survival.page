@@ -121,6 +121,7 @@ Tochka       FALSE       2015-01-30            TRUE            FALSE    `tochka3
 Crypto                   2015-02-14            TRUE            FALSE    `cryptomktgxdn2zd.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE            custom     TRUE   TRUE  0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2vvhtc/crypto_market/)
 "less restrictive"
 Bloomsfield              2014-02-03            TRUE            FALSE    `spr3udtjiegxevzt.onion` TRUE     FALSE TRUE     FALSE    FALSE    FALSE            Bitwasp                 0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2umdcy/bloomsfield/) <!-- claims to have started much earlier than Reddit post: "Cool, currently we are have uptime from 25. December 2014" -->
+Kiss                     2014-02-19            TRUE            FALSE    `kissmpg5zave56f4.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE            custom     FALSE  FALSE 0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2vo5qi/kiss_marketplace/); forum: `6bssxspijk7n2ioh.onion`
 
 See also [DeepDotWeb's list](http://www.deepdotweb.com/2013/10/28/updated-llist-of-hidden-marketplaces-tor-i2p/ "Updated: List of Hidden Marketplaces (Tor & I2P)") ([changelog](http://www.deepdotweb.com/hidden-marketplace-list-changelog/)), the [DNM market list](http://www.reddit.com/r/DarkNetMarkets/wiki/index/sidebar), and the [Hidden Wiki](/docs/sr/2014-08-30-hiddenwiki-comparisiondarknetmarkets.mht) (last updated 30 August 2014).
 
@@ -229,7 +230,6 @@ Set-Cookie: csrf_c=bfcdeec846a25bcc27bc9248ceb3c019; expires=Thu, 19-Feb-2015 21
 Set-Cookie: cisession=cf7f68fd3749ec68e646bd26123bdf3f3a9b33f47c08bc8d2b5e8c2104fc9a3c28e1eddb6ecb949eb6992c7b8b19f3a408a54ba23e4d303a93b1e4052f10828aoqgwc8oaYIO%2FAaZcDF49moaMDRa%2Bz05mI5iC2fl27MGh4qwPycF6O0%2BZlYuCd3v0PJ7IrkznyEOg67p0PzYbzwU9KvrRqXAuuiXdIODTsVpzoexvwv4fNvQKUYwHdiZ5Em7ccHmE%2FPwSfrFx7k2YtT415cxv%2F%2BLiiP8oDlva1AEOniDS3bdc9LnT7I%2BjdtgENLT1x5bY2Z4hmRv0QtDK%2FB9V0PG6f7ex98UzVb%2FWt8r70C8a%2FI0fCHBkxAV0rqcV; expires=Thu, 19-Feb-2015 21:14:41 GMT; Max-Age=7200; path=/; httponly
 Set-Cookie: cisession=8059ae26dba4d197e7ffc030ba4911900ef3a16822240027d4d0d2107a334c79dc13d14aa62a5fc66e8a6ec6cfb711ea199b8d7ba74f66e77f66212a43429c56tktGz9ekedHDJXD%2BQq8l4rs0KA4l6WWgCiwD0GZkskEglQ%2FHhDwHLFS5yKxhy6bPMIW06k%2BJunLmCOKiIZr4nfOt6MbBRgymgZkwL8Se5L%2B9V2we4VU%2B%2Br5%2BgcInPlIjd8UMw5FqigfSkXzQWUJ%2F23uAI8gd0%2Bpho2oz9NoVFn7u6kPw1bhrd6O3zRamIspYfvnkR1bgCIdDGPmQZueoaxnaqYIUJ8SATPCbEvVK3HywQpEJ%2FGg4y3nUx4XZHrA%2Bfw1iecJB7ROu6F2dkaaNNFL2pwVeP4F7SMzLZt6uWDY%3D; expires=Thu, 19-Feb-2015 21:14:41 GMT; Max-Age=7200; path=/; httponly
 Content-Type: text/html -->
-<!-- Kiss Marketplace https://www.reddit.com/r/DarkNetMarkets/comments/2vo5qi/kiss_marketplace/ forum: 6bssxspijk7n2ioh.onion; carding: yes (counterfeit currency); guns: no (not open as of 19 February 2015) -->
 <!-- Panacea: down, hacked? went down during 12 February 2015, still down as of 19 February 2015 -->
 
 # Analysis

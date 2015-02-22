@@ -476,7 +476,7 @@ So I collected some data and compared them directly.
 ### Experiment
 
 My electric kettle is a ["T-fal BF6138US Balanced Living 1-Liter 1750-Watt Electric Mini Kettle"](http://www.amazon.com/T-fal-BF6138US-Balanced-1750-Watt-Electric/dp/B0086UJQN8/), plugged into a normal electrical socket.
-The stove-top is a generic old metal kettle with a copper-clad bottom (it may have been intended to be a coffee percolator, given the shape, but it works well as a kettle) on a small resistance-heating coil stove burner (why not one of the 2 large coils? because the kettle bottom doesn't cover the full surface area of the large burners); the stove is some very old small Gaffers-Sattler 4-burner stove/oven (no model name or number I could find in an accessible spot, but I'd guess it's >=30 years old).
+The stove-top is a generic old metal kettle with a copper-clad bottom (it may have been intended to be a coffee percolator, given the shape, but it works well as a kettle) on a small resistance-heating coil stove burner (why not one of the 2 large coils? because the kettle bottom doesn't cover the full surface area of the large burners); the stove is some very old small Gaffers-Sattler 4-burner stove/oven (no model name or number I could find in an accessible spot, but I'd guess it's >30 years old).
 
 I began comparing them on the afternoon of 16 February 2015; the sea-level kitchen was at a warm 77.1° Fahrenheit & 49% relative humidity (as measured by my Kongin temperature/humidity datalogger).
 For measuring water volume, I used an ordinary 1-cup kitchen measuring cup (~235ml).
@@ -651,7 +651,7 @@ The signs are also appropriate and coefficients sensible: each additional degree
 
 We can plot the electric and stove-top data separately as 3D plots with residuals to see if any big issues jump out:
 
-![2 3D plots: time to boil vs water volume vs final temperature; split by electric vs stove-top kettle, with residua/deviation from linear plane/fit](/wiki/images/tea-kettle-electricvstove.png)
+![2 3D plots: time to boil vs water volume vs final temperature; split by electric vs stove-top kettle, with residuals/deviations from linear plane/fit](/images/tea-kettle-electricvstove.png)
 
 ~~~{.R}
 library(scatterplot3d)
@@ -673,7 +673,8 @@ png(file="~/wiki/images/tea-kettle-electricvstove.png", width = 680, height = 80
 invisible(dev.off())
 ~~~
 
-It looks *pretty* good but towards the edges the points seem systematically high or low, suggesting there might be a bit of nonlinearity.
+It looks *pretty* good.
+But in general towards the edges the points seem systematically high or low, suggesting there might be a bit of nonlinearity, and the fit seems to be worse for the stove-top results, suggesting that's noisier than electric (this could be due either to slight differences in setting the analogue temperature dial on the stove or perhaps differences in positioning on the burner coil).
 
 #### Beta regression
 
@@ -784,16 +785,19 @@ model {
         Time.hat[i] <- a + b1*Test[i] + b2*Temp.final[i] + b3*Setting[i] + b4*Type[i] + b5*Volume.cups[i]
     }
 
+    # intercept
     a  ~ dnorm(0, .00001)
 
+    # coefficients
     b1 ~ dnorm(0, .00001)
     b2 ~ dnorm(0, .00001)
     b3 ~ dnorm(0, .00001)
     b4 ~ dnorm(0, .00001)
     b5 ~ dnorm(0, .00001)
 
-    tau <- pow(sigma, -2)
+    # convert SD to 'precision' unit that JAGS's distributions use instead
     sigma ~ dunif(0, 100)
+    tau <- pow(sigma, -2)
 }
 "
 j1 <- with(boiling, jags(data=list(n=nrow(boiling), Time=Time, Temp.final=Temp.final,
@@ -900,7 +904,9 @@ j3
 
 In this case, ±2° degrees is precise enough, and the Temp.final variable just one of 3 variables used, that it seems to not make a big difference.
 
-Another variable is how much water was in kettle. While I tried to measure as evenly as possible and shake out each kettle, I couldn't say it was hugely exact. There could easily have been a 5% difference between the kettles (and the standard deviation of the cups is not that small, it's 0.653). So we'll add that as a measurement error too
+Another variable is how much water was in kettle. While I tried to measure cups as evenly as possible and shake out each kettle after rinsing, I couldn't say it was hugely exact.
+There could easily have been a 5% difference between the kettles (and the standard deviation of the cups is not that small, it's 0.653).
+So we'll add that as a measurement error too:
 
 ~~~{.R}
 model4<-"

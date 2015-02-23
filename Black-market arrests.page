@@ -33,17 +33,22 @@ The sections are split up by market, then by country.
 
 Name                  Pseudonym       Role    Market      Seller                        Country     State      Product                        Arrest date Known date    Notes
 --------------------- --------------- ------- ----------- ----------------------------- ----------- ---------- ------------------------------ ----------- ----------    -----
+David Handel          davidd          seller  Silk Road 1                               USA         Ohio       methylone, 2C-E, 2C-C          2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
+Ryan Gustafson        Willy.Clock     seller  Agora                                     Uganda                 counterfeit currency           2014-12-11  2014-12-20
 Austin Frembling                      buyer   Agora                                     USA         California MDMA                           2015-01-15  2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
-David Handel          davidd          seller  Silk road 1                               USA         Ohioa      methylone, 2C-E, 2C-C          2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
 
 # Confirmed
 ## Agora
 
+<!-- Agora: https://www.reddit.com/r/DarkNetMarkets/comments/2q3kot/willyclock_agora_counterfeit_seller_arrest/ -->
+
+On 11 December 2014, the American [Ryan Andrew Gustafson was arrested in Uganda](http://www.nytimes.com/aponline/2014/12/18/us/ap-us-counterfeiting-uganda.html "Feds: Uganda-Based Man Counterfeited $2M in Cash") for counterfeiting money ([press release](http://www.justice.gov/opa/pr/criminal-charges-filed-against-us-citizen-connection-multi-million-dollar-international-cyber); [complaint](/docs/sr/2014-12-17-agora-willyclock-complaint.pdf); [docket](/docs/sr/2014-12-22-pacer-willyclock.maff); [Agora forums](http://lacbzxobeprssrfx.onion/index.php/topic,15752.msg3148560.html#msg3148560)); he was the seller "Willy.Clock" who had sold on Evolution until banned and then Agora & his own site.
+He had been uncovered after an American user of his counterfeit currency was detected, the packages sent by Willy.Clock profiled, his fingerprints found, the reshipper located in Uganda, and then an undercover deal set up.
 
 In January 2015, [Austin Frembling was arrested](http://www.fresnobee.com/2015/02/20/4389411/fresno-man-indicted-for-possession.html) in Fresno, California, for buying $3k of MDMA off Agora from a Canadian seller ([press release](http://www.justice.gov/usao/cae/news/docs/2015/2015_02/02-19-15Frembling.html); [complaint](/docs/sr/2015-frembling-caed-03307884002.pdf); [docket](/docs/sr/2015-02-22-agora-fremblingdocket.maff); [previous record](http://mugshot-record-search.com/mugshot/CA/Fresno-County-Sheriff-Office/2013-Feb-07/4023889/BRYAN-FREMBLING)).
 His package was intercepted by Customs (possibly due to inadequate stealth), then a controlled delivery was done to his PO box.
 
-<!-- Agora: https://www.reddit.com/r/DarkNetMarkets/comments/2q3kot/willyclock_agora_counterfeit_seller_arrest/ -->
+
 
 ## Silk Road 1
 

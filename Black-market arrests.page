@@ -34,13 +34,14 @@ The sections are split up by market, then by country.
 Name                  Pseudonym       Role    Market      Seller                        Country     State      Product                        Arrest date Known date    Notes
 --------------------- --------------- ------- ----------- ----------------------------- ----------- ---------- ------------------------------ ----------- ----------    -----
 David Handel          davidd          seller  Silk Road 1                               USA         Ohio       methylone, 2C-E, 2C-C          2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
+Amit Sand                             buyer   BMR                                       Israel                 gun                            2014-01-08  2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
+                                      buyer                                             Israel                 marijuana                      2014-01-12  2014-01-14
 Ryan Gustafson        Willy.Clock     seller  Agora                                     Uganda                 counterfeit currency           2014-12-11  2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
 Austin Frembling                      buyer   Agora                                     USA         California MDMA                           2015-01-15  2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
 
+
 # Confirmed
 ## Agora
-
-<!-- Agora: https://www.reddit.com/r/DarkNetMarkets/comments/2q3kot/willyclock_agora_counterfeit_seller_arrest/ -->
 
 On 11 December 2014, the American [Ryan Andrew Gustafson was arrested in Uganda](http://www.nytimes.com/aponline/2014/12/18/us/ap-us-counterfeiting-uganda.html "Feds: Uganda-Based Man Counterfeited $2M in Cash") for counterfeiting money ([press release](http://www.justice.gov/opa/pr/criminal-charges-filed-against-us-citizen-connection-multi-million-dollar-international-cyber); [complaint](/docs/sr/2014-12-17-agora-willyclock-complaint.pdf); [docket](/docs/sr/2014-12-22-pacer-willyclock.maff); [Agora forums](http://lacbzxobeprssrfx.onion/index.php/topic,15752.msg3148560.html#msg3148560)); he was the seller "Willy.Clock" who had sold on Evolution until banned and then Agora & his own site.
 He had been uncovered after an American user of his counterfeit currency was detected, the packages sent by Willy.Clock profiled, his fingerprints found, the reshipper located in Uganda, and then an undercover deal set up.
@@ -48,15 +49,15 @@ He had been uncovered after an American user of his counterfeit currency was det
 In January 2015, [Austin Frembling was arrested](http://www.fresnobee.com/2015/02/20/4389411/fresno-man-indicted-for-possession.html) in Fresno, California, for buying $3k of MDMA off Agora from a Canadian seller ([press release](http://www.justice.gov/usao/cae/news/docs/2015/2015_02/02-19-15Frembling.html); [complaint](/docs/sr/2015-frembling-caed-03307884002.pdf); [docket](/docs/sr/2015-02-22-agora-fremblingdocket.maff); [previous record](http://mugshot-record-search.com/mugshot/CA/Fresno-County-Sheriff-Office/2013-Feb-07/4023889/BRYAN-FREMBLING)).
 His package was intercepted by Customs (possibly due to inadequate stealth), then a controlled delivery was done to his PO box.
 
+## Black Market Reloaded
+### Israel
 
+On ~8 January 2014, the [Israeli man Amit Sand was arrested for buying a gun](http://posta.co.il/index.php/widgetkit/%D7%9E%D7%93%D7%95%D7%A8%D7%99%D7%9D-2/%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%97%D7%A9%D7%91/1604-%D7%90%D7%A7%D7%93%D7%97-%D7%94%D7%93%D7%90%D7%A8%D7%A7%D7%A0%D7%98-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%9F "אקדח הדארקנט הראשון: בחבילה שהגיעה לסניף דואר בתל אביב התגלה אקדח מפורק שהוסלק בתוך מגף * מזמין החבילה הודה כי רכש את האקדח ברשת האינטרנט הסודית באמצעות המטבע הדיגיטלי ביטקוין, ובמשטרה תוהים: האם נחשפה דרך חדשה להברחת אמצעי לחימה לישראל?") off a black-market seller for ~$1550 in bitcoins; the first package of parts (mailed 18 December 2013) was discovered by Customs and allowed to go through, and he was arrested after picking up the final second package.
+I assign this buy to BMR, since while BMR had closed a week or two before the first package was mailed, the deal could have been agreed upon earlier, and no other major market allowed guns at the time; this may be like the Korff case, where the purchase (ricin, in his case) began on BMR but continued off-market after BMR closed.
 
 ## Silk Road 1
-
-<!-- 2 unknowns: http://www.deepdotweb.com/2014/05/07/interview-the-life-of-an-online-drug-vendor/#comment-95767 -->
-
 ### Australia
 
-<!-- http://www.reddit.com/r/DarkNetMarkets/comments/24zt2o/ripefreefly_busted_or_scam_what_do_i_do/ ? -->
 <!-- 'TheProfessionals', possible MDMA bust http://silkroad5v7dywlc.onion/index.php?topic=39773.0 also http://www.canberratimes.com.au/act-news/man-accused-of-importing-drugs-through-post-office-boxes-20140210-32cm5.html -->
 <!-- unknown seller arrest, pre-March-2014? https://pay.reddit.com/r/DarkNetMarkets/comments/20akta/police_asking_for_statement/cg1i7nv -->
 
@@ -126,6 +127,12 @@ On 14 December 2013, the French vendor "WalkaBoot" (marijuana & amphetamines) [w
 ### Ireland
 
 On [20 December 2013](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR.php) ([indictment](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR/Jones,%20Andrew,%20et%20al%20\(Silk%20Road\)%20Indictment.pdf)), the former SR administrator/moderator/employee "Libertas" (also of Silk Road 2) was [arrested in Wicklow, Ireland](http://www.rte.ie/news/business/2013/1220/494111-silk-road-arrest/ "Former Silk Road administrator arrested in Wicklow") but apparently [made bail & fled](http://www.forbes.com/sites/andygreenberg/2013/12/20/feds-indict-three-more-alleged-employees-of-the-silk-roads-dread-pirate-roberts/ "Feds Indict Three More Alleged Employees Of Silk Road's Dread Pirate Roberts").
+
+<!--
+### Israel
+
+DDW: small buyer, multiple drugs, SR1, convicted
+-->
 
 ### Japan
 
@@ -323,13 +330,23 @@ Bungee54 staff claim two incidents in past year: http://bungee54ft2us2fs.onion/v
 https://www.reddit.com/r/DarkNetMarkets/comments/2l9ap8/bungee54_says_goodbye_good_luck_to_everyone/ -->
 https://www.reddit.com/r/DarkNetMarkets/comments/2looal/bungee54_state_of_operations_update/
 <!-- Interways buyer https://www.reddit.com/r/DarkNetMarkets/comments/2juko5/interways_raid_by_police/ ? -->
-<!-- unknown in Israel http://www.deepdotweb.com/2015/01/14/israeli-teen-arrested/ -->
 <!-- unknown in NJ http://www.towntopics.com/wordpress/2015/01/14/narcotics-task-force-arrest-princeton-man-after-surveillance/ - former user of TMP but busted well after shutdown with fresh orders -->
 <!-- unknown, if at all; 8 UK carders http://www.manchestereveningnews.co.uk/news/greater-manchester-news/gang-sentenced-credit-card-scam-8438268 https://www.reddit.com/r/DarkNetMarkets/comments/2sba70/fraudsters_who_used_stolen_credit_card_details/ -->
 
+## Unknown
+### Israel
+
+An Israeli teen [was arrested ~12 January 2015](http://news.walla.co.il/item/2819632 "חשד: רכש סמים ב'ביטקוין'ומכר אותם בתיכון באשדוד: חבילה שעוררה את חשדם של הבודקים בנתב'ג הכילה מאות גרמים של מריחואנה - והובילה לבן 18 שקיבל יותר מ-10 חבילות של סמים שונים. החשוד למד בשיטוט באינטרנט כיצד לרכוש סמים ברשת 'דארקנט' המוצפנת") ([translation](http://www.deepdotweb.com/2015/01/14/israeli-teen-arrested/)) after a package of marijuana was intercepted by Customs at Ben Gurion Airport; the media coverage specifies he had bought that package & 13 others off the black-markets, but not which one or the seller.
+
 # Unconfirmed
 
-Sending drugs through the mail turns out to be a surprisingly common practice, and there are many cases of people being busted for receiving packages of drugs (particularly with the rise of marijuana legalization in American states), sometimes through online mechanisms (eg Instagram); many are likely unrelated to the black-markets, and some rumors are wrong or flatly made up, but of course, some will turn out to be real.
+Sending drugs through the mail turns out to be a surprisingly common practice, and there are many cases of people being busted for receiving packages of drugs (particularly with the rise of marijuana legalization in American states), sometimes through online mechanisms (eg Instagram); many are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales), but of course, some will turn out to be real.
+
+<!-- 2 unknowns: http://www.deepdotweb.com/2014/05/07/interview-the-life-of-an-online-drug-vendor/#comment-95767 TODO: emailed DDW-->
+
+## Israel
+
+On 5 July 2013, [Israeli police announced 30 arrests](http://www.police.gov.il/articlePage.aspx?aid=1587 "30 נעצרו בחשד שסחרו בסמים מסוכנים ברשת: במהלך החקירה הסמויה ביצעו החוקרים קניות מבוימות מאתרים שונים בהם השתמשו החשודים, לצורך הסחר בסמים"); Google Translate indicates that these arrests were related to online sellers of "dangerous drugs" using the "darknet" and possibly Bitcoins after Israeli law enforcement made undercover purchases, but no market is specified and it seems hard to believe that as many as 30 people could be busted without any notice being taken on SR1/BMR (the main markets in July 2013).
 
 ## NZ
 

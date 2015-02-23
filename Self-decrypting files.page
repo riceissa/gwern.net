@@ -139,6 +139,23 @@ It's hard to see. At least, I haven't thought of anything clever. [Homomorphic e
     Suppose one specifies that the final output is encrypted to a weak key, so one simply has to run the homomorphic system to completion and then put in a little effort to break the homomorphic encryption to get the key which unlocks a file; what stops someone from breaking the homomorphic encryption at the very start, manually examining the running program, and shortcutting to the end result? Of course, one could postulate that what was under the homomorphic encryption was something like a hash-chain where predicting the result is impossible - but then why bother with the homomorphic encryption? Just use that instead!
 2. and in any case, homomorphic encryption as of 2013 is a net computational loss: it takes as much or more time to create such a program as it would take to run the program, and is no good.
 
+# Distributed time-lock systems
+
+[Gregory Maxwell has a February 2013 sketch for](https://en.bitcoin.it/w/index.php?title=User%3AGmaxwell%2Falt_ideas&action=historysubmit&diff=35540&oldid=35539) an altcoin which allows cooperative distributed solving of time-locks (as opposed to solo efforts to tick through a hash-chain):
+
+> POW which turns the distributed computation into ticking for timelock encryption
+>
+> - An infinite sequence of nothing-up-my-sleeve numbers are taken as an infinte sequence of ECC public keys. Searching the pow involves finding distinguished points along a Pollard's rho DLP solution trying to crack the key. When the key is cracked the problem is advanced to the next key.
+> - People can then encrypt messages with all of the keys between now and sometime in the future and network will crack them, achieving a timelock.
+> - Probably incompatible with merged mining and other POW schemes.
+> - Making the difficulty adaptive either makes far in the future messages impossible (because the problem size wouldn't be known long in advance), or requires increasingly big headers as the difficulty would require working on multiple problems concurrently.
+> - The obvious constructions using ECDLP as the asymmetric problem are not progress free.
+
+To explain this idea in a little less jargony form, as best as I understand it: take some standard PRNG; come up with a seed in some publicly acceptable way, such as using the binary expansion of the constant π; define every, say, 100 bits of the output as a public key (with an as-yet-unknown corresponding private key); anyone who wants to timelock a file can encrypt the file using one of these "public keys" and releases the encrypted file to the public as normal; now, people interested in unlocking them ("miners") work on brute-forcing each chunk of 100 bits one by one, and then the messages for that key can be read by anyone; depending on how much computing power is collectively being spent by the miners, you specify intervals by picking a public key X keys in the future (eg if each 100 bit key takes 1 month to crack and you want to delay opening by a year/12 months, then you encrypt your file to the 12th uncracked key).
+Or if you are worried about people 'skipping ahead' and targeting a future key specifically, the protocol could be that each file is encrypted to all successive keys (so it would be an onion of encryption layers: #1(#2(#3(...(#12(plaintext file))))), so it can only be directly attacked by a loner when the first 11 keys have been cracked).
+
+A timelock altcoin could incentivize participation in unlocking files and be more predictable than solo hash-chain files.
+
 ## Vulnerability of one-way functions
 
 As it turns out, ["Time-Lock Puzzles in the Random Oracle Model"](http://people.seas.harvard.edu/~salil/research/timelock.pdf) (Mahmoody, Moran, and Vadhan 2011; [slides](http://www.iacr.org/conferences/crypto2011/slides/01-3-Mahmoody.pdf)) directly & formally analyzes the general power of one-way functions used for time-lock puzzles assuming a [random oracle](!Wikipedia). Unfortunately, they find an opponent can exploit the oracle to gain speedups. Fortunately, the cruder scheme where one 'stores up' computation (repeatedly asking the oracle at inputs based on its previous output) still works under their assumptions:

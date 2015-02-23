@@ -24,11 +24,31 @@ The sections are split up by market, then by country.
 - domestic vs international packages
 -->
 
-# SR
+# Table
+
+- Role: buyer, seller, staff, or market founder/operator; each has distinct risks and LE interest and should be distinguished
+- Market: the black-market a person was most affiliated with or was busted in connection with
+
+    For example, a Silk Road 1 employee working at Silk Road 2 would be classified as SR1-related because he had provided DPR1 his dox and was busted as a consequence of SR1, not because he worked at SR2 when he was arrested; oppositely, a seller like California Cannabis, who had sold on SR1 but was busted after being deanonymized by the undercover agent through the SR2 seller portal, would be classified as SR2-related. And a seller who sold on a market but was busted through his own off-market sales will be marked with the relevant market.
+
+Name                  Pseudonym       Role    Market      Seller                        Country     State      Product                        Arrest date Known date    Notes
+--------------------- --------------- ------- ----------- ----------------------------- ----------- ---------- ------------------------------ ----------- ----------    -----
+Austin Frembling                      buyer   Agora                                     USA         California MDMA                           2015-01-15  2015-02-22    Unknown seller: Going Postal? karmasyndicate? solider?
+
+# Confirmed
+## Agora
+
+
+In January 2015, [Austin Frembling was arrested](http://www.fresnobee.com/2015/02/20/4389411/fresno-man-indicted-for-possession.html) in Fresno, California, for buying $3k of MDMA off Agora from a Canadian seller ([press release](http://www.justice.gov/usao/cae/news/docs/2015/2015_02/02-19-15Frembling.html); [complaint](/docs/sr/2015-frembling-caed-03307884002.pdf); [docket](/docs/sr/2015-02-22-agora-fremblingdocket.maff); [previous record](http://mugshot-record-search.com/mugshot/CA/Fresno-County-Sheriff-Office/2013-Feb-07/4023889/BRYAN-FREMBLING)).
+His package was intercepted by Customs (possibly due to inadequate stealth), then a controlled delivery was done to his PO box.
+
+<!-- Agora: https://www.reddit.com/r/DarkNetMarkets/comments/2q3kot/willyclock_agora_counterfeit_seller_arrest/ -->
+
+## Silk Road 1
 
 <!-- 2 unknowns: http://www.deepdotweb.com/2014/05/07/interview-the-life-of-an-online-drug-vendor/#comment-95767 -->
 
-## Australia
+### Australia
 
 <!-- http://www.reddit.com/r/DarkNetMarkets/comments/24zt2o/ripefreefly_busted_or_scam_what_do_i_do/ ? -->
 <!-- 'TheProfessionals', possible MDMA bust http://silkroad5v7dywlc.onion/index.php?topic=39773.0 also http://www.canberratimes.com.au/act-news/man-accused-of-importing-drugs-through-post-office-boxes-20140210-32cm5.html -->
@@ -64,7 +84,7 @@ A [Launceston, Tasmania man was convicted in 2014](http://www.examiner.com.au/st
 
 The Victorian authorities report [confiscating "several million dollars" in Bitcoin](http://www.theage.com.au/victoria/victoria-state-election-2014/bitcoin-drug-millions-seized-in-victoria-20141015-116bby.html "Bitcoin drug millions seized in Victoria") [in 2013 after a December 2012 search](http://www.smh.com.au/technology/technology-news/australian-authorities-sitting-on-96-million-worth-of-bitcoins-confiscated-from-silk-road-drug-dealer-20141031-11ewk4.html) of Richard Pollard, who sold MDMA/cocaine/ketamine/fentanyl/etc; through online accounts, it seems likely he was ["1StopOz"](http://antilop.cc/sr/users/1stopoz/) who was noted as disappearing before January 2013
 
-## Canada
+### Canada
 
 <!-- http://www.reddit.com/r/DarkNetMarkets/comments/26zwdx/maybe_this_is_to_much_to_ask/chw4d06 possible DMT seller in Calgary, Alberta -->
 
@@ -76,7 +96,7 @@ In May 2012, the high-volume cocaine Canadian seller "moveitnice" mentioned post
 In August 2012, neighbors tipped off Calgary, Alberta police about drugs; the raid also [turned up a garage](https://web.archive.org/web/20120827025357/http://www.calgaryherald.com/news/calgary/Homes+evacuated+police+bust+suspected+drug/7136987/story.html) for producing DMT, and [Shawn Casey was arrested & charged](http://www.calgarysun.com/2012/08/25/dmt-suspected-in-drug-lab "DMT suspected in drug bust").
 He has been identified on [Reddit](https://www.reddit.com/r/SilkRoad/comments/ysm4d/canadian_dmt_vendor_trojan_potentially_busted_in/) & SR1F as the Calgary DMT seller "Trojan".
 
-## England
+### England
 
 There is an anonymous claim of a May 2013 [UK controlled delivery & arrest](http://www.reddit.com/r/SilkRoad/comments/1ewt7k/uk_arrest/).
 A [Reddit user](http://www.reddit.com/user/xxcxcxc) [claims in June 2014](http://www.reddit.com/r/IAmA/comments/27m64o/i_am_one_of_the_first_people_to_be_charged_with/?sort=old) to have been importing MDMA into the UK from the Netherlands off SR1 for personal consumption & resale through friends for ~6 months; sometime before 2013<!-- 'worst 18 months', posted 06 2014 --> a package of 100 pills was detected by customs and he accepted delivery, leading to his house being searched; he was then convicted (in large part due to text messages on his phone & emails on his computer) and given a suspended sentence.
@@ -89,23 +109,23 @@ Ordering a reship on a load of pills from the Netherlands to his house, the firs
 ...They came on the forums after they'd been busted and said what had happened but I think all their posts got deleted soon after. They ordered (I think it was) 500, yellow supermans, don't which vendor and they probably didn't use their vendor account. He definitely ordered to the same address he lived and vended from.
 Customs didn't do anything about the first package but when they caught the reship they raided him. -->
 
-## France
+### France
 
 On 14 December 2013, the French vendor "WalkaBoot" (marijuana & amphetamines) [was arrested by Customs](http://www.bfmtv.com/societe/info-bfmtv-loire-un-cyberdealer-interpelle-premiere-france-674582.html "INFO BFMTV - Loire: un cyberdealer interpellé, première en France: Depuis une ferme isolée, il vendait des produits stupéfiants sur Internet en utilisant un routeur indétectable. Un mode opératoire inédit en France. Interpellé samedi dernier, il a été présenté mardi devant la justice").
 
-## Germany
+### Germany
 
 4 people were [arrested in Germany](/docs/sr/2013-07-09-germany.mht "Title: Big Germany bust. Arrest of Silkroad vendor a big maybe. Post by: DealerOfDrugs on July 09, 2013, 02:40 pm") in July 2013, apparently by tracing another drug seller's supplier with repeated orders which were sent from the same spot by the couriers (and were easily busted), and then to that SR seller-group (possibly "AfterHour") & possibly payments via mail (German coverage: [1](http://www.spiegel.de/panorama/ermittler-zerschlagen-internationalen-drogenring-a-910221.html "Internationaler Drogenring: Ermittler nehmen vier Verdächtige fest"), [2](http://www.welt.de/regionales/muenchen/article117869257/Fahnder-zerschlagen-Bitcoin-Drogenring-DarkNet.html "Fahnder zerschlagen Bitcoin-Drogenring DarkNet: Über eine verschlüsselte Plattform im Internet hat eine Bande mit Drogen gehandelt. 'Hochprofessionell und nahezu perfekt', wie ein Ermittler sagt. Den Fahndern gingen die Täter trotzdem ins Netz."), [3](http://www.kleinezeitung.at/nachrichten/chronik/3352090/globaler-drogenring-zerschlagen.story "Globaler Drogenring zerschlagen: In einer konzertierten Aktion haben Fahnder in Deutschland einen internationalen Drogenhändler-Ring zerschlagen. Auf die Spur des Rings kamen ursprünglich Ermittler in Wien und Salzburg, als vor ziemlich genau einem Jahr vier Verdächtige festgenommen wurden."), [4](http://www.sueddeutsche.de/digital/trotz-verschluesselter-absprachen-im-internet-rauschgiftfahnder-zerschlagen-drogenring-1.1717426 "Rauschgiftfahnder zerschlagen Drogenring: 'Das sind intelligente Computerfreaks, technisch versiert': Über eine verschlüsselte Plattform im Internet hat eine Bande mit Drogen gehandelt - die Fahnder fassten die Täter dennoch."); [partial translation](http://www.reddit.com/r/DarkNetMarkets/comments/2c8bjc/wont_tracking_numbers_just_reveal_the_approximate/cjcx7ch)).
 
-## Ireland
+### Ireland
 
 On [20 December 2013](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR.php) ([indictment](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR/Jones,%20Andrew,%20et%20al%20\(Silk%20Road\)%20Indictment.pdf)), the former SR administrator/moderator/employee "Libertas" (also of Silk Road 2) was [arrested in Wicklow, Ireland](http://www.rte.ie/news/business/2013/1220/494111-silk-road-arrest/ "Former Silk Road administrator arrested in Wicklow") but apparently [made bail & fled](http://www.forbes.com/sites/andygreenberg/2013/12/20/feds-indict-three-more-alleged-employees-of-the-silk-roads-dread-pirate-roberts/ "Feds Indict Three More Alleged Employees Of Silk Road's Dread Pirate Roberts").
 
-## Japan
+### Japan
 
 A man was [arrested for importing 50g of a "stimulant"](http://www.nationmultimedia.com/breakingnews/Japan-makes-Bitcoin-linked-drug-arrest-police-medi-30233259.html) in May 2014.
 
-## Netherlands
+### Netherlands
 
 In September 2013, [6 Dutchmen](http://www.mickvanwely.nl/de-xtc-bende-van-sinterklaas/) were arrested for MDMA sales on SR; the arrests stemmed from a car search turning up thousands of pills in 22 November 2012 and then a raid of their manufacturing location 5 April 2013 (one commenter [speculates](http://www.reddit.com/r/SilkRoad/comments/1lkm8i/dutch_vendors_selling_xtc_packaged_in_church_dvds/cc0ef4v) they were the missing MDMA seller "MedicalM").
 
@@ -115,7 +135,7 @@ The MDMA seller "SuperTrips" ([profile](http://antilop.cc/sr/vendors/24bb54ca7e.
 US Customs intercepted >100 packages mailed by SuperTrips, built up a profile, found fingerprints on the packages, checked the Netherlands's fingerprint databases & found a match, detained SuperTrips when he attempted to enter the USA, seized & searched his laptop's files (illustrating the lack of civil rights at borders), he admitted selling during an interview, and eventually reached a plea agreement.
 His arrest was rumored on forums, and DPR2 of SR2 [specifically alluded to SuperTrip's arrest](http://arstechnica.com/tech-policy/2014/02/dread-pirate-roberts-2-0-an-interview-with-silk-roads-new-boss/) in late 2013/early 2014 that "it was quite boring the third time law enforcement decided to use the 'SuperTrips' moniker and claiming to be him as a free man, when I know just as well as ICE where he is now", although the case was only publicly announced in April 2014.
 
-## New Zealand
+### New Zealand
 
 A New Zealand Customs officer who likely used SR was charged with possessing & "supplying" methamphetamine but this "was uncovered during police inquiries into another crime", with the resolution unclear. A young NZer's MDMA was confiscated by Customs and his house visited, whereupon he admitted guilt to the officers and unsurprisingly was [arrested & convicted](http://www.stuff.co.nz/southland-times/news/court/7958999/Drugs-ordered-on-web "Drugs ordered on web"). What seems to be a third NZer was [sentenced to 18 months probation](http://www.nbr.co.nz/article/chch-man-sentenced-after-buying-amazon-illegal-drugs-website-ck-135659 "Christchurch man sentenced after buying from 'Amazon of illegal drugs' website"). A NZer was arrested [in April 2013](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10879570 "Teen arrested for importing, ordering drugs online") over multiple very large orders from an online site, which may or may not have been SR. That article estimates 52m items passing through Customs in 2012 with 1.4k intercepted as drugs; an earlier [NZ article](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10826287 "Online drug trade triggers high alert") claimed 80 interceptions a month with 7 arrests January-July 2012 or 1 arrest a month (suggesting each interception has a risk of leading to an arrest of ~1/80; the risk per order then depends on how many of the 52m items were drug packages). An [August 2012 article](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10826287 "Online drug trade triggers high alert") elaborates on those figures:
 
@@ -133,13 +153,13 @@ In December 2014, the SR1 MDMA/marijuana buyers Daniel Wayne Fowler & Lisa Marie
 
 December 2014 also saw the SR2 buyer Andrew Graham Hodgson sentenced for importing methamphetamine, marijuana & NBOMe; his mail had been intercepted from July to September 2014 ([1](http://www.stuff.co.nz/national/crime/63743171/five-arrests-in-500k-meth-sting), [2](http://www.stuff.co.nz/national/crime/63857494/silk-road-leads-to-home-detention)).
 
-## Sweden
+### Sweden
 
 [2 Swedish men](http://www.reddit.com/r/SilkRoad/comments/1nz4uo/two_swedes_arrested_for_suspicion_of_selling_weed/) (the seller "SweExpress"), were arrested 8 October 2013 for selling marijuana; [two](http://www.reddit.com/r/SilkRoad/comments/1o03li/police_are_rounding_up_former_silk_road_drug/ccnobzx) [users](http://www.reddit.com/r/SilkRoad/comments/1nz4uo/two_swedes_arrested_for_suspicion_of_selling_weed/ccnmhh9) on Reddit noted that SweExpress ceased mailing orders a week before the SR raid.
 
 <!-- "there's been several released court documents as of late regarding a Swedish vendor called SweExpress who was roughly in the top 4 % before the original Silk Road went bust, yet searching these forums no one is talking about that. I've been considering translating some of the court documents but I've simply been too busy to do so, the case is discussed in a major Swedish forum called Flashback over at the topic Helsingborgare, 29 och 34 år, häktade för att köpa/sälja på Silk Road: https://www.flashback.org/t2234859 One interesting tidbit from the documents is the fact law enforcement were staking out the postal center used by the two involved in the operation, thus managing to track over 100 packages and subsequent names and addresses." -->
 
-## USA
+### USA
 
 <!-- http://www.reddit.com/user/yinyang4 http://www.reddit.com/r/SilkRoad/comments/23fsf1/got_arrested_25cnbome_not_lsd/ VA April 2014 -->
 <!-- http://www.reddit.com/r/DarkNetMarkets/comments/24dafo/this_may_be_a_long_shot_but_has_anyone_heard_from/ -->
@@ -293,7 +313,6 @@ Bungee54 staff claim two incidents in past year: http://bungee54ft2us2fs.onion/v
 https://www.reddit.com/r/DarkNetMarkets/comments/2l9ap8/bungee54_says_goodbye_good_luck_to_everyone/ -->
 https://www.reddit.com/r/DarkNetMarkets/comments/2looal/bungee54_state_of_operations_update/
 <!-- Interways buyer https://www.reddit.com/r/DarkNetMarkets/comments/2juko5/interways_raid_by_police/ ? -->
-<!-- Agora: https://www.reddit.com/r/DarkNetMarkets/comments/2q3kot/willyclock_agora_counterfeit_seller_arrest/ -->
 <!-- unknown in Israel http://www.deepdotweb.com/2015/01/14/israeli-teen-arrested/ -->
 <!-- unknown in NJ http://www.towntopics.com/wordpress/2015/01/14/narcotics-task-force-arrest-princeton-man-after-surveillance/ - former user of TMP but busted well after shutdown with fresh orders -->
 <!-- unknown, if at all; 8 UK carders http://www.manchestereveningnews.co.uk/news/greater-manchester-news/gang-sentenced-credit-card-scam-8438268 https://www.reddit.com/r/DarkNetMarkets/comments/2sba70/fraudsters_who_used_stolen_credit_card_details/ -->

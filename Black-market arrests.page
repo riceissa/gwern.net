@@ -24,6 +24,20 @@ The sections are split up by market, then by country.
 - domestic vs international packages
 -->
 
+<!-- estimating risk: how many sellers, buyers, transactions?
+If you're curious, you could look at known sales/users numbers for SR1 and try to extrapolate some good guesses, from the Ulbricht indictment and from Christin's paper https://www.andrew.cmu.edu/user/nicolasc/publications/Christin-WWW13.pdf
+
+The indictment/complaint says that Feb 2011 - July 2013, there were 957k total accounts, 1.229m txs from 147k buyer accounts, 9.5m btc sales volume; Christin says among other things that "Over the measurement interval February 3, 2012– July 24, 2012, we indeed found 1,239 distinct sellers".
+
+So quickly dividing by month, that gives:
+
+total accounts: 33k/month; buyer accounts: 5.1k/month; new sellers: 73/month; transactions: 42k/month; turnover: 327k/month
+
+I haven't finished compiling into a table, but let's say that for SR1 there were >30 seller arrests, and SR1 lasted from February 2011 to September 2013 (counting only full months) or 32 months. Then there were 2336 unique sellers (73*32) of which >30 were arrested for a risk of >0.012 or >1.3%.
+
+Similarly, if there were >60 buyer arrests (I double because there seem to be more buyer arrests than seller arrests, they just tend to take plea deals and not be publicized), then the same calculation would go there are 163200 buyers of which >60 were arrested for a risk of >0.04%
+-->
+
 # Table
 
 - Role: buyer, seller, staff, or market founder/operator; each has distinct risks and LE interest and should be distinguished
@@ -31,23 +45,27 @@ The sections are split up by market, then by country.
 
     For example, a Silk Road 1 employee working at Silk Road 2 would be classified as SR1-related because he had provided DPR1 his dox and was busted as a consequence of SR1, not because he worked at SR2 when he was arrested; oppositely, a seller like California Cannabis, who had sold on SR1 but was busted after being deanonymized by the undercover agent through the SR2 seller portal, would be classified as SR2-related. And a seller who sold on a market but was busted through his own off-market sales will be marked with the relevant market.
 
-Name                  Pseudonym       Role    Market      Seller                        Country     State      Product                        Arrest date Known date    Notes
---------------------- --------------- ------- ----------- ----------------------------- ----------- ---------- ------------------------------ ----------- ----------    -----
-David Handel          davidd          seller  Silk Road 1                               USA         Ohio       methylone, 2C-E, 2C-C          2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
-Shawn Casey           Trojan          seller  Silk Road 1                               Canada      Alberta    DMT                            2012-08-22  2014-12-17    Police tipped off by neighbors.
-Sheldon Kennedy       edgarnumbers    seller  Silk Road 1                               USA         Nebraska   methylone, guns                2013-06-28  2014-02-20
-Jason Hagen           hammertime      seller  Silk Road 1                               USA         Oregon     methamphetamine                2013-12-17  2013-12-19
-Richard Webster       hammertime      seller  Silk Road 1                               USA         Oregon     methamphetamine                2013-12-17  2013-12-19
-Robbie Shelton        hammertime      seller  Silk Road 1                               USA         Oregon     methamphetamine                2013-12-17  2013-12-19
-Tina Heagle           hammertime      seller  Silk Road 1                               USA         Oregon     methamphetamine                2013-12-17  2013-12-19
-Lesa Jump             hammertime      seller  Silk Road 1                               USA         Oregon     methamphetamine                2013-12-17  2013-12-19
-Chelsea Reder         hammertime      seller  Silk Road 1                               USA         Oregon     methamphetamine                2013-12-17  2013-12-19
-Donald Bechen         hammertime      seller  Silk Road 1                               USA         Oregon     methamphetamine                2013-12-17  2013-12-19
-Amit Sand                             buyer   BMR                                       Israel                 gun                            2014-01-08  2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
-                                      buyer                                             Israel                 marijuana                      2014-01-12  2014-01-14
-Ryan Gustafson        Willy.Clock     seller  Agora                                     Uganda                 counterfeit currency           2014-12-11  2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
-                                      buyer                                             Israel                 cocaine                        2015-01-04  2015-02-23
-Austin Frembling                      buyer   Agora                                     USA         California MDMA                           2015-01-15  2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
+Name                  Pseudonym          Role    Market      Seller          Country     State      Product                        Arrest date Known date    Notes
+--------------------- ---------------    ------- ----------- --------------------------- ---------- ------------------------------ ----------- ----------    -----
+David Handel          davidd             seller  Silk Road 1                 USA         Ohio       methylone, 2C-E, 2C-C          2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
+Shawn Casey           Trojan             seller  Silk Road 1                 Canada      Alberta    DMT                            2012-08-22  2014-12-17    Police tipped off by neighbors.
+                                         buyer   Silk Road 1                 Israel                                                2013-01-01  2015-01-18    Report from DDW, arrested "beginning of 2013" for 2012 purchases; for simplicity, listed as 1 January 2013.
+Sheldon Kennedy       edgarnumbers       seller  Silk Road 1                 USA         Nebraska   methylone, guns                2013-06-28  2014-02-20
+Jason Hagen           hammertime         seller  Silk Road 1                 USA         Oregon     methamphetamine                2013-12-17  2013-12-19
+Richard Webster       hammertime         seller  Silk Road 1                 USA         Oregon     methamphetamine                2013-12-17  2013-12-19
+Robbie Shelton        hammertime         seller  Silk Road 1                 USA         Oregon     methamphetamine                2013-12-17  2013-12-19
+Tina Heagle           hammertime         seller  Silk Road 1                 USA         Oregon     methamphetamine                2013-12-17  2013-12-19
+Lesa Jump             hammertime         seller  Silk Road 1                 USA         Oregon     methamphetamine                2013-12-17  2013-12-19
+Chelsea Reder         hammertime         seller  Silk Road 1                 USA         Oregon     methamphetamine                2013-12-17  2013-12-19
+Donald Bechen         hammertime         seller  Silk Road 1                 USA         Oregon     methamphetamine                2013-12-17  2013-12-19
+Amit Sand                                buyer   BMR                         Israel                 gun                            2014-01-08  2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
+                                         buyer                               Israel                 marijuana                      2014-01-12  2014-01-14
+Ryan Gustafson        Willy.Clock        seller  Agora                       Uganda                 counterfeit currency           2014-12-11  2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
+David Schell          CaliforniaCanibas  seller  Silk Road 2                 USA         California marijuana                      2014-11-06  2014-11-20
+Teri Schell           CaliforniaCanibas  seller  Silk Road 2                 USA         California marijuana                      2014-11-06  2014-11-20
+Brian Farrell         DoctorClu          staff   Silk Road 2                 USA         Washington Xanax                          2015-01-20  2015-01-16    It was known Farrell was under investigation before the search warrant was executed & he was arrested.
+                                         buyer                               Israel                 cocaine                        2015-01-04  2015-02-23
+Austin Frembling                         buyer   Agora                       USA         California MDMA                           2015-01-15  2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
 
 # Confirmed
 ## Agora
@@ -132,11 +150,9 @@ On 14 December 2013, the French vendor "WalkaBoot" (marijuana & amphetamines) [w
 
 On [20 December 2013](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR.php) ([indictment](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR/Jones,%20Andrew,%20et%20al%20\(Silk%20Road\)%20Indictment.pdf)), the former SR administrator/moderator/employee "Libertas" (also of Silk Road 2) was [arrested in Wicklow, Ireland](http://www.rte.ie/news/business/2013/1220/494111-silk-road-arrest/ "Former Silk Road administrator arrested in Wicklow") but apparently [made bail & fled](http://www.forbes.com/sites/andygreenberg/2013/12/20/feds-indict-three-more-alleged-employees-of-the-silk-roads-dread-pirate-roberts/ "Feds Indict Three More Alleged Employees Of Silk Road's Dread Pirate Roberts").
 
-<!--
 ### Israel
 
-DDW: small buyer, multiple drugs, SR1, convicted
--->
+DeepDotWeb reports that at the beginning of 2013, a small Israeli buyer of multiple drugs off SR1 (unknown seller) was arrested & sentenced to six months.
 
 ### Japan
 
@@ -278,14 +294,11 @@ This all fed into a comprehensive investigation of CALIGIRL's life which drew on
 Facebook; Amazon shopping logs and IP; `#bitcoin-otc` IP & transactions; Local Bitcoin transactions; domain names and telephone; cellphone apps (Ding) usage & callers & IPs; Post Office photos (from automated postal machine); the landlord for his post box; travel records; electronic toll records recording movements of his car; hotels he stayed at (he used places he stayed or was near as return addresses); and financial records from: Xoom (and IP addresses), Wells Fargo, JP Morgan Chase, Western Union, & MoneyGram.
 There are currently no known controlled deliveries or arrests of CALIGIRL customers (possibly the SR1 bust eliminated most of his business).
 
-In November 2014, David & Teri Schell were [arrested in California](http://www.actionnewsnow.com/news/durham-couple-indicted-as-part-of-silk-road-2-0-crackdown/ "Durham couple indicted as part of Silk Road 2.0 crackdown") for selling marijuana and marijuana wax ([complaint](/docs/sr/2014-11-20-californiacanbis.pdf), [PACER](/docs/sr/2014-11-20-blackmarkets-schell.maff)); [additional coverage](http://www.sfgate.com/crime/article/NorCal-couple-ensnared-in-dark-Web-drug-site-5907946.php "Butte County couple ensnared in Silk Road 2.0 drug case") indicated they were investigated after "discovering an Internet Protocol address was accessing the Silk Road 2.0 site" and then PO box surveillance nailed them. They were probably the SR1 & SR2 seller "CaliforniaCanibas" ([profile](http://antilop.cc/sr/vendors/7058d46a86.htm)).
-
-<!-- SR2: Checkpoint MDMA seller: customers raided and him busted? http://silkroad5v7dywlc.onion/index.php?topic=3717.0;all http://silkroad5v7dywlc.onion/index.php?topic=52461.0;all -->
 <!-- Brian Patrick Noone; Naperville, Illinois http://www.chicagotribune.com/suburbs/naperville-lisle/ct-drug-arrest-naperville-tl-0605-20140603,0,7658129.story http://www.reddit.com/r/DarkNetMarkets/comments/277ux3/chicago_man_arrested_with_600_xanax_bars_another/ case not in PACER; charged in Will County; requested an affidavit through https://www.i2file.net/ -->
 <!-- SR2/Agora etc? https://www.reddit.com/r/DarkNetMarkets/comments/2ihjn6/upcoming_high_profile_large_vendor_busts_in_the/ -->
 <!-- SR2: like california cannabis http://www.bellevuereporter.com/news/288854101.html -->
 
-# BMR
+## BMR
 
 A major BlackMarket Reloaded (BMR) seller seems to have been arrested & charged in Kentucky in [August/September 2013](http://www.dailydot.com/crime/dark-web-black-market-reloaded-adam-bunger-gun-sales-arrest/ "Cops may have just busted a major illegal gun dealer from the Deep Web") for international gun sales, after packages were intercepted. Another BMR gun dealer ("Gun Wise") was [arrested 7 November 2013](http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/).
 
@@ -337,6 +350,28 @@ https://www.reddit.com/r/DarkNetMarkets/comments/2looal/bungee54_state_of_operat
 <!-- unknown in NJ http://www.towntopics.com/wordpress/2015/01/14/narcotics-task-force-arrest-princeton-man-after-surveillance/ - former user of TMP but busted well after shutdown with fresh orders -->
 <!-- unknown, if at all; 8 UK carders http://www.manchestereveningnews.co.uk/news/greater-manchester-news/gang-sentenced-credit-card-scam-8438268 https://www.reddit.com/r/DarkNetMarkets/comments/2sba70/fraudsters_who_used_stolen_credit_card_details/ -->
 
+## Silk Road 2
+
+On 6 November 2014, David & Teri Schell were [arrested in California](http://www.actionnewsnow.com/news/durham-couple-indicted-as-part-of-silk-road-2-0-crackdown/ "Durham couple indicted as part of Silk Road 2.0 crackdown") for selling marijuana and marijuana wax ([complaint](/docs/sr/2014-11-20-californiacanbis.pdf), [PACER](/docs/sr/2014-11-20-blackmarkets-schell.maff)); [additional coverage](http://www.sfgate.com/crime/article/NorCal-couple-ensnared-in-dark-Web-drug-site-5907946.php "Butte County couple ensnared in Silk Road 2.0 drug case") indicated they were investigated after "discovering an Internet Protocol address was accessing the Silk Road 2.0 site" and then PO box surveillance nailed them.
+The DoctorClu case reveals that the vendor portal for SR2 had been used to de-anonymize a few IPs (but not many), implying that an undercover agent (presumably Cirrus) had inserted a de-anonymization exploit similar to the previous Freedom Hosting exploit.
+They were probably the SR1 & SR2 seller "CaliforniaCanibas" ([profile](http://antilop.cc/sr/vendors/7058d46a86.htm)).
+
+The Washington man Brian Farrell & SR2 staffer "DoctorClu" was [arrested 20 January 2015](http://koin.com/ap/alleged-manager-of-silk-road-2-0-website-arrested/); his IP had been uncovered in July 2014 accessing the SR2 seller portal[^DoctorClu-IP], like CaliforniaCanibas.
+The [local police investigated](http://www.bellevuereporter.com/news/288854101.html) by post-office checks and then interviewing him & his roommate, who spoke freely about Farrell's drug use and online connections, allowing [a search warrant](/docs/sr/2015-01-07-kingcountysuperiorcourt-brianfarrell-searchwarrantaffidavit.pdf) to uncover Farrell's prescription drugs, at which point he confessed everything & to helping run SR2 as the employee DoctorClu and was then arrested (the charges being upgraded from local pill charges to [federal conspiracy charges](http://www.dailymail.co.uk/wires/reuters/article-2918824/U-S-charges-man-says-linked-Silk-Road-successor-site-drug-scheme.html); [complaint](/docs/sr/brianfarrell-federalcomplaint.pdf))
+
+[^DoctorClu-IP]: From the search warrant:
+
+    > ...From January 2014 to July 2014, a FBI NY Source of Information (SOI) provided reliable IP addresses for TOR and hidden services such as SR2, which included its main marketplace URL (silkroad6ownfk.onion), its vendor URL (vx3w763ohd256iyh.onion), its forum URL (silkroad5v7dywlc.onion) and its support interface (uz434sei7arqunp6.onion). The SOI's information ultimately led to the identification of SR2 servers, which led to the identification of at least seventeen black markets on TOR.
+    >
+    > The SOI also identified approximately 78 IP addresses that accessed a vendor .onion address. A user cannot accidently end up on the vendor site. The site is for vendors only, and access is only given to the site by the SR2 administrators/moderators after confirmation of a significant number of successful transactions. If a user visits the vendor URL, he or she is asked for a user name and password. Without a user name and password, the vendor web site cannot be viewed.
+    >
+    > Current Investigation
+    >
+    > On July 30, 2014, Homeland Security Investigations (HSI) Seattle received information that a user associated with IP address 67.182.142.24 accessed the vendor portal of SR2. Records reveal the IP address was associated with a Comcast internet account registered to Steve Phelps at 4238 163rd Avenue SE - Bellevue, WA 98006. On August 8, 2014, the Washington Department of Licensing reported the following vehicle and driver information for that address:... On August 13, 2014, Homeland Security Investigations initiated surveillance activities on the above address, further observing the blue Volkswagen Beetle, and the white Chevrolet Camero...On October 10, 2014, Homeland Security investigations, assisted by a U.S. Postal Inspector, visited several U.S. Post Offices near 4238 163rd Avenue SE, Bellevue, WA 98006...Another employee at the same location recognized the photograph of Steve Phelps, further stating he may have dropped off a tub of letters for mailing and he drove a blue station wagon... [and so on through to pg9, then the rest seems to be search warrant boilerplate]
+
+
+<!-- SR2: Checkpoint MDMA seller: customers raided and him busted? http://silkroad5v7dywlc.onion/index.php?topic=3717.0;all http://silkroad5v7dywlc.onion/index.php?topic=52461.0;all -->
+
 ## Unknown
 ### Israel
 
@@ -347,8 +382,6 @@ An Israeli teen [was arrested ~12 January 2015](http://news.walla.co.il/item/281
 # Unconfirmed
 
 Sending drugs through the mail turns out to be a surprisingly common practice, and there are many cases of people being busted for receiving packages of drugs (particularly with the rise of marijuana legalization in American states), sometimes through online mechanisms (eg Instagram); many are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales), but of course, some will turn out to be real.
-
-<!-- 2 unknowns: http://www.deepdotweb.com/2014/05/07/interview-the-life-of-an-online-drug-vendor/#comment-95767 TODO: emailed DDW-->
 
 ## Australia
 
@@ -377,3 +410,7 @@ On 19 March 2014, in Leesburg Virginia, Thomas C. Watson [was arrested after a c
 Because of his technological savvy ("the founder of Capital Computers and Network, an IT company") and return-to-sender gambit (sometimes advised as an anti-CD tactic) and the small quantities (suggesting a personal purchase rather than being set up as a drop), speculation was rife that Watson was a black-market buyer, but no concrete evidence ever surfaced.
 
 In February 2015, UCF student [Peter John Faucella was arrested in Florida](http://www.orlandosentinel.com/news/breaking-news/os-ucf-student-marijuana-arrest-towers-20150216-story.html "UCF student had marijuana shipped to campus apartment, cops say") after an intercepted package of marijuana; previously, a UCF student [may have posted on the black-market subreddits](https://www.reddit.com/r/DarkNetMarkets/comments/2w52bg/communitydiscussionucf_students_busted_for/copb9se) asking for help.
+
+# External links
+
+- [Vocativ visualization/map of geographical distribution of arrests](http://www.vocativ.com/interactive/underworld/drugs/darknet-arrests-map/ "Beyond Ross Ulbricht: A Map Of Dark Net Arrests Around The World")

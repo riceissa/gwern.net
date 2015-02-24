@@ -37,6 +37,11 @@ I haven't finished compiling into a table, but let's say that for SR1 there were
 
 Similarly, if there were >60 buyer arrests (I double because there seem to be more buyer arrests than seller arrests, they just tend to take plea deals and not be publicized), then the same calculation would go there are 163200 buyers of which >60 were arrested for a risk of >0.04%
 -->
+<!-- Known address leaks:
+- SR1 server image
+- SR2 server image & Benthall laptop
+- deezletime
+-->
 
 # Table
 
@@ -148,6 +153,7 @@ Andrew C. Dickey                           buyer     Silk Road 2 Xanax King     
                                            buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
                                            buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
                                            buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+Jasen Crisp                                buyer                                 USA         Idaho          MDMA                              2014-06-20  2014-11-28
 Blake Benthall        Defcon               operator  Silk Road 2                 USA         California                                       2014-11-05  2014-11-05
 David Schell          CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                         2014-11-06  2014-11-20
 Teri Schell           CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                         2014-11-06  2014-11-20
@@ -174,7 +180,7 @@ His package was intercepted by Customs (possibly due to inadequate stealth), the
 On ~8 January 2014, the [Israeli man Amit Sand was arrested for buying a gun](http://posta.co.il/index.php/widgetkit/%D7%9E%D7%93%D7%95%D7%A8%D7%99%D7%9D-2/%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%97%D7%A9%D7%91/1604-%D7%90%D7%A7%D7%93%D7%97-%D7%94%D7%93%D7%90%D7%A8%D7%A7%D7%A0%D7%98-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%9F "אקדח הדארקנט הראשון: בחבילה שהגיעה לסניף דואר בתל אביב התגלה אקדח מפורק שהוסלק בתוך מגף * מזמין החבילה הודה כי רכש את האקדח ברשת האינטרנט הסודית באמצעות המטבע הדיגיטלי ביטקוין, ובמשטרה תוהים: האם נחשפה דרך חדשה להברחת אמצעי לחימה לישראל?") off a black-market seller for ~$1550 in bitcoins; the first package of parts (mailed 18 December 2013) was discovered by Customs and allowed to go through, and he was arrested after picking up the final second package.
 I assign this buy to BMR, since while BMR had closed a week or two before the first package was mailed, the deal could have been agreed upon earlier, and no other major market allowed guns at the time; this may be like the Korff case, where the purchase (ricin, in his case) began on BMR but continued off-market after BMR closed.
 
-## Silk Road 1
+## Silk Road 1 (SR1)
 ### Australia
 
 An Australian student's MDMA was [intercepted by Customs](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10819029 "Officer's link to net drug market") but the article makes no mention of him being penalized.
@@ -352,7 +358,7 @@ The NY seller of clonazepam/hydrocodone/heroin "deezletime" ([profile](http://an
 
 On 21 November 2013, the seller "MDpro" was [arrested in Delaware](http://www.orlandosentinel.com/news/local/breakingnews/os-silk-road-orlando-doctor-20131121,0,5782126.story "Doctor charged with selling drugs to local DEA agents via Silk Road") ([seller profile](/docs/sr/2013-06-07-mdpro-profile.html), [forum discussions](/docs/sr/2013-11-22-mdpro-srforums-discussion.maff), [forum posts](/docs/sr/2013-11-22-mdpro-forumposts.maff), [BMR posts under her real name](/docs/sr/2013-11-29-bmr-obollesforum.mht)) and charged in federal court ([PACER web data](/docs/sr/2013-11-11-mdpro-pacer.maff), [complaint/filings](/docs/sr/2013-11-22-mdpro-6-13-mj-01614-DAB.zip)), ultimately sentenced to [2.5 years](http://www.delawareonline.com/story/news/local/2015/01/13/doctor-sentenced-months-silk-road-drug-case/21716135/ "Doctor gets 30 months in Silk Road drug case"); based on the complaint, it seems her fatal mistake was either using tracking on her shipments through an account registered in her real name or putting valid return addresses on her shipments to a PO box registered to her real name, which allowed the undercover buyer to find her and compile the extensive case against her. Among her [many security mistakes](http://www.forbes.com/sites/kashmirhill/2013/11/26/how-a-delaware-doctor-was-linked-to-silk-road-drug-sales/) included [accepting shipments from other sellers](/docs/sr/2013-11-29-mdpro-moonbear.mht) to her apartment addressed to her partner (and [partner in crime](http://www.philly.com/philly/blogs/inq-phillydeals/Del-doc-32-busted-sold-drugs-for-Bitcoins.html "Ob/Gyns who planned to wed busted in Bitcoin drug probe")).
 
-On 25 November 2013, a possible SR seller, Brandon Howell, [was arrested](http://www.wect.com/story/24088516/police-seized-hundreds-of-drugs-in-carolina-beach-bust) in North Carolina; he & his partner "imported MDMA from China through an online black market...The two then resold the imported drugs using the online currency Bitcoin, according to police." It is not clear which seller they were or what market they sold on.
+On 25 November 2013, Brandon Howell [was arrested](http://www.wect.com/story/24088516/police-seized-hundreds-of-drugs-in-carolina-beach-bust) after "a month-long investigation" in North Carolina; he & his partner "imported MDMA from China through an online black market...The two then resold the imported drugs using the online currency Bitcoin, according to police." It is not clear which seller they were or what market they sold on, but the media coverage mentions Silk Road 1.
 
 On 17 December 2013, 4 members of the methamphetamine group seller ["hammertime"](/docs/sr/hammertime-profile.htm) [were arrested in Oregon](http://www.kgw.com/news/Wash-county-tactical-police-conducting-3-dawn-raids-236190011.html "Suspected drug trafficking ring busted in Aloha") as well as 3 others charged ([PACER](/docs/sr/2013-12-19-hammertime-pacer.maff), [indictment](/docs/sr/2013-12-10-hammertime-indictment.pdf); [more coverage](http://www.dailydot.com/crime/silk-road-meth-ring-4-arrests/ "4 arrested in Silk Road meth ring bust, alleged leader faces life in prison"); [trial](http://www.golocalpdx.com/news/portland-is-a-hub-for-online-drug-dealers); [plea agreement](/docs/sr/2015-02-17-hammertime-pleadeal.pdf)).
 
@@ -395,7 +401,7 @@ A major BlackMarket Reloaded (BMR) seller seems to have been arrested & charged 
 Another BMR gun dealer ("Gun Wise") was [arrested 7 November 2013](http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/).
 
 <!-- Ryan Chamberlain http://www.deepdotweb.com/2014/06/11/fbi-bomb-suspect-ryan-chamberlain-sought-toxins-via-deep-web-bmr/ related? http://www.sacbee.com/2014/05/05/6380750/undercover-operation-ends-carmichael.html http://www.sfgate.com/file/822/822-Redact%20Amend%20Compl.pdf -->
-
+<!-- BMR: Matthew Crisafi  http://www.seacoastonline.com/article/20140507/News/140509786 http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/ -->
 <!-- BMR: Korff poison http://www.reddit.com/r/DarkNetMarkets/comments/1vurn0/vendor_busted_for_selling_deadly_toxin/ https://dl.dropboxusercontent.com/u/182368464/2-14-mj-01008-DNF.pdf  https://dl.dropboxusercontent.com/u/182368464/2014-01-22-bmr-korff.maff http://www.tampabay.com/news/courts/criminal/labelle-man-accused-of-selling-toxin-in-death-plot/2162117  http://www.nbc-2.com/story/24506383/muse-poison-black-market-reloaded-online-jesse-korff-labelle-abrin http://www.nbc-2.com/story/24509658/online-messages-detail-online-poison-sale#.U5M6wfldWSo customer busted? http://www.bbc.com/news/uk-england-london-29331457 -->
 <!-- BMR/Utopia: [5](http://www.bbc.co.uk/news/technology-26158012 "Five arrested in Utopia dark net marketplace crackdown") [arrests](http://www.deepdotweb.com/2014/02/12/the-utopia-bust-details-prosecution-announcement/ "The Utopia Bust Details - Prosecution Announcement") http://www.om.nl/actueel/nieuwsberichten/@162281/undercover-onderzoek/ http://www.deepdotweb.com/2014/09/23/new-details-about-the-utopia-marketplace-bust/ https://pay.reddit.com/r/DarkNetMarkets/comments/2itda1/sentencing_for_utopia_bmr_admin_programmers/ -->
 <!-- BMR: Jonathan Norling http://www.nydailynews.com/new-york/nyc-crime/nypd-reach-fbi-interpol-cyanide-carrying-swede-article-1.1637056 Swede attempted suicide, bought cyanide on BMR -->
@@ -481,9 +487,50 @@ An [Israeli man Weitzman](http://www.ynet.co.il/articles/0,7340,L-4611084,00.htm
 
 An Israeli teen [was arrested ~12 January 2015](http://news.walla.co.il/item/2819632 "חשד: רכש סמים ב'ביטקוין'ומכר אותם בתיכון באשדוד: חבילה שעוררה את חשדם של הבודקים בנתב'ג הכילה מאות גרמים של מריחואנה - והובילה לבן 18 שקיבל יותר מ-10 חבילות של סמים שונים. החשוד למד בשיטוט באינטרנט כיצד לרכוש סמים ברשת 'דארקנט' המוצפנת") ([translation](http://www.deepdotweb.com/2015/01/14/israeli-teen-arrested/)) after a package of marijuana was intercepted by Customs at Ben Gurion Airport; the media coverage specifies he had bought that package & 13 others off the black-markets, but not which one or the seller.
 
+### USA
+
+On 20 June 2014, the buyer Jasen Crisp received a CD of a package of MDMA he had ordered from Canada ([press release](http://www.justice.gov/usao-id/pr/boise-man-admits-importing-ecstasy-united-states), case 1:14-cr-00226-EJL) and cooperated; his lawyer's [sentencing filing](/docs/sr/2015-01-29-jasencrisp-defensesentencingletter.pdf) writes that he used an "electronic currency" to use the "uncommon means" of ordering on the Internet from "a secret marketplace", so Crisp clearly ordered off one of the black-markets, but it remains unclear which market and which seller.
+
 # Unconfirmed
 
-Sending drugs through the mail turns out to be a surprisingly common practice, and there are many cases of people being busted for receiving packages of drugs (particularly with the rise of marijuana legalization in American states), sometimes through online mechanisms (eg Instagram); many are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales), but of course, some will turn out to be real.
+Sending drugs through the mail turns out to be a surprisingly common practice, and there are many cases of people being busted for receiving packages of drugs (particularly with the rise of marijuana legalization in American states), sometimes through online mechanisms (eg Instagram).
+The [Drugs Global Incident Map](http://drugs.globalincidentmap.com/) features many online-related busts, and long lists can be compiled from law enforcement press releases & local news media.[^Reddit-lists-1][^Reddit-lists-2]
+
+[^Reddit-lists-1]: [/u/CookyDough](https://www.reddit.com/user/CookyDough) provides a [list of search queries](https://www.reddit.com/r/DarkNetMarkets/comments/2wxuml/psaarticle_illinois_man_gets_controlled_delivery/covf4am) and some examples of the regular stream of cases:
+
+    - ["'Bath salts' package from China to USA intercepted by customs, tests positive for meth, 3 ppl charged after controlled delivery"](https://www.reddit.com/r/DarkNetMarkets/comments/2wyizj/bath_salts_package_from_china_to_usa_intercepted/)
+    - ["Australian Customs intercepts 16kg of meth concealed in treadmills from China, charge 2 men after controlled delivery"](https://www.reddit.com/r/DarkNetMarkets/comments/2wy73f/psaarticle_australian_customs_intercepts_16kg_of/)
+    - ["Alaska drops charges against local meth/heroin package recipient & out of state sender"](https://www.reddit.com/r/DarkNetMarkets/comments/2wy3za/psaarticle_alaska_drops_charges_against_local/)
+    - ["Minnesota man charged for accepting 5 lb marijuana FedEx package (delivered by undercover DEA agent)"](https://www.reddit.com/r/DarkNetMarkets/comments/2wy23d/psaarticle_minnesota_man_charged_for_accepting_5/)
+    - ["Charges dropped for man who picked up package with 2kg hash oil addressed to him, claims he didn't know what was in it"](https://www.reddit.com/r/DarkNetMarkets/comments/2wy0kx/psaarticle_charges_dropped_for_man_who_picked_up/)
+    - ["Illinois man gets controlled delivery of 14 lb package of cannabis by Local Police & 'Postal Interdiction Team'"](https://www.reddit.com/r/DarkNetMarkets/comments/2wxuml/psaarticle_illinois_man_gets_controlled_delivery/)
+    - ["US Customs intercepts GBL (liquid) package from Hong Kong to US residence, drug task force/DHS/PIS arrests recepients in controlled delivery"](https://www.reddit.com/r/DarkNetMarkets/comments/2wtyy1/psaarticle_us_customs_intercepts_gbl_liquid/)
+    - ["USPS Express Mail used to ship marijuana from Arizona to Michigan gets man six years in prison"](https://www.reddit.com/r/DarkNetMarkets/comments/2wthsi/psaarticle_usps_express_mail_used_to_ship/)
+    - ["Alaska man gets arrested in controlled delivery of 122g of double vac-sealed meth"](https://www.reddit.com/r/DarkNetMarkets/comments/2wtabb/psaarticle_alaska_man_gets_arrested_in_controlled/)
+    - ["Two men arrested in China Grove and Charlotte, NC, USA after 3 marijuana filled UPS packages were delivered"](https://www.reddit.com/r/DarkNetMarkets/comments/2wpn0w/psaarticle_two_men_arrested_in_china_grove_and/)
+    - ["Police seize 32-pounds of marijuana from Waukesha (WI, USA) home"](https://www.reddit.com/r/DarkNetMarkets/comments/2wn0s1/psaarticle_us_postal_inspectors_have_seen_400/)
+
+[^Reddit-lists-2]: Others:
+
+    - ["Feds charge MTA officer from Middletown"](http://www.recordonline.com/article/20150123/NEWS/150129601/101029/NEWS?template=printart)
+    - ["Norwalk Police Bust Major Marijuana Operation After Finding Pot In Mail"](http://norwalk.dailyvoice.com/police-fire/norwalk-police-bust-major-marijuana-operation-after-finding-pot-mail)
+    - ["25 Arrested in NJ Drug Bust; LSD, Ecstasy, Cars, Shrooms Among Items Seized"](http://www.nbcnewyork.com/news/local/Drug-Bust-Arrest-New-Jersey-Road-Runner-Pot-LSD-Ecstasy-Ocean-County-201962511.html)
+    - ["'Breaking Bad' fan arrested in million dollar drug bust"](http://www.nbc-2.com/story/24343017/breaking-bad-contest-winner-arrested-in-drug-bust)
+    - ["Package from Belgium bound for Oakdale leads to drug arrests"](https://www.reddit.com/r/DarkNetMarkets/comments/2hh3d3/package_from_belgium_bound_for_oakdale_leads_to/)
+    - ["Police: Georgetown Man Receiving Pot In Disguised Pet Supply Packages"](http://archive.today/U58CS#selection-1768.0-1768.1 "http://www.lex18.com/news/police-georgetown-man-receiving-pot-in-disguised-pet-supply-packages/")
+    - ["Cops bust major synthetic drug operation"](http://www.ctpost.com/local/article/Cops-bust-major-synthetic-drug-operation-5873769.php)
+    - ["Police Bust Couple Receiving Drugs Through the Mail"](https://www.whiznews.com/content/news/local/2014/02/04/police-bust-couple-receiving-drugs-through-the-mail)
+    - ["Police bust drugs ring, find stolen carving: Twenty one people have been arrested and various weapons seized in a series of busts targeting the Wellington region's drugs trade"](http://www.stuff.co.nz/dominion-post/10177294/Police-bust-drugs-ring-find-stolen-carving)
+    - ["Man Sentenced In Mailing Of Meth In Mannequin Heads"](https://www.reddit.com/r/DarkNetMarkets/comments/2s2qgc/man_sentenced_in_mailing_of_meth_in_mannequin/)
+    - ["Chris Perez charged with possession"](http://espn.go.com/mlb/story/_/id/9352009/chris-perez-cleveland-indians-charged-pot-possession) ([USPS CD report](https://s3.amazonaws.com/s3.documentcloud.org/documents/710202/usps-report.pdf))
+    - ["Task Force Seizes Marijuana, Cash and Stolen Guns in Arrest of Smithsburg Man"](http://www.your4state.com/story/d/story/task-force-seizes-marijuana-cash-and-stolen-guns-i/27387/0gAI0zUF6kCda3UMNNk-Mg) / ["Man Allegedly Bought Pot From Colorado To Sell In Maryland"](http://denver.cbslocal.com/2014/11/20/man-allegedly-bought-pot-from-colorado-to-sell-in-maryland/)
+    - ["MAJOR BUST: Six people arrested after police intercept drug package, find surprise in home"](http://fox6now.com/2014/06/20/major-bust-five-people-arrested-after-police-intercept-drug-package/)
+    - ["Intercepted Package Leads To Drug Takedown"](https://www.reddit.com/r/DarkNetMarkets/comments/2hkqap/intercepted_package_leads_to_drug_takedown/)
+    - ["Summit County mail sting yields 10 arrests, 13 pounds of marijuana"](http://www.summitdaily.com/article/20130308/NEWS/130309860)
+    - ["RAF corporal [Scott Cuckoo] jailed for importing ecstasy tablets and selling them online between tours of duty in Afghanistan"](http://www.dailymail.co.uk/news/article-2385266/RAF-corporal-Scott-Cuckoo-jailed-selling-ecstasy-online-Afghanistan-tours.html)
+    - ["Manchester, NH Police Seize 42 Pounds of Marijuana: Authorities say they were alerted by a U.S. postal inspector and a police dog about a suspicious package"](http://www.necn.com/news/new-england/Manchester-NH-Police-Seize-42-Pounds-of-Marijuana-271885971.html)
+
+Most are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales eg [the TedDanzig incident](https://www.reddit.com/r/SilkRoad/comments/1xq97t/teddanzig_arrested/)), but of course, some will turn out to be real.
 
 ## Australia
 

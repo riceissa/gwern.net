@@ -45,110 +45,116 @@ Similarly, if there were >60 buyer arrests (I double because there seem to be mo
 
     For example, a Silk Road 1 employee working at Silk Road 2 would be classified as SR1-related because he had provided DPR1 his dox and was busted as a consequence of SR1, not because he worked at SR2 when he was arrested; oppositely, a seller like California Cannabis, who had sold on SR1 but was busted after being deanonymized by the undercover agent through the SR2 seller portal, would be classified as SR2-related. And a seller who sold on a market but was busted through his own off-market sales will be marked with the relevant market.
 
-Name                  Pseudonym            Role      Market      Seller          Country     State        Product                        Arrest date Known date    Notes
---------------------- ---------------      -------   ----------- --------------------------- ----------   ------------------------------ ----------- ----------    -----
-David Handel          davidd               seller    Silk Road 1                 USA         Ohio         methylone, 2C-E, 2C-C          2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
-Shawn Casey           Trojan               seller    Silk Road 1                 Canada      Alberta      DMT                            2012-08-22  2014-12-17    Police tipped off by neighbors.
-                                           buyer     Silk Road 1 SourDieselMan   USA         New Jersey   marijuana                      2012-12-01  2013-10-27    SDM buyer,
-                                           buyer     Silk Road 1                 Israel                                                  2013-01-01  2015-01-18    Report from DDW, arrested "beginning of 2013" for 2012 purchases; for simplicity, listed as 1 January 2013.
-Curtis Clark Green    Chronicpain          staff     Silk Road 1                 USA         Utah         cocaine                        2013-01-17  2013-10-02
-Blanks                SourDieselMan        seller    Silk Road 1                 USA         California   marijuana                      2013-05-20  2013-10-27    Courier, flipped.
-Sheldon Kennedy       edgarnumbers         seller    Silk Road 1 digitalink      USA         Nebraska     methylone, guns                2013-06-28  2014-02-20
-Matthew Gillum        SourDieselMan        seller    Silk Road 1                 USA         California   marijuana                      2013-07-23  2013-10-27    At least 3 other members of group, but none seem to have been arrested.
-Jolene Chan           SourDieselMan        seller    Silk Road 1                 USA         California   marijuana                      2013-07-23  2013-10-27
-Cornelis Slomp        SuperTrips           seller    Silk Road 1                 USA         Florida      MDMA, cocaine, LSD, etc        2013-08-27  2014-02-15    The ST documents mention 11 other people who worked with ST (one UGS); there are no reports that the other 10 were arrested.
-Angel Quinones        UnderGroundSyndicate seller    Silk Road 1 SuperTrips      USA         Florida      MDMA, cocaine, LSD, etc        2013-10-02  2014-04-28
-Ross William Ulbricht Dread Pirate Roberts operator  Silk Road 1                 USA         California                                  2013-10-02  2013-10-02
-Olivia Bolles         MDpro                seller    Silk Road 1                 USA         Delaware     Oxycontin, Valium, etc         2013-11-21  2013-11-22
-Alexandra Gold        MDpro                seller    Silk Road 1                 USA         Delaware     Oxycontin, Valium, etc         2013-11-21  2013-11-22
-Jason Hagen           hammertime           seller    Silk Road 1                 USA         Oregon       methamphetamine                2013-12-17  2013-12-19
-Richard Webster       hammertime           seller    Silk Road 1                 USA         Oregon       methamphetamine                2013-12-17  2013-12-19
-Robbie Shelton        hammertime           seller    Silk Road 1                 USA         Oregon       methamphetamine                2013-12-17  2013-12-19
-Tina Heagle           hammertime           seller    Silk Road 1                 USA         Oregon       methamphetamine                2013-12-17  2013-12-19
-Lesa Jump             hammertime           seller    Silk Road 1                 USA         Oregon       methamphetamine                2013-12-17  2013-12-19
-Chelsea Reder         hammertime           seller    Silk Road 1                 USA         Oregon       methamphetamine                2013-12-17  2013-12-19
-Donald Bechen         hammertime           seller    Silk Road 1                 USA         Oregon       methamphetamine                2013-12-17  2013-12-19
-Andrew Michael Jones  Inigo                staff     Silk Road 1                 USA         Virginia                                    2013-12-19  2013-12-19
-Gary Davis            Libertas             staff     Silk Road 1                 Ireland                                                 2013-12-19  2013-12-21
-Peter Phillip Nash    Samesamebutdifferent staff     Silk Road 1                 Australia   Queensland                                  2013-12-20  2013-12-21
-Amit Sand                                  buyer     BMR                         Israel                   gun                            2014-01-08  2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
-                                           buyer                                 Israel                   marijuana                      2014-01-12  2014-01-14
-Jeremy Donagal        Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Laurence Lindberg     Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Thomas Elliott        Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Michael Tomada        Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Michael Gonzalez      Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Kenneth Koskiniemi    Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Christopher Neely     Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Duston Kirk           Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Alicia Mitts          Xanax King           seller    Silk Road 2                 USA         California   Xanax                          2014-05-27  2014-06-12
-Matthew Jones         CALIGIRL             seller    Silk Road 1                 USA         Florida      oxycodone, hydrocodone         2014-05-29  2014-07-29    SR1 because while dealing after SR1 closed, it was off-market.
-Kory D. Kreider                            buyer     Silk Road 2 Xanax King      USA         New Orleans  Xanax                          2014-06-01  2014-06-14    Kreider evaded a CD but was eventually identified & arrested at some point during the first week of June 2014, which I code as 1 June.
-Carlos Matthew Allen                       buyer     Silk Road 2 Xanax King      USA         Indiana      Xanax                          2014-05-28  2014-07-28    Allen, Feigel, Furto, & Dickey were CDed simultaneously in Indiana.
-David Christian Feigel                     buyer     Silk Road 2 Xanax King      USA         Indiana      Xanax                          2014-05-28  2014-07-28
-Paul Furto                                 buyer     Silk Road 2 Xanax King      USA         Indiana      Xanax                          2014-05-28  2014-07-28
-Andrew C. Dickey                           buyer     Silk Road 2 Xanax King      USA         Indiana      Xanax                          2014-05-28  2014-07-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28    The 25 June 2015 anti-bail letter boasts that XK "led to the arrest of nearly 60 other people throughout the country", excluding the 9 XK defendants; worst-case, <=59 arrests, and subtracting the 5 known buyer busts, yields <=54 still-unknown cases. These seem to be mostly XK customers. I include a row for each case.
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-                                           buyer     Silk Road 2 Xanax King      USA                      Xanax                                      2014-06-28
-Blake Benthall        Defcon               operator  Silk Road 2                 USA         California                                  2014-11-05  2014-11-05
-David Schell          CaliforniaCanibas    seller    Silk Road 2                 USA         California   marijuana                      2014-11-06  2014-11-20
-Teri Schell           CaliforniaCanibas    seller    Silk Road 2                 USA         California   marijuana                      2014-11-06  2014-11-20
-Ryan Gustafson        Willy.Clock          seller    Agora                       Uganda                   counterfeit currency           2014-12-11  2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
-Brian Farrell         DoctorClu            staff     Silk Road 2                 USA         Washington   Xanax                          2015-01-20  2015-01-16    It was known Farrell was under investigation before the search warrant was executed & he was arrested.
-                                           buyer                                 Israel                   cocaine                        2015-01-04  2015-02-23
-Austin Frembling                           buyer     Agora                       USA         California   MDMA                           2015-01-15  2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
+Name                  Pseudonym            Role      Market      Seller          Country     State          Product                           Arrest date Known date    Notes
+--------------------- ---------------      -------   ----------- --------------- ----------- -------------- ------------------------------    ----------- ----------    -----
+Jacob Theodore George digitalink           seller    Silk Road 1                 USA         Maryland       heroin, methylone                 2012-01-20  2013-10-29    Details remain mysterious; arrest in Jan 2012 but when exactly? Best guess date.
+Mehran Jahedi                              buyer     Silk Road 1                 USA         Massachusetts  LSD, ketamine, MDMA, etc          2012-05-05  2014-10-17
+David Handel          davidd               seller    Silk Road 1                 USA         Ohio           methylone, 2C-E, 2C-C             2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
+Shawn Casey           Trojan               seller    Silk Road 1                 Canada      Alberta        DMT                               2012-08-22  2014-12-17    Police tipped off by neighbors.
+                                           buyer     Silk Road 1 SourDieselMan   USA         New Jersey     marijuana                         2012-12-01  2013-10-27    SDM buyer,
+                                           buyer     Silk Road 1                 Israel                                                       2013-01-01  2015-01-18    Report from DDW, arrested "beginning of 2013" for 2012 purchases; for simplicity, listed as 1 January 2013.
+Curtis Clark Green    Chronicpain          staff     Silk Road 1                 USA         Utah           cocaine                           2013-01-17  2013-10-02
+Blanks                SourDieselMan        seller    Silk Road 1                 USA         California     marijuana                         2013-05-20  2013-10-27    Courier, flipped.
+Sheldon Kennedy       edgarnumbers         seller    Silk Road 1 digitalink      USA         Nebraska       methylone, guns                   2013-06-28  2014-02-20
+Matthew Gillum        SourDieselMan        seller    Silk Road 1                 USA         California     marijuana                         2013-07-23  2013-10-27    At least 3 other members of group, but none seem to have been arrested.
+Jolene Chan           SourDieselMan        seller    Silk Road 1                 USA         California     marijuana                         2013-07-23  2013-10-27
+Cornelis Slomp        SuperTrips           seller    Silk Road 1                 USA         Florida        MDMA, cocaine, LSD, etc           2013-08-27  2014-02-15    The ST documents mention 11 other people who worked with ST (one UGS); there are no reports that the other 10 were arrested.
+Michael Duch          deezletime           seller    Silk road 1                 USA         New York       clonazepam, hydrocodone, heroin   2013-10-01  2015-01-13
+Angel Quinones        UnderGroundSyndicate seller    Silk Road 1 SuperTrips      USA         Florida        MDMA, cocaine, LSD, etc           2013-10-02  2014-04-28
+Ross William Ulbricht Dread Pirate Roberts operator  Silk Road 1                 USA         California                                       2013-10-02  2013-10-02
+                      SweExpress           seller    Silk Road 1                 Sweden                     marijuana                         2013-10-08  2013-10-11
+                      SweExpress           seller    Silk Road 1                 Sweden                     marijuana                         2013-10-08  2013-10-11
+Olivia Bolles         MDpro                seller    Silk Road 1                 USA         Delaware       Oxycontin, Valium, etc            2013-11-21  2013-11-22
+Alexandra Gold        MDpro                seller    Silk Road 1                 USA         Delaware       Oxycontin, Valium, etc            2013-11-21  2013-11-22
+Jason Hagen           hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                   2013-12-17  2013-12-19
+Richard Webster       hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                   2013-12-17  2013-12-19
+Robbie Shelton        hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                   2013-12-17  2013-12-19
+Tina Heagle           hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                   2013-12-17  2013-12-19
+Lesa Jump             hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                   2013-12-17  2013-12-19
+Chelsea Reder         hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                   2013-12-17  2013-12-19
+Donald Bechen         hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                   2013-12-17  2013-12-19
+Andrew Michael Jones  Inigo                staff     Silk Road 1                 USA         Virginia                                         2013-12-19  2013-12-19
+Gary Davis            Libertas             staff     Silk Road 1                 Ireland                                                      2013-12-19  2013-12-21
+Peter Phillip Nash    Samesamebutdifferent staff     Silk Road 1                 Australia   Queensland                                       2013-12-20  2013-12-21
+Amit Sand                                  buyer     BMR                         Israel                     gun                               2014-01-08  2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
+                                           buyer                                 Israel                     marijuana                         2014-01-12  2014-01-14
+Ayumu Teramoto                             buyer                                 Japan       Fukuoka        stimulant                         2014-05-8   2014-05-10    The media coverage (2014-05-09) does not specify when arrest was; I've dated it to the day before.
+Jeremy Donagal        Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Laurence Lindberg     Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Thomas Elliott        Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Michael Tomada        Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Michael Gonzalez      Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Kenneth Koskiniemi    Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Christopher Neely     Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Duston Kirk           Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Alicia Mitts          Xanax King           seller    Silk Road 2                 USA         California     Xanax                             2014-05-27  2014-06-12
+Matthew Jones         CALIGIRL             seller    Silk Road 1                 USA         Florida        oxycodone, hydrocodone            2014-05-29  2014-07-29    SR1 because while dealing after SR1 closed, it was off-market.
+Kory D. Kreider                            buyer     Silk Road 2 Xanax King      USA         New Orleans    Xanax                             2014-06-01  2014-06-14    Kreider evaded a CD but was eventually identified & arrested at some point during the first week of June 2014, which I code as 1 June.
+Carlos Matthew Allen                       buyer     Silk Road 2 Xanax King      USA         Indiana        Xanax                             2014-05-28  2014-07-28    Allen, Feigel, Furto, & Dickey were CDed simultaneously in Indiana.
+David Christian Feigel                     buyer     Silk Road 2 Xanax King      USA         Indiana        Xanax                             2014-05-28  2014-07-28
+Paul Furto                                 buyer     Silk Road 2 Xanax King      USA         Indiana        Xanax                             2014-05-28  2014-07-28
+Andrew C. Dickey                           buyer     Silk Road 2 Xanax King      USA         Indiana        Xanax                             2014-05-28  2014-07-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28    The 25 June 2015 anti-bail letter boasts that XK "led to the arrest of nearly 60 other people throughout the country", excluding the 9 XK defendants; worst-case, <=59 arrests, and subtracting the 5 known buyer busts, yields <=54 still-unknown cases. These seem to be mostly XK customers. I include a row for each case.
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+                                           buyer     Silk Road 2 Xanax King      USA                        Xanax                                         2014-06-28
+Blake Benthall        Defcon               operator  Silk Road 2                 USA         California                                       2014-11-05  2014-11-05
+David Schell          CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                         2014-11-06  2014-11-20
+Teri Schell           CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                         2014-11-06  2014-11-20
+Ryan Gustafson        Willy.Clock          seller    Agora                       Uganda                     counterfeit currency              2014-12-11  2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
+Brian Farrell         DoctorClu            staff     Silk Road 2                 USA         Washington     Xanax                             2015-01-20  2015-01-16    It was known Farrell was under investigation before the search warrant was executed & he was arrested.
+                                           buyer                                 Israel                     cocaine                           2015-01-04  2015-02-23
+Austin Frembling                           buyer     Agora                       USA         California     MDMA                              2015-01-15  2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
 
 
 
@@ -242,7 +248,7 @@ DeepDotWeb reports that at the beginning of 2013, a small Israeli buyer of multi
 
 ### Japan
 
-A man was [arrested for importing 50g of a "stimulant"](http://www.nationmultimedia.com/breakingnews/Japan-makes-Bitcoin-linked-drug-arrest-police-medi-30233259.html) in May 2014.
+Ayumu Teramoto was [arrested for importing 50g of a "stimulant"](http://www.nationmultimedia.com/breakingnews/Japan-makes-Bitcoin-linked-drug-arrest-police-medi-30233259.html) in May 2014.
 
 ### Netherlands
 
@@ -285,16 +291,14 @@ December 2014 also saw the SR2 buyer Andrew Graham Hodgson sentenced for importi
 <!-- http://www.reddit.com/r/DarkNetMarkets/comments/24p8x9/san_jose_bust_sounds_like_chaletlas_team/ http://www.reddit.com/r/DarkNetMarkets/comments/23qh7y/warning_chaletlatherealchaletla_has_either_turned/ and AmericaOnDrugs http://silkroad5v7dywlc.onion/index.php?topic=38821.0 / http://silkroad5v7dywlc.onion/index.php?topic=39273.msg707181#msg707181 http://abclocal.go.com/kabc/story?section=news/national_world&id=9524170  -->
 <!-- SR2's loopyslo, Oxycontin? "WARNING! Seller comoromised! DEA showed up at my house after ordering! Said they would exchange lesser sentence if i cooperate with good feedback so they can continue to trap other buyers. THIS IS A TRAP! Cheapest Oxys on SR for a reason!" http://thehub7dnl5nmcz5.onion/index.php?topic=3066.0 -->
 
-Despite making up much of SR's customer-base and being one of the largest drug markets in the world, American cases are rarer than one might expect.
-
 In September 2011, the Silk Road buyer of LSD & MDMA [Stacy Litz](http://www.reddit.com/r/SilkRoad/comments/1v5g5u/september_2011_sr_prosecution_stacy_litz/) was arrested in Pennsylvania after selling LSD to an undercover officer; she became an informant.
 
-On 28 October 2013, the Maryland former seller ["digitalink"](/docs/sr/2013-06-07-digitalink-profile.html) was [charged in federal court](/docs/sr/digitalink-courtrecords.maff) (previously convicted of a number of offenses in state courts) for his heroin & [methylone](!Wikipedia) (banned October 2011) sales a year & a half previously (he stopped in January 2012), and [pled guilty](http://www.baltimoresun.com/news/maryland/bs-md-silk-road-plea-20131105,0,7979360.story "Silk Road drug dealer pleads guilty: Jacob T. George IV, 32, sold heroin and methylone using online market"), ultimately receiving [a sentence of 6 years](http://www.baltimoresun.com/news/maryland/crime/blog/bs-md-silk-road-sentencing-20140905,0,5703914.story "Silk Road drug dealer gets six years prison: Jacob Theodore George IV, 33, sold heroin through online marketplace").
-The [complaint/indictment](/docs/sr/digitalink-federalcomplaint-1-13-cr-00593-CCB.pdf) does not specify what evidence the case is based on, why such a long delay, or why no arrest; but based on [digitalink's forum posts](/docs/sr/digitalink-profile.maff) and [forum discussions of him](/docs/sr/digitalink-forumdiscussions.maff), it seems he was an extremely careless vendor who disdained PGP, retrieved product seized by the Post Office (one forum-user presciently exclaimed in August 2011, "Oh wow, the idiocy is unmatched! It seems very possible that digitalink will be busted sometime soon."), told other people who his methylone supplier was, gave his phone number to buyers, and ultimately failed to deliver \$3500 of methylone to a buyer "thoth" who then [threatened to give digitalink's information to the police](/docs/sr/digitalink-thoth.maff).
+On 28 October 2013, the Maryland former seller ["digitalink"](/docs/sr/2013-06-07-digitalink-profile.html), Jacob Theodore George IV, was [charged in federal court](/docs/sr/digitalink-courtrecords.maff) (previously convicted of a number of offenses in state courts) for his heroin & [methylone](!Wikipedia) (banned October 2011) sales a year & a half previously (he stopped in January 2012), and [pled guilty](http://www.baltimoresun.com/news/maryland/bs-md-silk-road-plea-20131105,0,7979360.story "Silk Road drug dealer pleads guilty: Jacob T. George IV, 32, sold heroin and methylone using online market"), ultimately receiving [a sentence of 6 years](http://www.baltimoresun.com/news/maryland/crime/blog/bs-md-silk-road-sentencing-20140905,0,5703914.story "Silk Road drug dealer gets six years prison: Jacob Theodore George IV, 33, sold heroin through online marketplace").
+The [complaint/indictment](/docs/sr/digitalink-federalcomplaint-1-13-cr-00593-CCB.pdf) does not specify what evidence the case is based on, why such a long delay, or why no arrest, and many of the PACER documents remain sealed or unavailable as of 23 February 2015 (so we don't know the details or how exactly he was cooperating); but based on [digitalink's forum posts](/docs/sr/digitalink-profile.maff) and [forum discussions of him](/docs/sr/digitalink-forumdiscussions.maff), it seems he was an extremely careless vendor who disdained PGP, retrieved product seized by the Post Office (one forum-user presciently exclaimed in August 2011, "Oh wow, the idiocy is unmatched! It seems very possible that digitalink will be busted sometime soon."), told other people who his methylone supplier was, gave his phone number to buyers, and ultimately failed to deliver \$3500 of methylone to a buyer "thoth" who then [threatened to give digitalink's information to the police](/docs/sr/digitalink-thoth.maff).
 
 During the SR1 trial, the DHS agent DerYeghiayan engaged in purchases ["from March 2012 until September 2013...Using an account obtained from an actual user, with the screen name of 'dripsofacid'"](http://www.pcworld.com/article/2870812/us-government-lurked-on-silk-road-for-over-a-year.html "U.S. government lurked on Silk Road for over a year"), which was used for [at least one buy in April 2013](http://arstechnica.com/tech-policy/2015/01/silk-road-trial-federal-agent-explains-how-he-trapped-ulbricht/); "dripsofacid"'s account may have been obtained after an unknown arrest during that time period. <!-- also "Mr Wonderful" -->
 
-On 5 May 2012, a [Bard College student](http://www.berkshireeagle.com/news/ci_26681481/former-bard-college-at-simons-rock-student-avoids "Former Bard College at Simon's Rock student avoids jail on drug charges")'s rooms were searched & campus security found "LSD, ketamine, amphetamines, hallucinogenic mushrooms, MDMA, mescaline and marijuana, as well as packaging originating from as far away as China, Germany and Poland", which he had been reselling locally after sourcing them from the "darknet", and ultimately received a suspended sentence in 2014; given the variety, it is almost certain he was purchasing from SR1 rather than any of the other SR1-era markets (BMR/Darkbay/Sheep/Atlantis).
+On 5 May 2012, the Massachusetts [Bard College student](http://www.berkshireeagle.com/news/ci_26681481/former-bard-college-at-simons-rock-student-avoids "Former Bard College at Simon's Rock student avoids jail on drug charges") Mehran Jahedi's rooms were searched & campus security found "LSD, ketamine, amphetamines, hallucinogenic mushrooms, MDMA, mescaline and marijuana, as well as packaging originating from as far away as China, Germany and Poland", which he had been reselling locally after sourcing them from the "darknet", and ultimately received a suspended sentence in 2014; given the variety, it is almost certain he was purchasing from SR1 rather than any of the other SR1-era markets (BMR/Darkbay/Sheep/Atlantis).
 
 A [pseudonymous Redditor](http://www.reddit.com/r/SilkRoad/comments/1o6whp/attention_i_just_made_bail_as_a_buyer/ccpnnh7) claims to have been arrested & charged over cocaine sometime in 2012, but not convicted.
 
@@ -344,7 +348,7 @@ Simultaneous with the SR bust, a [Washington](http://www.dailydot.com/crime/silk
 
 The Florida seller "UnderGroundSyndicate"/"BTCMaster" Angel William Quinones ([profile](http://antilop.cc/sr/vendors/8184c05ea4.htm), [plea agreement](http://antilop.cc/sr/files/2014_05_13_QUINONES_plea_agreement.pdf)) [was arrested](http://www.suntimes.com/news/metro/27419179-418/partner-of-ex-largest-online-drug-dealer-plans-to-plead-guilty.html "Partner of ex-largest online drug dealer plans to plead guilty") near-simultaneously with DPR thanks to the cooperation of his partner/supplier, the Dutch seller SuperTrips, who had been arrested when he earlier tried to fly into the USA in August 2013 with an unencrypted laptop after having been identified through latent fingerprints on packaging.
 
-The NY seller of clonazepam/hydrocodone/heroin "deezletime" ([profile](http://antilop.cc/sr/vendors/f70952f167.htm)) was arrested on 1 October 2013 as well, ultimately reaching a plea deal on 10 December 2014, in time to testify in the Ulbricht trial.
+The NY seller of clonazepam/hydrocodone/heroin "deezletime" ([profile](http://antilop.cc/sr/vendors/f70952f167.htm)), Michael Duch, was arrested on 1 October 2013 as well, ultimately reaching a plea deal on 10 December 2014, in time to testify in the Ulbricht trial.
 
 On 21 November 2013, the seller "MDpro" was [arrested in Delaware](http://www.orlandosentinel.com/news/local/breakingnews/os-silk-road-orlando-doctor-20131121,0,5782126.story "Doctor charged with selling drugs to local DEA agents via Silk Road") ([seller profile](/docs/sr/2013-06-07-mdpro-profile.html), [forum discussions](/docs/sr/2013-11-22-mdpro-srforums-discussion.maff), [forum posts](/docs/sr/2013-11-22-mdpro-forumposts.maff), [BMR posts under her real name](/docs/sr/2013-11-29-bmr-obollesforum.mht)) and charged in federal court ([PACER web data](/docs/sr/2013-11-11-mdpro-pacer.maff), [complaint/filings](/docs/sr/2013-11-22-mdpro-6-13-mj-01614-DAB.zip)), ultimately sentenced to [2.5 years](http://www.delawareonline.com/story/news/local/2015/01/13/doctor-sentenced-months-silk-road-drug-case/21716135/ "Doctor gets 30 months in Silk Road drug case"); based on the complaint, it seems her fatal mistake was either using tracking on her shipments through an account registered in her real name or putting valid return addresses on her shipments to a PO box registered to her real name, which allowed the undercover buyer to find her and compile the extensive case against her. Among her [many security mistakes](http://www.forbes.com/sites/kashmirhill/2013/11/26/how-a-delaware-doctor-was-linked-to-silk-road-drug-sales/) included [accepting shipments from other sellers](/docs/sr/2013-11-29-mdpro-moonbear.mht) to her apartment addressed to her partner (and [partner in crime](http://www.philly.com/philly/blogs/inq-phillydeals/Del-doc-32-busted-sold-drugs-for-Bitcoins.html "Ob/Gyns who planned to wed busted in Bitcoin drug probe")).
 

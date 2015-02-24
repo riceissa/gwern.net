@@ -18,8 +18,8 @@ do
             -e "www.tandfonline.com/doi/abs/" -e "jstor.org" -e "springer.com" -e "springerlink.com" \
             -e "www.mendeley.com" -- "$PAGE";
         egp -e "http://www.pnas.org/content/.*/.*/.*.abstract" -e '[^\.]t\.test\(' -- "$PAGE";
-        fgp -e "<q>" -e "</q>" -e "(www" -e ")www" -e "![](" -e "]()" -e " percent " -e "    Pearson'" \
-            -e '~~~{.sh}' -e 'library("' -- "$PAGE";
+        fgp -e "<q>" -e "</q>" -e "(www" -e ")www" -e "![](" -e "]()" -e "](/wiki/" -e "](wiki/" \
+            -e " percent " -e "    Pearson'" -e '~~~{.sh}' -e 'library("' -- "$PAGE";
 
         # look for personal uses of illegitimate statistics & weasel words, but filter out blockquotes
         fgp -e ' significant ' -e ' significantly ' -e ' obvious' -e 'basically' -- "$PAGE" | egrep -v '[[:space:]]*>';

@@ -105,7 +105,7 @@ Onionshop                2014-05-18 2014-09-17 FALSE hacked    FALSE    `onionsh
 TOM                      2014-05-10 2014-12-18 FALSE scam      FALSE    `tom3j5jkjl7327oc.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Bitwasp    FALSE  FALSE 0     FALSE   Forums: `tomf2fo56wthggwk.onion`. TOM disappeared without any announcements; [Reddit](https://www.reddit.com/r/TomMarketplace/comments/2pyibn/what_happened_to_toms/) comments report deposits were not returned, so I mark TOM a scam.
 Area51                   2014-06-20 2015-01-24 FALSE scam      FALSE    `fiftyonecrklhzhe.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE   [Spammed on The Hub](http://thehub7dnl5nmcz5.onion/index.php?topic=4034.msg32690#msg32690); implementation is PHP on Debian, admin states "area51 is complete selfcoded and we have nothing to do with bitwasp". Centralized escrow & no reports of deposits being returned.
 Dream Market             2013-11-15            TRUE            FALSE    `ltxocqh4nvwkofil.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             unknown    FALSE  TRUE  0     FALSE   Site claims to've opened 15 November 2013; first mention of it I found was on 7 January 2014.
-Agora                    2013-12-03            TRUE            FALSE    `agorahooawayyfoe.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE   Forums: `lacbzxobeprssrfx.onion`
+Agora                    2013-12-03            TRUE            FALSE    `agorahooawayyfoe.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   TRUE  0     FALSE   Forums: `lacbzxobeprssrfx.onion` <!-- any exploits of CSRF claim? https://www.reddit.com/r/AgMarketplace/comments/2wgrg4/agora_marketplace_csrf_to_steal_bitcoins/ http://seclists.org/fulldisclosure/2015/Feb/64 -->
 Outlaw Market            2013-12-29            TRUE            FALSE    `drugs26ucskmvcef.onion` FALSE    FALSE TRUE    FALSE    FALSE    FALSE             custom     TRUE   FALSE 2     FALSE   Open date based on the date of the ["Welcome" post on the OM forum](http://hmxutiksabsj4ozi.onion/index.php?topic=2.msg0); apparently formerly "Drugs'n'Bets". Site was hacked & user PMs released in 2013; site [shut down 31 July 2014](http://www.deepdotweb.com/2014/08/01/outlaw-market-down-possibily-compromised/) after an attack blame on former admins when "A SESSION-hack was performed and a couple of datasets manipulated but not much damage created". They claim in [an interview](http://www.deepdotweb.com/2014/01/23/interview-with-outlaw-market-admin/) it's custom software; this is confirmed by a [leak of PHP source which does not call any frameworks/CRMs](/docs/sr/2015-01-15-outlawmarket-index.php). Policies based on no apparent hits among mirrors.
 evolution                2014-01-14            TRUE            FALSE    `k5zq47j6wd3wdvjq.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             Laravel    TRUE   TRUE  0     FALSE   [Announced on Reddit](http://www.reddit.com/r/DarkNetMarkets/comments/1vmufh/latest_news_from_tcf/) 20 Jan, but forums [claim first sale on 14 January](http://i25c62nvu4cgeqyz.onion/viewtopic.php?pid=121#p121); forums: `i25c62nvu4cgeqyz.onion`; new url: `nifgk5szbodg7qbo.onion`; [multisig](http://www.reddit.com/r/DarkNetMarkets/comments/24vio2/market_announcement_multisignature_escrow_has/). [PHP framework](https://www.reddit.com/r/DarkNetMarkets/comments/2ox10x/humorevo_exposed/)
 BlackBank Market         2014-02-05            TRUE            FALSE    `wztyb7vlfcw6l4xd.onion` TRUE     FALSE TRUE    FALSE    FALSE    FALSE             unknown    TRUE   TRUE  0     FALSE   Active before its [Reddit announcement](http://www.reddit.com/r/BlackBank/comments/1x2pjp/blackbank_market_a_new_emerging_featurerich_and/) but no apparent sales. Forums: `kth2mwuwlkezwziy.onion`. Forbidden items are listed on the [wiki](http://kth2mwuwlkezwziy.onion/wiki/index.php/Forbidden_Goods)
@@ -129,7 +129,7 @@ I may add to the table other variables; possibly useful ones:
 - 2-factor-authentication
 - Vendor PGP enforced
 - FE status
-- ideology: whether the operator seems ideological (I theorize SR1 may have lasted longer than most post-SR1 markets because Ulbricht's agorist ideology meant he was not profit-motivated & refused to do an exit scam or shutdown)
+- ideology: whether the operator seems ideological (I suspect SR1 may have lasted longer than most post-SR1 markets because Ulbricht's agorist ideology meant he was not profit-motivated & refused to do an exit scam or shutdown when SR1 was being extorted and may even have been running at loss; but after watching markets in 2014-2015, it seems that such a variable is unlikely to be useful: Ulbricht is the only one clearly ideological, and the rest seem to be aping it or too quiet to tell. Just because the operators say something doesn't mean they believe it, and many say nothing.)
 - volume (at what time?)
 - how much money was lost when the site scammed or was hacked (only reasonably known for a few scams...)
 - apparent nationality of operator
@@ -151,34 +151,6 @@ I may add to the table other variables; possibly useful ones:
 <!-- Outlaw policy: "Basically everything thst is not meant to/ or harming "innocent people". Stolen bankaccount there the "small individual" would have to pay for: no. stolen accounts of politicians: yes. Fireames for self defense: yes. Nuclear, biological or chemical weapons for mass-murder: no." -->
 <!-- Onionshop a custom implementation? $ torify curl -I http://onionshopkue7sxr.onion/ / HTTP/1.1 200 OK / Date: Wed, 21 May 2014 23:15:41 GMT / Server: Apache/2.2.22 (Ubuntu) / X-Powered-By: PHP/5.3.10-1ubuntu3.11 / Set-Cookie: PHPSESSID=im4plmtfgauil19u3uotv7v1h3; path=/ / Expires: Thu, 19 Nov 1981 08:52:00 GMT / Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0 / Pragma: no-cache / Vary: Accept-Encoding / Content-Type: text/html -->
 <!-- TorBazaar forum: down Aug 19 - Nov 6 -->
-<!-- Operation Onymous:
-11/6: raided Hydra, SR2, cloud nine, cr2?! (http://cannabiskofvl7pa.onion/)
-
-down: alpaca, bluesky, pandora, bungee, topix2, cr3
-
-- press release: http://www.fbi.gov/newyork/press-releases/2014/operator-of-silk-road-2.0-website-charged-in-manhattan-federal-court / complaint: https://pdf.yt/d/RpyX9_xmapTkhmkb/download
-- US arrests: Defcon, SF; unknown in New Orleans LA http://www.theneworleansadvocate.com/news/crime/10766235-123/fbi-raid-of-marigny-home 2 in California https://www.reddit.com/r/DarkNetMarkets/comments/2myaiu/2_sr2_marijuana_sellers_arrested_in_california/
-- 2 Irish arrests: http://www.independent.ie/irish-news/suspected-online-international-drugs-ring-smashed-by-gardai-30724000.html / http://www.belfasttelegraph.co.uk/news/local-national/republic-of-ireland/two-held-over-darknet-drugs-ring-30724056.html / http://www.irishexaminer.com/breakingnews/ireland/gardai-seize-drugs-after-probe-into-darknet-drug-operation-650036.html / http://www.bbc.com/news/world-europe-29938685 / http://www.herald.ie/news/busted-internet-drugs-kingpin-has-1m-in-bank-30725076.html / http://www.herald.ie/news/courts/dublin-football-stars-brother-accused-of-using-the-darknet-to-sell-drugs-30734228.html - TheHulkster or JerseyCow? "The Irish vendor was TheHulkster/JC. Or at least the Irish side of Jersey Cow anyway. The English side of the JC operation, who is now Funky Unicorn is also mia. ( maybe part of the British raids, I do not know.) JC has flipped." http://kingdomazsnvzfuq.onion/index.php?topic=157.0
-- http://www.businessinsider.com/fbi-silk-road-seized-arrests-2014-11
-- 6 UK arrests http://www.nationalcrimeagency.gov.uk/news/news-listings/483-international-law-enforcement-deals-major-blow-to-dark-web-markets - Budworx https://www.reddit.com/r/DarkNetMarkets/comments/2lipfw/budworx_orders_potentially_compromised/ https://www.reddit.com/r/DarkNetMarkets/comments/2lkpaz/6_vendors_arrested_in_uk/ & account banned on Agora ?
-- 17 EU arrests total
-
-SR2 server in Lithuania: http://it.lrytas.lt/ismanyk/jav-slaptieji-agentai-ispudinga-laimiki-aptiko-lietuvoje.htm / https://twitter.com/lamoustache/status/532524736677703680
-http://nytimes.com/2014/11/08/world/europe/dark-market-websites-operation-onymous.html :
-
-> The investigation, nicknamed Operation Onymous, targeted mostly sellers and deactivated upward of 50 websites like Silk Road 2.0, Mr. Quid’s Forum, Paypal Center, Cannabis Road Markets and Blue Sky, according to Europol...The operation was led by American agencies — the F.B.I. and Homeland Security Investigations — and coordinated by Europol in the various European countries with raids that started on Wednesday and Thursday but blossomed into a broad sweep by Friday. Working in English as a common language, investigators made arrests in Eastern and Western Europe, including France, Germany, Spain, and England.
-
-7: down, pandora, bungee, topix2, the hub, tor bazaar
-9: lessee... topix, pandora, blue sky, the hub, tor bazaar - down; cloud9is throwing a 404, and alpaca still has the same message about coming back up in a few days; tom and tom forums are down
-
-lots of bogus addresses seized: https://www.nikcub.com/posts/onymous-part1/
-
-seizure filing:
-14-Mag-2427 Southern District of New York
-Southern District of New York   14-Mag-2427 11/06/2014
-
-2 servers in France, 0 arrests? http://www.lemonde.fr/pixels/article/2014/11/11/les-coulisses-de-l-operation-onymous-contre-des-dizaines-de-sites-caches-illegaux_4521827_4408996.html
--->
 <!--
 $ torify curl -I 'http://abraxasdegupusel.onion/info'
 HTTP/1.1 302 Found
@@ -230,6 +202,7 @@ Set-Cookie: cisession=cf7f68fd3749ec68e646bd26123bdf3f3a9b33f47c08bc8d2b5e8c2104
 Set-Cookie: cisession=8059ae26dba4d197e7ffc030ba4911900ef3a16822240027d4d0d2107a334c79dc13d14aa62a5fc66e8a6ec6cfb711ea199b8d7ba74f66e77f66212a43429c56tktGz9ekedHDJXD%2BQq8l4rs0KA4l6WWgCiwD0GZkskEglQ%2FHhDwHLFS5yKxhy6bPMIW06k%2BJunLmCOKiIZr4nfOt6MbBRgymgZkwL8Se5L%2B9V2we4VU%2B%2Br5%2BgcInPlIjd8UMw5FqigfSkXzQWUJ%2F23uAI8gd0%2Bpho2oz9NoVFn7u6kPw1bhrd6O3zRamIspYfvnkR1bgCIdDGPmQZueoaxnaqYIUJ8SATPCbEvVK3HywQpEJ%2FGg4y3nUx4XZHrA%2Bfw1iecJB7ROu6F2dkaaNNFL2pwVeP4F7SMzLZt6uWDY%3D; expires=Thu, 19-Feb-2015 21:14:41 GMT; Max-Age=7200; path=/; httponly
 Content-Type: text/html -->
 <!-- Panacea: down, hacked? went down during 12 February 2015, still down as of 19 February 2015 -->
+<!-- Mr Nice Guy 2 2015-02-21 niceguyfa3xkuuoq.onion -->
 
 # Analysis
 

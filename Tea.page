@@ -470,8 +470,9 @@ existing company? http://dealbook.nytimes.com/2014/06/26/as-indias-teas-gain-fan
 # Appendix
 ## Electric vs stove kettle: fight!
 
-Electric kettles are faster, but I was curious *how* much faster my electric kettle heated than my stove-top kettle.
-So I collected some data and compared them directly.
+Electric kettles are faster, but I was curious *how* much faster my electric kettle heated water to high or boiling temperatures than does my stove-top kettle.
+So I collected some data and compared them directly, trying out a number of statistical methods (principally: nonparametric & parametric tests of difference, linear & beta regression models, and a Bayesian measurement error model).
+My electric kettle is faster than the stove-top kettle (the difference is both statistically-significant _p_≪0.01 & the posterior probability of difference is _P_≈1), and the modeling suggests time to boil is largely predictable from a combination of volume, end-temperature, and kettle type.
 
 ### Experiment
 
@@ -955,3 +956,9 @@ While the DIC seems to have improved, the estimates look mostly the same.
 In this case, it seems that the variables are precise enough (measurement-errors small enough) that adjusting for them doesn't change the results too much
 
 <!-- http://thesweethome.com/reviews/the-best-home-kettle/ -->
+
+<!--
+14:46:36 < Obormot\Gaia> gwern: I ran two preliminary water-heating tests (4 cups and 2 cups of water, once apiece, following the same procedure as you outlined) - got
+                         numbers much lower than yours
+14:47:01 < Obormot\Gaia> gwern: 359 and 210 seconds respectively to full boil
+-->

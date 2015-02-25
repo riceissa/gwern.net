@@ -27,7 +27,7 @@ The sections are split up by market, then by country.
 <!-- estimating risk: how many sellers, buyers, transactions?
 If you're curious, you could look at known sales/users numbers for SR1 and try to extrapolate some good guesses, from the Ulbricht indictment and from Christin's paper https://www.andrew.cmu.edu/user/nicolasc/publications/Christin-WWW13.pdf
 
-The indictment/complaint says that Feb 2011 - July 2013, there were 957k total accounts, 1.229m txs from 147k buyer accounts, 9.5m btc sales volume; Christin says among other things that "Over the measurement interval February 3, 2012- July 24, 2012, we indeed found 1,239 distinct sellers".
+The indictment/complaint says that Feb 2011 - July 2013, there were 957k total accounts, 1.229m transactions from 147k buyer accounts, 9.5m btc sales volume; Christin says among other things that "Over the measurement interval February 3, 2012- July 24, 2012, we indeed found 1,239 distinct sellers".
 
 So quickly dividing by month, that gives:
 
@@ -168,10 +168,13 @@ Austin Frembling                           buyer     Agora                      
 
 # Confirmed
 ## Agora
+### Uganda
 
 On 11 December 2014, the American [Ryan Andrew Gustafson was arrested in Uganda](http://www.nytimes.com/aponline/2014/12/18/us/ap-us-counterfeiting-uganda.html "Feds: Uganda-Based Man Counterfeited $2M in Cash") for counterfeiting money ([press release](http://www.justice.gov/opa/pr/criminal-charges-filed-against-us-citizen-connection-multi-million-dollar-international-cyber); [complaint](/docs/sr/2014-12-17-agora-willyclock-complaint.pdf); [docket](/docs/sr/2014-12-22-pacer-willyclock.maff); [Agora forums](http://lacbzxobeprssrfx.onion/index.php/topic,15752.msg3148560.html#msg3148560)); he was the seller "Willy.Clock" who had sold on Evolution until banned and then Agora & his own site.
 He had been uncovered after an American user of his counterfeit currency was detected, the packages sent by Willy.Clock profiled, his fingerprints found, the reshipper located in Uganda, and then an undercover deal set up.
 (Willy.Clock worked closely with "Mr Mouse" and "Ink", who may be compromised.)
+
+### USA
 
 In January 2015, [Austin Frembling was arrested](http://www.fresnobee.com/2015/02/20/4389411/fresno-man-indicted-for-possession.html) in Fresno, California, for buying \3k of MDMA off Agora from a Canadian seller ([press release](http://www.justice.gov/usao/cae/news/docs/2015/2015_02/02-19-15Frembling.html); [complaint](/docs/sr/2015-frembling-caed-03307884002.pdf); [docket](/docs/sr/2015-02-22-agora-fremblingdocket.maff); [previous record](http://mugshot-record-search.com/mugshot/CA/Fresno-County-Sheriff-Office/2013-Feb-07/4023889/BRYAN-FREMBLING)).
 His package was intercepted by Customs (possibly due to inadequate stealth), then a controlled delivery was done to his PO box.
@@ -182,7 +185,25 @@ His package was intercepted by Customs (possibly due to inadequate stealth), the
 On ~8 January 2014, the [Israeli man Amit Sand was arrested for buying a gun](http://posta.co.il/index.php/widgetkit/%D7%9E%D7%93%D7%95%D7%A8%D7%99%D7%9D-2/%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%97%D7%A9%D7%91/1604-%D7%90%D7%A7%D7%93%D7%97-%D7%94%D7%93%D7%90%D7%A8%D7%A7%D7%A0%D7%98-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%9F "אקדח הדארקנט הראשון: בחבילה שהגיעה לסניף דואר בתל אביב התגלה אקדח מפורק שהוסלק בתוך מגף * מזמין החבילה הודה כי רכש את האקדח ברשת האינטרנט הסודית באמצעות המטבע הדיגיטלי ביטקוין, ובמשטרה תוהים: האם נחשפה דרך חדשה להברחת אמצעי לחימה לישראל?") off a black-market seller for ~$1550 in bitcoins; the first package of parts (mailed 18 December 2013) was discovered by Customs and allowed to go through, and he was arrested after picking up the final second package.
 I assign this buy to BMR, since while BMR had closed a week or two before the first package was mailed, the deal could have been agreed upon earlier, and no other major market allowed guns at the time; this may be like the Korff case, where the purchase (ricin, in his case) began on BMR but continued off-market after BMR closed.
 
+<!--
+## BlackMarket Reloaded (BMR)
+
+A major BlackMarket Reloaded (BMR) seller seems to have been arrested & charged in Kentucky in [August/September 2013](http://www.dailydot.com/crime/dark-web-black-market-reloaded-adam-bunger-gun-sales-arrest/ "Cops may have just busted a major illegal gun dealer from the Deep Web") for international gun sales, after packages were intercepted.
+
+Another BMR gun dealer ("Gun Wise") was [arrested 7 November 2013](http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/). -->
+
+<!-- Ryan Chamberlain http://www.deepdotweb.com/2014/06/11/fbi-bomb-suspect-ryan-chamberlain-sought-toxins-via-deep-web-bmr/ related? http://www.sacbee.com/2014/05/05/6380750/undercover-operation-ends-carmichael.html http://www.sfgate.com/file/822/822-Redact%20Amend%20Compl.pdf -->
+<!-- BMR: Matthew Crisafi  http://www.seacoastonline.com/article/20140507/News/140509786 http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/ -->
+<!-- BMR: Korff poison http://www.reddit.com/r/DarkNetMarkets/comments/1vurn0/vendor_busted_for_selling_deadly_toxin/ https://dl.dropboxusercontent.com/u/182368464/2-14-mj-01008-DNF.pdf  https://dl.dropboxusercontent.com/u/182368464/2014-01-22-bmr-korff.maff http://www.tampabay.com/news/courts/criminal/labelle-man-accused-of-selling-toxin-in-death-plot/2162117  http://www.nbc-2.com/story/24506383/muse-poison-black-market-reloaded-online-jesse-korff-labelle-abrin http://www.nbc-2.com/story/24509658/online-messages-detail-online-poison-sale#.U5M6wfldWSo customer busted? http://www.bbc.com/news/uk-england-london-29331457 -->
+<-- Ricin letter to Obama? https://www.reddit.com/r/SilkRoad/comments/1qqmbx/silk_road_vendor_sent_ricin_to_president_obama/ -->
+<!-- BMR: Jonathan Norling http://www.nydailynews.com/new-york/nyc-crime/nypd-reach-fbi-interpol-cyanide-carrying-swede-article-1.1637056 Swede attempted suicide, bought cyanide on BMR -->
+<!_- BMR: James Christopher Malcolm? http://www.reddit.com/r/DarkNetMarkets/comments/27id98/fbi_chamberlain_sought_toxins_on_the_deep_web/ci1agqx http://www.reddit.com/r/DarkNetMarkets/comments/27id98/fbi_chamberlain_sought_toxins_on_the_deep_web/ci1j8x4 -->
+
+<!-- BMR/Utopia: [5](http://www.bbc.co.uk/news/technology-26158012 "Five arrested in Utopia dark net marketplace crackdown") [arrests](http://www.deepdotweb.com/2014/02/12/the-utopia-bust-details-prosecution-announcement/ "The Utopia Bust Details - Prosecution Announcement") http://www.om.nl/actueel/nieuwsberichten/@162281/undercover-onderzoek/ http://www.deepdotweb.com/2014/09/23/new-details-about-the-utopia-marketplace-bust/ https://pay.reddit.com/r/DarkNetMarkets/comments/2itda1/sentencing_for_utopia_bmr_admin_programmers/ -->
+
+
 ## Evolution
+### USA
 
 "In or about mid-2014" the TCF/Evolution seller "Dark_Mart" was taken over by the FBI^[See Cheng Le complaint: "In or about mid-2014, an FBI online covert employee (the 'OCE') assumed  online Dark-Web identity, which had previously been used by a trafficker in illicit materials, including, among other things, biological toxins."].
 The details are unknown, but Dark_Mart rejoined the Evolution forums after a long absence spanning that period with a comment about guns bringing heat on his suppliers^[Dark_Mart last posts on Evolution 2014-03-03 normally then posts again on 2014-08-29 that "I just recently logged back into evo and contacted some of you about my status. The bottom line is that one of my suppliers got arrested on gun charges and it brought some heat on our operation. I had to go off the grid for a while but Dark_Mart is back!"], which may or may not be the FBI agent telling the truth to be safe.
@@ -200,7 +221,7 @@ The [prosecution](http://www.afp.gov.au/media-centre/news/afp/2012/july/afp-and-
 
 Another Australian seller, Christopher Owen, was pulled over by police in April 2012 while driving to the post office to mail shipments, the drugs found, his house searched, and [was sentenced to 5 years](http://www.bordermail.com.au/story/1508217/jail-time-for-web-drug-trafficker/ "Jail time for web drug trafficker") ([discussion](/docs/sr/2013-04-17-australia.mht "Title: SILK ROAD VENDOR JUST GOT BUSTED AND CONVICTED Post by: AussieMitch on May 17, 2013, 12:59 am")).
 
-In August 2012, the MDMA buyer Ryan West, who resold locally, was [convicted of 4 charges](http://www.abc.net.au/news/2012-12-05/dark-internet-linked-to-drug-seizure-spike/4410872 "Dealers shed light on dark internet's drug trade").
+In August 2012, the MDMA buyer Ryan West, who resold locally, was [convicted of 4 charges](http://www.abc.net.au/news/2012-12-05/dark-internet-linked-to-drug-seizure-spike/4410872 "Dealers shed light on dark Internet's drug trade").
 
 A [7 November 2012](http://www.theherald.com.au/story/734298/detectives-follow-the-silk-road/ "Detectives follow the Silk Road") Australian article claims 30 interceptions a month in an area, but mentions nothing specific about arrests.
 A [December 2012 article](http://www.abc.net.au/news/2012-12-05/dark-internet-linked-to-drug-seizure-spike/4410872 "Dealers shed light on dark Internet's drug trade") quotes Customs claiming a 40% increase in seizures, but then quotes a SR seller as claiming a doubling or quadrupling of Australian buyers (hence, implying the interception rate has halved or worse).
@@ -402,21 +423,6 @@ There are currently no known controlled deliveries or arrests of CALIGIRL custom
 <!-- SR2/Agora etc? https://www.reddit.com/r/DarkNetMarkets/comments/2ihjn6/upcoming_high_profile_large_vendor_busts_in_the/ -->
 <!-- SR2: like california cannabis http://www.bellevuereporter.com/news/288854101.html -->
 
-## BlackMarket Reloaded (BMR)
-
-A major BlackMarket Reloaded (BMR) seller seems to have been arrested & charged in Kentucky in [August/September 2013](http://www.dailydot.com/crime/dark-web-black-market-reloaded-adam-bunger-gun-sales-arrest/ "Cops may have just busted a major illegal gun dealer from the Deep Web") for international gun sales, after packages were intercepted.
-
-Another BMR gun dealer ("Gun Wise") was [arrested 7 November 2013](http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/).
-
-<!-- Ryan Chamberlain http://www.deepdotweb.com/2014/06/11/fbi-bomb-suspect-ryan-chamberlain-sought-toxins-via-deep-web-bmr/ related? http://www.sacbee.com/2014/05/05/6380750/undercover-operation-ends-carmichael.html http://www.sfgate.com/file/822/822-Redact%20Amend%20Compl.pdf -->
-<!-- BMR: Matthew Crisafi  http://www.seacoastonline.com/article/20140507/News/140509786 http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/ -->
-<!-- BMR: Korff poison http://www.reddit.com/r/DarkNetMarkets/comments/1vurn0/vendor_busted_for_selling_deadly_toxin/ https://dl.dropboxusercontent.com/u/182368464/2-14-mj-01008-DNF.pdf  https://dl.dropboxusercontent.com/u/182368464/2014-01-22-bmr-korff.maff http://www.tampabay.com/news/courts/criminal/labelle-man-accused-of-selling-toxin-in-death-plot/2162117  http://www.nbc-2.com/story/24506383/muse-poison-black-market-reloaded-online-jesse-korff-labelle-abrin http://www.nbc-2.com/story/24509658/online-messages-detail-online-poison-sale#.U5M6wfldWSo customer busted? http://www.bbc.com/news/uk-england-london-29331457 -->
-<-- Ricin letter to Obama? https://www.reddit.com/r/SilkRoad/comments/1qqmbx/silk_road_vendor_sent_ricin_to_president_obama/ -->
-<!-- BMR: Jonathan Norling http://www.nydailynews.com/new-york/nyc-crime/nypd-reach-fbi-interpol-cyanide-carrying-swede-article-1.1637056 Swede attempted suicide, bought cyanide on BMR -->
-<!_- BMR: James Christopher Malcolm? http://www.reddit.com/r/DarkNetMarkets/comments/27id98/fbi_chamberlain_sought_toxins_on_the_deep_web/ci1agqx http://www.reddit.com/r/DarkNetMarkets/comments/27id98/fbi_chamberlain_sought_toxins_on_the_deep_web/ci1j8x4 -->
-
-<!-- BMR/Utopia: [5](http://www.bbc.co.uk/news/technology-26158012 "Five arrested in Utopia dark net marketplace crackdown") [arrests](http://www.deepdotweb.com/2014/02/12/the-utopia-bust-details-prosecution-announcement/ "The Utopia Bust Details - Prosecution Announcement") http://www.om.nl/actueel/nieuwsberichten/@162281/undercover-onderzoek/ http://www.deepdotweb.com/2014/09/23/new-details-about-the-utopia-marketplace-bust/ https://pay.reddit.com/r/DarkNetMarkets/comments/2itda1/sentencing_for_utopia_bmr_admin_programmers/ -->
-
 <!-- # Sheep
 
 http://www.reddit.com/r/SilkRoad/comments/1riid6/i_am_a_corrections_officerwe_now_have_our_first/
@@ -483,7 +489,7 @@ The [local police investigated](http://www.bellevuereporter.com/news/288854101.h
 
 [^DoctorClu-IP]: From the search warrant:
 
-    > ...From January 2014 to July 2014, a FBI NY Source of Information (SOI) provided reliable IP addresses for TOR and hidden services such as SR2, which included its main marketplace URL (silkroad6ownfk.onion), its vendor URL (vx3w763ohd256iyh.onion), its forum URL (silkroad5v7dywlc.onion) and its support interface (uz434sei7arqunp6.onion). The SOI's information ultimately led to the identification of SR2 servers, which led to the identification of at least seventeen black markets on TOR.
+    > ...From January 2014 to July 2014, a FBI NY Source of Information (SOI) provided reliable IP addresses for TOR and hidden services such as SR2, which included its main marketplace URL (`silkroad6ownfk.onion`), its vendor URL (`vx3w763ohd256iyh.onion`), its forum URL (`silkroad5v7dywlc.onion`) and its support interface (`uz434sei7arqunp6.onion`). The SOI's information ultimately led to the identification of SR2 servers, which led to the identification of at least seventeen black markets on TOR.
     >
     > The SOI also identified approximately 78 IP addresses that accessed a vendor .onion address. A user cannot accidently end up on the vendor site. The site is for vendors only, and access is only given to the site by the SR2 administrators/moderators after confirmation of a significant number of successful transactions. If a user visits the vendor URL, he or she is asked for a user name and password. Without a user name and password, the vendor web site cannot be viewed.
     >
@@ -508,7 +514,7 @@ On 20 June 2014, the buyer Jasen Crisp received a CD of a package of MDMA he had
 At the same time as Operation Onymous, the [FBI raided a home in West Haven, Connecticut](http://www.theneworleansadvocate.com/multimedia/walthandelsman/10766235-171/fbi-raid-of-marigny-home) [~6 November 2014](http://www.theneworleansadvocate.com/news/10766235-123/fbi-raid-of-marigny-home); it is unknown whether anyone was arrested or what market they may have been associated with.
 (Speculation so far has only suggested the Agora seller "Nawlins".)
 
-The FBI also [raided a New Orleans, Louisiana](http://www.theneworleansadvocate.com/news/10766235-123/fbi-raid-of-marigny-home "FBI raid of Marigny home part of global crackdown on ‘Dark Web’") 6 November 2014, but similarly nothing is known about the results.
+The FBI also [raided a New Orleans, Louisiana](http://www.theneworleansadvocate.com/news/10766235-123/fbi-raid-of-marigny-home "FBI raid of Marigny home part of global crackdown on 'Dark Web'") 6 November 2014, but similarly nothing is known about the results.
 
 The original [Operation Onymous press release](http://www.eurojust.europa.eu/press/PressReleases/Pages/2014/2014-11-07.aspx) boasted of 17 arrests, involving LE from "Bulgaria, the Czech Republic, Finland, France, Germany, Hungary, Ireland, Latvia, Lithuania, Luxembourg, the Netherlands, Romania, Spain, Sweden, Switzerland, the United Kingdom and the USA";
 
@@ -531,7 +537,7 @@ down: alpaca, bluesky, pandora, bungee, topix2, cr3
 SR2 server in Lithuania: http://it.lrytas.lt/ismanyk/jav-slaptieji-agentai-ispudinga-laimiki-aptiko-lietuvoje.htm / https://twitter.com/lamoustache/status/532524736677703680
 http://nytimes.com/2014/11/08/world/europe/dark-market-websites-operation-onymous.html :
 
-> The investigation, nicknamed Operation Onymous, targeted mostly sellers and deactivated upward of 50 websites like Silk Road 2.0, Mr. Quid’s Forum, Paypal Center, Cannabis Road Markets and Blue Sky, according to Europol...The operation was led by American agencies — the F.B.I. and Homeland Security Investigations — and coordinated by Europol in the various European countries with raids that started on Wednesday and Thursday but blossomed into a broad sweep by Friday. Working in English as a common language, investigators made arrests in Eastern and Western Europe, including France, Germany, Spain, and England.
+> The investigation, nicknamed Operation Onymous, targeted mostly sellers and deactivated upward of 50 websites like Silk Road 2.0, Mr. Quid's Forum, Paypal Center, Cannabis Road Markets and Blue Sky, according to Europol...The operation was led by American agencies - the F.B.I. and Homeland Security Investigations - and coordinated by Europol in the various European countries with raids that started on Wednesday and Thursday but blossomed into a broad sweep by Friday. Working in English as a common language, investigators made arrests in Eastern and Western Europe, including France, Germany, Spain, and England.
 
 7: down, pandora, bungee, topix2, the hub, tor bazaar
 9: lessee... topix, pandora, blue sky, the hub, tor bazaar - down; cloud9is throwing a 404, and alpaca still has the same message about coming back up in a few days; tom and tom forums are down

@@ -118,8 +118,10 @@ I have looked at the following studies:
 15. ["A micronutrient-fortified seasoning powder reduces morbidity and improves short-term cognitive function, but has no effect on anthropometric measures in primary school children in northeast Thailand"](http://www.ajcn.org/content/87/6/1715.long), Manger et al 2008
 16. ["Delayed Neurobehavioral Development in Children Born to Pregnant Women with Mild Hypothyroxinemia During the First Month of Gestation: The Importance of Early Iodine Supplementation"](/docs/iodine/2009-berbel.pdf), Berbel et al 2009; turns out that supplementation was administered to all women during their pregnancy, so the development scores are not useful here.
 17. ["Iodine supplementation improves cognition in mildly iodine-deficient children"](http://www.ajcn.org/content/90/5/1264.full), Gordon et al 2009
-18. ["The effect of iodine supplementation on cognition of mildly iodine deficient young New Zealand adults"](http://otago.ourarchive.ac.nz/handle/10523/2176), Fitzgerald 2012 (see also the presentation abstract of this as [Skeaff et al 2012](http://www.fasebj.org/cgi/content/meeting_abstract/26/1_MeetingAbstracts/114.4 "The effect of iodine supplementation on status and cognition in iodine deficient young adults")): Young adults ("18-30 years"), 33.6mg total dose; no effect. (The paper should be available in "late" 2012, according to Fitzgerald.)
-19. ["Iodine and Cognition in Young Adults: A Randomised, Placebo-Controlled Trial"](http://otago.ourarchive.ac.nz/handle/10523/2341), Redman 2012; this may be a re-reporting of Fitzgerald 2012 or a replication. <!-- TODO Followup once Fitzgerald is available -->
+18. think2 project:
+
+    - ["The effect of iodine supplementation on cognition of mildly iodine deficient young New Zealand adults"](http://otago.ourarchive.ac.nz/handle/10523/2176), Fitzgerald 2012 (see also the presentation abstract of this as [Skeaff et al 2012](http://www.fasebj.org/cgi/content/meeting_abstract/26/1_MeetingAbstracts/114.4 "The effect of iodine supplementation on status and cognition in iodine deficient young adults")): Young adults ("18-30 years"), 33.6mg total dose; no effect. (The paper should be available in "late" 2012, according to Fitzgerald, but remains unavailable as of 26 February 2015.)
+    - ["Iodine and Cognition in Young Adults: A Randomised, Placebo-Controlled Trial"](/docs/iodine/2011-redman.pdf) ([abstract](http://otago.ourarchive.ac.nz/handle/10523/2341)), Redman 2011; both Fitzgerald & Redman are reporting on the "think2" project, and the descriptions & figures reported are consistent with each other, so it seems the think2 results have been reported in separate theses.
 20. Dewi et al 2012, ["Iodine supplementation into drinking water improved intelligence of preschool children aged 25-59 months in Ngargoyoso sub-district, Central Java, Indonesia: A randomized control trial"](http://www.iiste.org/Journals/index.php/JBAH/article/download/1994/1973); subjects selected for low urinary iodine excretion, region has >50% goiter rates
 21. van Stuijvenberg et al 1999, ["Effect of iron-, iodine-, and β-carotene -fortified biscuits on the micronutrient status of primary school children: a randomized controlled trial"](/docs/iodine/1999-vanstuijvenberg.pdf)
 22. ["Timing of the Effect of Iodine Supplementation on Intelligence Quotients of Schoolchildren"](http://endometabol.com/?page=download&file_id=13181), Salarkia et al 2004; followup in 2 Iranian villages after the national institution of iodization in 1989
@@ -176,24 +178,25 @@ Unfortunately, a few of the useful studies also tested a variety of substances, 
 
 First, the data from the surviving studies: <!-- TODO: methodological covariates - randomization, blinding etc -->
 
-study           year   n.e   mean.e   sd.e   n.c   mean.c   sd.c   age   dose    multi
------           ----   ---   ------   -----  ----  ------   -----  ----  -----   -----
-Bautista        1982   100   69.43    10.96  100   70.31    10.96  8.75  475     0
-Boyages         1990   28    34.4     15.4   24    29.5     8.5    29.5  720     0
-Schoenthaler.1  1991   100   10.1     8.9    33.3  8.9      7.3    14    12.68   1
-Schoenthaler.2  1991   105   12.6     7.9    33.3  8.9      7.3    14    25.35   1
-Schoenthaler.3  1991   105   10.4     7.6    33.3  8.9      7.3    14    25.35   1
-Southon         1994   22    63.94    2.6    29    64.1     1.87   13.5  16.8    1
-Shrestha.1      1994   72    17.1     1.8    36    10.7     2.4    7.1   490     0
-Shrestha.2      1994   80    18.2     1.5    36    10.7     2.4    7.1   490     0
-Isa             2000   60    85.25    14.6   100   83.6     16.2   11.39 480     0
-Huda            2001   145   14.88    3.28   142   14.60    3.19   9.8   400     0
-Zimmerman       2006   159   25       6.3    151   20.5     5.6    11    400     0
-McNeill         2007   398   11.5     2.3    374   11.7     2.1    72    54.75   1
-Gordon          2009   84    10.2     3      82    9.6      2.4    11.5  29.4    0
-Dewi            2012   33    110.27   9.04   34    103.06   9.99   3.1   8.4     0
-Salarkia        2004   19    96       10     246   89       13     1.5   1272    0
-Untoro          1999   121   89       7      43    88       6      9     464     0
+study           group        year   n.e   mean.e   sd.e   n.c   mean.c   sd.c   age   dose    multi
+-----           ----         ---   ------   -----  ----  ------   -----  ----  -----   -----
+Bautista        Bautista     1982   100   69.43    10.96  100   70.31    10.96  8.75  475     0
+Boyages         Boyages      1990   28    34.4     15.4   24    29.5     8.5    29.5  720     0
+Schoenthaler.1  Schoenthaler 1991   100   10.1     8.9    33.3  8.9      7.3    14    12.68   1
+Schoenthaler.2  Schoenthaler 1991   105   12.6     7.9    33.3  8.9      7.3    14    25.35   1
+Schoenthaler.3  Schoenthaler 1991   105   10.4     7.6    33.3  8.9      7.3    14    25.35   1
+Southon         Southon      1994   22    63.94    2.6    29    64.1     1.87   13.5  16.8    1
+Shrestha.1      Shrestha     1994   72    17.1     1.8    36    10.7     2.4    7.1   490     0
+Shrestha.2      Shrestha     1994   80    18.2     1.5    36    10.7     2.4    7.1   490     0
+Isa             Isa          2000   60    85.25    14.6   100   83.6     16.2   11.39 480     0
+Huda            Huda         2001   145   14.88    3.28   142   14.60    3.19   9.8   400     0
+Zimmerman       Zimmerman    2006   159   25       6.3    151   20.5     5.6    11    400     0
+McNeill         McNeill      2007   398   11.5     2.3    374   11.7     2.1    72    54.75   1
+Gordon          Gordon       2009   84    10.2     3      82    9.6      2.4    11.5  29.4    0
+Dewi            Dewi         2012   33    110.27   9.04   34    103.06   9.99   3.1   8.4     0
+Salarkia        Salarkia     2004   19    96       10     246   89       13     1.5   1272    0
+Untoro          Untoro       1999   121   89       7      43    88       6      9     464     0
+Redman          Redman       2011   86    20.85    3.43   86    20.59    3.27   21.28 45      0
 
 Comments:
 
@@ -218,6 +221,7 @@ Comments:
     > The urinary iodine concentration and thyroid volume of all treatment groups were [statistically-]significantly improved after the supplementation, but there were no differences among the supplemented groups in cognitive performance. Therefore we combined the three iodized oil supplemented groups into one group.
 
     The listed dose is a weighted average.
+14. Redman: dose is calculated as: 150 μg, 100 pills a bottle, 3 bottles (1 initial bottle, 2 replacements in mail) = $150 \cdot 100  \cdot 3$ = 45000μg; scores are from the Matrix Reasoning subtest
 
 [^Bautista-reverse-engineering]: Bautista did not report standard deviations, but did report _n_s, means, and _p_-values, which permits the standard deviation to be derived, following the _Cochrane Handbook_ (["7.7.3.3 Obtaining standard deviations from standard errors, confidence intervals, _t_ values and _p_ values for differences in means"](http://handbook.cochrane.org/chapter_7/7_7_3_3_obtaining_standard_deviations_from_standard_errors.htm)): the degrees of freedom = 198, so with a reported _p_=0.57, _t_=0.569; then the standard error is the means divided by the _t_ value ($\frac{70.31 - 69.43}{0.569}$); and finally the standard deviation: $\frac{1.55}{sqrt(\frac{1}{100} + \frac{1}{100})} = 10.96$.
 [^Southon-pooling]: Southon reported control & experimental scores split by gender, which need to be re-pooled:
@@ -256,37 +260,35 @@ The result of the meta-analysis:
 -->
 
 ~~~{.R}
-Random-Effects Model (k = 16; tau^2 estimator: REML)
+Random-Effects Model (k = 17; tau^2 estimator: REML)
 
-tau^2 (estimated amount of total heterogeneity): 1.2797 (SE = 0.4837)
-tau (square root of estimated tau^2 value):      1.1313
-I^2 (total heterogeneity / total variability):   97.96%
-H^2 (total variability / sampling variability):  49.02
+tau^2 (estimated amount of total heterogeneity): 1.2100 (SE = 0.4432)
+tau (square root of estimated tau^2 value):      1.1000
+I^2 (total heterogeneity / total variability):   97.87%
+H^2 (total variability / sampling variability):  47.02
 
 Test for Heterogeneity:
-Q(df = 15) = 284.4073, p-val < .0001
+Q(df = 16) = 285.8785, p-val < .0001
 
 Model Results:
 
 estimate       se     zval     pval    ci.lb    ci.ub
-  0.6560   0.2878   2.2794   0.0226   0.0919   1.2200
+  0.6204   0.2716   2.2844   0.0223   0.0881   1.1527
 ~~~
 
 ~~~{.R}
-Fixed-Effects Model (k = 16)
-
 Test for Heterogeneity:
-Q(df = 15) = 284.4073, p-val < .0001
+Q(df = 16) = 285.8785, p-val < .0001
 
 Model Results:
 
 estimate       se     zval     pval    ci.lb    ci.ub
-  0.2683   0.0392   6.8429   <.0001   0.1915   0.3451
+  0.2565   0.0380   6.7536   <.0001   0.1820   0.3309
 ~~~
 
 So the effect size is, as expected, small: _d_=0.2. A far cry from the _d_>1 which we might estimate from the prenatal studies.
 
-The large difference in _d_ - 0.2 vs 0.6 - between the fixed-effects and random-effects models is concerning. Given the very high heterogeneity of the _i_^2^, which indicates that there are large differences between some of the studies, a random-effects is more appropriate in principle; but further analysis shows this is being driven by a far outlier, and so I believe the fixed-effects estimate of 0.2 winds up being more accurate.
+The large difference in _d_ - 0.2 vs 0.6 - between the fixed-effects and random-effects models is concerning. Given the extremely high heterogeneity of the _i_^2^, which indicates that there are large differences between some of the studies, a random-effects is more appropriate in principle; but further analysis shows this is being driven by a far outlier of Shrestha, and so I believe the fixed-effects estimate of 0.2 winds up being more accurate.
 
 A pretty [forest plot](!Wikipedia) summary:
 
@@ -298,24 +300,24 @@ A pretty [forest plot](!Wikipedia) summary:
 We suspected, based on the equivocal results in post-birth studies and the large decline in effect over the duration of a pregnancy in the Chinese studies, that if there was any benefit, it would be in the young; on the same reasoning, we might expect large doses to do more good than smaller ones. The necessary data is encoded into the table already, so we run a meta-analytic regression on them as independent predictors:
 
 ~~~{.R}
-tau^2 (estimated amount of residual heterogeneity):     1.3528 (SE = 0.5489)
-tau (square root of estimated tau^2 value):             1.1631
-I^2 (residual heterogeneity / unaccounted variability): 97.61%
-H^2 (unaccounted variability / sampling variability):   41.91
+tau^2 (estimated amount of residual heterogeneity):     1.2521 (SE = 0.4902)
+tau (square root of estimated tau^2 value):             1.1190
+I^2 (residual heterogeneity / unaccounted variability): 97.49%
+H^2 (unaccounted variability / sampling variability):   39.92
 R^2 (amount of heterogeneity accounted for):            0.00%
 
 Test for Residual Heterogeneity:
-QE(df = 13) = 242.3638, p-val < .0001
+QE(df = 14) = 243.6469, p-val < .0001
 
 Test of Moderators (coefficient(s) 2,3):
-QM(df = 2) = 1.3383, p-val = 0.5121
+QM(df = 2) = 1.6083, p-val = 0.4475
 
 Model Results:
 
              estimate      se     zval    pval    ci.lb   ci.ub
-intrcpt        0.7114  0.5525   1.2875  0.1979  -0.3716  1.7943
-iodine$age    -0.0155  0.0190  -0.8149  0.4151  -0.0528  0.0218
-iodine$dose    0.0005  0.0009   0.5822  0.5604  -0.0013  0.0023
+intrcpt        0.6793  0.5205   1.3053  0.1918  -0.3407  1.6994
+iodine$age    -0.0157  0.0183  -0.8568  0.3915  -0.0515  0.0202
+iodine$dose    0.0006  0.0009   0.6665  0.5051  -0.0011  0.0023
 ~~~
 
 The coefficients and variability are disappointing: the age and dose moderators explain little of what is going on.
@@ -335,13 +337,13 @@ The `estimate` is the important part: neither of the moderators seem to have a s
 One methodological concern is that by including studies like Southon which supplemented many things besides iodine, our results are merely picking up the efficacy of other supplements (iron is a particular concern). Curiously, despite our expectation that the multi-vitamin studies would have higher effect sizes because any of the ingredients could be helpful singly or synergistically, it is strikingly the opposite:
 
 ~~~{.R}
-QM(df = 2) = 6.9361, p-val = 0.0312
+QM(df = 2) = 6.7027, p-val = 0.0350
 
 Model Results:
 
                        estimate      se    zval    pval    ci.lb   ci.ub
-factor(iodine$multi)0    0.8954  0.3416  2.6210  0.0088   0.2258  1.5650
-factor(iodine$multi)1    0.1300  0.5054  0.2572  0.7970  -0.8605  1.1205
+factor(iodine$multi)0    0.8250  0.3203  2.5756  0.0100   0.1972  1.4529
+factor(iodine$multi)1    0.1300  0.4953  0.2625  0.7930  -0.8408  1.1008
 ~~~
 
 ## Bias checks
@@ -351,12 +353,13 @@ We do not have enough to reliably check for biases like [publication bias](!Wiki
 A test & graph:
 
 ~~~{.R}
-test for funnel plot asymmetry: z = 3.1469, p = 0.0017
+test for funnel plot asymmetry: z = 3.3206, p = 0.0009
 ~~~
 
 ![A funnel plot of effect size versus sample size, checking for bias in publishing only good-looking results on iodine](/images/iodine/funnel.png)
 
-So Shrestha 1994 is driving most of the effect! (Not a surprise at this point.) If we omit those points, the funnel plot snaps into place cleanly:
+So Shrestha 1994 is driving most of the effect! (Not a surprise at this point.)
+If we omit those points, the funnel plot is cleaner
 
 ![A funnel plot with Shrestha removed, showing better fit from the weaker estimate.](/images/iodine/funnel-moderated.png)
 
@@ -364,6 +367,13 @@ A trim-and-fill check agrees with us and not the test, by deciding not to add in
 
 ~~~{.R}
 Estimated number of missing studies on the left side: 0 (SE = NA)
+
+Random-Effects Model (k = 17; tau^2 estimator: REML)
+
+tau^2 (estimated amount of total heterogeneity): 1.2100 (SE = 0.4432)
+tau (square root of estimated tau^2 value):      1.1000
+I^2 (total heterogeneity / total variability):   97.87%
+H^2 (total variability / sampling variability):  47.02
 ~~~
 
 If we were to redo the analysis but omitting Shrestha 1994, we see a much smaller effect-size:
@@ -371,23 +381,26 @@ If we were to redo the analysis but omitting Shrestha 1994, we see a much smalle
 <!-- TODO: exploit the 'subset' argument to rma instead of rerunning the full calculation -->
 
 ~~~{.R}
-Random-Effects Model (k = 14; tau^2 estimator: REML)
+Random-Effects Model (k = 15; tau^2 estimator: REML)
 
-tau^2 (estimated amount of total heterogeneity): 0.0571 (SE = 0.0347)
-tau (square root of estimated tau^2 value):      0.2389
-I^2 (total heterogeneity / total variability):   70.33%
-H^2 (total variability / sampling variability):  3.37
+tau^2 (estimated amount of total heterogeneity): 0.0526 (SE = 0.0313)
+tau (square root of estimated tau^2 value):      0.2293
+I^2 (total heterogeneity / total variability):   68.75%
+H^2 (total variability / sampling variability):  3.20
 
 Test for Heterogeneity:
-Q(df = 13) = 52.7355, p-val < .0001
+Q(df = 14) = 53.0253, p-val < .0001
 
 Model Results:
 
 estimate       se     zval     pval    ci.lb    ci.ub
-  0.2352   0.0802   2.9307   0.0034   0.0779   0.3924
+  0.2224   0.0751   2.9602   0.0031   0.0752   0.3697
 ~~~
 
-So, it seems a lot of the effect size is being driven by a few studies turning in large or extremely large effect sizes: Shrestha, Zimmerman, and Dewi (in chronological order). One common factor to these studies seems to be that they worked in the most iodine-deprived areas possible: Shrestha chose his region as being the worst he could find, and Dewi cites reports of goiter in half the population while targeting the supplementation to the most deficient children.
+So, it seems a lot of the effect size is being driven by a few studies turning in large or extremely large effect sizes: Shrestha, Zimmerman, and Dewi (in chronological order).
+One common factor to these studies seems to be that they worked in the most iodine-deprived areas possible: Shrestha chose his region as being the worst he could find, and Dewi cites reports of goiter in half the population while targeting the supplementation to the most deficient children.
+
+At most, we can justify an effect estimate which is much smaller than would be estimated based on the prenatal studies, and the reality of this residual effect can be doubted: looking at the forest plot, the more rigorous and Western studies seem to have the tiniest and closest to zero estimates.
 
 ## Code
 

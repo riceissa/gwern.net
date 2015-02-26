@@ -464,11 +464,24 @@ Additional citations are welcome.
 > - Harman, H. H. (1960). _Modern factor analysis_. Chicago: University of Chicago Press.
 > - McClosky, Herbert, & Meehl, P. E. (in preparation). _Ideologies in conflict_.^[This work does not seem to have been published.]
 
-### Gelman 2010
+### Gelman
+
+["Type 1, type 2, type S, and type M errors"](http://andrewgelman.com/2004/12/29/type_1_type_2_t/)
+
+> I've never in my professional life made a Type I error *or* a Type II error. But I've made lots of errors. How can this be?
+>
+> A Type 1 error occurs only if the null hypothesis is true (typically if a certain parameter, or difference in parameters, equals zero). In the applications I've worked on, in social science and public health, I've never come across a null hypothesis that could actually be true, or a parameter that could actually be zero.
+
+["Significance testing in economics: McCloskey, Ziliak, Hoover, and Siegler"](http://andrewgelman.com/2007/10/05/significance_te/):
+
+> I think that McCloskey and Ziliak, and also Hoover and Siegler, would agree with me that the null hypothesis of zero coefficient is essentially always false. (The paradigmatic example in economics is program evaluation, and I think that just about every program being seriously considered will have effects–positive for some people, negative for others–but not averaging to exactly zero in the population.) From this perspective, the point of hypothesis testing (or, for that matter, of confidence intervals) is not to assess the null hypothesis but to give a sense of the uncertainty in the inference. As Hoover and Siegler put it, “while the economic significance of the coefficient does not depend on the statistical significance, our certainty about the accuracy of the measurement surely does. . . . Significance tests, properly used, are a tool for the assessment of signal strength and not measures of economic significance.” Certainly, I’d rather see an estimate with an assessment of statistical significance than an estimate without such an assessment.
 
 ["Bayesian Statistics Then and Now"](http://stat.columbia.edu/~gelman/research/published/gelman_discussion_of_efron.pdf):
 
 > My third meta-principle is that *different applications demand different philosophies*. This principle comes up for me in Efron's discussion of hypothesis testing and the so-called false discovery rate, which I label as "so-called" for the following reason. In Efron's formulation (which follows the classical multiple comparisons literature), a "false discovery" is a zero effect that is identified as nonzero, whereas, in my own work, I never study zero effects. The effects I study are sometimes small but it would be silly, for example, to suppose that the difference in voting patterns of men and women (after controlling for some other variables) could be exactly zero. My problems with the "false discovery" formulation are partly a matter of taste, I'm sure, but I believe they also arise from the difference between problems in genetics (in which some genes really have essentially zero effects on some traits, so that the classical hypothesis-testing model is plausible) and in social science and environmental health (where essentially everything is connected to everything else, and effect sizes follow a continuous distribution rather than a mix of large effects and near-exact zeroes).
+
+
+### Gelman 2010
 
 ["Causality and Statistical Learning"](http://www.stat.columbia.edu/~gelman/research/published/causalreview4.pdf), Gelman 2010:
 
@@ -513,6 +526,22 @@ Additional citations are welcome.
 >
 > The place where I think Sloman is misguided is in his formulation of scientific models in an either/or way, as if, in truth, social variables are linked in simple causal paths, with a scientific goal of figuring out if A causes B or the reverse. I don't know much about intelligence, beer consumption, and socioeconomic status, but I certainly don't see any simple relationships between income, religious attendance, party identification, and voting-and I don't see how a search for such a pattern will advance our understanding, at least given current techniques. I'd rather start with description and then go toward causality following the approach of economists and statisticians by thinking about potential interventions one at a time. I'd love to see Sloman's and Pearl's ideas of the interplay between observational and experimental data developed in a framework that is less strongly tied to the notion of choice among simple causal structures.
 
+### Gelman et al 2011
+
+["Inherent Difficulties of Non-Bayesian Likelihood-based Inference, as Revealed by an Examination of a Recent book by Aitkin"](http://www.stat.columbia.edu/~gelman/research/unpublished/GRR16.pdf)
+
+> Several of the examples in _Statistical Inference_ represent solutions to problems that seem to us to be artificial or conventional tasks with no clear analogy to applied work.
+>
+>> “They are artificial and are expressed in terms of a survey of 100 individuals expressing support (Yes/No) for the president, before and after a presidential address (...) The question of interest is whether there has been a change in support between the surveys (...). We want to assess the evidence for the hypothesis of equality H~1~ against the alternative hypothesis H~2~ of a change.” _Statistical Inference_, page 147
+>
+> Based on our experience in public opinion research, this is not a real question. Support for any political position is always changing. The real question is how much the support has changed, or perhaps how this change is distributed across the population.
+>
+> A defender of Aitkin (and of classical hypothesis testing) might respond at this point that, yes, everybody knows that changes are never exactly zero and that we should take a more “grown-up” view of the null hypothesis, not that the change is zero but that it is nearly zero. Unfortunately, the metaphorical interpretation of hypothesis tests has problems similar to the theological doctrines of the Unitarian church. Once you have abandoned literal belief in the Bible, the question soon arises: why follow it at all? Similarly, once one recognizes the inappropriateness of the point null hypothesis, it makes more sense not to try to rehabilitate it or treat it as treasured metaphor but rather to attack our statistical problems directly, in this case by performing inference on the change in opinion in the population.
+>
+> To be clear: we are not denying the value of hypothesis testing. In this example, we find it completely reasonable to ask whether observed changes are statistically significant, i.e. whether the data are consistent with a null hypothesis of zero change. What we do not find reasonable is the statement that “the question of interest is whether there has been a change in support.”...Suppose public opinion was observed to really be flat, punctuated by occasional changes, as in the left graph in Figure 3. In that case, Aitkin's question of “whether there has been a change” would be well-defined and appropriate, in that we could interpret the null hypothesis of no change as some minimal level of baseline variation. Real public opinion, however, does not look like baseline noise plus jumps, but rather shows continuous movement on many time scales at once, as can be seen from the right graph in Figure 3, which shows actual presidential approval data. In this example, we do not see Aitkin's question as at all reasonable. Any attempt to work with a null hypothesis of opinion stability will be inherently arbitrary. It would make much more sense to model opinion as a continuously- varying process.
+>
+> The statistical problem here is not merely that the null hypothesis of  change is nonsensical; it is that the null is in no sense a reasonable approximation to any interesting model.
+
 ### Schwitzgebel 2013
 
 ["Preliminary Evidence That the World Is Simple (An Exercise in Stupid Epistemology)"](http://philosophycommons.typepad.com/xphi/2013/02/preliminary-evidence-that-the-world-is-simple-an-exercise-in-stupid-epistemology.html) (humorous blog post)
@@ -528,6 +557,10 @@ Additional citations are welcome.
 Jordan Ellenberg, ["The Myth Of The Myth Of The Hot Hand"](http://regressing.deadspin.com/the-myth-of-the-myth-of-the-hot-hand-1588112937) (excerpted from _How Not to Be Wrong: The Power of Mathematical Thinking_, 2014):
 
 > A significance test is a scientific instrument, and like any other instrument, it has a certain degree of precision. If you make the test more sensitive-by increasing the size of the studied population, for example-you enable yourself see ever-smaller effects. That's the power of the method, but also its danger. The truth is, the null hypothesis is probably *always* false! When you drop a powerful drug into a patient's bloodstream, it's hard to believe the intervention literally has zero effect on the probability that the patient will develop esophageal cancer, or thrombosis, or bad breath. Each part of the body speaks to every other, in a complex feedback loop of influence and control. Everything you do either gives you cancer or prevents it. And in principle, if you carry out a powerful enough study, you can find out which it is. But those effects are usually so minuscule that they can be safely ignored. Just because we can detect them doesn't always mean they matter...The right question isn't, "Do basketball players sometimes temporarily get better or worse at making shots?"-the kind of yes/no question a significance test addresses. The right question is "How *much* does their ability vary with time, and to what extent can observers detect in real time whether a player is hot?" Here, the answer is surely "not as much as people think, and hardly at all."
+
+["The “hot hand” and problems with hypothesis testing"](http://andrewgelman.com/2012/03/16/hot-hand-debate-is-warming-up/), Gelman:
+
+> The effects are certainly not zero. We are not machines, and anything that can affect our expectations (for example, our success in previous tries) should affect our performance...Whatever the latest results on particular sports, I can't see anyone overturning the basic finding of Gilovich, Vallone, and Tversky that players and spectators alike will *perceive* the hot hand even when it does not exist and dramatically *overestimate* the magnitude and consistency of any hot-hand phenomenon that does exist. In summary, this is yet another problem where much is lost by going down the standard route of null hypothesis testing.
 
 --
 

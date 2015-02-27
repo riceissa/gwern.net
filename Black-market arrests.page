@@ -42,6 +42,7 @@ Similarly, if there were >60 buyer arrests (I double because there seem to be mo
 - SR2 server image & Benthall laptop
 - deezletime
 -->
+<!-- TODO: after finishing, find first usage of "CD" and define -->
 
 # Table
 
@@ -347,6 +348,7 @@ On 5 May 2012, the Massachusetts [Bard College student](http://www.berkshireeagl
 
 The account of the SR1 clonazepam/marijuana seller "alllove" was used by the FBI in 27 September 2012 & earlier as part of its investigation into SR1, and [screenshots taken with it](/docs/sr/ulbrichttrial-evidence-gx109redacted.pdf) were [entered into evidence](http://antilop.cc/sr/files/2014_12_10_ULBRICHT_evidence_lists.pdf) at Ross Ulbricht's 2015 trial.
 alllove must have been busted somehow before September 2012, for his account to have become the FBI's property, and explaining his abrupt disappearance sometime before 19 May 2012 (remarked upon at the time [on Reddit](https://www.reddit.com/r/SilkRoad/comments/1emvyg/favorite_vendors/); there may be more accurate timings in [SR1F hits for "alllove"](/docs/sr/sr1f-alllove.tar.xz)) but all other details are unknown.
+(The [old SR1 seller Grand Wizard says](https://www.reddit.com/r/SilkRoad/comments/2uxzus/sr1_seller_alllove_busted_mid2012/coczhg6) that alllove may also have sold bitcoins for cash in the mail or other fiat; this is an extremely risky occupation and if true, almost certainly how he was busted.)
 
 In December 2012, a [New Jersey buyer was busted for marijuana in a controlled delivery](http://www.news10.net/news/article/251775/2/Cross-county-drug-ring-using-dark-Internet-site-busted-by-feds) when the package was detected in the mail; he cooperated (no additional penalties specified in article) and 2 sellers were eventually arrested & charged in July 2013.
 
@@ -526,7 +528,7 @@ At the same time as Operation Onymous, the [FBI raided a home in West Haven, Con
 
 The FBI also [raided a New Orleans, Louisiana](http://www.theneworleansadvocate.com/news/10766235-123/fbi-raid-of-marigny-home "FBI raid of Marigny home part of global crackdown on 'Dark Web'") 6 November 2014, but similarly nothing is known about the results.
 
-The original [Operation Onymous press release](http://www.eurojust.europa.eu/press/PressReleases/Pages/2014/2014-11-07.aspx) boasted of 17 arrests, involving LE from "Bulgaria, the Czech Republic, Finland, France, Germany, Hungary, Ireland, Latvia, Lithuania, Luxembourg, the Netherlands, Romania, Spain, Sweden, Switzerland, the United Kingdom and the USA" (["the arrests were scattered over the US and Europe."](http://www.theguardian.com/technology/2014/nov/07/silk-road-20-operation-onymous-dark-web-drugs-takedown)); not all of these are market-connected as they could also be related to scam sites, vendor shops, or running content sites (doxbins, revenge porn, etc):
+The original [Operation Onymous press release](http://www.eurojust.europa.eu/press/PressReleases/Pages/2014/2014-11-07.aspx) boasted of 17 arrests, involving LE from "Bulgaria, the Czech Republic, Finland, France, Germany, Hungary, Ireland, Latvia, Lithuania, Luxembourg, the Netherlands, Romania, Spain, Sweden, Switzerland, the United Kingdom and the USA" (["the arrests were scattered over the US and Europe."](http://www.theguardian.com/technology/2014/nov/07/silk-road-20-operation-onymous-dark-web-drugs-takedown)); not all of these are market-connected as they could also be related to scam sites, vendor shops, or running content sites (doxbins, revenge porn, etc) and the original releases counted seized websites [in the most inflated way possible](https://www.nikcub.com/posts/onymous-part1/ "Large Number of Tor Hidden Sites Seized by the FBI in Operation Onymous were Clone or Scam Sites"):
 
 1. Blake Benthall; San Francisco, California USA; SR2 operator
 2. ???; West Haven, Connecticut USA; ???
@@ -534,8 +536,8 @@ The original [Operation Onymous press release](http://www.eurojust.europa.eu/pre
 4. ???; Budapest, Hungary; Hydra operator
 5. David Schell; California USA; SR2 seller CaliforniaCanabis (the press release is dated 2014-11-07, and the Schells seem to have been arrested the day before, 2014-11-06, so they are probably included in the count)
 6. Teri Schell; California USA; SR2 seller CaliforniaCanabis
-7. ???; Switzerland; [operator of the scam site "Black Market"](http://www.lematin.ch/suisse/Le-FBI-fait-interpeller-un-Vaudois-chez-lui/story/24253596 "Le FBI fait interpeller un Vaudois chez lui Darknet: Un informaticien est accusé d’avoir créé un site de vente d’armes, de drogues et de faux papiers.")
-8. ???; Barcelona Spain; [seems to have been the operator of a scam site](http://www.guardiacivil.es/es/prensa/noticias/5146.html "La Guardia Civil detiene a uno de los objetivos de la macro operación ONYMOUS contra los mercados clandestinos en la Deep Web") ([translation](https://www.reddit.com/r/DarkNetMarkets/comments/2m3eyo/some_onymous_bust_in_spain/)) claiming to sell carding-related goods, perhaps "Super Note Counter" or "Sol’s Unified USD Counterfeit’s" or "Fast Cash!" (all named in the [Operation Onymous seizure papers](/docs/sr/20141107-operationonymous-seizureforfeiture.pdf))
+7. ???; Switzerland; [operator of the scam site "Black Market"](http://www.lematin.ch/suisse/Le-FBI-fait-interpeller-un-Vaudois-chez-lui/story/24253596 "Le FBI fait interpeller un Vaudois chez lui Darknet: Un informaticien est accusé d'avoir créé un site de vente d'armes, de drogues et de faux papiers.")
+8. ???; Barcelona Spain; [seems to have been the operator of a scam site](http://www.guardiacivil.es/es/prensa/noticias/5146.html "La Guardia Civil detiene a uno de los objetivos de la macro operación ONYMOUS contra los mercados clandestinos en la Deep Web") ([translation](https://www.reddit.com/r/DarkNetMarkets/comments/2m3eyo/some_onymous_bust_in_spain/)) claiming to sell carding-related goods, perhaps "Super Note Counter" or "Sol's Unified USD Counterfeit's" or "Fast Cash!" (all named in the [Operation Onymous seizure papers](/docs/sr/20141107-operationonymous-seizureforfeiture.pdf))
 
 <!-- Operation Onymous:
 11/6: raided Hydra, SR2, cloud nine, cr2?! (http://cannabiskofvl7pa.onion/)
@@ -609,6 +611,9 @@ The [Drugs Global Incident Map](http://drugs.globalincidentmap.com/) features ma
     - ["Virginia Beach police use 'weed' note to flush out suspected dealer"](https://www.reddit.com/r/DarkNetMarkets/comments/23ywcm/interesting_arrest/)
     - ["5 Arrested in Maine for 'Molly' drugs by mail operation"](http://www.postal-reporter.com/blog/5-arrested-in-maine-for-molly-drugs-by-mail-operation/)
     - ["Police: Springville [Utah] man received heroin from Amsterdam"](http://www.heraldextra.com/news/local/crime-and-courts/police-springville-man-received-heroin-from-amsterdam/article_d536e982-bd2e-5af9-9bef-9e38e9c0d108.html)
+    - ["Updated Dope Service Redux: Another postal worker accused of delivering weed, this time in Columbia, MD"](https://www.reddit.com/r/DarkNetMarkets/comments/2x6p20/psaarticle_two_usps_letter_carriers_caught/)
+    - ["West Bethlehem drug raid prompted by controlled delivery of pot package, records say"](http://www.lehighvalleylive.com/bethlehem/index.ssf/2015/02/west_bethlehem_drugraid_prompt.html)
+    - ["Thirty-five people indicted in 'Operation Southern Postal Powder'"](http://www.macon.com/2015/02/25/3605301/thirty-five-people-indicted-operation.html)
 
 Most are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales eg [the TedDanzig incident](https://www.reddit.com/r/SilkRoad/comments/1xq97t/teddanzig_arrested/)), but of course, some will turn out to be real.
 
@@ -633,6 +638,8 @@ A [Reddit user](https://www.reddit.com/r/DarkNetMarketsNZ/comments/2tdk8a/custom
 ## UK
 
 [One Redditor](https://www.reddit.com/r/SilkRoad/comments/1ewt7k/uk_arrest/) claims on 23 May 2013 that an acquaintance was CDed 22 May 2013 for an international package of pills ordered from SR1.
+
+[A Redditor](https://www.reddit.com/r/DarkNetMarkets/comments/2gwej3/true_cases_of_small_time_buyers_being_arrested/ckn7imx) claimed on 19 September 2014 that the British man [John Watt](http://www.newsandstar.co.uk/news/carlisle-man-who-had-ecstasy-tablets-sent-to-friend-s-house-jailed-1.1061538) & friend who were arrested for a package of MDMA from Holland had ordered it off SR1.
 
 [A Redditor](https://www.reddit.com/r/DarkNetMarkets/comments/2juko5/interways_raid_by_police/) claims in early October 2014 to have been raided after buying MDMA & "speed" from Interways off SR2.
 

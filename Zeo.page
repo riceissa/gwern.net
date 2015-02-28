@@ -722,7 +722,7 @@ Comments:
 - the authors cover much more specific potential connections between vitamin D and sleep than just "circadian rhythms"
 - the methodology section is non-existent; how were these 1500 patients picked? how long did each use vitamin D? Unfortunately, I nor Roberts has taken vitamin D blood tests (as far as I know) and so we cannot verify that the authors' 60-80ng/ml range is what we fell into, but it's plausible. How is sleep quality being measured? Are these results consistent or inconsistent with the one case of morning mood/restedness improvement but little else? Although even if they were inconsistent, that could be explained by neither of us being sleep disorder sufferers and the effect being weaker in us
 
-In July 2012, preprints of [Huang et al 2012](/docs/zeo/2012-huang.pdf "Improvement of Pain, Sleep, and Quality of Life in Chronic Pain Patients With Vitamin D Supplementation") became available; it is a [case series](!Wikipedia) - the authors followed a group of veterans with chronic pain who received vitamin D supplements, finding improvements to pain but also reduction in sleep latency and increase in sleep duration. While I did not observe any effect on latency or duration in my following experiments, this would still be a promising datapoint but unfortunately, the sample had substantial dropout, and had no control group (hence no randomizing or blinding). This renders the study not very useful - the improvements being perhaps just [regression toward the mean](!Wikipedia) or a [selection bias](!Wikipedia). In 2013, a review ([McCarty et al 2013](http://andrewamarino.com/PDFs/173-SleepMedRev2013.pdf "The link between vitamin D metabolism and sleep medicine")) came out arguing that "low vitamin D levels increase the risk for autoimmune disease, chronic rhinitis, tonsillar hypertrophy, cardiovascular disease, and diabetes. These conditions are mediated by altered immunomodulation, increased propensity to infection, and increased levels of inflammatory  substances, including those that regulate sleep"; this might handle negative effects on sleep from chronically low vitamin D, but doesn't seem relevant to acute effects varying by time of administration.
+In July 2012, preprints of [Huang et al 2012](/docs/zeo/2012-huang.pdf "Improvement of Pain, Sleep, and Quality of Life in Chronic Pain Patients With Vitamin D Supplementation") became available; it is a [case series](!Wikipedia) - the authors followed a group of veterans with chronic pain who received vitamin D supplements, finding improvements to pain but also reduction in sleep latency and increase in sleep duration. While I did not observe any effect on latency or duration in my following experiments, this would still be a promising datapoint but unfortunately, the sample had substantial dropout, and had no control group (hence no randomizing or blinding). This renders the study not very useful - the improvements being perhaps just [regression toward the mean](!Wikipedia) or a [selection bias](!Wikipedia). In 2013, a review ([McCarty et al 2013](http://andrewamarino.com/PDFs/183-SleepMedRev2014.pdf "The link between vitamin D metabolism and sleep medicine")) came out arguing that "low vitamin D levels increase the risk for autoimmune disease, chronic rhinitis, tonsillar hypertrophy, cardiovascular disease, and diabetes. These conditions are mediated by altered immunomodulation, increased propensity to infection, and increased levels of inflammatory  substances, including those that regulate sleep"; this might handle negative effects on sleep from chronically low vitamin D, but doesn't seem relevant to acute effects varying by time of administration.
 
 Blogger Chris L [looked back in August 2012](http://evenbetterchris.blogspot.com/2012/08/vitamin-d-destroyed-my-deep-sleep.html "Vitamin D destroyed my deep sleep") on ~1 year of Zeo data and a quasi-experiment in which he started with 4000IU of vitamin D supplementation, then 5000IU, then none; he took them at night, then switched to morning; the results were that the length of his deep sleep started high, dropped, and then recovered. He interprets this as evidence that too much vitamin D hurts sleep.
 
@@ -3029,6 +3029,32 @@ January
 February
 01: NA
 02: 1
+03: 0
+04: 1
+05: 0
+06: 1
+07: 0
+08: 1
+09: NA
+10: NA
+11: 0
+12: 0
+13: 1
+14: 1
+15: 0
+16: 1
+17: 0
+18: 1
+19: 0
+20: 0
+21: NA
+22: 1
+23: 1
+24: 0
+25: 0
+26: 1
+27: 1
+28: 0
 -->
 
 ## Hammock
@@ -4176,17 +4202,35 @@ February 2015
 06: 0 0
 07: 0 0
 08: 0 1
-09: 1 0?
+09: 1 0
+10: 0 0
+11: 1 0
+12: 0 0
+13: 0 1
+14: 0 0
+15: 0 1
+16: 0 1
+17: 1 0
+18: 1 1
+19: 1 0
+20: 0 0
+21: 1 0
+22: 1 0
+23: 0 0
+24: 0 0
+25: 0 1
+26: 0 0
+27: 1 0
+28: 1 1?
 -->
 
-<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1, 8, 9, 10, 12, 20, 22, 24, 29 October; 3, 4, 6, 8, 10, 13, 14, 15, 16, 20, 21, 22, 24, 25, 26, 27 November 2014; 1, 22 December 2014; 2015: 05, 07, 09, 12, 14, 16, 30, 31 January; 7 February -->
+<!-- Alcohol log: 18, 22, 23, 24, 26, 27, 30 July 2014; 1, 4, 5, 8, 11, 12, 14, 16, 17, 19, 21, 23, 25, 27, 30 August 2014; 3, 4, 6, 9, 10, 12, 15, 18, 19, 20, 27 September 2014; 1, 8, 9, 10, 12, 20, 22, 24, 29 October; 3, 4, 6, 8, 10, 13, 14, 15, 16, 20, 21, 22, 24, 25, 26, 27 November 2014; 1, 22 December 2014; 2015: 05, 07, 09, 12, 14, 16, 30, 31 January; 7, 14 February -->
 <!-- melatonin: last night of Now's melatonin+niacin+B6+magnesium 19 Feb 2014; began Nature's Bounty 1mg 21 March 2014 -->
 <!-- vitamin D: last day 4 August 2014 -->
 <!-- added aluminum foil to bedroom, 9 August 2014 -->
 <!-- began humidifier use 6 September 2014; turned off 29 September (to measure Kongin) -->
 <!-- hammock nights: 17, 18, 19, 21, 22 September; 5, 7, 8, 11, 13, 15, 18 October 2014 -->
 <!-- bright new CFL lights: began 9 December 2014; even brighter: began 27 December 2014 -->
-
 
 # External links
 

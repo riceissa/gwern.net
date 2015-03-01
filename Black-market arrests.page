@@ -38,9 +38,19 @@ I haven't finished compiling into a table, but let's say that for SR1 there were
 Similarly, if there were >60 buyer arrests (I double because there seem to be more buyer arrests than seller arrests, they just tend to take plea deals and not be publicized), then the same calculation would go there are 163200 buyers of which >60 were arrested for a risk of >0.04%
 -->
 <!-- Known address leaks:
-- SR1 server image
-- SR2 server image & Benthall laptop
+- seized sites:
+
+    - SR1 server images
+    - SR2 server image & Benthall laptop
+    - Utopia
+    - Hydra
+    - Cloud9
 - deezletime
+- Blue Giraffe
+- Tony76/Lucy Drop/...
+- ManInTheMiddle https://www.reddit.com/r/SilkRoad/comments/1w1jee/vendor_maninthemiddle_has_apparently_run_off_with/ https://imgur.com/a/u5c3c
+- WhiteDreams https://www.reddit.com/r/SilkRoad/comments/1vy722/scam_vendor_whitedreams_threatens_silk_road_mods/
+- DebbieDelites (Evolution): doxed customer, posting his address to Evolution market https://www.reddit.com/r/DarkNetMarkets/comments/2xkvlw/ama_ama_with_debbiesdelites_is_open/
 -->
 <!-- TODO: after finishing, find first usage of "CD" and define -->
 
@@ -58,6 +68,8 @@ Mehran Jahedi                              buyer     Silk Road 1                
                       alllove              seller    Silk Road 1                 USA                        marijuana                        FALSE    2012-05-19  2015-02-05    alllove's bust is known solely from incidental use of his SR1 account in Ulbricht trial; dated to earliest mention of his disappearance I found.
 David Handel          davidd               seller    Silk Road 1                 USA         Ohio           methylone, 2C-E, 2C-C            TRUE     2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
 Shawn Casey           Trojan               seller    Silk Road 1                 Canada      Alberta        DMT                              TRUE     2012-08-22  2014-12-17    Police tipped off by neighbors.
+                                           buyer     Silk Road 1                 Australia                  MDMA, marijuana, amphetamine     TRUE     2012-09-01  2014-12-05    2 unnamed brothers.
+                                           buyer     Silk Road 1                 Australia                  MDMA, marijuana, amphetamine     TRUE     2012-09-01  2014-12-05    2 unnamed brothers.
                                            buyer     Silk Road 1 SourDieselMan   USA         New Jersey     marijuana                        FALSE    2012-12-01  2013-10-27    SDM buyer
                                            buyer     Silk Road 1                 Israel                                                      TRUE     2013-01-01  2015-01-18    Report from DDW, arrested "beginning of 2013" for 2012 purchases; for simplicity, listed as 1 January 2013.
 Curtis Clark Green    Chronicpain          staff     Silk Road 1                 USA         Utah           cocaine                          FALSE    2013-01-17  2013-10-02
@@ -68,12 +80,22 @@ Blanks                SourDieselMan        seller    Silk Road 1                
 Sheldon Kennedy       edgarnumbers         seller    Silk Road 1 digitalink      USA         Nebraska       methylone, guns                  TRUE     2013-06-28  2014-02-20
 Matthew Gillum        SourDieselMan        seller    Silk Road 1                 USA         California     marijuana                        FALSE    2013-07-23  2013-10-27    At least 3 other members of group, but none seem to have been arrested.
 Jolene Chan           SourDieselMan        seller    Silk Road 1                 USA         California     marijuana                        FALSE    2013-07-23  2013-10-27
+                                           buyer     Silk Road 1                 Australia                                                            2013-08-01  2015-03-01    This is based on the short 10 August 2013 media mention of a man fined for "attempting to possess drugs from the site".
 Cornelis Slomp        SuperTrips           seller    Silk Road 1                 USA         Florida        MDMA, cocaine, LSD, etc          TRUE     2013-08-27  2014-02-15    The ST documents mention 11 other people who worked with ST (one UGS); there are no reports that the other 10 were arrested.
 Michael Duch          deezletime           seller    Silk road 1                 USA         New York       clonazepam, hydrocodone, heroin  FALSE    2013-10-01  2015-01-13
 Angel Quinones        UnderGroundSyndicate seller    Silk Road 1 SuperTrips      USA         Florida        MDMA, cocaine, LSD, etc          TRUE     2013-10-02  2014-04-28
 Ross William Ulbricht Dread Pirate Roberts operator  Silk Road 1                 USA         California                                      TRUE     2013-10-02  2013-10-02
                       SweExpress           seller    Silk Road 1                 Sweden                     marijuana                        TRUE     2013-10-08  2013-10-11
                       SweExpress           seller    Silk Road 1                 Sweden                     marijuana                        TRUE     2013-10-08  2013-10-11
+
+                      Blackjack021         seller    Silk Road 1                 Austria                    marijuana, opium, amphetamine    TRUE     2013-11-04  2015-03-01    The Austria article says it was a father-son pair who were arrested as the seller.
+                      Blackjack021         seller    Silk Road 1                 Austria                    marijuana, opium, amphetamine    TRUE     2013-11-04  2015-03-01
+                                           buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine    FALSE    2013-11-04  2015-03-01     The Austria article seems to mention that 6, presumably Austrian, of the pair's customers were arrested
+                                           buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine    FALSE    2013-11-04  2015-03-01
+                                           buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine    FALSE    2013-11-04  2015-03-01
+                                           buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine    FALSE    2013-11-04  2015-03-01
+                                           buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine    FALSE    2013-11-04  2015-03-01
+                                           buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine    FALSE    2013-11-04  2015-03-01
 Olivia Bolles         MDpro                seller    Silk Road 1                 USA         Delaware       Oxycontin, Valium, etc           FALSE    2013-11-21  2013-11-22
 Alexandra Gold        MDpro                seller    Silk Road 1                 USA         Delaware       Oxycontin, Valium, etc           FALSE    2013-11-21  2013-11-22
 Jason Hagen           hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                  FALSE    2013-12-17  2013-12-19
@@ -212,7 +234,7 @@ Another BMR gun dealer ("Gun Wise") was [arrested 7 November 2013](http://www.fo
 
 <!-- Ryan Chamberlain http://www.deepdotweb.com/2014/06/11/fbi-bomb-suspect-ryan-chamberlain-sought-toxins-via-deep-web-bmr/ related? http://www.sacbee.com/2014/05/05/6380750/undercover-operation-ends-carmichael.html http://www.sfgate.com/file/822/822-Redact%20Amend%20Compl.pdf -->
 <!-- BMR: Matthew Crisafi  http://www.seacoastonline.com/article/20140507/News/140509786 http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/ -->
-<!-- BMR: Korff poison http://www.reddit.com/r/DarkNetMarkets/comments/1vurn0/vendor_busted_for_selling_deadly_toxin/ https://dl.dropboxusercontent.com/u/182368464/2-14-mj-01008-DNF.pdf  https://dl.dropboxusercontent.com/u/182368464/2014-01-22-bmr-korff.maff http://www.tampabay.com/news/courts/criminal/labelle-man-accused-of-selling-toxin-in-death-plot/2162117  http://www.nbc-2.com/story/24506383/muse-poison-black-market-reloaded-online-jesse-korff-labelle-abrin http://www.nbc-2.com/story/24509658/online-messages-detail-online-poison-sale#.U5M6wfldWSo customer busted? http://www.bbc.com/news/uk-england-london-29331457 -->
+<!-- BMR: Korff poison http://www.reddit.com/r/DarkNetMarkets/comments/1vurn0/vendor_busted_for_selling_deadly_toxin/ https://dl.dropboxusercontent.com/u/182368464/2-14-mj-01008-DNF.pdf  https://dl.dropboxusercontent.com/u/182368464/2014-01-22-bmr-korff.maff http://www.tampabay.com/news/courts/criminal/labelle-man-accused-of-selling-toxin-in-death-plot/2162117  http://www.nbc-2.com/story/24506383/muse-poison-black-market-reloaded-online-jesse-korff-labelle-abrin http://www.nbc-2.com/story/24509658/online-messages-detail-online-poison-sale#.U5M6wfldWSo customer busted? http://www.bbc.com/news/uk-england-london-29331457 https://www.reddit.com/r/DarkNetMarkets/comments/1vurn0/vendor_busted_for_selling_deadly_toxin/ -->
 <-- Ricin letter to Obama? https://www.reddit.com/r/SilkRoad/comments/1qqmbx/silk_road_vendor_sent_ricin_to_president_obama/ -->
 <!-- BMR: Jonathan Norling http://www.nydailynews.com/new-york/nyc-crime/nypd-reach-fbi-interpol-cyanide-carrying-swede-article-1.1637056 Swede attempted suicide, bought cyanide on BMR -->
 <!_- BMR: James Christopher Malcolm? http://www.reddit.com/r/DarkNetMarkets/comments/27id98/fbi_chamberlain_sought_toxins_on_the_deep_web/ci1agqx http://www.reddit.com/r/DarkNetMarkets/comments/27id98/fbi_chamberlain_sought_toxins_on_the_deep_web/ci1j8x4 -->
@@ -236,11 +258,13 @@ An Australian student's MDMA was [intercepted by Customs](http://www.nzherald.co
 
 The [prosecution](http://www.afp.gov.au/media-centre/news/afp/2012/july/afp-and-Customs-warn-users-of-silk-road.aspx "Media Release: AFP and Customs warn users of Silk Road") & [conviction](http://www.theage.com.au/victoria/secret-website-harboured-drugs-smorgasbord-court-hears-20130131-2dlw3.html) of the SR seller Paul Leslie Howard was to related to a Customs interception of his large imports from Netherlands/Germany according to the [judge's sentencing verdict](http://www.austlii.edu.au/au/cases/vic/VCC/2013/70.html).
 
-[2 unnamed teens](http://au.news.yahoo.com/thewest/a/-/breaking/14980079/brothers-in-court-over-online-drugs/ "Brothers in court over online drugs") made the mistake of ordering so much that their parents turned them in.
+
 
 Another Australian seller, Christopher Owen, was pulled over by police in April 2012 while driving to the post office to mail shipments, the drugs found, his house searched, and [was sentenced to 5 years](http://www.bordermail.com.au/story/1508217/jail-time-for-web-drug-trafficker/ "Jail time for web drug trafficker") ([discussion](/docs/sr/2013-04-17-australia.mht "Title: SILK ROAD VENDOR JUST GOT BUSTED AND CONVICTED Post by: AussieMitch on May 17, 2013, 12:59 am")).
 
 In August 2012, the MDMA buyer Ryan West, who resold locally, was [convicted of 4 charges](http://www.abc.net.au/news/2012-12-05/dark-internet-linked-to-drug-seizure-spike/4410872 "Dealers shed light on dark Internet's drug trade").
+
+[2 unnamed teens](http://au.news.yahoo.com/thewest/a/-/breaking/14980079/brothers-in-court-over-online-drugs/ "Brothers in court over online drugs") made the mistake of ordering marijuana, MDMA, and amphetamines from SR1; their parents turned them in & they were charged in September 2012.
 
 A [7 November 2012](http://www.theherald.com.au/story/734298/detectives-follow-the-silk-road/ "Detectives follow the Silk Road") Australian article claims 30 interceptions a month in an area, but mentions nothing specific about arrests.
 A [December 2012 article](http://www.abc.net.au/news/2012-12-05/dark-internet-linked-to-drug-seizure-spike/4410872 "Dealers shed light on dark Internet's drug trade") quotes Customs claiming a 40% increase in seizures, but then quotes a SR seller as claiming a doubling or quadrupling of Australian buyers (hence, implying the interception rate has halved or worse).
@@ -252,7 +276,7 @@ Also in February 2013, [Patrick Franzini](http://www.theage.com.au/victoria/drug
 
 [Reportedly](http://au.news.yahoo.com/today-tonight/lifestyle/article/-/17821047/online-black-market/ "Online drug market: Drug smugglers have taken their business online, using a hidden website to sell illicit substances and delivering them straight to people's doors."), a June 2013 Parcel Post sting seized 140 packages/$8m & "Six of those arrested were Silk Road members."
 
-As of July 2013, there was ["at least one criminal prosecution in WA [Western Australia] that involves Silk Road"](http://au.news.yahoo.com/thewest/a/-/wa/17891240/silk-road-deals-go-underground/ "Silk Road deals go underground"), and WA police estimate "47 active Australian-based sellers who use Silk Road".
+As of July 2013, there was ["at least one criminal prosecution in WA [Western Australia] that involves Silk Road"](http://au.news.yahoo.com/thewest/a/-/wa/17891240/silk-road-deals-go-underground/ "Silk Road deals go underground"), and WA police estimate "47 active Australian-based sellers who use Silk Road"; that prosecution may have been "A 26-year-old man, who was charged with attempting to possess drugs from the site, was fined \$1000" [as of 10 August 2013](https://au.news.yahoo.com/thewest/a/18437383/first-wa-convictions-for-silk-road-trades/).
 
 An Australian investigation starting in January 2013 [arrested two fake ID manufacturers](http://www.dailytelegraph.com.au/news/nsw/hundreds-of-fake-credit-cards-and-identities-seized-from-a-western-sydney-home-set-up-as-a-factory-of-fraud/story-fni0cx12-1226717700640) in September 2013; coverage does not mention SR, but [a Redditor plausibly identifies them](http://www.reddit.com/r/SilkRoad/comments/1o8xsb/australian_id_vendor_ausid_busted_not_due_to_sr/) as having been the fake ID seller "Ausid" who stopped selling on SR in March 2013.
 
@@ -263,6 +287,11 @@ At some point in 2013, the Australian man Luke Hanley was [arrested after 2 pack
 A [Launceston, Tasmania man was convicted in 2014](http://www.examiner.com.au/story/2185778/hidden-drug-site-use-increasing/) of possession of 25i & BDMPEA partially (?) bought on SR; it's unclear how he was caught.
 
 The Victorian authorities report [confiscating "several million dollars" in Bitcoin](http://www.theage.com.au/victoria/victoria-state-election-2014/bitcoin-drug-millions-seized-in-victoria-20141015-116bby.html "Bitcoin drug millions seized in Victoria") [in 2013 after a December 2012 search](http://www.smh.com.au/technology/technology-news/australian-authorities-sitting-on-96-million-worth-of-bitcoins-confiscated-from-silk-road-drug-dealer-20141031-11ewk4.html) of Richard Pollard, who sold MDMA/cocaine/ketamine/fentanyl/etc; through online accounts, it seems likely he was ["1StopOz"](http://antilop.cc/sr/users/1stopoz/) who was noted as disappearing before January 2013
+
+### Austria
+
+On 4 November 2013, [2 men were arrested](http://noe.orf.at/news/stories/2626608/ "Silk-Road: Festnahme in St. Pölten") for selling opium, MDMA, & amphetamine, as well as 6 of their customers.
+Based on [a forum thread](/docs/sr/sr2f-18619-austriaarrest-blackjack021.html) & seller profile, [I've identified this](https://www.reddit.com/r/SilkRoad/comments/2xlxhs/sr1_seller_blackjack021_6_customers_busted_in/) as the SR1 seller "Blackjack021".
 
 ### Canada
 
@@ -634,6 +663,7 @@ The [Drugs Global Incident Map](http://drugs.globalincidentmap.com/) features ma
     - ["West Bethlehem drug raid prompted by controlled delivery of pot package, records say"](http://www.lehighvalleylive.com/bethlehem/index.ssf/2015/02/west_bethlehem_drugraid_prompt.html)
     - ["Thirty-five people indicted in 'Operation Southern Postal Powder'"](http://www.macon.com/2015/02/25/3605301/thirty-five-people-indicted-operation.html)
     - ["Jailed: Drug smuggler who had cannabis delivered to him in a pink _Frozen_ rucksack"](http://www.standard.co.uk/news/crime/jailed-drug-smuggler-who-had-cannabis-delivered-to-him-in-a-pink-frozen-rucksack-10075622.html)
+    - ["Man jailed for trying to smuggle £550,000 of heroin hidden in chessboards: Syed Naveed Shabir, 31, has been locked up for nine years after an undercover operation by the National Crime Agency"](http://www.mirror.co.uk/news/uk-news/man-jailed-trying-smuggle-550000-3592428)
 
 Most are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales eg [the TedDanzig incident](https://www.reddit.com/r/SilkRoad/comments/1xq97t/teddanzig_arrested/)), but of course, some will turn out to be real.
 
@@ -658,6 +688,7 @@ A [Reddit user](https://www.reddit.com/r/DarkNetMarketsNZ/comments/2tdk8a/custom
 ## UK
 
 There is an anonymous claim of a May 2013 [UK controlled delivery & arrest](http://www.reddit.com/r/SilkRoad/comments/1ewt7k/uk_arrest/).
+([Possibly ketamine](https://www.reddit.com/r/SilkRoad/comments/273gjq/controlled_delivery_in_the_uk/chxhr2x)?)
 
 Similarly, [one Redditor](https://www.reddit.com/r/SilkRoad/comments/1ewt7k/uk_arrest/) claims on 23 May 2013 that an acquaintance was CDed 22 May 2013 for an international package of pills ordered from SR1.
 

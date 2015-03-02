@@ -17,6 +17,8 @@ For information on the markets themselves (active & past), see [Black-market sur
 
 The sections are split up by market, then by country.
 
+To suggest or correct entries, you can contact me [via email & PGP](/Links#contact) or in the comments section.
+
 <!-- Ideas for a future logistic regression:
 - buyer vs seller
 - number of transactions
@@ -60,6 +62,10 @@ Similarly, if there were >60 buyer arrests (I double because there seem to be mo
 - Market: the black-market a person was most affiliated with or was busted in connection with
 
     For example, a Silk Road 1 employee working at Silk Road 2 would be classified as SR1-related because he had provided DPR1 his dox and was busted as a consequence of SR1, not because he worked at SR2 when he was arrested; oppositely, a seller like California Cannabis, who had sold on SR1 but was busted after being deanonymized by the undercover agent through the SR2 seller portal, would be classified as SR2-related. And a seller who sold on a market but was busted through his own off-market sales will be marked with the relevant market.
+- Product: the main 3-4 drugs they were dealing in or possessed
+- International: whether they were receiving/sending packages across borders
+- Arrest date: best known guess at when they were raided/searched/arrested/charged; if known only to the month, I round up/down
+- Known date: when it became public knowledge or I added to my article (may be useful for estimating fraction remaining unknown)
 
 Name                  Pseudonym            Role      Market      Seller          Country     State          Product                          INTL     Arrest date Known date    Notes
 --------------------- ---------------      -------   ----------- --------------- ----------- -------------- ------------------------------   ------   ----------- ----------    -----
@@ -87,7 +93,6 @@ Angel Quinones        UnderGroundSyndicate seller    Silk Road 1 SuperTrips     
 Ross William Ulbricht Dread Pirate Roberts operator  Silk Road 1                 USA         California                                      TRUE     2013-10-02  2013-10-02
                       SweExpress           seller    Silk Road 1                 Sweden                     marijuana                        TRUE     2013-10-08  2013-10-11
                       SweExpress           seller    Silk Road 1                 Sweden                     marijuana                        TRUE     2013-10-08  2013-10-11
-
                       Blackjack021         seller    Silk Road 1                 Austria                    marijuana, opium, amphetamine    TRUE     2013-11-04  2015-03-01    The Austria article says it was a father-son pair who were arrested as the seller.
                       Blackjack021         seller    Silk Road 1                 Austria                    marijuana, opium, amphetamine    TRUE     2013-11-04  2015-03-01
                                            buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine    FALSE    2013-11-04  2015-03-01     The Austria article seems to mention that 6, presumably Austrian, of the pair's customers were arrested
@@ -130,7 +135,7 @@ Demarcus Blue                              buyer     Silk Road 2 Xanax King     
 Markuite Matthews                          buyer     Silk Road 2 Xanax King      USA         Tennessee      Xanax                            FALSE    2014-05-29  2014-06-02
 Adrevious Rayner                           buyer     Silk Road 2 Xanax King      USA         Tennessee      Xanax                            FALSE    2014-05-29  2014-06-02
 Brian Patrick Noone                        buyer     Silk Road 2 Xanax King      USA         Illinois       Xanax                            FALSE    2014-05-30  2014-06-03
-                      Dark_Mart            seller    Evolution                   USA                        gun?                             FALSE    2014-06-01  2015-01-20 Dark_Mart's bust is known only from a short reference in the Cheng Le complaint that he was busted "in or about mid 2014"; so I assign it to exactly mid-2014.
+                      Dark_Mart            seller    Evolution                   USA                        gun?                             FALSE    2014-06-01  2015-01-20    Dark_Mart's bust is known only from a short reference in the Cheng Le complaint that he was busted "in or about mid 2014"; so I assign it to exactly mid-2014.
                                            buyer     Silk Road 2 Xanax King      USA                        Xanax                            FALSE                2014-06-28    The 25 June 2015 anti-bail letter boasts that XK "led to the arrest of nearly 60 other people throughout the country", excluding the 9 XK defendants; worst-case, <=59 arrests, and subtracting the 5 known buyer busts, yields <=54 still-unknown cases. These seem to be mostly XK customers. I include a row for each such case.
                                            buyer     Silk Road 2 Xanax King      USA                        Xanax                            FALSE                2014-06-28
                                            buyer     Silk Road 2 Xanax King      USA                        Xanax                            FALSE                2014-06-28

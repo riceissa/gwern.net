@@ -9,6 +9,11 @@ belief: log
 Following my writing can be a little difficult: while I provide [an RSS feed of the edit history](http://www.gwern.net/atom.xml), it is too fine-grained to know what is an interesting update and what is housekeeping. So periodically I write up interesting changes in a human-readable format:
 
 # 2015
+## February
+
+- [Black-market arrests](/Black-market%20arrests "A listing of all known arrests and prosecutions connected to the Tor-Bitcoin drug black-markets"): split out of Silk Road page & began bringing up-to-date with all known incidents across all markets
+- [electric vs stove kettle boiling-time analysis](/Tea#electric-vs-stove-kettle-fight): collected some simple data on my kettles & demonstrated some statistics tools on the dataset like a Bayesian measurement-error model
+
 ## January
 
 - ["Silk Goxed: How DPR used Mtgox for hedging & lost big"](https://www.reddit.com/r/DarkNetMarkets/comments/2tgymg/silk_goxed_how_dpr_used_mtgox_for_hedging_lost_big/)

@@ -126,6 +126,8 @@ Gary Davis            Libertas             staff     Silk Road 1                
 Peter Phillip Nash    Samesamebutdifferent staff     Silk Road 1                 Australia   Queensland                                      FALSE    2013-12-20  2013-12-21
 Amit Sand                                  buyer     BMR                         Israel                     gun                              TRUE     2014-01-08  2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
                                            buyer                                 Israel                     marijuana                        TRUE     2014-01-12  2014-01-14
+T.S.                                       buyer     Silk Road 2 pillbay         Indonesia   West Jakarta   MDMA, LSD                        TRUE     2014-01-31  2015-01-28
+L.A.                                       buyer     Silk Road 2 pillbay         Indonesia   West Jakarta   MDMA, LSD                        TRUE     2014-01-31  2015-01-28
 Ayumu Teramoto                             buyer                                 Japan       Fukuoka        stimulant                        TRUE     2014-05-8   2014-05-10    The media coverage (2014-05-09) does not specify when arrest was; I've dated it to the day before. 'stimulant' is probably an amphetamine.
 Jeremy Donagal        Xanax King           seller    Silk Road 2                 USA         California     Xanax                            FALSE    2014-05-27  2014-06-12
 Laurence Lindberg     Xanax King           seller    Silk Road 2                 USA         California     Xanax                            FALSE    2014-05-27  2014-06-12
@@ -216,6 +218,7 @@ Brian Farrell         DoctorClu            staff     Silk Road 2                
                                            buyer                                 Israel                     cocaine                          TRUE     2015-01-04  2015-02-23
 Julian Edgren                              buyer                                 USA         New Jersey     MDMA, LSD, marijuana etc         TRUE     2015-01-06  2015-01-07
 Austin Frembling                           buyer     Agora                       USA         California     MDMA                             TRUE     2015-01-15  2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
+                                           buyer                 LucyandMolly    Scandinavia                LSD                              TRUE     2015-01-29  2015-01-31    AndyWither case.
 
 # Confirmed
 ## Agora
@@ -555,7 +558,11 @@ https://www.reddit.com/r/DarkNetMarkets/comments/2looal/bungee54_state_of_operat
 <!-- unknown, if at all; 8 UK carders http://www.manchestereveningnews.co.uk/news/greater-manchester-news/gang-sentenced-credit-card-scam-8438268 https://www.reddit.com/r/DarkNetMarkets/comments/2sba70/fraudsters_who_used_stolen_credit_card_details/ -->
 
 ## Silk Road 2 (SR2)
+### Indonesia
 
+In late January 2014, a [Canadian man T.S. & Indonesian woman L.A.](http://news.detik.com/read/2014/01/22/133657/2474783/10/ "Selundupkan Ekstasi, Guru Bule dan Kekasihnya Ditangkap") [were arrested](https://www.reddit.com/r/DarkNetMarkets/comments/2u26ij/uncategorized_i_bought_100_superman_pills_from/) after a package of MDMA (100 Superman pills) from the Netherlands (which she had ordered from "pillbay" on Silk Road 2) was intercepted by customs & his West Jakarta residence searched; they were sentenced to 10 & 5 years respectively.
+
+### USA
 In early May 2014, the SR2 seller ["Xanax King" & his associates](http://www.mercurynews.com/my-town/ci_25861423/contra-costa-nine-charged-massive-xanax-drug-operation) [were arrested](http://patch.com/california/martinez/xanax-king-of-martinez-among-9-charged-with-making-counterfeit-drugs-laundering-money "'Xanax King' Of Martinez Among 9 Charged With Making Counterfeit Drugs, Laundering Money: Nine people were indicted by a federal grand jury in Oakland on charges of manufacturing counterfeit prescription drugs, money laundering or both.") ([DEA press release](http://www.justice.gov/dea/divisions/sf/2014/sf053014.shtml)); he ran a very large operation with multiple employees, purchased ingredients using Western Union & wire transfers to China, "sold drugs locally, distributing Xanax tablets, GHB, and steroids", some sort of clearnet website ([`xkloves.us`](http://www.xkloves.us), content removed in lieu of a now-defunct Tor hidden service), and had at least one "confidential informant" in his organization (see the [anti-bail letter](/docs/sr/2014-06-25-xanaxking-antibailletter-cand035011914356.pdf)), who was handling their SR2 orders at the end according to a [media report](http://www.theneworleansadvocate.com/news/9418693-171/feds-use-facebook-to-id "Feds use Facebook to ID man tied to Xanax conspiracy: Authorities say man rammed DEA vehicle after getting package") (some buyers reported being [asked to resend](http://www.reddit.com/r/DarkNetMarkets/comments/26w0qe/busted_xanaxking/chv2yw0) their PGP-encrypted addresses).
 
 The fall out from XK's bust has been substantial: the anti-bail letter claims "In addition to the nine defendants in this case, evidence gathered from Defendant's enterprise led to the arrest of nearly 60 other people throughout the country".
@@ -599,12 +606,15 @@ An Israeli teen [was arrested ~12 January 2015](http://news.walla.co.il/item/281
 
 ### New Zealand (NZ)
 
-
 A 21 June 2014 [_Dominion Post_](http://www.stuff.co.nz/dominion-post/news/10185845/People-next-door-buying-drugs-online "'People next door' buying drugs online") article says that " A series of drug raids in a police operation spanning Porirua, Tawa, the Kapiti Coast and Hutt Valley and central Wellington resulted in 21 arrests over the past week [15-20 June 2014]. Six of those arrested now face serious charges related to the alleged importation of drugs bought online from websites similar to Silk Road." (This is a revised figure from the [earlier article on "Operation Python"](http://www.stuff.co.nz/dominion-post/10177294/Police-bust-drugs-ring-find-stolen-carving "Police bust drugs ring, find stolen carving") which had mentioned that "Six Kapiti houses were raided and five arrests made as part of a large police sting targeting internet drug importers.")
 I currently do not know the specifics of those 6 arrests or have any NZ cases in that date range.
 
 On 11 August 2014, an [unnamed polytechnic college student](http://www.odt.co.nz/news/dunedin/312318/dunedin-ecstasy-lsd-haul "Student charged over party drug haul") was arrested for importing LSD/MDMA after customs interceptions, sourced "from Germany and the United Kingdom via the internet."
 (He may have been sentenced in December 2014 to [4.5 years prison](http://www.stuff.co.nz/national/crime/65784334/Three-men-arrested-over-drug-importation-to-Dunedin).)
+
+### Scandinavia
+
+[A](https://www.reddit.com/r/LSD/comments/2u75vv/guess_i_need_to_say_goodbye_psychonauts/ "Guess i need to say goodbye, Psychonauts") [Redditor](https://www.reddit.com/r/DarkNetMarkets/comments/2ubnqf/xpost_from_rlsd_guess_i_need_to_say_goodbye/ "(X-post from /r/LSD) Guess i need to say goodbye, Psychonauts") reports being busted 29 January 2015 in Scandinavia (probably Norway or Denmark) after a package of LSD from the Netherlands which he bought from LucyandMolly (who sells on Agora/Evolution/Nucleus) was intercepted by customs; he received just a knock-and-talk but confessed his guilt.
 
 ### USA
 
@@ -703,6 +713,7 @@ The [Drugs Global Incident Map](http://drugs.globalincidentmap.com/) features ma
     - ["Thirty-five people indicted in 'Operation Southern Postal Powder'"](http://www.macon.com/2015/02/25/3605301/thirty-five-people-indicted-operation.html)
     - ["Jailed: Drug smuggler who had cannabis delivered to him in a pink _Frozen_ rucksack"](http://www.standard.co.uk/news/crime/jailed-drug-smuggler-who-had-cannabis-delivered-to-him-in-a-pink-frozen-rucksack-10075622.html)
     - ["Man jailed for trying to smuggle £550,000 of heroin hidden in chessboards: Syed Naveed Shabir, 31, has been locked up for nine years after an undercover operation by the National Crime Agency"](http://www.mirror.co.uk/news/uk-news/man-jailed-trying-smuggle-550000-3592428)
+    - ["Three arrested on marijuana charges during 'nail the mailer' operation; money, drugs, weapons seized"](http://www.lakeconews.com/index.php?option=com_content&view=article&id=40754:three-arrested-on-marijuana-charges-during-nail-the-mailer-operation-money-drugs-weapons-seized&catid=1:latest&Itemid=197)
 
 Most are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales eg [the TedDanzig incident](https://www.reddit.com/r/SilkRoad/comments/1xq97t/teddanzig_arrested/)), but of course, some will turn out to be real.
 
@@ -749,6 +760,8 @@ Around April-May 2014, the SR2 Californian methamphetamine sellers AoD and Chale
 [A Mid-Western Redditor](https://www.reddit.com/r/DarkNetMarkets/comments/2m4otd/reporting_a_local_bust_following_operation_onymous/) reports on 12 November 2014 that an acquaintance had been arrested after picking up a SR2 package; he says that he was a local reseller of LSD & other psychedelics.
 
 In February 2015, UCF student [Peter John Faucella was arrested in Florida](http://www.orlandosentinel.com/news/breaking-news/os-ucf-student-marijuana-arrest-towers-20150216-story.html "UCF student had marijuana shipped to campus apartment, cops say") after an intercepted package of marijuana; previously, a UCF student [may have posted on the black-market subreddits](https://www.reddit.com/r/DarkNetMarkets/comments/2w52bg/communitydiscussionucf_students_busted_for/copb9se) asking for help.
+
+On 9 February 2015, [Michael R. Winchester was arrested in Kentucky](http://www.wdrb.com/story/28070729/police-suspect-arrested-for-dealing-drugs-from-home "POLICE: Suspect arrested for dealing drugs from home") after a tip about his local dealing; he was apparently also a [well-known Topix.com](https://www.reddit.com/r/DarkNetMarkets/comments/2vgf1y/psaarticle_topix_sellerirl_dealer_busted_possibly/) seller of benzodiazepines, and may at some point have sold on the black-markets.
 
 # External links
 

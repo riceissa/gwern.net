@@ -1233,6 +1233,12 @@ So I will not be using lithium orotate anymore.
 
 # LLLT
 
+> An unusual intervention is infrared/near-infrared light of particular wavelengths (LLLT), theorized to assist mitochondrial respiration and yielding a variety of therapeutic benefits. Some have suggested it may have cognitive benefits.
+> LLLT sounds strange but it's simple, easy, cheap, and just plausible enough it might work.
+> I tried out LLLT treatment on a sporadic basis 2013-2014, and statistically, usage correlated strongly & statistically-significantly with increases in my daily self-ratings, and not with any sleep disturbances.
+> Excited by that result, I did a randomized self-experiment 2014-2015 with the same procedure, only to find that the causal effect was weak or non-existent.
+> I have stopped using LLLT as likely not worth the inconvenience.
+
 [Low level laser therapy](!Wikipedia) (LLLT) is a curious treatment based on the application of a few minutes of weak light in specific near-infrared wavelengths (the name is a bit of a misnomer as LEDs seem to be employed more these days, due to the laser aspect being unnecessary and LEDs much cheaper).
 Unlike most kinds of [light therapy](!Wikipedia), it doesn't seem to have anything to do with circadian rhythms or zeitgebers.
 Proponents claim efficacy in treating physical injuries, back pain, and numerous other ailments, recently extending it to case studies of mental issues like brain fog.
@@ -1242,10 +1248,10 @@ And LLLT is, naturally, completely safe without any side effects or risk of inju
 To say that this all sounds dubious would be an understatement.
 (My first reaction was that LLLT and lostfalco's other proposals were probably the stupidest thing I'd seen all month.)
 
-The research literature, whilea copious, is messy and varied: methodologies and devices vary substantially, sample sizes are tiny, the study designs vary from paper to paper, metrics are sometimes comically limited (one study measured speed of finishing a RAPM IQ test but not *scores*), blinding is rare and unclear how successful, etc.
+The research literature, while copious, is messy and varied: methodologies and devices vary substantially, sample sizes are tiny, the study designs vary from paper to paper, metrics are sometimes comically limited (one study measured speed of finishing a RAPM IQ test but not *scores*), blinding is rare and unclear how successful, etc.
 Relevant papers include [Chung et al 2012](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3288797/ "The Nuts and Bolts of Low-level Laser (Light) Therapy"), [Rojas & Gonzalez-Lima 2013](/docs/nootropics/2013-rojas.pdf "Neurological and psychological applications of transcranial lasers and LEDs"), & [Gonzalez-Lima & Barrett 2014](http://journal.frontiersin.org/Journal/10.3389/fnsys.2014.00036/full "Augmentation of cognitive brain functions with transcranial lasers").
 Another Longecity user ran a self-experiment, with some design advice from me, where he performed a few cognitive tests over several periods of LLLT usage (the blocks turned out to be ABBA), using his father and towels to try to blind himself as to condition.
-[I analyzed his data](LLLT), and his scores did seem to improve, but his scores improved *so* much in the last part of the self-experiment I found myself dubious as to what was going on - possibly a failure of randomness given too few blocks and an exogenous factor in the last quarter which was responsible for the improvement.
+[I analyzed his data](LLLT), and his scores did seem to improve, but his scores improved *so* much in the last part of the self-experiment I found myself dubious as to what was going on - possibly a failure of randomness given too few blocks and an temoral exogenous factor in the last quarter which was responsible for the improvement.
 
 While the mechanism is largely unknown, one commonly mechanism possibility is that light of the relevant wavelengths is preferentially absorbed by the protein [cytochrome c oxidase](!Wikipedia), which is a key protein in mitochondrial metabolism and production of [ATP](!Wikipedia), substantially increasing output, and this extra output presumably can be useful for cellular activities like healing or higher performance.
 
@@ -1304,7 +1310,7 @@ That left me with 329 days of data. The results are that (correcting for the mag
 
 ### LLLT pilot analysis
 
-The correlation of LLLT usage with higher MP self-rating is fairly large (_r_=0.19 / _d_=0.46) and statistically-significant (_p_=0.0006).
+The correlation of LLLT usage with higher MP self-rating is fairly large (_r_=0.19 / _d_=0.455) and statistically-significant (_p_=0.0006).
 
 I have no particularly compelling story for why this might be a correlation and not causation. It could be placebo, but I wasn't expecting that. It could be selection effect (days on which I bothered to use the annoying LED set are better days) but then I'd expect the off-days to be below-average and compared to the 2 years of trendline before, there doesn't seem like much of a fall.
 
@@ -1312,9 +1318,9 @@ The R code:
 
 ~~~{.R}
 lllt <- read.csv("http://www.gwern.net/docs/nootropics/2014-08-03-lllt-correlation.csv")
-summary(lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) +
+l <- lm(MP ~ LLLT + as.logical(Magnesium.citrate) + as.integer(Date) +
               as.logical(Magnesium.citrate):as.integer(Date),
-           data=lllt))
+           data=lllt); summary(l)
 # ...Coefficients:
 #                                                        Estimate   Std. Error  t value   Pr(>|t|)
 # (Intercept)                                         4.037702597  0.616058589  6.55409 5.0282e-10
@@ -1640,6 +1646,114 @@ qplot(index, MR7, color=LLLT, data=llltRecent) +
 
 The concentration in one factor leaves me a bit dubious.
 We'll see what the experiment turns up.
+
+## Experiment
+
+> A randomized non-blind self-experiment of LLLT 2014-2015 yields a causal effect which is several times smaller than a correlative analysis and non-statistically-significant/very weak Bayesian evidence for a positive effect.
+> This suggests that the earlier result had been driven primarily by reverse causation, and that my LLLT usage has little or no benefits.
+
+Following up on the promising but unrandomized pilot, I began randomizing my LLLT usage since I worried that more productive days were causing use rather than vice-versa.
+I began on 2 August 2014, and the last day was 3 March 2015 (_n_=167); this was twice the sample size I thought I needed, and I stopped, as before, as part of cleaning up (I wanted to know whether to get rid of it or not).
+The procedure was simple: by noon, I flipped a bit and either did or did not use my LED device; if I was distracted or didn't get around to randomization by noon, I skipped the day.
+This was an unblinded experiment because finding a randomized on/off switch is tricky/expensive and it was easier to just start the experiment already.
+The question is simple too: controlling for the simultaneous blind magnesium experiment & my rare nicotine use (I did not use modafinil during this period or anything else I expect to have major influence), is the pilot correlation of _d_=0.455 on my daily self-ratings borne out by the experiment?
+
+![Daily productivity self-rating (higher=better) over time, split by LLLT usage that day (2014-2015)](/images/nootropics/2015-llltrandom-mp.png)
+
+~~~{.R}
+llltRandom <- read.csv("http://www.gwern.net/docs/nootropics/2015-lllt-random.csv",
+                        colClasses=c("Date", "logical", "integer", "logical", "logical"))
+# impute magnesium data: that randomized experiment started a month later
+llltRandom[is.na(llltRandom$Magnesium.random),]$Magnesium.random <- 0
+l <- lm(MP ~ LLLT.random + Nicotine + Magnesium.random, data=llltRandom); summary(l); confint(l)
+# ...Coefficients:
+#                    Estimate Std. Error  t value Pr(>|t|)
+# (Intercept)      3.28148626 0.06856553 47.85912  < 2e-16
+# LLLT.randomTRUE  0.04099628 0.09108322  0.45010  0.65324
+# NicotineTRUE     0.21152245 0.26673557  0.79300  0.42893
+# Magnesium.random 0.10299190 0.09312616  1.10594  0.27038
+#
+# Residual standard error: 0.5809214 on 163 degrees of freedom
+#   (47 observations deleted due to missingness)
+# Multiple R-squared:  0.01519483,  Adjusted R-squared:  -0.002930415
+# F-statistic: 0.8383241 on 3 and 163 DF,  p-value: 0.474678
+#
+#                           2.5 %       97.5 %
+# (Intercept)       3.14609507948 3.4168774481
+# LLLT.randomTRUE  -0.13885889747 0.2208514560
+# NicotineTRUE     -0.31518017129 0.7382250752
+# Magnesium.random -0.08089731164 0.2868811034
+0.04099628 / sd(llltRandom$MP)
+# [1] 0.0701653002
+
+library(ggplot2)
+ggplot(data = llltRandom, aes(x=Date, y=MP, col=as.logical(llltRandom$LLLT.random))) +
+ geom_point(size=I(3)) +
+ stat_smooth() +
+ scale_colour_manual(values=c("gray49", "blue"),
+                     name = "LLLT")
+~~~
+
+The estimate of the causal effect of LLLT+placebo is not statistically-significant, and the effect size of +0.04 / _d_=0.07 is much smaller than _d_=0.455 (15%) and the original pilot's point estimate of +0.33 is excluded by the new confidence interval (95% CI: -0.13 - +0.22).
+
+I have strong priors about the possible effects of LLLT, nicotine & magnesium (specifically, I know from experience that they tend to be small), so a Bayesian linear model using JAGS is useful for letting me take that into account and also producing more meaningful results (probabilities, rather than _p_-values):
+
+~~~{.R}
+# JAGS won't automatically drop rows with missing variables like `lm` does by default
+llltClean <- llltRandom[!is.na(llltRandom$LLLT.random),]
+library(rjags)
+library(R2jags)
+model1<-"
+model {
+    for (i in 1:n) {
+        MP[i] ~ dnorm(MP.hat[i], tau)
+        MP.hat[i] <- a + b1*LLLT.random[i] + b2*Nicotine[i] + b3*Magnesium.random[i]
+    }
+
+    # intercept
+    a  ~ dnorm(3, 4) # prec 4 ~= 0.5^-2 ~= SD 0.5, the historical SD of my MPs
+
+    # coefficients
+    ## informative prior: effects should be <0.5 usually, and >0.3 is unusual
+    b1 ~ dnorm(0, 13) # prec 13 ~= SD 0.3
+    b2 ~ dnorm(0, 13)
+    b3 ~ dnorm(0, 13)
+
+    # informative prior: 2-5 doesn't allow for much variance
+    sigma ~ dunif(0, 1)
+    # convert SD to 'precision' unit that JAGS's distributions use instead
+    tau <- pow(sigma, -2)
+}
+"
+j1 <- with(llltClean, jags(data=list(n=nrow(llltClean), MP=MP, LLLT.random=LLLT.random,
+                                       Nicotine=Nicotine, Magnesium.random=Magnesium.random),
+                         parameters.to.save=c("b1", "b2", "b3"),
+                         model.file=textConnection(model1),
+                         n.chains=4, n.iter=1000000))
+print(j1, intervals=c(0.0001, 0.5, 0.9999))
+# Inference for Bugs model at "4", fit using jags,
+#  4 chains, each with 1e+06 iterations (first 5e+05 discarded), n.thin = 500
+#  n.sims = 4000 iterations saved
+#          mu.vect sd.vect   0.01%     50%  99.99%  Rhat n.eff
+# b1         0.042   0.087  -0.276   0.041   0.326 1.002  2100
+# b2         0.114   0.194  -0.533   0.114   0.745 1.001  4000
+# b3         0.100   0.088  -0.266   0.100   0.412 1.001  4000
+# deviance 293.023   2.864 288.567 292.420 314.947 1.001  4000
+#
+# For each parameter, n.eff is a crude measure of effective sample size,
+# and Rhat is the potential scale reduction factor (at convergence, Rhat=1).
+#
+# DIC info (using the rule, pD = var(deviance)/2)
+# pD = 4.1 and DIC = 297.1
+# DIC is an estimate of expected predictive error (lower deviance is better).
+~~~
+
+This analysis suggests that there's a 95% probability the effect is somewhere between -0.129 & 0.208 (_d_=-0.22 - _d_=0.35), similar to the original linear model's CI.
+More relevantly: there is only a 70% probability that the effect is >0 (albeit probably tiny), and >99.99% probability it's not as big as the pilot data had claimed.
+
+At small effects like _d_=0.07, a nontrivial chance of negative effects, and an unknown level of placebo effects (this was non-blinded, which could account for any residual effects), this strongly implies that LLLT is not doing anything for me worth bothering with.
+I was pretty skeptical of LLLT in the first place, and if 167 days can't turn up anything noticeable, I don't think I'll be continuing with LLLT usage and will be giving away my LED set.
+(Should any experimental studies of LLLT for cognitive enhancement in healthy people surface with large quantitative effects - as opposed to a handful of qualitative case studies about brain-damaged people - and I decide to give LLLT another try, I can always just buy another set of LEDs: it's only ~\$15, after all.)
 
 # LSD microdosing
 
@@ -2041,9 +2155,9 @@ Power considerations suggest I could probably terminate after 4 months
 2. 3 November - 4 December: 0
 
    5 December - 11 January 2015: 1
-3. 12 January - 18 February: ?
+3. 12 January - 18 February: 0
 
-    19? February - ? March: ? <!-- TODO: after third pair, decide upon and do the first of a sequential analysis -->
+    19 February - 4 March: 1 (ended block early so I could have complete data for the LLLT experiment's analysis) <!-- TODO: after third pair, decide upon and do the first of a sequential analysis -->
 
 #### Analysis
 #### Conclusion
@@ -3586,224 +3700,9 @@ On the other metric, suppose we removed the creatine? Dropping 4 grams of materi
     - Noopept self-experiment (second): [1](https://www.reddit.com/r/Nootropics/comments/2hkr1g/noopept_selfexperiment_no_effects/)
     - Noopept self-experiment (first): [1](https://www.reddit.com/r/Nootropics/comments/1i94jm/noopept_selfexperiment/)
 
-<!--
-LLLT
-randomized experiment:
-Date,LLLT.random
-2014-08-02,1
-2014-08-03,0
-2014-08-04,1
-2014-08-05,1
-2014-08-06,0
-2014-08-07,NA
-2014-08-08,0
-2014-08-09,1
-2014-08-10,0
-2014-08-11,0
-2014-08-12,1
-2014-08-13,0
-2014-08-14,0
-2014-08-15,1
-2014-08-16,1
-2014-08-17,1
-2014-08-18,0
-2014-08-19,1
-2014-08-20,1
-2014-08-21,1
-2014-08-22,0
-2014-08-23,1
-2014-08-24,0
-2014-08-25,1
-2014-08-26,0
-2014-08-27,0
-2014-08-28,1
-2014-08-29,0
-2014-08-30,NA
-2014-08-31,1
-2014-09-01,0
-2014-09-02,0
-2014-09-03,1
-2014-09-04,1
-2014-09-05,0
-2014-09-06,NA
-2014-09-07,1
-2014-09-08,0
-2014-09-09,0
-2014-09-10,0
-2014-09-11,1
-2014-09-12,1
-2014-09-13,1
-2014-09-14,0
-2014-09-15,1
-2014-09-16,0
-2014-09-17,0
-2014-09-18,0
-2014-09-19,0
-2014-09-20,1
-2014-09-21,0
-2014-09-22,0
-2014-09-23,0
-2014-09-24,0
-2014-09-25,1
-2014-09-26,0
-2014-09-27,0
-2014-09-28,0
-2014-09-29,1
-2014-09-30,0
-2014-10-01,0
-2014-10-02,0
-2014-10-03,1
-2014-10-04,NA
-2014-10-05,0
-2014-10-06,0
-2014-10-07,0
-2014-10-08,0
-2014-10-09,1
-2014-10-10,0
-2014-10-11,NA
-2014-10-12,1
-2014-10-13,0
-2014-10-14,0
-2014-10-15,1
-2014-10-16,1
-2014-10-17,0
-2014-10-18,NA
-2014-10-19,NA
-2014-10-20,0
-2014-10-21,1
-2014-10-22,1
-2014-10-23,0
-2014-10-24,0
-2014-10-25,0
-2014-10-26,NA
-2014-10-27,NA
-2014-10-28,1
-2014-10-29,NA
-2014-10-30,1
-2014-10-31,1
-2014-11-01,0
-2014-11-02,0
-2014-11-03,1
-2014-11-04,0
-2014-11-05,0
-2014-11-06,NA
-2014-11-07,0
-2014-11-08,0
-2014-11-09,1
-2014-11-10,0
-2014-11-11,0
-2014-11-12,0
-2014-11-13,1
-2014-11-14,0
-2014-11-15,0
-2014-11-16,0
-2014-11-17,0
-2014-11-18,0
-2014-11-19,1
-2014-11-20,1
-2014-11-21,0
-2014-11-22,0
-2014-11-23,1
-2014-11-24,0
-2014-11-25,NA
-2014-11-26,NA
-2014-11-27,NA
-2014-11-28,NA
-2014-11-29,0
-2014-11-30,0
-2014-12-01,1
-2014-12-02,0
-2014-12-03,1
-2014-12-04,1
-2014-12-05,1
-2014-12-06,1
-2014-12-07,0
-2014-12-08,1
-2014-12-09,1
-2014-12-10,1
-2014-12-11,1
-2014-12-12,NA
-2014-12-13,1
-2014-12-14,1
-2014-12-15,0
-2014-12-16,1
-2014-12-17,NA
-2014-12-18,0
-2014-12-19,1
-2014-12-20,1
-2014-12-21,NA
-2014-12-22,NA
-2014-12-23,NA
-2014-12-24,NA
-2014-12-25,NA
-2014-12-26,NA
-2014-12-27,0
-2014-12-28,1
-2014-12-29,0
-2014-12-30,1
-2014-12-31,NA
-2015-01-01,0
-2015-01-02,NA
-2015-01-03,1
-2015-01-04,NA
-2015-01-05,1
-2015-01-06,1
-2015-01-07,1
-2015-01-08,1
-2015-01-09,0
-2015-01-10,0
-2015-01-11,1
-2015-01-12,1
-2015-01-13,0
-2015-01-14,0
-2015-01-15,1
-2015-01-16,0
-2015-01-17,0
-2015-01-18,NA
-2015-01-19,0
-2015-01-20,1
-2015-01-21,NA
-2015-01-22,NA
-2015-01-23,NA
-2015-01-24,0
-2015-01-25,0
-2015-01-26,1
-2015-01-27,NA
-2015-01-28,1
-2015-01-29,NA
-2015-01-30,NA
-2015-01-31,NA
-2015-02-01,NA
-2015-02-02,1
-2015-02-03,0
-2015-02-04,NA
-2015-02-05,NA
-2015-02-06,NA
-2015-02-07,NA
-2015-02-08,NA
-2015-02-09,NA
-2015-02-10,NA
-2015-02-11,NA
-2015-02-12,NA
-2015-02-13,0
-2015-02-14,0
-2015-02-15,NA
-2015-02-16,0
-2015-02-17,1
-2015-02-18,0
-2015-02-19,0
-2015-02-20,0
-2015-02-21,1
-2015-02-22,1
-2015-02-23,0
-2015-02-24,0
-2015-02-25,1
-2015-02-26,NA
-2015-02-27,1
--->
 <!-- Aspirin: http://lesswrong.com/r/discussion/lw/b1g/daily_lowdose_aspirin_round_2/9lld started 24 August 2013; break 23-26 Dec -->
 <!-- Kirkland multivitamin: started 24 August 2013; break 23-27 Dec; last day: 01 October 2014 -->
-<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16, 19, 25, 29 September; 01, 03, 08, 11, 14, 17, 20, 22, 27, 31 October; 04, 05, 09, 14, 17, 19, 24, 29 November; 4, 7, 11, 20, 27, 30, 31 December; 2015 January 05, 09, 14, 19, 25; 3, 7, 13, 16, 26 February -->
+<!-- Iron: 24, 25, 26, 28 August 2013; 2, 4, 8, 14, 18, 21, 25, 28 September; 1, 4, 7, 12, 14, 17, 22, 25, 28, 30 October; 3, 7, 10, 13, 16, 19, 22, 26, 29 November; 2, 5, 7, 12, 15, 17, 19, 21, 23, 28 December; 2014: 01 January; 03, 05, 08, 11, 15, 17, 20, 26, 28 Jan; 2, 5, 7, 13, 17, 21, 24 February; 2, 7, 8, 13, 17, 25, 31 March; 3, 5, 18, 22, 26, 30 April; 2, 7, 12, 15, 19, 24, 29 May; 2, 7, 13, 17, 22, 25, 28 June; 8, 11, 15, 18, 21, 25, 27, 31 July; 2, 5, 8, 10, 16, 22, 26, 29 August; 1, 7, 10, 13, 16, 19, 25, 29 September; 01, 03, 08, 11, 14, 17, 20, 22, 27, 31 October; 04, 05, 09, 14, 17, 19, 24, 29 November; 4, 7, 11, 20, 27, 30, 31 December; 2015 January 05, 09, 14, 19, 25; 3, 7, 13, 16, 26 February; 1 March -->
 <!-- Nicotine: 03, 07 June 2013: 4mg gum; 22 June 2013: 2mg gum; 24 June 2013: 2mg gum; 1 July: 2mg gum; 9 July, 2mg gum; 20 July, 2mg gum; 20 August, 3mg gum; 5, 6 September, 1mg gum; 20 Sept, 1mg gum; 2 October: 2mg; 16 October: 1mg; 22 October: 1mg; 29 Oct: 1mg; 6 Nov: 1mg; 8 Nov: 2mg; 14 Nov: 1mg; 15: 3mg; 21 Nov: 2mg; 30 Nov: 1mg; 30 Dec: 2mg; 2014: January: 05: 4mg gum; 20 February: 1mg gum; 18 March: 1mg gum; 9 May: 4mg gum; 21 July: 1mg gum; 21 December: 4mg gum; 30 December: 2mg gum; 2015: 18 February, 1mg gum; 21 February, 1mg gum; 23 February, 1mg gum; 25 February, 1mg gum -->
 <!-- Bacopa (Bacognize): start first block 26 September 2014, last day 19 December 2014; +90 days to 19 March 2015 -->
 <!-- Fluoride: last day 9 February 2014 -->

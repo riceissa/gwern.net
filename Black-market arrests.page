@@ -129,7 +129,8 @@ Gary Davis            Libertas             staff     Silk Road 1                
 Peter Phillip Nash    Samesamebutdifferent staff     Silk Road 1                 Australia   Queensland                                      FALSE    2013-12-20  2013-12-21
 Amit Sand                                  buyer     BMR                         Israel                     gun                              TRUE     2014-01-08  2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
                                            buyer                                 Israel                     marijuana                        TRUE     2014-01-12  2014-01-14
-Brian Korff                                seller    BMR                         USA         Florida        ricin                            FALSE    2014-01-18  2014-01-22
+Brian Korff           Snowman840           seller    BMR                         USA         Florida        ricin                            FALSE    2014-01-18  2014-01-22
+Kuntal Patel                               buyer     BMR         Korff           UK                         abrin                            TRUE     2014-01-26  2014-09-26
 T.S.                                       buyer     Silk Road 2 pillbay         Indonesia   West Jakarta   MDMA, LSD                        TRUE     2014-01-31  2015-01-28
 L.A.                                       buyer     Silk Road 2 pillbay         Indonesia   West Jakarta   MDMA, LSD                        TRUE     2014-01-31  2015-01-28
 Jonathan Norling                           buyer     BMR         Malcolm         USA         New York       cyanide, abrin                   FALSE    2014-02-14  2014-02-21
@@ -256,10 +257,10 @@ On 6 November 2013, the BMR gun dealer Matthew Crisafi ("Gun Wise") [was arreste
 
 The closure of BMR in December 2013 did not end investigations into users, and the FBI was able to make 4 inter-connected busts related to BMR's poison sellers.
 
-The first bust was [Jesse William Korff](http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11404486 "Florida man who produced and sold deadly ricin gets prison"), who was arrested 18 January 2014; an FBI undercover agent had ordered ricin from him, beginning on BMR and then off-market after it closed, and they arranged a dead drop in Florida - except the location was specified *in advance*, so they were able to surveil Korff dropping the ricin off personally.
-Korff and his laptop yielded information about a sale of purified nicotine oil to to Ryan Kelly Chamberlain.
+The first bust was [Jesse](http://www.tampabay.com/news/courts/criminal/labelle-man-accused-of-selling-toxin-in-death-plot/2162117 "LaBelle man accused of selling deadly toxin") [William](http://www.nbc-2.com/story/24506383/muse-poison-black-market-reloaded-online-jesse-korff-labelle-abrin "SWFL man charged with selling poison in online black market") [Korff](http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11404486 "Florida man who produced and sold deadly ricin gets prison") ([complaint](/docs/sr/bmr-korff-complaint.pdf)), BMR vendor "Snowman840", who was arrested 18 January 2014; an FBI undercover agent had ordered ricin from him, beginning on BMR and then off-market after it closed, and they arranged a dead drop in Florida - except the location was specified *in advance*, so they were able to surveil Korff dropping the ricin off personally.
+Korff and his laptop yielded information about a sale of purified nicotine oil to to Ryan Kelly Chamberlain and to Kuntal Patel.
 
-<!-- BMR: Korff poison http://www.reddit.com/r/DarkNetMarkets/comments/1vurn0/vendor_busted_for_selling_deadly_toxin/ https://dl.dropboxusercontent.com/u/182368464/2-14-mj-01008-DNF.pdf  https://dl.dropboxusercontent.com/u/182368464/2014-01-22-bmr-korff.maff http://www.tampabay.com/news/courts/criminal/labelle-man-accused-of-selling-toxin-in-death-plot/2162117  http://www.nbc-2.com/story/24506383/muse-poison-black-market-reloaded-online-jesse-korff-labelle-abrin http://www.nbc-2.com/story/24509658/online-messages-detail-online-poison-sale customer busted? http://www.bbc.com/news/uk-england-london-29331457 https://www.reddit.com/r/DarkNetMarkets/comments/1vurn0/vendor_busted_for_selling_deadly_toxin/ -->
+[Kuntal Patel](http://www.bbc.com/news/uk-england-london-29331457 "'Breaking Bad' inspired poison accused 'wished mother was dead'") was a UK woman who had bought abrin [from Korff](http://www.telegraph.co.uk/news/uknews/crime/11136008/US-teenager-was-behind-deadly-substance-in-Breaking-Bad-poison-case.html "US teenager was behind deadly substance in 'Breaking Bad' poison case: Jesse Korff sent Kuntal Patel the deadly poison Abrin which he had made in his home-based lab") to kill her mother (the attempt apparently failed because abrin is much less deadly ingested than inhaled); information from Korff led to her being arrested 26 January 2014, and she ultimately received [3 years](http://www.dailymail.co.uk/news/article-2825778/Graphic-designer-inspired-Breaking-Bad-fantasise-poisoning-mother-jailed-three-years-possession-deadly-toxin.html "Graphic designer who was inspired by Breaking Bad to fantasise about poisoning her mother jailed for three years for possession of deadly toxin")
 
 The next bust was in NYC: [the Swedish man Jonathan Norling turned himself in](http://www.nydailynews.com/new-york/nyc-crime/nypd-reach-fbi-interpol-cyanide-carrying-swede-article-1.1637056 "NYPD reach out to FBI, Interpol over cyanide-carrying mystery Swede - his young wife says she never knew: Jonathan Norling, 22, had more of the toxin and a suicide note in his Cadillac; another poison, abrin, in his Bronx apartment - and a 9-mm. pistol and an AR-15 assault rifle in his rented U-Haul truck. His wife and their young daughter, also living in the apartment, were unharmed. His wife, Mbene Ndiayem, was stunned by his behavior and arrest, says her father, adding, 'I see her crying all the time.'") at a police station with cyanide & abrin; the police chose to arrest him & charge him.
 Norling cooperated, and the mail records of his order led them to his BMR seller, James Christopher Malcolm, who, during the same post office visit he had mailed Norling's order, had also mailed off an order to Ryan Kelly Chamberlain.
@@ -271,8 +272,6 @@ His complaint details the web of interactions connecting him to Norling, Malcolm
 (Korff → Chamberlain ← Malcolm ← Norling.)
 
 <-- Ricin letter to Obama? https://www.reddit.com/r/SilkRoad/comments/1qqmbx/silk_road_vendor_sent_ricin_to_president_obama/ -->
-
-<!-- BMR/Utopia: [5](http://www.bbc.co.uk/news/technology-26158012 "Five arrested in Utopia dark net marketplace crackdown") [arrests](http://www.deepdotweb.com/2014/02/12/the-utopia-bust-details-prosecution-announcement/ "The Utopia Bust Details - Prosecution Announcement") http://www.om.nl/actueel/nieuwsberichten/@162281/undercover-onderzoek/ http://www.deepdotweb.com/2014/09/23/new-details-about-the-utopia-marketplace-bust/ https://pay.reddit.com/r/DarkNetMarkets/comments/2itda1/sentencing_for_utopia_bmr_admin_programmers/ -->
 
 ## Evolution
 ### USA
@@ -687,6 +686,11 @@ It is known Edgren had been a The Marketplace customer, but TMP had closed down 
 
 On 3 March 2015, the Indiana University student Andrew Thrall was arrested for importing Xanax pills from Canada which [he had bought "online using bit coins"](http://www.idsnews.com/article/2015/03/delta-tau-delta-member-arrested-for-dealing-xanax "Delta Tau Delta member arrested for dealing Xanax") and [resold to his fraternity](http://www.theindychannel.com/news/local-news/iu-student-accused-of-dealing-drugs-from-fraternity-house "IU student accused of dealing drugs from fraternity house"); the investigation apparently began November 2014, but the media articles did not mention what triggered it (a Customs intercept? or related to the local reselling).
 The seller & market are unknown (suggested sellers include Quantik, Magicman, & Yacht club).
+
+<!--
+## Utopia
+ BMR/Utopia: [5](http://www.bbc.co.uk/news/technology-26158012 "Five arrested in Utopia dark net marketplace crackdown") [arrests](http://www.deepdotweb.com/2014/02/12/the-utopia-bust-details-prosecution-announcement/ "The Utopia Bust Details - Prosecution Announcement") http://www.om.nl/actueel/nieuwsberichten/@162281/undercover-onderzoek/ http://www.deepdotweb.com/2014/09/23/new-details-about-the-utopia-marketplace-bust/ https://pay.reddit.com/r/DarkNetMarkets/comments/2itda1/sentencing_for_utopia_bmr_admin_programmers/
+-->
 
 # Unconfirmed rumors
 

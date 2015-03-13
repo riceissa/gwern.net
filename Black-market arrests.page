@@ -73,9 +73,12 @@ Similarly, if there were >60 buyer arrests (I double because there seem to be mo
 Name                  Sex Pseudonym            Role      Market      Seller          Country     State          Product                          INTL     Arrest date Known date    Notes
 --------------------- --- ---------------      -------   ----------- --------------- ----------- -------------- ------------------------------   ------   ----------- ----------    -----
 Jacob Theodore George M   digitalink           seller    Silk Road 1                 USA         Maryland       heroin, methylone                FALSE    2012-01-20  2013-10-29    Details remain mysterious; arrest in Jan 2012 but when exactly? Best guess date.
+Christopher Owen      M                        seller    Silk Road 1                 Australia                  MDMA, ketamine, metamphetamine   FALSE    2012-04-27  2013-05-18
 Mehran Jahedi         M                        buyer     Silk Road 1                 USA         Massachusetts  LSD, ketamine, MDMA, etc         TRUE     2012-05-05  2014-10-17
                           alllove              seller    Silk Road 1                 USA                        marijuana                        FALSE    2012-05-19  2015-02-05    alllove's bust is known solely from incidental use of his SR1 account in Ulbricht trial; dated to earliest mention of his disappearance I found.
 Isaac Patiari Maki    M                        buyer     Silk Road 1                 New Zealand                MDMA                             TRUE     2012-06-28  2013-02-20
+                      M                        buyer     Silk Road 1                 NZ                         methamphetamine                  TRUE     2012-07-11  2012-07-14    Exact date unknown other than it was in 2012 sometime before 11 July; this is for the Customs officer
+                      M                        buyer     Silk Road 1                 NZ                         MDMA                             TRUE     2012-07-11  2012-07-14    Exact date unknown other than it was in 2012 sometime before 11 July; this is for the university student
 David Handel          M   davidd               seller    Silk Road 1                 USA         Ohio           methylone, 2C-E, 2C-C            TRUE     2012-08-21  2014-02-21    Undercover buys led to his profiling & identification; arrested after picking up a package from post office.
 Shawn Casey           M   Trojan               seller    Silk Road 1                 Canada      Alberta        DMT                              TRUE     2012-08-22  2014-12-17    Police tipped off by neighbors.
                       M                        buyer     Silk Road 1                 Australia                  MDMA, marijuana, amphetamine     TRUE     2012-09-01  2014-12-05    2 unnamed brothers.
@@ -223,6 +226,7 @@ David Schell          M   CaliforniaCanibas    seller    Silk Road 2            
 Teri Schell           F   CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                        FALSE    2014-11-06  2014-11-20
 Ryan Gustafson        M   Willy.Clock          seller    Agora                       Uganda                     counterfeit currency             TRUE     2014-12-11  2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
 Cheng Le              M   fnufnu               seller    Evolution   Dark_Mart       USA         New York       ricin                            FALSE    2014-12-23  2015-01-20
+                      M   HollandOnline        seller    Agora                       Netherlands                LSD, MDMA, ketamine              TRUE     2014-12-26  2015-03-12
 Brian Farrell         M   DoctorClu            staff     Silk Road 2                 USA         Washington     Xanax                            FALSE    2015-01-20  2015-01-16    It was known Farrell was under investigation before the search warrant was executed & he was arrested.
 Weitzman              M                        buyer                                 Israel                     cocaine                          TRUE     2015-01-04  2015-02-23
 Julian Edgren         M                        buyer                                 USA         New Jersey     MDMA, LSD, marijuana etc         TRUE     2015-01-06  2015-01-07
@@ -232,6 +236,11 @@ Andrew Thrall         M                        buyer                            
 
 # Confirmed
 ## Agora
+### Netherlands
+
+The Dutch SR1/SR2/Agora LSD/MDMA/ketamine seller "HollandOnline" was arrested [26 December 2014](https://www.om.nl/actueel/nieuwsberichten/@88570/aanhoudingen/ "Aanhoudingen voor grootschalige drugshandel op ondergrondse marktplaatsen") a policeman (possibly connected to the ongoing investigation of HollandOnline by Dutch police) observed a drug transfer between two men, one of whom was arrested; then the other was arrested at some point in December as well, it seems.
+The article does not seem to specify who the second was, but it may have been HollandOnline's supplier.
+
 ### Uganda
 
 On 11 December 2014, the American [Ryan Andrew Gustafson was arrested in Uganda](http://www.nytimes.com/aponline/2014/12/18/us/ap-us-counterfeiting-uganda.html "Feds: Uganda-Based Man Counterfeited $2M in Cash") for counterfeiting money ([press release](http://www.justice.gov/opa/pr/criminal-charges-filed-against-us-citizen-connection-multi-million-dollar-international-cyber); [complaint](/docs/sr/2014-12-17-agora-willyclock-complaint.pdf); [docket](/docs/sr/2014-12-22-pacer-willyclock.maff); [Agora forums](http://lacbzxobeprssrfx.onion/index.php/topic,15752.msg3148560.html#msg3148560)); he was the seller "Willy.Clock" who had sold on Evolution until banned and then Agora & his own site.
@@ -287,13 +296,22 @@ The New York carder Cheng Le (Evolution seller "FNU"/"fnufnu") [was arrested 23 
 ## Silk Road 1 (SR1)
 ### Australia
 
-An Australian student's MDMA was [intercepted by Customs](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10819029 "Officer's link to net drug market") but the article makes no mention of him being penalized.
-
 The [prosecution](http://www.afp.gov.au/media-centre/news/afp/2012/july/afp-and-Customs-warn-users-of-silk-road.aspx "Media Release: AFP and Customs warn users of Silk Road") & [conviction](http://www.theage.com.au/victoria/secret-website-harboured-drugs-smorgasbord-court-hears-20130131-2dlw3.html) of the SR seller Paul Leslie Howard was to related to a Customs interception of his large imports from Netherlands/Germany according to the [judge's sentencing verdict](http://www.austlii.edu.au/au/cases/vic/VCC/2013/70.html).
 
+Another Australian seller, Christopher Owen, was pulled over by police on 27 April 2012 while driving to the post office to mail shipments, the drugs found, his house searched, and [was sentenced to 5 years](http://www.bordermail.com.au/story/1508217/jail-time-for-web-drug-trafficker/ "Jail time for web drug trafficker") ([discussion](/docs/sr/2013-04-17-australia.mht "Title: SILK ROAD VENDOR JUST GOT BUSTED AND CONVICTED Post by: AussieMitch on May 17, 2013, 12:59 am")).
 
+<!-- Owen = DownUnderDan ? or...
+Pretty sure this raid is the DopeBoyAus one. From what I heard he was the Geebung guy.. And the info to crimestoppers was his mates ex..
 
-Another Australian seller, Christopher Owen, was pulled over by police in April 2012 while driving to the post office to mail shipments, the drugs found, his house searched, and [was sentenced to 5 years](http://www.bordermail.com.au/story/1508217/jail-time-for-web-drug-trafficker/ "Jail time for web drug trafficker") ([discussion](/docs/sr/2013-04-17-australia.mht "Title: SILK ROAD VENDOR JUST GOT BUSTED AND CONVICTED Post by: AussieMitch on May 17, 2013, 12:59 am")).
+Again though, just what I heard..
+
+http://mypolice.qld.gov.au/blog/2012/04/20/closure-of-drug-operation-brisbane/
+
+"Police in Brisbane yesterday closed a major drug operation charging 15 people with 770 offences including trafficking in illicit drugs.
+
+Officers, including detectives from Dutton Park Criminal Investigation Branch yesterday executed seven search warrants on properties across Brisbane, including Carina, Coorparoo, West End, Geebung, Bald Hills and South Brisbane.
+
+Operation Juliet Nighthawk commenced in January 2012 in response to information provided to Crime Stoppers."  -->
 
 In August 2012, the MDMA buyer Ryan West, who resold locally, was [convicted of 4 charges](http://www.abc.net.au/news/2012-12-05/dark-internet-linked-to-drug-seizure-spike/4410872 "Dealers shed light on dark Internet's drug trade").
 
@@ -323,7 +341,7 @@ The Victorian authorities report [confiscating "several million dollars" in Bitc
 
 ### Austria
 
-On 4 November 2013, [2 men were arrested](http://noe.orf.at/news/stories/2626608/ "Silk-Road: Festnahme in St. Pölten") for selling opium, MDMA, & amphetamine, as well as 6 of their customers.
+On 4 November 2013, 2 men were arrested (media: [1](http://www.wien-heute.at/p-73978.php "St. Pölten: Suchtmittelhandel via Internet aufgeflogen und zerschlagen: Das Landeskriminalamt NÖ – Ermittlungsbereich Suchtmittelkriminalität – führte umfangreiche Erhebungen in Zusammenarbeit mit Beamtinnen und Beamten des Bundeskriminalamtes, Einsatzgruppe zur Bekämpfung der Suchtmittelkriminalität, und des FBIs im Bereich 'Handel mit Suchtmittel via Internet' durch"); [2](http://diepresse.com/home/panorama/oesterreich/1551538/St-Poltener-zogen-Drogenhandel-via-Internet-auf "St. Pöltener zogen Drogenhandel via Internet auf: In Zusammenarbeit mit dem FBI hat die niederösterreichische Polizei zwei Männer ausgeforscht, die Drogen über eine Internetplattform vertrieben haben sollen"); [3](http://noe.orf.at/news/stories/2626608/ "Silk-Road: Festnahme in St. Pölten")) for selling opium, MDMA, & amphetamine, as well as, apparently, 6 of their customers - others may have been arrested outside Austria but no mention of those.
 Based on [a forum thread](/docs/sr/sr2f-18619-austriaarrest-blackjack021.html) & seller profile, [I've identified this](https://www.reddit.com/r/SilkRoad/comments/2xlxhs/sr1_seller_blackjack021_6_customers_busted_in/) as the SR1 seller "Blackjack021".
 
 ### Canada
@@ -381,7 +399,11 @@ His arrest was rumored on forums, and DPR2 of SR2 [specifically alluded to Super
 
 ### New Zealand
 
-A New Zealand Customs officer who likely used SR was charged with possessing & "supplying" methamphetamine but this "was uncovered during police inquiries into another crime", with the resolution unclear.
+<!-- Mmm dunno about 0% , looks like the largest vendor we had in NZ got busted , name was FunForEveryone.. He disappeared in early February with a 'gone on holiday' message. Just judging by that and this quote I believe he did get busted. "A drug dealer's February arrest in New Zealand was referred to as the first ever criminal conviction involving a Silk Road transaction. Federal police said they were able to gain information about the dealer from his Silk Road profile, so they warned others that the marketplace is not entirely anonymous." Don't think he revealed anything on his profile but rather was caught through selling in real life or crappy posting/using easily traced courier services.. Really I don't know what happened but he sure is gone!  -->
+
+An unnamed Australian student's MDMA from SR1 (bought for local resale) was [intercepted by Customs](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10819029 "Officer's link to net drug market") sometime in 2012 and he was, at a minimum, interviewed, but the 11 July 2012 article makes no mention of additional penalties.
+(The same article covers a NZ customs agent, see the NZ section.)
+A New Zealand Customs officer who highly likely used SR1 (although he denies ordering, saying he had been researching it for his job) was charged with possessing & "supplying" methamphetamine but this "was uncovered during police inquiries into another crime", with the resolution unclear.
 
 Isaac Patiari Teaukura Maki's MDMA from the Netherlands was confiscated by Customs on 28 June 2012 and his house visited, whereupon he admitted guilt to the officers and unsurprisingly was [arrested](http://www.stuff.co.nz/southland-times/news/7954851/Drug-importer-jailed "Drug importer jailed") & [convicted](http://www.stuff.co.nz/southland-times/news/court/7958999/Drugs-ordered-on-web "Drugs ordered on web").
 
@@ -750,6 +772,7 @@ The [Drugs Global Incident Map](http://drugs.globalincidentmap.com/) features ma
     - ["Kansas City man accused of possessing 35,000 prescription pills"](http://www.kctv5.com/story/28250778/kansas-city-man-accused-of-possessing-35000-prescription-pills)
     - ["Louisville man accused of obtaining potential date rape drug [ketamine] online"](http://www.wdrb.com/story/27892533/louisville-man-accused-of-obtaining-date-rape-drug-online)
     - ["Authorities: Millburn man arrested after receiving 2 pounds of marijuana"](http://www.northjersey.com/news/crime-and-courts/authorities-millburn-man-arrested-after-receiving-2-pounds-of-marijuana-1.1284074)
+    - ["Mother, daughter from NC charged after 11 pounds of marijuana found in the mail"](http://myfox8.com/2015/03/05/mother-daughter-from-nc-charged-after-11-pounds-of-marijuana-found-in-the-mail/)
 
 Most are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales eg [the TedDanzig incident](https://www.reddit.com/r/SilkRoad/comments/1xq97t/teddanzig_arrested/)), but of course, some will turn out to be real.
 
@@ -798,6 +821,25 @@ Around April-May 2014, the SR2 Californian methamphetamine sellers AoD and Chale
 In February 2015, UCF student [Peter John Faucella was arrested in Florida](http://www.orlandosentinel.com/news/breaking-news/os-ucf-student-marijuana-arrest-towers-20150216-story.html "UCF student had marijuana shipped to campus apartment, cops say") after an intercepted package of marijuana; previously, a UCF student [may have posted on the black-market subreddits](https://www.reddit.com/r/DarkNetMarkets/comments/2w52bg/communitydiscussionucf_students_busted_for/copb9se) asking for help.
 
 On 9 February 2015, [Michael R. Winchester was arrested in Kentucky](http://www.wdrb.com/story/28070729/police-suspect-arrested-for-dealing-drugs-from-home "POLICE: Suspect arrested for dealing drugs from home") after a tip about his local dealing; he was apparently also a [well-known Topix.com](https://www.reddit.com/r/DarkNetMarkets/comments/2vgf1y/psaarticle_topix_sellerirl_dealer_busted_possibly/) seller of benzodiazepines, and may at some point have sold on the black-markets.
+
+# Analysis
+## Reflections
+
+No single theme emerges reading through the many arrests.
+
+Some people are busted through sheer bad luck in being randomly pulled over or their packages inspected; some are undone by other peoples' mistakes, and some have no one but themselves to blame for talking to a policeman and blurting out all their secrets; some are undone by their trust in others, and some are undone by lying to federal agents; some are undone by signing for packages, while others are undone by a stray fingerprint; some followed the OPSEC rules and some engaged in mindboggling follies like using their real return address or accepting payment to their own bank account or running their own clearnet site; some clammed up, denied everything, and saved themselves, while others kept records of everything (perhaps in the misguided belief it would earn them clemency in the worst) and only condemned themselves; some were busted at home, others in the totalitarian zones of international borders; some were busted through high-tech browser-based deanonymization but most through low-tech methods like a customer or friend snitching; some sellers' packages are spotted during Customs inspections, and some are noticed only when delivery fails & the bogus return addresses explode.
+
+A few motifs do seem to emerge:
+
+- many buyers go down to CDs and the subsequent searches turning up additional illegal goods, suggesting 2 major mitigations: never signing, and cleaning house to the extent possible when expecting a new delivery
+- international deliveries are highly risky for both the seller and the buyer
+- sellers should be assumed to keep records & addresses; many have turned out to do so
+- but simple addresses seem minimally useful to LE as there are few known busts despite the many thousands of captured transaction records with addresses - with a few exceptions:
+
+    1. if the address is from an account which is itself a seller (an argument for single-role accounts)
+    2. the seller has been infiltrated but not yet busted, and there are orders 'in flight' which can be turned into quick & easy CDs
+    3. the products being sold are guns or poisons, in which case, as in the BMR busts, the FBI and other LE organizations are willing to investigate based on nothing but an address (despite guns & poisons being a rounding error on the few markets which allow them, LE seems to devote almost as much effort to them as to regular drug sellers)
+- Bitcoin works as a payment method: sellers using any other method (Paypal, bank deposits, Western Union) invariably come to grief
 
 # External links
 

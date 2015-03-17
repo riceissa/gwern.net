@@ -642,6 +642,7 @@ These sources yielded ~64 candidates over the following year before I shut down 
 
 # External links
 
+- ["Google Memorial, le petit musée des projets Google abandonnés"](http://www.lemonde.fr/pixels/visuel/2015/03/06/google-memorial-le-petit-musee-des-projets-google-abandonnes_4588392_4408996.html)
 - [Archive Team](!Wikipedia) ([ArchiveTeam Warrior](http://www.archiveteam.org/index.php?title=ArchiveTeam_Warrior): [Reader](http://www.archiveteam.org/index.php?title=Google_Reader))
 - Comments:
 
@@ -695,6 +696,7 @@ is checkout proper dead?
     Merchants selling physical goods will need to switch to third-party alternatives (see below)"
 https://news.ycombinator.com/item?id=5740447 (also https://news.ycombinator.com/item?id=6579812 / https://news.ycombinator.com/item?id=6581906 )
 "> 'Wait, so what's the difference between this and Google Wallet?' With Checkout, Google is a credit card processor. With Wallet, Google isn't a credit card processor, they are partnered with Bankcorp Bank who is issuing virtual cards which are funded either by transferring funds from the users bank account or by charging credit cards."
+Wallet dead March 2, 2015. https://support.google.com/wallet/business/answer/6107573
 
 04:57:29 < quanticle> gwern: When you get this, would you mind giving me your opinion on the continued long-term viability of Google Tasks? My prediction is that it won't last much longer; it seems to be a massively underdeveloped part of GMail/Google Calendar, and the task-list/to-do-list market is fiercely competitive.
 05:11:25 < harrow> old Closure Library codebase, guy who wrote it quit, no tie-in with G+
@@ -705,7 +707,7 @@ also check these: "Google acquired personalized Website gadget developer Labpixi
 google Chrome Frame https://en.wikipedia.org/wiki/Google_Chrome_Frame "chrome frame" 2,830,000 "google chrome frame" 28,200,000 plugin "According to Alex Russell - who came to Google specifically to start the Chrome Frame project - the plug-in will officially be retired early in 2014, and the company is beginning to warn the consumers and businesses who use the tool. "We've gotten to the point now where the trend lines indicate the need for Chrome Frame is going to expire early next year, so we're giving consumers and enterprises a lot of heads up that Chrome Frame is going to be going away," he says." http://www.wired.com/wiredenterprise/2013/06/chrome-frame-ends/ http://www.techrepublic.com/blog/google-in-the-enterprise/google-chrome-frame-is-leaving-the-picture/ http://blog.chromium.org/2013/06/retiring-chrome-frame.html January 2014
 AdWhirl bought with AdMob, died 30 September 2013 http://vator.tv/news/2013-06-14-google-shutting-down-adwhirl-at-the-end-of-september for profit open-source https://code.google.com/p/adwhirl/ "google adwhirl" 101,000 results
 "Google Mine", Pinterest competitor http://googlesystem.blogspot.com/2013/06/google-mine.html unreleased as of June 21, 2013
-"Google Latitude" dead 9 August 2013; search 'Google Latitude' pulls up 1,150,000 hits on 10 July ANN: https://support.google.com/gmm/answer/3001634 https://plus.google.com/+jlapenna/posts/deBP7kj7rMi
+"Google Latitude" dead 9 August 2013; search 'Google Latitude' pulls up 1,150,000 hits on 10 July ANN: https://support.google.com/gmm/answer/3001634 https://plus.google.com/+jlapenna/posts/deBP7kj7rMi  (Google+'s location stuff is apparently not a full replacement)
 Google Shopping for Suppliers 'Google "Shopping for Suppliers"' 67,300  11 July 2013; profit www.google.com/shopping/suppliers/  started 28 Jan 2013
 Alfred,  dead 19 July 2013, for-profit acquisition (14 December 2011) http://techcrunch.com/2013/07/11/google-will-shut-down-alfred-the-local-recommendations-app-july-19/ http://www.ubergizmo.com/2013/07/google-to-shut-down-alfred-on-july-19th/ http://www.engadget.com/2011/12/14/google-buys-alfred-maker-clever-sense-brings-us-closer-to-perso/ "google alfred"  46,100   17 July 2013
 Chromecast product for-profit non-social? non-FLOSS  341,000,000 hits 'google chromecast' 29 July 2013  http://www.n3rdabl3.co.uk/2013/07/google-announce-chromecast-a-new-way-to-share-on-your-tv/
@@ -750,6 +752,9 @@ followup window closed 4 June 2014: no more new entries unless they came into ex
 Freebase https://groups.google.com/forum/#!msg/freebase-discuss/s_BPoL92edc/Y585r7_2E1YJ dead: June 30, 2015
 Glass http://www.bbc.com/news/technology-30831128 https://news.ycombinator.com/item?id=8894168 'January 19 [2015] will be the last day to get the Glass Explorer Edition.' https://plus.google.com/+GoogleGlass/posts/9uiwXY42tvc
 Google Maps Coordinate dead 21 January 2016 http://www.engadget.com/2015/01/22/google-maps-coordinate-closing/
+Notifier http://googlesystem.blogspot.de/2014/01/no-more-google-notifier.html  31 January 2014
+Google Code Search dead 6 March 2013, started October 5, 2006
+Google Code "Beginning today, we have disabled new project creation on Google Code. We will be shutting down the service about 10 months from now on January 25th, 2016." http://google-opensource.blogspot.com/2015/03/farewell-to-google-code.html
 -->
 
 # Appendix

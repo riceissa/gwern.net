@@ -1627,6 +1627,7 @@ What is surprising may differ from person to person.
 - "return-into-[libc](!Wikipedia) attacks": software libraries provide pre-packaged functions, each of which is intended to do one useful thing; a fully TC 'language' can be cobbled out of just calls to these functions and nothing else, which enables evasion of security mechanisms since the attacker is not running any recognizable code of his own. See, among many others, ["The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)"](http://cseweb.ucsd.edu/~hovav/papers/s07.html "Shacham 2007") & ["On the Expressiveness of Return-into-libc Attacks"](http://www4.ncsu.edu/~mqtran/pubs/rilc.pdf "Tran et al 2011").
 - _[Pokemon Yellow](!Wikipedia)_: ["Pokemon Yellow Total Control Hack"](http://aurellem.org/vba-clojure/html/total-control.html) outlines an exploit of a memory corruption attack which allows one to write arbitrary Game Boy assembler programs by repeated in-game walking and item purchasing. (There are similar feats which have been developed by [speedrun](!Wikipedia) aficionados, but I tend to ignore most of them as they are 'impure': for example, one can turn the [SNES _Super Mario World_](http://tasvideos.org/4156S.html "Submission #4156: Masterjun's SNES Super Mario World 'Executes Arbitrary Code' in 02:25.19") [into an arbitrary game like Snake or Pong](http://hackaday.com/2014/01/10/teaching-mario-to-play-pong-and-snake-through-innumerable-exploits/ "Teaching Mario to Play Pong and Snake Through Innumerable Exploits") but you need the new programs loaded up into extra hardware, so in my opinion, it's not really showing SMW to be unexpectedly Turing-complete and is different from the other examples. Similarly, one can go from [Super Game Boy to SNES to arbitrary code like IRC](http://arstechnica.com/gaming/2015/01/pokemon-plays-twitch-how-a-robot-got-irc-running-on-an-unmodified-snes/ "Pokémon plays Twitch: How a robot got IRC running on an unmodified SNES; Behind the scenes with the hackers that crammed Web chat through a Super Game Boy."). This distinction is debatable.)
 - _[Magic: the Gathering](!Wikipedia)_: [TC](http://www.toothycat.net/~hologram/Turing/ "Magic: the Gathering is Turing Complete") with the assumption that players mechanically take any option they are given (but otherwise all actions are forced)
+- [_Braid_](!Wikipedia "Braid (video game)"): [TC](http://arxiv.org/abs/1412.0784 "Braid is undecidable")
 - musical notation: given instructions for transposing successive notes, [musical notation becomes the esolang](http://programmers.stackexchange.com/a/136179) [Choon](http://www.stephensykes.com/choon/choon.html)
 - heart cells: interact in a way [allowing logic gates and hence TC-ness](http://eprints.uwe.ac.uk/15848/6/ScarleXbox.pdf "Implications of the Turing completeness of reaction-diffusion models, informed by GPGPU simulations on an XBox 360: Cardiac arrhythmias, re-entry and the halting problem', Scarle 2009") (perhaps not *too* surprising since cellular automatons were biologically motivated)
 
@@ -2240,3 +2241,334 @@ I haven't gotten much use out of them, but changes in ambient lighting over time
 I've written a script using Imagemagick which analyzes each webcam photo and calculates the average brightness (as a grayscale intensity) and the average [LAB](!Wikipedia "Lab color space") color triplet.
 (I originally used RGB but the 3 colors turned out to correlate so highly that the data was redundant and I was told LAB better matches human perception; in any case, the LAB values turn out to be less inter-correlated and so should be more useful.)
 The light intensity might affect sleep patterns (particularly sleep timing) and daily productivity.
+
+# Daily weight data graph
+
+As the datasets I'm interested in grow in number of variables, it becomes harder to justify doing analysis by simply writing down a simple linear model with a single dependent variable and throwing in the independent variables and maybe a few transformations chosen by hand.
+I can instead write down some simultaneous-equations/structural-equation-models, but while it's usually obvious what to do for _k_<4 and if it's not I can compare the possible variants, 4 variables is questionable what the right SEM is, and >5, it's hopeless.
+Factor analysis to extract some latent variables is a possibility, but the more general solution here seems to be probabilistic graphical models such as Bayesian networks.
+
+I thought I'd try out some Bayes net inference on some of my datasets.
+In this case, I have ~150 daily measurements from my Omron body composition scale, measuring total weight, body fat percentage, and some other things (see [an Omron manual](http://ecx.images-amazon.com/images/I/B1v0aFQLGFS.pdf)):
+
+1. Total weight
+2. BMI
+3. Body fat percentage
+4. Muscle percentage
+5. Resting metabolism in calories
+6. "Body age"
+7. Visceral fat index
+
+The 7 variables are interrelated, so this is definitely a case where a simple `lm` is not going to do the trick.
+It's also not 100% clear how to set up a SEM; some definitions are obvious (the much-criticized BMI is going to be determined solely by total weight, muscle and fat percentage might be inversely related) but others are not (how does "visceral fat" relate to body fat?).
+And it's not a hopelessly small amount of data.
+
+The Bayes net R library I'm trying out is [`bnlearn`](http://www.bnlearn.com) ([paper](http://www.jstatsoft.org/v35/i03/paper)).
+
+~~~{.R}
+library(bnlearn)
+# https://www.dropbox.com/s/4nsrszm85m47272/2015-03-22-gwern-weight.csv
+weight <- read.csv("selfexperiment/weight.csv")
+weight$Date <- NULL; weight$Weight.scale <- NULL
+# remove missing data
+weightC <- na.omit(weight)
+# bnlearn can't handle integers, oddly enough
+weightC <- as.data.frame(sapply(weightC, as.numeric))
+summary(weightC)
+#   Weight.Omron        Weight.BMI        Weight.body.fat    Weight.muscle
+#  Min.   :193.0000   Min.   : 26.90000   Min.   :27.00000   Min.   :32.60000
+#  1st Qu.:195.2000   1st Qu.: 27.20000   1st Qu.:28.40000   1st Qu.:34.20000
+#  Median :196.4000   Median : 27.40000   Median :28.70000   Median :34.50000
+#  Mean   :196.4931   Mean   : 28.95409   Mean   :28.70314   Mean   :34.47296
+#  3rd Qu.:197.8000   3rd Qu.: 27.60000   3rd Qu.:29.10000   3rd Qu.:34.70000
+#  Max.   :200.6000   Max.   : 28.00000   Max.   :31.70000   Max.   :35.50000
+#  Weight.resting.metabolism Weight.body.age    Weight.visceral.fat
+#  Min.   :1857.000          Min.   :52.00000   Min.   : 9.000000
+#  1st Qu.:1877.000          1st Qu.:53.00000   1st Qu.:10.000000
+#  Median :1885.000          Median :53.00000   Median :10.000000
+#  Mean   :1885.138          Mean   :53.32704   Mean   : 9.949686
+#  3rd Qu.:1893.000          3rd Qu.:54.00000   3rd Qu.:10.000000
+#  Max.   :1914.000          Max.   :56.00000   Max.   :11.000000
+cor(weightC)
+#                             Weight.Omron     Weight.BMI Weight.body.fat  Weight.muscle
+# Weight.Omron               1.00000000000  0.98858376919    0.1610643221 -0.06976934825
+# Weight.BMI                 0.98858376919  1.00000000000    0.1521872557 -0.06231142104
+# Weight.body.fat            0.16106432213  0.15218725566    1.0000000000 -0.98704369855
+# Weight.muscle             -0.06976934825 -0.06231142104   -0.9870436985  1.00000000000
+# Weight.resting.metabolism  0.96693236051  0.95959140245   -0.0665001241  0.15621294274
+# Weight.body.age            0.82581939626  0.81286141659    0.5500409365 -0.47408608681
+# Weight.visceral.fat        0.41542744168  0.43260100665    0.2798756916 -0.25076619829
+#                           Weight.resting.metabolism Weight.body.age Weight.visceral.fat
+# Weight.Omron                           0.9669323605    0.8258193963        0.4154274417
+# Weight.BMI                             0.9595914024    0.8128614166        0.4326010067
+# Weight.body.fat                       -0.0665001241    0.5500409365        0.2798756916
+# Weight.muscle                          0.1562129427   -0.4740860868       -0.2507661983
+# Weight.resting.metabolism              1.0000000000    0.7008354776        0.3557229425
+# Weight.body.age                        0.7008354776    1.0000000000        0.4840752389
+# Weight.visceral.fat                    0.3557229425    0.4840752389        1.0000000000
+
+## create alternate dataset expressing the two percentage variables as pounds, since this might fit better
+weightC2 <- weightC
+weightC2$Weight.body.fat <- weightC2$Weight.Omron * (weightC2$Weight.body.fat / 100)
+weightC2$Weight.muscle   <- weightC2$Weight.Omron * (weightC2$Weight.muscle / 100)
+~~~
+
+Begin analysis:
+
+~~~{.R}
+pdap <- hc(weightC)
+pdapc2 <- hc(weightC2)
+## bigger is better:
+score(pdap, weightC)
+[1] -224.2563072
+score(pdapc2, weightC2)
+[1] -439.7811072
+## stick with the original, then
+pdap
+#   Bayesian network learned via Score-based methods
+#
+#   model:
+#    [Weight.Omron][Weight.body.fat][Weight.BMI|Weight.Omron]
+#    [Weight.resting.metabolism|Weight.Omron:Weight.body.fat]
+#    [Weight.body.age|Weight.Omron:Weight.body.fat]
+#    [Weight.muscle|Weight.body.fat:Weight.resting.metabolism][Weight.visceral.fat|Weight.body.age]
+#   nodes:                                 7
+#   arcs:                                  8
+#     undirected arcs:                     0
+#     directed arcs:                       8
+#   average markov blanket size:           2.57
+#   average neighbourhood size:            2.29
+#   average branching factor:              1.14
+#
+#   learning algorithm:                    Hill-Climbing
+#   score:                                 BIC (Gauss.)
+#   penalization coefficient:              2.534452101
+#   tests used in the learning procedure:  69
+#   optimized:                             TRUE
+plot(pdap)
+## https://i.imgur.com/nipmqta.png
+~~~
+
+This inferred graph is obviously wrong in several respects, violating prior knowledge about some of the relationships.
+
+More specifically, my prior knowledge:
+
+- `Weight.Omron` == total weight; should be influenced by `Weight.body.fat` (%), `Weight.muscle` (%), & `Weight.visceral.fat`
+- `Weight.visceral.fat`: ordinal variable, <=9 = normal; 10-14 = high; 15+ = very high; from the Omron manual:
+
+    > Visceral fat area (0 - approx. 300 cm , 1 inch=2.54 cm) distribution with 30 levels. NOTE: Visceral fat levels are relative and not absolute values.
+- `Weight.BMI`: BMI is a simple function of total weight & height (specifically `BMI = round(weight / height^2)`), so it should be influenced only by `Weight.Omron`, and influence nothing else
+- `Weight.body.age`: should be influenced by `Weight.Omron`, `Weight.body.fat`, and `Weight.muscle`, based on the description in the manual:
+
+    > Body age is based on your resting metabolism. Body age is calculated by using your weight, body fat percentage and skeletal muscle percentage to produce a guide to whether your body age is above or below the average for your actual age.
+- `Weight.resting.metabolism`: a function of the others, but I'm not sure which exactly; manual talks about what resting metabolism is generically and specifies it has the range "385 to 3999 kcal with 1 kcal increments"; https://en.wikipedia.org/wiki/Basal_metabolic_rate suggests the Omron may be using one of several approximation equations based on age/sex/height/weight, but it might also be using lean body mass as well.
+
+Unfortunately, bnlearn doesn't seem to support any easy way of encoding the prior knowledge - for example, you can't say 'no outgoing arrows from node X' - so I iterate, adding bad arrows to the blacklist.
+
+Which arrows violate prior knowledge?
+
+- `[Weight.visceral.fat|Weight.body.age]` (read backwards, as `Weight.body.age ~> Weight.visceral.fat`)
+- `[Weight.muscle|Weight.resting.metabolism]`
+
+Retry, blacklisting those 2 arrows:
+
+~~~{.R}
+pdap2 <- hc(weightC, blacklist=data.frame(from=c("Weight.body.age", "Weight.resting.metabolism"), to=c("Weight.visceral.fat","Weight.muscle")))
+~~~
+
+New violations:
+
+- `[Weight.visceral.fat|Weight.BMI]`
+- `[Weight.muscle|Weight.Omron]`
+
+~~~{.R}
+pdap3 <- hc(weightC, blacklist=data.frame(from=c("Weight.body.age", "Weight.resting.metabolism", "Weight.BMI", "Weight.Omron"), to=c("Weight.visceral.fat","Weight.muscle", "Weight.visceral.fat", "Weight.muscle")))
+~~~
+
+New violations:
+
+- `[Weight.visceral.fat|Weight.Omron]`
+- `[Weight.muscle|Weight.BMI]`
+
+~~{.R}
+pdap4 <- hc(weightC, blacklist=data.frame(from=c("Weight.body.age", "Weight.resting.metabolism", "Weight.BMI", "Weight.Omron", "Weight.Omron", "Weight.BMI"), to=c("Weight.visceral.fat","Weight.muscle", "Weight.visceral.fat", "Weight.muscle", "Weight.visceral.fat", "Weight.muscle")))
+~~~
+
+One violation:
+
+- `[Weight.muscle|Weight.body.age]`
+
+~~~{.R}
+pdap5 <- hc(weightC, blacklist=data.frame(from=c("Weight.body.age", "Weight.resting.metabolism", "Weight.BMI", "Weight.Omron", "Weight.Omron", "Weight.BMI", "Weight.body.age"), to=c("Weight.visceral.fat","Weight.muscle", "Weight.visceral.fat", "Weight.muscle", "Weight.visceral.fat", "Weight.muscle", "Weight.muscle")))
+#   Bayesian network learned via Score-based methods
+#
+#   model:
+#    [Weight.body.fat][Weight.muscle|Weight.body.fat][Weight.visceral.fat|Weight.body.fat]
+#    [Weight.Omron|Weight.visceral.fat][Weight.BMI|Weight.Omron]
+#    [Weight.resting.metabolism|Weight.Omron:Weight.body.fat]
+#    [Weight.body.age|Weight.Omron:Weight.body.fat]
+#   nodes:                                 7
+#   arcs:                                  8
+#     undirected arcs:                     0
+#     directed arcs:                       8
+#   average markov blanket size:           2.57
+#   average neighbourhood size:            2.29
+#   average branching factor:              1.14
+#
+#   learning algorithm:                    Hill-Climbing
+#   score:                                 BIC (Gauss.)
+#   penalization coefficient:              2.534452101
+#   tests used in the learning procedure:  62
+#   optimized:                             TRUE
+plot(pdap5)
+## https://i.imgur.com/nxCfmYf.png
+
+## implementing all the prior knowledge cost ~30:
+score(pdap5, weightC)
+# [1] -254.6061724
+~~~
+
+No violations, so let's use the network and estimate the specific parameters:
+
+~~~{.R}
+fit <- bn.fit(pdap5, weightC); fit
+#   Bayesian network parameters
+#
+#   Parameters of node Weight.Omron (Gaussian distribution)
+#
+# Conditional density: Weight.Omron | Weight.visceral.fat
+# Coefficients:
+#         (Intercept)  Weight.visceral.fat
+#       169.181651376          2.744954128
+# Standard deviation of the residuals: 1.486044472
+#
+#   Parameters of node Weight.BMI (Gaussian distribution)
+#
+# Conditional density: Weight.BMI | Weight.Omron
+# Coefficients:
+#   (Intercept)   Weight.Omron
+# -0.3115772322   0.1411044216
+# Standard deviation of the residuals: 0.03513413381
+#
+#   Parameters of node Weight.body.fat (Gaussian distribution)
+#
+# Conditional density: Weight.body.fat
+# Coefficients:
+# (Intercept)
+# 28.70314465
+# Standard deviation of the residuals: 0.644590085
+#
+#   Parameters of node Weight.muscle (Gaussian distribution)
+#
+# Conditional density: Weight.muscle | Weight.body.fat
+# Coefficients:
+#     (Intercept)  Weight.body.fat
+#   52.1003347352    -0.6141270921
+# Standard deviation of the residuals: 0.06455478599
+#
+#   Parameters of node Weight.resting.metabolism (Gaussian distribution)
+#
+# Conditional density: Weight.resting.metabolism | Weight.Omron + Weight.body.fat
+# Coefficients:
+#     (Intercept)     Weight.Omron  Weight.body.fat
+#   666.910582196      6.767607964     -3.886694779
+# Standard deviation of the residuals: 1.323176507
+#
+#   Parameters of node Weight.body.age (Gaussian distribution)
+#
+# Conditional density: Weight.body.age | Weight.Omron + Weight.body.fat
+# Coefficients:
+#     (Intercept)     Weight.Omron  Weight.body.fat
+#  -32.2651379176     0.3603672788     0.5150134225
+# Standard deviation of the residuals: 0.2914301529
+#
+#   Parameters of node Weight.visceral.fat (Gaussian distribution)
+#
+# Conditional density: Weight.visceral.fat | Weight.body.fat
+# Coefficients:
+#     (Intercept)  Weight.body.fat
+#    6.8781100009     0.1070118125
+# Standard deviation of the residuals: 0.2373649058
+## residuals look fairly good, except for Weight.resting.metabolism, where there are some extreme residuals in what looks a bit like a sigmoid sort of pattern, suggesting nonlinearities in the Omron scale's formula?
+bn.fit.qqplot(fit)
+## https://i.imgur.com/mSallOv.png
+~~~
+
+We can double-check the estimates here by turning the Bayes net model into a SEM and seeing how the estimates compare, and also seeing if the p-values suggest we've found a good model:
+
+~~~{.R}
+library(lavaan)
+Weight.model1 <- '
+    Weight.visceral.fat ~ Weight.body.fat
+    Weight.Omron ~ Weight.visceral.fat
+    Weight.BMI ~ Weight.Omron
+    Weight.body.age ~ Weight.Omron + Weight.body.fat
+    Weight.muscle ~ Weight.body.fat
+    Weight.resting.metabolism ~ Weight.Omron + Weight.body.fat
+                   '
+Weight.fit1 <- sem(model = Weight.model1,  data = weightC)
+summary(Weight.fit1)
+# lavaan (0.5-16) converged normally after 139 iterations
+#
+#   Number of observations                           159
+#
+#   Estimator                                         ML
+#   Minimum Function Test Statistic               71.342
+#   Degrees of freedom                                 7
+#   P-value (Chi-square)                           0.000
+#
+# Parameter estimates:
+#
+#   Information                                 Expected
+#   Standard Errors                             Standard
+#
+#                    Estimate  Std.err  Z-value  P(>|z|)
+# Regressions:
+#   Weight.visceral.fat ~
+#     Weight.bdy.ft     0.107    0.029    3.676    0.000
+#   Weight.Omron ~
+#     Wght.vscrl.ft     2.745    0.477    5.759    0.000
+#   Weight.BMI ~
+#     Weight.Omron      0.141    0.002   82.862    0.000
+#   Weight.body.age ~
+#     Weight.Omron      0.357    0.014   25.162    0.000
+#     Weight.bdy.ft     0.516    0.036   14.387    0.000
+#   Weight.muscle ~
+#     Weight.bdy.ft    -0.614    0.008  -77.591    0.000
+#   Weight.resting.metabolism ~
+#     Weight.Omron      6.730    0.064  104.631    0.000
+#     Weight.bdy.ft    -3.860    0.162  -23.837    0.000
+#
+# Covariances:
+#   Weight.BMI ~~
+#     Weight.body.g    -0.000    0.001   -0.116    0.907
+#     Weight.muscle    -0.000    0.000   -0.216    0.829
+#     Wght.rstng.mt     0.005    0.004    1.453    0.146
+#   Weight.body.age ~~
+#     Weight.muscle     0.001    0.001    0.403    0.687
+#     Wght.rstng.mt    -0.021    0.030   -0.700    0.484
+#   Weight.muscle ~~
+#     Wght.rstng.mt     0.007    0.007    1.003    0.316
+#
+# Variances:
+#     Wght.vscrl.ft     0.056    0.006
+#     Weight.Omron      2.181    0.245
+#     Weight.BMI        0.001    0.000
+#     Weight.body.g     0.083    0.009
+#     Weight.muscle     0.004    0.000
+#     Wght.rstng.mt     1.721    0.193
+~~~
+
+Comparing the coefficients by eye, they tend to be quite close (usually within 0.1) and the p-values are all statistically-significant.
+
+The network itself looks right, although some of the edges are surprises: I didn't know visceral fat was predictable from body fat (I thought they were measuring separate things), and the relative independence of muscle suggests that in any exercise plan I might be better off focusing on the body fat percentage rather than the muscle percentage since the former may be effectively determining the latter.
+
+So what did I learn here?
+
+- learning network structure and direction of arrows is hard; even with only 7 variables and  _n_=159 (accurate clean data), the hill-climbing algorithm will learn at least 7 wrong arcs.
+
+    - and the derived graphs depend disturbingly heavily on choice of algorithm; I used the `hc` hill-climbing algorithm (since I'm lazy and didn't want to specify arrow directions), but when I try out the alternatives like `iamb` on the same data & blacklist, the found graph looks rather different
+- Gaussians are, as always, sensitive to outliers: I was surprised the first graph didn't show BMI connected to anything, so I took a closer look and found I had miscoded a BMI of 28 as *280*!
+- bnlearn, while not as hard to use as I expected, could still use usability improvements: I should not need to coerce integer data into exactly equivalent numeric types just because bnlearn doesn't recognize integers; and blacklisting/whitelisting needs to be more powerful - iteratively generating graphs and manually inspecting and manually blacklisting is tedious and does not scale
+
+    - hence, it may make more sense to find a graph using `bnlearn` and then convert it into simultaneous-equations and manipulate it using more mature SEM libraries

@@ -284,7 +284,7 @@ Neither problem seems major.
 
 ### Distributed
 
-A lot depends *when* you do all your testing. Above we saw some benefits to testing a lot the moment you learn something, but the same number of tests could be spread out over time, to give us the *spacing effect* or *spaced repetition*. There are hundreds of studies involving the spacing effect:
+A lot depends on *when* you do all your testing. Above we saw some benefits to testing a lot the moment you learn something, but the same number of tests could be spread out over time, to give us the *spacing effect* or *spaced repetition*. There are hundreds of studies involving the spacing effect:
 
 - [Cepeda et al 2006](http://uweb.cas.usf.edu/~drohrer/pdfs/Cepeda_et_al_2006PsychBull.pdf "Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis") is a review of 184 articles with 317 experiments; other reviews include:
 - Ruch 1928, ["Factors influencing the relative economy of massed and distributed practice in learning"](/docs/spacedrepetition/1928-ruch.pdf)

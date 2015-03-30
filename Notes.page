@@ -2242,7 +2242,8 @@ I've written a script using Imagemagick which analyzes each webcam photo and cal
 (I originally used RGB but the 3 colors turned out to correlate so highly that the data was redundant and I was told LAB better matches human perception; in any case, the LAB values turn out to be less inter-correlated and so should be more useful.)
 The light intensity might affect sleep patterns (particularly sleep timing) and daily productivity.
 
-# Daily weight data graph
+# Bayes nets
+## Daily weight data graph
 
 As the datasets I'm interested in grow in number of variables, it becomes harder to justify doing analysis by simply writing down a simple linear model with a single dependent variable and throwing in the independent variables and maybe a few transformations chosen by hand.
 I can instead write down some simultaneous-equations/structural-equation-models, but while it's usually obvious what to do for _k_<4 and if it's not I can compare the possible variants, 4 variables is questionable what the right SEM is, and >5, it's hopeless.
@@ -2572,3 +2573,259 @@ So what did I learn here?
 - bnlearn, while not as hard to use as I expected, could still use usability improvements: I should not need to coerce integer data into exactly equivalent numeric types just because bnlearn doesn't recognize integers; and blacklisting/whitelisting needs to be more powerful - iteratively generating graphs and manually inspecting and manually blacklisting is tedious and does not scale
 
     - hence, it may make more sense to find a graph using `bnlearn` and then convert it into simultaneous-equations and manipulate it using more mature SEM libraries
+
+## Zeo sleep data
+
+Here I look at my Zeo sleep data; more variables, more complex relations, and more unknown ones, but on the positive side, ~12x more data to work with.
+
+~~~{.R}
+zeo <- read.csv("~/wiki/docs/zeo/gwern-zeodata.csv")
+zeo$Sleep.Date <- as.Date(zeo$Sleep.Date, format="%m/%d/%Y")
+
+## convert "05/12/2014 06:45" to "06:45"
+zeo$Start.of.Night <- sapply(strsplit(as.character(zeo$Start.of.Night), " "), function(x) { x[2] })
+## convert "06:45" to 24300
+interval <- function(x) { if (!is.na(x)) { if (grepl(" s",x)) as.integer(sub(" s","",x))
+                                           else { y <- unlist(strsplit(x, ":")); as.integer(y[[1]])*60 + as.integer(y[[2]]); }
+                                         }
+                          else NA
+                        }
+zeo$Start.of.Night <- sapply(zeo$Start.of.Night, interval)
+## correct for the switch to new unencrypted firmware in March 2013;
+## I don't know why the new firmware subtracts 15 hours
+zeo[(zeo$Sleep.Date >= as.Date("2013-03-11")),]$Start.of.Night <- (zeo[(zeo$Sleep.Date >= as.Date("2013-03-11")),]$Start.of.Night + 900) %% (24*60)
+
+## after midnight (24*60=1440), Start.of.Night wraps around to 0, which obscures any trends,
+## so we'll map anything before 7AM to time+1440
+zeo[zeo$Start.of.Night<420 & !is.na(zeo$Start.of.Night),]$Start.of.Night <- (zeo[zeo$Start.of.Night<420 & !is.na(zeo$Start.of.Night),]$Start.of.Night + (24*60))
+
+zeoSmall <- subset(zeo, select=c(ZQ,Total.Z,Time.to.Z,Time.in.Wake,Time.in.REM,Time.in.Light,Time.in.Deep,Awakenings,Start.of.Night,Morning.Feel))
+zeoClean <- na.omit(zeoSmall)
+# bnlearn doesn't like the 'integer' class that most of the data-frame is in
+zeoClean <- as.data.frame(sapply(zeoClean, as.numeric))
+~~~
+
+Prior knowledge:
+
+- `Start.of.Night` is temporally first, and cannot be caused
+- `Time.to.Z` is temporally second, and can be influenced by `Start.of.Night` (likely a connection between how late I go to bed and how fast I fall asleep) & `Time.in.Wake` (since if it takes 10 minutes to fall asleep, I must spend >=10 minutes in wake) but not others
+- `Morning.Feel` is temporally last, and cannot cause anything
+- `ZQ` is a synthetic variable invented by Zeo according to an opaque formula, which cannot cause anything but is determined by others
+- `Total.Z` should be the sum of `Time.in.Light`, `Time.in.REM`, and `Time.in.Deep`
+- `Awakenings` should have an arrow with `Time.in.Wake` but it's not clear which way it should run
+
+~~~{.R}
+library(bnlearn)
+## after a bunch of iteration, blacklisting arrows which violate the prior knowledge
+bl <- data.frame(from=c("Morning.Feel", "ZQ", "ZQ", "ZQ", "ZQ", "ZQ", "ZQ", "Time.in.REM", "Time.in.Light", "Time.in.Deep", "Morning.Feel", "Awakenings", "Time.in.Light", "Morning.Feel", "Morning.Feel","Total.Z", "Time.in.Wake", "Time.to.Z", "Total.Z", "Total.Z", "Total.Z"),
+                 to=c("Start.of.Night", "Total.Z", "Time.in.Wake", "Time.in.REM", "Time.in.Deep", "Morning.Feel","Start.of.Night", "Start.of.Night","Start.of.Night","Start.of.Night", "Time.to.Z", "Time.to.Z", "Time.to.Z", "Total.Z", "Time.in.Wake","Time.to.Z","Time.to.Z", "Start.of.Night", "Time.in.Deep", "Time.in.REM", "Time.in.Light"))
+
+zeo.hc <- hc(zeoClean, blacklist=bl)
+zeo.iamb         <- iamb(zeoClean, blacklist=bl)
+## problem: undirected arc: Time.in.Deep/Time.in.REM; since hc inferred [Time.in.Deep|Time.in.REM], I'll copy that for iamb:
+zeo.iamb <- set.arc(zeo.iamb, from = "Time.in.REM", to = "Time.in.Deep")
+zeo.gs <- gs(zeoClean, blacklist=bl)
+## same undirected arc:
+zeo.gs <- set.arc(zeo.gs, from = "Time.in.REM", to = "Time.in.Deep")
+
+## Bigger is better:
+score(zeo.iamb, data=zeoClean)
+# [1] -44776.79185
+score(zeo.gs, data=zeoClean)
+# [1] -44776.79185
+score(zeo.hc, data=zeoClean)
+# [1] -44557.6952
+## hc scores best, so let's look at it:
+zeo.hc
+#   Bayesian network learned via Score-based methods
+#
+#   model:
+#    [Start.of.Night][Time.to.Z|Start.of.Night][Time.in.Light|Time.to.Z:Start.of.Night]
+#    [Time.in.REM|Time.in.Light:Start.of.Night][Time.in.Deep|Time.in.REM:Time.in.Light:Start.of.Night]
+#    [Total.Z|Time.in.REM:Time.in.Light:Time.in.Deep][Time.in.Wake|Total.Z:Time.to.Z]
+#    [Awakenings|Time.to.Z:Time.in.Wake:Time.in.REM:Time.in.Light:Start.of.Night]
+#    [Morning.Feel|Total.Z:Time.to.Z:Time.in.Wake:Time.in.Light:Start.of.Night]
+#    [ZQ|Total.Z:Time.in.Wake:Time.in.REM:Time.in.Deep:Awakenings]
+#   nodes:                                 10
+#   arcs:                                  28
+#     undirected arcs:                     0
+#     directed arcs:                       28
+#   average markov blanket size:           7.40
+#   average neighbourhood size:            5.60
+#   average branching factor:              2.80
+#
+#   learning algorithm:                    Hill-Climbing
+#   score:                                 BIC (Gauss.)
+#   penalization coefficient:              3.614556939
+#   tests used in the learning procedure:  281
+#   optimized:                             TRUE
+
+plot(zeo.hc)
+## https://i.imgur.com/nD3LXND.png
+
+fit <- bn.fit(zeo.hc, zeoClean); fit
+#
+#   Bayesian network parameters
+#
+#   Parameters of node ZQ (Gaussian distribution)
+#
+# Conditional density: ZQ | Total.Z + Time.in.Wake + Time.in.REM + Time.in.Deep + Awakenings
+# Coefficients:
+#    (Intercept)         Total.Z    Time.in.Wake     Time.in.REM    Time.in.Deep      Awakenings
+# -0.12468522173   0.14197043518  -0.07103211437   0.07053271816   0.21121000076  -0.56476256303
+# Standard deviation of the residuals: 0.3000223604
+#
+#   Parameters of node Total.Z (Gaussian distribution)
+#
+# Conditional density: Total.Z | Time.in.Wake + Start.of.Night
+# Coefficients:
+#    (Intercept)    Time.in.Wake  Start.of.Night
+# 907.6406157850   -0.4479377278   -0.2680771514
+# Standard deviation of the residuals: 68.90853885
+#
+#   Parameters of node Time.to.Z (Gaussian distribution)
+#
+# Conditional density: Time.to.Z | Start.of.Night
+# Coefficients:
+#    (Intercept)  Start.of.Night
+# -1.02898431407   0.01568450832
+# Standard deviation of the residuals: 13.51606719
+#
+#   Parameters of node Time.in.Wake (Gaussian distribution)
+#
+# Conditional density: Time.in.Wake | Time.to.Z
+# Coefficients:
+#   (Intercept)      Time.to.Z
+# 14.7433880499   0.3289378711
+# Standard deviation of the residuals: 19.0906685
+#
+#   Parameters of node Time.in.REM (Gaussian distribution)
+#
+# Conditional density: Time.in.REM | Total.Z + Start.of.Night
+# Coefficients:
+#      (Intercept)           Total.Z    Start.of.Night
+# -120.62442964234     0.37864195651     0.06275760841
+# Standard deviation of the residuals: 19.32560757
+#
+#   Parameters of node Time.in.Light (Gaussian distribution)
+#
+# Conditional density: Time.in.Light | Total.Z + Time.in.REM + Time.in.Deep
+# Coefficients:
+#   (Intercept)        Total.Z    Time.in.REM   Time.in.Deep
+#  0.6424267863   0.9997862624  -1.0000587988  -1.0001805537
+# Standard deviation of the residuals: 0.5002896274
+#
+#   Parameters of node Time.in.Deep (Gaussian distribution)
+#
+# Conditional density: Time.in.Deep | Total.Z + Time.in.REM
+# Coefficients:
+#   (Intercept)        Total.Z    Time.in.REM
+# 15.4961459056   0.1283622577  -0.1187382535
+# Standard deviation of the residuals: 11.90756843
+#
+#   Parameters of node Awakenings (Gaussian distribution)
+#
+# Conditional density: Awakenings | Time.to.Z + Time.in.Wake + Time.in.REM + Time.in.Light + Start.of.Night
+# Coefficients:
+#     (Intercept)        Time.to.Z     Time.in.Wake      Time.in.REM    Time.in.Light
+# -18.41014329148    0.02605164827    0.05736596152    0.02291139969    0.01060661963
+#  Start.of.Night
+#   0.01129521977
+# Standard deviation of the residuals: 2.427868657
+#
+#   Parameters of node Start.of.Night (Gaussian distribution)
+#
+# Conditional density: Start.of.Night
+# Coefficients:
+# (Intercept)
+# 1413.382886
+# Standard deviation of the residuals: 64.43144125
+#
+#   Parameters of node Morning.Feel (Gaussian distribution)
+#
+# Conditional density: Morning.Feel | Total.Z + Time.to.Z + Time.in.Wake + Time.in.Light + Start.of.Night
+# Coefficients:
+#     (Intercept)          Total.Z        Time.to.Z     Time.in.Wake    Time.in.Light
+# -0.924662971061   0.004808652252  -0.010127269154  -0.008636841492  -0.002766602019
+#  Start.of.Night
+#  0.001672816480
+# Standard deviation of the residuals: 0.7104115719
+
+## some issues with big residuals at the extremes in the variables Time.in.Light, Time.in.Wake, and Time.to.Z;
+## not sure how to fix those
+bn.fit.qqplot(fit)
+# https://i.imgur.com/fmP1ca0.png
+
+library(lavaan)
+Zeo.model1 <- '
+    Time.to.Z ~ Start.of.Night
+    Time.in.Wake ~ Total.Z + Time.to.Z
+    Awakenings ~ Time.to.Z + Time.in.Wake + Time.in.REM + Time.in.Light + Start.of.Night
+    Time.in.Light ~ Time.to.Z + Start.of.Night
+    Time.in.REM ~ Time.in.Light + Start.of.Night
+    Time.in.Deep ~ Time.in.REM + Time.in.Light + Start.of.Night
+    Total.Z ~ Time.in.REM + Time.in.Light + Time.in.Deep
+    ZQ ~ Total.Z + Time.in.Wake + Time.in.REM + Time.in.Deep + Awakenings
+    Morning.Feel ~ Total.Z + Time.to.Z + Time.in.Wake + Time.in.Light + Start.of.Night
+                   '
+Zeo.fit1 <- sem(model = Zeo.model1,  data = zeoClean)
+summary(Zeo.fit1)
+# lavaan (0.5-16) converged normally after 183 iterations
+#
+#   Number of observations                          1379
+#
+#   Estimator                                         ML
+#   Minimum Function Test Statistic               22.737
+#   Degrees of freedom                                16
+#   P-value (Chi-square)                           0.121
+#
+# Parameter estimates:
+#
+#   Information                                 Expected
+#   Standard Errors                             Standard
+#
+#                    Estimate  Std.err  Z-value  P(>|z|)
+# Regressions:
+#   Time.to.Z ~
+#     Start.of.Nght     0.016    0.006    2.778    0.005
+#   Time.in.Wake ~
+#     Total.Z          -0.026    0.007   -3.592    0.000
+#     Time.to.Z         0.314    0.038    8.277    0.000
+#   Awakenings ~
+#     Time.to.Z         0.026    0.005    5.233    0.000
+#     Time.in.Wake      0.057    0.003   16.700    0.000
+#     Time.in.REM       0.023    0.002   10.107    0.000
+#     Time.in.Light     0.011    0.002    6.088    0.000
+#     Start.of.Nght     0.011    0.001   10.635    0.000
+#   Time.in.Light ~
+#     Time.to.Z        -0.348    0.085   -4.121    0.000
+#     Start.of.Nght    -0.195    0.018  -10.988    0.000
+#   Time.in.REM ~
+#     Time.in.Light     0.358    0.018   19.695    0.000
+#     Start.of.Nght     0.034    0.013    2.725    0.006
+#   Time.in.Deep ~
+#     Time.in.REM       0.081    0.012    6.657    0.000
+#     Time.in.Light     0.034    0.009    3.713    0.000
+#     Start.of.Nght    -0.017    0.006   -3.014    0.003
+#   Total.Z ~
+#     Time.in.REM       1.000    0.000 2115.859    0.000
+#     Time.in.Light     1.000    0.000 2902.045    0.000
+#     Time.in.Deep      1.000    0.001  967.322    0.000
+#   ZQ ~
+#     Total.Z           0.142    0.000  683.980    0.000
+#     Time.in.Wake     -0.071    0.000 -155.121    0.000
+#     Time.in.REM       0.071    0.000  167.090    0.000
+#     Time.in.Deep      0.211    0.001  311.454    0.000
+#     Awakenings       -0.565    0.003 -178.407    0.000
+#   Morning.Feel ~
+#     Total.Z           0.005    0.001    8.488    0.000
+#     Time.to.Z        -0.010    0.001   -6.948    0.000
+#     Time.in.Wake     -0.009    0.001   -8.592    0.000
+#     Time.in.Light    -0.003    0.001   -2.996    0.003
+#     Start.of.Nght     0.002    0.000    5.414    0.000
+~~~
+
+Again no major surprises, but one thing I notice is that `ZQ` does not seem to connect to `Time.in.Light`, though `Time.in.Light` does connect to `Morning.Feel`; I've long suspected that `ZQ` is a flawed summary and thought it was insufficiently taking into account wakes or something else, so it looks like it's `Time.in.Light` specifically which is missing.
+`Start.of.night` also is more highly connected than I had expected.
+
+Comparing graphs from the 3 algorithms, they don't seem to differ as badly as the weight ones did. Is this thanks to the much greater data or the constraints?

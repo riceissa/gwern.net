@@ -9,6 +9,12 @@ belief: log
 Following my writing can be a little difficult: while I provide [an RSS feed of the edit history](http://www.gwern.net/atom.xml), it is too fine-grained to know what is an interesting update and what is housekeeping. So periodically I write up interesting changes in a human-readable format:
 
 # 2015
+## March
+
+- [LLLT self-experiment finished](http://www.gwern.net/Nootropics#experiment-1): no effect (so earlier correlative results were grossly overestimated; I'm starting to expect this from anything non-randomized...)
+- an [ICE subpoena on my Reddit account](https://www.reddit.com/r/DarkNetMarkets/comments/30tudk/psa_5_reddit_accounts_subpoenaed_by_ice/) caused me a good deal of trouble
+- playing with inferring Bayesian networks for my [Zeo](http://www.gwern.net/Notes#zeo-sleep-data) & [body weight](http://www.gwern.net/Notes#daily-weight-data-graph) data (powerful generalization of SEMs, but requires a lot of data before networks stabilize)
+
 ## February
 
 - [Black-market arrests](/Black-market%20arrests "A listing of all known arrests and prosecutions connected to the Tor-Bitcoin drug black-markets"): split out of Silk Road page & began bringing up-to-date with all known incidents across all markets

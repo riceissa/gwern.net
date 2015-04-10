@@ -233,6 +233,9 @@ Weitzman              M                        buyer                            
 Julian Edgren         M                        buyer                                 USA         New Jersey     MDMA, LSD, marijuana etc         TRUE     2015-01-06  2015-01-07
 Austin Frembling      M                        buyer     Agora                       USA         California     MDMA                             TRUE     2015-01-15  2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
                       M                        buyer                 LucyandMolly    Scandinavia                LSD                              TRUE     2015-01-29  2015-01-31    AndyWither case.
+Mohammed Ammer Ali    M                        buyer     Evolution   Dark_Mart       UK                         ricin                            TRUE     2015-02-11  2015-04-08    These two cases have not been confirmed as to the market & seller, but based on the extreme similarity of those two to Fnufnu, I have assigned them to the FBI sting operation on Evolution.
+                      M                        buyer     Evolution   Dark_Mart       UK                         abrin                            TRUE     2015-02-16  2015-04-08
+                      F                        buyer     Evolution   Dark_Mart       UK                         abrin                            TRUE     2015-02-16  2015-04-08
 Andrew Thrall         M                        buyer                                 USA         Indiana        Xanax                            TRUE     2015-03-03  2015-03-05
                       M  Shiny Flakes          seller    Evolution                   Germany                    methamphetamine, cocaine, LSD    TRUE     2015-02-26  2014-03-11
                                                buyer     Evolution   Shiny Flakes    Germany                                                     FALSE    2015-03-10  2015-03-23    Media coverage of the Shiny Flakes case indicates at least 5 buyers from his Evolution profile or clearnet site were arrested in Germany; further details are not available, so I include them in case they were Evolution buyers.
@@ -305,6 +308,14 @@ On 2015-02-26, the 20-yo German man, the vendor "Shiny Flakes" on Evolution & hi
 This was the culmination of [a long German police investigation into him](http://motherboard.vice.com/read/the-rise-and-fall-of-shiny-flakes-germanys-online-drug-market "The Rise and Fall of Shiny Flakes, Germany's Online Drug Market"), which was sparked by an undelivered package which was opened for insufficient postage, which lead to profiling of his packages, tracing them back through the postal system, surveillance of package stations and him mailing them, and finally undercover buys & seizures of additional packages.
 Shiny Flakes had not purged his customers' data, and in conjunction with the profiling & intercepting of sent packages, this led to a reported total of "38 locations were searched and five other individuals were arrested" on 2015-03-10.
 
+### UK
+
+The Liverpool man [Mohammed Ammer Ali was arrested 11 February 2015](http://www.dailymail.co.uk/news/article-2957211/British-father-two-bought-ricin-kill-hundreds-delivered-toy-car-caught-online-sting-FBI.html) after he ordered ricin from an undercover FBI account
+The market & vendor & source of the information is unspecified, but given that the dates match up, the FBI's similar actions with a UK woman in the earlier BMR poison cases, the apparent extensive PMing between the buyer & seller, the use of bitcoins & the "dark web", and the immediately following teen cases, it seems highly likely these three cases all were caught using the Dark_Mart undercover account on Evolution, similar to Fnufnu.
+(One newspaper article claims they were unrelated, but such a claim beggars belief.)
+
+Two Manchester teenagers [were arrested 16 February 2015](http://www.gmp.police.uk/content/SocialTwitterFeed/A391702C29DD7E8D80257E210039C813 "Teenager admits trying to buy deadly toxin") [for](http://www.independent.co.uk/news/uk/crime/teenager-in-court-charged-with-trying-to-acquire-lethal-toxin-abrin-10054864.html) attempting that month to buy abrin off an unspecified black-market for suicide, after the UK police were informed in January about their negotiations for it.
+
 ### USA
 
 "In or about mid-2014" the TCF/Evolution seller "Dark_Mart" was taken over by the FBI^[See Cheng Le complaint: "In or about mid-2014, an FBI online covert employee (the 'OCE') assumed  online Dark-Web identity, which had previously been used by a trafficker in illicit materials, including, among other things, biological toxins."].
@@ -313,6 +324,8 @@ The details are unknown, but Dark_Mart rejoined the Evolution forums after a lon
 Stephen & Cynthias Jones [were arrested 2 October 2014](http://www.accessnorthga.com/detail.php?n=280308 "Flowery Branch couple busted on drug charges") after a CD of a package of MDMA from what may be the Evolution Dutch seller "weedybusnis" (he has many complaints of non-arriving or slow packages, suggesting his stealth is subpar or he's been profiled).
 
 The New York carder Cheng Le (Evolution seller "FNU"/"fnufnu") [was arrested 23 December 2014](http://www.reuters.com/article/2015/01/20/us-usa-crime-ricin-idUSKBN0KT2G020150120 "New York man charged with trying to buy ricin 'death pills' online") after buying the poison ricin from the Evolution seller "Dark_Mart", who turned out to have been flipped "In or about mid-2014" by the FBI ([press release](http://www.justice.gov/opa/pr/new-york-man-indicted-attempting-acquire-deadly-toxin-ricin); [complaint](http://www.justice.gov/sites/default/files/opa/press-releases/attachments/2015/01/21/cheng_le_complaint_comp.pdf); [Evolution pages](/docs/sr/2015-02-24-evolution-chenglericin.tar.xz)).
+(See also the two UK arrests in February 2015 for abrin.)
+
 
 <!-- http://www.oregonlive.com/portland/index.ssf/2015/03/three_od_on_dangerous_drug_smu.html "3 OD on dangerous drug in Portland jail; feds say inmate smuggled contraband inside her body" -->
 <!-- Investigators traced the source of the drugs that killed Henke to a house several hundred yards away from where he overdosed. -->
@@ -892,8 +905,11 @@ A few motifs do seem to emerge:
 
     1. if the address is from an account which is itself a seller (an argument for single-role accounts)
     2. the seller has been infiltrated but not yet busted, and there are orders 'in flight' which can be turned into quick & easy CDs
-    3. the products being sold are guns or poisons, in which case, as in the BMR busts, the FBI and other LE organizations are willing to investigate based on nothing but an address (despite guns & poisons being a rounding error on the few markets which allow them, LE seems to devote almost as much effort to them as to regular drug sellers)
-- Bitcoin works as a payment method: sellers using any other method (Paypal, bank deposits, Western Union) invariably come to grief
+    3. the products being sold are guns or poisons, in which case, retrospective arrests may be tried
+- Bitcoin works as a payment method: sellers using any other method (Paypal, bank deposits, Western Union) invariably come to grief, and attempted use of such methods may be a red flag for a LE-controlled account
+- guns and poisons seem to bring grief to everyone around them: despite being the minutest of categories (sometimes with zero sellers on the markets which permit them), busts of buyers & sellers are well-represented.
+
+    In particular, LE is willing to spend particular efforts following buyers across international borders, makes busts based on records of addresses (as exemplified by the BMR busts in which old customers were followed up on, in contrast to drug busts where thousands of addresses fall into LE hands without visible effect), and operate flipped seller accounts for months
 
 # External links
 

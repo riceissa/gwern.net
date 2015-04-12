@@ -242,6 +242,7 @@ Austin Frembling      M                        buyer     Agora                  
 Mohammed Ammer Ali    M                        buyer     Evolution   Dark_Mart       UK                         ricin                            TRUE     2015-02-11  2015-04-08    These two cases have not been confirmed as to the market & seller, but based on the extreme similarity of those two to Fnufnu, I have assigned them to the FBI sting operation on Evolution.
                       M                        buyer     Evolution   Dark_Mart       UK                         abrin                            TRUE     2015-02-16  2015-04-08
                       F                        buyer     Evolution   Dark_Mart       UK                         abrin                            TRUE     2015-02-16  2015-04-08
+Tomáš Jiřikovský      M                        operator  Sheep                       Czech                                                       TRUE     2015-02-22  2015-03-27     Due to translation difficulties, it's unclear when the criminal complaint for money-laundering was actually filed; dated to first official materials referring to his case.
 Andrew Thrall         M                        buyer                                 USA         Indiana        Xanax                            TRUE     2015-03-03  2015-03-05
                       M  Shiny Flakes          seller    Evolution                   Germany                    methamphetamine, cocaine, LSD    TRUE     2015-02-26  2014-03-11
                                                buyer     Evolution   Shiny Flakes    Germany                                                     FALSE    2015-03-10  2015-03-23    Media coverage of the Shiny Flakes case indicates at least 5 buyers from his Evolution profile or clearnet site were arrested in Germany; further details are not available, so I include them in case they were Evolution buyers.
@@ -343,6 +344,11 @@ The New York carder Cheng Le (Evolution seller "FNU"/"fnufnu") [was arrested 23 
 <!-- Ryan Jon Jensen, Portland Oregon (charges/plea: looks like 2 deaths and 3 injuries for Jensen) -->
 <!-- Brandon Corde Hubbard -->
 <!-- Channing Lacey -->
+
+## Sheep Marketplace (SMP)
+
+In March 2015, news broke that the Czech man Tomáš Jiřikovský was the target of [a criminal complaint for money laundering](https://www.reddit.com/r/DarkNetMarkets/comments/30k8d8/a_little_official_info_about_sheep_case_from/ "A little official info about Sheep case from Czech Ministry of Finance") related to [large sales of bitcoins for Czech crowns then used to purchase a house](https://www.reddit.com/r/DarkNetMarkets/comments/30h8r9/sheepmarketplace_owner_busted_by_czech_police/cpsgt2o) (the house was seized).
+Jiřikovský had been [identified in November 2013 by an anonymous American](/docs/sr/2013-11-03-sheepmarketplace-doxxing.maff), based on circumstantial evidence, as the operator of Sheep Marketplace, not long before Sheep shut down in an apparent exit scam; it's unknown whether that doxing has any connection to the money-laundering accusation or if that was triggered purely by the money transfers, or when exactly the complaint was filed & house seized (the news broke publicly in March 2015 but the finance ministry 2014 report mentioning the case is dated 22 February 2015 and the investigation may've begun January 2014).
 
 ## Silk Road 1 (SR1)
 ### Australia
@@ -855,6 +861,7 @@ The [Drugs Global Incident Map](http://drugs.globalincidentmap.com/) features ma
     - ["Police: 4 pounds of pot mailed to Oxford man"](http://www.whio.com/news/news/crime-law/police-4-pound-of-pot-mailed-to-oxford/nkgqT/)
     - ["Dunedin drug smugglers' post box scam"](http://www.odt.co.nz/news/dunedin/336581/dunedin-drug-smugglers-post-box-scam)
     - ["Teen jailed for importing meth"](http://www.odt.co.nz/news/national/337111/teen-jailed-importing-meth)
+    - ["Wizard drug seizure: Adelaide man arrested after police intercept drug package at Morphett Vale"](http://www.abc.net.au/news/2014-09-30/police-intercept-wizard-drug-haul-in-sa/5779508)
 
 Most are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales eg [the TedDanzig incident](https://www.reddit.com/r/SilkRoad/comments/1xq97t/teddanzig_arrested/) or the 4lb PureFireMeds FUD), but of course, some will turn out to be real.
 
@@ -914,10 +921,10 @@ No single theme emerges reading through the many arrests.
 
 Some people are busted through sheer bad luck in being randomly pulled over or their packages inspected; some are undone by other peoples' mistakes, and some have no one but themselves to blame for talking to a policeman and blurting out all their secrets; some are undone by their trust in others, and some are undone by lying to federal agents; some are undone by signing for packages, while others are undone by a stray fingerprint; some followed the OPSEC rules and some engaged in mindboggling follies like using their real return address or accepting payment to their own bank account or running their own clearnet site; some clammed up, denied everything, and saved themselves, while others kept records of everything (perhaps in the misguided belief it would earn them clemency in the worst) and only condemned themselves; some were busted at home, others in the totalitarian zones of international borders; some were busted through high-tech browser-based deanonymization but most through low-tech methods like a customer or friend snitching; some sellers' packages are spotted during Customs inspections, and some are noticed only when delivery fails & the bogus return addresses explode.
 
-A few motifs do seem to emerge:
+A few motifs do emerge:
 
 - many buyers go down to CDs and the subsequent searches turning up additional illegal goods, suggesting 2 major mitigations: never signing, and cleaning house to the extent possible when expecting a new delivery
-- international deliveries are highly risky for both the seller and the buyer
+- international deliveries are highly risky for both the seller and the buyer, and Australia/NZ more so
 - sellers should be assumed to keep records & addresses; many have turned out to do so
 - but simple addresses seem minimally useful to LE as there are few known busts despite the many thousands of captured transaction records with addresses - with a few exceptions:
 

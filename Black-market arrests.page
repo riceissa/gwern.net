@@ -70,7 +70,7 @@ Similarly, if there were >60 buyer arrests (I double because there seem to be mo
 - Known date: when it became public knowledge or I added to my article (may be useful for estimating fraction remaining unknown)
 - Sex: when known
 
-Name                  Sex Pseudonym            Role      Market      Seller          Country     State          Product                           INTL  Arrest    Known    Notes
+Name                  Sex Pseudonym            Role      Market      Seller          Country     State          Product                           INTL  Arrest    Known         Notes
 --------------------- --- ---------------      -------   ----------- --------------- ----------- -------------- ------------------------------    ----- --------- ----------    -----
 Stacy Litz            F                        buyer     Silk Road 1                 USA         Pennsylvania   MDMA, LSD                         FALSE 2011-09-01 2013-01-13
 Jacob Theodore George M   digitalink           seller    Silk Road 1                 USA         Maryland       heroin, methylone                 FALSE 2012-01-20 2013-10-29    Details remain mysterious; arrest in Jan 2012 but when exactly? Best guess date.
@@ -283,7 +283,7 @@ Cheng Le              M   fnufnu               seller    Evolution   Dark\_Mart 
 Ryan Jensen           M                        buyer     Evolution   Hubbard         USA         North Dakota   fentanyl, Xanax, heroin, MDMA     FALSE 2015-01-03 2015-03-14
 Kain Daniel Schwandt  M                        buyer     Evolution   Hubbard         USA         North Dakota   fentanyl                          FALSE 2015-01-03 2015-03-14
 David Todd Noye Jr.   M                        buyer     Evolution   Hubbard         USA         North Dakota   fentanyl                          FALSE 2015-01-03 2015-03-14
-Brian Farrell         M   DoctorClu            staff     Silk Road 2                 USA         Washington     Xanax                             FALSE 2015-01-20 2015-01-16    It was known Farrell was under investigation before the search warrant was executed & he was arrested.
+Brian Farrell         M   DoctorClu            staff     Silk Road 2                 USA         Washington     Xanax                             FALSE 2015-01-02 2015-01-16    Farrell spilled everything during the local police's search in early January but was only formally arrested in late January, apparently due either to cooperating or being switched to a federal case.
 Weitzman              M                        buyer                                 Israel                     cocaine                           TRUE  2015-01-04 2015-02-23
 Julian Edgren         M                        buyer                                 USA         New Jersey     MDMA, LSD, marijuana              TRUE  2015-01-06 2015-01-07
 Austin Frembling      M                        buyer     Agora                       USA         California     MDMA                              TRUE  2015-01-15 2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
@@ -294,7 +294,7 @@ Mohammed Ammer Ali    M                        buyer     Evolution   Dark\_Mart 
                       F                        buyer     Evolution   Dark\_Mart      UK                         abrin                             TRUE  2015-02-16 2015-04-08
 Tomáš Jiřikovský      M                        operator  Sheep                       Czech                                                        TRUE  2015-02-22 2015-03-27     Due to translation difficulties, it's unclear when the criminal complaint for money-laundering was actually filed; dated to first official materials referring to his case.
 Andrew Thrall         M                        buyer                                 USA         Indiana        Xanax                             TRUE  2015-03-03 2015-03-05
-                      M   Shiny Flakes         seller    Evolution                   Germany                    methamphetamine, cocaine, LSD     TRUE  2015-02-26 2014-03-11
+                      M   Shiny Flakes         seller    Evolution                   Germany                    methamphetamine, cocaine, LSD     TRUE  2015-02-26 2015-03-11
 Channing Lacey        F                        seller    Evolution   Hubbard         USA         Oregon         fentanyl                          FALSE 2015-03-05 2015-03-14
                                                buyer     Evolution   Shiny Flakes    Germany                                                      FALSE 2015-03-10 2015-03-23    Media coverage of the Shiny Flakes case indicates at least 5 buyers from his Evolution profile or clearnet site were arrested in Germany; further details are not available, so I include them in case they were Evolution buyers.
                                                buyer     Evolution   Shiny Flakes    Germany                                                      FALSE 2015-03-10 2015-03-23
@@ -737,7 +737,7 @@ The DoctorClu case reveals that the vendor portal for SR2 had been used to de-an
 They were probably the SR1 & SR2 seller "CaliforniaCanibas" ([profile](http://antilop.cc/sr/vendors/7058d46a86.htm)).
 
 The Washington man Brian Farrell & SR2 staffer "DoctorClu" was [arrested 20 January 2015](http://koin.com/ap/alleged-manager-of-silk-road-2-0-website-arrested/); his IP had been uncovered in July 2014 accessing the SR2 seller portal[^DoctorClu-IP], like CaliforniaCanibas.
-The [local police investigated](http://www.bellevuereporter.com/news/288854101.html) by post-office checks and then interviewing him & his roommate, who spoke freely about Farrell's drug use and online connections, allowing [a search warrant](/docs/sr/2015-01-07-kingcountysuperiorcourt-brianfarrell-searchwarrantaffidavit.pdf) to uncover Farrell's prescription drugs, at which point he confessed everything & to helping run SR2 as the employee DoctorClu and was then arrested (the charges being upgraded from local pill charges to [federal conspiracy charges](http://www.dailymail.co.uk/wires/reuters/article-2918824/U-S-charges-man-says-linked-Silk-Road-successor-site-drug-scheme.html); [complaint](/docs/sr/brianfarrell-federalcomplaint.pdf))
+The [local police investigated](http://www.bellevuereporter.com/news/288854101.html "Bellevue man under investigation for online drug dealing") by post-office checks and then interviewing him & his roommate on 22 December 2014; the roommate spoke freely about Farrell's drug use and online connections and the next day even provided some of Farrell's drugs to the police, allowing [a search warrant](/docs/sr/2015-01-07-kingcountysuperiorcourt-brianfarrell-searchwarrantaffidavit.pdf) to search the house and uncover Farrell's prescription drugs on 2 January 2015, at which point he confessed everything & to helping run SR2 as the employee DoctorClu and was then arrested (the charges being upgraded from local pill charges to [federal conspiracy charges](http://www.dailymail.co.uk/wires/reuters/article-2918824/U-S-charges-man-says-linked-Silk-Road-successor-site-drug-scheme.html); [complaint](/docs/sr/brianfarrell-federalcomplaint.pdf))
 
 [^DoctorClu-IP]: From the search warrant:
 
@@ -998,6 +998,12 @@ arrests <- cbind(arrests, mtabulate(strsplit(gsub(" ", "", as.character(arrests$
 
 # for those curious who the 12% women are:
 arrests[arrests$Sex=="F" & !is.na(arrests$Sex),]$Name
+
+# how many past cases can we expect to emerge to public notice in the future? not that many; when a case ever becomes public knowledge, it usually does so quickly,
+# as I see a very long but very thin tail of cases popping up more than half a year after they happened.
+# This is helpful to know - we can't know how many forever-unknown cases there are, but at least I can be fairly confident that I've captured many of the
+# public cases and I won't be, say, suddenly overwhelmed next year by a ton of SR1 cases from 2012 popping up and undermining conclusions
+hist(as.integer(na.omit(with(arrests, Known - Arrest))))
 ~~~
 
 # External links

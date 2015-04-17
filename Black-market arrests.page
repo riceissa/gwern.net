@@ -131,7 +131,7 @@ Blanks                M   SourDieselMan        seller    Silk Road 1            
                                                buyer     Silk Road 1                 Australia                                                     TRUE  2013-06-01 2013-07-05
 Sheldon Kennedy       M   edgarnumbers         seller    Silk Road 1 digitalink      USA         Nebraska       methylone, gun                     TRUE  2013-06-28 2014-02-20
                       M                        buyer     BMR         Grass4Cash      Australia                  gun                                TRUE  2013-06-29 2015-03-05    The Bunger complaint does not specify when the Australian buyer was arrested, but since the package was intercepted 2013-06-28, it has to be 2013-06-29 or later.
-                      F   cirrus               staff     Silk Road 1                 USA                        Bitcoins                           FALSE 2013-07-20 2014-12-19
+                      F   cirrus               staff     Silk Road 1                 USA                        Bitcoins                           FALSE 2013-07-20 2014-12-19    It's unknown how cirrus was flipped or whether her legal was even related to SR1/bitcoins in the first place.
 Michael Kitto         M                        buyer     Silk Road 1                 NZ                         MDMA, cocaine                      TRUE  2013-07-03 2013-09-09
 Andrew Furness        M                        buyer     Silk Road 1                 NZ                         MDMA, cocaine                      TRUE  2013-07-03 2013-09-09
 Gareth Edlin          M                        buyer     Silk Road 1                 NZ                         MDMA, cocaine                      TRUE  2013-07-03 2013-09-09
@@ -144,6 +144,8 @@ Soren J. Paape        M                        buyer     Silk Road 1            
 Matthew Gillum        M   SourDieselMan        seller    Silk Road 1                 USA         California     marijuana                          FALSE 2013-07-23 2013-10-27    At least 3 other members of group, but none seem to have been arrested.
 Jolene Chan           F   SourDieselMan        seller    Silk Road 1                 USA         California     marijuana                          FALSE 2013-07-23 2013-10-27
 Ryan M Petersen       M                        buyer     Silk Road 1                 USA         Wisconsin      MDMA, marijuana                    TRUE  2013-07-24 2015-03-02
+Steven Sadler         M   NOD                  seller    Silk Road 1                 USA         Washington     heroin, cocaine, methamphetamine   FALSE 2013-07-31 2013-10-02
+Jenna White           F   NOD                  seller    Silk Road 1                 USA         Washington     heroin, cocaine, methamphetamine   FALSE 2013-07-31 2013-10-02
                       M                        buyer     Silk Road 1                 Australia                                                           2013-08-01 2015-03-01    This is based on the short 10 August 2013 media mention of a man fined for "attempting to possess drugs from the site".
 Luke Hanley           M                        buyer     Silk Road 1                 Australia                  25c, 25i, amphetamine              TRUE  2013-08-01 2014-04-01     I guess this to be August given the phrasing of "just months" before October 2013. Note despite the similar  date, this cannot be the other Australian buyer as Hanley was only fined & given suspended sentence in 2014.
 Matthew Collins       M                        buyer     Silk Road 1                 NZ                         MDMA, LSD, marijuana               TRUE  2013-08-01 2015-04-11
@@ -169,6 +171,7 @@ Peter Ward            M   PlutoPete            seller    Silk Road 1            
                       M   SweExpress           seller    Silk Road 1                 Sweden                     marijuana                          TRUE  2013-10-08 2013-10-11
                       M   XTCExpress           seller    Silk Road 1                 Netherlands                MDMA                               TRUE  2013-10-09 2013-10-15
                       M   XTCExpress           seller    Silk Road 1                 Netherlands                MDMA                               TRUE  2013-10-09 2013-10-15
+                                               buyer     Silk Road 1    NOD          USA                        heroin                             FALSE 2013-10-10 2013-10-10
 Peter James Grossett  M                        buyer     Silk Road 1                 NZ                         methamphetamine, LSD, marijuana    TRUE  2013-11-01 2014-07-05    Apparently busted sometime in November 2013 but not more specifically or what the non-SR1 market he used was.
                       M   Blackjack021         seller    Silk Road 1                 Austria                    marijuana, opium, amphetamine      TRUE  2013-11-04 2015-03-01    The Austria article says it was a father-son pair who were arrested as the seller.
                       M   Blackjack021         seller    Silk Road 1                 Austria                    marijuana, opium, amphetamine      TRUE  2013-11-04 2015-03-01
@@ -179,13 +182,18 @@ Peter James Grossett  M                        buyer     Silk Road 1            
                                                buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine      FALSE 2013-11-04 2015-03-01
                                                buyer     Silk Road 1 Blackjack021    Austria                    marijuana, opium, amphetamine      FALSE 2013-11-04 2015-03-01
 Matthew Crisafi       M   Gun Wise             seller    BMR                         USA         New Hampshire  gun                                TRUE  2013-11-06 2013-11-07
+Brandon Howell        M                        seller                                USA         North Carolina MDMA, mescaline, marijuana         TRUE  2013-11-25 2013-11-30
+Katherine Westbrook   F                        seller                                USA         North Carolina MDMA, mescaline, marijuana         TRUE  2013-11-25 2013-11-30
 Olivia Bolles         F   MDpro                seller    Silk Road 1                 USA         Delaware       Oxycontin, Valium                  FALSE 2013-11-21 2013-11-22
 Alexandra Gold        F   MDpro                seller    Silk Road 1                 USA         Delaware       Oxycontin, Valium                  FALSE 2013-11-21 2013-11-22
+                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE 2013-12-11  2013-12-17     Wellington triplet.
+                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE 2013-12-11  2013-12-17
+                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE 2013-12-11  2013-12-17
 Jason Hagen           M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
 Richard Webster       M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
 Robbie Shelton        M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
 Tina Heagle           F   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
-Lesa Jump             M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19 <!-- Lesa is male: http://imgick.oregonlive.com/home/olive-media/width620/img/aloha_news/photo/13956019-mmmain.jpg -->
+Lesa Jump             M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19       <!-- Lesa is male: http://imgick.oregonlive.com/home/olive-media/width620/img/aloha_news/photo/13956019-mmmain.jpg -->
 Chelsea Reder         F   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
 Donald Bechen         M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
 Andrew Michael Jones  M   Inigo                staff     Silk Road 1                 USA         Virginia                                          FALSE 2013-12-19 2013-12-19
@@ -196,6 +204,8 @@ Mado ?                F   WalkaBoot            seller    Silk Road 1            
 Amit Sand             M                        buyer     BMR                         Israel                     gun                                TRUE  2014-01-08 2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
                                                buyer                                 Israel                     marijuana                          TRUE  2014-01-12 2014-01-14
 Brian Korff           M   Snowman840           seller    BMR                         USA         Florida        ricin                              FALSE 2014-01-18 2014-01-22
+Robert Faiella        M   BTCKing              seller    Silk Road 1                 USA         Florida        bitcoin                            FALSE 2014-01-26 2014-01-27
+Charlie Shrem         M                        seller    Silk Road 1                 USA         New York       bitcoin                            FALSE 2014-01-26 2014-01-27
 Kuntal Patel          F                        buyer     BMR         Korff           UK                         abrin                              TRUE  2014-01-26 2014-09-26
 T.S.                  M                        buyer     Silk Road 2 pillbay         Indonesia   West Jakarta   MDMA, LSD                          TRUE  2014-01-31 2015-01-28
 L.A.                  F                        buyer     Silk Road 2 pillbay         Indonesia   West Jakarta   MDMA, LSD                          TRUE  2014-01-31 2015-01-28
@@ -321,7 +331,6 @@ Channing Lacey        F                        seller    Evolution   Hubbard    
                                                buyer     Evolution   Shiny Flakes    Germany                                                       FALSE 2015-03-10 2015-03-23
 Steven Locke          M                        seller    Evolution   Hubbard         USA         Washington     fentanyl                           FALSE 2015-03-10 2015-03-14
 Justin Moreira        M   jd497                buyer     Agora       weaponsguy      USA         Massachusetts  gun                                FALSE 2015-04-02 2015-04-03
-
 
 # Confirmed
 ## Agora
@@ -472,7 +481,7 @@ He has been identified on Reddit ([1](https://www.reddit.com/r/SilkRoad/comments
 A [Reddit user](http://www.reddit.com/user/xxcxcxc) [claims in June 2014](http://www.reddit.com/r/IAmA/comments/27m64o/i_am_one_of_the_first_people_to_be_charged_with/?sort=old) to have been importing MDMA into the UK from the Netherlands off SR1 for personal consumption & resale through friends for ~6 months; sometime before 2013<!-- 'worst 18 months', posted 06 2014 --> a package of 100 pills was detected by customs and he accepted delivery, leading to his house being searched; he was then convicted (in large part due to text messages on his phone & emails on his computer) and given a suspended sentence.
 
 After the SR bust in October 2013, the Devon UK seller of accessories like marijuana seeds/MBB+ packaging/[kratom](!Wikipedia) ("PlutoPete"), reported he had been [raided & questioned](/docs/sr/2013-10-03-plutopete.mht "Title: WARNING PLUTOPETE HAS BEEN RAIDED! MOVE YOUR DRUGS NOW; Post by: RR on October 03, 2013, 12:14 am") and likely charged with his personal drugs^["My solicitor is confidant [sic] I've broken no UK laws in selling my products, but they did find a small amount of class A and class B drugs that were for my own personal use so i will be charged with that at the very least."]; he was eventually charged in 2015 with ["9 charges inc conspiracy and supply class A and B"](https://twitter.com/plutopete/status/568016817534447616).
-3 more in Manchester were [arrested & charged](http://www.reddit.com/r/SilkRoad/comments/1nz4yl/four_men_arrested_in_uk_over_role_in_silk_road/); the description of a three-man seller mailing from Manchester seems to match at least two SR sellers, "JesusOfRave" and "TechnoHippy", the former of whom [quickly denied being arrested](http://silkroad5v7dywlc.onion/index.php?topic=1381.0;all), while the latter last appeared on the SR forums in mid-September 2013, he resurfaced on the SR2 forums [likewise denying any involvement](http://silkroad5v7dywlc.onion/index.php?topic=2889.0 "Technohippy is back! (and now verified)").
+3 more in Manchester were [arrested & charged](http://www.reddit.com/r/SilkRoad/comments/1nz4yl/four_men_arrested_in_uk_over_role_in_silk_road/); the description of a three-man seller mailing from Manchester seems to match at least two SR sellers, "JesusOfRave" and "TechnoHippy" (or possibly a "Mangled1"?), the former of whom [quickly denied being arrested](http://silkroad5v7dywlc.onion/index.php?topic=1381.0;all), while the latter last appeared on the SR forums in mid-September 2013, he resurfaced on the SR2 forums [likewise denying any involvement](http://silkroad5v7dywlc.onion/index.php?topic=2889.0 "Technohippy is back! (and now verified)").
 
 <!-- I believe at least two of the vendors were based in Manchester, and I know one of them sold bitcons for cash deposits to a bank account so if it is the vendor I am thinking of who got busted that's probably why. -->
 <!-- There was a small UK vendor called something like Mangled1 who got busted.
@@ -637,12 +646,12 @@ On 11 July 2013, [two Wisconsin men](http://archive.greenbaypressgazette.com/art
 Also on 24 July 2013, the Wisconsin [SR1](https://www.facebook.com/brookfieldelmgrovenow/posts/10152350274394314 "Ryan Petersen, 21, told police he ordered ecstasy online from Silk Road") buyer Ryan M Petersen [was searched](http://www.brookfieldnow.com/news/258970501.html "Brookfield man pleads not guilty of manufacturing drugs") [over an](http://fox6now.com/2014/03/24/brookfield-man-faces-multiple-charges-related-to-drugs-trafficking/ "Brookfield man faces multiple charges related to drugs, trafficking") intercepted package of MDMA from Belgium, after his friend he was using as a drop had been searched after an earlier 26 April 2013 CD (he then cooperated).
 He eventually reached a plea bargain ([court records #2014CF000288](/docs/sr/sr1-petersen-courtrecords.pdf))
 
-A [New York man was prosecuted in August 2013](http://poststar.com/news/local/police-queensbury-shop-owner-bought-drugs-on-silk-road-website/article_8f45d126-0c1f-11e3-a590-001a4bcf887a.html "Police: Queensbury shop owner bought drugs on Silk Road website") after selling Suboxone in person, having his mail monitored, and then his store (with drugs on the premises) raided; he [pled guilty](http://poststar.com/news/blotter/former-computer-shop-operator-pleads-guilty-to-drug-charges/article_b42b976e-8bf9-11e3-a353-001a4bcf887a.html "Former computer shop operator pleads guilty to drug charges")
+A [New York man Nicholas C Moffitt was prosecuted in August 2013](http://poststar.com/news/local/police-queensbury-shop-owner-bought-drugs-on-silk-road-website/article_8f45d126-0c1f-11e3-a590-001a4bcf887a.html "Police: Queensbury shop owner bought drugs on Silk Road website") after selling Suboxone in person, having his mail monitored, and then his store (with drugs on the premises) raided; he [pled guilty](http://poststar.com/news/blotter/former-computer-shop-operator-pleads-guilty-to-drug-charges/article_b42b976e-8bf9-11e3-a353-001a4bcf887a.html "Former computer shop operator pleads guilty to drug charges")
 
 Also in August 2013, the large Dutch MDMA seller SuperTrips was arrested ([forfeiture](http://www.justice.gov/usao/iln/pr/chicago/2014/pr0424_01a.pdf); [press release](http://www.justice.gov/usao/iln/pr/chicago/2014/pr0424_01.html); [plea agreement](/docs/sr/sr1-supertrips-pleaagreement.pdf)); profiling of his packages and fingerprints provided enough grounds that when he tried to visit the USA, he was detained at the airport, his unencrypted laptop examined and all his records found (including all buyer addresses), whereupon he confessed & began cooperating (helping bust his collaborator UnderGroundSyndicate in October 2013).
 (His account would be [used by a DHS undercover agent](http://arstechnica.com/tech-policy/2015/01/silk-road-trial-federal-agent-explains-how-he-trapped-ulbricht/) until SR1 was raided 2 months later.)
 
-Also in September 2013, a [Vermont student was charged with drug possession](https://web.archive.org/web/20140518105328/http://www.vermontcynic.com/news/student-busted-for-silk-road-purchase-1.2841435 "Student busted for Silk Road purchase"); he had purchased them off SR for [local resale](http://www.wptz.com/news/vermont-new-york/burlington/bitcoin-boom/23169748), and was reported to police through complaints of "smells of burnt marijuana".
+Also in September 2013, a [Vermont student Sid Hammer was charged with drug possession](https://web.archive.org/web/20140518105328/http://www.vermontcynic.com/news/student-busted-for-silk-road-purchase-1.2841435 "Student busted for Silk Road purchase"); he had purchased them off SR for [local resale](http://www.wptz.com/news/vermont-new-york/burlington/bitcoin-boom/23169748), and was reported to police through complaints of "smells of burnt marijuana".
 
 In October 2013, the founder of SR, Ross Ulbricht, was arrested in San Francisco and charged with a laundry list of crimes.
 Logs from his laptop implicated a college friend, Richard Bates ("baronsyntax") in helping program SR1 and buying some drugs; this was used as leverage to force Bates to testify against Ulbricht in his trial.
@@ -656,11 +665,7 @@ The NY seller of clonazepam/hydrocodone/heroin "deezletime" ([profile](http://an
 
 On 21 November 2013, the seller "MDpro" was [arrested in Delaware](http://www.orlandosentinel.com/news/local/breakingnews/os-silk-road-orlando-doctor-20131121,0,5782126.story "Doctor charged with selling drugs to local DEA agents via Silk Road") ([seller profile](/docs/sr/2013-06-07-mdpro-profile.html), [forum discussions](/docs/sr/2013-11-22-mdpro-srforums-discussion.maff), [forum posts](/docs/sr/2013-11-22-mdpro-forumposts.maff), [BMR posts under her real name](/docs/sr/2013-11-29-bmr-obollesforum.mht)) and charged in federal court ([PACER web data](/docs/sr/2013-11-11-mdpro-pacer.maff), [complaint/filings](/docs/sr/2013-11-22-mdpro-6-13-mj-01614-DAB.zip)), ultimately sentenced to [2.5 years](http://www.delawareonline.com/story/news/local/2015/01/13/doctor-sentenced-months-silk-road-drug-case/21716135/ "Doctor gets 30 months in Silk Road drug case"); based on the complaint, it seems her fatal mistake was either using tracking on her shipments through an account registered in her real name or putting valid return addresses on her shipments to a PO box registered to her real name, which allowed the undercover buyer to find her and compile the extensive case against her. Among her [many security mistakes](http://www.forbes.com/sites/kashmirhill/2013/11/26/how-a-delaware-doctor-was-linked-to-silk-road-drug-sales/) included [accepting shipments from other sellers](/docs/sr/2013-11-29-mdpro-moonbear.mht) to her apartment addressed to her partner (and [partner in crime](http://www.philly.com/philly/blogs/inq-phillydeals/Del-doc-32-busted-sold-drugs-for-Bitcoins.html "Ob/Gyns who planned to wed busted in Bitcoin drug probe")).
 
-On 25 November 2013, Brandon Howell [was arrested](http://www.wect.com/story/24088516/police-seized-hundreds-of-drugs-in-carolina-beach-bust) after "a month-long investigation" in North Carolina; he & his partner "imported MDMA from China through an online black market...The two then resold the imported drugs using the online currency Bitcoin, according to police." It is not clear which seller they were or what market they sold on, but the media coverage mentions Silk Road 1.
-
 On 17 December 2013, 4 members of the methamphetamine group seller ["hammertime"](/docs/sr/hammertime-profile.htm) [were arrested in Oregon](http://www.kgw.com/news/Wash-county-tactical-police-conducting-3-dawn-raids-236190011.html "Suspected drug trafficking ring busted in Aloha") as well as 3 others charged ([PACER](/docs/sr/2013-12-19-hammertime-pacer.maff), [indictment](/docs/sr/2013-12-10-hammertime-indictment.pdf); [more coverage](http://www.dailydot.com/crime/silk-road-meth-ring-4-arrests/ "4 arrested in Silk Road meth ring bust, alleged leader faces life in prison"); [trial](http://www.golocalpdx.com/news/portland-is-a-hub-for-online-drug-dealers); [plea agreement](/docs/sr/2015-02-17-hammertime-pleadeal.pdf)).
-
-On [19 December 2013](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR.php) ([indictment](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR/Jones,%20Andrew,%20et%20al%20\(Silk%20Road\)%20Indictment.pdf); [girlfriend's report](http://www.reddit.com/r/SilkRoad/comments/1tb2yl/sr_admin_and_mod_just_got_arrestedmy_boyfriend/)), the former SR administrator/employee "Inigo" was arrested in Virginia.
 
 <!-- I have some background info on hammertime's downfall.
 Don't ask me where I got this information, but this is what happened.
@@ -676,6 +681,8 @@ ANTHRAX, is the immediate assumption that is made, not recognizing the ground sh
 TLDR: Lawyers + DHS + Fear of Anthrax = stuff of nightmares.
 Disclaimer: This is my best atempt to recall 2nd hand memories and I'm sure there are a few inaccuracies in need of correction, but it's the best I can recall. -->
 
+On [19 December 2013](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR.php) ([indictment](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR/Jones,%20Andrew,%20et%20al%20\(Silk%20Road\)%20Indictment.pdf); [girlfriend's report](http://www.reddit.com/r/SilkRoad/comments/1tb2yl/sr_admin_and_mod_just_got_arrestedmy_boyfriend/)), the former SR administrator/employee "Inigo" was arrested in Virginia.
+
 On 26 January 2014, the Bitcoin seller "BTCKing" ([SR1](/docs/sr/btcking-profile-1.htm)/[2](/docs/sr/btcking-profile-2.htm)) & an accomplice at [BitInstant](!Wikipedia) were arrested in Florida & NY (respectively) after an IRS investigation ([indictment](http://www.justice.gov/usao/nys/pressreleases/January14/SchremFaiellaChargesPR/Faiella,%20Robert%20M.%20and%20Charlie%20Shrem%20Complaint.pdf)); BTCKing offered a service in which he sent buyers a bank account number to deposit cash to (which he then converted into bitcoins via BitInstant), then transferred bitcoins to the buyer on Silk Road.
 He was arrested after an undercover agent (starting in August 2012) made purchases, received the bank account information, and obtained his bank records; the case was further cemented by using the SR messages from the FBI's copy of the servers (apparently BTCKing did not believe in using PGP), the home IP embedded in BTCKing's emails with BitInstant (BTCKing used Safe-mail.net but apparently did not connect over Tor), and his accomplice's Gmail emails & chats obtained.
 (Ironically, BTCKing had declined Dread Pirate Robert's July 2013 invitation to join him in creating an "Anonymous Bitcoin Exchange" by pointing out his vulnerability to investigation: "All LE has to do is go to the bank and ask who is the Trustee of RMF Trust and BANG... They will seize the funds and me.")
@@ -688,15 +695,12 @@ This all fed into a comprehensive investigation of CALIGIRL's life which drew on
 Facebook; Amazon shopping logs and IP; `#bitcoin-otc` IP & transactions; Local Bitcoin transactions; domain names and telephone; cellphone apps (Ding) usage & callers & IPs; Post Office photos (from automated postal machine); the landlord for his post box; travel records; electronic toll records recording movements of his car; hotels he stayed at (he used places he stayed or was near as return addresses); and financial records from: Xoom (and IP addresses), Wells Fargo, JP Morgan Chase, Western Union, & MoneyGram.
 There are currently no known controlled deliveries or arrests of CALIGIRL customers (possibly the SR1 bust eliminated most of his business).
 
-<!-- SR2/Agora etc? https://www.reddit.com/r/DarkNetMarkets/comments/2ihjn6/upcoming_high_profile_large_vendor_busts_in_the/ -->
-<!-- SR2: like california cannabis http://www.bellevuereporter.com/news/288854101.html -->
-
 <!-- # Sheep
 
 http://www.reddit.com/r/SilkRoad/comments/1riid6/i_am_a_corrections_officerwe_now_have_our_first/
 
 http://www.reddit.com/r/SheepMarketplace/comments/1rnf0d/the_weed_vendor_hanfliebhaber_apparently_has_been/
-http://www.reddit.com/r/DarkNetMarkets/comments/1t50kc/3_new_zealand_arrests_unknown_market/ -->
+ -->
 
 <!-- Agora?
 
@@ -795,6 +799,8 @@ An Israeli teen [was arrested ~12 January 2015](http://news.walla.co.il/item/281
 
 A NZer was arrested [in April 2013](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10879570 "Teen arrested for importing, ordering drugs online") over multiple very large orders from an online site, which may or may not have been SR1.
 
+An [11 December 2013](https://web.archive.org/web/20131216055744/http://www.police.govt.nz/news/updates/31590-0) NZ police press release reported the arrest of 3 Wellington men for "small quantities of LSD, Methamphetamine, MDMA (ecstasy), Class C analogue powders and the psychoactive substance NBOMe" which had been "ordered from on line suppliers such as 'The Silk Road'"; no further details are available.
+
 A 21 June 2014 [_Dominion Post_](http://www.stuff.co.nz/dominion-post/news/10185845/People-next-door-buying-drugs-online "'People next door' buying drugs online") article says that " A series of drug raids in a police operation spanning Porirua, Tawa, the Kapiti Coast and Hutt Valley and central Wellington resulted in 21 arrests over the past week [15-20 June 2014]. Six of those arrested now face serious charges related to the alleged importation of drugs bought online from websites similar to Silk Road." (This is a revised figure from the [earlier article on "Operation Python"](http://www.stuff.co.nz/dominion-post/10177294/Police-bust-drugs-ring-find-stolen-carving "Police bust drugs ring, find stolen carving") which had mentioned that "Six Kapiti houses were raided and five arrests made as part of a large police sting targeting internet drug importers.")
 I currently do not know the specifics of those 6 arrests or have any NZ cases in that date range.
 
@@ -806,6 +812,8 @@ On 11 August 2014, an [unnamed polytechnic college student](http://www.odt.co.nz
 [A](https://www.reddit.com/r/LSD/comments/2u75vv/guess_i_need_to_say_goodbye_psychonauts/ "Guess i need to say goodbye, Psychonauts") [Redditor](https://www.reddit.com/r/DarkNetMarkets/comments/2ubnqf/xpost_from_rlsd_guess_i_need_to_say_goodbye/ "(X-post from /r/LSD) Guess i need to say goodbye, Psychonauts") reports being busted 29 January 2015 in Scandinavia (probably Norway or Denmark) after a package of LSD from the Netherlands which he bought from LucyandMolly (who sells on Agora/Evolution/Nucleus) was intercepted by customs; he received just a knock-and-talk but confessed his guilt.
 
 ### USA
+
+On 25 November 2013, Brandon Howell [was arrested](http://www.wect.com/story/24088516/police-seized-hundreds-of-drugs-in-carolina-beach-bust) after "a month-long investigation" in North Carolina; he & his partner "imported MDMA from China through an online black market...The two then resold the imported drugs using the online currency Bitcoin, according to police." It is not clear which seller they were or what market they sold on, but the media coverage mentions Silk Road 1.
 
 On 20 June 2014, the Boise Idaho buyer Jasen Crisp received a CD of a package of MDMA he had ordered from Canada ([press release](http://www.justice.gov/usao-id/pr/boise-man-admits-importing-ecstasy-united-states), #1:14-cr-00226-EJL) and cooperated; his lawyer's [sentencing filing](/docs/sr/2015-01-29-jasencrisp-defensesentencingletter.pdf) writes that he used an "electronic currency" to use the "uncommon means" of ordering on the Internet from "a secret marketplace", so Crisp clearly ordered off one of the black-markets, but it remains unclear which market and which seller.
 
@@ -826,6 +834,9 @@ The original [Operation Onymous press release](http://www.eurojust.europa.eu/pre
 8. ???; Barcelona Spain; [seems to have been the operator of a scam site](http://www.guardiacivil.es/es/prensa/noticias/5146.html "La Guardia Civil detiene a uno de los objetivos de la macro operación ONYMOUS contra los mercados clandestinos en la Deep Web") ([translation](https://www.reddit.com/r/DarkNetMarkets/comments/2m3eyo/some_onymous_bust_in_spain/)) claiming to sell carding-related goods, perhaps "Super Note Counter" or "Sol's Unified USD Counterfeit's" or "Fast Cash!" (all named in the [Operation Onymous seizure papers](/docs/sr/20141107-operationonymous-seizureforfeiture.pdf))
 
 <!-- Operation Onymous:
+
+warning? https://www.reddit.com/r/DarkNetMarkets/comments/2ihjn6/upcoming_high_profile_large_vendor_busts_in_the/
+
 11/6: raided Hydra, SR2, cloud nine, cr2?! (http://cannabiskofvl7pa.onion/)
 
 down: alpaca, bluesky, pandora, bungee, topix2, cr3

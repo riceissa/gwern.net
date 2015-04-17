@@ -44,7 +44,7 @@ Variables:
 
 ## Table
 
-A table of relevant markets (7 April 2015):
+A table of relevant markets (16 April 2015):
 
 Market                   Start       End       Alive Closure   Arrested URL                      Multisig I2P   Bitcoin Litecoin Dogecoin Darkcoin          Codebase   Guns   Fraud Hacks Doxed Notes
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ------- -------- -------- --------          ---------- -----  ----- ----- ----- -------------
@@ -121,7 +121,9 @@ Silk Road Reloaded       2015-01-13            TRUE            FALSE    `silkroa
 Tochka       FALSE       2015-01-30            TRUE            FALSE    `tochka3evlj3sxdv.onion` FALSE    FALSE TRUE    TRUE     TRUE     TRUE              custom     FALSE  FALSE 0     FALSE   [Announced on Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/2u8dm2/tochka_new_mobilefirst_anonymous_marketplace/); site rules ban "Counterfeit documents" which I interpret as banning carding in general.
 Crypto                   2015-02-14            TRUE            FALSE    `cryptomktgxdn2zd.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE            custom     TRUE   TRUE  0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2vvhtc/crypto_market/); CM is run on / by Diabolus and not entirely separate.
 Kiss                     2015-02-19            TRUE            FALSE    `kissmpg5zave56f4.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE            custom     FALSE  FALSE 0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/2vo5qi/kiss_marketplace/); forum: `6bssxspijk7n2ioh.onion`
-Mr Nice Guy 2            2015-02-21            TRUE            FALSE    `niceguyfa3xkuuoq.onion` FALSE    FALSE TRUE     FALSE    FALSE     FALSE           custom     FALSE  FALSE 0     TRUE    [Operator claims doxing was just of "a volunteer"](https://www.reddit.com/r/DarkNetMarkets/comments/2ztsg9/opseccomputer_psa_the_owner_of_mr_nice_guy_market/)
+Mr Nice Guy 2            2015-02-21            TRUE            FALSE    `niceguyfa3xkuuoq.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE            custom     FALSE  FALSE 0     TRUE    [Operator claims doxing was just of "a volunteer"](https://www.reddit.com/r/DarkNetMarkets/comments/2ztsg9/opseccomputer_psa_the_owner_of_mr_nice_guy_market/)
+Havana                   2015-04-13            TRUE            FALSE    `havana3cofejesta.onion` TRUE     FALSE TRUE     FALSE    FALSE    FALSE                       FALSE  FALSE 0     FALSE   [Opened initially invite-code-only](https://www.reddit.com/r/havanamarket/comments/32e7eb/beta_invite_codes/); forums: `forumz4usxavgyri.onion`
+TheRealDeal              2014-04-09            TRUE            FALSE    `trdealmgn4uvm42g.onion` TRUE     FALSE TRUE     FALSE    FALSE    FALSE            Bitwasp    TRUE   TRUE  0     FALSE   [Interview](http://www.deepdotweb.com/2015/04/08/therealdeal-dark-net-market-for-code-0days-exploits/), [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/322hro/introduction_therealdeal_code_mostly_market/); forums: `forum5cijl4suew6.onion`
 
 See also [DeepDotWeb's list](http://www.deepdotweb.com/2013/10/28/updated-llist-of-hidden-marketplaces-tor-i2p/ "Updated: List of Hidden Marketplaces (Tor & I2P)") ([changelog](http://www.deepdotweb.com/hidden-marketplace-list-changelog/)), the [DNM market list](http://www.reddit.com/r/DarkNetMarkets/wiki/index/sidebar), and the [Hidden Wiki](/docs/sr/2014-08-30-hiddenwiki-comparisiondarknetmarkets.mht) (last updated 30 August 2014).
 

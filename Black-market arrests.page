@@ -392,7 +392,7 @@ I assign this buy to BMR, since while BMR had closed a week or two before the fi
 Around 10 September 2013, [Adam Bunger was arrested in Kentucky](http://www.thesmokinggun.com/documents/international-gun-sales-in-xbox-864321 "ATF Probe Nabs Gun Seller On Shadowy Darknet: Overseas-bound arms hidden in Xbox, DVD consoles") for multiple international gun sales on BMR as [likely the seller "Grass4Cash"](http://www.dailydot.com/crime/dark-web-black-market-reloaded-adam-bunger-gun-sales-arrest/ "Cops may have just busted a major illegal gun dealer from the Deep Web") ([complaint](/docs/sr/bmr-adambunger-complaint.pdf); #1:13-cr-00037-JHM-HBB-1); he eventually [pled guilty](http://www.justice.gov/usao-wdky/pr/bowling-green-kentucky-man-guilty-shipping-firearms-internationally "Bowling Green, Kentucky, Man Guilty Of Shipping Firearms Internationally - Firearms were secreted inside video game systems for shipment to foreign addresses") and was [sentenced to 2 years](http://www.wbko.com/news/headlines/Bunger-Sentenced-After-Sending-Firearms-Overseas-270832621.html "Bunger Sentenced After Sending Firearms Overseas").
 His case began 28 June 2013 when Australian Customs intercepted a gun shipment; the recipient was arrested & he cooperated, and the packages backtracked a post office in Kentucky, and the postal clerk identified Bunger.
 
-On 6 November 2013, the BMR gun dealer Matthew Crisafi ("Gun Wise") [was arrested](http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/ "Sting Operation Nabs Alleged Online Arms Dealer On Silk Road Competitor Site") ([complaint](http://www.justice.gov/usao/nj/Press/files/pdffiles/2013/Crisafi,%20Matthew%20Complaint.pdf); [press](http://www.justice.gov/usao/nj/Press/files/Crisafi,%20Matthew%20Complaint.html) [release](https://www.ice.gov/news/releases/new-hampshire-man-arrested-charged-nj-illegal-weapons-sales-underground-online)), ultimately [pleading guilty](http://www.seacoastonline.com/article/20140507/News/140509786 "Hampton man to plead guilty to trafficking firearms online: A Hampton man accused of illegally trafficking firearms overseas on an underground, Internet-based marketplace known as "Black Market Reloaded," has agreed to plead guilty to the crime in federal court."); a series of undercover buys appears to have identified him by interviewing local post office employees, followed up by additional confirmation from a gun purchase where Crisafi accepted Western Union payment (he didn't receive the WU himself, a 'co-conspirator' did, but they then turned it into postal money orders for Matthew Crisafi).
+On 6 November 2013, the BMR gun dealer Matthew Crisafi ("Gun Wise") [was arrested](http://www.forbes.com/sites/andygreenberg/2013/11/07/sting-operation-nabs-alleged-online-arms-dealer-via-silk-road-competitor-site/ "Sting Operation Nabs Alleged Online Arms Dealer On Silk Road Competitor Site") ([complaint](http://www.justice.gov/usao/nj/Press/files/pdffiles/2013/Crisafi,%20Matthew%20Complaint.pdf); [press](http://www.justice.gov/usao/nj/Press/files/Crisafi,%20Matthew%20Complaint.html) [release](https://www.ice.gov/news/releases/new-hampshire-man-arrested-charged-nj-illegal-weapons-sales-underground-online)), ultimately [pleading guilty](http://www.seacoastonline.com/article/20140507/News/140509786 "Hampton man to plead guilty to trafficking firearms online: A Hampton man accused of illegally trafficking firearms overseas on an underground, Internet-based marketplace known as "Black Market Reloaded", has agreed to plead guilty to the crime in federal court."); a series of undercover buys appears to have identified him by interviewing local post office employees, followed up by additional confirmation from a gun purchase where Crisafi accepted Western Union payment (he didn't receive the WU himself, a 'co-conspirator' did, but they then turned it into postal money orders for Matthew Crisafi).
 
 The closure of BMR in December 2013 did not end investigations into users, and the FBI was able to make 4 inter-connected busts related to BMR's poison sellers.
 The first bust was [Jesse](http://www.tampabay.com/news/courts/criminal/labelle-man-accused-of-selling-toxin-in-death-plot/2162117 "LaBelle man accused of selling deadly toxin") [William](http://www.nbc-2.com/story/24506383/muse-poison-black-market-reloaded-online-jesse-korff-labelle-abrin "SWFL man charged with selling poison in online black market") [Korff](http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11404486 "Florida man who produced and sold deadly ricin gets prison") ([complaint](/docs/sr/bmr-korff-complaint.pdf)), BMR vendor "Snowman840", who was arrested 18 January 2014; an FBI undercover agent had ordered ricin from him, beginning on BMR and then off-market after it closed, and they arranged a dead drop in Florida - except the location was specified *in advance*, so they were able to surveil Korff dropping the ricin off personally.
@@ -408,6 +408,12 @@ James Christopher Malcolm ([press release](http://www.justice.gov/usao/cae/news/
 Finally, [Ryan Kelly Chamberlain was arrested 2 June 2014](http://www.sfexaminer.com/sanfrancisco/silk-road-like-website-part-of-investigation-into-man-arrested-by-fbi-for-having-alleged-bomb-making-materials/Content?oid=2819736 "Silk Road like website part of investigation into man arrested by FBI for having alleged bomb making materials ") ([complaint](/docs/sr/bmr-ryanchamberlain-complaint.pdf)) in San Francisco, California, for possession of bomb/IED parts (despite buying from Malcolm & Korff, he apparently didn't have any poisons on hand).
 His complaint details the web of interactions connecting him to Norling, Malcolm, & Korff.
 (Korff → Chamberlain ← Malcolm ← Norling.)
+
+There may be additional unknown gun-related BMR USA cases, given the roughly [June-August 2013 comments of DEA agent Carl Force to DPR1](/docs/sr/exhibit8-le_counterintel.txt) (emphasis added):
+
+> BMR is on the radar and that is ATF's baby. Politics plays a significant role in prioritization of which agency gets to own which investigations. The climate is aggressive when it comes to weapons trafficking and with the gun control hot potato has guaranteed virtually a carte blanche to ATF. And they have deep pockets as well. Because tor based weapons traffickers are almost always running guns IRL, there is synergy between federal and state. Federal approves staggering sums of money for surveillance,undercover and CI's. I don't want to say BMR is "infiltrated", but *there are a lot of compromised accounts and there have been a few quiet busts. Nearly every bust has resulted in cooperation.* I am not sure what the long play is, but as long as this current administration is in power the gunrunners will always be hard targets. They are intimidated with the threat of tangible charges (interstate trafficking, conspiracy, organized crime, distribution) and they ALL cooperate. The general consensus is that weapons dealers are not sophisticated and have a lot of IRL visibility, so they are ALWAYS on the radar.
+
+By August 2013, the Grass4Cash Australia buyer had been busted and the Grass4Cash investigation was largely mature, but then the next BMR gun arrest was Gun Wise in November 2013; given Force's wording, it sounds like there should be at least 2 unknown busts and many more "compromised accounts" (buyers?), indicating that at least half the cases are missing.
 
 <-- Ricin letter to Obama? https://www.reddit.com/r/SilkRoad/comments/1qqmbx/silk_road_vendor_sent_ricin_to_president_obama/ -->
 
@@ -1020,7 +1026,7 @@ In February 2015, UCF student [Peter John Faucella was arrested in Florida](http
 On 9 February 2015, [Michael R. Winchester was arrested in Kentucky](http://www.wdrb.com/story/28070729/police-suspect-arrested-for-dealing-drugs-from-home "POLICE: Suspect arrested for dealing drugs from home") after a tip about his local dealing; he was apparently also a [well-known Topix.com](https://www.reddit.com/r/DarkNetMarkets/comments/2vgf1y/psaarticle_topix_sellerirl_dealer_busted_possibly/) seller of benzodiazepines, and may at some point have sold on the black-markets.
 
 # Analysis
-## Reflections
+## Opsec/security
 
 No single theme emerges reading through the many arrests.
 
@@ -1041,12 +1047,34 @@ A few motifs do emerge:
 
     In particular, LE is willing to spend particular efforts following buyers across international borders, makes busts based on records of addresses (as exemplified by the BMR busts in which old customers were followed up on, in contrast to drug busts where thousands of addresses fall into LE hands without visible effect), and operate flipped seller accounts for months
 
+## Completeness
+
+How complete is this inventory of arrests, that is, what percentage of *all* black-market related cases are listed in the table? There are many reasons to expect the table to be incomplete:
+
+1. anyone arrested will do their best to minimize any connection to drugs in general, or varieties of conspiracy, RICO, money laundering, or interstate charges which might be entailed by admitting to anything related to the black-markets or Bitcoin
+2. if they are arrested and the connection comes out, the case may never become public for many reasons - various legal or privacy regulations may block it, it may simply not hit the media because it was 'just' another local drug case, or it may be deliberately kept secret as part of ongoing investigations
+3. the information may be public, but media coverage gets it wrong; unsophisticated & overworked journalists routinely confuse the deep web, dark web, forums, etc
+4. the media coverage may be right but is not in English
+5. etc etc
+
+Some evidence points weakly at how comprehensive this table may be:
+
+- public cases can be divided into reasonably well-documented ones, and ones inferred from aggregate figures or media blurbs; for example, the bare name of the arrested person is unknown in more than half of the cases
+- the aggregate time lags from when each person was arrested to when their case became known (possibly through indirect means such as carefully parsing complaints and evidence from other cases) suggest that ~90% of public cases become known in the first year but then there is a very long tail of arrests surfacing in the public record years later, implying that for 2012 onwards each year cannot be >90% complete even if we assumed that all cases became public (because for more recent years, cases have not finished surfacing)
+- the informant Carl Force told DPR that there had been many account compromises on BMR and "a few quiet busts", where at the most generous, only 3 cases are known, suggesting a known:total BMR rate of <33%
+- in SR1, the UK press release specified the total number of arrests
+- in the Xanax King case, a subsequent court filing specified the full number of related arrests, which can be compared with media articles on identified or likely XK buyers, suggesting a known:total rate of ~10%
+- in Operation Onymous, the joint press release specified the total number of arrests; many are still unknown
+- the Ross Ulbricht trial revealed several unknown arrests (at a minimum: Deezletime, alllove, Richard Bates) which would likely have never surfaced if Ulbricht had plea-bargained and avoided trial
+
+In aggregate, I would guess that the completeness of the table is highly unlikely to be >25% and more likely to be <=10% (but the completeness is probably much higher for site operators, then staff, then sellers, and least of all buyers).
+
 ## Code
 
 ~~~{.R}
 library(XML)
 # http://www.gwern.net/Black-market%20arrests#table
-arrests <- readHTMLTable("file:///tmp/burl19627jaF.html",
+arrests <- readHTMLTable("/tmp/burl19627jaF.html",
     colClasses = c("character", "factor", "character", "factor", "factor", "character", "factor", "factor", "character", "logical", as.Date, as.Date, "character"))[[1]]
 # replace all empty-fields/""s with NAs
 arrests[1:10][arrests[1:10] == ""] <- NA

@@ -73,7 +73,7 @@ Similarly, if there were >60 buyer arrests (I double because there seem to be mo
 Name                  Sex Pseudonym            Role      Market      Seller          Country     State          Product                            INTL  Arrest    Known         Notes
 --------------------- --- ---------------      -------   ----------- --------------- ----------- -------------- ------------------------------     ----- --------- ----------    -----
 Stacy Litz            F                        buyer     Silk Road 1                 USA         Pennsylvania   MDMA, LSD                          FALSE 2011-09-01 2013-01-13
-Jacob Theodore George M   digitalink           seller    Silk Road 1                 USA         Maryland       heroin, methylone                  FALSE 2012-01-20 2013-10-29    Details remain mysterious; arrest in Jan 2012 but when exactly? Best guess date.
+Jacob Theodore George M   digitalink           seller    Silk Road 1                 USA         Maryland       heroin, methylone                  FALSE 2012-01-17 2013-10-29    Details remain mysterious; arrest in Jan 2012 but when exactly? Best guess date.
                           dripsofacid          buyer     Silk Road 1                 USA                                                                 2012-03-01 2015-01-14    Inferred from DerYeghiayan's testimony about use for undercover buys.
 Christopher Owen      M                        seller    Silk Road 1                 Australia                  MDMA, ketamine, methamphetamine    FALSE 2012-04-27 2013-05-18
 Mehran Jahedi         M                        buyer     Silk Road 1                 USA         Massachusetts  LSD, ketamine, MDMA                TRUE  2012-05-05 2014-10-17
@@ -349,6 +349,27 @@ He had been uncovered after an American user of his counterfeit currency was det
 
 ### USA
 
+<!-- Agora?
+
+https://www.reddit.com/r/DarkNetMarkets/comments/2hdp5a/caught_having_e_sent_from_germany/ http://www.jdnews.com/jdnewstream/man-accused-of-receiving-ecstasy-from-germany-1.374122 http://www.carolinacoastonline.com/news_times/article_87cc5f2c-3e8d-11e4-84f2-338083e94e20.html?mode=jqm
+North Carolina
+Scott Patrick Royal
+MDMA from Germany
+Carteret County
+Sep 15
+from Toyota on Agora?
+
+http://www1.aoc.state.nc.us/www/calendars.Criminal.do?Next+25.x=27&Next+25.y=10&submit=Next+25&start=200&defendant=ROYAL&navindex=8&court=BTH&county=999
+
+- http://www1.aoc.state.nc.us/www/calendars.Offense.do?submit=submit&case=1502014054129&court=CR
+- http://www1.aoc.state.nc.us/www/calendars.Offense.do?submit=submit&case=1502014054130&court=CR
+- http://www1.aoc.state.nc.us/www/calendars.Offense.do?submit=submit&case=1502014054131&court=CR
+
+    District     CARTERET    ROYAL,SCOTT,PATRICK     09/22/1984      10/24/2014      0001    AM      2014CR054129
+    District     CARTERET    ROYAL,SCOTT,PATRICK     09/22/1984      10/24/2014      0001    AM      2014CR054130
+    District     CARTERET    ROYAL,SCOTT,PATRICK     09/22/1984      10/24/2014      0001    AM      2014CR054131
+-->
+
 In mid-2014, the Agora guns & weapon seller "weaponsguy" began receiving complaints of packages not arriving & being a scammer; in November 2014, he returned from a vacation, got the complaining buyer to vouch for him, and resumed selling guns & related equipment.
 I have identified "weaponsguy" as the ATF-controlled account which did undercover sales to Justin Moreira in March-April 2015, in which case it seems likely to me that weaponsguy followed the same lifecycle as Dark_Mart and other FBI-controlled accounts on Evolution and was busted sometime around or after the complaints began, cooperated and his account began to be operated by LE (ATF in this case).
 
@@ -567,6 +588,7 @@ In September 2011, the Silk Road 1 buyer of LSD & MDMA [Stacy Litz](http://www.r
 
 On 28 October 2013, the Maryland former seller ["digitalink"](/docs/sr/2013-06-07-digitalink-profile.html), Jacob Theodore George IV, was [charged in federal court](/docs/sr/digitalink-courtrecords.maff) (previously convicted of a number of offenses in state courts) for his heroin & [methylone](!Wikipedia) (banned October 2011) sales a year & a half previously (he stopped in January 2012), and [pled guilty](http://www.baltimoresun.com/news/maryland/bs-md-silk-road-plea-20131105,0,7979360.story "Silk Road drug dealer pleads guilty: Jacob T. George IV, 32, sold heroin and methylone using online market") ([plea agreement](/docs/sr/sr-digitalink-pleaagreement.pdf)), ultimately receiving [a sentence of 6 years](http://www.baltimoresun.com/news/maryland/crime/blog/bs-md-silk-road-sentencing-20140905,0,5703914.story "Silk Road drug dealer gets six years prison: Jacob Theodore George IV, 33, sold heroin through online marketplace").
 The [complaint/indictment](/docs/sr/digitalink-federalcomplaint-1-13-cr-00593-CCB.pdf) does not specify what evidence the case is based on, why such a long delay, or why no arrest, and many of the PACER documents remain sealed or unavailable as of 23 February 2015 (so we don't know the details or how exactly he was cooperating); but based on [digitalink's forum posts](/docs/sr/digitalink-profile.maff) and [forum discussions of him](/docs/sr/digitalink-forumdiscussions.maff), it seems he was an extremely careless vendor who disdained PGP, retrieved product seized by the Post Office (one forum-user presciently exclaimed in August 2011, "Oh wow, the idiocy is unmatched! It seems very possible that digitalink will be busted sometime soon."), told other people who his methylone supplier was, gave his phone number to buyers, and ultimately failed to deliver \$3500 of methylone to a buyer "thoth" who then [threatened to give digitalink's information to the police](/docs/sr/digitalink-thoth.maff), *possibly* resulting in him being interviewed and confessing to everything[^digitalink-plea].
+[An internal timeline of the US investigations](http://ia801506.us.archive.org/27/items/gov.uscourts.nysd.422824/gov.uscourts.nysd.422824.232.6.pdf) says that on 1 February 2012, "HSI Baltimore then revealed [in the meeting] that their informant that told them about the Silk Road in September was just arrested on or around January 17, 2012 for something unrelated and admitted to them then that he was actually a Silk Road vendor", so it seems digitalink were arrested for offline misbehavior unrelated to his heroin/methylone imports & sales, and only then flipped.
 
 [^digitalink-plea]: The meat of his plea deal is sealed, but it does say
 
@@ -582,6 +604,7 @@ On 5 May 2012, the Massachusetts [Bard College student](http://www.berkshireeagl
 
 The account of the SR1 clonazepam/marijuana seller "alllove" was used by the FBI in 27 September 2012 & earlier as part of its investigation into SR1, and [screenshots taken with it](/docs/sr/ulbrichttrial-evidence-gx109redacted.pdf) were [entered into evidence](http://antilop.cc/sr/files/2014_12_10_ULBRICHT_evidence_lists.pdf) at Ross Ulbricht's 2015 trial.
 alllove must have been busted somehow before September 2012, for his account to have become the FBI's property, and explaining his abrupt disappearance sometime before 19 May 2012 (remarked upon at the time [on Reddit](https://www.reddit.com/r/SilkRoad/comments/1emvyg/favorite_vendors/); there may be more accurate timings in [SR1F hits for "alllove"](/docs/sr/sr1f-alllove.tar.xz)) but all other details are unknown.
+[One post-trial exhibit](http://ia801506.us.archive.org/27/items/gov.uscourts.nysd.422824/gov.uscourts.nysd.422824.232.1.pdf "Case 1:14-cr-00068-KBF Document 232-1 Filed 04/16/15 Page 1 of 11; Exhibit 1") (a Der-Yeghiayan affidavit seeking copies of Mark Karpeles's email accounts) states that "In September of 2012, HSI was able to verify that a commission rate exists on the Silk Road by using a Silk Road vendor account and setting a price on a product for sale on the Silk Road marketplace. HSI then logged in to the Silk Road using a different account and observed the same product offered for sale at a higher price than what was set by the vendor. The difference in price matched the advertised commission rates from the Silk Road administrator."; while this could possibly have been an unknown seller, digitalink, davidd, or alllove (all USA SR1 seller accounts compromised by September 2012), the former had disappeared off the market by September 2012, and the last fits best given that we know the alllove account was being used for other parts of the investigation.
 (The [old SR1 seller Grand Wizard says](https://www.reddit.com/r/SilkRoad/comments/2uxzus/sr1_seller_alllove_busted_mid2012/coczhg6) that alllove may also have sold bitcoins for cash in the mail or other fiat; this is an extremely risky occupation and if true, almost certainly how he was busted.)
 
 In December 2012, a [New Jersey buyer was busted for marijuana in a controlled delivery](http://www.news10.net/news/article/251775/2/Cross-county-drug-ring-using-dark-Internet-site-busted-by-feds) when the package was detected in the mail; he cooperated (no additional penalties specified in article) and 2 sellers (SourDieselMan) were eventually arrested & charged in July 2013.
@@ -695,33 +718,7 @@ This all fed into a comprehensive investigation of CALIGIRL's life which drew on
 Facebook; Amazon shopping logs and IP; `#bitcoin-otc` IP & transactions; Local Bitcoin transactions; domain names and telephone; cellphone apps (Ding) usage & callers & IPs; Post Office photos (from automated postal machine); the landlord for his post box; travel records; electronic toll records recording movements of his car; hotels he stayed at (he used places he stayed or was near as return addresses); and financial records from: Xoom (and IP addresses), Wells Fargo, JP Morgan Chase, Western Union, & MoneyGram.
 There are currently no known controlled deliveries or arrests of CALIGIRL customers (possibly the SR1 bust eliminated most of his business).
 
-<!-- # Sheep
 
-http://www.reddit.com/r/SilkRoad/comments/1riid6/i_am_a_corrections_officerwe_now_have_our_first/
-
-http://www.reddit.com/r/SheepMarketplace/comments/1rnf0d/the_weed_vendor_hanfliebhaber_apparently_has_been/
- -->
-
-<!-- Agora?
-
-https://www.reddit.com/r/DarkNetMarkets/comments/2hdp5a/caught_having_e_sent_from_germany/ http://www.jdnews.com/jdnewstream/man-accused-of-receiving-ecstasy-from-germany-1.374122 http://www.carolinacoastonline.com/news_times/article_87cc5f2c-3e8d-11e4-84f2-338083e94e20.html?mode=jqm
-North Carolina
-Scott Patrick Royal
-MDMA from Germany
-Carteret County
-Sep 15
-from Toyota on Agora?
-
-http://www1.aoc.state.nc.us/www/calendars.Criminal.do?Next+25.x=27&Next+25.y=10&submit=Next+25&start=200&defendant=ROYAL&navindex=8&court=BTH&county=999
-
-- http://www1.aoc.state.nc.us/www/calendars.Offense.do?submit=submit&case=1502014054129&court=CR
-- http://www1.aoc.state.nc.us/www/calendars.Offense.do?submit=submit&case=1502014054130&court=CR
-- http://www1.aoc.state.nc.us/www/calendars.Offense.do?submit=submit&case=1502014054131&court=CR
-
-    District     CARTERET    ROYAL,SCOTT,PATRICK     09/22/1984      10/24/2014      0001    AM      2014CR054129
-    District     CARTERET    ROYAL,SCOTT,PATRICK     09/22/1984      10/24/2014      0001    AM      2014CR054130
-    District     CARTERET    ROYAL,SCOTT,PATRICK     09/22/1984      10/24/2014      0001    AM      2014CR054131
--->
 <!-- Bungee54?
 https://www.reddit.com/r/DarkNetMarkets/comments/2joxdl/bungee54_raid_federal_investigation/
 https://www.reddit.com/r/DarkNetMarkets/comments/2jjwgj/bungee54_shipping_delays/
@@ -731,10 +728,12 @@ https://www.reddit.com/r/DarkNetMarkets/comments/2jpdu1/psa_never_get_too_comfor
 https://www.reddit.com/r/DarkNetMarkets/comments/2jokps/bungee_order_update/
 https://www.reddit.com/r/DarkNetMarkets/comments/2jqmok/what_should_those_who_have_dealt_with_bungee54_do/
 Bungee54 staff claim two incidents in past year: http://bungee54ft2us2fs.onion/viewtopic.php?pid=4162
-https://www.reddit.com/r/DarkNetMarkets/comments/2l9ap8/bungee54_says_goodbye_good_luck_to_everyone/ -->
-https://www.reddit.com/r/DarkNetMarkets/comments/2looal/bungee54_state_of_operations_update/
+https://www.reddit.com/r/DarkNetMarkets/comments/2l9ap8/bungee54_says_goodbye_good_luck_to_everyone/
+https://www.reddit.com/r/DarkNetMarkets/comments/2looal/bungee54_state_of_operations_update/ -->
+
 <!-- Interways buyer https://www.reddit.com/r/DarkNetMarkets/comments/2juko5/interways_raid_by_police/ ? -->
-<!-- unknown, if at all; 8 UK carders http://www.manchestereveningnews.co.uk/news/greater-manchester-news/gang-sentenced-credit-card-scam-8438268 https://www.reddit.com/r/DarkNetMarkets/comments/2sba70/fraudsters_who_used_stolen_credit_card_details/ -->
+
+
 
 ## Silk Road 2 (SR2)
 ### Indonesia
@@ -963,6 +962,12 @@ On 5 July 2013, [Israeli police announced 30 arrests](http://www.police.gov.il/a
 A [Reddit user](https://www.reddit.com/r/DarkNetMarketsNZ/comments/2tdk8a/custom_bust_5_tabs_of_lsd/) claims on 22 January 2015 to have, "a few months ago" ordered LSD from Canada, which was intercepted and been sweated by Customs.
 
 [Daniel Patrick McKechnie, Taine Mita Piriru Edwards, & Mitchell Charles Connor-Dagg](http://www.odt.co.nz/news/dunedin/332105/trio-serious-drug-charges "Trio on serious drug charges") (aged 18-20) were arrested & charged in February 2015 after customs interceptions with importing, from November 2014-January 2015, LSD/MDMA/methamphetamine which ["had all been sourced through the internet from the United States and Europe in a sophisticated operation"](http://www.3news.co.nz/nznews/police-bust-dunedin-drug-ring-2015020423 "Police bust Dunedin drug ring "). (Possibly linked to the [Evolution seller "TheWireNz"'s apparently-permanent vacation](https://pay.reddit.com/r/DarkNetMarketsNZ/comments/2ti2qd/temp_closing/)?)
+
+## Sheep
+
+[A Redditor](http://www.reddit.com/r/SilkRoad/comments/1riid6/i_am_a_corrections_officerwe_now_have_our_first/) claims to be a US corrections officer and that one of his inmates was a Sheep buyer reselling locally who was turned in by his girlfriend and then arrested after a controlled buy.
+
+[A poster](http://www.reddit.com/r/SheepMarketplace/comments/1rnf0d/the_weed_vendor_hanfliebhaber_apparently_has_been/) claims that the German marijuana seller "Hanfliebhaber" ("cannabis lovers") on Sheep Marketplace was busted before 28 November 2013 due to reuse of a single post office, and that details are available on the Sheep forums; unfortunately, I did not save a copy before the site & forums disappeared in an exit scam, and have been unable to find any confirmation other than one or two forum posts in German elsewhere complaining about a scam or speculating he had been arrested.
 
 ## UK
 

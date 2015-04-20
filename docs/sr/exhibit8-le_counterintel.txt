@@ -2,7 +2,7 @@
 
 [Case 1:14-cr-00068-KBF Document 232-8 Filed 04/16/15 Page 1 of 17]
 
-       EXHIBIT 8:               /home/frosty/backup/project_references/le_counter intel.txt
+       EXHIBIT 8:               /home/frosty/backup/project_references/le_counter_intel.txt
 
 [Case 1:14-cr-00068-KBF Document 232-8 Filed 04/16/15 Page 2 of 17]
 
@@ -258,7 +258,7 @@ StExo has discovered that Dr David Decary-Hetu is planning to do research on SR 
 [beginning of Carl Force/DEA double-agent/informant "alpacino" briefing for money; this seems to be his initial briefing for the upfront payment, and not include the weekly updates he then gave DPR.
 
 For additional background on Force & Bridges, see the complaint http://www.justice.gov/sites/default/files/opa/press-releases/attachments/2015/03/30/criminal_complaint_force.pdf and the related filings & exhibits in the Ulbricht trial.
-The alpacino leak is mentioned in Ulbricht's journal entries: "06/05/2013 - 09/11/2013 / Haven't been logging. Tried counter intel on DEA's "mr wonderful" but led nowhere. tormail was busted by dea and all messages confiscated. "alpacino" from DEA has been leaking info to me. Helped me help a vendor avoid being busted."
+The alpacino leak is mentioned in Ulbricht's journal entries: "06/05/2013 - 09/11/2013 / Haven't been logging. Tried counter intel on DEA's 'mr wonderful' but led nowhere. tormail was busted by dea and all messages confiscated. 'alpacino' from DEA has been leaking info to me. Helped me help a vendor avoid being busted." (For the specific vendor saved, see later.)
 So these emails, through Tormail, probably took place 2013-06-05 until Tormail was shut down as part of Freedom Hosting on 2013-08-04.]
 
 correspondence with alpacino:
@@ -537,7 +537,7 @@ simultaneously in a grand slam display is logistically possible let alone greenl
 would not be possible currently. There have been one-off prosecutions on county and state levels. What happens is that
 a vendor that has confidently profiled/ascertained to be originating packages out of a certain jurisdiction, that
 information is shared down to local/state to put eyeballs on. A lot of that was happening in the beginning, but now
-there's more of a "hands off' approach. They'd want to sweep the maximum amount of vendors at once. Having the
+there's more of a "hands off" approach. They'd want to sweep the maximum amount of vendors at once. Having the
 Sheriff of Mayberry hit one based on JTF Intel is just not the culture/mindset. Nearly all efforts are conducted out of
 Jersey and Los Angeles.
 
@@ -670,11 +670,13 @@ position would be catastrophic.
 sure. But further attempts on the integrity of the site will be executed, be sure of that. Although I can tell you, that
 won't be a long term play. It can't be sustained forever.
 
+[#6 is presumably a reply to DPR1 asking "what were those DoS attacks on SR1 trying to assess?"]
+
 7) Not AFAIK. I can poke around and get back on this. But does not ring any alarms in my head. I vaguely recall
 some back and forth about a paper that was published, but I don't recall anything coming of it. This would be
 something on the tech side. I will circle back with you on this.
 
-[Was that a question about the hidden-service guard-based de-anonymization attacks?]
+[Is #7 that a question about the hidden-service guard-based de-anonymization attacks?]
 
 8) Some, yes. Off the top of my head - I know that "Costco" is a West Coast operation and theres some fair certainty
 that it's an Asian gang deal. There is an immigration element and tied to IRL dealing. I'm not sure what the wait is, but
@@ -688,7 +690,9 @@ I know there were a few California based pot guys who were being surveilled, I c
 There is a vendor in Dade County, FL that was surveilled, grabbed and turned but the focus was on his IRL connects to
 coke wholesalers, not on mail.
 
-[Marlostanfield, Godofall, and DaRuthless1 seem to have disappeared before or during the fall of SR1 and no busts are known to be associated; UnderGroundSyndicate was busted as part of the SuperTrips case; the CA and FL mentions are too vague to judge. Ulbricht in his journal credits Force's info with saving at least one vendor, and it's noteworthy that someone contacted Eileen Ormsby in December 2013 (http://allthingsvice.com/2015/04/02/special-agent-force-alpacino-and-me/), referring to Force's info and telling Ormsby to "ask M___ how DPR knew stuff that helped him not get busted. He won't know how, but he will know what you are talking about"; Marlostanfield is the only vendor named in the entire file whose name begins with "M" and if he had already run afoul of the law many times, he would be quick to disappear upon being warned.]
+[Marlostanfield, Godofall, and DaRuthless1 seem to have disappeared before or during the fall of SR1 and no busts are known to be associated; UnderGroundSyndicate was busted as part of the SuperTrips case; the CA and FL mentions are too vague to judge. Ulbricht in his journal credits Force's info with saving at least one vendor, although it's unclear which.
+
+It's noteworthy that someone contacted Eileen Ormsby in December 2013 (http://allthingsvice.com/2015/04/02/special-agent-force-alpacino-and-me/), referring to Force's info and telling Ormsby to "ask M___ how DPR knew stuff that helped him not get busted. He won't know how, but he will know what you are talking about"; Marlostanfield is the only vendor named in the entire file whose name begins with "M" and if he had already run afoul of the law many times, he would be quick to disappear upon being warned, although Ormsby denies that M was Marlostanfield, saying it was someone else and better known (https://www.reddit.com/r/DarkNetMarkets/comments/336p83/the_force_briefing_le_dnm_investigative_methods/cqi3v2t) so possibly this M was discussed in later messages from Force.]
 
 I can poke around in regards to more on this topic.
 
@@ -800,7 +804,7 @@ from confidential informants on the local level who are helping build cases on s
 suspected of putting drugs in the mail or fedex, and SR is mentioned. Other civilian leads would be from academic
 research regarding SR/TOR (crawlers, potential bugs/flaws in the for network etc). Or then instances of someone
 coming to local LE for help because they were being extorted and 'threatened to have their information released
-allover SR forums" etc (usually a buyer that's getting blackmailed by a vendor) have also trickled in.
+allover SR forums' etc (usually a buyer that's getting blackmailed by a vendor) have also trickled in.
 
 ---
 

@@ -9,13 +9,83 @@ belief: log
 This is the April 2015 edition of [the `gwern.net` newsletter](http://eepurl.com/Kc155); previous, [March 2015](http://www.gwern.net/newsletter/2015/03). This is a summary of the revision-history RSS feed, overlapping with [Changelog](http://gwern.net/Changelog) & [Google+](https://plus.google.com/103530621949492999968) & [LW media threads](http://lesswrong.com/r/discussion/tag/media_thread/); brought to you by my donors on [Gratipay](https://gratipay.com/gwern/).
 
 # Writings
+
+- Black-market arrests
+
 # Media
 ## Links
 
-<!-- Back to 21 February 2013 -->
+Everything is heritable:
+
+- ["Measure for Measure: The strange science of Francis Galton"](http://www.newyorker.com/magazine/2005/01/24/measure-for-measure-5?currentPage=all) (on Galton, statistics, regression to the mean, and eugenics.﻿)
+
+Politics/religion:
+
+- ["A Cold War Conundrum: The 1983 Soviet War Scare"](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/a-cold-war-conundrum/source.htm)
+- ["Before you study public opinion, you wonder why policy isn't far better.  After you study public opinion, you wonder why policy isn't far worse."﻿](http://econlog.econlib.org/archives/2011/04/top_40_things_i.html "40 Things I Learned in My First 40 Years")
+- ["How Napoleon Chagnon Became Our Most Controversial Anthropologist"](http://www.nytimes.com/2013/02/17/magazine/napoleon-chagnon-americas-most-controversial-anthropologist.html?pagewanted=all)
+- ["Why Are There So Few Vegetarians? Most 'vegetarians' eat meat. Huh?"](https://www.psychologytoday.com/blog/animals-and-us/201109/why-are-there-so-few-vegetarians)
+- ["The Live-and-Let-Live System in Trench Warfare in World War I"](http://www.heretical.com/games/trenches.html)
+- [Flight and expulsion of Germans (1944-50)](https://en.wikipedia.org/wiki/Flight_and_expulsion_of_Germans_%281944%E2%80%9350%29)
+- ["Abraham Lincoln, Necromancer"](http://slatestarcodex.com/2013/02/14/abraham-lincoln-necromancer/),
+
+Statistics/AI/meta-science:
+
+- ["The Non-parametric Bootstrap as a Bayesian Model"](http://www.sumsar.net/blog/2015/04/the-non-parametric-bootstrap-as-a-bayesian-model/)
+- ["Crowdsourcing data analysis: Do soccer referees give more red cards to dark skin toned players?"](http://home.uchicago.edu/~/npope/crowdsourcing_paper.pdf) (61 analysts examine the same dataset for the same research question to see how much variation in approach determines results; [excerpts](https://plus.google.com/103530621949492999968/posts/TTVH8Ns1jVp))
+- ["Using degrees of freedom to change the past for fun and profit"](http://lesswrong.com/lw/a9f/using_degrees_of_freedom_to_change_the_past_for/)
+- ["The psychology of parapsychology, or why good researchers publishing good articles in good journals can still get it totally wrong"](http://www.talyarkoni.org/blog/2011/01/10/the-psychology-of-parapsychology-or-why-good-researchers-publishing-good-articles-in-good-journals-can-still-get-it-totally-wrong/)
+- ["Predictive modeling, data leakage, model evaluation"](http://mathbabe.org/2012/11/20/columbia-data-science-course-week-12-predictive-modeling-data-leakage-model-evaluation/)
+
+Psychology/biology:
+
+- ["Genetics and the placebo effect: the placebome"](http://www.gwern.net/docs/nootropics/2015-hall.pdf), Hall et al 2015 ([excerpts](https://plus.google.com/103530621949492999968/posts/JCmp4FveEnX))
+- ["Mice Fall Short as Test Subjects for Some of Humans' Deadly Ills"](http://www.nytimes.com/2013/02/12/science/testing-of-some-deadly-diseases-on-mice-mislead-report-says.html)
+-  ["Rising Plague"](https://entitledtoanopinion.wordpress.com/2013/02/11/rising-plague/)
+- ["Icing Organs: Why scientists are so near and yet so far from being able to cryopreserve organs"](http://www.the-scientist.com/?articles.view/articleNo/34190/title/Icing-Organs/)
+- ["Discrepancies between clinical and autopsy diagnosis and the value of post mortem histology; a meta-analysis and review"](http://www.pathkids.com/autopsy/hasleton%20on%20discrepancies.pdf), Roulson et al 2005 ([excerpts](https://plus.google.com/103530621949492999968/posts/e983tqSEHYE))
+- ["The Catastrophe: Spalding Gray's brain injury"](http://www.newyorker.com/magazine/2015/04/27/the-catastrophe-oliver-sacks) (medical ethics, dereliction of duty)
+- ["The Price of a Stolen Childhood: When Nicole was a child, her father took pornographic pictures of her that still circulate on the internet"](https://www.nytimes.com/2013/01/27/magazine/how-much-can-restitution-help-victims-of-child-pornography.html?pagewanted=all)
+- ["The Last Magic Show: A Blind Brain Theory of the Appearance of Consciousness"](http://dl.dropbox.com/u/85192141/2012-bakker.pdf)﻿, Bakker
+- ["Nature makes no leaps"](http://scienceblogs.com/evolvingthoughts/2008/01/26/nature-makes-no-leaps/)
+
+Technology:
+
+- ["The Tail at Scale"](http://www.cs.duke.edu/courses/compsci590.4/fall13/838-CloudPapers/dean_longtail.pdf), Dean & Barroso 2013
+- ["Tacit Knowledge, Weapons Design, and the Uninvention of Nuclear Weapons"](http://people.reed.edu/~ahm/Courses/Reed-POL-422-2012-S1_NP/Syllabus/EReadings/07.1/07.1.MacKenzieSpinardi1995Tacit.pdf), MacKenzie & Spinardi 1995
+- ["In High-Tech Japan, the Fax Machines Roll On"](http://www.nytimes.com/2013/02/14/world/asia/in-japan-the-fax-machine-is-anything-but-a-relic.html?pagewanted=all)
+
+Economics:
+
+- [Children are net losses to parents, even in peasant or hunter-gatherer societies.﻿](http://www.econ.ucsb.edu/%7Etedb/Family/famwaypdf.pdf "'Economics in a Family Way', Bergstrom 1999")
+- [Arab slave trade](https://en.wikipedia.org/wiki/Arab_slave_trade#Scope_of_the_trade)
+- [Social impact bond](https://en.wikipedia.org/wiki/Social_impact_bond)
+- ["Deep Inside: A Study of 10,000 Porn Stars and Their Careers"](http://jonmillward.com/blog/studies/deep-inside-a-study-of-10000-porn-stars/)
+- ["What Happened with LEGO: The price of a brick"](http://realityprose.com/2013/01/17/what_happened_with_lego/)
+- ["So You Discovered an Anomaly ... Gonna Publish It? An Investigation Into the Rationality of Publishing a Market Anomaly"](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=956105), Doran & Wright 2007
+- ["Superiority"](http://www.mayofamily.com/RLM/txt_Clarke_Superiority.html) (Arthur C. Clarke)
+
+Philosophy:
+
+- [Moral Anti-Realism](http://plato.stanford.edu/entries/moral-anti-realism/index.html)
+
+Fiction:
+
+- ["Birdless Country"](http://www.poetrynook.com/poem/birdless-country), by Burton Watson
+- ["The Garden of Proserpine"](https://en.wikisource.org/wiki/The_Garden_of_Proserpine)
+
+<!-- Back to 22 January 2013 -->
 
 ## Books
+
+- _The Sagas of Icelanders_
+
 ## Film/TV
+
+- _Night at the Museum: Secret of the Tomb_ (2014)
+- _Cinderella_ 2015
+- _Ben-to_
+
 ## Music
 
 Touhou:
@@ -56,6 +126,17 @@ Touhou:
 - ["マンドラゴラの庭"](https://www.dropbox.com/s/mi485le47loy1wo/siva-gensokyostpatricksday-%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%B4%E3%83%A9%E3%81%AE%E5%BA%AD.ogg) (siva; _Gensokyo St. Patrick's Day_ {K10}) [Celtic]
 - ["Rince Oiche"](https://www.dropbox.com/s/o2w97h60hpq0tw2/escarmew-gensokyostpatricksday-rinceoiche.ogg) (Escarmew; _Gensokyo St. Patrick's Day_ {K10}) [Celtic]
 
+- ["Sleepy Maiden"](https://www.youtube.com/watch?v=Pdmq-BgQiRU) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
+- ["Septette for a Sleepy Princess"](https://www.youtube.com/watch?v=6o8h-HgFgB0) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
+- ["籠居漏水"](https://www.youtube.com/watch?v=B3_04qNCHMo) (PIROPARU; 'Kyouon no Ooi Ryouriten' {Reitaisai SP}) [instrumental]
+- ["Lotus World"](https://www.youtube.com/watch?v=dR9t3_SM9cE) (PIROPARU; 'Kyouon no Ooi Ryouriten' {Reitaisai SP}) [instrumental]
+- ["Going back to Sleeping Night"](https://www.youtube.com/watch?v=A24ZJz0IUws) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
+- ["Drowsy Eyes"](https://www.youtube.com/watch?v=FrU6xfbLyRk) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
+- ["A Maiden's Quiet Sleep"](https://www.youtube.com/watch?v=DRAujB9XmGs) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
+- ["Sleeping Asia"](https://www.youtube.com/watch?v=u8XqTnkMTco) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
+- ["Reach for the Dream, Immortal Smoke"](https://www.youtube.com/watch?v=oBydaD3jBZU) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
+- ["Temptation of the Eternal Night"](https://www.youtube.com/watch?v=1sQcqdJhGmE) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
+
 Doujin:
 
 - ["Lost my music"](https://www.dropbox.com/s/e4wuxgol6j5ggrl/tamgensougakudansatorukousaki-suzumiyaharuhinokyouentherecitalofharuhisuzumiya-lostmymusic.ogg) (TAM, Gensou Gakudan, Satoru Kousaki; _Suzumiya Haruhi no Kyouen_ {2007}) [classical]
@@ -68,3 +149,5 @@ Kantai Collection:
 
 - ["昼戦〜戦乙女の行進〜"](https://www.dropbox.com/s/kc5bxnewxvz3nqy/%E4%BC%8A%E8%97%A4%E7%BF%BC-kantaiphilharmonicorchestra-%E6%98%BC%E6%88%A6%E3%80%9C%E6%88%A6%E4%B9%99%E5%A5%B3%E3%81%AE%E8%A1%8C%E9%80%B2%E3%80%9C.ogg) (伊藤 翼; 'Kantai Philharmonic Orchestra' {C86}) [orchestral]
 - ["鎮守府の序曲"](https://www.dropbox.com/s/znixxhsporh9lqq/%E4%BC%8A%E8%97%A4%E7%BF%BC-kantaiphilharmonicorchestra-%E9%8E%AE%E5%AE%88%E5%BA%9C%E3%81%AE%E5%BA%8F%E6%9B%B2.ogg) (伊藤 翼; 'Kantai Philharmonic Orchestra' {C86}) [orchestral]
+
+- ["Day Battle (Cannons and Torpedoes, Fire!)"](https://www.youtube.com/watch?v=oPFONA8ybpw) (Marasy; _Fleet Piano Collection_ {C87}) [classical]

@@ -6,6 +6,8 @@ status: in progress
 belief: log
 ...
 
+<!-- TODO: imitate http://www.kalzumeus.com/2014/12/22/kalzumeus-software-year-in-review-2014/ -->
+
 # Writing
 
 Technically, rewriting the site to use Hakyll-4 as a static site generator and converting the repository from Darcs to Git were major pieces of technical debt I needed to pay off. Very painful, but it had to be done. I was also pleased to finish my annotated ebook of _Radiance_: I think it's an unjustly obscure piece of literary scientific fiction which shines even more when the historical context is laid out.

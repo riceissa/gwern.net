@@ -299,12 +299,12 @@ Andrew Graham Hodgson M                        buyer     Silk Road 2            
 Stephen Jones         M                        buyer     Evolution   weedybusnis     USA         Georgia        MDMA                               TRUE  2014-10-02 2014-12-20
 Cynthia Jones         F                        buyer     Evolution   weedybusnis     USA         Georgia        MDMA                               TRUE  2014-10-02 2014-12-20
 Blake Benthall        M   Defcon               operator  Silk Road 2                 USA         California                                        FALSE 2014-11-05 2014-11-05
-                      M                                  Silk Road 2                 UK                                                                  2014-01-05 2014-01-06
-                      M                                  Silk Road 2                 UK                                                                  2014-01-05 2014-01-06
-                      M                                  Silk Road 2                 UK                                                                  2014-01-05 2014-01-06
-                      M                                  Silk Road 2                 UK                                                                  2014-01-05 2014-01-06
-                      M                                  Silk Road 2                 UK                                                                  2014-01-05 2014-01-06
-                      F                                  Silk Road 2                 UK                                                                  2014-01-05 2014-01-06
+                      M                                  Silk Road 2                 UK                                                                  2014-11-05 2014-11-07    "20-year-old man from Liverpool"
+                      M                                  Silk Road 2                 UK                                                                  2014-11-05 2014-11-07    "a 19-year-old man from New Waltham in Lincolnshire"
+                      M                                  Silk Road 2                 UK                                                                  2014-11-05 2014-11-07    "a 30-year-old man from Cleethorpes"
+Cei William Owens     M                        seller    Silk Road 2                 UK                                                                  2014-11-05 2014-11-07
+Robin C. Bradshaw     M                        buyer     Silk Road 2                 UK                                                                  2014-11-05 2014-11-07
+Elynedd Ann Owens     F                        buyer     Silk Road 2                 UK                                                                  2014-11-05 2014-11-07
 David Schell          M   CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                          FALSE 2014-11-06 2014-11-20
 Teri Schell           F   CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                          FALSE 2014-11-06 2014-11-20
 Ryan Gustafson        M   Willy.Clock          seller    Agora                       Uganda                     counterfeit currency               TRUE  2014-12-11 2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
@@ -322,6 +322,7 @@ Brandon Hubbard       M                        seller    Evolution   Hubbard    
 Mohammed Ammer Ali    M                        buyer     Evolution   Dark\_Mart      UK                         ricin                              TRUE  2015-02-11 2015-04-08    These two cases have not been confirmed as to the market & seller, but based on the extreme similarity of those two to Fnufnu, I have assigned them to the FBI sting operation on Evolution.
                       M                        buyer     Evolution   Dark\_Mart      UK                         abrin                              TRUE  2015-02-16 2015-04-08    Two unnamed Manchester teenagers.
                       F                        buyer     Evolution   Dark\_Mart      UK                         abrin                              TRUE  2015-02-16 2015-04-08
+                      M                                  Silk Road 2                 UK                         marijuana                                           2015-02-18    Peter Ward/PlutoPete co-conspirator
 Tomáš Jiřikovský      M                        operator  Sheep                       Czech                                                         TRUE  2015-02-22 2015-03-27     Due to translation difficulties, it's unclear when the criminal complaint for money-laundering was actually filed; dated to first official materials referring to his case.
 Andrew Thrall         M                        buyer                                 USA         Indiana        Xanax                              TRUE  2015-03-03 2015-03-05
                       M   Shiny Flakes         seller    Evolution                   Germany                    methamphetamine, cocaine, LSD      TRUE  2015-02-26 2015-03-11
@@ -333,6 +334,9 @@ Channing Lacey        F                        seller    Evolution   Hubbard    
                                                buyer     Evolution   Shiny Flakes    Germany                                                       FALSE 2015-03-10 2015-03-23
 Steven Locke          M                        seller    Evolution   Hubbard         USA         Washington     fentanyl                           FALSE 2015-03-10 2015-03-14
 Justin Moreira        M   jd497                buyer     Agora       weaponsguy      USA         Massachusetts  gun                                FALSE 2015-04-02 2015-04-03
+
+
+
 
 # Confirmed
 ## Agora
@@ -513,6 +517,7 @@ A [Reddit user](http://www.reddit.com/user/xxcxcxc) [claims in June 2014](http:/
 After the SR bust in October 2013, the Devon UK seller of accessories like marijuana seeds/MBB+ packaging/[kratom](!Wikipedia) ("PlutoPete"), reported he had been [raided & questioned](/docs/sr/2013-10-03-plutopete.mht "Title: WARNING PLUTOPETE HAS BEEN RAIDED! MOVE YOUR DRUGS NOW; Post by: RR on October 03, 2013, 12:14 am") and likely charged with his personal drugs^["My solicitor is confidant [sic] I've broken no UK laws in selling my products, but they did find a small amount of class A and class B drugs that were for my own personal use so i will be charged with that at the very least."]; he was eventually charged in 2015 with ["9 charges inc conspiracy and supply class A and B"](https://twitter.com/plutopete/status/568016817534447616).
 3 more in Manchester were [arrested & charged](http://www.reddit.com/r/SilkRoad/comments/1nz4yl/four_men_arrested_in_uk_over_role_in_silk_road/); the description of a three-man seller mailing from Manchester seems to match at least two SR sellers, "JesusOfRave" and "TechnoHippy" (or possibly a "Mangled1"?), the former of whom [quickly denied being arrested](http://silkroad5v7dywlc.onion/index.php?topic=1381.0;all), while the latter last appeared on the SR forums in mid-September 2013, he resurfaced on the SR2 forums [likewise denying any involvement](http://silkroad5v7dywlc.onion/index.php?topic=2889.0 "Technohippy is back! (and now verified)").
 
+
 <!-- I believe at least two of the vendors were based in Manchester, and I know one of them sold bitcons for cash deposits to a bank account so if it is the vendor I am thinking of who got busted that's probably why. -->
 <!-- There was a small UK vendor called something like Mangled1 who got busted.
 Ordering a reship on a load of pills from the Netherlands to his house, the first shipment got caught. The second, the police replaced the pills with vitamins of the same colour. A few minutes after it was delivered they knocked down his door, he was sitting there surrounded by all his drugs, laptop, etc.
@@ -582,6 +587,10 @@ In April 2014, the [NZ man  Peter James Grossett was convicted](http://www.stuff
 (The article mentions he bought from another market after SR1 shut down, but not which one - it could have been Sheep or Tormarket or BMR given the broad time range.)
 
 In December 2014, the SR1 MDMA/marijuana buyers Daniel Wayne Fowler & Lisa Marie Clark were sentenced after an investigating beginning with customs intercepts of German/Belgium packages in September 2013 ([1](http://www.stuff.co.nz/auckland/63779228/Silk-Road-drug-buyers-in-court "Silk Road drug buyers in court") [2](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=11368206 "Man imported drugs like 'ordering pizza'")).
+
+A [2015 _NZ Herald_ article](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=11432096 "Drug mail or mule: risks the same; Customs warns users who buy online after increase in intercepted packages") reports some aggregate information from Customs:
+
+> Cocaine catches increased from five in 2011/12 to 54 in 2013/14, LSD from three to 85 in the same period, and Ecstasy from 85 to 139. Mr Berry said the interceptions were generally smaller amounts, and did not indicate a similar increase in overall quantities being seized across all entry points to the country. About 2.4 million items of mail come into New Zealand every month.
 
 ### Sweden
 
@@ -769,8 +778,14 @@ December 2014 saw the SR2 buyer Andrew Graham Hodgson sentenced for importing me
 
 During the 5 November 2014 busted of SR2, the [authorities announced](http://www.nationalcrimeagency.gov.uk/news/news-listings/483-international-law-enforcement-deals-major-blow-to-dark-web-markets) [6 UK arrests](http://www.theguardian.com/technology/2014/nov/07/six-britons-arrested-silk-road-dark-web-takedown-online-drugs), but no details have emerged since besides the basic description given to the press (were any of them [Budworx or Top\_Gear\_UK](https://www.reddit.com/r/DarkNetMarkets/comments/2lkpaz/6_vendors_arrested_in_uk/)?):
 
-> The NCA described the six British arrests as “significant”, adding that a large amount of computer equipment has been seized at all the addresses searched and will now be forensically examined. The six – a 20-year-old man from Liverpool, a 19-year-old man from New Waltham in Lincolnshire, a 30-year-old man from Cleethorpes, a 29-year-old man from Aberdovey in Wales and a man and woman, both 58, also from Aberdovey, have all been bailed after being interviewed.
+> The NCA described the six British arrests as “significant”, adding that a large amount of computer equipment has been seized at all the addresses searched and will now be forensically examined. The six – a 20-year-old man from Liverpool, a 19-year-old man from New Waltham in Lincolnshire, a 30-year-old man from Cleethorpes [Lincolnshire], a 29-year-old man from Aberdovey in Wales and a man and woman, both 58, also from Aberdovey, have all been bailed after being interviewed.
 
+In February 2015, [charges were announced for 5 people](http://motherboard.vice.com/read/silk-road-fallout-5-more-charged-in-the-uk-with-deep-web-crimes "Silk Road Fallout: 5 More Charged in the UK with Deep Web Crimes"):
+
+>  A 29-year-old man from the UK was also charged today, a National Crime Agency spokesperson told me. His 11 charges include the possession of four stun guns which were disguised as other weapons; conspiring with Peter Ward to supply a quantity of cannabis; and another charge of the importation of cocaine. Another three people were charged with drug offenses. They are 29-year-old Cei William Owens, charged with supplying Class A and B drugs; and 59-year-old Robin Clinton Bradshaw and 58-year-old Elynedd Ann Owens, each charged with possession of Class A and B drugs. They are all residents of the Aberdovey area of Wales.
+
+One of the 5 was PlutoPete, whose case was already known; the second person is some sort of connection to PlutoPete and is a new case; and the last 3 were noted to line up with the mentioned ages & locations of 3 of the original 6, apparently indicating that one was a seller and the other two were a buyer.
+Of the original 6, this seems to leave 3 unaccounted: the 20-yo-Liverpool, the 19-yo-Lincolnshire, and the 30-yo-Cleethorpes.
 
 ### USA
 
@@ -852,6 +867,7 @@ The original [Operation Onymous press release](http://www.eurojust.europa.eu/pre
 6. Teri Schell; California USA; SR2 seller CaliforniaCanabis [DONE]
 7. ???; Switzerland; [operator of the scam site "Black Market"](http://www.lematin.ch/suisse/Le-FBI-fait-interpeller-un-Vaudois-chez-lui/story/24253596 "Le FBI fait interpeller un Vaudois chez lui Darknet: Un informaticien est accusé d'avoir créé un site de vente d'armes, de drogues et de faux papiers.")
 8. ???; Barcelona Spain; [seems to have been the operator of a scam site](http://www.guardiacivil.es/es/prensa/noticias/5146.html "La Guardia Civil detiene a uno de los objetivos de la macro operación ONYMOUS contra los mercados clandestinos en la Deep Web") ([translation](https://www.reddit.com/r/DarkNetMarkets/comments/2m3eyo/some_onymous_bust_in_spain/)) claiming to sell carding-related goods, perhaps "Super Note Counter" or "Sol's Unified USD Counterfeit's" or "Fast Cash!" (all named in the [Operation Onymous seizure papers](/docs/sr/20141107-operationonymous-seizureforfeiture.pdf))
+9. 6 UK arrests; 3 have been named publicly, and the charges suggest 1 seller & 2 buyers (unknown which)
 
 <!-- Operation Onymous:
 
@@ -862,22 +878,7 @@ warning? https://www.reddit.com/r/DarkNetMarkets/comments/2ihjn6/upcoming_high_p
 down: alpaca, bluesky, pandora, bungee, topix2, cr3
 
 - 2 Irish arrests: http://www.independent.ie/irish-news/suspected-online-international-drugs-ring-smashed-by-gardai-30724000.html / http://www.belfasttelegraph.co.uk/news/local-national/republic-of-ireland/two-held-over-darknet-drugs-ring-30724056.html / http://www.irishexaminer.com/breakingnews/ireland/gardai-seize-drugs-after-probe-into-darknet-drug-operation-650036.html / http://www.bbc.com/news/world-europe-29938685 / http://www.herald.ie/news/busted-internet-drugs-kingpin-has-1m-in-bank-30725076.html / http://www.herald.ie/news/courts/dublin-football-stars-brother-accused-of-using-the-darknet-to-sell-drugs-30734228.html https://www.reddit.com/r/DarkNetMarkets/comments/2lha8y/this_was_ranking_in_this_sub_then_deleted_two/ - TheHulkster or JerseyCow? "The Irish vendor was TheHulkster/JC. Or at least the Irish side of Jersey Cow anyway. The English side of the JC operation, who is now Funky Unicorn is also mia. ( maybe part of the British raids, I do not know.) JC has flipped." http://kingdomazsnvzfuq.onion/index.php?topic=157.0
-- 6 UK arrests http://www.nationalcrimeagency.gov.uk/news/news-listings/483-international-law-enforcement-deals-major-blow-to-dark-web-markets http://www.theguardian.com/technology/2014/nov/07/silk-road-20-operation-onymous-dark-web-drugs-takedown - Budworx https://www.reddit.com/r/DarkNetMarkets/comments/2lipfw/budworx_orders_potentially_compromised/ https://www.reddit.com/r/DarkNetMarkets/comments/2lkpaz/6_vendors_arrested_in_uk/ & account banned on Agora ?
 - 17 EU arrests total
-
-SR2 server in Lithuania: http://it.lrytas.lt/ismanyk/jav-slaptieji-agentai-ispudinga-laimiki-aptiko-lietuvoje.htm / https://twitter.com/lamoustache/status/532524736677703680
-http://nytimes.com/2014/11/08/world/europe/dark-market-websites-operation-onymous.html :
-
-> The investigation, nicknamed Operation Onymous, targeted mostly sellers and deactivated upward of 50 websites like Silk Road 2.0, Mr. Quid's Forum, Paypal Center, Cannabis Road Markets and Blue Sky, according to Europol...The operation was led by American agencies - the F.B.I. and Homeland Security Investigations - and coordinated by Europol in the various European countries with raids that started on Wednesday and Thursday but blossomed into a broad sweep by Friday. Working in English as a common language, investigators made arrests in Eastern and Western Europe, including France, Germany, Spain, and England.
-
-7: down, pandora, bungee, topix2, the hub, tor bazaar
-9: lessee... topix, pandora, blue sky, the hub, tor bazaar - down; cloud9is throwing a 404, and alpaca still has the same message about coming back up in a few days; tom and tom forums are down
-
-lots of bogus addresses seized: https://www.nikcub.com/posts/onymous-part1/
-
-seizure filing:
-14-Mag-2427 Southern District of New York
-Southern District of New York   14-Mag-2427 11/06/2014
 
 2 servers in France, 0 arrests? http://www.lemonde.fr/pixels/article/2014/11/11/les-coulisses-de-l-operation-onymous-contre-des-dizaines-de-sites-caches-illegaux_4521827_4408996.html
 -->

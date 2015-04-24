@@ -54,7 +54,8 @@ Similarly, if there were >60 buyer arrests (I double because there seem to be mo
 - WhiteDreams https://www.reddit.com/r/SilkRoad/comments/1vy722/scam_vendor_whitedreams_threatens_silk_road_mods/
 - DebbieDelites (Evolution): doxed customer, posting his address to Evolution market https://www.reddit.com/r/DarkNetMarkets/comments/2xkvlw/ama_ama_with_debbiesdelites_is_open/
 -->
-<!-- TODO: after finishing, find first usage of "CD" and define -->
+<!-- TODO: after finishing, find first usage of "CD" and define
+ping V on The Hub; he might know of some SR2-related cases -->
 
 # Table
 
@@ -133,7 +134,7 @@ Blanks                M   SourDieselMan        seller    Silk Road 1            
                                                buyer     Silk Road 1                 Australia                                                     TRUE  2013-06-01 2013-07-05
 Sheldon Kennedy       M   edgarnumbers         seller    Silk Road 1 digitalink      USA         Nebraska       methylone, gun                     TRUE  2013-06-28 2014-02-20
                       M                        buyer     BMR         Grass4Cash      Australia                  gun                                TRUE  2013-06-29 2015-03-05    The Bunger complaint does not specify when the Australian buyer was arrested, but since the package was intercepted 2013-06-28, it has to be 2013-06-29 or later.
-                      F   cirrus               staff     Silk Road 1                 USA                        Bitcoins                           FALSE 2013-07-20 2014-12-19    It's unknown how cirrus was flipped or whether her legal was even related to SR1/bitcoins in the first place.
+                      F   cirrus               staff     Silk Road 1                 USA                        Bitcoin                            FALSE 2013-07-20 2014-12-19    It's unknown how cirrus was flipped or whether her legal was even related to SR1/bitcoins in the first place.
 Michael Kitto         M                        buyer     Silk Road 1                 NZ                         MDMA, cocaine                      TRUE  2013-07-03 2013-09-09
 Andrew Furness        M                        buyer     Silk Road 1                 NZ                         MDMA, cocaine                      TRUE  2013-07-03 2013-09-09
 Gareth Edlin          M                        buyer     Silk Road 1                 NZ                         MDMA, cocaine                      TRUE  2013-07-03 2013-09-09
@@ -188,9 +189,9 @@ Brandon Howell        M                        seller                           
 Katherine Westbrook   F                        seller                                USA         North Carolina MDMA, mescaline, marijuana         TRUE  2013-11-25 2013-11-30
 Olivia Bolles         F   MDpro                seller    Silk Road 1                 USA         Delaware       Oxycontin, Valium                  FALSE 2013-11-21 2013-11-22
 Alexandra Gold        F   MDpro                seller    Silk Road 1                 USA         Delaware       Oxycontin, Valium                  FALSE 2013-11-21 2013-11-22
-                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE 2013-12-11  2013-12-17     Wellington triplet.
-                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE 2013-12-11  2013-12-17
-                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE 2013-12-11  2013-12-17
+                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE  2013-12-11 2013-12-17     Wellington triplet.
+                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE  2013-12-11 2013-12-17
+                      M                        buyer                                 NZ                         MDMA, LSD, methamphetamine, NBOMe  TRUE  2013-12-11 2013-12-17
 Jason Hagen           M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
 Richard Webster       M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
 Robbie Shelton        M   hammertime           seller    Silk Road 1                 USA         Oregon         methamphetamine                    FALSE 2013-12-17 2013-12-19
@@ -206,8 +207,8 @@ Mado ?                F   WalkaBoot            seller    Silk Road 1            
 Amit Sand             M                        buyer     BMR                         Israel                     gun                                TRUE  2014-01-08 2015-01-18    Unknown seller; BMR connection unconfirmed but highly likely.
                                                buyer                                 Israel                     marijuana                          TRUE  2014-01-12 2014-01-14
 Brian Korff           M   Snowman840           seller    BMR                         USA         Florida        ricin                              FALSE 2014-01-18 2014-01-22
-Robert Faiella        M   BTCKing              seller    Silk Road 1                 USA         Florida        bitcoin                            FALSE 2014-01-26 2014-01-27
-Charlie Shrem         M                        seller    Silk Road 1                 USA         New York       bitcoin                            FALSE 2014-01-26 2014-01-27
+Robert Faiella        M   BTCKing              seller    Silk Road 1                 USA         Florida        Bitcoin                            FALSE 2014-01-26 2014-01-27
+Charlie Shrem         M                        seller    Silk Road 1                 USA         New York       Bitcoin                            FALSE 2014-01-26 2014-01-27
 Kuntal Patel          F                        buyer     BMR         Korff           UK                         abrin                              TRUE  2014-01-26 2014-09-26
 T.S.                  M                        buyer     Silk Road 2 pillbay         Indonesia   West Jakarta   MDMA, LSD                          TRUE  2014-01-31 2015-01-28
 L.A.                  F                        buyer     Silk Road 2 pillbay         Indonesia   West Jakarta   MDMA, LSD                          TRUE  2014-01-31 2015-01-28
@@ -388,7 +389,7 @@ The complaint does not specify the market or seller, but [some careful searching
 ## Black Market Reloaded
 ### Israel
 
-On ~8 January 2014, the [Israeli man Amit Sand was arrested for buying a gun](http://posta.co.il/index.php/widgetkit/%D7%9E%D7%93%D7%95%D7%A8%D7%99%D7%9D-2/%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%97%D7%A9%D7%91/1604-%D7%90%D7%A7%D7%93%D7%97-%D7%94%D7%93%D7%90%D7%A8%D7%A7%D7%A0%D7%98-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%9F "אקדח הדארקנט הראשון: בחבילה שהגיעה לסניף דואר בתל אביב התגלה אקדח מפורק שהוסלק בתוך מגף * מזמין החבילה הודה כי רכש את האקדח ברשת האינטרנט הסודית באמצעות המטבע הדיגיטלי ביטקוין, ובמשטרה תוהים: האם נחשפה דרך חדשה להברחת אמצעי לחימה לישראל?") off a black-market seller for ~$1550 in bitcoins; the first package of parts (mailed 18 December 2013) was discovered by Customs and allowed to go through, and he was arrested after picking up the final second package.
+On ~8 January 2014, the [Israeli man Amit Sand was arrested for buying a gun](http://posta.co.il/index.php/widgetkit/%D7%9E%D7%93%D7%95%D7%A8%D7%99%D7%9D-2/%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%97%D7%A9%D7%91/1604-%D7%90%D7%A7%D7%93%D7%97-%D7%94%D7%93%D7%90%D7%A8%D7%A7%D7%A0%D7%98-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%9F "אקדח הדארקנט הראשון: בחבילה שהגיעה לסניף דואר בתל אביב התגלה אקדח מפורק שהוסלק בתוך מגף * מזמין החבילה הודה כי רכש את האקדח ברשת האינטרנט הסודית באמצעות המטבע הדיגיטלי ביטקוין, ובמשטרה תוהים: האם נחשפה דרך חדשה להברחת אמצעי לחימה לישראל?") off a black-market seller for ~\$1550 in bitcoins; the first package of parts (mailed 18 December 2013) was discovered by Customs and allowed to go through, and he was arrested after picking up the final second package.
 I assign this buy to BMR, since while BMR had closed a week or two before the first package was mailed, the deal could have been agreed upon earlier, and no other major market allowed guns at the time; this may be like the Korff case, where the purchase (ricin, in his case) began on BMR but continued off-market after BMR closed.
 
 ### USA
@@ -419,8 +420,6 @@ There may be additional unknown gun-related BMR USA cases, given the roughly [Ju
 
 By August 2013, the Grass4Cash Australia buyer had been busted and the Grass4Cash investigation was largely mature, but then the next BMR gun arrest was Gun Wise in November 2013; given Force's wording, it sounds like there should be at least 2 unknown busts and many more "compromised accounts" (buyers?), indicating that at least half the cases are missing.
 
-<-- Ricin letter to Obama? https://www.reddit.com/r/SilkRoad/comments/1qqmbx/silk_road_vendor_sent_ricin_to_president_obama/ -->
-
 ## Evolution
 ### Germany
 
@@ -436,7 +435,7 @@ The market & vendor & source of the information is unspecified, but given that t
 (One newspaper article claims they were unrelated, but such a claim beggars belief.)
 
 Two Manchester teenagers [were arrested 16 February 2015](http://www.gmp.police.uk/content/SocialTwitterFeed/A391702C29DD7E8D80257E210039C813 "Teenager admits trying to buy deadly toxin") [for](http://www.independent.co.uk/news/uk/crime/teenager-in-court-charged-with-trying-to-acquire-lethal-toxin-abrin-10054864.html) attempting that month to buy abrin off an unspecified black-market for suicide, after the UK police were informed in January about their negotiations for it.
-The female was released immediately, and the male eventually [received a 12-month referral order](http://www.theguardian.com/uk-news/2015/apr/20/teenager-court-after-abrin-toxin-over-internet " Teenager walks free from court after trying to order lethal toxin over internet: Sixteen-year-old boy from Manchester given 12-month referral order after claiming he attempted to buy abrin to kill himself").
+The female was released immediately, and the male eventually [received a 12-month referral order](http://www.theguardian.com/uk-news/2015/apr/20/teenager-court-after-abrin-toxin-over-internet "Teenager walks free from court after trying to order lethal toxin over internet: Sixteen-year-old boy from Manchester given 12-month referral order after claiming he attempted to buy abrin to kill himself").
 
 ### USA
 
@@ -517,6 +516,7 @@ A [Reddit user](http://www.reddit.com/user/xxcxcxc) [claims in June 2014](http:/
 After the SR bust in October 2013, the Devon UK seller of accessories like marijuana seeds/MBB+ packaging/[kratom](!Wikipedia) ("PlutoPete"), reported he had been [raided & questioned](/docs/sr/2013-10-03-plutopete.mht "Title: WARNING PLUTOPETE HAS BEEN RAIDED! MOVE YOUR DRUGS NOW; Post by: RR on October 03, 2013, 12:14 am") and likely charged with his personal drugs^["My solicitor is confidant [sic] I've broken no UK laws in selling my products, but they did find a small amount of class A and class B drugs that were for my own personal use so i will be charged with that at the very least."]; he was eventually charged in 2015 with ["9 charges inc conspiracy and supply class A and B"](https://twitter.com/plutopete/status/568016817534447616).
 3 more in Manchester were [arrested & charged](http://www.reddit.com/r/SilkRoad/comments/1nz4yl/four_men_arrested_in_uk_over_role_in_silk_road/); the description of a three-man seller mailing from Manchester seems to match at least two SR sellers, "JesusOfRave" and "TechnoHippy" (or possibly a "Mangled1"?), the former of whom [quickly denied being arrested](http://silkroad5v7dywlc.onion/index.php?topic=1381.0;all), while the latter last appeared on the SR forums in mid-September 2013, he resurfaced on the SR2 forums [likewise denying any involvement](http://silkroad5v7dywlc.onion/index.php?topic=2889.0 "Technohippy is back! (and now verified)").
 
+<!-- TODO: "Our campaign against #DarkWeb criminality continues – 5 men in their 20s charged with drug offences on dark web forums...Manchester men face over 40 charges of supplying drugs globally via #DarkWeb forums" https://twitter.com/NCA_UK/statuses/587991263502331905 https://www.reddit.com/r/DarkNetMarkets/comments/32loc7/5_men_in_their_20s_charged_with_drug_offences_on/ - the 3 missing Manchester men + 2 accomplices? asked Joseph Cox to look into it since he already did in another charging case in February 2015 -->
 
 <!-- I believe at least two of the vendors were based in Manchester, and I know one of them sold bitcons for cash deposits to a bank account so if it is the vendor I am thinking of who got busted that's probably why. -->
 <!-- There was a small UK vendor called something like Mangled1 who got busted.
@@ -647,7 +647,7 @@ Green's [plea-agreement](http://www.ice.gov/doclib/news/releases/2013/131107balt
 
 Also in January 2013, [the criminal complaint](http://www.justice.gov/sites/default/files/opa/press-releases/attachments/2015/03/30/criminal_complaint_force.pdf) documenting the DEA corruption during the SR1 investigation mentions offhandedly that the dirty copes Force & Bridge controlled the account "TrustusJones" as of 23 January 2013[^Force-TrustusJones]; TrustusJones was an East Coast marijuana SR1 seller beginning around February 2012 ([forum archive](/docs/sr/sr1f-trustusjones.tar.xz)).
 Curiously, in February 2013, the account announced on the SR1 forums (thread #118718) that he would be selling off all his bitcoins (at ~30% off) in exchange for MoneyPak; this might sound like Force laundering coins from the January 2013 theft, except the use of TrustusJones is noted in internal DEA documents, suggesting that the sales were more about busting any SR1 users unwise enough to buy MoneyPak. (The original TrustusJones had even mocked MoneyPak in an earlier thread, #16083.)
-It's unclear when exactly TJ was busted or how; my best guess, [based on his SR1F posts](https://www.reddit.com/r/DarkNetMarkets/comments/30zdvj/dea_controlled_vendor_trustusjones_sells_his_btc/cq86d53), is that he was busted on or before 29 April 2012, and since there were no obvious problems with his OPSEC, it was probably due to the usual mail-tracing approach.
+It's unclear when exactly TJ was busted or how; my best guess, [based on his SR1F posts](https://www.reddit.com/r/DarkNetMarkets/comments/30zdvj/dea_controlled_vendor_trustusjones_sells_his_btc/cq86d53), is that he was busted on or before 29 April 2012, and his OPSEC sounded good, it was probably due to the usual mail-tracing approach.
 
 [^Force-TrustusJones]: Key quote:
 
@@ -760,10 +760,6 @@ https://www.reddit.com/r/DarkNetMarkets/comments/2jqmok/what_should_those_who_ha
 Bungee54 staff claim two incidents in past year: http://bungee54ft2us2fs.onion/viewtopic.php?pid=4162
 https://www.reddit.com/r/DarkNetMarkets/comments/2l9ap8/bungee54_says_goodbye_good_luck_to_everyone/
 https://www.reddit.com/r/DarkNetMarkets/comments/2looal/bungee54_state_of_operations_update/ -->
-
-<!-- Interways buyer https://www.reddit.com/r/DarkNetMarkets/comments/2juko5/interways_raid_by_police/ ? -->
-
-
 
 ## Silk Road 2 (SR2)
 ### Indonesia
@@ -1009,6 +1005,12 @@ A [Reddit rumor](https://www.reddit.com/r/DarkNetMarkets/comments/2vn7tt/vendor_
 
 A [pseudonymous Redditor](http://www.reddit.com/r/SilkRoad/comments/1o6whp/attention_i_just_made_bail_as_a_buyer/ccpnnh7) claims to have been arrested & charged over SR1 cocaine sometime in 2012, but not convicted.
 
+During 2013 Congressional hearings on Bitcoin, the [Department of Homeland Security's letter to the Congressional committee](/docs/sr/2013-congressbitcoinhearings-dhsletter.pdf) made a curious claim:
+
+> The U.S. Secret Service (USSS) has partnered with Immigration and Customs Enforcement’s (ICE) Homeland Security Investigations (HSI), Drug Enforcement Agency, U.S. Postal Inspection Service, and Internal Revenue Service (IRS) on an investigation into the Silk Road...The purpose of this investigation has been to focus on the identification of the site's main administrator, referred to as Dread Pirate Roberts (DPR). Of recent noteworthy interest was the determination that the suspect who had sent Ricin to President Obama earlier this year was a vendor on the Silk Road site.
+
+There were several ricin letters in 2013, whose senders were prosecuted, but I was unable to turn up any kind of link between them and Silk Road and [discussion produced no additional concrete evidence](https://www.reddit.com/r/SilkRoad/comments/1qqmbx/silk_road_vendor_sent_ricin_to_president_obama/) of what this ricin letter was about, which vendor, or whether they were arrested.
+
 A SR1F user named "East India Traitor" corresponded with DPR1, probably before June 2013, claiming to share inside information on the LE investigations into SR1 & the DoS attacks and that he had spent 6 months in prison related to SR1 activities; I discount his claims as many of them contradict what is now known about the investigations.
 
 A Redditor claims [a friend was arrested at his PO box](http://www.reddit.com/r/SilkRoad/comments/1kluze/has_anyone_in_this_subreddit_actually_ever_gotten/cbqg9h1), a second claims his cousin was [convicted of ordering marijuana & MDMA](http://www.reddit.com/r/SilkRoad/comments/1f1joh/things_i_learned_from_watching_my_cousin_lose_his/) without a controlled delivery, and there were several claims to have been arrested or convicted [in an August 2013 Reddit discussion](http://www.reddit.com/r/SilkRoad/comments/1kluze/has_anyone_in_this_subreddit_actually_ever_gotten/) (these claims are not verifiable).
@@ -1081,7 +1083,8 @@ In aggregate, I would guess that the completeness of the table is highly unlikel
 library(XML)
 # http://www.gwern.net/Black-market%20arrests#table
 arrests <- readHTMLTable("/tmp/burl19627jaF.html",
-    colClasses = c("character", "factor", "character", "factor", "factor", "character", "factor", "factor", "character", "logical", as.Date, as.Date, "character"))[[1]]
+    colClasses = c("character", "factor", "character", "factor", "factor", "character", "factor",
+                   "factor", "character", "logical", as.Date, as.Date, "character"))[[1]]
 # replace all empty-fields/""s with NAs
 arrests[1:10][arrests[1:10] == ""] <- NA
 
@@ -1097,10 +1100,13 @@ arrests <- cbind(arrests, mtabulate(strsplit(gsub(" ", "", as.character(arrests$
 # for those curious who the 12% women are:
 arrests[arrests$Sex=="F" & !is.na(arrests$Sex),]$Name
 
-# how many past cases can we expect to emerge to public notice in the future? not that many; when a case ever becomes public knowledge, it usually does so quickly,
-# as I see a very long but very thin tail of cases popping up more than half a year after they happened.
-# This is helpful to know - we can't know how many forever-unknown cases there are, but at least I can be fairly confident that I've captured many of the
-# public cases and I won't be, say, suddenly overwhelmed next year by a ton of SR1 cases from 2012 popping up and undermining conclusions
+# how many past cases can we expect to emerge to public notice in the future? not that many;
+# when a case ever becomes public knowledge, it usually does so quickly, as I see a very
+# long but very thin tail of cases popping up more than half a year after they happened.
+# This is helpful to know - we can't know how many forever-unknown cases there are, but at
+# least I can be fairly confident that I've captured many of the public cases and I won't
+# be, say, suddenly overwhelmed next year by a ton of SR1 cases from 2012 popping up and
+# undermining conclusions
 hist(as.integer(na.omit(with(arrests, Known - Arrest))))
 ~~~
 

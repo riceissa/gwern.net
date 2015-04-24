@@ -320,6 +320,7 @@ Julian Edgren         M                        buyer                            
 Austin Frembling      M                        buyer     Agora                       USA         California     MDMA                               TRUE  2015-01-15 2015-02-22    Intercepted package. Unknown seller: Going Postal? karmasyndicate? solider?
 Brandon Hubbard       M                        seller    Evolution   Hubbard         USA         Oregon         fentanyl                           FALSE 2015-01-22 2015-03-14
                       M                        buyer                 LucyandMolly    Scandinavia                LSD                                TRUE  2015-01-29 2015-01-31    AndyWither case.
+                      M   Dosensuppe           seller    Agora                       Germany                    gun                                      2015-01-29 2014-02-10
 Mohammed Ammer Ali    M                        buyer     Evolution   Dark\_Mart      UK                         ricin                              TRUE  2015-02-11 2015-04-08    These two cases have not been confirmed as to the market & seller, but based on the extreme similarity of those two to Fnufnu, I have assigned them to the FBI sting operation on Evolution.
                       M                        buyer     Evolution   Dark\_Mart      UK                         abrin                              TRUE  2015-02-16 2015-04-08    Two unnamed Manchester teenagers.
                       F                        buyer     Evolution   Dark\_Mart      UK                         abrin                              TRUE  2015-02-16 2015-04-08
@@ -336,11 +337,16 @@ Channing Lacey        F                        seller    Evolution   Hubbard    
 Steven Locke          M                        seller    Evolution   Hubbard         USA         Washington     fentanyl                           FALSE 2015-03-10 2015-03-14
 Justin Moreira        M   jd497                buyer     Agora       weaponsguy      USA         Massachusetts  gun                                FALSE 2015-04-02 2015-04-03
 
-
-
-
 # Confirmed
 ## Agora
+### Germany
+
+On 29 January 2015, German police searched several locations & [arrested 5 Germans for gun sales](http://www.polizei.bayern.de/lka/news/presse/aktuell/index.html/214987 "Durchsuchungen und Festnahmen wegen illegalem Waffenhandel") (especially for machine gun sales); a [media article](http://www.infranken.de/regional/schweinfurt/SEK-Einsatz-an-FH-Schweinfurt-Die-Vergangenheit-des-Waffennarren;art221,942669 "SEK-Einsatz an FH Schweinfurt: Die Vergangenheit des Waffennarren; Der 25-jährige Student, der in der vergangenen Woche an der Schweinfurter Fachhochschule von einen Sondereinsatzkommando festgenommen wurde, war der Polizei kein Unbekannter") focusing on one of them mentions his appearance in a Vice documentary about Internet sales of guns over presumably the black-markets.
+(It's unclear if or how the other 4 are involved.)
+The next day the Agora gun (and auto/semi-auto gun) vendor Dosensuppe went on vacation, leading to [questions on the Agora forums](http://lacbzxobeprssrfx.onion/index.php/topic,58397.0/ "Dosensuppe BUSTED") about whether he, MaxMustermann or PROJEKTIL was the arrested man.
+Dosensuppe [replied on 11 March 2015](http://lacbzxobeprssrfx.onion/index.php/topic,58397.msg8640671.html#msg8640671) that he had not been arrested but was going on vacation for his personal safety; he did not respond to requests for a PGP signature or posted or sold since.
+Given the Vice connection and the rash of German/Dutch arrests 2014-2015, it seems highly likely that this was either Agora or Evolution associated, and of the few gun sellers, Dosensuppe fits the best.
+
 ### Netherlands
 
 <!-- PurpleLab? https://www.reddit.com/r/DarkNetMarkets/comments/31p6ln/psaarticle_so_my_purplelab_package_came_today/ https://www.reddit.com/r/DarkNetMarkets/comments/31r1kq/oh_man_is_this_purplelab_thing_true/ -->

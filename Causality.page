@@ -30,6 +30,8 @@ This point can be made by listing examples of correlations where we intuitively 
 
     > All causation as we have defined it is correlation, but the converse is not necessarily true, _i.e._ where we find correlation we cannot always predict causation. In a mixed African population of Kaffirs and Europeans, the former may be more subject to smallpox, yet it would be useless to assert darkness of skin (and not absence of vaccination) as a cause.
 
+<!-- For example, consider the strong but noncausal relation between Down syndrome and birth rank, which is confounded by the relation between Down syndrome and maternal age. -->
+<!-- https://en.wikipedia.org/wiki/Rain_follows_the_plow -->
 <!-- TODO: Mexican lemon imports & highway fatalities, R^2^=0.97 http://pubs.acs.org/doi/abs/10.1021/ci700332k "The Trouble with QSAR (or How I Learned To Stop Worrying and Embrace Fallacy)" Johnson 2008 -->
 <!-- Howard, G. S., & Maxwell, S. E. (1980). "The correlation between grades and student satisfaction: A case of mistaken causation?" Journal of Educational Psychology, 72, 810-820. -->
 <!-- IQ and dentistry -->
@@ -223,6 +225,7 @@ The initiative will cost nearly $5 billion through 2019, a hefty sum considering
 - ["Universal Fire"](http://lesswrong.com/lw/hq/universal_fire/)
 - ["Examples for teaching: Correlation does not mean causation"](https://stats.stackexchange.com/questions/36/examples-for-teaching-correlation-does-not-mean-causation)
 - ["Black People Less Likely"](http://slatestarcodex.com/2015/02/11/black-people-less-likely/)
+- ["Spurious Correlations in (Not So) Big Data"](http://startquestion.blogspot.com/2015/04/spurious-correlations.html)
 
 # Appendix
 ## Everything correlates with everything

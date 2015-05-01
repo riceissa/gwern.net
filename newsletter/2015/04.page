@@ -2,7 +2,7 @@
 title: April news
 created: 31 March 2015
 tags: meta
-status: in progress
+status: finished
 belief: log
 ...
 
@@ -10,7 +10,7 @@ This is the April 2015 edition of [the `gwern.net` newsletter](http://eepurl.com
 
 # Writings
 
-- Black-market arrests
+- Nothing finished
 
 # Media
 ## Links
@@ -22,7 +22,7 @@ Everything is heritable:
 Politics/religion:
 
 - ["A Cold War Conundrum: The 1983 Soviet War Scare"](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/a-cold-war-conundrum/source.htm)
-- ["Before you study public opinion, you wonder why policy isn't far better.  After you study public opinion, you wonder why policy isn't far worse."﻿](http://econlog.econlib.org/archives/2011/04/top_40_things_i.html "40 Things I Learned in My First 40 Years")
+- ["Before you study public opinion, you wonder why policy isn't far better. After you study public opinion, you wonder why policy isn't far worse."﻿](http://econlog.econlib.org/archives/2011/04/top_40_things_i.html "40 Things I Learned in My First 40 Years")
 - ["How Napoleon Chagnon Became Our Most Controversial Anthropologist"](http://www.nytimes.com/2013/02/17/magazine/napoleon-chagnon-americas-most-controversial-anthropologist.html?pagewanted=all)
 - ["Why Are There So Few Vegetarians? Most 'vegetarians' eat meat. Huh?"](https://www.psychologytoday.com/blog/animals-and-us/201109/why-are-there-so-few-vegetarians)
 - ["The Live-and-Let-Live System in Trench Warfare in World War I"](http://www.heretical.com/games/trenches.html)
@@ -40,10 +40,12 @@ Statistics/AI/meta-science:
 Psychology/biology:
 
 - ["Genetics and the placebo effect: the placebome"](http://www.gwern.net/docs/nootropics/2015-hall.pdf), Hall et al 2015 ([excerpts](https://plus.google.com/103530621949492999968/posts/JCmp4FveEnX))
+- ["CRISPR/Cas9-mediated gene editing in human tripronuclear zygotes"](http://link.springer.com/content/pdf/10.1007%2Fs13238-015-0153-5.pdf)
 - ["Mice Fall Short as Test Subjects for Some of Humans' Deadly Ills"](http://www.nytimes.com/2013/02/12/science/testing-of-some-deadly-diseases-on-mice-mislead-report-says.html)
 -  ["Rising Plague"](https://entitledtoanopinion.wordpress.com/2013/02/11/rising-plague/)
 - ["Icing Organs: Why scientists are so near and yet so far from being able to cryopreserve organs"](http://www.the-scientist.com/?articles.view/articleNo/34190/title/Icing-Organs/)
 - ["Discrepancies between clinical and autopsy diagnosis and the value of post mortem histology; a meta-analysis and review"](http://www.pathkids.com/autopsy/hasleton%20on%20discrepancies.pdf), Roulson et al 2005 ([excerpts](https://plus.google.com/103530621949492999968/posts/e983tqSEHYE))
+- ["When Daydreaming Replaces Real Life: Should elaborate fantasies be considered a psychiatric disorder?"](http://www.theatlantic.com/health/archive/2015/04/when-daydreaming-replaces-real-life/391319/?single_page=true)
 - ["The Catastrophe: Spalding Gray's brain injury"](http://www.newyorker.com/magazine/2015/04/27/the-catastrophe-oliver-sacks) (medical ethics, dereliction of duty)
 - ["The Price of a Stolen Childhood: When Nicole was a child, her father took pornographic pictures of her that still circulate on the internet"](https://www.nytimes.com/2013/01/27/magazine/how-much-can-restitution-help-victims-of-child-pornography.html?pagewanted=all)
 - ["The Last Magic Show: A Blind Brain Theory of the Appearance of Consciousness"](http://dl.dropbox.com/u/85192141/2012-bakker.pdf)﻿, Bakker
@@ -52,7 +54,7 @@ Psychology/biology:
 Technology:
 
 - ["The Tail at Scale"](http://www.cs.duke.edu/courses/compsci590.4/fall13/838-CloudPapers/dean_longtail.pdf), Dean & Barroso 2013
-- ["Tacit Knowledge, Weapons Design, and the Uninvention of Nuclear Weapons"](http://people.reed.edu/~ahm/Courses/Reed-POL-422-2012-S1_NP/Syllabus/EReadings/07.1/07.1.MacKenzieSpinardi1995Tacit.pdf), MacKenzie & Spinardi 1995
+- ["Tacit Knowledge, Weapons Design, and the Uninvention of Nuclear Weapons"](/docs/1995-mackenzie.pdf), MacKenzie & Spinardi 1995
 - ["In High-Tech Japan, the Fax Machines Roll On"](http://www.nytimes.com/2013/02/14/world/asia/in-japan-the-fax-machine-is-anything-but-a-relic.html?pagewanted=all)
 
 Economics:
@@ -67,6 +69,7 @@ Economics:
 
 Philosophy:
 
+- ["Universal Love, Said The Cactus Person"](http://slatestarcodex.com/2015/04/21/universal-love-said-the-cactus-person/)
 - [Moral Anti-Realism](http://plato.stanford.edu/entries/moral-anti-realism/index.html)
 
 Fiction:
@@ -78,76 +81,55 @@ Fiction:
 
 ## Books
 
+Fiction:
+
 - _The Sagas of Icelanders_
+
+Nonfiction:
+
+- _The Hall of Uselessness: Collected Essays_, Simon Leys
+
+Manga:
+
+- Tsutomu Nihei: _Blame!_, _Blame! Academy_, _Noise!_: beautiful nonsense. Probably not good works to marathon, because after a few chapters in a row, the visual enjoyability of the architecture and the skulls starts to pall - he uses the same motifs over and over.
 
 ## Film/TV
 
-- _Night at the Museum: Secret of the Tomb_ (2014)
-- _Cinderella_ 2015
-- _Ben-to_
+Live-action:
+
+- [_Cinderella_ 2015](https://en.wikipedia.org/wiki/Cinderella_%282015_film%29): this was more interesting than I had expected. What it seems to be aiming at is a polished, straight/non-revisionist telling of the classic Cinderella story (without the narcissism of _Frozen_ and its instantly-dated tone-deaf snark), but with a minimalist approach to magic and comedy (the animals are only minor elements) with all the romanticism and exaltation of traditionally feminine virtues implied, and a low-key but consistent effort at rationalizing and embedding the fairy-tale into a plausible world (a sort of 1700s England/Italy/France-hybrid small kingdom). For example, the wicked stepmother is indeed wicked and enjoys her small cruelties, but has motives beyond pure malevolence for the mistreatment (aware of her daughters' fecklessness, if she doesn't find them a match, they're doomed); or while Cinderella is escaping from the palace, the prince plausibly orders a pursuit and the coachmen trip a portcullis on their way out to block pursuit, resolving a common objection. The rest of the movie is executed as competently as one expects of a top-tier Disney live-action film: the dresses are naturally almost hyperreal, the settings are overstuffed pastoral of almost Thomas Kinkade-caliber, and Cate Blanchett & Lily James hold down their parts well (the former to simmer and emote, and the latter to be brainless & beautiful - although I will never understand why they did not dye her eyebrows blond as well, a contrast which distracted me in almost every scene). All in all, pretty good and has probably cemented Cinderella's status as a major part of the Disney princess-industry for another generation.
+- [_Night at the Museum: Secret of the Tomb_](https://en.wikipedia.org/wiki/Night_at_the_Museum:_Secret_of_the_Tomb) (2014); an attempt to do a little worldbuilding in providing a backstory for all the antics, and close the franchise (temporarily?) with a theme of maturing and passing on the baton, closing the loop with the first movie; unfortunately it comes off as completely stale, with no gags we didn't get tired of in the first two movies.
+
+Anime:
+
+- [_Atama Yama_](http://myanimelist.net/anime/1370/Atama_Yama): curious short story about a greedy miser who grows a small sprout on his head apparently as punishment, is annoyed by the even smaller visitors to the tree, and then apparently drowns while trying to get rid of it. The story isn't much, but it's much more interesting to listen to the narrator recite it to the traditional music and watch the eccentric animation.
+- [_Ben-to_](https://en.wikipedia.org/wiki/Ben-To): waste of time. Interesting concept which doesn't go anywhere, on top of which the fights are repetitive and unimaginative (if you've seen one you've seen all, as they are all lazy battle-royales and punches which could be, and probably were, clip-arts), they are entertaining neither as realistic nor shonen-superpowered nor parodies, and the series winds up spending most of its time, apparently, on mean-spirited mockery of fujoshi, yuri fanservice, and twincest. Only 2 positive aspects come to mind: the character Sen Yarizui is not, surprisingly, yet another Rei/Yuki-doll-knockoff character; and the final arc is a little more insightful about the nature of competition than expected.
 
 ## Music
-
-Touhou:
-
-- ["少女"](https://www.dropbox.com/s/sn8csg1yjvzi98d/kdfeat.%E7%91%B6%E5%B1%B1%E7%99%BE%E9%9C%8A-seeking-%E5%B0%91%E5%A5%B3.ogg) (KD feat.瑶山百霊; 'SEEKING' {C81}) [trance]
-- ["少女 -Ryutsuki Version-"](https://www.dropbox.com/s/5w41blc8dp1vf92/%E6%9A%97%E7%8C%AAfeat.%E6%B5%81%E6%9C%88-seeking-%E5%B0%91%E5%A5%B3-ryutsukiversion-.ogg?dl=0) (暗猪 feat.流月; 'SEEKING' {C81}) [trance]
-- ["鏡に映らない闇 ～sorairo no tabi～"](https://www.dropbox.com/s/65ven8v7kgs8jn5/%E6%9A%97%E7%8C%AAfeat.%E6%B5%81%E6%9C%88-seeking-%E9%8F%A1%E3%81%AB%E6%98%A0%E3%82%89%E3%81%AA%E3%81%84%E9%97%87%EF%BD%9Esoraironotabi%EF%BD%9E.ogg?dl=0) (暗猪 feat.流月; 'SEEKING' {C81}) [vocal]
-
-- ["月笹船"](https://youtu.be/rpFPDVLDHc0?t=11m41s) (Jersey to Yukaina Nakamatachi; '涼風至' {C86}) [folk]
-
-- ["Bom dia"](https://www.youtube.com/watch?v=0b0iSFPXY4I) (だ feat. ごんだくたー; 'TOHO BOSSA NOVA' {R9}) [bossa nova]
-- ["Yume Rockets"](https://www.youtube.com/watch?v=o-kFjtkJpLU) (Miku; OKUMEIKIBOUNOTOKYOTOZAIJYUU; 'Virtual Songs' {2009}) [electronic/Jpop]
-
-- ["Bonus Track"](https://www.youtube.com/watch?v=son58pCkJC4) (うんちく商事; 'Land der Illusionen' {TK10}) [orchestral]
-- ["Eastern Mystical Dream ~ Ancient Temple"](https://www.youtube.com/watch?v=icwoSvZ9NWA) (うんちく商事; 'Land der Illusionen' {TK10}) [piano]
-- ["IQ69"](https://www.dropbox.com/s/jz9exbzdzrhv79b/soundofswing-inwalkedcats-iq69.ogg) (Sound of Swing; 'In Walked Cat's' {C86}) [jazz]
-- ["Afternoon tea in Tunisia"](https://www.dropbox.com/s/fx0o8lyexy0x70s/soundofswing-inwalkedcats-afternoonteaintunisia.ogg) (Sound of Swing; 'In Walked Cat's' {C86}) [jazz]
-- ["Old Fantasia"](https://www.youtube.com/watch?v=WxFQWI7Thsw) (Sound of Swing; 'In Walked Cat's' {C86}) [jazz]
-
-- ["恋と水と石炭と"](http://otokei-douj.in/tlmc//%5B%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA%5D%20Sisimai-brothers/2009.12.30%20%5BSSM-009%5D%20%E5%A4%A7%E6%A5%BD%E7%AC%A6%20%5BC77%5D/01%20%5B%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E4%B8%89%E5%8F%B7%5D%20%E6%81%8B%E3%81%A8%E6%B0%B4%E3%81%A8%E7%9F%B3%E7%82%AD%E3%81%A8.mp3) (ししまい三号; '大楽符' {C77}) [classical]
-- ["水彩人形"](http://otokei-douj.in/tlmc//%5B%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA%5D%20Sisimai-brothers/2009.12.30%20%5BSSM-009%5D%20%E5%A4%A7%E6%A5%BD%E7%AC%A6%20%5BC77%5D/03%20%5B%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E4%B8%89%E5%8F%B7%5D%20%E6%B0%B4%E5%BD%A9%E4%BA%BA%E5%BD%A2.mp3) (ししまい三号; '大楽符' {C77}) [classical]
-- ["空の間に間に"](http://otokei-douj.in/tlmc//%5B%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA%5D%20Sisimai-brothers/2009.12.30%20%5BSSM-009%5D%20%E5%A4%A7%E6%A5%BD%E7%AC%A6%20%5BC77%5D/09%20%5B%E3%81%97%E3%81%97%E3%81%BE%E3%81%84%E4%B8%89%E5%8F%B7%5D%20%E7%A9%BA%E3%81%AE%E9%96%93%E3%81%AB%E9%96%93%E3%81%AB.mp3) (ししまい三号; '大楽符' {C77}) [classical]
-
-- ["Dazzling You"](https://www.youtube.com/watch?v=a_nQMmi_cH8) (Maurits"禅"Cornelis feat. Vivienne; 'Origin of Love' {C87}) [jazz]
-
-- ["少女綺想曲"](https://www.dropbox.com/s/31lgdtw0hjk18mu/tam%C3%97keigokanzaki-%E6%9D%B1%E6%96%B9%E3%83%90%E3%82%A4%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AF%E6%B0%B8nagarae-maidenscapriccio.ogg) (TAM×KEIGO KANZAKI; _東方バイオリンロック永-NAGARAE-_ {C87}) [instrumental rock]
-- ["エクステンドアッシュ"](https://www.dropbox.com/s/86m42ktwm90ofhq/tam%C3%97keigokanzaki-%E6%9D%B1%E6%96%B9%E3%83%90%E3%82%A4%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AF%E6%B0%B8nagarae-extendash.ogg) (TAM×KEIGO KANZAKI; _東方バイオリンロック永-NAGARAE-_ {C87}) [instrumental rock]
-- ["月見草"](https://www.dropbox.com/s/hj9k4x5wcq9bgri/tam%C3%97keigokanzaki-%E6%9D%B1%E6%96%B9%E3%83%90%E3%82%A4%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AF%E6%B0%B8nagarae-eveningprimrose.ogg) (TAM×KEIGO KANZAKI; _東方バイオリンロック永-NAGARAE-_ {C87}) [instrumental rock]
-
-- ["至極真っ当なる驕りと遊戯～竹取飛翔"](https://www.dropbox.com/s/4b2i385a6f32wa2/ibiza-fantasygirlwaryongkangoriginalsoundtrack-%E8%87%B3%E6%A5%B5%E7%9C%9F%E3%81%A3%E5%BD%93%E3%81%AA%E3%82%8B%E9%A9%95%E3%82%8A%E3%81%A8%E9%81%8A%E6%88%AF.ogg) (Ibiza; 'Fantasy girl War Yongkang Original Soundtrack' {C87}) [orchestral]
-- ["私たちはこれから～廃獄ララバイ"](https://www.dropbox.com/s/1chqopfw5zvbato/cobu-fantasygirlwaryongkangoriginalsoundtrack-%E7%A7%81%E3%81%9F%E3%81%A1%E3%81%AF%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89%EF%BD%9E%E5%BB%83%E7%8D%84%E3%83%A9%E3%83%A9%E3%83%90%E3%82%A4.ogg) (Cobu; 'Fantasy girl War Yongkang Original Soundtrack' {C87}) [orchestral]
-- ["灰燼～ラストリモート"](https://www.dropbox.com/s/0fqxfpzi4311oic/cobu-fantasygirlwaryongkangoriginalsoundtrack-%E7%81%B0%E7%87%BC%EF%BD%9E%E3%83%A9%E3%82%B9%E3%83%88%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88.ogg) (Cobu; 'Fantasy girl War Yongkang Original Soundtrack' {C87}) [orchestral]
-- ["今こそ月の満ちる時～エクステンドアッシュ"](https://www.dropbox.com/s/tlx1x1t5l2qfzqf/cobu-fantasygirlwaryongkangoriginalsoundtrack-%E4%BB%8A%E3%81%93%E3%81%9D%E6%9C%88%E3%81%AE%E6%BA%80%E3%81%A1%E3%82%8B%E6%99%82.ogg) (Cobu; 'Fantasy girl War Yongkang Original Soundtrack' {C87}) [orchestral]
-- ["STARDUST HERO～恋色マスタースパーク"](https://www.dropbox.com/s/atrevtmyeedlvqk/cobu-fantasygirlwaryongkangoriginalsoundtrack-stardusthero.ogg) (Cobu; 'Fantasy girl War Yongkang Original Soundtrack' {C87}) [orchestral]
-- ["MIND OF SPACE～千年幻想郷"](https://www.dropbox.com/s/xwywo0klbrbijb0/cobu-fantasygirlwaryongkangoriginalsoundtrack-mindofspace.ogg) (Cobu; 'Fantasy girl War Yongkang Original Soundtrack' {C87}) [orchestral]
-- ["Flanhelp Op.1-496～U.Nオーエンは彼女なのか？"](https://www.dropbox.com/s/ajs3uoydqp4i52c/cobu-fantasygirlwaryongkangoriginalsoundtrack-flanhelpop1496%EF%BC%9F.ogg) (Cobu; 'Fantasy girl War Yongkang Original Soundtrack' {C87}) [orchestral]
-
-- ["マンドラゴラの庭"](https://www.dropbox.com/s/mi485le47loy1wo/siva-gensokyostpatricksday-%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%B4%E3%83%A9%E3%81%AE%E5%BA%AD.ogg) (siva; _Gensokyo St. Patrick's Day_ {K10}) [Celtic]
-- ["Rince Oiche"](https://www.dropbox.com/s/o2w97h60hpq0tw2/escarmew-gensokyostpatricksday-rinceoiche.ogg) (Escarmew; _Gensokyo St. Patrick's Day_ {K10}) [Celtic]
-
-- ["Sleepy Maiden"](https://www.youtube.com/watch?v=Pdmq-BgQiRU) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
-- ["Septette for a Sleepy Princess"](https://www.youtube.com/watch?v=6o8h-HgFgB0) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
-- ["籠居漏水"](https://www.youtube.com/watch?v=B3_04qNCHMo) (PIROPARU; 'Kyouon no Ooi Ryouriten' {Reitaisai SP}) [instrumental]
-- ["Lotus World"](https://www.youtube.com/watch?v=dR9t3_SM9cE) (PIROPARU; 'Kyouon no Ooi Ryouriten' {Reitaisai SP}) [instrumental]
-- ["Going back to Sleeping Night"](https://www.youtube.com/watch?v=A24ZJz0IUws) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
-- ["Drowsy Eyes"](https://www.youtube.com/watch?v=FrU6xfbLyRk) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
-- ["A Maiden's Quiet Sleep"](https://www.youtube.com/watch?v=DRAujB9XmGs) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
-- ["Sleeping Asia"](https://www.youtube.com/watch?v=u8XqTnkMTco) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
-- ["Reach for the Dream, Immortal Smoke"](https://www.youtube.com/watch?v=oBydaD3jBZU) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
-- ["Temptation of the Eternal Night"](https://www.youtube.com/watch?v=1sQcqdJhGmE) (Marasy; '幻想遊戲<眠>2' {C86}) [classical]
 
 Doujin:
 
 - ["Lost my music"](https://www.dropbox.com/s/e4wuxgol6j5ggrl/tamgensougakudansatorukousaki-suzumiyaharuhinokyouentherecitalofharuhisuzumiya-lostmymusic.ogg) (TAM, Gensou Gakudan, Satoru Kousaki; _Suzumiya Haruhi no Kyouen_ {2007}) [classical]
 - ["Rider / The Distant Sea and Holy Land"](https://www.dropbox.com/s/x2f469w29wptreq/tam%C3%97arunaryuki-fateviolinzero-riderthedistantseaandholyland.ogg) (TAM×Aruna Ryuki; _Fate Violin Zero_ {M3-29}) [instrumental rock]
 
+Touhou:
+
+- ["少女"](https://www.dropbox.com/s/sn8csg1yjvzi98d/kdfeat.%E7%91%B6%E5%B1%B1%E7%99%BE%E9%9C%8A-seeking-%E5%B0%91%E5%A5%B3.ogg) (KD feat.瑶山百霊; _SEEKING_ {C81}) [trance]
+- ["少女 -Ryutsuki Version-"](https://www.dropbox.com/s/5w41blc8dp1vf92/%E6%9A%97%E7%8C%AAfeat.%E6%B5%81%E6%9C%88-seeking-%E5%B0%91%E5%A5%B3-ryutsukiversion-.ogg?dl=0) (暗猪 feat.流月; _SEEKING_ {C81}) [trance]
+- ["鏡に映らない闇 ～sorairo no tabi～"](https://www.dropbox.com/s/65ven8v7kgs8jn5/%E6%9A%97%E7%8C%AAfeat.%E6%B5%81%E6%9C%88-seeking-%E9%8F%A1%E3%81%AB%E6%98%A0%E3%82%89%E3%81%AA%E3%81%84%E9%97%87%EF%BD%9Esoraironotabi%EF%BD%9E.ogg?dl=0) (暗猪 feat.流月; _SEEKING_ {C81}) [vocal]
+- ["月笹船"](https://youtu.be/rpFPDVLDHc0?t=11m41s) (Jersey to Yukaina Nakamatachi; _涼風至_ {C86}) [folk]
+- ["Bom dia"](https://www.youtube.com/watch?v=0b0iSFPXY4I) (だ feat. ごんだくたー; _TOHO BOSSA NOVA_ {R9}) [bossa nova]
+- ["Bonus Track"](https://www.youtube.com/watch?v=son58pCkJC4) (うんちく商事; _Land der Illusionen_ {TK10}) [orchestral]
+- ["Eastern Mystical Dream ~ Ancient Temple"](https://www.youtube.com/watch?v=icwoSvZ9NWA) (うんちく商事; _Land der Illusionen_ {TK10}) [piano]
+- ["IQ69"](https://www.dropbox.com/s/jz9exbzdzrhv79b/soundofswing-inwalkedcats-iq69.ogg) (Sound of Swing; _In Walked Cat's_ {C86}) [jazz]
+- ["Afternoon tea in Tunisia"](https://www.dropbox.com/s/fx0o8lyexy0x70s/soundofswing-inwalkedcats-afternoonteaintunisia.ogg) (Sound of Swing; _In Walked Cat's_ {C86}) [jazz]
+
 Kantai Collection:
 
-- ["全艦娘、突撃！(艦隊決戦アレンジ)"](https://www.youtube.com/watch?v=PtmIGANxUL0) (TAMUSIC; '艦これメタル' {C87}) [metal]
-- ["母港"](https://www.youtube.com/watch?v=NOdCBjKhKQk) (TAMUSIC; '艦これメタル' {C87}) [metal]
+- ["全艦娘、突撃！(艦隊決戦アレンジ)"](https://www.youtube.com/watch?v=PtmIGANxUL0) (TAMUSIC; _艦これメタル_ {C87}) [metal]
+- ["母港"](https://www.youtube.com/watch?v=NOdCBjKhKQk) (TAMUSIC; _艦これメタル_ {C87}) [metal]
+- ["昼戦〜戦乙女の行進〜"](https://www.dropbox.com/s/kc5bxnewxvz3nqy/%E4%BC%8A%E8%97%A4%E7%BF%BC-kantaiphilharmonicorchestra-%E6%98%BC%E6%88%A6%E3%80%9C%E6%88%A6%E4%B9%99%E5%A5%B3%E3%81%AE%E8%A1%8C%E9%80%B2%E3%80%9C.ogg) (伊藤 翼; _Kantai Philharmonic Orchestra_ {C86}) [orchestral]
 
-- ["昼戦〜戦乙女の行進〜"](https://www.dropbox.com/s/kc5bxnewxvz3nqy/%E4%BC%8A%E8%97%A4%E7%BF%BC-kantaiphilharmonicorchestra-%E6%98%BC%E6%88%A6%E3%80%9C%E6%88%A6%E4%B9%99%E5%A5%B3%E3%81%AE%E8%A1%8C%E9%80%B2%E3%80%9C.ogg) (伊藤 翼; 'Kantai Philharmonic Orchestra' {C86}) [orchestral]
-- ["鎮守府の序曲"](https://www.dropbox.com/s/znixxhsporh9lqq/%E4%BC%8A%E8%97%A4%E7%BF%BC-kantaiphilharmonicorchestra-%E9%8E%AE%E5%AE%88%E5%BA%9C%E3%81%AE%E5%BA%8F%E6%9B%B2.ogg) (伊藤 翼; 'Kantai Philharmonic Orchestra' {C86}) [orchestral]
+Vocaloid:
 
-- ["Day Battle (Cannons and Torpedoes, Fire!)"](https://www.youtube.com/watch?v=oPFONA8ybpw) (Marasy; _Fleet Piano Collection_ {C87}) [classical]
+- ["Yume Rockets"](https://www.youtube.com/watch?v=o-kFjtkJpLU) (Miku; OKUMEIKIBOUNOTOKYOTOZAIJYUU; _Virtual Songs_ {2009}) [electronic/Jpop]

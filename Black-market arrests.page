@@ -154,6 +154,9 @@ Jenna White           F   NOD                  seller    Silk Road 1            
 Luke Hanley           M                        buyer     Silk Road 1                 Australia                  25c, 25i, amphetamine              TRUE  2013-08-01 2014-04-01     I guess this to be August given the phrasing of "just months" before October 2013. Note despite the similar  date, this cannot be the other Australian buyer as Hanley was only fined & given suspended sentence in 2014.
 Matthew Collins       M                        buyer     Silk Road 1                 NZ                         MDMA, LSD, marijuana               TRUE  2013-08-01 2015-04-11
 Jared Underwood       M                        buyer     Silk Road 1                 NZ                         MDMA, LSD, marijuana               TRUE  2013-08-01 2015-04-11
+Ryan Thomas McManus   M   sonicdrone           seller    Silk Road 1                 Ireland                    cocaine, mephedrone, MDMA, LSD     TRUE  2013-08-05 2015-04-29
+Ryan Milligan         M   sonicdrone           seller    Silk Road 1                 Ireland                    cocaine, mephedrone, MDMA, LSD     TRUE  2013-08-05 2015-04-29
+Connor Devenney       M   sonicdrone           seller    Silk Road 1                 Ireland                    cocaine, mephedrone, MDMA, LSD     TRUE  2013-08-05 2015-04-29
 Nicholas C. Moffitt   M                        buyer     Silk Road 1                 USA         New York       heroin, Xanax, Suboxone, cocaine         2013-08-07 2013-08-27
 Cornelis Slomp        M   SuperTrips           seller    Silk Road 1                 USA         Florida        MDMA, cocaine, LSD                 TRUE  2013-08-27 2014-02-15    The ST documents mention 11 other people who worked with ST (one UGS); there are no reports that the other 10 were arrested.
 Andrew Harrison       M                        buyer     Silk Road 1                 NZ                         MDMA, NBOMe                        TRUE  2013-09-01 2014-04-21    Media article says only "September".
@@ -336,6 +339,8 @@ Channing Lacey        F                        seller    Evolution   Hubbard    
                                                buyer     Evolution   Shiny Flakes    Germany                                                       FALSE 2015-03-10 2015-03-23
                                                buyer     Evolution   Shiny Flakes    Germany                                                       FALSE 2015-03-10 2015-03-23
 Steven Locke          M                        seller    Evolution   Hubbard         USA         Washington     fentanyl                           FALSE 2015-03-10 2015-03-14
+Michael Regan         M                        buyer                                 USA         New Jersey     LSD                                TRUE  2015-03-26 2015-03-28
+Ryan Andrew Backer    M                        buyer                                 USA         Alabama        LSD                                TRUE  2015-03-26 2015-03-28
 Justin Moreira        M   jd497                buyer     Agora       weaponsguy      USA         Massachusetts  gun                                FALSE 2015-04-02 2015-04-03
 Basil Assaf           M                        seller                                UK                                                            TRUE             2015-04-14     These are the 5 Manchester men whose charges were announced on Twitter, but no details on them beyond names and "supplying drugs globally via DarkWeb forums".
 Jamie Roden           M                        seller                                UK                                                            TRUE             2015-04-14
@@ -365,6 +370,11 @@ The article does not seem to specify who the second was, but it may have been Ho
 On 11 December 2014, the American [Ryan Andrew Gustafson was arrested in Uganda](http://www.nytimes.com/aponline/2014/12/18/us/ap-us-counterfeiting-uganda.html "Feds: Uganda-Based Man Counterfeited $2M in Cash") for counterfeiting money ([press release](http://www.justice.gov/opa/pr/criminal-charges-filed-against-us-citizen-connection-multi-million-dollar-international-cyber); [complaint](/docs/sr/2014-12-17-agora-willyclock-complaint.pdf); [docket](/docs/sr/2014-12-22-pacer-willyclock.maff); [Agora forums](http://lacbzxobeprssrfx.onion/index.php/topic,15752.msg3148560.html#msg3148560)); he was the seller "Willy.Clock" who had sold on Evolution until banned and then Agora & his own site.
 He had been uncovered after an American user of his counterfeit currency was detected, the packages sent by Willy.Clock profiled, his fingerprints found, the reshipper located in Uganda, and then an undercover deal set up.
 (Willy.Clock worked closely with "Mr Mouse" and "Ink", who may be compromised.)
+
+<!-- possible future case:
+### UK
+'Stone Island'/StoneIsland, linked to OD deaths http://www.bbc.com/news/uk-wales-30317747 http://www.dailymail.co.uk/news/article-3059414/Coroner-writes-Home-Secretary-online-drug-dealers-hide-dark-web-student-brothers-died-taking-massive-overdose-ecstasy.html https://www.reddit.com/r/DarkNetMarkets/comments/346n4d/psaarticle_agorda_brothers_died_side_by_side_from/
+-->
 
 ### USA
 
@@ -549,7 +559,11 @@ On 21 December 2013, the French seller "WalkaBoot" ([profile](http://antilop.cc/
 
 ### Ireland
 
-On [20 December 2013](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR.php) ([indictment](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR/Jones,%20Andrew,%20et%20al%20\(Silk%20Road\)%20Indictment.pdf)), the former SR administrator/moderator/employee "Libertas" (also of Silk Road 2) was [arrested in Wicklow, Ireland](http://www.rte.ie/news/business/2013/1220/494111-silk-road-arrest/ "Former Silk Road administrator arrested in Wicklow") but apparently [made bail](http://www.forbes.com/sites/andygreenberg/2013/12/20/feds-indict-three-more-alleged-employees-of-the-silk-roads-dread-pirate-roberts/ "Feds Indict Three More Alleged Employees Of Silk Road's Dread Pirate Roberts") and continues to fight extradition.
+On 5 August 2013, 3 men (Ryan Thomas McManus, Ryan Milligan, Connor Devenney) who were the seller ["sonicdrone"](http://antilop.cc/sr/vendors/f028f01ceb.htm), [were arrested](http://www.belfastlive.co.uk/news/belfast-news/northern-ireland-men-jailed-over-9147435 "Northern Ireland men jailed over running international drugs 'party pack' business; Pair used darknet facility called Silk Road to buy and sell drugs across globe") [in Ireland](http://www.u.tv/News/2015/04/29/Men-jailed-over-dark-web-drugs-offences-36382 "Men jailed over 'dark web' drugs offences: Two men who were involved in an international drugs operation which included purchasing illegal substances on the 'dark web' using Bitcoin currency have been jailed."), and they were sentenced in April 2015; they had been selling a variety of drugs but principally cocaine, mephedrone, MDMA, marijuana, 2C-b, & LSD.
+How they were caught is unclear, but surveillance of a "virtual mailbox facility" they used to receive packages seem to have played a crucial role, possibly sparked by a failed attempt to mail 60g of marijuana to a Canadian customer.
+(Media coverage mentions another pseudonym, "blackwater86", which is the name a mostly-unused SR1F account and not another seller as far as I can tell; possibly it was used in ordering from their American & Chinese supplier.)
+
+On [20 December 2013](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR.php) ([indictment](http://www.justice.gov/usao/nys/pressreleases/December13/JonesetalArrestsSilkRoad2PR/Jones,%20Andrew,%20et%20al%20\(Silk%20Road\)%20Indictment.pdf)), the former SR administrator/moderator/employee "Libertas" (also of Silk Road 2) was [arrested in Wicklow, Ireland](http://www.rte.ie/news/business/2013/1220/494111-silk-road-arrest/ "Former Silk Road administrator arrested in Wicklow") but apparently [made bail](http://www.forbes.com/sites/andygreenberg/2013/12/20/feds-indict-three-more-alleged-employees-of-the-silk-roads-dread-pirate-roberts/ "Feds Indict Three More Alleged Employees Of Silk Road's Dread Pirate Roberts") and continues to fight extradition with hearings initially scheduled for [late July 2015](https://www.irishtimes.com/news/crime-and-law/courts/high-court/extradition-case-of-man-linked-to-silk-road-to-be-heard-in-july-1.2191952 "Extradition case of man linked to 'Silk Road' to be heard in July; Gary Davis, from Kilpedder, Co Wicklow, wanted by US authorities over 'black market' website").
 
 ### Israel
 
@@ -921,6 +935,12 @@ It is known Edgren had been a The Marketplace customer, but TMP had closed down 
 On 3 March 2015, the Indiana University student Andrew Thrall was arrested for importing Xanax pills from Canada which [he had bought "online using bit coins"](http://www.idsnews.com/article/2015/03/delta-tau-delta-member-arrested-for-dealing-xanax "Delta Tau Delta member arrested for dealing Xanax") and [resold to his fraternity](http://www.theindychannel.com/news/local-news/iu-student-accused-of-dealing-drugs-from-fraternity-house "IU student accused of dealing drugs from fraternity house"); the investigation apparently began November 2014, but the media articles did not mention what triggered it (a Customs intercept? or related to the local reselling).
 The seller & market are unknown (suggested sellers include [Quantik](https://www.reddit.com/r/QuantikXanax/comments/2y6wtn/indiana_1k_pills_bust_official_response/), Magicman, & Yacht club).
 
+On 26 March 2015, New Jersey man [Michael Regan was arrested in a CD of LSD ordered from the Netherlands](http://www.nj.com/mercer/index.ssf/2015/03/trenton_man_arrested_on_drug_charges_after_accepti.html "Trenton man arrested on drug charges after accepting package containing LSD").
+
+On the same day, 26 March 2015, Alabama man [Ryan Andrew Backer was also arrested](http://www.foxcarolina.com/story/28631102/teen-arrested-after-allegedly-buying-lsd-online "Teen arrested after allegedly buying LSD online") after a search turned up the LSD he had "ordered...online from a source in the Netherlands".
+While neither order is stated to have been black-market-related, several factors suggest strongly that these two cases are: the simultaneous arrests is unusual but common when a seller has been profiled and multiple packages can be intercepted simultaneously; LSD is particularly difficult to intercept by Customs; both men are young; the quantities are small; Backer's order is explicitly said to have been online rather than through other channels; and German & Dutch sellers have been having particular difficulty 2014-2015.
+(If so, then the specific seller may have been "HollandOnline".)
+
 <!-- 4 possible interconnected Colorado cases: https://bitcointalk.org/index.php?topic=934268.msg10972935#msg10972935 may be DNM-related due to combination of local-bitcoin sales with some drug charges -->
 
 <!--
@@ -997,6 +1017,7 @@ The [Drugs Global Incident Map](http://drugs.globalincidentmap.com/) features ma
     - ["3 face drug charges after package intercepted"](http://www.starnewsonline.com/article/20150402/ARTICLES/150409936)
     - ["Police arrest Baton Rouge couple accused of running drug operation"](https://www.reddit.com/r/DarkNetMarkets/comments/335o5a/check_out_how_they_busted_this_guy_not_sure_if_it/)
     - ["SANE Finds 100 Hits of LSD During Petoskey Search"](http://www.9and10news.com/story/28859819/sane-finds-100-hits-of-lsd-during-petoskey-search)
+    - ["Palm Beach County Resident Arrested for Importing Flakka"](http://www.justice.gov/usao-sdfl/pr/palm-beach-county-resident-arrested-importing-flakka)
 
 Most are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales eg [the TedDanzig incident](https://www.reddit.com/r/SilkRoad/comments/1xq97t/teddanzig_arrested/) or the 4lb PureFireMeds FUD), but of course, some will turn out to be real.
 
@@ -1064,6 +1085,9 @@ Because of his technological savvy ("the founder of Capital Computers and Networ
 Around April-May 2014, the SR2 Californian methamphetamine sellers AoD and Chaletla ceased sales, leading [to](https://www.reddit.com/r/DarkNetMarkets/comments/23qh7y/warning_chaletlatherealchaletla_has_either_turned/) [speculation](https://www.reddit.com/r/DarkNetMarkets/comments/24p8x9/san_jose_bust_sounds_like_chaletlas_team/) about being busted or linked to a [large Californian bust](http://sanfrancisco.cbslocal.com/2014/04/25/silicon-valley-drug-bust-shows-strong-ties-to-mexican-cartels/ "Silicon Valley Drug Bust Shows Strong Ties To Mexican Cartels") [of cartel dealers](http://www.mercurynews.com/crime-courts/ci_25639176/san-jose-meth-bust-leads-arrest-suspected-key "San Jose: Meth bust leads to arrest of suspected key cartel operative, clandestine lab") in methamphetamine & other drugs.
 
 [A Mid-Western Redditor](https://www.reddit.com/r/DarkNetMarkets/comments/2m4otd/reporting_a_local_bust_following_operation_onymous/) reports on 12 November 2014 that an acquaintance had been arrested after picking up a SR2 package; he says that he was a local reseller of LSD & other psychedelics.
+
+On 12 December 2014, the Massachusetts man [Christopher D. Barr was arrested](http://weymouth.wickedlocal.com/article/20150327/NEWS/150326380 "Police: Weymouth man got MDMA shipments from Germany; A 23-year-old Weymouth man faces an assortment of charges after police said they caught him receiving packages from Germany that contained the drugs ecstasy and molly hidden in DVD cases") for importing MDMA & methylone from Germany & China hidden in DVD cases, the police crediting "a tip" for the case.
+While there is no mention of black-markets being involved, DVD cases are a common form of stealth, leading to speculation.
 
 In February 2015, UCF student [Peter John Faucella was arrested in Florida](http://www.orlandosentinel.com/news/breaking-news/os-ucf-student-marijuana-arrest-towers-20150216-story.html "UCF student had marijuana shipped to campus apartment, cops say") after an intercepted package of marijuana; previously, a UCF student [may have posted on the black-market subreddits](https://www.reddit.com/r/DarkNetMarkets/comments/2w52bg/communitydiscussionucf_students_busted_for/copb9se) asking for help.
 

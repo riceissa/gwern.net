@@ -315,6 +315,9 @@ Elynedd Ann Owens     F                        buyer     Silk Road 2            
 David Schell          M   CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                          FALSE 2014-11-06 2014-11-20
 Teri Schell           F   CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                          FALSE 2014-11-06 2014-11-20
 Ryan Gustafson        M   Willy.Clock          seller    Agora                       Uganda                     counterfeit currency               TRUE  2014-12-11 2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
+                      M                        buyer                                 Cyprus                     marijuana                          TRUE  2014-12-15 2014-12-20    Group buy
+                      M                        buyer                                 Cyprus                     marijuana                          TRUE  2014-12-15 2014-12-20
+                      M                        buyer                                 Cyprus                     marijuana                          TRUE  2014-12-15 2014-12-20
 Cheng Le              M   fnufnu               seller    Evolution   Dark\_Mart      USA         New York       ricin                              FALSE 2014-12-23 2015-01-20
                       M   HollandOnline        seller    Agora                       Netherlands                LSD, MDMA, ketamine                TRUE  2014-12-26 2015-03-12
 Ryan Jensen           M                        buyer     Evolution   Hubbard         USA         North Dakota   fentanyl, Xanax, heroin, MDMA      FALSE 2015-01-03 2015-03-14
@@ -343,9 +346,9 @@ Tomáš Jiřikovský      M                        operator  Sheep              
 Andrew Thrall         M                        buyer                                 USA         Indiana        Xanax                              TRUE  2015-03-03 2015-03-05
                       M   Shiny Flakes         seller    Evolution                   Germany                    methamphetamine, cocaine, LSD      TRUE  2015-02-26 2015-03-11     Main seller.
                       M   Shiny Flakes         seller    Evolution                   Germany                    methamphetamine, cocaine, LSD      TRUE  2015-02-26 2015-03-11     Courier.
-                      M                        seller                                Netherlands                marijuana                                2014-03-03 2015-03-11
-                      M                        seller                                Netherlands                marijuana                                2014-03-03 2015-03-11
-                      F                        seller                                Netherlands                marijuana                                2014-03-03 2015-03-11
+                      M                        seller                                Netherlands                marijuana                                2015-03-03 2015-03-11
+                      M                        seller                                Netherlands                marijuana                                2015-03-03 2015-03-11
+                      F                        seller                                Netherlands                marijuana                                2015-03-03 2015-03-11
 Channing Lacey        F                        seller    Evolution   Hubbard         USA         Oregon         fentanyl                           FALSE 2015-03-05 2015-03-14
                                                buyer     Evolution   Shiny Flakes    Germany                                                       FALSE 2015-03-10 2015-03-23    Media coverage of the Shiny Flakes case indicates at least 5 buyers from his Evolution profile or clearnet site were arrested in Germany; further details are not available, so I include them in case they were Evolution buyers. There may've been 38 arrests associated with the 38 homes searched, but the media coverage is unclear.
                                                buyer     Evolution   Shiny Flakes    Germany                                                       FALSE 2015-03-10 2015-03-23
@@ -871,6 +874,10 @@ The [local police investigated](http://www.bellevuereporter.com/news/288854101.h
 <!-- SR2: Checkpoint MDMA seller: customers raided and him busted? http://silkroad5v7dywlc.onion/index.php?topic=3717.0;all http://silkroad5v7dywlc.onion/index.php?topic=52461.0;all -->
 
 ## Unknown
+## Cyprus
+
+In December 2014, 3 men in Northern Cyprus/TRNC [were](https://www.reddit.com/r/DarkNetMarkets/comments/2pvoqc/i_got_caught_life_is_in_ruins_dont_be_stupid_in/) [arrested](https://www.reddit.com/r/trees/comments/2pzrs1/my_life_is_ruined_because_i_have_imported_22/) while trying to pick up a package of marijuana sent from Canada (in a CD, although no signatures were involved).
+
 ### Israel
 
 An [Israeli man Weitzman](http://www.ynet.co.il/articles/0,7340,L-4611084,00.html "חשד: הזמין שוקולד עם קוקאין ברשת האפלה :צעיר מכפר סבא חשוד שהזמין קוקאין דרך ה'דארקנט', והסם הגיע ארצה בתוך פרלינים. קו ההגנה שלו: 'בכלל הזמנתי סמי הזיה שאינם אסורים בחוק'") was arrested ~4 January 2015 after a "darknet" package containing cocaine was detected by a sniffer dog at Customs.

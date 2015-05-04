@@ -27,10 +27,9 @@ The interesting thing is that by even the most generous accounting, all the piec
 
 1. 2001: [SHA-256](!Wikipedia) finalized
 2. 1999-present: [Byzantine fault tolerance](!Wikipedia) (PBFT etc.)
-3. 1999-present: [P2P networks](!Wikipedia) (excluding early networks like [Usenet](!Wikipedia) or [FidoNet](!Wikipedia); [MojoNation](!Wikipedia) & [BitTorrent](!Wikipedia), [Napster](!Wikipedia), [Gnutella](!Wikipedia), [eDonkey](!Wikipedia), [Freenet](!Wikipedia), etc.)
+3. 1999-present: [P2P networks](!Wikipedia) (excluding early networks like [Usenet](!Wikipedia) or [FidoNet](!Wikipedia); [MojoNation](!Wikipedia) & [BitTorrent](!Wikipedia), [Napster](!Wikipedia), [Gnutella](!Wikipedia), [eDonkey](!Wikipedia), [Freenet](!Wikipedia), [i2p](!Wikipedia) etc.)
 4. 1998: Wei Dai, [B-money](http://weidai.com/bmoney.txt)^[In the same vein of 'the network is a third party which keeps a copy of all signed transactions', you could include Ian Grigg's 2005 paper ["Triple Entry Accounting"](http://iang.org/papers/triple_entry.html).]
-5. 1998[^bit-gold]: Nick Szabo, Bit Gold
-6. 1997: [HashCash](!Wikipedia)
+5. 1997: [HashCash](!Wikipedia); 1998[^bit-gold]: Nick Szabo, Bit Gold; ~2000: MojoNation/BitTorrent; ~2001-2003, [Karma](http://kayapo.tribler.org/trac/raw-attachment/wiki/ExistingReputationSystems/KARMA,%20A%20Secure%20Economic%20Framework%20for%20Peer-to-Peer%20Resource%20Sharing.pdf "'KARMA: A Secure Economic Framework for Peer-to-Peer Resource Sharing', Vishnumurthy et al 2003"), etc
 7. 1992-1993: Proof-of-work for spam^[["Pricing via Processing, Or, Combating Junk Mail"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.83.7634&rep=rep1&type=pdf), , Dwork 1993, published in _CRYPTO'92_.]
 8. 1991: [cryptographic timestamps](!Wikipedia "Trusted timestamping")
 9. 1980: [public key cryptography](!Wikipedia)^[This is Satoshi's citation date; Diffie-Hellman, the [first published system](!Wikipedia "Public key cryptography#History"), was in 1976, not 1980.]

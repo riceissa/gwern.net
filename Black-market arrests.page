@@ -306,14 +306,20 @@ Andrew Graham Hodgson M                        buyer     Silk Road 2            
 Stephen Jones         M                        buyer     Evolution   weedybusnis     USA         Georgia        MDMA                               TRUE  2014-10-02 2014-12-20
 Cynthia Jones         F                        buyer     Evolution   weedybusnis     USA         Georgia        MDMA                               TRUE  2014-10-02 2014-12-20
 Blake Benthall        M   Defcon               operator  Silk Road 2                 USA         California                                        FALSE 2014-11-05 2014-11-05
+                      M                        operator  Hydra                       Hungary                                                       TRUE  2014-11-05 2014-11-11
                       M                                  Silk Road 2                 UK                                                                  2014-11-05 2014-11-07    "20-year-old man from Liverpool"
                       M                                  Silk Road 2                 UK                                                                  2014-11-05 2014-11-07    "a 19-year-old man from New Waltham in Lincolnshire"
                       M                                  Silk Road 2                 UK                                                                  2014-11-05 2014-11-07    "a 30-year-old man from Cleethorpes"
 Cei William Owens     M                        seller    Silk Road 2                 UK                                                                  2014-11-05 2014-11-07
 Robin C. Bradshaw     M                        buyer     Silk Road 2                 UK                                                                  2014-11-05 2014-11-07
 Elynedd Ann Owens     F                        buyer     Silk Road 2                 UK                                                                  2014-11-05 2014-11-07
+Neil Mannion          M   TheHulkster          seller    Silk Road 2                 Ireland                    MDMA, LSD, marijuana               TRUE  2014-11-05 2014-11-06
+Richard O'Connor      M   TheHulkster          seller    Silk Road 2                 Ireland                    MDMA, LSD, marijuana               TRUE  2014-11-05 2014-11-06
 David Schell          M   CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                          FALSE 2014-11-06 2014-11-20
 Teri Schell           F   CaliforniaCanibas    seller    Silk Road 2                 USA         California     marijuana                          FALSE 2014-11-06 2014-11-20
+                                                                                     Germany                                                             2014-11-05 2014-11-07    Unknown arrest inferred from Eurojust press release. While not all Operation Onymous arrests were market-related (at least two were simple con artists), they *probably* are, so I include the remainder to be conservative.
+                                                                                     Germany                                                             2014-11-05 2014-11-07    Unknown arrest inferred from Eurojust press release.
+                                                                                     Germany                                                             2014-11-05 2014-11-07    Unknown arrest inferred from Eurojust press release.
 Ryan Gustafson        M   Willy.Clock          seller    Agora                       Uganda                     counterfeit currency               TRUE  2014-12-11 2014-12-20    At least 2 other people were busted as part of the investigation, but they all seem to be unconnected to Agora/Evolution and so I don't include them.
                       M                        buyer                                 Cyprus                     marijuana                          TRUE  2014-12-15 2014-12-20    Group buy
                       M                        buyer                                 Cyprus                     marijuana                          TRUE  2014-12-15 2014-12-20
@@ -477,6 +483,11 @@ They then did undercover buys from Hubbard, busting him in Portland Oregon after
 He cooperated and Hubbard turned out to source his fentanyl from China through a Canadian contact, using Steven Locke as a drop who was paid in fentanyl (he was indicated 10 March 2015).
 Hubbard's girlfriend, Channing Lacey, was later arrested 5 March 2015 but had smuggled in some fentanyl, leading to another 3 overdoses.
 Collectively, 5+ ODs or deaths were involved.
+
+## Hydra
+### Hungary
+
+The operator of the minor marketplace Hydra [was detained or arrested](http://www.deepdotweb.com/2014/11/11/watch-alleged-hydra-market-admin-getting-busted-in-budapest/) in Budapest, Hungary as part of Operation Onymous; the date is unclear but probably before 7 November 2014 & simultaneous with the other arrests on 5 November 2014.
 
 ## Sheep Marketplace (SMP)
 
@@ -784,13 +795,26 @@ There are currently no known controlled deliveries or arrests of CALIGIRL custom
 
 In late January 2014, a [Canadian man T.S. & Indonesian woman L.A.](http://news.detik.com/read/2014/01/22/133657/2474783/10/ "Selundupkan Ekstasi, Guru Bule dan Kekasihnya Ditangkap") [were arrested](https://www.reddit.com/r/DarkNetMarkets/comments/2u26ij/uncategorized_i_bought_100_superman_pills_from/) after a package of MDMA (100 Superman pills) from the Netherlands (which she had ordered from "pillbay" on Silk Road 2) was intercepted by customs & his West Jakarta residence searched; they were sentenced to 10 & 5 years respectively.
 
+### Ireland
+
+On 5 November 2014, as part of Operation Onymous, 2 men (Neil Mannion & Richard O'Connor) were arrested in Dublin, Ireland, uncovering drugs (MDMA/LSD/marijuana)/Bitcoins/address-lists; the Irish investigation began after information was received from a foreign agency.
+They were probably the seller "TheHulkster", based on volume, location, & drugs.
+(Media coverage: [1](http://www.garda.ie/Controller.aspx?Page=14304 " As a result of an international drug trafficking investigation into the sale and supply of controlled drugs on an encrypted layer of the internet known as the Darknet an Irish vendor was identified in recent weeks. Surveillance and enquiries carried out by the Garda National Drug Unit identified a secure premises on South Circular Road, Dublin 8 where it was believed this drug distribution operation was based."),
+[2](http://www.independent.ie/irish-news/suspected-online-international-drugs-ring-smashed-by-gardai-30724000.html "Suspected online international drugs ring smashed by gardai:  A suspected online drug trafficking distribution racket using the encrypted network Darknet has been smashed by detectives."),
+[3](http://www.belfasttelegraph.co.uk/news/local-national/republic-of-ireland/two-held-over-darknet-drugs-ring-30724056.html "Two held over 'darknet' drugs ring: Officers said a global drug-dealing operation was based at a secured premises in Dublin's south inner city"),
+[4](http://www.irishexaminer.com/breakingnews/ireland/gardai-seize-drugs-after-probe-into-darknet-drug-operation-650036.html "Gardaí seize drugs after probe into 'Darknet' drug operation: Ecstasy tablets, LSD and other controlled drugs to value €180,000 have been seized by gardaí in a raid on ‘Darknet’ drug distribution centre in Dublin."),
+[5](http://www.bbc.com/news/world-europe-29938685 "Darknet: Bitcoin and drugs worth £1.5m seized by Irish police"),
+[6](http://www.herald.ie/news/busted-internet-drugs-kingpin-has-1m-in-bank-30725076.html "Busted internet drugs kingpin has €1m in bank"),
+[7](https://archive.is/Lz2YK "Dublin football star's brother accused of using the Darknet to sell drugs / http://www.herald.ie/news/courts/dublin-football-stars-brother-accused-of-using-the-darknet-to-sell-drugs-30734228.html"),
+[8](http://www.rte.ie/news/2014/1106/657346-drugs/ "Arrests after major drug seizure in Dublin: Gardaí have raided an internet drug distribution centre in Dublin using the encrypted network Darknet and seized almost €200,000 worth of cannabis, ecstasy and LSD").)
+
 ### New Zealand (NZ)
 
 December 2014 saw the SR2 buyer Andrew Graham Hodgson sentenced for importing methamphetamine, marijuana & NBOMe; his mail had been intercepted from July to September 2014 ([1](http://www.stuff.co.nz/national/crime/63743171/five-arrests-in-500k-meth-sting "Five arrests in $500k meth sting"), [2](http://www.stuff.co.nz/national/crime/63857494/silk-road-leads-to-home-detention "Silk Road leads to home detention")) and he was arrested that September.
 
 ### United Kingdom (UK)
 
-During the 5 November 2014 busted of SR2, the [authorities announced](http://www.nationalcrimeagency.gov.uk/news/news-listings/483-international-law-enforcement-deals-major-blow-to-dark-web-markets) [6 UK arrests](http://www.theguardian.com/technology/2014/nov/07/six-britons-arrested-silk-road-dark-web-takedown-online-drugs), but no details have emerged since besides the basic description given to the press (were any of them [Budworx or Top\_Gear\_UK](https://www.reddit.com/r/DarkNetMarkets/comments/2lkpaz/6_vendors_arrested_in_uk/)?):
+During the 5 November 2014 busted of SR2, the [authorities announced](http://www.nationalcrimeagency.gov.uk/news/news-listings/483-international-law-enforcement-deals-major-blow-to-dark-web-markets "International law enforcement deals major blow to dark web markets") [6 UK arrests](http://www.theguardian.com/technology/2014/nov/07/six-britons-arrested-silk-road-dark-web-takedown-online-drugs), but no details have emerged since besides the basic description given to the press (were any of them [Budworx or Top\_Gear\_UK](https://www.reddit.com/r/DarkNetMarkets/comments/2lkpaz/6_vendors_arrested_in_uk/)?):
 
 > The NCA described the six British arrests as "significant", adding that a large amount of computer equipment has been seized at all the addresses searched and will now be forensically examined. The six - a 20-year-old man from Liverpool, a 19-year-old man from New Waltham in Lincolnshire, a 30-year-old man from Cleethorpes [Lincolnshire], a 29-year-old man from Aberdovey in Wales and a man and woman, both 58, also from Aberdovey, have all been bailed after being interviewed.
 
@@ -901,31 +925,28 @@ At the same time as Operation Onymous, the [FBI raided a home in West Haven, Con
 
 The FBI also [raided a New Orleans, Louisiana](http://www.theneworleansadvocate.com/news/10766235-123/fbi-raid-of-marigny-home "FBI raid of Marigny home part of global crackdown on 'Dark Web'") 6 November 2014, but similarly nothing is known about the results.
 
-The original [Operation Onymous press release](http://www.eurojust.europa.eu/press/PressReleases/Pages/2014/2014-11-07.aspx) boasted of 17 arrests, involving LE from "Bulgaria, the Czech Republic, Finland, France, Germany, Hungary, Ireland, Latvia, Lithuania, Luxembourg, the Netherlands, Romania, Spain, Sweden, Switzerland, the United Kingdom and the USA" (["the arrests were scattered over the US and Europe."](http://www.theguardian.com/technology/2014/nov/07/silk-road-20-operation-onymous-dark-web-drugs-takedown)); not all of these are market-connected as they could also be related to scam sites, seller shops, or running content sites (doxbins, revenge porn, etc) and the original releases counted seized websites [in the most inflated way possible](https://www.nikcub.com/posts/onymous-part1/ "Large Number of Tor Hidden Sites Seized by the FBI in Operation Onymous were Clone or Scam Sites"):
+The original [Operation Onymous press release](http://www.eurojust.europa.eu/press/PressReleases/Pages/2014/2014-11-07.aspx "Global action against darknet markets on Tor network") boasted of 17 arrests, involving LE from "Bulgaria, the Czech Republic, Finland, France, Germany, Hungary, Ireland, Latvia, Lithuania, Luxembourg, the Netherlands, Romania, Spain, Sweden, Switzerland, the United Kingdom and the USA" (["the arrests were scattered over the US and Europe."](http://www.theguardian.com/technology/2014/nov/07/silk-road-20-operation-onymous-dark-web-drugs-takedown)); not all of these are market-connected as they could also be related to scam sites, seller shops, or running content sites (doxbins, revenge porn, etc) and the original releases counted seized websites [in the most inflated way possible](https://www.nikcub.com/posts/onymous-part1/ "Large Number of Tor Hidden Sites Seized by the FBI in Operation Onymous were Clone or Scam Sites"):
 
-1. Blake Benthall; San Francisco, California USA; SR2 operator [DONE]
-2. ???; West Haven, Connecticut USA; ???
-3. ???; New Orleans, Louisiana USA; ???  https://www.reddit.com/r/DarkNetMarkets/comments/2m41j7/onymous_busts_in_new_orleans_la_and_west_haven_ct/
-4. ???; Budapest, Hungary; Hydra operator
-5. David Schell; California USA; SR2 seller CaliforniaCanibas (the press release is dated 2014-11-07, and the Schells seem to have been arrested the day before, 2014-11-06, so they are probably included in the count) [DONE]
-6. Teri Schell; California USA; SR2 seller CaliforniaCanibas [DONE]
+1. Blake Benthall; San Francisco, California USA; SR2 operator
+2. ???; [West Haven, Connecticut USA](http://wtnh.com/2014/11/06/fbi-agents-raid-west-haven-home/ "FBI agents raid West Haven home"); ???
+3. ???; [New Orleans, Louisiana USA](http://www.theneworleansadvocate.com/news/10766235-123/fbi-raid-of-marigny-home "FBI raid of Marigny home part of global crackdown on 'Dark Web'"); ???
+4. ???; [Budapest, Hungary; Hydra operator](http://www.deepdotweb.com/2014/11/11/watch-alleged-hydra-market-admin-getting-busted-in-budapest/)
+5. David Schell; California USA; SR2 seller CaliforniaCanibas (the press release is dated 2014-11-07, and the Schells seem to have been arrested the day before, 2014-11-06, so they are probably included in the count)
+6. Teri Schell; California USA; SR2 seller CaliforniaCanibas
 7. ???; Switzerland; [operator of the scam site "Black Market"](http://www.lematin.ch/suisse/Le-FBI-fait-interpeller-un-Vaudois-chez-lui/story/24253596 "Le FBI fait interpeller un Vaudois chez lui Darknet: Un informaticien est accusé d'avoir créé un site de vente d'armes, de drogues et de faux papiers.")
 8. ???; Barcelona Spain; [seems to have been the operator of a scam site](http://www.guardiacivil.es/es/prensa/noticias/5146.html "La Guardia Civil detiene a uno de los objetivos de la macro operación ONYMOUS contra los mercados clandestinos en la Deep Web") ([translation](https://www.reddit.com/r/DarkNetMarkets/comments/2m3eyo/some_onymous_bust_in_spain/)) claiming to sell carding-related goods, perhaps "Super Note Counter" or "Sol's Unified USD Counterfeit's" or "Fast Cash!" (all named in the [Operation Onymous seizure papers](/docs/sr/20141107-operationonymous-seizureforfeiture.pdf))
 9. 6 UK arrests; 3 have been named publicly, and the charges suggest 1 seller & 2 buyers (unknown which)
+10. Ireland: 2 arrests
+10. France seized [2 servers](http://www.lemonde.fr/pixels/article/2014/11/11/les-coulisses-de-l-operation-onymous-contre-des-dizaines-de-sites-caches-illegaux_4521827_4408996.html "Les coulisses de l'opération « Onymous » contre des dizaines de sites cachés illégaux; L'opération a été menée conjointement par le FBI et Europol, et était en préparation depuis plus de six mois"), and "several" people were arrested in Germany
+10. this gives a final total of:
 
-<!-- Operation Onymous:
-
-warning? https://www.reddit.com/r/DarkNetMarkets/comments/2ihjn6/upcoming_high_profile_large_vendor_busts_in_the/
-
-11/6: raided Hydra, SR2, cloud nine, cr2?! (http://cannabiskofvl7pa.onion/)
-
-down: alpaca, bluesky, pandora, bungee, topix2, cr3
-
-- 2 Irish arrests: http://www.independent.ie/irish-news/suspected-online-international-drugs-ring-smashed-by-gardai-30724000.html / http://www.belfasttelegraph.co.uk/news/local-national/republic-of-ireland/two-held-over-darknet-drugs-ring-30724056.html / http://www.irishexaminer.com/breakingnews/ireland/gardai-seize-drugs-after-probe-into-darknet-drug-operation-650036.html / http://www.bbc.com/news/world-europe-29938685 / http://www.herald.ie/news/busted-internet-drugs-kingpin-has-1m-in-bank-30725076.html / http://www.herald.ie/news/courts/dublin-football-stars-brother-accused-of-using-the-darknet-to-sell-drugs-30734228.html https://www.reddit.com/r/DarkNetMarkets/comments/2lha8y/this_was_ranking_in_this_sub_then_deleted_two/ - TheHulkster or JerseyCow? "The Irish vendor was TheHulkster/JC. Or at least the Irish side of Jersey Cow anyway. The English side of the JC operation, who is now Funky Unicorn is also mia. ( maybe part of the British raids, I do not know.) JC has flipped." http://kingdomazsnvzfuq.onion/index.php?topic=157.0
-- 17 EU arrests total
-
-2 servers in France, 0 arrests? http://www.lemonde.fr/pixels/article/2014/11/11/les-coulisses-de-l-operation-onymous-contre-des-dizaines-de-sites-caches-illegaux_4521827_4408996.html
--->
+     - USA: Benthall + the Schells = 3
+     - Hungary: Hydra = 1
+     - Spain & Switzerland = 2 (fraudsters)
+     - UK: 6
+     - German: ???
+     - Ireland: 2
+     - 14 known arrests; 3 are missing, but at least 2 must be German arrests, and hypothetically the last could be from any combination of the mentioned participating countries unrepresented in the above list ("...Bulgaria, the Czech Republic, Finland, France, Germany, Ireland, Latvia, Lithuania, Luxembourg, the Netherlands, ... Romania, Sweden") but is probably German as well
 
 On 6 January 2015, the [Princeton student Julian Edgren was arrested](http://planetprinceton.com/2015/01/07/princeton-university-student-arrested-for-drug-possession/ "Princeton University Student Arrested for Drug Possession") after a CD package of MDMA; warrants also turned up psilocybin, marijuana, LSD, hashish, and Adderall.
 It is known Edgren had been a The Marketplace customer, but TMP had closed down months before January 2015 after Operation Onymous, so he could not have been using TMP for that order.
@@ -1018,6 +1039,7 @@ The [Drugs Global Incident Map](http://drugs.globalincidentmap.com/) features ma
     - ["SANE Finds 100 Hits of LSD During Petoskey Search"](http://www.9and10news.com/story/28859819/sane-finds-100-hits-of-lsd-during-petoskey-search)
     - ["Palm Beach County Resident Arrested for Importing Flakka"](http://www.justice.gov/usao-sdfl/pr/palm-beach-county-resident-arrested-importing-flakka)
     - ["Waukesha man accused of using UPS to get marijuana from California"](http://www.wisn.com/news/waukesha-man-accused-of-using-ups-to-get-marijuana-from-california/32711932)
+    - ["5 Arrested in Maine for 'Molly' drugs by mail operation"](http://www.postal-reporter.com/blog/5-arrested-in-maine-for-molly-drugs-by-mail-operation/)
 
 Most are likely unrelated to the black-markets, and some rumors are wrong or flatly made up (for example, a seller may be covering up an exit scam with a fake story about being busted, or one seller may be trying to hurt another's sales eg [the TedDanzig incident](https://www.reddit.com/r/SilkRoad/comments/1xq97t/teddanzig_arrested/) or the 4lb PureFireMeds FUD), but of course, some will turn out to be real.
 
@@ -1132,6 +1154,8 @@ http://www1.aoc.state.nc.us/www/calendars.Criminal.do?Next+25.x=27&Next+25.y=10&
     District     CARTERET    ROYAL,SCOTT,PATRICK     09/22/1984      10/24/2014      0001    AM      2014CR054131
 -->
 
+As part of Operation Onymous, 2 homes were searched by the FBI in [West Haven, Connecticut](http://wtnh.com/2014/11/06/fbi-agents-raid-west-haven-home/ "FBI agents raid West Haven home") & [New Orleans, Louisiana](http://www.theneworleansadvocate.com/news/10766235-123/fbi-raid-of-marigny-home "FBI raid of Marigny home part of global crackdown on 'Dark Web'") on 6 November 2014.
+What they found and what arrests they made, if any, remain unknown.
 
 [A Mid-Western Redditor](https://www.reddit.com/r/DarkNetMarkets/comments/2m4otd/reporting_a_local_bust_following_operation_onymous/) reports on 12 November 2014 (post-Operation Onymous) that an acquaintance had been arrested after picking up a SR2 package; he says that he was a local reseller of LSD & other psychedelics.
 

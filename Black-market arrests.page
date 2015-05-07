@@ -55,21 +55,95 @@ Similarly, if there were >60 buyer arrests (I double because there seem to be mo
 - DebbieDelites (Evolution): doxed customer, posting his address to Evolution market https://www.reddit.com/r/DarkNetMarkets/comments/2xkvlw/ama_ama_with_debbiesdelites_is_open/
 - Richard Pollard "Police also found express post envelopes used to distribute drugs and printouts from online trading site Silk Road showing names and addresses for drug orders, according to court documents."
 -->
-<!-- TODO: after finishing, find first usage of "CD" and define  -->
 
 # Table
+## Metadata
 
 > "Philosophy in any case always comes on the scene too late...When philosophy paints its gloomy picture then a form of life has grown old. It cannot be rejuvenated by the gloomy picture, but only understood. Only when the dusk starts to fall does the owl of Minerva spread its wings and fly."
 
 - Role: buyer, seller, staff, or market founder/operator; each has distinct risks and LE interest and should be distinguished
-- Market: the black-market a person was most affiliated with or was busted in connection with
+- Market: the black-market a person was most affiliated with or last active on
 
     For example, a Silk Road 1 employee working at Silk Road 2 would be classified as SR1-related because he had provided DPR1 his dox and was busted as a consequence of SR1, not because he worked at SR2 when he was arrested; oppositely, a seller like California Cannabis, who had sold on SR1 but was busted after being deanonymized by the undercover agent through the SR2 seller portal, would be classified as SR2-related. And a seller who sold on a market but was busted through his own off-market sales will be marked with the relevant market.
 - Product: the main 3-4 drugs they were dealing in or possessed
 - International: whether they were receiving/sending packages across borders
 - Arrest date: best known guess at when they were raided/searched/arrested/charged; if known only to the month, I round up/down
-- Known date: when it became public knowledge or I added to my article (may be useful for estimating fraction remaining unknown)
+- Known date: when I learned of it/added to my article (distribution of lags may be useful for estimating fraction remaining unknown)
 - Sex: when known
+
+## Summary
+
+As of 7 May 2015, there is publicly-known & included in my table (although many, if not most, cases [still remain unknown](#completeness)):
+
+- 312 arrests/legal trouble on the following markets:
+
+    - SR1: 138
+    - SR2: 85
+    - Evolution: 27
+    - BMR: 9
+    - Agora: 6
+    - Utopia: 5
+    - Sheep: 3
+    - Hydra: 1
+- roles:
+
+    - buyers: 162
+
+         - of the buyers, approximately half (53%) of known cases seem to have been attempting to order across an international border
+    - sellers: 116
+    - market employees/staff: 10
+    - market administrator/operator/owner: 4
+
+        - fraction of markets (78) whose operator has been busted so far: 5%
+- 89% male
+- from 20 countries:
+
+    - USA: 154
+    - NZ: 30
+    - Australia: 23
+    - UK: 21
+    - Germany: 17
+    - Netherlands: 17
+    - Sweden: 13
+    - Austria: 8
+    - Ireland: 6
+    - Canada: 5
+    - Israel: 4
+    - Cyprus: 3
+    - Indonesia: 3
+    - France: 1
+    - Czech: 1
+    - Hungary: 1
+    - Japan: 1
+    - Norway: 1
+    - Scandinavia: 1
+    - Uganda: 1
+- the most popular drugs/items to order or be found possessing
+
+    - MDMA:26
+    - marijuana:17
+    - LSD:16
+    - cocaine:14
+    - methamphetamine:10
+    - amphetamine:9
+    - heroin:6
+    - ketamine:6
+    - DMT:4
+    - NBOMe:4
+    - abrin:3
+    - gun:3
+    - methylone:3
+    - oxycodone:3
+    - Xanax:3
+    - 25i:2
+    - Bitcoin:2
+    - clonazepam:2
+    - cyanide:2
+    - fentanyl:2
+    - hydrocodone:2
+    - psilocybin:2
+
+## Data
 
 Name                  Sex Pseudonym            Role      Market      Seller          Country     State          Product                               INTL  Arrest    Known         Notes
 --------------------- --- ---------------      -------   ----------- --------------- ----------- -------------- ------------------------------        ----- --------- ----------    -----
@@ -390,7 +464,7 @@ Joshua Morgan         M                        seller                           
 ## Agora
 ### Germany
 
-<!-- Agora, Germany http://lacbzxobeprssrfx.onion/index.php/topic,62888.0.html realexpresshaze/expresshaze/XpressHaze busted mid-2014? andscheinend as well? and at least 2 customers searched? -->
+<!-- Agora, Germany http://lacbzxobeprssrfx.onion/index.php/topic,62888.0.html http://lacbzxobeprssrfx.onion/index.php/topic,62888.msg11909347.html#msg11909347 realexpresshaze/expresshaze/XpressHaze busted mid-2014? andscheinend as well? and at least 4 customers searched? even into 2015 -->
 
 On 29 January 2015, German police searched several locations & [arrested 5](http://motherboard.vice.com/read/then-the-swat-team-rolls-up-the-first-arrest-of-a-german-deepweb-arms-dealer "Then the SWAT Team Rolls Up: Was a Darknet Arms Dealer Arrested on Campus?") [Germans for gun sales](http://www.polizei.bayern.de/lka/news/presse/aktuell/index.html/214987 "Durchsuchungen und Festnahmen wegen illegalem Waffenhandel") (especially for machine gun sales); a [media article](http://www.infranken.de/regional/schweinfurt/SEK-Einsatz-an-FH-Schweinfurt-Die-Vergangenheit-des-Waffennarren;art221,942669 "SEK-Einsatz an FH Schweinfurt: Die Vergangenheit des Waffennarren; Der 25-jährige Student, der in der vergangenen Woche an der Schweinfurter Fachhochschule von einen Sondereinsatzkommando festgenommen wurde, war der Polizei kein Unbekannter") focusing on one of them mentions his appearance in a Vice documentary about Internet sales of guns over presumably the black-markets.
 (It's unclear if or how the other 4 are involved.)
@@ -1291,10 +1365,11 @@ Some evidence points weakly at how comprehensive this table may be:
 - public cases can be divided into reasonably well-documented ones, and ones inferred from aggregate figures or media blurbs; for example, the bare name of the arrested person is unknown in more than half of the cases
 - the aggregate time lags from when each person was arrested to when their case became known (possibly through indirect means such as carefully parsing complaints and evidence from other cases) suggest that ~90% of public cases become known in the first year but then there is a very long tail of arrests surfacing in the public record years later, implying that for 2012 onwards each year cannot be >90% complete even if we assumed that all cases became public (because for more recent years, cases have not finished surfacing)
 - the informant Carl Force told DPR that there had been many account compromises on BMR and "a few quiet busts", where at the most generous, only 3 cases are known, suggesting a known:total BMR rate of <33%
-- in SR1, the UK press release specified the total number of arrests
+- in SR1, the UK press release specified the total number of arrests; the UK arrests remain otherwise unknown
 - in the Xanax King case, a subsequent court filing specified the full number of related arrests, which can be compared with media articles on identified or likely XK buyers, suggesting a known:total rate of ~10%
 - in Operation Onymous, the joint press release specified the total number of arrests; many are still unknown
 - the Ross Ulbricht trial revealed several unknown arrests (at a minimum: Deezletime, alllove, Richard Bates) which would likely have never surfaced if Ulbricht had plea-bargained and avoided trial
+- Australian police have sometimes quoted aggregate Silk Road-related figures; an example is the statement that 6 Australians were arrested in June 2013 for SR1-related activities, yet, information about only one has been uncovered so far.
 
 In aggregate, I would guess that the completeness of the table is highly unlikely to be >25% and more likely to be <=10% (but the completeness is probably much higher for site operators, then staff, then sellers, and least of all buyers).
 
@@ -1328,8 +1403,24 @@ arrests[arrests$Sex=="F" & !is.na(arrests$Sex),]$Name
 # be, say, suddenly overwhelmed next year by a ton of SR1 cases from 2012 popping up and
 # undermining conclusions
 hist(as.integer(na.omit(with(arrests, Known - Arrest))))
+
+# summary statistics:
+nrow(arrests) # total arrest
+table(arrests$Sex)[2] / (table(arrests$Sex)[3]+table(arrests$Sex)[2]) # gender ratio
+length(levels(arrests$Country)) # number of countries
+sort(table(arrests$Country), decreasing=TRUE) # countries by count:
+sort(table(arrests$Role), decreasing=TRUE) # buyer/seller/staff/operator
+sort(table(arrests$Market), decreasing=TRUE) # associated market:
+intl <- table(arrests[arrests$Role=="buyer",]$INTL); intl[1] / (intl[1]+intl[2]) # estimate of international order risk:
+sort(table(sub("^ ", "", unlist(strsplit(levels(arrests$Product), ",")))), decreasing=TRUE) # drug popularity
+## fraction site operators/ sites busted:
+black <- readHTMLTable("http://www.gwern.net/Black-market%20survival")[[1]]
+nrow(black)
+sum(arrests$Role=="operator", na.rm=TRUE) / nrow(black)
 ~~~
 
 # External links
 
 - [Vocativ visualization/map of geographical distribution of arrests](http://www.vocativ.com/interactive/underworld/drugs/darknet-arrests-map/ "Beyond Ross Ulbricht: A Map Of Dark Net Arrests Around The World")
+- ["This Researcher Is Tallying All the Arrests From Dark Web Markets"](http://motherboard.vice.com/read/this-researcher-is-tallying-arrests-from-dark-web-markets)
+- Discussion: [Reddit](https://www.reddit.com/r/DarkNetMarkets/comments/34z5xi/list_of_known_dnm_arrests/)

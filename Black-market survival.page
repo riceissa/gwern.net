@@ -44,7 +44,7 @@ Variables:
 
 ## Table
 
-A table of relevant markets (3 May 2015):
+A table of relevant markets (7 May 2015):
 
 Market                   Start       End       Alive Closure   Arrested URL                      Multisig I2P   Bitcoin Litecoin Dogecoin Darkcoin Codebase   Guns   Fraud Hacks Doxed Notes
 ----------------------   ---------- ---------  ----- --------- -------- ------------------------ -------- ----- ------- -------- -------- -------- ---------- -----  ----- ----- ----- -------------
@@ -126,6 +126,9 @@ Havana/Absolem           2015-04-13            TRUE            FALSE    `havana3
 TheRealDeal              2015-04-09            TRUE            FALSE    `trdealmgn4uvm42g.onion` TRUE     FALSE TRUE     FALSE    FALSE    FALSE   Bitwasp    TRUE   TRUE  0     FALSE   [Interview](http://www.deepdotweb.com/2015/04/08/therealdeal-dark-net-market-for-code-0days-exploits/), [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/322hro/introduction_therealdeal_code_mostly_market/); forums: `forum5cijl4suew6.onion`
 Oxygen                   2015-04-16            TRUE            FALSE    `o2oxycuvnwxhv73e.onion` TRUE     FALSE TRUE     FALSE    FALSE    FALSE   custom     FALSE  TRUE  0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/33xfaj/new_market_called_oxygen/)
 East India Company       2015-04-28            TRUE            FALSE    `g4c35ipwiutqccly.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE   custom     FALSE  FALSE 0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/34538b/new_european_only_market_east_india_company_has/); EU-only
+Haven                    2014-05-05            TRUE            FALSE    `havenpghmfqhivfn.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE   custom     TRUE   TRUE  0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/34yxfi/vendormarketinquiry_haven_marketplace_now_online/) <!-- only explicitly bans CP in the vendor-signup agreement --> <!-- TODO: multisig support? -->
+Anarchia                 2014-05-07            TRUE            FALSE    `tkmlejimlt72jnkm.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE   Bitwasp    TRUE   TRUE  0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/357d9f/anarchia_bitcoin_marketplace/)
+Zanzibar Spice           2014-05-07            TRUE            FALSE    `mithrakushhvfyto.onion` FALSE    FALSE TRUE     FALSE    FALSE    FALSE   custom     FALSE  FALSE 0     FALSE   [ANN](https://www.reddit.com/r/DarkNetMarkets/comments/354wh5/marketplace_announcement_zanzibar_spice_market_is/)
 
 See also [DeepDotWeb's list](http://www.deepdotweb.com/2013/10/28/updated-llist-of-hidden-marketplaces-tor-i2p/ "Updated: List of Hidden Marketplaces (Tor & I2P)") ([changelog](http://www.deepdotweb.com/hidden-marketplace-list-changelog/)), the [DNM market list](http://www.reddit.com/r/DarkNetMarkets/wiki/index/sidebar), and the [Hidden Wiki](/docs/sr/2014-08-30-hiddenwiki-comparisiondarknetmarkets.mht) (last updated 30 August 2014).
 
